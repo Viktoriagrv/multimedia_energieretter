@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>index.html</title>
+  
+  <!-- Bootstrap CSS für Styling und Komponenten einbinden -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <!-- Benutzerdefiniertes CSS für die Navbar und Schriftarten - kann man später auch auslagern nur für den anfang -->
+  <style>
+	  
+	  
+    /* Navbar-Hintergrundfarbe Grün */
+    .navbar-custom {
+      background-color: #285238;
+    }
+    
+    /* Link-Styling für die linke Seite der Navbar */
+    .navbar-brand {
+      font-family: 'Gagalin', sans-serif; /* Schriftart für die Marke */
+      color: #E8A723 !important;          /* Farbe für die Marke */
+    }
+    
+    /* Hintergrundfarbe für Dropdown-Menüs */
+    .dropdown-menu {
+      background-color: #285238;
+    }
+    
+    /* Dropdown-Menü-Links Styling */
+    .dropdown-item {
+      color: #E8A723;
+    }
+    
+    /* Hover-Effekt für Dropdown-Links */
+    .dropdown-item:hover {
+      background-color: #E8A723;
+      color: #285238;
+    }
+
+    /* Footer-Styling */
+    .footer-custom {
+      background-color: #285238;
+      color: #E8A723;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: left;
+    }
+    .footer-link {
+      color: #E8A723;
+    }
+    .footer-link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
+  
+  <!-- Google Fonts für die Gagalin-Schriftart -->
+  <link href="https://fonts.googleapis.com/css2?family=Gagalin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar-Container -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <!-- Link für die linke Seite der Navbar mit Markenname -->
+    <a class="navbar-brand" href="#">Die Energieretter</a>
+    
+    <!-- Toggler-Button für kleinere Bildschirme (öffnet/schließt das Navbar-Menü) -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navbar-Inhalte, die in den Toggler gekapselt werden -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <!-- Einzelner Menüpunkt (Intro) -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Intro</a>
+        </li>
+        
+        <!-- Dropdown-Menü Mission mit zwei Unterpunkten -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="missionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mission
+          </a>
+          <!-- Dropdown-Menü Elemente -->
+          <div class="dropdown-menu" aria-labelledby="missionDropdown">
+            <a class="dropdown-item" href="#">Superhelden auswählen</a>
+            <a class="dropdown-item" href="#">Code-Eingabe</a>
+          </div>
+        </li>
+        
+        <!-- Dropdown-Menü Retterwissen mit fünf Unterpunkten -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="retterwissenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Retterwissen
+          </a>
+          <!-- Dropdown-Menü Elemente -->
+          <div class="dropdown-menu" aria-labelledby="retterwissenDropdown">
+            <a class="dropdown-item" href="#">Thema 1</a>
+            <a class="dropdown-item" href="#">Thema 2</a>
+            <a class="dropdown-item" href="#">Thema 3</a>
+            <a class="dropdown-item" href="#">Thema 4</a>
+            <a class="dropdown-item" href="#">Thema 5</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beispieltext im Dokument -->
+  <p> Hallo! Funktioniert es? Bei euch Sabrina und Sophie? Hallo Vika. Hallo Vika und Sophie. 
+    Pushen, pullen funktioniert alles :D Leider kann ich es nicht auf den Server hochladen :/ 
+    geht es jetzt doch? Tatsächlich! Hurra!
+  </p>
+  <p> Geht das jetzt?</p>
+
+  <!-- Footer -->
+  <footer class="footer-custom">
+    <a href="#" class="footer-link">Impressum</a>
+  </footer>
+
+  <!-- Bootstrap JS und Abhängigkeiten für Dropdown und Toggler -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
