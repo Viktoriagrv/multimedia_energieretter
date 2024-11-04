@@ -1,69 +1,60 @@
-/* Macht den Body zum flexiblen Container */
+/* Flexibles Layout für den gesamten Body */
 html, body {
-    height: 100%; /* Vollständige Höhe für das ganze Ding */
-    margin: 0;    /* Kein Platz drumherum, alles reinpacken */
-    display: flex; /* Flexbox für Anordnung */
-    flex-direction: column; /* Alles schön untereinander anordnen */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Hier geht’s zum Hauptinhalt */
+/* Hauptinhalt zentrieren */
 main {
-    flex: 1; /* Füllt den restlichen Platz aus */
-    display: flex; /* Flexbox für die zentrierten Inhalte */
-    justify-content: center; /* Alles mittig ausrichten */
-    align-items: center; /* Auch vertikal mittig */
-    background-image: url('../../images/weltall/galaxie_bild.jpg'); /* Hintergrundbild einstellen */
-    background-size: cover; /* Bild so anpassen, dass es alles abdeckt */
-    background-position: center; /* Bild in die Mitte schieben */
-    background-repeat: no-repeat; /* Kein Wiederholen des Bildes */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../images/weltall/galaxie_bild.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* Hier kommt der Textcontainer */
-.text-container {
-    color: #E8A723; /* Die Farbe für den Text */
-    font-family: 'Bangers', sans-serif; /* Schriftart für den Text */
-    text-align: center; /* Text in der Mitte */
-    position: relative; /* Damit wir coole Animationen machen können */
-    height: 80vh; /* Container nimmt 80% der Höhe vom Viewport ein */
-    width: 80vw; /* Breite auf 80% des Bildschirms */
-    overflow: hidden; /* Überlauf verstecken, damit’s nicht unordentlich aussieht */
-}
-
-/* Hier kommt der scrollbare Text */
-.scrollable-text {
-    height: 100%; /* Füllt den ganzen Container */
-    overflow-y: auto; /* Aktiviert vertikales Scrollen */
-    font-size: 2rem; /* Text schön groß, damit man ihn gut lesen kann */
-    line-height: 1.5; /* Mehr Platz zwischen den Zeilen */
-    padding: 10px; /* Etwas Platz innen, damit der Text nicht an den Rändern klebt */
-}
-
-/* Stil für den Button */
-#action-button {
-    margin: 20px auto; /* Abstand zum Text */
-    font-size: 1.5rem; /* Button schön groß */
-    padding: 15px 30px; /* Innenabstand für den Button, damit er gut aussieht */
-    display: block; /* Blockelement, damit die Margen richtig wirken */
-}
-
-/* Stil für den Footer */
+/* Footer-Stil */
 .footer-custom {
-    background-color: #285238; /* Hintergrundfarbe für den Footer, passend zur Navbar */
-    color: #E8A723;            /* Textfarbe im Footer */
-    padding: 10px 20px;       /* Innenabstand für den Footer */
-    margin-top: auto;         /* Footer nach unten schieben */
-    width: 100%;              /* Footer nimmt die ganze Breite ein */
-    text-align: left;         /* Text im Footer links ausrichten */
+    background-color: #285238;
+    color: #E8A723;
+    padding: 10px 20px;
+    margin-top: auto;
+    width: 100%;
+    text-align: left;
 }
 
-/* Link-Styling im Footer */
 .footer-link {
-    color: #E8A723;            /* Textfarbe für Links im Footer */
-    text-decoration: none;     /* Unterstreichung entfernen */
+    color: #E8A723;
+    text-decoration: none;
 }
 
-/* Wenn man mit der Maus über die Links fährt */
 .footer-link:hover {
-    text-decoration: underline; /* Unterstreichen, wenn man darüber fährt */
+    text-decoration: underline;
+}
+
+/* Text-Container */
+.scrolling-text {
+    position: fixed; /* Fixiere den Text an der Stelle */
+    bottom: 80px; /* Beginne 80px über dem unteren Rand, damit es nicht mit dem Footer kollidiert */
+    left: 50%; /* Zentriere horizontal */
+    transform: translateX(-50%); /* Korrektur der horizontalen Position */
+    color: white; /* Textfarbe */
+    font-size: 2rem; /* Schriftgröße anpassen */
+    animation: scroll-up 10s linear forwards; /* Animationsname und Dauer */
+}
+
+/* Animation von unten nach oben */
+@keyframes scroll-up {
+    0% {
+        transform: translate(-50%, 100%); /* Start außerhalb des Bildschirms */
+    }
+    100% {
+        transform: translate(-50%, -150%); /* Bewege nach oben, sodass der Text den oberen Rand verlässt */
+    }
 }
 

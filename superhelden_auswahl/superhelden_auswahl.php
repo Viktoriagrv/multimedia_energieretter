@@ -12,18 +12,16 @@
 
     <!-- Einbinden der CSS-Datei -->
     <link rel="stylesheet" href="include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
+
+    <!-- Einbinden der Navigationsleiste -->
+    <?php include('include/partials/nav.php'); ?>
 </head>
 
 <body>
-    <!-- Einbinden der Navigationsleiste -->
-    <?php include 'include/partials/nav.php'; ?>
-
     <main>
         <div>
-            <div class="scrolling-text">
-                Die Welt ist in Gefahr! Du musst die Welt retten und helfen!
-            </div>
             <!-- Hier könnte Ihr Hauptinhalt stehen -->
+			<p> Hallo!</p>
         </div>
     </main>
 
@@ -39,5 +37,3 @@
     <script src="include/js/intro.js"></script>
 </body>
 </html>
-
-

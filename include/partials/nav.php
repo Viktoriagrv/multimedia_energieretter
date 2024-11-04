@@ -34,6 +34,27 @@
     background-color: #E8A723;
     color: #285238;
   }
+
+  /* Rahmen um die Navigationselemente */
+  .nav-link {
+    border: 2px solid white; /* Weißer Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 5px 15px; /* Innenabstand */
+    margin-right: 20px; /* Abstand zwischen den Links */
+    transition: border-color 0.3s, color 0.3s; /* Sanfter Übergang für die Rahmenfarbe und Textfarbe */
+    color: white; /* Setze die Standardfarbe für die Links auf Weiß */
+  }
+
+  /* Rahmenfarbe und Textfarbe bei Hover */
+  .nav-link:hover {
+    border-color: #e8a723; /* Gelbe Rahmenfarbe bei Hover */
+    color: white; /* Textfarbe bleibt weiß */
+  }
+
+  /* Übersteuere die text-white Klasse */
+  .nav-link.text-white {
+    color: white !important; /* Sicherstellen, dass die Links weiß sind */
+  }
 </style>
 
 <!-- Navbar-Container -->
@@ -49,27 +70,26 @@
   <!-- Navbar-Inhalte, die in den Toggler gekapselt werden -->
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
-      
       <!-- Einzelner Menüpunkt (Intro) -->
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">Intro</a>
+        <a class="nav-link" href="#">Intro</a>
       </li>
       
       <!-- Dropdown-Menü Mission mit zwei Unterpunkten -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="missionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="missionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Mission
         </a>
         <!-- Dropdown-Menü Elemente -->
         <div class="dropdown-menu" aria-labelledby="missionDropdown">
-          <a class="dropdown-item" href="#">Superhelden auswählen</a>
+          <a class="dropdown-item" href="../../superhelden_auswahl/superhelden_auswahl.php">Superhelden auswählen</a>
           <a class="dropdown-item" href="#">Code-Eingabe</a>
         </div>
       </li>
       
       <!-- Dropdown-Menü Retterwissen mit fünf Unterpunkten -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white" href="#" id="retterwissenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="retterwissenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Retterwissen
         </a>
         <!-- Dropdown-Menü Elemente -->
