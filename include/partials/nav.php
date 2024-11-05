@@ -72,7 +72,7 @@
     <ul class="navbar-nav">
       <!-- Einzelner Menüpunkt (Intro) -->
       <li class="nav-item">
-        <a class="nav-link" href="#">Intro</a>
+        <a class="nav-link" href="../../index.php">Intro</a>
       </li>
       
       <!-- Dropdown-Menü Mission mit zwei Unterpunkten -->
@@ -82,23 +82,24 @@
         </a>
         <!-- Dropdown-Menü Elemente -->
         <div class="dropdown-menu" aria-labelledby="missionDropdown">
-          <a class="dropdown-item" href="../../superhelden_auswahl/superhelden_auswahl.php">Superhelden auswählen</a>
-          <a class="dropdown-item" href="#">Code-Eingabe</a>
+          <a class="dropdown-item" href="../../mission/missionsstart.php">Missionsstart</a>
+          <a class="dropdown-item" href="../../mission/superhelden.php">Die Superhelden</a>
+          <a class="dropdown-item" href="../../mission/codeeingabe.php">Code-Eingabe</a>
+          <a class="dropdown-item" href="../../mission/weltkarten.php">Weltkarten</a>
         </div>
       </li>
       
-      <!-- Dropdown-Menü Retterwissen mit fünf Unterpunkten -->
+      <!-- Dropdown-Menü Retterwissen mit drei Unterpunkten -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="retterwissenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Retterwissen
         </a>
         <!-- Dropdown-Menü Elemente -->
         <div class="dropdown-menu" aria-labelledby="retterwissenDropdown">
-          <a class="dropdown-item" href="#">Thema 1</a>
-          <a class="dropdown-item" href="#">Thema 2</a>
-          <a class="dropdown-item" href="#">Thema 3</a>
-          <a class="dropdown-item" href="#">Thema 4</a>
-          <a class="dropdown-item" href="#">Thema 5</a>
+          <a class="dropdown-item" href="#">Zukunftsenergien</a>
+          <a class="dropdown-item" href="#">Klimaschäden</a>
+          <a class="dropdown-item" href="#">Innovationen</a>
+          
         </div>
       </li>
     </ul>
