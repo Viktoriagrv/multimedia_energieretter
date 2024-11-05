@@ -7,7 +7,7 @@
     padding: 10px 20px;       /* Innenabstand für den Footer */
     margin-top: auto;         /* Den Footer an den unteren Rand schieben */
     width: 100%;              /* Breite auf 100% setzen */
-    text-align: right;         /* Text linksbündig ausrichten */
+    text-align: left;         /* Text linksbündig ausrichten */
   }
 
   /* Link-Styling im Footer */
@@ -23,9 +23,9 @@
 </style>
 
 <!-- Footer-Container -->
-<footer class="footer-custom">
+<footer class='footer-custom'>
   <div>
-    <a href="#" class="footer-link">Impressum</a> <!-- Impressum-Link -->
+    <a href="#" class='footer-link'>Impressum</a> <!-- Impressum-Link -->
   </div>
 </footer>
 
