@@ -19,23 +19,27 @@ main {
 }
 
 /* Footer-Stil */
+
 .footer-custom {
-    background-color: #285238;
-    color: #E8A723;
-    padding: 10px 20px;
-    margin-top: auto;
-    width: 100%;
-    text-align: left;
-}
+    background-color: #285238; /* Gleiche Hintergrundfarbe wie die Navbar */
+    color: #E8A723;            /* Textfarbe für den Footer */
+    padding: 10px 20px;       /* Innenabstand für den Footer */
+    margin-top: auto;         /* Den Footer an den unteren Rand schieben */
+    width: 100%;              /* Breite auf 100% setzen */
+    text-align: left;         /* Text linksbündig ausrichten */
+  }
 
-.footer-link {
-    color: #E8A723;
-    text-decoration: none;
-}
+ /* Link-Styling im Footer */
+ .footer-link {
+    color: #E8A723;            /* Textfarbe für Links im Footer */
+    text-decoration: none;     /* Unterstreichung entfernen */
+  }
 
-.footer-link:hover {
-    text-decoration: underline;
-}
+  /* Hover-Effekt für Links im Footer */
+  .footer-link:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+  }
+
 
 /* Text-Container */
 .scrolling-text {
@@ -50,7 +54,9 @@ main {
 
 /* Animation von unten nach oben */
 @keyframes scroll-up {
-    0% {
+                        0%} 
+    
+    {
         transform: translate(-50%, 100%); /* Start außerhalb des Bildschirms */
     }
     100% {
