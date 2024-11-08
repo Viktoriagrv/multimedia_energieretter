@@ -31,17 +31,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="include/js/intro.js"></script>
 
-    <script>
-        // Verzögert den Button, der unter dem Brief erscheint
-        setTimeout(function() {
-            document.getElementById("button-container").style.display = "block";
-        }, 4000);  // Button erscheint nach 4 Sekunden
-
-        // Event-Listener für den Button
-        document.getElementById("read-button").addEventListener("click", function() {
-            alert("Du hast den Brief geöffnet!");
-            // Weitere Aktionen, z.B. den Brief "öffnen" oder anzeigen
-        });
-    </script>
+   
 </body>
 </html>
