@@ -1,8 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const actionButton = document.getElementById('action-button');
-
-    // Button anzeigen, nachdem die Animation abgeschlossen ist (20 Sekunden)
-    setTimeout(function() {
-        actionButton.style.display = 'block';
-    }, 20000);
-});
+// Zeigt den Text und den Link nach 4 Sekunden
+setTimeout(function() {
+    // Link wird nach 4 Sekunden angezeigt und bleibt sichtbar
+    document.getElementById("button-container").style.display = "block"; 
+}, 4000);  // Link erscheint nach 4 Sekunden

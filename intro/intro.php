@@ -39,10 +39,9 @@
             </div>
 
             <!-- Der Button unter dem Brief (versteckt zu Beginn) -->
-         <div id="button-container">
-    <a href="intro.php" class="btn btn-warning">Willst du ihn lesen?</a>
-</div>
-
+            <div id="button-container" style="display: none;">
+                <button type="button" class="btn btn-warning" id="read-button">Willst du ihn lesen?</button>
+            </div>
         </div><!-- /container -->
     </main>
 
@@ -59,7 +58,10 @@
             document.getElementById("button-container").style.display = "block";
         }, 4000);  // Button erscheint nach 4 Sekunden
 
-  
+        // Event-Listener für den Button
+        document.getElementById("read-button").addEventListener("click", function() {
+            alert("Du hast den Brief geöffnet!");
+            // Weitere Aktionen, z.B. den Brief "öffnen" oder anzeigen
         });
     </script>
 </body>
