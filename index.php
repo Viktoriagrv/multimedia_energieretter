@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="include/css/styles.scss">
+    <link rel="stylesheet" href="include/css/styles.css">
 </head>
 
 <body>
@@ -15,9 +15,14 @@
     <main>
         <div class="container">
             <!-- Text über dem Brief -->
-            <div class="text-warning" id="text-above-brief">
-                Huch, du hast einen Brief aus der Zukunft bekommen.
-            </div>
+<div class="text-warning" id="text-above-brief-1">
+    Huch, du hast einen geheimen Brief aus der Zukunft bekommen.
+</div>
+<div class="text-warning" id="text-above-brief-2">
+    Was wird wohl drinstehen?
+</div>
+
+</div>
 
             <!-- Dein animierter Brief -->
             <div class="letter-image">
@@ -40,7 +45,7 @@
 
             <!-- Der Button unter dem Brief (versteckt zu Beginn) -->
          <div id="button-container">
-    <a href="intro.php" class="btn btn-warning">Willst du ihn lesen?</a>
+    <a href="intro/intro.php" class="btn btn-warning">Brief lesen.</a>
 </div>
 
         </div><!-- /container -->

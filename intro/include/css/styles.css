@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Flexibles Layout für den gesamten Body */
 @import url(https://fonts.googleapis.com/css?family=Dosis:200,600);
 
@@ -15,7 +14,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/weltall/galxie_illustration.jpg");
+  background-image: url(../../../images/weltall/galaxie_papier.png); /* Dein Hintergrundbild */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,9 +23,9 @@ main {
 }
 
 /* Text über dem Brief mit Animation */
-#text-above-brief-1,
-#text-above-brief-2 {
+#text-above-brief {
   position: absolute;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
@@ -35,21 +34,11 @@ main {
   text-align: center;
   opacity: 0;
   animation: fadeIn 2s ease-out forwards; /* Beide Texte erscheinen gleichzeitig */
-  max-width: 80%; /* Verhindert, dass der Text zu breit wird */
+  max-width: 80%;
   line-height: 1.4;
   background-color: black; /* Schwarzer Hintergrund */
-  padding: 10px; /* Etwas Abstand zum Rand */
-  border-radius: 5px; /* Abgerundete Ecken */
-}
-
-/* Position des ersten Textes */
-#text-above-brief-1 {
-  top: 20%; /* Position weiter oben */
-}
-
-/* Position des zweiten Textes */
-#text-above-brief-2 {
-  top: 30%; /* Position weiter unten */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /* Fade-In-Animation */
@@ -62,26 +51,7 @@ main {
   }
 }
 
-/* Button Container */
-#button-container {
-  position: absolute;
-  top: 70%; /* Button weiter nach unten verschieben */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  display: none; /* Start mit unsichtbarem Button */
-}
-
-#button-container button {
-  font-size: 18px;
-  padding: 10px 20px;
-  background-color: #e95f55;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
-
-/* Der Brief Animation bleibt gleich wie im ursprünglichen CSS */
+/* Animierter Brief */
 .letter-image {
   position: absolute;
   top: 50%;
@@ -179,7 +149,7 @@ main {
   margin-top: 10px;
   margin-left: 5px;
   height: 10px;
-  width: 20%;
+  width: 100%;
   background: #cb5a5e;
 }
 
@@ -191,6 +161,15 @@ main {
   width: 30px;
   background: #cb5a5e;
   opacity: 0.3;
+}
+
+/* Text im Brief */
+.animated-mail .letter .letter-context p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin: 10px 0;
 }
 
 .shadow {
@@ -205,43 +184,5 @@ main {
   background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
 }
 
-.letter-image:hover .animated-mail {
-  transform: translateY(50px);
-}
-
-.letter-image:hover .animated-mail .top-fold {
-  transform: rotateX(180deg);
-  z-index: 0;
-}
-
-.letter-image:hover .animated-mail .letter {
-  height: 180px;
-}
-
-.letter-image:hover .shadow {
-  width: 250px;
-}
-
-/* Fixed footer at the bottom */
-.footer-custom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #285238;
-  color: #E8A723;
-  padding: 10px 20px;
-  text-align: left;
-}
-
-/* Link styling in the footer */
-.footer-link {
-  color: #E8A723;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
+/
 

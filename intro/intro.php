@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="include/css/styles.scss">
+    <link rel="stylesheet" href="include/css/styles.css">
 </head>
 
 <body>
@@ -14,28 +14,7 @@
 
     <main>
         <div class="container">
-            <!-- Text über dem Brief -->
-            <div class="text-warning" id="text-above-brief">
-                Huch, du hast einen Brief aus der Zukunft bekommen.
-            </div>
-
-            <!-- Dein animierter Brief -->
-            <div class="letter-image">
-                <div class="animated-mail">
-                    <div class="back-fold"></div>
-                    <div class="letter">
-                        <div class="letter-border"></div>
-                        <div class="letter-title"></div>
-                        <div class="letter-context"></div>
-                        <div class="letter-stamp">
-                            <div class="letter-stamp-inner"></div>
-                        </div>
-                    </div>
-                    <div class="top-fold"></div>
-                    <div class="body"></div>
-                    <div class="left-fold"></div>
-                </div>
-                <div class="shadow"></div>
+            
             </div>
 
             <!-- Der Button unter dem Brief (versteckt zu Beginn) -->
