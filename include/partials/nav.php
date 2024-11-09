@@ -1,61 +1,13 @@
 <!-- nav.php -->
 
 <!-- Bootstrap CSS für Styling und Komponenten einbinden -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <!-- Google Fonts für die Bangers-Schriftart -->
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
-<!-- Benutzerdefiniertes CSS für die Navbar und Schriftarten -->
-<style>
-  /* Navbar-Hintergrundfarbe Grün */
-  .navbar-custom {
-    background-color: #285238;
-  }
-
-  /* Link-Styling für die linke Seite der Navbar */
-  .navbar-brand {
-    font-family: 'Bangers', sans-serif; /* Schriftart für die Marke */
-    color: #E8A723 !important;          /* Farbe für die Marke */
-  }
-
-  /* Hintergrundfarbe für Dropdown-Menüs */
-  .dropdown-menu {
-    background-color: #285238;
-  }
-
-  /* Dropdown-Menü-Links Styling */
-  .dropdown-item {
-    color: #E8A723;
-  }
-
-  /* Hover-Effekt für Dropdown-Links */
-  .dropdown-item:hover {
-    background-color: #E8A723;
-    color: #285238;
-  }
-
-  /* Rahmen um die Navigationselemente */
-  .nav-link {
-    border: 2px solid white; /* Weißer Rahmen */
-    border-radius: 5px; /* Abgerundete Ecken */
-    padding: 5px 15px; /* Innenabstand */
-    margin-right: 20px; /* Abstand zwischen den Links */
-    transition: border-color 0.3s, color 0.3s; /* Sanfter Übergang für die Rahmenfarbe und Textfarbe */
-    color: white; /* Setze die Standardfarbe für die Links auf Weiß */
-  }
-
-  /* Rahmenfarbe und Textfarbe bei Hover */
-  .nav-link:hover {
-    border-color: #e8a723; /* Gelbe Rahmenfarbe bei Hover */
-    color: white; /* Textfarbe bleibt weiß */
-  }
-
-  /* Übersteuere die text-white Klasse */
-  .nav-link.text-white {
-    color: white !important; /* Sicherstellen, dass die Links weiß sind */
-  }
-</style>
+<!-- Einbinden der CSS-Datei -->
+    <link rel="stylesheet" href="../include/css/styles.scss">
 
 <!-- Navbar-Container -->
 <nav class="navbar navbar-expand-lg navbar-custom">
