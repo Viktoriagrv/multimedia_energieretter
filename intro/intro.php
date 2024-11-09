@@ -15,13 +15,8 @@
     <main>
         <div class="container">
             
-            </div>
-
-            <!-- Der Button unter dem Brief (versteckt zu Beginn) -->
-            <div id="button-container" style="display: none;">
-                <button type="button" class="btn btn-warning" id="read-button">Willst du ihn lesen?</button>
-            </div>
-        </div><!-- /container -->
+           
+       </div>
     </main>
 
     <?php include 'include/partials/footer.php'; ?>

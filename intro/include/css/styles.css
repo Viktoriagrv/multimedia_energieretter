@@ -14,7 +14,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../../../images/weltall/galaxie_papier.png); /* Dein Hintergrundbild */
+  background-image: url(../../../images/weltall/galaxie_papier.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,25 +30,21 @@ main {
   transform: translateX(-50%);
   font-size: 24px;
   font-weight: bold;
-  color: yellow; /* Gelbe Schriftfarbe */
+  color: yellow;
   text-align: center;
   opacity: 0;
-  animation: fadeIn 2s ease-out forwards; /* Beide Texte erscheinen gleichzeitig */
+  animation: fadeIn 2s ease-out forwards;
   max-width: 80%;
   line-height: 1.4;
-  background-color: black; /* Schwarzer Hintergrund */
+  background-color: black;
   padding: 10px;
   border-radius: 5px;
 }
 
 /* Fade-In-Animation */
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* Animierter Brief */
@@ -66,7 +62,13 @@ main {
   position: absolute;
   height: 150px;
   width: 200px;
-  transition: .4s;
+  /* Verzögerung, damit der Brief später hochfährt */
+  transition: transform 3s ease-out 1.5s;
+  transform: translateY(20px); /* Startet etwas tiefer */
+}
+
+.animated-mail:hover {
+  transform: translateY(-20px); /* Hochfahren bei Hover */
 }
 
 .animated-mail .body {
@@ -80,6 +82,7 @@ main {
   z-index: 2;
 }
 
+/* Öffnet sich sofort */
 .animated-mail .top-fold {
   position: absolute;
   top: 50px;
@@ -88,9 +91,13 @@ main {
   border-style: solid;
   border-width: 50px 100px 0 100px;
   transform-origin: 50% 0%;
-  transition: transform .4s .4s, z-index .2s .4s;
+  transition: transform 0.1s ease-out;
   border-color: #cf4a43 transparent transparent transparent;
   z-index: 2;
+}
+
+.animated-mail:hover .top-fold {
+  transform: rotateX(-180deg); /* Öffnet sich sofort */
 }
 
 .animated-mail .back-fold {
@@ -122,7 +129,7 @@ main {
   background: white;
   z-index: 1;
   overflow: hidden;
-  transition: .4s .2s;
+  transition: 0.8s ease-out 0.5s; /* Verzögert das Öffnen */
 }
 
 .animated-mail .letter .letter-border {
@@ -178,11 +185,10 @@ main {
   left: 50%;
   width: 400px;
   height: 30px;
-  transition: .4s;
+  transition: 1s;
   transform: translateX(-50%);
   border-radius: 100%;
   background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
 }
 
-/
 
