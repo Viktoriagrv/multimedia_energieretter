@@ -10,238 +10,294 @@ html, body {
 }
 
 /* Hauptinhalt zentrieren */
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../../images/weltall/galxie_illustration.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  position: relative;
-}
+		main {
+		  flex: 1;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  background-image: url("../../images/weltall/galxie_illustration.jpg");
+		  background-size: cover;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  overflow: hidden;
+		  position: relative;
+		}
 
-/* Text über dem Brief mit Animation */
-#text-above-brief-1,
-#text-above-brief-2 {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  font-weight: bold;
-  color: yellow; /* Gelbe Schriftfarbe */
-  text-align: center;
-  opacity: 0;
-  animation: fadeIn 2s ease-out forwards; /* Beide Texte erscheinen gleichzeitig */
-  max-width: 80%; /* Verhindert, dass der Text zu breit wird */
-  line-height: 1.4;
-  background-color: black; /* Schwarzer Hintergrund */
-  padding: 10px; /* Etwas Abstand zum Rand */
-  border-radius: 5px; /* Abgerundete Ecken */
-}
+	/* Text über dem Brief mit Animation */
+			#text-above-brief-1,
+			#text-above-brief-2 {
+			  position: absolute;
+			  left: 50%;
+			  transform: translateX(-50%);
+			  font-size: 24px;
+			  font-weight: bold;
+			  color: yellow; 								/* Gelbe Schriftfarbe */
+			  text-align: center;
+			  opacity: 0;
+			  animation: fadeIn 2s ease-out forwards; 		/* Beide Texte erscheinen gleichzeitig */
+			  max-width: 80%; 								/* Verhindert, dass der Text zu breit wird */
+			  line-height: 1.4;
+			  background-color: black; 						/* Schwarzer Hintergrund */
+			  padding: 10px; 								/* Etwas Abstand zum Rand */
+			  border-radius: 5px; 							/* Abgerundete Ecken */
+			}
 
-/* Position des ersten Textes */
-#text-above-brief-1 {
-  top: 20%; /* Position weiter oben */
-}
+	/* Position des ersten Textes */
+			#text-above-brief-1 {
+		  top: 20%; 										/* Position weiter oben */
+		}
 
-/* Position des zweiten Textes */
-#text-above-brief-2 {
-  top: 30%; /* Position weiter unten */
-}
+	/* Position des zweiten Textes */
+			#text-above-brief-2 {
+			  top: 30%; /* Position weiter unten */
+			}
 
-/* Fade-In-Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+	/* Fade-In-Animation */
+			@keyframes fadeIn {
+			  0% {
+				opacity: 0;
+			  }
+			  100% {
+				  
+				opacity: 1;
+			
+					}
+		}
 
-/* Button Container */
-#button-container {
-  position: absolute;
-  top: 70%; /* Button weiter nach unten verschieben */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  display: none; /* Start mit unsichtbarem Button */
-}
+	/* Button Container */
+			#button-container {
+			  position: absolute;
+			  top: 70%; 									/* Button weiter nach unten verschieben */
+			  left: 50%;
+			  transform: translateX(-50%);
+			  text-align: center;
+			  display: none; 								/* Start mit unsichtbarem Button */
+			}
 
-#button-container button {
-  font-size: 18px;
-  padding: 10px 20px;
-  background-color: #e95f55;
-  color: white;
-  border: none;
-  border-radius: 5px;
-}
+			#button-container button {
+			  font-size: 18px;
+			  padding: 10px 20px;
+			  background-color: #e95f55;
+			  color: white;
+			  border: none;
+			  border-radius: 5px;
+			}
 
-/* Der Brief Animation bleibt gleich wie im ursprünglichen CSS */
-.letter-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-}
+	/* Der Brief Animation bleibt gleich wie im ursprünglichen CSS */
 
-.animated-mail {
-  position: absolute;
-  height: 150px;
-  width: 200px;
-  transition: .4s;
-}
+		.letter-image {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  width: 200px;
+		  height: 200px;
+		  transform: translate(-50%, -50%);
+		  cursor: pointer;
+		}
 
-.animated-mail .body {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 100px 200px;
-  border-color: transparent transparent #e95f55 transparent;
-  z-index: 2;
-}
+		.animated-mail {
+		  position: absolute;
+		  height: 150px;
+		  width: 200px;
+		  transition: .4s;
+		}
 
-.animated-mail .top-fold {
-  position: absolute;
-  top: 50px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 100px 0 100px;
-  transform-origin: 50% 0%;
-  transition: transform .4s .4s, z-index .2s .4s;
-  border-color: #cf4a43 transparent transparent transparent;
-  z-index: 2;
-}
+		.animated-mail .body {
+		  position: absolute;
+		  bottom: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 0 0 100px 200px;
+		  border-color: transparent transparent #e95f55 transparent;
+		  z-index: 2;
+		}
 
-.animated-mail .back-fold {
-  position: absolute;
-  bottom: 0;
-  width: 200px;
-  height: 100px;
-  background: #cf4a43;
-  z-index: 0;
-}
+		.animated-mail .top-fold {
+		  position: absolute;
+		  top: 50px;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 50px 100px 0 100px;
+		  transform-origin: 50% 0%;
+		  transition: transform .4s .4s, z-index .2s .4s;
+		  border-color: #cf4a43 transparent transparent transparent;
+		  z-index: 2;
+		}
 
-.animated-mail .left-fold {
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 50px 0 50px 100px;
-  border-color: transparent transparent transparent #e15349;
-  z-index: 2;
-}
+		.animated-mail .back-fold {
+		  position: absolute;
+		  bottom: 0;
+		  width: 200px;
+		  height: 100px;
+		  background: #cf4a43;
+		  z-index: 0;
+		}
 
-.animated-mail .letter {
-  left: 20px;
-  bottom: 0px;
-  position: absolute;
-  width: 160px;
-  height: 60px;
-  background: white;
-  z-index: 1;
-  overflow: hidden;
-  transition: .4s .2s;
-}
+		.animated-mail .left-fold {
+		  position: absolute;
+		  bottom: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-width: 50px 0 50px 100px;
+		  border-color: transparent transparent transparent #e15349;
+		  z-index: 2;
+		}
 
-.animated-mail .letter .letter-border {
-  height: 10px;
-  width: 100%;
-  background: repeating-linear-gradient(
-    -45deg,
-    #cb5a5e,
-    #cb5a5e 8px,
-    transparent 8px,
-    transparent 18px
-  );
-}
+		.animated-mail .letter {
+			  left: 20px;
+			  bottom: 0px;
+			  position: absolute;
+			  width: 160px;
+			  height: 60px;
+			  background: white;
+			  z-index: 1;
+			  overflow: hidden;
+			  transition: .4s .2s;
+			}
 
-.animated-mail .letter .letter-title {
-  margin-top: 10px;
-  margin-left: 5px;
-  height: 10px;
-  width: 40%;
-  background: #cb5a5e;
-}
+		.animated-mail .letter .letter-border {
+			  height: 10px;
+			  width: 100%;
+			  background: repeating-linear-gradient(
+				-45deg,
+				#cb5a5e,
+				#cb5a5e 8px,
+				transparent 8px,
+				transparent 18px
+			  );
+			}
 
-.animated-mail .letter .letter-context {
-  margin-top: 10px;
-  margin-left: 5px;
-  height: 10px;
-  width: 20%;
-  background: #cb5a5e;
-}
+		.animated-mail .letter .letter-title {
+			  margin-top: 10px;
+			  margin-left: 5px;
+			  height: 10px;
+			  width: 40%;
+			  background: #cb5a5e;
+			}
 
-.animated-mail .letter .letter-stamp {
-  margin-top: 30px;
-  margin-left: 120px;
-  border-radius: 100%;
-  height: 30px;
-  width: 30px;
-  background: #cb5a5e;
-  opacity: 0.3;
-}
+		.animated-mail .letter .letter-context {
+			  margin-top: 10px;
+			  margin-left: 5px;
+			  height: 10px;
+			  width: 20%;
+			  background: #cb5a5e;
+			}
 
-.shadow {
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  width: 400px;
-  height: 30px;
-  transition: .4s;
-  transform: translateX(-50%);
-  border-radius: 100%;
-  background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
-}
+		.animated-mail .letter .letter-stamp {
+			  margin-top: 30px;
+			  margin-left: 120px;
+			  border-radius: 100%;
+			  height: 30px;
+			  width: 30px;
+			  background: #cb5a5e;
+			  opacity: 0.3;
+			}
 
-.letter-image:hover .animated-mail {
-  transform: translateY(50px);
-}
+		.shadow {
+			  position: absolute;
+			  top: 200px;
+			  left: 50%;
+			  width: 400px;
+			  height: 30px;
+			  transition: .4s;
+			  transform: translateX(-50%);
+			  border-radius: 100%;
+			  background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+			}
 
-.letter-image:hover .animated-mail .top-fold {
-  transform: rotateX(180deg);
-  z-index: 0;
-}
+		.letter-image:hover .animated-mail {
+			  transform: translateY(50px);
+			}
 
-.letter-image:hover .animated-mail .letter {
-  height: 180px;
-}
+		.letter-image:hover .animated-mail .top-fold {
+			  transform: rotateX(180deg);
+			  z-index: 0;
+			}
 
-.letter-image:hover .shadow {
-  width: 250px;
-}
+		.letter-image:hover .animated-mail .letter {
+			  height: 180px;
+			}
 
-/* Fixed footer at the bottom */
-.footer-custom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #285238;
-  color: #E8A723;
-  padding: 10px 20px;
-  text-align: left;
-}
+		.letter-image:hover .shadow {
+			  width: 250px;
+			}
 
-/* Link styling in the footer */
-.footer-link {
-  color: #E8A723;
-  text-decoration: none;
-}
+/*Gestaltung Navigation*/
 
-.footer-link:hover {
-  text-decoration: underline;
-}
+	  /* Navbar-Hintergrundfarbe Grün */
+		.navbar-custom {
+			background-color: #285238;
+	  		}
+
+	  /* Link-Styling für die linke Seite der Navbar */
+		.navbar-brand {
+			font-family: 'Bangers', sans-serif; 				/* Schriftart für die Marke */
+			color: #E8A723 !important;          				/* Farbe für die Marke */
+	  	}
+
+	  /* Hintergrundfarbe für Dropdown-Menüs */
+		.dropdown-menu {
+			background-color: #285238;
+	  	}
+
+	  /* Dropdown-Menü-Links Styling */
+		.dropdown-item {
+			color: #E8A723;
+	  	}
+
+	  /* Hover-Effekt für Dropdown-Links */
+		.dropdown-item:hover {
+			background-color: #E8A723;
+			color: #285238;
+	 	}
+
+	  /* Rahmen um die Navigationselemente */
+		.nav-link {
+			border: 2px solid white; 						/* Weißer Rahmen */
+			border-radius: 5px; 							/* Abgerundete Ecken */
+			padding: 5px 15px; 								/* Innenabstand */
+			margin-right: 20px; 							/* Abstand zwischen den Links */
+			transition: border-color 0.3s, color 0.3s; 		/* Sanfter Übergang für die Rahmenfarbe und Textfarbe */
+			color: white; 									/* Setze die Standardfarbe für die Links auf Weiß */
+		  }
+
+	  /* Rahmenfarbe und Textfarbe bei Hover */
+		.nav-link:hover {
+			border-color: #e8a723; 							/* Gelbe Rahmenfarbe bei Hover */
+			color: white; 									/* Textfarbe bleibt weiß */
+		  }
+
+	  /* Übersteuere die text-white Klasse */
+		.nav-link.text-white {
+			color: white !important; 						/* Sicherstellen, dass die Links weiß sind */
+		  }
+
+
+/* Gestaltung Footer */
+
+	/* Fixed footer at the bottom */
+		.footer-custom {
+		  position: fixed;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  background-color: #285238;
+		  color: #E8A723;
+		  padding: 10px 20px;
+		  text-align: left;
+		}
+
+	/* Link styling in the footer */
+		.footer-link {
+		  color: #E8A723;
+		  text-decoration: none;
+		}
+
+		.footer-link:hover {
+		  text-decoration: underline;
+		}
 
 
