@@ -53,7 +53,7 @@
           	<a class="dropdown-item" href="../../retterwissen/innovationen.php">Innovationen</a>
           </div>
 		  
-       		 <!--<ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
+       		 <ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
 					<li><a class="dropdown-menu" href="#">Zukunftsenergien</a>
 						<ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
 							<li><a class="dropdown-item" href="#">Solarenergie</a></li>
@@ -67,7 +67,7 @@
 							<li><a class="dropdown-item" href="#">Innovationen</a></li>
 						</ul>
 					</li>
-			</ul> -->
+			</ul> 
 		
 		</li>
     </ul>
