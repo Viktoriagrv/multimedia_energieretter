@@ -1,6 +1,7 @@
 <!-- Footer CSS für Styling -->
 <header>
-<link rel="stylesheet" href="../include/css/styles.css"> <!-- Pfad zur CSS-Datei -->
+	<link rel="stylesheet" href="../include/css/styles.css"> <!-- Pfad zur CSS-Datei -->
+	
 </header>
 
 <!-- Footer-Container -->
