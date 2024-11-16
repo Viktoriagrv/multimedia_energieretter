@@ -1,8 +1,5 @@
 <!-- nav.php -->
 
-<!-- Bootstrap CSS für Styling und Komponenten einbinden -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
 <!-- Google Fonts für die Bangers-Schriftart -->
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
@@ -27,7 +24,7 @@
         <a class="nav-link" href="../../index.php">Intro</a>
       </li>
       
-      <!-- Dropdown-Menü Mission mit zwei Unterpunkten -->
+      <!-- Dropdown-Menü Mission mit vier Unterpunkten -->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="missionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Mission
@@ -52,25 +49,10 @@
           	<a class="dropdown-item" href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
           	<a class="dropdown-item" href="../../retterwissen/innovationen.php">Innovationen</a>
           </div>
-		  
-       		 <ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
-					<li><a class="dropdown-menu" href="#">Zukunftsenergien</a>
-						<ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
-							<li><a class="dropdown-item" href="#">Solarenergie</a></li>
-							<li><a class="dropdown-item" href="#">Windenergie</a></li>
-							<li><a class="dropdown-item" href="#">Wasserkraft</a></li>
-						</ul>
-					</li>
-					<li><a class="dropdown-item" href="#">Klimaschäden</a></li>
-					<li><a class="dropdown-menu-left" href="#">Zukunftsenergien</a>
-						<ul class="dropdown-menu" aria-labelledby="retterwissenDropdown">
-							<li><a class="dropdown-item" href="#">Innovationen</a></li>
-						</ul>
-					</li>
-			</ul> 
-		
+		       	 	
 		</li>
     </ul>
   </div>
 </nav>
+
 

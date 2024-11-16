@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="include/css/styles.css">
 	
+	
 	<style type="text/css" media="screen">
 		
 		.main {
@@ -47,7 +48,7 @@
 		#START {
 			top: center;
 			left:center;
-			width:600px;
+			width:950px;
 			height:auto;
 			position:absolute;
 			background-color:transparent;
@@ -102,16 +103,16 @@
 
 
 	<?php include 'include/partials/nav.php'; ?>
-    
+    <?php include 'include/partials/footer.php'; ?>
 	
 	<main>
 		
 			
-			<div id='START' class="STARTBUTTON" onmouseover="scrollDiv('scrolltext', -1)" onmouseout="clearTimeout(timer1)"> Die Welt ist <br> in Gefahr! 
+			<div id='START' class="STARTBUTTON" onmouseover="scrollDiv('scrolltext', -1)" onmouseout="clearTimeout(timer1)"> Die Welt ist <br/> in Gefahr! 
 
 
 			<div id="scrolltext"> 
-				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				<p>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam 
 				</p>
 			</div>
 	
