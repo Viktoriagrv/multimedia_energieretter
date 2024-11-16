@@ -4,33 +4,61 @@
     <meta charset="utf-8">
     <title>Die Superhelden</title>
 
-    <!-- Bootstrap CSS für Styling und Komponenten einbinden -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">		<!-- Einbinden der Google Fonts -->   
+    <link rel="stylesheet" href="../include/css/styles.css"> 											<!-- Einbinden der CSS-Datei -->
 
-    <!-- Einbinden der Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-
-    <!-- Einbinden der CSS-Datei -->
-    <link rel="stylesheet" href="../include/css/styles.scss"> <!-- Pfad zu deiner CSS-Datei -->
-
-    <!-- Einbinden der Navigationsleiste -->
-    <?php include '../include/partials/nav.php'; ?>
+    <style>
+		.Schriftzug{
+			top: center;
+			left: 0px;
+			font-family: "bangers";
+			font-size: 100px;
+			color: #e8a723;
+			line-height: 1.1;
+			}
+		
+		
+	</style>
+  
+	<!-- Einbinden der Navigationsleiste -->
+	<?php include '../include/partials/nav.php'; ?>
+	<!-- Einbinden des Footers -->
+    <?php include '../include/partials/footer.php'; ?>
+	
 </head>
 
 <body>
-    <main>
-        
+	
+	
+    
+	<main>
+		
+		<div class= Schriftzug>
+		WÄHLE DEINEN <br/> SUPERHELDEN
+		</div>
+    	
+		<div>
+			<div>
+				<img src=../images/BadGirl.png alt="Batgirl">
+				<img src=../images/Prinz.png alt="Prinz">
+				<img src=../images/Prinzessin.png alt="Prinzessin">
+			</div>
+			<div>
+				<img src=../images/AquaBoy.png alt="Blauer Superheld">
+				<img src=../images/Biest.png alt="Biest">
+				<img src=../images/BadBoy.png alt="BadBoy">
+			</div>
+		</div>
+		
     </main>
 
-    <!-- Einbinden des Footers -->
-    <?php include '../include/partials/footer.php'; ?>
-
-    <!-- Bootstrap JS und Abhängigkeiten für Dropdown und Toggler -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <!-- Einbinden der externen JavaScript-Datei -->
-    <script src="../include/js/intro.js"></script>
+
+    
+	
+    
+   
 </body>
 </html>
