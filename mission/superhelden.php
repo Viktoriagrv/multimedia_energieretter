@@ -12,128 +12,146 @@
     <style>
 		
 		.Schriftzug{
-			
-			left: 10px;
+			top: 300px;
+			left: 50px;
 			font-family: "bangers";
-			font-size: 100px;
+			font-size: 80px;
 			color: #e8a723;
 			line-height: 1.1;
-			top: 50px;
 			}
 		
+		.BILD{
+			height: 200px;
+			width: auto;
+			}
 		
+		.BILDINFOBOX{
+			height: 200px;
+			width: auto;
+			}
 		
 		.BADGIRL {
 			position: absolute;
-			top: 10px;
-			left: 200px;
-			height: 30px;
-		}
+			top: 50px;
+			left: 500px;
+			}
 		
 		.PRINZ {
 			position: absolute;
-			top: 10px;
-			left: 500px;
-		}
+			top: 50px;
+			left: 750px;
+			}
 		
 		.PRINZESSIN {
 			position: absolute;
-			top: 10px;
-			left: 800px;
-		}
+			top: 50px;
+			left: 1000px;
+			}
 		
 		.AQUABOY {
 			position: absolute;
-			top: 40px;
-			left: 200px;
-		}
+			top: 300px;
+			left: 500px;
+			}
 		
 		.BIEST {
 			position: absolute;
-			top: 40px;
-			left: 500px;
-		}
+			top: 300px;
+			left: 750px;
+			}
 		
 		.BADBOY {
 			position: absolute;
-			top: 40px;
-			left: 800px;
-		}
+			top: 300px;
+			left: 1000px;
+			}
 		
 		.INFOBADGIRL {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
+			top: 50px;
 			left: 400px;
+			height:300px;
+			width: 600px;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		
 		.INFOPRINZ {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
-			left: 100px;
-			border-radius: 30px 30px 0 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		
 		.INFOPRINZESSIN {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
-			left: 100px;
-			border-radius: 30px 30px 0 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		
 		.INFOAQUABOY {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
-			left: 100px;
-			border-radius: 30px 30px 0 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		
 		.INFOBIEST {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
-			left: 100px;
-			border-radius: 30px 30px 0 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		
 		.INFOBADBOY {
 			position: absolute;
 			padding: 30px;
-			top: 100px;
-			left: 100px;
-			border-radius: 30px 30px 0 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
-		}
+			}
 		.SICHTBAR {
 			visibility: visible;
-		}
+			}
 		
 	</style>
   
@@ -143,7 +161,8 @@
 </head>
 
 <body>
-		<main>
+	
+	<main>
 			
 		<div class= Schriftzug>
 		WÄHLE DEINEN <br/> SUPERHELDEN
@@ -151,66 +170,78 @@
 		
 		<div>
 			<div class="BADGIRL">
-				<img src=../images/BadGirl.png alt="Badgirl">
+				<img class="BILD" src=../images/BadGirl.png alt="Badgirl">
 			</div>
 
 			<div class="PRINZ">
-				<img src=../images/Prinz.png alt="Prinz">
+				<img class="BILD" src=../images/Prinz.png alt="Prinz">
 			</div>
 
 			<div class="PRINZESSIN">
-				<img src=../images/Prinzessin.png alt="Prinzessin">
+				<img class="BILD" src=../images/Prinzessin.png alt="Prinzessin">
 			</div>
 		</div>	
 		
 		<div>
 			<div class="AQUABOY">
-				<img src=../images/AquaBoy.png alt="Blauer Superheld">
+				<img class="BILD" src=../images/AquaBoy.png alt="Blauer Superheld">
 			</div>
 
 			<div class="BIEST">
-				<img src=../images/Biest.png alt="Biest">
+				<img class="BILD" src=../images/Biest.png alt="Biest">
 			</div>
 
 			<div class="BADBOY">
-				<img src=../images/BadBoy.png alt="BadBoy">
+				<img class="BILD" src=../images/BadBoy.png alt="BadBoy">
 			</div>
 		</div>
 	
 		<div class="INFOBADGIRL">
+			<img class="BILDINFOBOX" src=../images/BadGirl.png alt="Badgirl">
+			<button id="buttonBG">&times;</button>
 			BadGirl ist ein böses Mädchen
 			<br><br>
-			<button id="buttonBG">&times;</button>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 
    		<div class="INFOPRINZ">
+			<img class="BILDINFOBOX" src=../images/Prinz.png alt="Prinz">
+			<button id="buttonPR">&times;</button>
 			Der Prinz ist ein Traum!
 			<br><br>
-			<button id="buttonPR">&times;</button>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
 		<div class="INFOPRINZESSIN">
+			<img class="BILDINFOBOX" src=../images/Prinzessin.png alt="Prinzessin">
+			<button id="buttonPRS">&times;</button>
 			Die Prinzessin ist ein Traum!
 			<br><br>
-			<button id="buttonPRS">&times;</button>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
 		<div class="INFOAQUABOY">
-			Die AquaBoy ist cool!
-			<br><br>
+			<img class="BILDINFOBOX" src=../images/AquaBoy.png alt="Blauer Superheld">
 			<button id="buttonAB">&times;</button>
+			Der AquaBoy ist cool!
+			<br><br>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
 		<div class="INFOBIEST">
+			<img class="BILDINFOBOX" src=../images/Biest.png alt="Biest">
+			<button id="buttonB">&times;</button>
 			Biest ist feurig!
 			<br><br>
-			<button id="buttonB">&times;</button>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
 		<div class="INFOBADBOY">
+			<img class="BILDINFOBOX" src=../images/BadBoy.png alt="BadBoy">
+			<button id="buttonBB">&times;</button>
 			BadBoy ist ein böser Junge!
 			<br><br>
-			<button id="buttonBB">&times;</button>
+			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 	
 	</main>
