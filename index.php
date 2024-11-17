@@ -103,7 +103,7 @@
 
 
 	<?php include 'include/partials/nav.php'; ?>
-    <?php include 'include/partials/footer.php'; ?>
+    
 	
 	<main>
 		
@@ -131,5 +131,7 @@
 	</script>
 
 	</main>
+	
+	<?php include 'include/partials/footer.php'; ?>
 </body>
 </html>

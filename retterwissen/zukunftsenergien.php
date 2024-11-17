@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Zukunftsenergien</title>
 
-    <!-- Bootstrap CSS für Styling und Komponenten einbinden -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">

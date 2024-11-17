@@ -87,17 +87,19 @@ html, body {
 		  background-color: #285238;
 		  color: #E8A723;
 		  padding: 10px 20px;
-		  text-align: left;
+		  text-align: right;
 		}
 
 	/* Link styling in the footer */
 		.footer-link {
-		  color: #E8A723;
-		  text-decoration: none;
-		}
+			font-family: "bangers";
+		  	color: #E8A723;
+		  	text-decoration: none;
+			}
 
 		.footer-link:hover {
 		  text-decoration: underline;
 		}
 
 
+		

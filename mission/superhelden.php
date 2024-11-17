@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../include/css/styles.css"> 											<!-- Einbinden der CSS-Datei -->
 
     <style>
+		
 		.Schriftzug{
-			top: center;
+			
 			left: 0px;
 			font-family: "bangers";
 			font-size: 100px;
@@ -20,45 +21,110 @@
 			}
 		
 		
+		
+		.BADGIRL {
+			position: absolute;
+			top: 200px;
+			left: 400px;
+		}
+		
+		.PRINZ {
+			position: absolute;
+			top: 200px;
+			left: 800px;
+		}
+		
+		.INFOBADGIRL {
+			position: absolute;
+			padding: 30px;
+			top: 100px;
+			left: 100px;
+			border-radius: 30px 30px 0 30px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+		}
+		
+		.INFOPRINZ {
+			position: absolute;
+			padding: 30px;
+			top: 100px;
+			left: 100px;
+			border-radius: 30px 30px 0 30px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+		}
+		.SICHTBAR {
+			visibility: visible;
+		}
+		
 	</style>
   
 	<!-- Einbinden der Navigationsleiste -->
 	<?php include '../include/partials/nav.php'; ?>
-	<!-- Einbinden des Footers -->
-    <?php include '../include/partials/footer.php'; ?>
 	
 </head>
 
 <body>
-	
-	
-    
-	<main>
-		
-		<div class= Schriftzug>
-		WÄHLE DEINEN <br/> SUPERHELDEN
+		<main>
+		<div class="BADGIRL">
+			<img src=../images/BadGirl.png alt="Badgirl">
 		</div>
-    	
-		<div>
-			<div>
-				<img src=../images/BadGirl.png alt="Batgirl">
-				<img src=../images/Prinz.png alt="Prinz">
-				<img src=../images/Prinzessin.png alt="Prinzessin">
-			</div>
-			<div>
-				<img src=../images/AquaBoy.png alt="Blauer Superheld">
-				<img src=../images/Biest.png alt="Biest">
-				<img src=../images/BadBoy.png alt="BadBoy">
-			</div>
+			
+		<div class="PRINZ">
+			<img src=../images/Prinz.png alt="Prinz">
 		</div>
+			
+		<div class="INFOBADGIRL">
+			BadGirl ist ein böses Mädchen
+			<br><br>
+			<button id="buttonBG">&times;</button>
+		</div>
+
+   		<div class="INFOPRINZ">
+			Der Prinz ist ein Traum!
+			<br><br>
+			<button id="buttonPR">&times;</button>
+		</div>
+	
+	</main>
+	
+    <script>
 		
-    </main>
+		document.querySelector('.BADGIRL').addEventListener('click',ZeigeBadGirl);
+		document.querySelector('#buttonBG').addEventListener('click',BadGirlAus);
+		
+		document.querySelector('.PRINZ').addEventListener('click',ZeigePrinz);
+		document.querySelector('#buttonPR').addEventListener('click',PrinzAus);
+		
+		
+		function ZeigeBadGirl() {
+			document.querySelector(".INFOBADGIRL").classList.add("SICHTBAR");
+			}
+		
+		function BadGirlAus() {
+			document.querySelector(".INFOBADGIRL").classList.remove("SICHTBAR");
+			}
+		
+		
+		function ZeigePrinz() {
+			document.querySelector(".INFOPRINZ").classList.add("SICHTBAR");
+			}
+		
+		function PrinzAus() {
+			document.querySelector(".INFOPRINZ").classList.remove("SICHTBAR");
+			}
+	
+	</script>
 
     
-
-    
 	
-    
+ <!-- Einbinden des Footers -->
+    <?php include '../include/partials/footer.php'; ?>
+	   
    
 </body>
 </html>
