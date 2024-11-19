@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Die Energieretter</title>
 
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="include/css/styles.css">
 	
@@ -97,11 +97,6 @@
 
 <body>
 
-
-
-
-
-
 	<?php include 'include/partials/nav.php'; ?>
     
 	
@@ -112,7 +107,7 @@
 
 
 			<div id="scrolltext"> 
-				<p>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam 
+				<p>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 				</p>
 			</div>
 	
