@@ -12,8 +12,9 @@
     <style>
 		
 		.Schriftzug{
-			top: 300px;
-			left: 0px;
+			position:absolute;
+			top: 150px;
+			left: 30px;
 			font-family: "bangers";
 			font-size: 80px;
 			color: #e8a723;

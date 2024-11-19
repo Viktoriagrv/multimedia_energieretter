@@ -46,11 +46,11 @@
 
 			
 		#START {
-			top: center;
-			left:center;
 			width:950px;
 			height:auto;
 			position:absolute;
+			top:150px;
+			left: 150px;
 			background-color:transparent;
 			font-family:"bangers";
 			font-size:100px;
@@ -58,40 +58,25 @@
 			opacity:0.96;
 			z-index:1;
 			line-height: 1.2;
+			border: none;
 			}
 
 
 		#scrolltext {
-			top:center;
-			left:center;
+			position:absolute;
 			width:950px;
 			height:400px;
 			position:relative;
 			background-color:transparent;
 			font-family:verdana;
-			font-size:60px;
+			font-size:30px;
 			color:#FFFFFF;
 			text-align: justify;
 			overflow:hidden;
-			z-index:0;
 			}
-		
-		
 			
 		</style>
 
-	<script type="text/javascript">   
-
-		var timer1;
-		var Geschwindigkeit = 30; // Millisekunden
-
-		function scrollDiv(EbenenID, Schrittweite) {
-			var scroll_container = document.getElementById(EbenenID);
-			scroll_container.scrollTop -= Schrittweite;
-			timer1 = setTimeout('scrollDiv("'+EbenenID+'", '+Schrittweite+')', Geschwindigkeit);
-			}
-
-	</script>
 
 </head>
 
@@ -102,26 +87,31 @@
 	
 	<main>
 		
-			
-			<div id='START' class="STARTBUTTON" onmouseover="scrollDiv('scrolltext', -1)" onmouseout="clearTimeout(timer1)"> Die Welt ist <br/> in Gefahr! 
+			<div>
+				<div class="STARTBUTTON"> <button id='START' >Die Welt ist <br/> in Gefahr! </button></div>
 
 
-			<div id="scrolltext"> 
-				<p>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-				</p>
-			</div>
+				<div id="scrolltext"> 
+					<p>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					</p>
+				</div>
 	
 			</div>
 	
-	<script type="text/javascript"> 
+	<script> 
 		
 		document.querySelector('#START').addEventListener('click',TextStarten);
-		
-		function TextStarten(){
-			 alert ('Sushi');
-				}
+		document.querySelector("#START").addEventListener("click",KlasseErgaenzen);
 		
 		
+		function TextStarten() {
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "30");
+			}
+		
+		function KlasseErgaenzen(){
+			document.querySelector(".BOX").classList.add("KLEIN");
+		}
 			
 	</script>
 
