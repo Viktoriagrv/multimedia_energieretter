@@ -10,7 +10,10 @@ html, body {
 }
 
 nav{
+	display: flex;
+	flex-direction: row;
 	height: 8%;
+	padding: 10px;
 }
 /* Hauptinhalt zentrieren */
 		main {
@@ -37,9 +40,21 @@ nav{
 	  /* Link-Styling für die linke Seite der Navbar */
 		.navbar-brand {
 			font-family: 'Bangers', sans-serif; 				/* Schriftart für die Marke */
-			color: #E8A723 !important;          				/* Farbe für die Marke */
-	  	}
+			color: #E8A723 !important;     						/* Farbe für die Marke */
+			font-size: 2rem;
+			justify-content: space-around;
+			gap: 10px;
+	  		}
 
+		.navbar-brand:hover{
+			text-decoration: none;
+			color: white;
+			}
+
+		.menue{
+			justify-content: flex-end;
+			font-size: 2rem;
+			}
 	  /* Hintergrundfarbe für Dropdown-Menüs */
 		.dropdown-menu {
 			background-color: #285238;
@@ -97,12 +112,15 @@ nav{
 	/* Link styling in the footer */
 		.footer-link {
 			font-family: "bangers";
+			font-size: 2rem;
 		  	color: #E8A723;
 		  	text-decoration: none;
+			
 			}
 
 		.footer-link:hover {
-		  text-decoration: underline;
+		  text-decoration: none;
+		 color: white;
 		}
 
 

@@ -102,7 +102,7 @@
 		
 		function TextStarten() {
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "55");
+			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "70");
 			}
 			
 	</script>

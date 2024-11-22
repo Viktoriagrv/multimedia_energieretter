@@ -8,7 +8,7 @@
 <!-- Footer-Container -->
 <footer class='footer-custom'>
   <div>
-    <a href="../../impressum/impressum.php" class='footer-link'>Impressum</a> <!-- Impressum-Link -->
+    <a class='footer-link' href="../../impressum/impressum.php">Impressum</a> <!-- Impressum-Link -->
   </div>
 </footer>
 

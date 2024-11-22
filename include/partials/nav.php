@@ -6,53 +6,15 @@
 <!-- Einbinden der CSS-Datei -->
     <link rel="stylesheet" href="../include/css/styles.css">
 
-<!-- Navbar-Container -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <!-- Link für die linke Seite der Navbar mit Markenname -->
-  <a class="navbar-brand" href="#">Die Energieretter</a>
+<nav class="navbar-custom">
 
-  <!-- Toggler-Button für kleinere Bildschirme (öffnet/schließt das Navbar-Menü) -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<a class="navbar-brand" href="../../index.php">Die Energieretter</a>
+	
+	<div class="menue">
+		<button>Start</button>
+		<button>Mission</button>
+		<button>Retterwissen</button>
+	</div>
 
-  <!-- Navbar-Inhalte, die in den Toggler gekapselt werden -->
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
-      <!-- Einzelner Menüpunkt (Intro) -->
-      <li class="nav-item">
-        <a class="nav-link" href="../../index.php">Intro</a>
-      </li>
-      
-      <!-- Dropdown-Menü Mission mit vier Unterpunkten -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="missionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mission
-        </a>
-        <!-- Dropdown-Menü Elemente -->
-        <div class="dropdown-menu" aria-labelledby="missionDropdown">
-          <a class="dropdown-item" href="../../mission/missionsstart.php">Missionsstart</a>
-          <a class="dropdown-item" href="../../mission/superhelden.php">Die Superhelden</a>
-          <a class="dropdown-item" href="../../mission/codeeingabe.php">Code-Eingabe</a>
-          <a class="dropdown-item" href="../../mission/weltkarten.php">Weltkarten</a>
-        </div>
-      </li>
-      
-      <!-- Dropdown-Menü Retterwissen mit drei Unterpunkten -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="retterwissenDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Retterwissen
-        </a>
-        <!-- Dropdown-Menü Elemente -->
-		  <div class="dropdown-menu" aria-labelledby="missionDropdown">
-          	<a class="dropdown-item" href="../../retterwissen/zukunftsenergien.php">Zukunftenergien</a>
-          	<a class="dropdown-item" href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
-          	<a class="dropdown-item" href="../../retterwissen/innovationen.php">Innovationen</a>
-          </div>
-		       	 	
-		</li>
-    </ul>
-  </div>
 </nav>
-
 
