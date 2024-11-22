@@ -21,6 +21,7 @@ html, body {
 		  background-repeat: no-repeat;
 		  overflow: hidden;
 		  position: relative;
+			z-index: 0;
 		}
 
 	
@@ -88,6 +89,7 @@ html, body {
 		  color: #E8A723;
 		  padding: 10px 20px;
 		  text-align: right;
+			z-index: 4;
 		}
 
 	/* Link styling in the footer */

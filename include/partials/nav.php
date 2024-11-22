@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
 <!-- Einbinden der CSS-Datei -->
-    <link rel="stylesheet" href="../include/css/styles.scss">
+    <link rel="stylesheet" href="../include/css/styles.css">
 
 <!-- Navbar-Container -->
 <nav class="navbar navbar-expand-lg navbar-custom">
