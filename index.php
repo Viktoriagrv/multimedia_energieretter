@@ -10,6 +10,7 @@
 	
 	
 	<style>	
+			
 		button {
 			background-color: transparent;
 			font-family:  "bangers";								
@@ -20,31 +21,28 @@
 			}
 		
 		.STARTBUTTON{
-			
-			top:400px;
-			left: 150px;
-			font-size: 150px;
+			justify-content: center;
 			align-items: center;
+			font-size: 150px;
 			opacity:0.96;
 			text-align: center;
 			line-height: 170px;
 			backround-color: transparent;
 			border: 0;
 			transition: all 1s;
-			
 			}
 		
-		.KLEIN{
+		.KLEIN{			
 			top:50px;
 			left: 150px;
-			font-size: 50px;
+			font-size: 80px;
 			}	
 		
 
 		#scrolltext {
-			top: 350px;
-			left: 150px;
-			width:950px;
+			justify-content: center;
+			align-items:center;
+			width:800px;
 			height:400px;
 			background-color:transparent;
 			font-family:verdana;
@@ -57,11 +55,11 @@
 		
 		.scrolltext{
 			visibility: hidden;
-		}
+			}
 		
 		.ZEIGEN{
 			visibility: visible;
-		}
+			}
 			
 		</style>
 
@@ -80,7 +78,7 @@
 
 
 				<div id="scrolltext"> 
-					<p class="scrolltext">Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					<p class="scrolltext"><br><br>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 					</p>
 				</div>
 	
@@ -99,11 +97,12 @@
 		
 		function TextZeigen(){
 			document.querySelector(".scrolltext").classList.add("ZEIGEN");
+			
 			}
 		
 		function TextStarten() {
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "45", 8000);
+			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "55");
 			}
 			
 	</script>
