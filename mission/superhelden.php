@@ -6,6 +6,173 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../include/css/styles.css">
     <style>
+<<<<<<< HEAD
+		
+		.Schriftzug{
+			position:absolute;
+			top: 150px;
+			left: 30px;
+			font-family: "bangers";
+			font-size: 80px;
+			color: #e8a723;
+			line-height: 1.1;
+			}
+		
+		.BILD{
+			height: 200px;
+			width: auto;
+			}
+		
+		.BILDINFOBOX{
+			height: 200px;
+			width: auto;
+			}
+		
+		.SCARLETSHADE {
+			position: absolute;
+			top: 50px;
+			left: 500px;
+			}
+		
+		.GOLDENKNIGHT {
+			position: absolute;
+			top: 50px;
+			left: 750px;
+			}
+		
+		.GREENBLAZE {
+			position: absolute;
+			top: 50px;
+			left: 1000px;
+			}
+		
+		.THUNDERBOLT {
+			position: absolute;
+			top: 300px;
+			left: 500px;
+			}
+		
+		.CYBERTITAN {
+			position: absolute;
+			top: 300px;
+			left: 750px;
+			}
+		
+		.SONICSHIELD {
+			position: absolute;
+			top: 300px;
+			left: 1000px;
+			}
+		
+		.INFOSCARLETSHADE {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOGOLDENKNIGHT {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOGREENBLAZE {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOTHUNDERBOLT {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOCYBERTITAN {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOSONICSHIELD {
+			position: absolute;
+			padding: 30px;
+			top: 50px;
+			left: 400px;
+			height:300px;
+			width: 600px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			text-align: center;
+			visibility: hidden;
+			}
+		
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+	</style>
+  
+	<!-- Einbinden der Navigationsleiste -->
+	<?php include '../include/partials/nav.php'; ?>
+	
+=======
         .Schriftzug {
             position: absolute;
             top: 150px;
@@ -69,6 +236,7 @@
             background-color: darkred;
         }
     </style>
+>>>>>>> ae2c746990991eeb90e6267963a48ccc10fa9c63
 </head>
 
 <body>
@@ -166,6 +334,88 @@
     </div>
 
     <script>
+<<<<<<< HEAD
+		
+		document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
+		document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
+		
+		document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
+		document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
+		
+		document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
+		document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
+		
+		document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
+		document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
+		
+		document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
+		document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
+		
+		document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
+		document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
+		
+		
+		function ZeigeScarletShade() {
+			document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
+			}
+		
+		function ScarletShadeAus() {
+			document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+			}
+		
+		
+		function ZeigeGoldenKnight() {
+			document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
+			}
+		
+		function GoldenKnightAus() {
+			document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+			}
+		
+		function ZeigeGreenBlaze() {
+			document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
+			}
+		
+		function GreenBlazeAus() {
+			document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+			}
+		
+	
+		function ZeigeThunderBolt() {
+			document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
+			}
+		
+		function ThunderBoltAus() {
+			document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+			}
+		
+		function ZeigeCyberTitan() {
+			document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
+			}
+		
+		function CyberTitanAus() {
+			document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+			}
+		
+		
+		function ZeigeSonicShield() {
+			document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
+			}
+		
+		function SonicShieldAus() {
+			document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
+			}
+		
+		
+	</script>
+
+    
+	
+ <!-- Einbinden des Footers -->
+  <?php include '../include/partials/footer.php'; ?> 
+	   
+   
+=======
         // Show Info Cards when a hero is clicked
         document.querySelector('.SCARLETSHADE').addEventListener('click', function() { document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR"); });
         document.querySelector('#buttonSCS').addEventListener('click', function() { document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR"); });
@@ -185,6 +435,7 @@
         document.querySelector('.SONICSHIELD').addEventListener('click', function() { document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR"); });
         document.querySelector('#buttonSOS').addEventListener('click', function() { document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR"); });
     </script>
+>>>>>>> ae2c746990991eeb90e6267963a48ccc10fa9c63
 </body>
 </html>
 
