@@ -13,19 +13,20 @@
     
     <!-- Hauptmenü -->
     <div class="menu">
-        <a href="../../mission/missionsstart.php">Start</a>
+        <a href="../../mission/missionsstart.php" class="menu-link menu-item">Start</a>
         
-        <div class="dropdown">
-            <button class="dropbtn">Mission</button>
+        <div class="dropdown menu-item">
+            <button class="dropbtn menu-link">Mission</button>
             <div class="dropdown-content">
                 <a href="../../mission/superhelden.php">Die Superhelden</a>
                 <a href="../../mission/missionsstart.php">Missionsstart</a>
                 <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
             </div>
         </div>
+        
         <!-- Dropdown-Menü -->
-        <div class="dropdown">
-            <button class="dropbtn">Retterwissen</button>
+        <div class="dropdown menu-item" style="margin-right: 50px;">
+            <button class="dropbtn menu-link">Retterwissen</button>
             <div class="dropdown-content">
                 <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
                 <a href="../../retterwissen/innovationen.php">Innovationen</a>
@@ -33,7 +34,6 @@
             </div>
         </div>
     </div>
-
 </nav>
 
 <!-- Styles für die Navigation -->
@@ -51,7 +51,7 @@
 .navbar-brand {
     font-family: 'Bangers', cursive;
     font-size: 24px;
-    color: white;
+    color: #FFD700; /* Gelb wie bei Die Energieretter */
     text-decoration: none;
     margin-right: 50px;
 }
@@ -73,14 +73,20 @@
     cursor: pointer;
     font-size: 18px;
     padding: 5px 10px;
-    transition: background-color 0.3s;
     display: inline-block;
 }
 
-.menu a:hover,
-.menu .dropbtn:hover {
-    background-color: #45a049;
-    border-radius: 5px;
+/* Gelbe Umrandung für alle Hauptmenü-Elemente, passend zu "Die Energieretter" */
+.menu-item {
+    border: 2px solid #FFCC00; /* Gelb von Die Energieretter (z.B. #FFCC00) */
+    border-radius: 5px; /* Abgerundete Ecken */
+    padding: 5px 15px; /* Zusätzlicher Innenabstand */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hintergrundfarbe beim Hover */
+.menu-item:hover {
+    background-color: #45a049; /* Helleres Grün */
 }
 
 /* Dropdown Styling */
@@ -122,4 +128,5 @@
     position: relative;
 }
 </style>
+
 
