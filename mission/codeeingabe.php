@@ -16,6 +16,7 @@
     <?php include '../include/partials/nav.php'; ?>
 	
 	<style>
+<<<<<<< HEAD
 		main {
 		  display: flex;
 		  justify-content: center;
@@ -27,6 +28,9 @@
 		  overflow: hidden;
 			z-index: 0;
 		}
+=======
+		
+>>>>>>> f5530ff09b737a1367958c818aa2b68eb433254a
 	</style>
 </head>
 

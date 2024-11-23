@@ -7,7 +7,8 @@
     
    
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">		<!-- Einbinden der Google Fonts -->   
-    <link rel="stylesheet" href="../include/css/styles.css"> 											<!-- Einbinden der CSS-Datei -->
+    <!--<link rel="stylesheet" href="../include/css/styles.css"> -->		
+	<link rel="stylesheet" href="../include/css/styles.css"> 								<!-- Einbinden der CSS-Datei -->
 
     <style>
 		
@@ -31,43 +32,43 @@
 			width: auto;
 			}
 		
-		.BADGIRL {
+		.SCARLETSHADE {
 			position: absolute;
 			top: 50px;
 			left: 500px;
 			}
 		
-		.PRINZ {
+		.GOLDENKNIGHT {
 			position: absolute;
 			top: 50px;
 			left: 750px;
 			}
 		
-		.PRINZESSIN {
+		.GREENBLAZE {
 			position: absolute;
 			top: 50px;
 			left: 1000px;
 			}
 		
-		.AQUABOY {
+		.THUNDERBOLT {
 			position: absolute;
 			top: 300px;
 			left: 500px;
 			}
 		
-		.BIEST {
+		.CYBERTITAN {
 			position: absolute;
 			top: 300px;
 			left: 750px;
 			}
 		
-		.BADBOY {
+		.SONICSHIELD {
 			position: absolute;
 			top: 300px;
 			left: 1000px;
 			}
 		
-		.INFOBADGIRL {
+		.INFOSCARLETSHADE {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -81,7 +82,7 @@
 			visibility: hidden;
 			}
 		
-		.INFOPRINZ {
+		.INFOGOLDENKNIGHT {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -95,7 +96,7 @@
 			visibility: hidden;
 			}
 		
-		.INFOPRINZESSIN {
+		.INFOGREENBLAZE {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -109,7 +110,7 @@
 			visibility: hidden;
 			}
 		
-		.INFOAQUABOY {
+		.INFOTHUNDERBOLT {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -123,7 +124,7 @@
 			visibility: hidden;
 			}
 		
-		.INFOBIEST {
+		.INFOCYBERTITAN {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -137,7 +138,7 @@
 			visibility: hidden;
 			}
 		
-		.INFOBADBOY {
+		.INFOSONICSHIELD {
 			position: absolute;
 			padding: 30px;
 			top: 50px;
@@ -150,6 +151,7 @@
 			text-align: center;
 			visibility: hidden;
 			}
+		
 		.SICHTBAR {
 			visibility: visible;
 			}
@@ -157,166 +159,176 @@
 	</style>
   
 	<!-- Einbinden der Navigationsleiste -->
-	<?php include '../include/partials/nav.php'; ?>
+	
 	
 </head>
 
 <body>	
-	
-	<main>
+
 			
 		<div class="Schriftzug">
 		WÄHLE DEINEN <br/> SUPERHELDEN
 		</div>
 		
 		<div>
-			<div class="BADGIRL">
-				<img class="BILD" src=../images/BadGirl.png alt="Badgirl">
+			<div class="SCARLETSHADE">
+				<img class="BILD" src=../images/BadGirl.png alt="Scarlet Shade">
 			</div>
 
-			<div class="PRINZ">
-				<img class="BILD" src=../images/Prinz.png alt="Prinz">
+			<div class="GOLDENKNIGHT">
+				<img class="BILD" src=../images/Prinz.png alt="Golden Knight">
 			</div>
 
-			<div class="PRINZESSIN">
-				<img class="BILD" src=../images/Prinzessin.png alt="Prinzessin">
+			<div class="GREENBLAZE">
+				<img class="BILD" src=../images/Prinzessin.png alt="Green Blaze">
 			</div>
 		</div>	
 		
 		<div>
-			<div class="AQUABOY">
-				<img class="BILD" src=../images/AquaBoy.png alt="Blauer Superheld">
+			<div class="THUNDERBOLT">
+				<img class="BILD" src=../images/AquaBoy.png alt="Thunder Bolt">
 			</div>
 
-			<div class="BIEST">
-				<img class="BILD" src=../images/Biest.png alt="Biest">
+			<div class="CYBERTITAN">
+				<img class="BILD" src=../images/Biest.png alt="Cyber Titan">
 			</div>
 
-			<div class="BADBOY">
-				<img class="BILD" src=../images/BadBoy.png alt="BadBoy">
+			<div class="SONICSHIELD">
+				<img class="BILD" src=../images/BadBoy.png alt="Sonic Shield">
 			</div>
 		</div>
 	
-		<div class="INFOBADGIRL">
-			<img class="BILDINFOBOX" src=../images/BadGirl.png alt="Badgirl">
-			<button id="buttonBG">&times;</button>
-			BadGirl ist ein böses Mädchen
+		<div class="INFOSCARLETSHADE">
+			<img class="BILDINFOBOX" src=../images/BadGirl.png alt="Scarlet Shade">
+			<button id="buttonSCS">&times;</button>
+			Scarlet Shade<br>
+			Superkraft: Unsichtbarkeit und Tarnung<br>
+			Beschreibung: Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 
-   		<div class="INFOPRINZ">
-			<img class="BILDINFOBOX" src=../images/Prinz.png alt="Prinz">
-			<button id="buttonPR">&times;</button>
-			Der Prinz ist ein Traum!
+   		<div class="INFOGOLDENKNIGHT">
+			<img class="BILDINFOBOX" src=../images/Prinz.png alt="Golden Knight">
+			<button id="buttonGK">&times;</button>
+			Golden Knight<br>
+			Superkraft: Schutzzauber und Fliegen<br>
+			Beschreibung: Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
-		<div class="INFOPRINZESSIN">
-			<img class="BILDINFOBOX" src=../images/Prinzessin.png alt="Prinzessin">
-			<button id="buttonPRS">&times;</button>
-			Die Prinzessin ist ein Traum!
+		<div class="INFOGREENBLAZE">
+			<img class="BILDINFOBOX" src=../images/Prinzessin.png alt="Green Blaze">
+			<button id="buttonGB">&times;</button>
+			Green Blaze<br>
+			Superkraft: Pflanzenkontrolle<br>
+			Beschreibung: Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
-		<div class="INFOAQUABOY">
-			<img class="BILDINFOBOX" src=../images/AquaBoy.png alt="Blauer Superheld">
-			<button id="buttonAB">&times;</button>
-			Der AquaBoy ist cool!
+		<div class="INFOTHUNDERBOLT">
+			<img class="BILDINFOBOX" src=../images/AquaBoy.png alt="Thunder Bolt">
+			<button id="buttonTB">&times;</button>
+			Thunderbolt<br>
+			Superkraft: Überschallgeschwindigkeit<br>
+			Beschreibung: Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
-		<div class="INFOBIEST">
-			<img class="BILDINFOBOX" src=../images/Biest.png alt="Biest">
-			<button id="buttonB">&times;</button>
-			Biest ist feurig!
+		<div class="INFOCYBERTITAN">
+			<img class="BILDINFOBOX" src=../images/Biest.png alt="Cyber Titan">
+			<button id="buttonCT">&times;</button>
+			Cyber Titan<br>
+			Superkraft: Übermenschliche Stärke und technologische Kontrolle<br>
+			Beschreibung: Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 			
-		<div class="INFOBADBOY">
-			<img class="BILDINFOBOX" src=../images/BadBoy.png alt="BadBoy">
-			<button id="buttonBB">&times;</button>
-			BadBoy ist ein böser Junge!
+		<div class="INFOSONICSHIELD">
+			<img class="BILDINFOBOX" src=../images/BadBoy.png alt="Sonic Shield">
+			<button id="buttonSOS">&times;</button>
+			Sonic Shield<br>
+			Superkraft: Schallwellenmanipulation<br>
+			Beschreibung: Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.
 			<br><br>
 			<button onclick="window.location.href='missionsstart.php'">Auswählen</button>
 		</div>
 	
-	</main>
-	
+
     <script>
 		
-		document.querySelector('.BADGIRL').addEventListener('click',ZeigeBadGirl);
-		document.querySelector('#buttonBG').addEventListener('click',BadGirlAus);
+		document.querySelector('.SCARELTSHADE').addEventListener('click',ZeigeScarletShade);
+		document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
 		
-		document.querySelector('.PRINZ').addEventListener('click',ZeigePrinz);
-		document.querySelector('#buttonPR').addEventListener('click',PrinzAus);
+		document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
+		document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
 		
-		document.querySelector('.PRINZESSIN').addEventListener('click',ZeigePrinzessin);
-		document.querySelector('#buttonPRS').addEventListener('click',PrinzessinAus);
+		document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
+		document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
 		
-		document.querySelector('.AQUABOY').addEventListener('click',ZeigeAquaBoy);
-		document.querySelector('#buttonAB').addEventListener('click',AquaBoyAus);
+		document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
+		document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
 		
-		document.querySelector('.BIEST').addEventListener('click',ZeigeBiest);
-		document.querySelector('#buttonB').addEventListener('click',BiestAus);
+		document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
+		document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
 		
-		document.querySelector('.BADBOY').addEventListener('click',ZeigeBadBoy);
-		document.querySelector('#buttonBB').addEventListener('click',BadBoyAus);
+		document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
+		document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
 		
 		
-		function ZeigeBadGirl() {
-			document.querySelector(".INFOBADGIRL").classList.add("SICHTBAR");
+		function ZeigeScarletShade() {
+			document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
 			}
 		
-		function BadGirlAus() {
-			document.querySelector(".INFOBADGIRL").classList.remove("SICHTBAR");
+		function ScarletShadeAus() {
+			document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
 			}
 		
 		
-		function ZeigePrinz() {
-			document.querySelector(".INFOPRINZ").classList.add("SICHTBAR");
+		function ZeigeGoldenKnight() {
+			document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
 			}
 		
-		function PrinzAus() {
-			document.querySelector(".INFOPRINZ").classList.remove("SICHTBAR");
+		function GoldenKnightAus() {
+			document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
 			}
 		
-		function ZeigePrinzessin() {
-			document.querySelector(".INFOPRINZESSIN").classList.add("SICHTBAR");
+		function ZeigeGreenBlaze() {
+			document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
 			}
 		
-		function PrinzessinAus() {
-			document.querySelector(".INFOPRINZESSIN").classList.remove("SICHTBAR");
+		function GreenBlazeAus() {
+			document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
 			}
 		
 	
-		function ZeigeAquaBoy() {
-			document.querySelector(".INFOAQUABOY").classList.add("SICHTBAR");
+		function ZeigeThunderBolt() {
+			document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
 			}
 		
-		function AquaBoyAus() {
-			document.querySelector(".INFOAQUABOY").classList.remove("SICHTBAR");
+		function ThunderBoltAus() {
+			document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
 			}
 		
-		function ZeigeBiest() {
-			document.querySelector(".INFOBIEST").classList.add("SICHTBAR");
+		function ZeigeCyberTitan() {
+			document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
 			}
 		
-		function BiestAus() {
-			document.querySelector(".INFOBIEST").classList.remove("SICHTBAR");
+		function CyberTitanAus() {
+			document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 			}
 		
 		
-		function ZeigeBadBoy() {
-			document.querySelector(".INFOBADBOY").classList.add("SICHTBAR");
+		function ZeigeSonicShield() {
+			document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
 			}
 		
-		function BadBoyAus() {
-			document.querySelector(".INFOBADBOY").classList.remove("SICHTBAR");
+		function SonicShieldAus() {
+			document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 			}
 		
 		
@@ -325,7 +337,7 @@
     
 	
  <!-- Einbinden des Footers -->
-    <?php include '../include/partials/footer.php'; ?>
+   
 	   
    
 </body>
