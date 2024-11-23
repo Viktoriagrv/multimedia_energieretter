@@ -23,9 +23,9 @@
 		.STARTBUTTON{
 			justify-content: center;
 			align-items: center;
-			font-size: 8rem;
+			font-size: 800px;
 			text-align: center;
-			backround-color: transparent;
+			background-color: transparent;
 			border: 0;
 			transition: all 1s;
 			}

@@ -81,6 +81,9 @@
 			text-align: center;
 			visibility: hidden;
 			}
+		.SICHTBAR {
+			visibility: visible;
+			}
 		
 		.INFOGOLDENKNIGHT {
 			position: absolute;
@@ -94,6 +97,9 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
 			}
 		
 		.INFOGREENBLAZE {
@@ -109,6 +115,9 @@
 			text-align: center;
 			visibility: hidden;
 			}
+		.SICHTBAR {
+			visibility: visible;
+			}
 		
 		.INFOTHUNDERBOLT {
 			position: absolute;
@@ -123,6 +132,9 @@
 			text-align: center;
 			visibility: hidden;
 			}
+		.SICHTBAR {
+			visibility: visible;
+			}
 		
 		.INFOCYBERTITAN {
 			position: absolute;
@@ -136,6 +148,9 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			text-align: center;
 			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
 			}
 		
 		.INFOSONICSHIELD {
@@ -159,7 +174,7 @@
 	</style>
   
 	<!-- Einbinden der Navigationsleiste -->
-	
+	<?php include '../include/partials/nav.php'; ?>
 	
 </head>
 
@@ -261,7 +276,7 @@
 
     <script>
 		
-		document.querySelector('.SCARELTSHADE').addEventListener('click',ZeigeScarletShade);
+		document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
 		document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
 		
 		document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
@@ -337,7 +352,7 @@
     
 	
  <!-- Einbinden des Footers -->
-   
+  <?php include '../include/partials/footer.php'; ?> 
 	   
    
 </body>
