@@ -24,7 +24,11 @@
 			position:fixed;
 			justify-content: center;
 			align-items: center;
+<<<<<<< HEAD
+			font-size: 12rem;
+=======
 			font-size: 800px;
+>>>>>>> 065a5b2e69979fec03c7a4b561b22c8747bf78c4
 			text-align: center;
 			background-color: transparent;
 			border: 0;
