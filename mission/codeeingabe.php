@@ -16,7 +16,7 @@
     <?php include '../include/partials/nav.php'; ?>
 	
 	<style>
-		main {
+		.main {
 		  display: flex;
 		  justify-content: center;
 		  align-items: center;
@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <main>
+    <main style="background-image: url("../../images/weltall/galxie_illustration.jpg")">
         
     </main>
 
