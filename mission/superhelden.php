@@ -7,7 +7,8 @@
     
    
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">		<!-- Einbinden der Google Fonts -->   
-    <!--<link rel="stylesheet" href="../include/css/styles.css"> -->										<!-- Einbinden der CSS-Datei -->
+    <!--<link rel="stylesheet" href="../include/css/styles.css"> -->		
+	<link rel="stylesheet" href="../include/css/styles.css"> 								<!-- Einbinden der CSS-Datei -->
 
     <style>
 		
@@ -150,6 +151,7 @@
 			text-align: center;
 			visibility: hidden;
 			}
+		
 		.SICHTBAR {
 			visibility: visible;
 			}
