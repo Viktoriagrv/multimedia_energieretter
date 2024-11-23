@@ -12,15 +12,16 @@
 	<style>	
 			
 		button {
+			position: absolute;
 			background-color: transparent;
 			font-family:  "bangers";								
 			line-height: 1.2;
 			color: #e8a723;
 			border: none;
-			z-index:3;
 			}
 		
 		.STARTBUTTON{
+			position:fixed;
 			justify-content: center;
 			align-items: center;
 			font-size: 800px;
@@ -30,7 +31,8 @@
 			transition: all 1s;
 			}
 		
-		.KLEIN{			
+		.KLEIN{	
+			position: fixed;
 			top:50px;
 			left: 150px;
 			font-size: 2rem;
@@ -38,17 +40,17 @@
 		
 
 		#scrolltext {
+			position:absolute;
 			justify-content: center;
 			align-items:center;
 			width:800px;
 			height:400px;
 			background-color:transparent;
 			font-family:verdana;
-			font-size:30px;
+			font-size: 2rem;
 			color:#FFFFFF;
 			text-align: justify;
 			overflow:hidden;
-			z-index: 2;
 			}
 		
 		.scrolltext{
@@ -76,11 +78,14 @@
 
 
 				<div id="scrolltext"> 
-					<p class="scrolltext"><br><br>Die Dunkelheit breitet sich aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden! Es ist Zeit zu kämpfen! Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+					<p class="scrolltext"><br><br>Wir befinden uns im Jahr 2025. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden da draußen! Es ist Zeit zu kämpfen! Wähle dir einen Verbündeten und reise mit ihm zusammen in die Vergangenheit, um unsere Zukunft zu retten. Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 					</p>
+					
 				</div>
 	
 			</div>
+	</main>
+	
 	
 	<script> 
 		
@@ -105,7 +110,7 @@
 			
 	</script>
 
-	</main>
+	
 	
 	<?php include 'include/partials/footer.php'; ?>
 </body>

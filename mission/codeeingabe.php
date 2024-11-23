@@ -16,21 +16,7 @@
     <?php include '../include/partials/nav.php'; ?>
 	
 	<style>
-<<<<<<< HEAD
-		main {
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  background-image: url('"../images/weltall/galxie_illustration.jpg"');
-		  background-size: cover;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  overflow: hidden;
-			z-index: 0;
-		}
-=======
-		
->>>>>>> f5530ff09b737a1367958c818aa2b68eb433254a
+
 	</style>
 </head>
 
@@ -44,7 +30,6 @@
 
    
     
-    <!-- Einbinden der externen JavaScript-Datei -->
-    <script src="include/js/intro.js"></script>
+    
 </body>
 </html>
