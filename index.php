@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Die Energieretter</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="include/css/styles.css">
 	
@@ -23,10 +23,8 @@
 		.STARTBUTTON{
 			justify-content: center;
 			align-items: center;
-			font-size: 150px;
-			opacity:0.96;
+			font-size: 8rem;
 			text-align: center;
-			line-height: 170px;
 			backround-color: transparent;
 			border: 0;
 			transition: all 1s;
@@ -35,7 +33,7 @@
 		.KLEIN{			
 			top:50px;
 			left: 150px;
-			font-size: 80px;
+			font-size: 2rem;
 			}	
 		
 

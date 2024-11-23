@@ -14,8 +14,15 @@
     <!-- Hauptmenü -->
     <div class="menu">
         <a href="../../mission/missionsstart.php">Start</a>
-        <a href="../../mission.php">Mission</a>
         
+        <div class="dropdown">
+            <button class="dropbtn">Mission</button>
+            <div class="dropdown-content">
+                <a href="../../mission/superhelden.php">Die Superhelden</a>
+                <a href="../../mission/missionsstart.php">Missionsstart</a>
+                <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+            </div>
+        </div>
         <!-- Dropdown-Menü -->
         <div class="dropdown">
             <button class="dropbtn">Retterwissen</button>
