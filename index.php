@@ -10,25 +10,18 @@
 	
 	
 	<style>	
-			
-		button {
-			position: absolute;
+		
+		.STARTBUTTON{
+			position: relative;
+			justify-content: center;
 			background-color: transparent;
-			font-family:  "bangers";								
+			font-family:  "bangers";
+			font-size: 12rem;
 			line-height: 1.2;
 			color: #e8a723;
 			border: none;
-			}
-		
-		.STARTBUTTON{
-			position:fixed;
-			justify-content: center;
+			top: 5rem;
 			align-items: center;
-<<<<<<< HEAD
-			font-size: 12rem;
-=======
-			font-size: 800px;
->>>>>>> 065a5b2e69979fec03c7a4b561b22c8747bf78c4
 			text-align: center;
 			background-color: transparent;
 			border: 0;
@@ -36,17 +29,18 @@
 			}
 		
 		.KLEIN{	
-			position: fixed;
-			top:50px;
-			left: 150px;
+			position: relative;
+			justify-content: center;
+			top:2rem;
 			font-size: 2rem;
 			}	
 		
 
 		#scrolltext {
-			position:absolute;
+			position: relative;
 			justify-content: center;
 			align-items:center;
+			top: 4rem;
 			width:800px;
 			height:400px;
 			background-color:transparent;
@@ -78,7 +72,7 @@
 	<main>
 		
 			<div>
-				<div class="STARTBUTTON"> <button id="START">Die Welt ist <br> in Gefahr! </button></div>
+				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr! </button>
 
 
 				<div id="scrolltext"> 

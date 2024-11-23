@@ -29,7 +29,7 @@
 
 /* Link Styling */
 .footer-link {
-    font-family: 'Helvetica', sans-serif; /* Nur Helvetica für den Link */
+    font-family: "bangers"; /* Nur Helvetica für den Link */
     font-size: 16px;
     color: #FFD700; /* Gelb wie "Die Energieretter" */
     text-decoration: none;
