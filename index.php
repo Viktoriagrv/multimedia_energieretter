@@ -29,10 +29,9 @@
 			}
 		
 		.KLEIN{	
-			position: relative;
-			justify-content: center;
 			top:2rem;
-			font-size: 2rem;
+			font-size: 5rem;
+			text-align: start;
 			}	
 		
 
@@ -72,7 +71,7 @@
 	<main>
 		
 			<div>
-				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr! </button>
+				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
 
 
 				<div id="scrolltext"> 
