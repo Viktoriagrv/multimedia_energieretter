@@ -34,7 +34,7 @@
         .icon-container {
             display: flex;
             justify-content: space-around;
-            gap: 150px; /* Großer Abstand zwischen den Icons */
+            gap: 100px; /* Gleicher Abstand wie bei den Klimaschäden-Icons */
             position: relative;
             margin-bottom: 60px;
         }
@@ -42,23 +42,12 @@
         .icon-container img {
             width: 130px; /* Noch größere Icons */
             height: 130px;
-            animation: float 5s ease-in-out infinite;
-        }
-
-        /* Keyframe für Schweben */
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-30px); /* Größere Bewegung */
-            }
         }
 
         /* Buttons */
         .button-container {
             display: flex;
-            gap: 100px; /* Noch größerer Abstand zwischen den Buttons */
+            gap: 50px; /* Gleicher Abstand wie bei den Klimaschäden-Buttons */
         }
 
         .button-container a {
@@ -73,7 +62,7 @@
             font-family: 'Bangers', cursive;
         }
 
-        .button-container a:hover {
+        .button-container a.hovered {
             background-color: #45a049;
         }
 
@@ -93,22 +82,63 @@
     <main>
         <!-- Schwebe-Icons -->
         <div class="icon-container">
-            <img src="bilder_retterwissen/sonne.png" alt="Sonne">
-            <img src="bilder_retterwissen/wasser.png" alt="Wasser">
-            <img src="bilder_retterwissen/wind.png" alt="Wind">
+            <img src="bilder_retterwissen/sonne.png" alt="Sonne" id="icon-sun">
+            <img src="bilder_retterwissen/wasser.png" alt="Wasser" id="icon-water">
+            <img src="bilder_retterwissen/wind.png" alt="Wind" id="icon-wind">
         </div>
 
         <!-- Buttons -->
         <div class="button-container">
-            <a href="zukunftsenergien/solar.php">Sonnenenergie</a>
-            <a href="zukunftsenergien/wasser.php">Wasserenergie</a>
-            <a href="zukunftsenergien/wind.php">Windenergie</a>
+            <a href="zukunftsenergien/solar.php" class="button" id="button-sun">Sonnenenergie</a>
+            <a href="zukunftsenergien/wasser.php" class="button" id="button-water">Wasserenergie</a>
+            <a href="zukunftsenergien/wind.php" class="button" id="button-wind">Windenergie</a>
         </div>
     </main>
 
     <!-- Footer -->
     <?php include '../include/partials/footer.php'; ?>
+
+    <script>
+        // Funktion für das langsame und weniger weite Schweben der Icons
+        function floatIcons() {
+            const icons = document.querySelectorAll('.icon-container img');
+            icons.forEach(icon => {
+                let position = 0;
+                let direction = 1;
+                const maxMovement = 15;  // Weniger Bewegung (max. 15px nach oben/unten)
+                const stepSize = 0.25;  // Sehr langsame Bewegung (0.25px pro Frame)
+
+                const iconFloat = () => {
+                    if (position >= maxMovement || position <= -maxMovement) {
+                        direction *= -1;  // Richtungswechsel, wenn das Limit erreicht ist
+                    }
+                    position += direction * stepSize;  // Schrittgröße (langsamer)
+                    icon.style.transform = `translateY(${position}px)`;  // Anwenden der Bewegung
+                    requestAnimationFrame(iconFloat);  // Animation fortsetzen
+                };
+
+                iconFloat();
+            });
+        }
+
+        // Buttons Hover-Effekt mit JavaScript
+        function buttonHoverEffect() {
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseover', () => {
+                    button.classList.add('hovered');
+                });
+                button.addEventListener('mouseout', () => {
+                    button.classList.remove('hovered');
+                });
+            });
+        }
+
+        // Initialisierungen
+        document.addEventListener('DOMContentLoaded', () => {
+            floatIcons(); // Start der Schwebe-Animation
+            buttonHoverEffect(); // Start der Button-Hover-Effekte
+        });
+    </script>
 </body>
 </html>
-
-
