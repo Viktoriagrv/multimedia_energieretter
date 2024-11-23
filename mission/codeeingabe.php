@@ -14,6 +14,20 @@
 
     <!-- Einbinden der Navigationsleiste -->
     <?php include '../include/partials/nav.php'; ?>
+	
+	<style>
+		main {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  background-image: url("../../images/weltall/galxie_illustration.jpg");
+		  background-size: cover;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  overflow: hidden;
+			z-index: 0;
+		}
+	</style>
 </head>
 
 <body>
