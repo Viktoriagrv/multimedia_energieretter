@@ -18,6 +18,7 @@ nav{
 /* Hauptinhalt zentrieren */
 		main {
 		  display: flex;
+			position: relative;
 		  justify-content: center;
 		  align-items: center;
 		  background-image: url("../../images/weltall/galxie_illustration.jpg");
@@ -26,6 +27,7 @@ nav{
 		  background-repeat: no-repeat;
 		  overflow: hidden;
 			z-index: 0;
+			height: 100%;
 		}
 
 	

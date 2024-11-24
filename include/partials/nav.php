@@ -9,11 +9,11 @@
 <nav class="navbar-custom">
 
     <!-- Branding -->
-    <a class="navbar-brand" href="../../index.php">Die Energieretter</a>
+    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
     
     <!-- Hauptmenü -->
     <div class="menu">
-        <a href="../../mission/missionsstart.php" class="menu-link menu-item">Start</a>
+        <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
         
         <div class="dropdown menu-item">
             <button class="dropbtn menu-link">Mission</button>
