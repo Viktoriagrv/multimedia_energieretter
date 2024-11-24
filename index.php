@@ -31,7 +31,7 @@
 		.KLEIN{	
 			top:2rem;
 			font-size: 5rem;
-			text-align: start;
+			
 			}	
 		
 
