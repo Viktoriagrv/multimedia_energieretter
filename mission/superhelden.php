@@ -12,23 +12,28 @@
 		.Schriftzug{
 			position: fixed;
 			top: center;
-			left: 30px;
+			left: 3rem;
 			font-family: "bangers";
-			font-size: 6rem;
+			font-size: 5rem;
 			color: #e8a723;
 			line-height: 1.1;
 			}
 		
 		.BILD{
 			position: fixed;
-			height: 35%;
+			height: 30%;
 			width: auto;
 			margin: 5rem;
 			}
 		
+		.BILDBOX{
+			display:flex;
+			justify-content: space-around;
+			}
+		
 		.BILDINFOBOX{
-			position: absolute;
-			top:25px;
+			position: relative;
+			top:10%;
 			left: 25px;
 			height: 350px;
 			width: auto;
@@ -287,7 +292,7 @@
 			</div>
 			
 		<div>
-			<div>
+			<div class="BILDBOX">
 				<div class="SCARLETSHADE">
 					<img class="BILD" src="../images/BadGirl.png" alt="Scarlet Shade">
 				</div>
