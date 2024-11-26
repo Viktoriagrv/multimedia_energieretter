@@ -10,33 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
     <!-- Einbinden der CSS-Datei -->
-    <link rel="stylesheet" href="../include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
+    <!--<link rel="stylesheet" href="../include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
 
     <!-- Einbinden der Navigationsleiste -->
     <?php include '../include/partials/nav.php'; ?>
 	
 	<style>
-<<<<<<< HEAD
-		main {
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		  background-image: url('"../images/weltall/galxie_illustration.jpg"');
-		  background-size: cover;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  overflow: hidden;
-			z-index: 0;
-		}
-=======
+		/*.NEXT{flex-direction: row;
+			}
 		
->>>>>>> f5530ff09b737a1367958c818aa2b68eb433254a
+		.HERO{
+			justify-content: center;
+			flex-grow: 1;
+			position: sticky;
+			top: 15rem;
+			margin: 5rem;
+			}
+		
+		.WELTBLAU{
+			justify-content: flex-start;
+			top: 15rem;
+			flex-grow: 2;
+			
+			}*/
+		
+		.SPRECHBLASE {
+			justify-content: flex-end;
+			flex-grow: 1;
+			position: sticky;
+			padding: 30px;
+			top: 15rem;
+			height:400px;
+			width: 650px;
+			border-radius: 70px 70px 70px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: visible;
+			}		
+
 	</style>
 </head>
 
 <body>
     <main>
-        
+		
+		<div class="NEXT">
+			<div class="WELTBLAU">
+				<img src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
+			</div>
+			<div class="HERO">
+				<img src="../images/AquaBoy.png"
+			</div>
+
+			<div class="SPRECHBLASE">
+				Hallo!
+			</div>	
+		</div>
+			
     </main>
 
     <!-- Einbinden des Footers -->
@@ -44,7 +74,6 @@
 
    
     
-    <!-- Einbinden der externen JavaScript-Datei -->
-    <script src="include/js/intro.js"></script>
+    
 </body>
 </html>
