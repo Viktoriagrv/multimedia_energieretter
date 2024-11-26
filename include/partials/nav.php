@@ -13,7 +13,7 @@
     
     <!-- Hauptmenü -->
     <div class="menu">
-        <a href="../../mission/missionsstart.php" class="menu-link menu-item">Start</a>
+        <a href="../../mission/missionsstart.php" class="menu-link menu-item">Vorspann</a>
         
         <div class="dropdown menu-item">
             <button class="dropbtn menu-link">Mission</button>
