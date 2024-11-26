@@ -90,7 +90,7 @@
 <body>
     <!-- Hintergrundvideo -->
 <video autoplay muted loop id="backgroundVideo">
-    <source src="video/background_video.mp4" type="video/mp4">
+    <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
     <source src="video/background_video.webm" type="video/webm">
 </video>
 
@@ -113,48 +113,51 @@
 
     <!-- Footer -->
     <?php include '../include/partials/footer.php'; ?>
+	
+	
+<script>
+    // Funktion, um Icons schweben zu lassen
+    function floatIcons() {
+        const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
 
-    <script>
-        // Funktion für das Schweben der Icons
-        function floatIcons() {
-            const icons = document.querySelectorAll('.icon-container img');
-            icons.forEach(icon => {
-                let position = 0;
-                let direction = 1;
-                const maxMovement = 15;
-                const stepSize = 0.25;
+        icons.forEach(icon => {
+            let position = 0; // Startposition
+            let direction = 1; // Bewegung nach oben oder unten
+            const maxMovement = 15; // Maximale Bewegung in Pixel
+            const stepSize = 0.25; // Bewegungsschritt
 
-                const iconFloat = () => {
-                    if (position >= maxMovement || position <= -maxMovement) {
-                        direction *= -1;
-                    }
-                    position += direction * stepSize;
-                    icon.style.transform = `translateY(${position}px)`;
-                    requestAnimationFrame(iconFloat);
-                };
+            const iconFloat = () => {
+                if (position >= maxMovement || position <= -maxMovement) {
+                    direction *= -1; // Richtung wechseln
+                }
+                position += direction * stepSize; // Position aktualisieren
+                icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+                requestAnimationFrame(iconFloat); // Animation wiederholen
+            };
 
-                iconFloat();
-            });
-        }
-
-        // Buttons Hover-Effekt
-        function buttonHoverEffect() {
-            const buttons = document.querySelectorAll('.button');
-            buttons.forEach(button => {
-                button.addEventListener('mouseover', () => {
-                    button.classList.add('hovered');
-                });
-                button.addEventListener('mouseout', () => {
-                    button.classList.remove('hovered');
-                });
-            });
-        }
-
-        // Initialisierung
-        document.addEventListener('DOMContentLoaded', () => {
-            floatIcons();
-            buttonHoverEffect();
+            iconFloat(); // Animation starten
         });
-    </script>
+    }
+
+    // Funktion für Hover-Effekt auf Buttons
+    function buttonHoverEffect() {
+        const buttons = document.querySelectorAll('.button'); // Alle Buttons auswählen
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.classList.add('hovered'); // Klasse hinzufügen bei Hover
+            });
+            button.addEventListener('mouseout', () => {
+                button.classList.remove('hovered'); // Klasse entfernen bei Hover-Ende
+            });
+        });
+    }
+
+    // Startet die Funktionen nach dem Laden der Seite
+    document.addEventListener('DOMContentLoaded', () => {
+        floatIcons(); // Icons schweben lassen
+        buttonHoverEffect(); // Hover-Effekt aktivieren
+    });
+</script>
+
 </body>
 </html>
