@@ -15,29 +15,45 @@ nav{
 	height: 8%;
 	padding: 10px;
 }
+
 /* Hauptinhalt zentrieren */
-		main {
-		  display: flex;
-			position: relative;
-		  justify-content: center;
-		  align-items: center;
-		  background-image: url("../../images/weltall/galxie_illustration.jpg");
-		  background-size: cover;
-		  background-position: center;
-		  background-repeat: no-repeat;
-		  overflow: hidden;
-			z-index: 0;
-			height: 100%;
-		}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px); /* Platz für Navigation und Footer */
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Schatten für bessere Sichtbarkeit */
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+#backgroundVideo {
+   position: absolute; 
+   top: 0;
+   left: 0;
+   width: 100%; 
+   height: 100%; 
+   object-fit: cover; 
+   z-index: -1; /* Stellt sicher, dass das Video hinter allen anderen Inhalten liegt */
+}
+
 
 	
 
-/*Gestaltung Navigation*/
 
-	  /* Navbar-Hintergrundfarbe Grün */
-		.navbar-custom {
-			background-color: #285238;
-	  		}
+		/* Gestaltung Navigation */
+.navbar-custom {
+  background-color: #285238; /* Dunkles Grün */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Platz zwischen Branding und Menü */
+  padding: 10px 20px;
+}
+
 
 	  /* Link-Styling für die linke Seite der Navbar */
 		.navbar-brand {
@@ -188,84 +204,60 @@ nav{
 
 /* Gestaltung Footer */
 
-	/* Fixed footer at the bottom */
-		.footer-custom {
-		  position: fixed;
-		  bottom: 0;
-		  left: 0;
-			height: 8%;
-		  width: 100%;
-		  background-color: #285238;
-		  color: #E8A723;
-		  padding: 10px 20px;
-		  text-align: right;
-			z-index: 4;
-		}
+/* Gestaltung Footer */
+.footer-custom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 8%;
+  width: 100%;
+  background-color: #285238;
+  color: #E8A723;
+  padding: 10px 20px;
+  text-align: right;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between; /* Linke und rechte Inhalte verteilen */
+  align-items: center;
+  flex-wrap: wrap; /* Inhalt wird bei schmalem Bildschirm umgebrochen */
+  box-sizing: border-box; /* Padding wird in die Gesamtbreite einbezogen */
+}
 
-	/* Link styling in the footer */
-		.footer-link {
-			font-family: "bangers";
-			font-size: 2rem;
-		  	color: #E8A723;
-		  	text-decoration: none;
-			
-			}
+.footer-link {
+  font-family: "bangers";
+  font-size: 2rem;
+  color: #E8A723;
+  text-decoration: none;
+}
 
-		.footer-link:hover {
-		  text-decoration: none;
-		 color: white;
-		}
+.footer-link:hover {
+  text-decoration: none;
+  color: white;
+}
 
-		/* Footer Styling */
-		.footer-custom {
-			background-color: #285238; /* Dunkles Grün */
-			padding: 10px 20px;
-			display: flex;
-			justify-content: space-between; /* Linke und rechte Inhalte verteilen */
-			align-items: center;
-			flex-wrap: wrap; /* Inhalt wird bei schmalem Bildschirm umgebrochen */
-			box-sizing: border-box; /* Padding wird in die Gesamtbreite einbezogen */
-		}
+.footer-left {
+  display: flex;
+  align-items: center;
+}
 
-		/* Link Styling */
-		.footer-link {
-			font-family: "bangers"; /* Nur Helvetica für den Link */
-			font-size: 16px;
-			color: #FFD700; /* Gelb wie "Die Energieretter" */
-			text-decoration: none;
-			transition: color 0.3s;
-		}
+.footer-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Abstand von links, um den Inhalt ganz nach rechts zu rücken */
+}
 
-		.footer-link:hover {
-			color: #fff; /* Weiß beim Hover für besseren Kontrast */
-		}
-
-		/* Optional: Falls linker Inhalt hinzugefügt wird */
-		.footer-left {
-			display: flex;
-			align-items: center;
-		}
-
-		/* Rechter Bereich */
-		.footer-right {
-			display: flex;
-			align-items: center;
-			margin-left: auto; /* Abstand von links, um den Inhalt ganz nach rechts zu rücken */
-		}
-
-		/* Responsives Verhalten */
-		@media (max-width: 600px) {
-			.footer-right {
-				margin-left: 0; /* Entfernt den Abstand, damit es bei kleinen Bildschirmen korrekt angezeigt wird */
-			}
-			.footer-custom {
-				flex-direction: column; /* Stellt die Inhalte untereinander dar */
-				align-items: flex-start; /* Alles linksbündig bei schmalem Bildschirm */
-			}
-			.footer-right {
-				margin-top: 10px; /* Abstand zwischen den Bereichen */
-				align-self: flex-end; /* "Impressum" bleibt am rechten Rand, wenn Platz vorhanden ist */
-			}
-		}
+@media (max-width: 600px) {
+  .footer-right {
+    margin-left: 0;
+  }
+  .footer-custom {
+    flex-direction: column; /* Stellt die Inhalte untereinander dar */
+    align-items: flex-start; /* Alles linksbündig bei schmalem Bildschirm */
+  }
+  .footer-right {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}
 
 

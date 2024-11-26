@@ -10,8 +10,39 @@
 	<link rel="stylesheet" href="../include/css/styles.css">
 
     <!-- Navigation einbinden -->
-  
-	<?php include 'include/partials/nav.php'; ?>
+  <nav class="navbar-custom">
+
+    <!-- Branding -->
+    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
+    
+    <!-- Hauptmenü -->
+    <div class="menu">
+
+       
+        <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+
+        
+        <div class="dropdown menu-item">
+            <button class="dropbtn menu-link">Mission</button>
+            <div class="dropdown-content">
+                <a href="../../mission/superhelden.php">Die Superhelden</a>
+                <a href="../../mission/missionsstart.php">Missionsstart</a>
+                <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+            </div>
+        </div>
+        
+        <!-- Dropdown-Menü -->
+        <div class="dropdown menu-item" style="margin-right: 50px;">
+            <button class="dropbtn menu-link">Retterwissen</button>
+            <div class="dropdown-content">
+                <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+                <a href="../../retterwissen/innovationen.php">Innovationen</a>
+                <a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
 
 
     <style>
@@ -20,27 +51,6 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-        }
-
-        /* Hintergrundvideo */
-        #backgroundVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            z-index: -1; /* Hintergrund hinter den restlichen Elementen */
-        }
-
-        /* Hauptcontainer */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: calc(100vh - 100px); /* Platz für Navigation und Footer */
-            color: white; /* Textfarbe für Lesbarkeit */
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Schatten für bessere Sichtbarkeit */
         }
 
         /* Schwebe-Icons */
@@ -79,14 +89,7 @@
             background-color: #45a049;
         }
 
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #285238;
-            color: white;
-            font-size: 14px;
-        }
+    
     </style>
 </head>
 
@@ -115,8 +118,17 @@
     </main>
 
     <!-- Footer -->
-    <?php include 'include/partials/footer.php'; ?>
-	
+ <!-- Footer-Container -->
+<footer class="footer-custom">
+    <div class="footer-left">
+        <!-- Linke Inhalte könnten hier ergänzt werden -->
+    </div>
+    <div class="footer-right">
+        <a class="footer-link" href="../../impressum/impressum.php">Impressum</a> <!-- Impressum-Link -->
+    </div>
+</footer>
+
+
 	
 <script>
     // Funktion, um Icons schweben zu lassen

@@ -66,6 +66,12 @@
 </head>
 
 <body>
+       <!-- Hintergrundvideo -->
+<video autoplay muted loop id="backgroundVideo">
+    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
+</video>
+
 
 	<?php include 'include/partials/nav.php'; ?>
     
