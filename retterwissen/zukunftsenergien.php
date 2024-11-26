@@ -12,13 +12,21 @@
     <?php include '../include/partials/nav.php'; ?>
 
     <style>
-        /* Body und allgemeine Layout-Einstellungen */
+        /* Allgemeine Layout-Einstellungen */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('bilder_retterwissen/galaxie_retterwissen.jpeg') no-repeat center center fixed;
-            background-size: cover;
+        }
+
+        /* Hintergrundvideo */
+        #backgroundVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Hintergrund hinter den restlichen Elementen */
         }
 
         /* Hauptcontainer */
@@ -27,37 +35,39 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: calc(100vh - 100px); /* Platz für Navigation und Footer berücksichtigen */
+            min-height: calc(100vh - 100px); /* Platz für Navigation und Footer */
+            color: white; /* Textfarbe für Lesbarkeit */
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Schatten für bessere Sichtbarkeit */
         }
 
         /* Schwebe-Icons */
         .icon-container {
             display: flex;
             justify-content: space-around;
-            gap: 100px; /* Gleicher Abstand wie bei den Klimaschäden-Icons */
+            gap: 100px;
             position: relative;
             margin-bottom: 60px;
         }
 
         .icon-container img {
-            width: 130px; /* Noch größere Icons */
+            width: 130px;
             height: 130px;
         }
 
         /* Buttons */
         .button-container {
             display: flex;
-            gap: 50px; /* Gleicher Abstand wie bei den Klimaschäden-Buttons */
+            gap: 50px;
         }
 
         .button-container a {
             display: inline-block;
-            padding: 20px 30px; /* Noch größere Buttons */
-            font-size: 22px; /* Noch größere Schrift */
+            padding: 20px 30px;
+            font-size: 22px;
             text-decoration: none;
             color: white;
             background-color: #285238;
-            border-radius: 10px; /* Abgerundete Ecken */
+            border-radius: 10px;
             transition: background-color 0.3s ease;
             font-family: 'Bangers', cursive;
         }
@@ -73,12 +83,18 @@
             background-color: #285238;
             color: white;
             font-size: 14px;
-            position: relative;
         }
     </style>
 </head>
 
 <body>
+    <!-- Hintergrundvideo -->
+<video autoplay muted loop id="backgroundVideo">
+    <source src="video/background_video.mp4" type="video/mp4">
+    <source src="video/background_video.webm" type="video/webm">
+</video>
+
+
     <main>
         <!-- Schwebe-Icons -->
         <div class="icon-container">
@@ -99,29 +115,29 @@
     <?php include '../include/partials/footer.php'; ?>
 
     <script>
-        // Funktion für das langsame und weniger weite Schweben der Icons
+        // Funktion für das Schweben der Icons
         function floatIcons() {
             const icons = document.querySelectorAll('.icon-container img');
             icons.forEach(icon => {
                 let position = 0;
                 let direction = 1;
-                const maxMovement = 15;  // Weniger Bewegung (max. 15px nach oben/unten)
-                const stepSize = 0.25;  // Sehr langsame Bewegung (0.25px pro Frame)
+                const maxMovement = 15;
+                const stepSize = 0.25;
 
                 const iconFloat = () => {
                     if (position >= maxMovement || position <= -maxMovement) {
-                        direction *= -1;  // Richtungswechsel, wenn das Limit erreicht ist
+                        direction *= -1;
                     }
-                    position += direction * stepSize;  // Schrittgröße (langsamer)
-                    icon.style.transform = `translateY(${position}px)`;  // Anwenden der Bewegung
-                    requestAnimationFrame(iconFloat);  // Animation fortsetzen
+                    position += direction * stepSize;
+                    icon.style.transform = `translateY(${position}px)`;
+                    requestAnimationFrame(iconFloat);
                 };
 
                 iconFloat();
             });
         }
 
-        // Buttons Hover-Effekt mit JavaScript
+        // Buttons Hover-Effekt
         function buttonHoverEffect() {
             const buttons = document.querySelectorAll('.button');
             buttons.forEach(button => {
@@ -134,10 +150,10 @@
             });
         }
 
-        // Initialisierungen
+        // Initialisierung
         document.addEventListener('DOMContentLoaded', () => {
-            floatIcons(); // Start der Schwebe-Animation
-            buttonHoverEffect(); // Start der Button-Hover-Effekte
+            floatIcons();
+            buttonHoverEffect();
         });
     </script>
 </body>

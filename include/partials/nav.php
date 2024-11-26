@@ -5,7 +5,11 @@
     
     <!-- Hauptmenü -->
     <div class="menu">
+<<<<<<< HEAD
+        <a href="../../mission/missionsstart.php" class="menu-link menu-item">Vorspann</a>
+=======
         <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+>>>>>>> ebeb42f0fbbd86d2b2c5daec50cfd722b48e5ac4
         
         <div class="dropdown menu-item">
             <button class="dropbtn menu-link">Mission</button>

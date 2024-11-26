@@ -98,7 +98,7 @@
             font-size: 22px; /* Schriftgröße */
             text-decoration: none;
             color: white;
-            background-color: #0056b3; /* Blaue Buttons */
+            background-color: #1e2460; /* Blaue Buttons */
             border-radius: 10px; /* Abgerundete Ecken */
             transition: background-color 0.3s ease, transform 0.3s ease;
             font-family: 'Bangers', cursive;
