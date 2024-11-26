@@ -1,263 +1,214 @@
-@charset "UTF-8";
-/* Flexibles Layout für den gesamten Body */
-@import url(https://fonts.googleapis.com/css?family=Dosis:200,600);
-
+/* Allgemeines Layout */
 html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Verhindert das Scrollen der Seite */
 }
 
-nav{
-	display: flex;
-	flex-direction: row;
-	height: 8%;
-	padding: 10px;
-}
-
-/* Hauptinhalt zentrieren */
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 100px); /* Platz für Navigation und Footer */
-  color: white;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Schatten für bessere Sichtbarkeit */
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
-}
-
-
+/* Hintergrundvideo */
 #backgroundVideo {
-   position: absolute; 
-   top: 0;
-   left: 0;
-   width: 100%; 
-   height: 100%; 
-   object-fit: cover; 
-   z-index: -1; /* Stellt sicher, dass das Video hinter allen anderen Inhalten liegt */
+    position: fixed; /* Fixiert das Hintergrundvideo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Das Video füllt den Bildschirm aus */
+    z-index: -1; /* Setzt das Video hinter den Inhalt */
 }
 
+/* Hauptinhalt */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    height: calc(100% - 60px); /* Höhe des Hauptinhalts anpassen */
+    padding: 20px;
+    z-index: 1; /* Inhalt wird über dem Video angezeigt */
+    overflow: hidden; /* Verhindert Scrollen */
+}
 
-	
+/* Gelbe Hintergründe für die spezifischen Abschnitte */
+.vorspann, .mission, .energieretter {
+    background-color: #e8a723; /* Gelber Hintergrund */
+    color: #285238; /* Grüne Schriftfarbe */
+    padding: 20px;
+    margin: 20px;
+    width: 100%; /* Stellt sicher, dass der Abschnitt die gesamte Breite einnimmt */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 5px; /* Optional: Runde Ecken für den Abschnitt */
+}
 
+/* Start-Button und andere Layout-Elemente */
+.STARTBUTTON {
+    position: sticky;
+    justify-content: center;
+    background-color: transparent;
+    font-family: "Bangers";
+    font-size: 12rem;
+    line-height: 1.2;
+    color: #e8a723;
+    border: none;
+    top: 5rem;
+    align-items: center;
+    text-align: center;
+    transition: all 1s;
+    width: 800px;
+}
 
-		/* Gestaltung Navigation */
+/* Navigation Styling */
 .navbar-custom {
-  background-color: #285238; /* Dunkles Grün */
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Platz zwischen Branding und Menü */
-  padding: 10px 20px;
+    background-color: #285238; /* Dunkelgrün */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Trennung zwischen Brand und Menu */
+    padding: 15px 20px; /* Erhöhte Höhe der Navbar */
+    position: fixed; /* Fixiert die Navigation oben */
+    top: 0; /* Setzt sie an den oberen Rand */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Über dem Hintergrundvideo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für die Navigation */
 }
 
+/* Brand-Logo in der Navigation */
+.navbar-brand {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #e8a723; /* Gelb */
+    text-decoration: none;
+    margin-left: 10px;
+}
 
-	  /* Link-Styling für die linke Seite der Navbar */
-		.navbar-brand {
-			font-family: 'Bangers', sans-serif; 				/* Schriftart für die Marke */
-			color: #E8A723 !important;     						/* Farbe für die Marke */
-			font-size: 2rem;
-			justify-content: space-around;
-			gap: 10px;
-	  		}
+.navbar-brand:hover {
+    color: white;
+}
 
-		.navbar-brand:hover{
-			text-decoration: none;
-			color: white;
-			}
+/* Menülinks in der Navigation */
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif; /* Helvetica für Menütexte */
+}
 
-		.menu{
-			justify-content: flex-end;
-			font-size: 2rem;
-			}
-	  /* Hintergrundfarbe für Dropdown-Menüs */
-		.dropdown-menu {
-			background-color: #285238;
-	  	}
+.menu-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s;
+}
 
-	  /* Dropdown-Menü-Links Styling */
-		.dropdown-item {
-			color: #E8A723;
-	  	}
+.menu-link:hover {
+    background-color: #e8a723; /* Gelber Hover-Effekt */
+    color: #285238; /* Dunkelgrün */
+}
 
-	  /* Hover-Effekt für Dropdown-Links */
-		.dropdown-item:hover {
-			background-color: #E8A723;
-			color: #285238;
-	 	}
+/* Dropdown Menü Styling */
+.dropdown {
+    position: relative;
+}
 
-	  /* Rahmen um die Navigationselemente */
-		.nav-link {
-			border: 2px solid white; 						/* Weißer Rahmen */
-			border-radius: 5px; 							/* Abgerundete Ecken */
-			padding: 5px 15px; 								/* Innenabstand */
-			margin-right: 20px; 							/* Abstand zwischen den Links */
-			transition: border-color 0.3s, color 0.3s; 		/* Sanfter Übergang für die Rahmenfarbe und Textfarbe */
-			color: white; 									/* Setze die Standardfarbe für die Links auf Weiß */
-		  }
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s;
+}
 
-	  /* Rahmenfarbe und Textfarbe bei Hover */
-		.nav-link:hover {
-			border-color: #e8a723; 							/* Gelbe Rahmenfarbe bei Hover */
-			color: white; 									/* Textfarbe bleibt weiß */
-		  }
+.dropbtn:hover {
+    background-color: #e8a723; /* Gelber Hover-Effekt */
+    color: #285238; /* Dunkelgrün */
+}
 
-	  /* Übersteuere die text-white Klasse */
-		.nav-link.text-white {
-			color: white !important; 						/* Sicherstellen, dass die Links weiß sind */
-		  }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+}
 
+.dropdown-content a {
+    color: #285238; /* Dunkelgrün */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 0.9rem;
+}
 
-		/* Allgemeine Navbar-Styling */
-		.navbar-custom {
-			background-color: #285238; /* Dunkles Grün */
-			display: flex;
-			align-items: center;
-			justify-content: space-between; /* Platz zwischen Branding und Menü */
-			padding: 10px 20px;
-		}
+.dropdown-content a:hover {
+    background-color: #e8a723; /* Gelber Hover-Effekt */
+    color: #285238;
+}
 
-		/* Branding */
-		.navbar-brand {
-			font-family: 'Bangers', cursive;
-			font-size: 24px;
-			color: #FFD700; /* Gelb wie bei Die Energieretter */
-			text-decoration: none;
-			margin-right: 50px;
-		}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-		/* Menü Styling */
-		.menu {
-			display: flex;
-			gap: 20px; /* Abstand zwischen den Menü-Elementen */
-			align-items: center;
-		}
-
-		/* Links und Buttons */
-		.menu a,
-		.menu .dropbtn {
-			color: white;
-			text-decoration: none;
-			background: none;
-			border: none;
-			cursor: pointer;
-			font-size: 18px;
-			padding: 5px 10px;
-			display: inline-block;
-		}
-
-		/* Gelbe Umrandung für alle Hauptmenü-Elemente, passend zu "Die Energieretter" */
-		.menu-item {
-			border: 2px solid #FFCC00; /* Gelb von Die Energieretter (z.B. #FFCC00) */
-			border-radius: 5px; /* Abgerundete Ecken */
-			padding: 5px 15px; /* Zusätzlicher Innenabstand */
-			transition: background-color 0.3s, border-color 0.3s;
-		}
-
-		/* Hintergrundfarbe beim Hover */
-		.menu-item:hover {
-			background-color: #45a049; /* Helleres Grün */
-		}
-
-		/* Dropdown Styling */
-		.dropdown {
-			position: relative; /* Ermöglicht absolute Positionierung der Inhalte */
-		}
-
-		.dropdown-content {
-			display: none; /* Unsichtbar standardmäßig */
-			position: absolute;
-			background-color: #ffffff; /* Weißes Menü */
-			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Leichter Schatten */
-			z-index: 1;
-			min-width: 150px; /* Breite des Menüs */
-			border-radius: 5px;
-			top: 100%; /* Menü erscheint direkt unterhalb des Buttons */
-			left: 0; /* An der linken Seite ausgerichtet */
-		}
-
-		.dropdown-content a {
-			color: #333; /* Dunkelgrauer Text */
-			text-decoration: none;
-			display: block;
-			padding: 10px;
-			font-size: 16px;
-		}
-
-		.dropdown-content a:hover {
-			background-color: #f1f1f1; /* Heller Hintergrund beim Hover */
-		}
-
-		/* Dropdown bleibt sichtbar, wenn Maus darüber ist */
-		.dropdown:hover .dropdown-content {
-			display: block; /* Inhalt wird sichtbar */
-		}
-
-		/* Sicherstellen, dass Dropdown-Button nicht verschwindet */
-		.dropdown .dropbtn {
-			position: relative;
-		}
-
-
-/* Gestaltung Footer */
-
-/* Gestaltung Footer */
+/* Footer Styling */
 .footer-custom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  height: 8%;
-  width: 100%;
-  background-color: #285238;
-  color: #E8A723;
-  padding: 10px 20px;
-  text-align: right;
-  z-index: 4;
-  display: flex;
-  justify-content: space-between; /* Linke und rechte Inhalte verteilen */
-  align-items: center;
-  flex-wrap: wrap; /* Inhalt wird bei schmalem Bildschirm umgebrochen */
-  box-sizing: border-box; /* Padding wird in die Gesamtbreite einbezogen */
+    background-color: #285238; /* Dunkelgrün */
+    color: #e8a723; /* Gelb für den Text */
+    padding: 20px;
+    position: fixed;
+    left: 0; /* Footer ist am linken Rand fixiert */
+    bottom: 0; /* Footer ist am unteren Rand fixiert */
+    width: 100%; /* Footer nimmt die gesamte Breite ein */
+    font-family: 'Bangers', cursive; /* Schriftart auf Bangers setzen */
+    text-align: center; /* Text im Footer zentrieren */
+    z-index: 10; /* Sicherstellen, dass der Footer immer über dem Inhalt liegt */
+    height: 20px; /* Höhe des Footers festlegen */
 }
 
-.footer-link {
-  font-family: "bangers";
-  font-size: 2rem;
-  color: #E8A723;
-  text-decoration: none;
-}
-
-.footer-link:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-}
-
-.footer-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* Abstand von links, um den Inhalt ganz nach rechts zu rücken */
-}
-
-@media (max-width: 600px) {
-  .footer-right {
-    margin-left: 0;
-  }
-  .footer-custom {
-    flex-direction: column; /* Stellt die Inhalte untereinander dar */
-    align-items: flex-start; /* Alles linksbündig bei schmalem Bildschirm */
-  }
-  .footer-right {
+/* Styling für den Link im Footer */
+.footer-links {
+    display: flex;
+    justify-content: right; /* Zentriert den Link im Footer */
+    align-items: center; /* Vertikal zentrieren */
     margin-top: 10px;
-    align-self: flex-end;
-  }
+    width: 100%; /* Stellt sicher, dass der Container den gesamten Footer einnimmt */
 }
 
+.footer-links a {
+    color: #e8a723; /* Gelb */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Bangers', cursive; /* Impressum-Link auch in Bangers */
+    display: inline-block;
+    width: 150px; /* Schmaleren Link für das Impressum setzen */
+    overflow: hidden;
+    white-space: nowrap; /* Verhindert das Umbruch von Text */
+    text-overflow: ellipsis; /* Wenn der Text zu lang ist, wird er abgeschnitten */
+    margin-right: 20px; /* Abstand nach rechts, um den Link leicht nach links zu verschieben */
+}
+
+.footer-links a:hover {
+    color: white; /* Weiß beim Hover */
+    text-decoration: underline;
+}
+
+/* Verhindert Scrollen der Seite */
+body {
+    padding-bottom: 60px; /* Platz für den Footer lassen */
+    overflow: hidden; /* Verhindert das Scrollen der Seite */
+}
 
