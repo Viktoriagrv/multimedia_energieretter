@@ -7,9 +7,12 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../include/css/styles.css">
 
     <!-- Navigation einbinden -->
-    <?php include '../include/partials/nav.php'; ?>
+  
+	<?php include 'include/partials/nav.php'; ?>
+
 
     <style>
         /* Allgemeine Layout-Einstellungen */
@@ -112,7 +115,7 @@
     </main>
 
     <!-- Footer -->
-    <?php include '../include/partials/footer.php'; ?>
+    <?php include 'include/partials/footer.php'; ?>
 	
 	
 <script>
