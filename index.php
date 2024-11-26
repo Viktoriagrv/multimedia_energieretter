@@ -52,7 +52,7 @@
 			overflow:hidden;
 			}
 		
-		.scrolltext{
+		.scroll{
 			visibility: hidden;
 			}
 		
@@ -76,8 +76,8 @@
 				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
 
 
-				<div id="scrolltext"> 
-					<p class="scrolltext"><br><br>Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden da draußen! Es ist Zeit zu kämpfen! Wähle dir einen Verbündeten und reise mit ihm zusammen in die Vergangenheit, um unsere Zukunft zu retten. Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+				<div class="scroll" id="scrolltext"> 
+					<p><br><br>Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden da draußen! Es ist Zeit zu kämpfen! Wähle dir einen Verbündeten und reise mit ihm zusammen in die Vergangenheit, um unsere Zukunft zu retten. Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					</p>
 					<img src="images/weltkugel.png" alt="Weltkugel">
 				</div>
@@ -93,9 +93,9 @@
 				
 		function TextStarten() {
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
-			document.querySelector(".scrolltext").classList.add("ZEIGEN");
+			document.querySelector(".scroll").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "70");
+			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "60");
 			}
 			
 	</script>
