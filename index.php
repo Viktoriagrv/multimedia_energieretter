@@ -52,6 +52,7 @@
 			overflow:hidden;
 			}
 		
+		
 		.scroll{
 			visibility: hidden;
 			}
@@ -85,7 +86,7 @@
 				<div class="scroll" id="scrolltext"> 
 					<p><br><br>Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden da draußen! Es ist Zeit zu kämpfen! Wähle dir einen Verbündeten und reise mit ihm zusammen in die Vergangenheit, um unsere Zukunft zu retten. Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
 					</p>
-					<img src="images/weltkugel.png" alt="Weltkugel">
+					 <img src="images/weltkugel.png" alt="Weltkugel" style="width: 420px; height: auto;">
 				</div>
 	
 			</div>

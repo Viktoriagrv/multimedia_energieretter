@@ -11,18 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 
     <!-- Einbinden der CSS-Datei -->
-    <link rel="stylesheet" href="include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
+    <link rel="stylesheet" href="../include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
 
     <!-- Einbinden der Navigationsleiste -->
     <?php include('include/partials/nav.php'); ?>
 </head>
 
 <body>
-	    <!-- Hintergrundvideo -->
+	         <!-- Hintergrundvideo -->
 <video autoplay muted loop id="backgroundVideo">
-    <source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-    <source src="video/background_video.webm" type="video/webm">
+    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
 </video>
+
 
     <main>
         <div>
