@@ -188,17 +188,18 @@ main {
     width: 100%; /* Stellt sicher, dass der Container den gesamten Footer einnimmt */
 }
 
+
 .footer-links a {
     color: #e8a723; /* Gelb */
     text-decoration: none;
     font-size: 1.2rem;
-    font-family: 'Bangers', cursive; /* Impressum-Link auch in Bangers */
+    font-family: 'Bangers'; /* Impressum-Link auch in Bangers */
     display: inline-block;
     width: 150px; /* Schmaleren Link für das Impressum setzen */
     overflow: hidden;
     white-space: nowrap; /* Verhindert das Umbruch von Text */
     text-overflow: ellipsis; /* Wenn der Text zu lang ist, wird er abgeschnitten */
-    margin-right: 20px; /* Abstand nach rechts, um den Link leicht nach links zu verschieben */
+    margin-right: 0px; /* Abstand nach rechts, um den Link leicht nach links zu verschieben */
 }
 
 .footer-links a:hover {

@@ -116,19 +116,6 @@
             <a href="zukunftsenergien/wind.php" class="button" id="button-wind">Windenergie</a>
         </div>
     </main>
-
-    <!-- Footer -->
- <!-- Footer-Container -->
-<footer class="footer-custom">
-    <div class="footer-left">
-        <!-- Linke Inhalte könnten hier ergänzt werden -->
-    </div>
-    <div class="footer-right">
-        <a class="footer-link" href="../../impressum/impressum.php">Impressum</a> <!-- Impressum-Link -->
-    </div>
-</footer>
-
-
 	
 <script>
     // Funktion, um Icons schweben zu lassen
@@ -174,5 +161,15 @@
     });
 </script>
 
+	    <!-- Footer -->
+	<footer class="footer-custom">
+    <div class="footer-links">
+        <a href="../../impressum/impressum.php">Impressum</a>
+    </div>
+</footer>
+ <!-- Footer-Container -->
+
+
+ 
 </body>
 </html>

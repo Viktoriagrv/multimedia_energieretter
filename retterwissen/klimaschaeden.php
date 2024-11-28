@@ -7,131 +7,171 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../include/css/styles.css">
 
     <!-- Navigation einbinden -->
-    <?php include '../include/partials/nav.php'; ?>
+  <nav class="navbar-custom">
+
+    <!-- Branding -->
+    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
+    
+    <!-- Hauptmenü -->
+    <div class="menu">
+
+       
+        <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+
+        
+        <div class="dropdown menu-item">
+            <button class="dropbtn menu-link">Mission</button>
+            <div class="dropdown-content">
+                <a href="../../mission/superhelden.php">Die Superhelden</a>
+                <a href="../../mission/missionsstart.php">Missionsstart</a>
+                <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+            </div>
+        </div>
+        
+        <!-- Dropdown-Menü -->
+        <div class="dropdown menu-item" style="margin-right: 50px;">
+            <button class="dropbtn menu-link">Retterwissen</button>
+            <div class="dropdown-content">
+                <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+                <a href="../../retterwissen/innovationen.php">Innovationen</a>
+                <a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
 
     <style>
-        /* Body und allgemeine Layout-Einstellungen */
+        /* Allgemeine Layout-Einstellungen */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: url('bilder_retterwissen/galaxie_retterwissen.jpeg') no-repeat center center fixed;
-            background-size: cover;
-        }
-
-        /* Hauptcontainer */
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: calc(100vh - 100px); /* Platz für Navigation und Footer berücksichtigen */
         }
 
         /* Schwebe-Icons */
         .icon-container {
             display: flex;
             justify-content: space-around;
-            gap: 100px; /* Großer Abstand zwischen den Icons */
+            gap: 100px;
             position: relative;
             margin-bottom: 60px;
         }
 
         .icon-container img {
-            width: 130px; /* Größe der Icons */
+            width: 130px;
             height: 130px;
-            transition: transform 0.3s ease;  /* Hinzufügen eines sanften Übergangs */
-        }
-
-        .icon-container img:hover {
-            transform: scale(1.1);  /* Vergrößern der Icons bei Hover */
         }
 
         /* Buttons */
         .button-container {
             display: flex;
-            gap: 50px; /* Abstand zwischen den Buttons */
+            gap: 50px;
         }
 
         .button-container a {
             display: inline-block;
-            padding: 20px 30px; /* Größe der Buttons */
-            font-size: 22px; /* Schriftgröße */
+            padding: 20px 30px;
+            font-size: 22px;
             text-decoration: none;
             color: white;
-            background-color: #ff4d4d; /* Rote Buttons */
-            border-radius: 10px; /* Abgerundete Ecken */
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: #285238;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
             font-family: 'Bangers', cursive;
         }
 
-        .button-container a:hover {
-            background-color: #ff1a1a; /* Dunklerer Rotton bei Hover */
-            transform: scale(1.05); /* Leichtes Vergrößern bei Hover */
+        .button-container a.hovered {
+            background-color: #45a049;
         }
 
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #285238;
-            color: white;
-            font-size: 14px;
-            position: relative;
-        }
+    
     </style>
 </head>
 
 <body>
+    <!-- Hintergrundvideo -->
+<video autoplay muted loop id="backgroundVideo">
+    <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
+    <source src="video/background_video.webm" type="video/webm">
+</video>
+
+
     <main>
-        <!-- Schwebe-Icons -->
+        <!-- Schwebeicon Tierleid -->
         <div class="icon-container">
-            <img src="bilder_retterwissen/hitzewelle.png" alt="Hitzewelle" id="icon-hitzewelle">
-            <img src="bilder_retterwissen/unwetter.png" alt="Unwetter" id="icon-unwetter">
-            <img src="bilder_retterwissen/thermometer.png" alt="Thermometer" id="icon-thermometer">
+            <img src="bilder_retterwissen/igel.png" alt="igel" id="icon-igel">
+            <img src="bilder_retterwissen/unwetter.png" alt="Klimaveränderungen" id="icon-klima">
+			<img src="bilder_retterwissen/mensch.png" alt="Mensch" id="icon-mensch">
         </div>
 
         <!-- Buttons -->
         <div class="button-container">
-            <a href="klimaschaeden/hitzewellen.php" class="button" id="button-hitzewellen">Hitzewellen</a>
-            <a href="klimaschaeden/unwetter.php" class="button" id="button-unwetter">Unwetter</a>
-            <a href="klimaschaeden/thermometer.php" class="button" id="button-thermometer">Thermometer</a>
+            <a href="zukunftsenergien/" class="button" id="button-igel">Schäden für's Tier</a>
+            <a href="zukunftsenergien/" class="button" id="button-klima">Klimaveränderungen</a>
+			<a href="zukunftsenergien/" class="button" id="button-mensch">Schäden für den Mensch</a>
+            
         </div>
     </main>
+	
+<script>
+    // Funktion, um Icons schweben zu lassen
+    function floatIcons() {
+        const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
 
-    <!-- Footer -->
-    <?php include '../include/partials/footer.php'; ?>
+        icons.forEach(icon => {
+            let position = 0; // Startposition
+            let direction = 1; // Bewegung nach oben oder unten
+            const maxMovement = 15; // Maximale Bewegung in Pixel
+            const stepSize = 0.25; // Bewegungsschritt
 
-    <script>
-        // Funktion für das langsame und weniger weite Schweben der Icons
-        function floatIcons() {
-            const icons = document.querySelectorAll('.icon-container img');
-            icons.forEach(icon => {
-                let position = 0;
-                let direction = 1;
-                const maxMovement = 15;  // Weniger Bewegung (max. 15px nach oben/unten)
-                const stepSize = 0.25;  // Sehr langsame Bewegung (0.25px pro Frame)
+            const iconFloat = () => {
+                if (position >= maxMovement || position <= -maxMovement) {
+                    direction *= -1; // Richtung wechseln
+                }
+                position += direction * stepSize; // Position aktualisieren
+                icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+                requestAnimationFrame(iconFloat); // Animation wiederholen
+            };
 
-                const iconFloat = () => {
-                    if (position >= maxMovement || position <= -maxMovement) {
-                        direction *= -1;  // Richtungswechsel, wenn das Limit erreicht ist
-                    }
-                    position += direction * stepSize;  // Schrittgröße (langsamer)
-                    icon.style.transform = `translateY(${position}px)`;  // Anwenden der Bewegung
-                    requestAnimationFrame(iconFloat);  // Animation fortsetzen
-                };
-
-                iconFloat();
-            });
-        }
-
-        // Initialisierungen
-        document.addEventListener('DOMContentLoaded', () => {
-            floatIcons(); // Start der Schwebe-Animation
+            iconFloat(); // Animation starten
         });
-    </script>
+    }
+
+    // Funktion für Hover-Effekt auf Buttons
+    function buttonHoverEffect() {
+        const buttons = document.querySelectorAll('.button'); // Alle Buttons auswählen
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.classList.add('hovered'); // Klasse hinzufügen bei Hover
+            });
+            button.addEventListener('mouseout', () => {
+                button.classList.remove('hovered'); // Klasse entfernen bei Hover-Ende
+            });
+        });
+    }
+
+    // Startet die Funktionen nach dem Laden der Seite
+    document.addEventListener('DOMContentLoaded', () => {
+        floatIcons(); // Icons schweben lassen
+        buttonHoverEffect(); // Hover-Effekt aktivieren
+    });
+</script>
+
+	    <!-- Footer -->
+	<footer class="footer-custom">
+    <div class="footer-links">
+        <a href="../../impressum/impressum.php">Impressum</a>
+    </div>
+</footer>
+ <!-- Footer-Container -->
+
+
+ 
 </body>
 </html>
 

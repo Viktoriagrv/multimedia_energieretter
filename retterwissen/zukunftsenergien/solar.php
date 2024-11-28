@@ -7,21 +7,16 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../include/css/styles.css">
+	<link rel="stylesheet" href="../../include/css/styles.css">
 
     <!-- Navigation einbinden -->
   <nav class="navbar-custom">
-
     <!-- Branding -->
     <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
     
     <!-- Hauptmenü -->
     <div class="menu">
-
-       
         <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
-
-        
         <div class="dropdown menu-item">
             <button class="dropbtn menu-link">Mission</button>
             <div class="dropdown-content">
@@ -43,92 +38,98 @@
     </div>
 </nav>
 
+   <style>
+      body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
 
+#infoText {
+    width: 50%;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparentes Weiß */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: none; /* Schatten entfernt */
+}
 
-    <style>
-        /* Allgemeine Layout-Einstellungen */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
+#infoText h1 {
+    font-family: 'Bangers', cursive; /* Schriftart Bangers */
+    text-align: center;
+    color: #e8a723; /* Farbe #e8a723 */
+}
 
-        /* Schwebe-Icons */
-        .icon-container {
-            display: flex;
-            justify-content: space-around;
-            gap: 100px;
-            position: relative;
-            margin-bottom: 60px;
-        }
+#infoText p {
+    cursor: pointer;
+}
 
-        .icon-container img {
-            width: 130px;
-            height: 130px;
-        }
+#infoText p:hover {
+    color: #ff6347; /* Starker Kontrast beim Hover (rot) */
+}
 
-        /* Buttons */
-        .button-container {
-            display: flex;
-            gap: 50px;
-        }
+#interactiveBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-        .button-container a {
-            display: inline-block;
-            padding: 20px 30px;
-            font-size: 22px;
-            text-decoration: none;
-            color: white;
-            background-color: #285238;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-            font-family: 'Bangers', cursive;
-        }
+#interactiveBtn:hover {
+    background-color: #005f73;
+}
 
-        .button-container a.hovered {
-            background-color: #45a049;
-        }
-
-    
     </style>
+
 </head>
 
 <body>
     <!-- Hintergrundvideo -->
 <video autoplay muted loop id="backgroundVideo">
-    <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
+    <source src="../bilder_retterwissen/background_video.mp4" type="video/mp4">
     <source src="video/background_video.webm" type="video/webm">
 </video>
 
-
     <main>
-        <!-- Schwebe-Icons -->
-        <div class="icon-container">
-            <img src="bilder_retterwissen/sonne.png" alt="Sonne" id="icon-sun">
-            <img src="bilder_retterwissen/wasser.png" alt="Wasser" id="icon-water">
-            <img src="bilder_retterwissen/wind.png" alt="Wind" id="icon-wind">
-        </div>
+    <div id="infoText">
+        <h1>Alles über Sonnenenergie</h1>
+        <p onclick="highlightText(this)">Sonnenenergie, oder auch Solarenergie genannt, ist Energie, die von der Sonne kommt. Die Sonne strahlt eine große Menge an Energie aus. Ein kleiner Teil dieser Strahlen erreicht die Erde und erwärmt sie. Die Menschen können diese Energie nutzen und in andere Energien umwandeln. Die Sonnenstrahlen liefern weit mehr Energie, als Mensch und Natur brauchen können. Mit Solarmodulen kann man die Sonnenenergie einfangen und in Strom verwandeln. Das Besondere daran ist, dass sie keine schädlichen Gase produziert und deshalb gut für die Umwelt ist.</p>
+        
+        <p onclick="highlightText(this)">Die Technik, um Sonnenenergie zu nutzen, wird immer besser. Manche Häuser haben schon Solarzellen auf dem Dach, die ihren eigenen Strom erzeugen. Sogar Autos oder Taschenlampen können mit Sonnenenergie betrieben werden!</p>
+        
+        <p onclick="highlightText(this)">Nahe dem Äquator ist die energiereiche Sonneneinstrahlung besonders hoch. Deshalb ist es vor allem dort sinnvoll, mit Hilfe der Sonnenenergie Strom zu erzeugen. In Wüsten wie der Sahara ist es immer sonnig und auch Länder wie Australien und Mexiko sind gut für Solarmodule. In Europa haben auch Spanien, Italien und Griechenland viel Sonne. Diese Orte sind perfekt für Solarmodule!</p>
+        
+        <button id="interactiveBtn" onclick="changeColor()">Klicke hier, um den Text einzufärben</button>
+    </div>
 
-        <!-- Buttons -->
-        <div class="button-container">
-            <a href="zukunftsenergien/solar.php" class="button" id="button-sun">Sonnenenergie</a>
-            <a href="zukunftsenergien/wasser.php" class="button" id="button-water">Wasserenergie</a>
-            <a href="zukunftsenergien/wind.php" class="button" id="button-wind">Windenergie</a>
-        </div>
+    <script>
+        // Funktion, um den Text zu markieren
+        function highlightText(element) {
+            element.style.backgroundColor = "#ffff99"; // Heller gelber Hintergrund
+            setTimeout(function() {
+                element.style.backgroundColor = ""; // Hintergrund nach einer Sekunde zurücksetzen
+            }, 1000);
+        }
+
+        // Funktion, um die Schriftfarbe des Textes zu ändern
+        function changeColor() {
+            const paragraphs = document.querySelectorAll('#infoText p');
+            const contrastColors = ['#000000', '#FFFFFF', '#FF0000', '#00FF00', '#0000FF', '#FFFF00']; // Starke Kontrastfarben
+            const randomColor = contrastColors[Math.floor(Math.random() * contrastColors.length)];
+            paragraphs.forEach(paragraph => {
+                paragraph.style.color = randomColor;
+            });
+        }
+    </script>
     </main>
-
-    <!-- Footer -->
- <!-- Footer-Container -->
-<footer class="footer-custom">
-    <div class="footer-left">
-        <!-- Linke Inhalte könnten hier ergänzt werden -->
-    </div>
-    <div class="footer-right">
-        <a class="footer-link" href="../../impressum/impressum.php">Impressum</a> <!-- Impressum-Link -->
-    </div>
-</footer>
-
-
 	
 <script>
     // Funktion, um Icons schweben zu lassen
@@ -173,6 +174,13 @@
         buttonHoverEffect(); // Hover-Effekt aktivieren
     });
 </script>
+
+<!-- Footer -->
+<footer class="footer-custom">
+    <div class="footer-links">
+        <a href="../../impressum/impressum.php">Impressum</a>
+    </div>
+</footer>
 
 </body>
 </html>
