@@ -6,6 +6,41 @@
 	
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../include/css/styles.css">
+	
+	 <!-- Navigation einbinden -->
+  <nav class="navbar-custom">
+
+    <!-- Branding -->
+    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
+    
+    <!-- Hauptmenü -->
+    <div class="menu">
+
+       
+        <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+
+        
+        <div class="dropdown menu-item">
+            <button class="dropbtn menu-link">Mission</button>
+            <div class="dropdown-content">
+                <a href="../../mission/superhelden.php">Die Superhelden</a>
+                <a href="../../mission/missionsstart.php">Missionsstart</a>
+                <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+            </div>
+        </div>
+        
+        <!-- Dropdown-Menü -->
+        <div class="dropdown menu-item" style="margin-right: 50px;">
+            <button class="dropbtn menu-link">Retterwissen</button>
+            <div class="dropdown-content">
+                <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+                <a href="../../retterwissen/innovationen.php">Innovationen</a>
+                <a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
     <style>
 
 				
@@ -138,7 +173,7 @@
 		
 		.INFOSCARLETSHADE {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -155,10 +190,10 @@
 		
 		.INFOGOLDENKNIGHT {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
-			top: 5%px;
-			left: 30%px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -172,7 +207,7 @@
 		
 		.INFOGREENBLAZE {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -189,7 +224,7 @@
 		
 		.INFOTHUNDERBOLT {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -206,7 +241,7 @@
 		
 		.INFOCYBERTITAN {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -223,7 +258,7 @@
 		
 		.INFOSONICSHIELD {
 			flex-direction: row;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -309,7 +344,7 @@
 				</div>
 			 
 
-			<div>
+			
 				<div class="THUNDERBOLT">
 					<img class="BILD" src="../images/AquaBoy.png" alt="Thunder Bolt">
 				</div>
@@ -321,7 +356,7 @@
 				<div class="SONICSHIELD">
 					<img class="BILD" src="../images/BadBoy.png" alt="Sonic Shield">
 				</div>
-			</div>
+			
 
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
