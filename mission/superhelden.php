@@ -45,9 +45,9 @@
 
 				
 		.Schriftzug{
-			position: fixed;
+			position: absolute;
 			top: 35%;
-			left: 3rem;
+			left: 10%;
 			font-family: "bangers";
 			font-size: 5rem;
 			color: #e8a723;

@@ -12,32 +12,36 @@
 	<style>	
 		
 		.STARTBUTTON{
-			position: sticky;
+			position: absolute;
 			justify-content: center;
 			background-color: transparent;
+			border: 0;
 			font-family:  "bangers";
 			font-size: 12rem;
 			line-height: 1.2;
 			color: #e8a723;
 			border: none;
-			top: 5rem;
-			align-items: center;
-			text-align: center;
-			background-color: transparent;
-			border: 0;
-			transition: all 1s;
-			width:800px;
+			top: 25%;
+			left: 20%;
+			text-align: center;				
+			width:60%;
+			visibility: visible;
+			transition-delay: 0s;
+			}
+		
+		.WEG{
+			visibility: hidden;
 			}
 		
 		.KLEIN{
-			position: relative;
-			top: 2rem;
+			position: absolute;
+			top: 10%;
+			left:20%;
 			font-size: 5rem;
-			
 			}	
 		
-
-		#scrolltext {
+		
+		.SCROLL{
 			position: relative;
 			justify-content: center;
 			align-items:center;
@@ -50,23 +54,15 @@
 			color:#FFFFFF;
 			text-align: justify;
 			overflow:hidden;
-			}
-		
-		
-		.scroll{
 			visibility: hidden;
+			opacity: 0;
 			}
 		
-		.WELT{
-			position:absolute; 
-			left:25%;
-			width: 50%;
-			height: auto;
-			}
+		
 		
 		.PAUSE{
 			 position:absolute;
-			bottom: 8%;
+			bottom: 10%;
 			left: 40%;
 			height:5%;
 			width: 20%;
@@ -75,13 +71,30 @@
             color: white;
             background-color: #285238;
             border-radius: 10px;
-            transition: background-color 0.3s ease;
             font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
 			}
 		
 		.ZEIGEN{
+			transition-property: all;
+			transition-delay: 1.5s;
+			visibility: visible;
+			opacity: 1;
+			
+			}
+				
+		.WELT{
+			position:absolute;
+			top: 20%;
+			Left:35%;
+			height: 60%;
+			width:auto;
+			visibility: hidden;
+			}
+		
+		.GROSS{
+			transition-delay: 1.5;
 			visibility: visible;
 			}
 			
@@ -135,42 +148,79 @@
 	
 		<main>
 		
-			<div>
+			
 				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
 
 
-				<div class="scroll" id="scrolltext"> 
-					<p><br><br>
+				<div class="SCROLL" id="scrolltext"> 
+					<p><br><br><br><br><br>
 						Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus. Die Zukunft unserer Erde steht auf dem Spiel!<br><br>
 						Aber zum Glück hast du die Chance, etwas zu verändern! Wähle dir einen Verbündeten und reise als Energieretter zurück in die Vergangenheit, um die Welt vor dieser düsteren Zukunft zu bewahren. Hier auf unserer Website kannst du entdecken, welche Energiequellen uns helfen, die Umwelt zu schützen – ob mit der Kraft der Sonne, dem Wind oder dem Wasser.<br><br>
-						Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!				 
+						Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!
+						<br><br><br><br><br><br><br><br><br><br><br><br>
 					</p>
-					 <img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
+					
 				</div>
+				
+				<img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
+					
+				<button class="PAUSE">Pause</button>
+		
 	
-			</div>
-		</main>
-	
-			<button class="PAUSE">Pause</button>
-	
+	</main>
+			
 	
 	<script> 
 		
-		document.querySelector("#START").addEventListener("click",TextStarten);
-		document.querySelector(".PAUSE").addEventListener("click",TextPause);
+		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
+		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 
-				
+			let timer1;
+			let timer2;
+			let textEnde = false; 															// prüft, ob der Text zu Ende ist
+
+		// Funktion zum Starten des Textes
 		function TextStarten(){
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
-			document.querySelector(".scroll").classList.add("ZEIGEN");
+			document.querySelector(".SCROLL").classList.add("ZEIGEN");
 			document.querySelector(".PAUSE").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "60");
+
+			// Startet den Timer, der den Text scrollen lässt
+			timer1 = setInterval(scrollText, 60); 												// Text scrollt alle 60ms
+			}
+
+		// Funktion, die den Text kontinuierlich scrollt
+		function scrollText() {
+			let scrollTextElement = document.querySelector("#scrolltext");
+
+			// Wenn das Ende des Textes erreicht ist, stoppt der Timer und ruft AbschlussStarten auf
+			if (scrollTextElement.scrollTop + scrollTextElement.clientHeight >= scrollTextElement.scrollHeight) {
+				clearInterval(timer1);
+				if (!textEnde) {
+					textEnde = true;
+					AbschlussStarten();
+					}
+				} 
+
+			else {
+				scrollTextElement.scrollTop += 1; 											// Scrollt den Text um 1 Pixel
+				}
 			}
 		
+
+		// Funktion zum Pausieren des Textes
 		function TextPause(){
-			clearTimeout(timer1);
-					
+			clearInterval(timer1); 															// Stoppt den Scroll-Timer
+			}
+
+		// Funktion, die nach dem Ende des Textes ausgeführt wird
+		function AbschlussStarten(){
+			document.querySelector(".STARTBUTTON").classList.add("WEG");
+			document.querySelector(".SCROLL").classList.remove("ZEIGEN");
+			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
+			document.querySelector(".WELT").classList.add("GROSS");
+			document.querySelector(".BLASE").classList.add("ZEIGEN");
 			}
 			
 	</script>
