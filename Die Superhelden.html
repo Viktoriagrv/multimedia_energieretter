@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.php -->
+<html lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Die Superhelden</title>
+	
+    <link href="./Die Superhelden_files/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Die Superhelden_files/styles.css">
+  
+<style>	
+		.Schriftzug{
+			flex: 1;
+            text-align: center;
+			left: 3rem;
+			font-family: "bangers";
+			font-size: 5em;
+			color: #e8a723;
+			line-height: 1.1;
+			position: relative;
+		}
+		
+		.superheldenbilder {
+			display: flex;
+            flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-content: space-evenly;
+            flex: 2;
+			height: 90%;
+		}
+	
+		.BILD{
+			width: calc(33.33% - 10px); /* Drei Bilder pro Reihe */
+            height: calc(50% - 10px);
+		}	
+		
+		.superheldenoverlay {
+			position: absolute;
+            top: 50%;
+            left: 50%;
+			width: 55%;
+			height: 45%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9); /* Halbtransparenter Hintergrund */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+			visibility: hidden;
+			padding: 3%;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+		}
+		
+		.BILDBOX{
+			display:flex;
+			justify-content: space-around;
+			}
+		
+		.BILDINFOBOX{
+			position: sticky;
+			top:10%;
+			right: 50%;
+			height: 19rem;
+			width: auto;
+			}
+		
+		.TEXTBLOCK{
+			position: absolute;
+			left: 50%;
+			top: 5%;
+			padding: 20px;
+			}
+		/*die folgenden habe ich glaube ich nicht geändert, ah doch den Auswahl knopf habe ich verschoben*/
+		.NAME{
+			font-family: "bangers";
+			color: #e8a723;
+			font-size: 2.5rem;
+			text-align: center;
+			}
+		
+		.TITEL{
+			font-family: verdana bold;
+			color: #285238;
+			text-decoration: underline;
+			font-size: 1.5rem;
+			text-align: left;
+			}
+		
+		.TEXT{
+			font-family: verdana bold;
+			color: #285238;
+			font-size: 1.5rem;
+			text-align: left;
+			}
+	
+		
+		.AUSWAHL{
+			position: absolute;
+			padding: 8px;
+			bottom: 20px;
+			/*left: 300px;*/
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			}
+		
+		.AUSWAHL:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+
+		.SICHTBAR {
+			visibility: visible;
+		}
+		
+		.CLOSE{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			background-color: #285238;
+			color: #e8a723;
+			border:3px solid #285238;
+			border-radius: 3px;
+		}
+		
+		.CLOSE:hover{
+			background-color: #45a049;
+			color: #285238;
+		}
+
+/*		die hier sind alle nicht nötig^^ Grundsätzlich gilt wenn du das gleiche mehr als zwei mal eintippst machst du was falsch ;) bzw musst du es anders machen. Auch bei diesen ganzen Info Boxen da reicht eine die man entsprechend füllt. 
+		.GOLDENKNIGHT {
+			position: absolute;
+			top: 50px;
+			left: 750px;
+			}
+		
+		.GREENBLAZE {
+			position: absolute;
+			top: 50px;
+			left: 1000px;
+			}
+		
+		.THUNDERBOLT {
+			position: absolute;
+			top: 300px;
+			left: 500px;
+			}
+		
+		.CYBERTITAN {
+			position: absolute;
+			top: 300px;
+			left: 750px;
+			}
+		
+		.SONICSHIELD {
+			position: absolute;
+			top: 300px;
+			left: 1000px;
+			}
+		
+		.INFOSCARLETSHADE {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			top: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}
+	
+		
+		.INFOGOLDENKNIGHT {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			top: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOGREENBLAZE {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			top: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOTHUNDERBOLT {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			bottom: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOCYBERTITAN {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			top: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}
+		.SICHTBAR {
+			visibility: visible;
+			}
+		
+		.INFOSONICSHIELD {
+			flex-direction: row;
+			position: sticky;
+			padding: 30px;
+			top: 200px;
+			left: 650px;
+			height:400px;
+			width: 650px;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			}		
+		.SICHTBAR {
+			visibility: visible;
+			}
+			*/
+		/*
+		#buttonSCS{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			}
+		
+		#buttonGK{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			}
+		
+		#buttonGB{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			}
+		
+		#buttonTB{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			}
+		
+		#buttonCT{
+			position: absolute;
+			right:20px;
+			top: 20px;	
+			}
+		
+		#buttonSOS{
+			
+			}
+		*/
+
+</style>
+
+</head>
+
+<body>
+	
+	<!-- Einbinden der Navigationsleiste -->
+	<nav class="navbar-custom">
+
+    <!-- Branding -->
+    <a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.php">Die Energieretter</a>
+    
+    <!-- Hauptmenü -->
+    <div class="menu">
+        <a href="https://mwj-mm-05.kurs.jade-hs.de/index.php" class="menu-link menu-item">Vorspann</a>
+        
+        <div class="dropdown menu-item">
+            <button class="dropbtn menu-link">Mission</button>
+            <div class="dropdown-content">
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.php">Die Superhelden</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.php">Missionsstart</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/mission/codeeingabe.php">Code-Eingabe</a>
+            </div>
+        </div>
+        
+        <!-- Dropdown-Menü -->
+        <div class="dropdown menu-item" style="margin-right: 50px;">
+            <button class="dropbtn menu-link">Retterwissen</button>
+            <div class="dropdown-content">
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/innovationen.php">Innovationen</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.php">Klimaschäden</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+	
+	<main>
+
+		<div class="Schriftzug">
+			WÄHLE DEINEN <br> SUPERHELDEN
+		</div>
+		<div class="superheldenbilder">
+				<img class="BILD SCARLETSHADE" src="./Die Superhelden_files/BadGirl.png" alt="Scarlet Shade">
+				<img class="BILD GOLDENKNIGHT" src="./Die Superhelden_files/Prinz.png" alt="Golden Knight">
+				<img class="BILD GREENBLAZE" src="./Die Superhelden_files/Prinzessin.png" alt="Green Blaze">
+				<img class="BILD THUNDERBOLT" src="./Die Superhelden_files/AquaBoy.png" alt="Thunder Bolt">
+				<img class="BILD CYBERTITAN" src="./Die Superhelden_files/Biest.png" alt="Cyber Titan">
+				<img class="BILD SONICSHIELD" src="./Die Superhelden_files/BadBoy.png" alt="Sonic Shield">
+		</div>
+
+		<div class="INFOSCARLETSHADE superheldenoverlay">
+			
+				<div><img class="BILDINFOBOX" src="./Die Superhelden_files/BadGirl.png" alt="Scarlet Shade"><div class="TEXTBLOCK">
+					<a class="NAME">Scarlet Shade</a>
+					<br>
+					<a class="TITEL">Superkraft:</a><a class="TEXT">Unsichtbarkeit und Tarnung</a>
+					<br>
+					<a class="TITEL">Beschreibung:</a><a class="TEXT">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+				</div></img></div>
+				
+			<button class="CLOSE" id="buttonSCS">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+
+		<div class="INFOGOLDENKNIGHT superheldenoverlay">
+			
+			<div><img class="BILDINFOBOX" src="./Die Superhelden_files/Prinz.png" alt="Golden Knight"></div>
+			<div class="TEXTBLOCK">
+				<a class="NAME">Golden Knight</a>
+				<br>
+				<a class="TITEL">Superkraft:</a> <a class="TEXT">Schutzzauber und Fliegen</a>
+				<br>
+				<a class="TITEL">Beschreibung:</a> <a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
+				<br><br>
+			</div>
+			
+			<button class="CLOSE" id="buttonGK">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+
+		<div class="INFOGREENBLAZE superheldenoverlay">
+			
+			<div><img class="BILDINFOBOX" src="./Die Superhelden_files/Prinzessin.png" alt="Green Blaze"></div>
+			
+			<div class="TEXTBLOCK">
+				<a class="NAME">Green Blaze</a>
+				<br>
+				<a class="TITEL">Superkraft:</a> <a class="TEXT">Pflanzenkontrolle</a>
+				<br>
+				<a class="TITEL">Beschreibung:</a> <a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
+				<br><br>
+			</div>
+			
+			<button class="CLOSE" id="buttonGB">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+
+		<div class="INFOTHUNDERBOLT superheldenoverlay">
+			
+			<div><img class="BILDINFOBOX" src="./Die Superhelden_files/AquaBoy.png" alt="Thunder Bolt"></div>
+			
+			<div class="TEXTBLOCK">
+				<a class="NAME">Thunderbolt</a><br>
+				<a class="TITEL">Superkraft:</a> <a class="TEXT">Überschallgeschwindigkeit</a>
+				<br>
+				<a class="TITEL">Beschreibung:</a> <a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
+				<br><br>
+			</div>
+			
+			<button class="CLOSE" id="buttonTB">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+
+		<div class="INFOCYBERTITAN superheldenoverlay">
+			
+			<div><img class="BILDINFOBOX" src="./Die Superhelden_files/Biest.png" alt="Cyber Titan"></div>
+			
+			<div class="TEXTBLOCK">
+				<a class="NAME">Cyber Titan</a><br>
+				<a class="TITEL">Superkraft:</a> <a class="TEXT">Übermenschliche Stärke und technologische Kontrolle</a>
+				<br>
+				<a class="TITEL">Beschreibung:</a> <a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
+				<br><br>
+			</div>
+			
+			<button class="CLOSE" id="buttonCT">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+
+		<div class="INFOSONICSHIELD superheldenoverlay">
+			
+			<div><img class="BILDINFOBOX" src="./Die Superhelden_files/BadBoy.png" alt="Sonic Shield"></div>
+			<div class="TEXTBLOCK">
+				<a class="NAME">Sonic Shield</a><br>
+				<a class="TITEL">Superkraft:</a> <a class="TEXT">Schallwellenmanipulation</a>
+				<br>
+				<a class="TITEL">Beschreibung:</a> <a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
+				<br><br>
+			</div>
+			
+			<button class="CLOSE" id="buttonSOS">×</button>
+			<button class="AUSWAHL" onclick="window.location.href=&#39;missionsstart.php&#39;">Auswählen</button>
+		</div>
+		
+		</main>
+	
+			<script>
+
+				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
+				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
+				
+				function ZeigeScarletShade() {
+					document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
+					}
+				function ScarletShadeAus() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					}
+
+
+				document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
+				document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
+				
+				function ZeigeGoldenKnight() {
+					document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
+					}
+				function GoldenKnightAus() {
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					}
+
+				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
+				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
+				
+				function ZeigeGreenBlaze() {
+					document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
+					}
+				function GreenBlazeAus() {
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					}
+
+				document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
+				document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
+				
+				function ZeigeThunderBolt() {
+					document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
+					}
+				function ThunderBoltAus() {
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					}
+
+				document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
+				document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
+				
+				function ZeigeCyberTitan() {
+					document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
+					}
+				function CyberTitanAus() {
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					}
+
+				document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
+				document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
+				
+				function ZeigeSonicShield() {
+					document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
+					}
+
+				function SonicShieldAus() {
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
+					}
+
+
+			</script>
+
+    
+	
+ <!-- Einbinden des Footers -->
+  <!-- Footer-Container -->
+<footer class="footer-custom">
+    <div class="footer-left">
+        <!-- Linke Inhalte könnten hier ergänzt werden -->
+    </div>
+    <div class="footer-right">
+        <a class="footer-link" href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.php">Impressum</a> <!-- Impressum-Link -->
+    </div>
+</footer>
+
+ 
+	   
+   
+
+
+
+</body></html>
