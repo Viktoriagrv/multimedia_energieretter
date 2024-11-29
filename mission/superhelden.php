@@ -64,9 +64,10 @@
 		
 		
 		.BILDINFOBOX{
-			top:10%;
-			left: 25%;
-			height:auto;
+			position: relative;
+			top:20%;
+			left: 10%;
+			height:90%;
 			width: auto;
 			
 			}
@@ -101,19 +102,7 @@
 			text-align: left;
 			}
 		
-		.CLOSE{
-			font-size: 1rem bold;
-			background-color: #285238;
-			color: #e8a723;
-			border:3px solid #285238;
-			border-radius: 3px;
-			}
-		
-		.CLOSE:hover{
-			background-color: #45a049;
-			color: #285238;
-			}
-		
+				
 		.AUSWAHL{
 			position: absolute;
 			padding: 8px;
@@ -131,7 +120,7 @@
 			color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
-		}
+			}
 		
 		.SCARLETSHADE {
 			position: absolute;
@@ -182,9 +171,7 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			}
-		.SICHTBAR {
-			visibility: visible;
-			}
+		
 		
 		.INFOGOLDENKNIGHT {
 			flex-direction: row;
@@ -199,9 +186,7 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			}
-		.SICHTBAR {
-			visibility: visible;
-			}
+		
 		
 		.INFOGREENBLAZE {
 			flex-direction: row;
@@ -216,9 +201,7 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			}
-		.SICHTBAR {
-			visibility: visible;
-			}
+		
 		
 		.INFOTHUNDERBOLT {
 			flex-direction: row;
@@ -233,9 +216,7 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			}
-		.SICHTBAR {
-			visibility: visible;
-			}
+		
 		
 		.INFOCYBERTITAN {
 			flex-direction: row;
@@ -250,9 +231,7 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			}
-		.SICHTBAR {
-			visibility: visible;
-			}
+		
 		
 		.INFOSONICSHIELD {
 			flex-direction: row;
@@ -266,7 +245,8 @@
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
-			}		
+			}	
+		
 		.SICHTBAR {
 			visibility: visible;
 			}
@@ -457,38 +437,48 @@
 			<script>
 				
 				 // Funktion, um Icons schweben zu lassen
-    function floatIcons() {
-        const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+				function floatIcons() {
+				const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
 
-        icons.forEach(icon => {
-            let position = 0; // Startposition
-            let direction = 1; // Bewegung nach oben oder unten
-            const maxMovement = 6; // Maximale Bewegung in Pixel
-            const stepSize = 0.1; // Bewegungsschritt
+        		icons.forEach(icon => {
+					let position = 0; // Startposition
+					let direction = 1; // Bewegung nach oben oder unten
+					const maxMovement = 6; // Maximale Bewegung in Pixel
+					const stepSize = 0.1; // Bewegungsschritt
 
-            const iconFloat = () => {
-                if (position >= maxMovement || position <= -maxMovement) {
-                    direction *= -1; // Richtung wechseln
-                }
-                position += direction * stepSize; // Position aktualisieren
-                icon.style.transform = `translateY(${position}px)`; // Icon bewegen
-                requestAnimationFrame(iconFloat); // Animation wiederholen
-            };
+					const iconFloat = () => {
+						if (position >= maxMovement || position <= -maxMovement) {
+							direction *= -1; // Richtung wechseln
+						}
+						position += direction * stepSize; // Position aktualisieren
+						icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+						requestAnimationFrame(iconFloat); // Animation wiederholen
+					};
 
-            iconFloat(); // Animation starten
-        });
-    }
- // Startet die Funktionen nach dem Laden der Seite
-    document.addEventListener('DOMContentLoaded', () => {
-        floatIcons(); // Icons schweben lassen
-        buttonHoverEffect(); // Hover-Effekt aktivieren
-    });
+            	iconFloat(); // Animation starten
+        		});
+					
+    			}
+				
+				// Startet die Funktionen nach dem Laden der Seite
+				document.addEventListener('DOMContentLoaded', () => {
+					floatIcons(); // Icons schweben lassen
+					buttonHoverEffect(); // Hover-Effekt aktivieren
+				});
 
-				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
-				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
+				
+				//Funktion, um Infobox von Scralet Shade anzeigen zu lassen 
+				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);   //Bei Anklicken des Bildes "SCARLETSHADE" öffnet sich Infobox
+				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
 				
 				function ZeigeScarletShade() {
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
+					
 					}
 				function ScarletShadeAus() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
@@ -499,6 +489,11 @@
 				document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
 				
 				function ZeigeGoldenKnight() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
 					}
 				function GoldenKnightAus() {
@@ -509,6 +504,11 @@
 				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
 				
 				function ZeigeGreenBlaze() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
 					}
 				function GreenBlazeAus() {
@@ -519,6 +519,11 @@
 				document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
 				
 				function ZeigeThunderBolt() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
 					}
 				function ThunderBoltAus() {
@@ -529,6 +534,11 @@
 				document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
 				
 				function ZeigeCyberTitan() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
 					}
 				function CyberTitanAus() {
@@ -539,6 +549,11 @@
 				document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
 				
 				function ZeigeSonicShield() {
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
 					}
 

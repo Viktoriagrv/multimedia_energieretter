@@ -57,6 +57,30 @@
 			visibility: hidden;
 			}
 		
+		.WELT{
+			position:absolute; 
+			left:25%;
+			width: 50%;
+			height: auto;
+			}
+		
+		.PAUSE{
+			 position:absolute;
+			bottom: 8%;
+			left: 40%;
+			height:5%;
+			width: 20%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: #285238;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-family: 'Bangers', cursive;
+			z-index: 5;
+			visibility: hidden;
+			}
+		
 		.ZEIGEN{
 			visibility: visible;
 			}
@@ -109,32 +133,44 @@
 </nav>
 
 	
-	<main>
+		<main>
 		
 			<div>
 				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
 
 
 				<div class="scroll" id="scrolltext"> 
-					<p><br><br>Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus und nur die mutigsten Helden können uns retten. Steht auf, ihr Superhelden da draußen! Es ist Zeit zu kämpfen! Wähle dir einen Verbündeten und reise mit ihm zusammen in die Vergangenheit, um unsere Zukunft zu retten. Wir müssen die Hoffnung bewahren und die Energien bündeln. Gemeinsam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+					<p><br><br>
+						Wir befinden uns im Jahr 2050. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus. Die Zukunft unserer Erde steht auf dem Spiel!<br><br>
+						Aber zum Glück hast du die Chance, etwas zu verändern! Wähle dir einen Verbündeten und reise als Energieretter zurück in die Vergangenheit, um die Welt vor dieser düsteren Zukunft zu bewahren. Hier auf unserer Website kannst du entdecken, welche Energiequellen uns helfen, die Umwelt zu schützen – ob mit der Kraft der Sonne, dem Wind oder dem Wasser.<br><br>
+						Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!				 
 					</p>
-					 <img src="images/weltkugel.png" alt="Weltkugel" style="width: 420px; height: auto;">
+					 <img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
 				</div>
 	
 			</div>
-	</main>
+		</main>
+	
+			<button class="PAUSE">Pause</button>
 	
 	
 	<script> 
 		
 		document.querySelector("#START").addEventListener("click",TextStarten);
+		document.querySelector(".PAUSE").addEventListener("click",TextPause);
 
 				
-		function TextStarten() {
+		function TextStarten(){
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
 			document.querySelector(".scroll").classList.add("ZEIGEN");
+			document.querySelector(".PAUSE").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
 			timer1 = setTimeout('TextStarten("'+scrolltext+'", '+-1+')', "60");
+			}
+		
+		function TextPause(){
+			clearTimeout(timer1);
+					
 			}
 			
 	</script>
