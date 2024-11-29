@@ -61,31 +61,29 @@
 			margin: 5rem;
 			}
 		
-		.BILDBOX{
-			display:flex;
-			justify-content: space-around;
-			}
+		
 		
 		.BILDINFOBOX{
-			position: relative;
 			top:10%;
-			left: 25px;
-			height: 350px;
+			left: 25%;
+			height:auto;
 			width: auto;
+			
 			}
 		
 		.TEXTBLOCK{
 			position: absolute;
-			left: 350px;
-			top: 35px;
+			top: 15%;
+			left: 50%;
 			padding: 20px;
 			}
 		
 		.NAME{
+			position: relative;
 			font-family: "bangers";
 			color: #e8a723;
 			font-size: 2.5rem;
-			text-align: center;
+			text-align: left;
 			}
 		
 		.TITEL{
@@ -119,8 +117,8 @@
 		.AUSWAHL{
 			position: absolute;
 			padding: 8px;
-			bottom: 20px;
-			left: 300px;
+			bottom: 10%;
+			left: 50%;
 			font-family: "bangers";
 			font-size: 2rem;
 			color: #e8a723;
@@ -156,29 +154,29 @@
 		.THUNDERBOLT {
 			position: absolute;
 			top: 40%;
-			left: 40%;
+			left: 35%;
 			}
 		
 		.CYBERTITAN {
 			position: absolute;
 			top: 40%;
-			left: 60%;
+			left: 55%;
 			}
 		
 		.SONICSHIELD {
 			position: absolute;
 			top: 40%;
-			left:80%;
+			left:75%;
 			}
 		
 		.INFOSCARLETSHADE {
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -192,10 +190,10 @@
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -209,10 +207,10 @@
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -226,10 +224,10 @@
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -243,10 +241,10 @@
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -260,10 +258,10 @@
 			flex-direction: row;
 			position: absolute;
 			padding: 30px;
-			top: 5%;
+			top: 15%;
 			left: 30%;
-			height:400px;
-			width: 650px;
+			height:60%;
+			width: 50%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -305,8 +303,8 @@
 		
 		#buttonSOS{
 			position: absolute;
-			right:20px;
-			top: 20px;	
+			right:5%;
+			top: 5%;	
 			}
 		
 	</style>
@@ -319,8 +317,8 @@
 	
 	<!-- Hintergrundvideo -->
 	<video autoplay muted loop id="backgroundVideo">
-		<source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
-		<source src="video/background_video.webm" type="video/webm">
+		<source src="../videos/background_video.mp4" type="video/mp4">
+		
 	</video>
 	
 	
@@ -330,7 +328,7 @@
 			</div>
 			
 		
-			
+			<div class="icon-container">
 				<div class="SCARLETSHADE">
 					<img class="BILD" src="../images/BadGirl.png" alt="Scarlet Shade">
 				</div>
@@ -356,8 +354,8 @@
 				<div class="SONICSHIELD">
 					<img class="BILD" src="../images/BadBoy.png" alt="Sonic Shield">
 				</div>
+	</div>
 			
-
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
 				
@@ -457,6 +455,34 @@
 		
 	
 			<script>
+				
+				 // Funktion, um Icons schweben zu lassen
+    function floatIcons() {
+        const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+
+        icons.forEach(icon => {
+            let position = 0; // Startposition
+            let direction = 1; // Bewegung nach oben oder unten
+            const maxMovement = 6; // Maximale Bewegung in Pixel
+            const stepSize = 0.1; // Bewegungsschritt
+
+            const iconFloat = () => {
+                if (position >= maxMovement || position <= -maxMovement) {
+                    direction *= -1; // Richtung wechseln
+                }
+                position += direction * stepSize; // Position aktualisieren
+                icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+                requestAnimationFrame(iconFloat); // Animation wiederholen
+            };
+
+            iconFloat(); // Animation starten
+        });
+    }
+ // Startet die Funktionen nach dem Laden der Seite
+    document.addEventListener('DOMContentLoaded', () => {
+        floatIcons(); // Icons schweben lassen
+        buttonHoverEffect(); // Hover-Effekt aktivieren
+    });
 
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
 				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
