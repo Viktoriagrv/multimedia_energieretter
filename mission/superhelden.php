@@ -11,7 +11,7 @@
 				
 		.Schriftzug{
 			position: fixed;
-			top: center;
+			top: 35%;
 			left: 3rem;
 			font-family: "bangers";
 			font-size: 5rem;
@@ -102,46 +102,46 @@
 		
 		.SCARLETSHADE {
 			position: absolute;
-			top: 50px;
-			left: 500px;
+			top: 5%;
+			left: 40%;
 			}
 		
 		.GOLDENKNIGHT {
 			position: absolute;
-			top: 50px;
-			left: 750px;
+			top: 5%;
+			left: 60%;
 			}
 		
 		.GREENBLAZE {
 			position: absolute;
-			top: 50px;
-			left: 1000px;
+			top: 5%;
+			left: 80%;
 			}
 		
 		.THUNDERBOLT {
 			position: absolute;
-			top: 300px;
-			left: 500px;
+			top: 40%;
+			left: 40%;
 			}
 		
 		.CYBERTITAN {
 			position: absolute;
-			top: 300px;
-			left: 750px;
+			top: 40%;
+			left: 60%;
 			}
 		
 		.SONICSHIELD {
 			position: absolute;
-			top: 300px;
-			left: 1000px;
+			top: 40%;
+			left:80%;
 			}
 		
 		.INFOSCARLETSHADE {
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
-			left: 650px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -157,8 +157,8 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
-			left: 650px;
+			top: 5%px;
+			left: 30%px;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -174,8 +174,8 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
-			left: 650px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -191,8 +191,8 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			bottom: 200px;
-			left: 650px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -208,8 +208,8 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
-			left: 650px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -225,8 +225,8 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
-			left: 650px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -282,17 +282,20 @@
 
 <body>
 	
-	<!-- Einbinden der Navigationsleiste -->
-	<?php include '../include/partials/nav.php'; ?>
+	<!-- Hintergrundvideo -->
+	<video autoplay muted loop id="backgroundVideo">
+		<source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
+		<source src="video/background_video.webm" type="video/webm">
+	</video>
 	
-	<main>
+	
 
 			<div class="Schriftzug">
 				WÄHLE DEINEN <br/> SUPERHELDEN
 			</div>
 			
-		<div  class="icon-container">
-			<div class="BILDBOX">
+		
+			
 				<div class="SCARLETSHADE">
 					<img class="BILD" src="../images/BadGirl.png" alt="Scarlet Shade">
 				</div>
@@ -304,7 +307,7 @@
 				<div class="GREENBLAZE">
 					<img class="BILD" src="../images/Prinzessin.png" alt="Green Blaze">
 				</div>
-			</div>  
+			 
 
 			<div>
 				<div class="THUNDERBOLT">
@@ -416,31 +419,9 @@
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
 			</div>
 		</div>
-		</main>
+		
 	
 			<script>
-				
-        // Funktion für das langsame und weniger weite Schweben der Icons
-        function floatIcons() {
-            const icons = document.querySelectorAll('.icon-container');
-            icons.forEach(icon => {
-                let position = 0;
-                let direction = 1;
-                const maxMovement = 15;  // Weniger Bewegung (max. 15px nach oben/unten)
-                const stepSize = 0.25;  // Sehr langsame Bewegung (0.25px pro Frame)
-
-                const iconFloat = () => {
-                    if (position >= maxMovement || position <= -maxMovement) {
-                        direction *= -1;  // Richtungswechsel, wenn das Limit erreicht ist
-                    }
-                    position += direction * stepSize;  // Schrittgröße (langsamer)
-                    icon.style.transform = `translateY(${position}px)`;  // Anwenden der Bewegung
-                    requestAnimationFrame(iconFloat);  // Animation fortsetzen
-                };
-
-                iconFloat();
-            });
-        }
 
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
 				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
