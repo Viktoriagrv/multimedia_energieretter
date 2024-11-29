@@ -138,7 +138,7 @@
 		
 		.INFOSCARLETSHADE {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -155,10 +155,10 @@
 		
 		.INFOGOLDENKNIGHT {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
-			top: 5%px;
-			left: 30%px;
+			top: 5%;
+			left: 30%;
 			height:400px;
 			width: 650px;
 			border-radius: 20px 20px 20px 20px;
@@ -172,7 +172,7 @@
 		
 		.INFOGREENBLAZE {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -189,7 +189,7 @@
 		
 		.INFOTHUNDERBOLT {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -206,7 +206,7 @@
 		
 		.INFOCYBERTITAN {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -223,7 +223,7 @@
 		
 		.INFOSONICSHIELD {
 			flex-direction: row;
-			position: sticky;
+			position: relative;
 			padding: 30px;
 			top: 5%;
 			left: 30%;
@@ -307,9 +307,7 @@
 				<div class="GREENBLAZE">
 					<img class="BILD" src="../images/Prinzessin.png" alt="Green Blaze">
 				</div>
-			 
-
-			<div>
+			 			
 				<div class="THUNDERBOLT">
 					<img class="BILD" src="../images/AquaBoy.png" alt="Thunder Bolt">
 				</div>
@@ -321,7 +319,7 @@
 				<div class="SONICSHIELD">
 					<img class="BILD" src="../images/BadBoy.png" alt="Sonic Shield">
 				</div>
-			</div>
+			
 
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
