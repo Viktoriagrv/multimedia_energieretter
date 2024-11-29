@@ -225,7 +225,7 @@
 			flex-direction: row;
 			position: sticky;
 			padding: 30px;
-			top: 200px;
+			bottom: 200px;
 			left: 650px;
 			height:400px;
 			width: 650px;
@@ -291,7 +291,7 @@
 				WÄHLE DEINEN <br/> SUPERHELDEN
 			</div>
 			
-		<div  class="icon-container">
+		
 			<div class="BILDBOX">
 				<div class="SCARLETSHADE">
 					<img class="BILD" src="../images/BadGirl.png" alt="Scarlet Shade">
@@ -419,28 +419,6 @@
 		</main>
 	
 			<script>
-				
-        // Funktion für das langsame und weniger weite Schweben der Icons
-        function floatIcons() {
-            const icons = document.querySelectorAll('.icon-container');
-            icons.forEach(icon => {
-                let position = 0;
-                let direction = 1;
-                const maxMovement = 15;  // Weniger Bewegung (max. 15px nach oben/unten)
-                const stepSize = 0.25;  // Sehr langsame Bewegung (0.25px pro Frame)
-
-                const iconFloat = () => {
-                    if (position >= maxMovement || position <= -maxMovement) {
-                        direction *= -1;  // Richtungswechsel, wenn das Limit erreicht ist
-                    }
-                    position += direction * stepSize;  // Schrittgröße (langsamer)
-                    icon.style.transform = `translateY(${position}px)`;  // Anwenden der Bewegung
-                    requestAnimationFrame(iconFloat);  // Animation fortsetzen
-                };
-
-                iconFloat();
-            });
-        }
 
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);
 				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);
