@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="de">
 <head>
     <meta charset="utf-8">
@@ -110,12 +109,11 @@ main {
 }
 
 /* Stil für anklickbare Wörter - Energieretter Gelb */
-.sprechblase span {
+.sprechblabe span {
     color: #e8a723; /* Energieretter Gelb */
     cursor: pointer;
     text-decoration: underline;
 }
-
 
 /* Anordnung der Sprechblasen */
 #sprechblase1 {
@@ -128,7 +126,7 @@ main {
 /* Mehr Abstand für Sprechblase 3, damit sie nicht zu nah am Footer steht */
 #sprechblase3 {
     align-self: flex-start; /* Sprechblase 3 nach links */
-    margin-bottom: 40px; /* Mehr Abstand nach unten */
+    margin-bottom: 55px; /* Mehr Abstand nach unten */
 }
 
 #sprechblase3 {
@@ -194,15 +192,7 @@ main {
     background: #d67b00;
 }
 
-   /* YouTube-Video (versteckt) */
-        #youtubeVideo {
-            display: none;
-            width: 100%;
-            max-width: 560px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            border: 0;
-        }
+
     </style>
 </head>
 
@@ -222,7 +212,8 @@ main {
     <div class="buttons">
         <button class="button" onclick="toggleText('1')">Zu einer ausführlicheren Erklärung</button>
     </div>
-   
+    <!-- Audio einbinden --> 
+    <img src="../../images/audio.png" alt="Vorlesen" onclick="vorlesen('Sonnenenergie, oder auch Solarenergie genannt, ist Energie, die von der Sonne kommt. Die Sonne strahlt eine große Menge an Energie aus. Ein kleiner Teil dieser Strahlen erreicht die Erde und erwärmt sie. Die Menschen können diese Energie nutzen und in andere Energien umwandeln. Die Sonnenstrahlen liefern weit mehr Energie, als Mensch und Natur brauchen können. Mit Solarmodulen kann man die Sonnenenergie einfangen und in Strom verwandeln. Das Besondere daran ist, dass sie keine schädlichen Gase produziert und deshalb gut für die Umwelt ist.')">
 </div>
 
 <!-- Zweite Sprechblase -->
@@ -232,7 +223,8 @@ main {
     <div class="buttons">
         <button class="button" onclick="toggleText('2')">Zu einer ausführlicheren Erklärung</button>
     </div>
-
+    <!-- Audio einbinden -->
+    <img src="../../images/audio.png" alt="Vorlesen" onclick="vorlesen('Die Technik, um Sonnenenergie zu nutzen, wird immer besser. Manche Häuser haben schon Solarzellen auf dem Dach, die ihren eigenen Strom erzeugen. Sogar Autos oder Taschenlampen können mit Sonnenenergie betrieben werden!')">
 </div>
 
 <!-- Dritte Sprechblase -->
@@ -242,20 +234,11 @@ main {
     <div class="buttons">
         <button class="button" onclick="toggleText('3')">Zu einer ausführlicheren Erklärung</button>
     </div>
-   
+    <!-- Audio einbinden -->
+    <img src="../../images/audio.png" alt="Vorlesen" onclick="vorlesen('Nahe dem Äquator ist die energiereiche Sonneneinstrahlung besonders hoch. Deshalb ist es vor allem dort sinnvoll, mit Hilfe der Sonnenenergie Strom zu erzeugen. In Wüsten wie der Sahara ist es immer sonnig und auch Länder wie Australien und Mexiko sind gut für Solarmodule. In Europa haben auch Spanien, Italien und Griechenland viel Sonne. Diese Orte sind perfekt für Solarmodule!')">
 </div>
-		
-		
-  <!-- YouTube-Video-Thumbnail -->
-<div id="youtubeThumbnail" onclick="loadVideo()" style="cursor: pointer; width: 100%; max-width: 560px; margin-top: 30px;">
-    <img src="https://img.youtube.com/vi/N1MPDueY3pA/hqdefault.jpg" alt="YouTube Video" style="width: 100%; height: auto; border-radius: 10px;">
-</div>
-
-<!-- YouTube-Video (versteckt, wird beim Klick geladen) -->
-<iframe id="youtubeVideo" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none; width: 100%; max-width: 560px; margin-top: 30px; margin-bottom: 30px; border: 0;"></iframe>
 
     </main>
-
 
     <!-- Karte (Overlay) -->
     <div class="karte" id="karte">
@@ -277,6 +260,13 @@ main {
             document.getElementById('karte').style.display = 'none';
         }
 
+        // Text vorlesen
+        function vorlesen(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'de-DE';
+            synth.speak(utterance);
+        }
 
         // Umschalten der Texte (zwischen einfach und detailliert)
         function toggleText(id) {
