@@ -31,6 +31,7 @@
 		
 		.WEG{
 			visibility: hidden;
+			transition-delay: 0s;
 			}
 		
 		.KLEIN{
@@ -59,6 +60,13 @@
 			}
 		
 		
+		.MINI {
+			position: relative;
+			height: 50%;
+			align-items: center;
+			left: 30%;
+			
+			}
 		
 		.PAUSE{
 			 position:absolute;
@@ -76,14 +84,7 @@
 			visibility: hidden;
 			}
 		
-		.ZEIGEN{
-			transition-property: all;
-			transition-delay: 1.5s;
-			visibility: visible;
-			opacity: 1;
-			
-			}
-				
+						
 		.WELT{
 			position:absolute;
 			top: 20%;
@@ -94,10 +95,52 @@
 			}
 		
 		.GROSS{
-			transition-delay: 1.5;
+			transition-delay: 2.5;
+			visibility:visible;
+			}
+		
+		.BLASE{
+			position:absolute;
+			height:30%;
+			top: 50%;
+			left:8%;
+			visibility:hidden;
+			}
+		
+		.HELFEN{
+			position:absolute;
+			top: 59%;
+			left:9%;
+			font-size: 2rem;
+			font-family: verdana;
+			color: #285238;
+			visibility: hidden;
+			background-color: transparent;
+			border: none;
+			}
+		
+		.HELFEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+		
+		
+		.ZEIGEN{
+			transition-property: all;
+			transition-delay: 1.5s;
+			visibility: visible;
+			opacity: 1;
+			}
+		
+		.BLASEZEIGEN{
+			transition-property: all;
+			transition-delay: 2.5s;
 			visibility: visible;
 			}
 			
+		
+
 		</style>
 
 
@@ -105,45 +148,45 @@
 
 <body>
        <!-- Hintergrundvideo -->
-<video autoplay muted loop id="backgroundVideo">
-    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-    <source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-</video>
+		<video autoplay muted loop id="backgroundVideo">
+			<source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+			<source src="retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
+		</video>
 
 
-    <!-- Navigation einbinden -->
-  <nav class="navbar-custom">
+		<!-- Navigation einbinden -->
+		  <nav class="navbar-custom">
 
-    <!-- Branding -->
-    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
-    
-    <!-- Hauptmenü -->
-    <div class="menu">
+				<!-- Branding -->
+				<a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
 
-       
-        <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+				<!-- Hauptmenü -->
+				<div class="menu">
 
-        
-        <div class="dropdown menu-item">
-            <button class="dropbtn menu-link">Mission</button>
-            <div class="dropdown-content">
-                <a href="../../mission/superhelden.php">Die Superhelden</a>
-                <a href="../../mission/missionsstart.php">Missionsstart</a>
-                <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
-            </div>
-        </div>
-        
-        <!-- Dropdown-Menü -->
-        <div class="dropdown menu-item" style="margin-right: 50px;">
-            <button class="dropbtn menu-link">Retterwissen</button>
-            <div class="dropdown-content">
-                <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-                <a href="../../retterwissen/innovationen.php">Innovationen</a>
-                <a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
-            </div>
-        </div>
-    </div>
-</nav>
+
+					<a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+
+
+					<div class="dropdown menu-item">
+						<button class="dropbtn menu-link">Mission</button>
+						<div class="dropdown-content">
+							<a href="../../mission/superhelden.php">Die Superhelden</a>
+							<a href="../../mission/missionsstart.php">Missionsstart</a>
+							<a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+						</div>
+					</div>
+
+					<!-- Dropdown-Menü -->
+					<div class="dropdown menu-item" style="margin-right: 50px;">
+						<button class="dropbtn menu-link">Retterwissen</button>
+						<div class="dropdown-content">
+							<a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+							<a href="../../retterwissen/innovationen.php">Innovationen</a>
+							<a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
+						</div>
+					</div>
+				</div>
+			</nav>
 
 	
 		<main>
@@ -159,10 +202,18 @@
 						Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!
 						<br><br><br><br>
 					</p>
-					
+					<img class="MINI" src="images/weltkugel.png" alt="Weltkugel">
+					<br><br><br><br><br>
 				</div>
 				
+			<div class="icon-container">
 				<img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
+			</div>
+			
+			<div>
+				<img class="BLASE" src="images/sprechblase.png" alt="Sprechblase">
+				<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Ich will helfen!</button>
+			</div>
 					
 				<button class="PAUSE">Pause</button>
 		
@@ -172,6 +223,7 @@
 	
 	<script> 
 		
+	
 		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
 		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 
@@ -220,8 +272,39 @@
 			document.querySelector(".SCROLL").classList.remove("ZEIGEN");
 			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
 			document.querySelector(".WELT").classList.add("GROSS");
-			document.querySelector(".BLASE").classList.add("ZEIGEN");
+			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
+			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
 			}
+		
+		 // Funktion, um Icons schweben zu lassen
+				function floatIcons() {
+				const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+
+        		icons.forEach(icon => {
+					let position = 0; // Startposition
+					let direction = 1; // Bewegung nach oben oder unten
+					const maxMovement = 6; // Maximale Bewegung in Pixel
+					const stepSize = 0.1; // Bewegungsschritt
+
+					const iconFloat = () => {
+						if (position >= maxMovement || position <= -maxMovement) {
+							direction *= -1; // Richtung wechseln
+						}
+						position += direction * stepSize; // Position aktualisieren
+						icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+						requestAnimationFrame(iconFloat); // Animation wiederholen
+					};
+
+            	iconFloat(); // Animation starten
+        		});
+					
+    			}
+				
+				// Startet die Funktionen nach dem Laden der Seite
+				document.addEventListener('DOMContentLoaded', () => {
+					floatIcons(); // Icons schweben lassen
+					buttonHoverEffect(); // Hover-Effekt aktivieren
+				});
 			
 	</script>
 
