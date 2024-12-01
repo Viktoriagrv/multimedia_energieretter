@@ -18,7 +18,7 @@
 			border: 0;
 			font-family:  "bangers";
 			font-size: 12rem;
-			line-height: 1.2;
+			line-height: 1.1;
 			color: #e8a723;
 			border: none;
 			top: 25%;
@@ -27,6 +27,10 @@
 			width:60%;
 			visibility: visible;
 			transition-delay: 0s;
+			}
+		
+		.STARTBUTTON:hover {
+			transform: scale(1.3);
 			}
 		
 		.WEG{
@@ -116,13 +120,11 @@
 			color: #285238;
 			visibility: hidden;
 			background-color: transparent;
-			border: none;
+			border: 0;
 			}
 		
 		.HELFEN:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
+			color: #e8a723;
 			}
 		
 		
@@ -192,8 +194,9 @@
 		<main>
 		
 			
-				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
-
+				
+					<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
+			
 
 				<div class="SCROLL" id="scrolltext"> 
 					<p><br><br><br><br><br>
@@ -210,10 +213,11 @@
 				<img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
 			</div>
 			
-			<div>
+			
 				<img class="BLASE" src="images/sprechblase.png" alt="Sprechblase">
 				<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Ich will helfen!</button>
-			</div>
+				
+			
 					
 				<button class="PAUSE">Pause</button>
 		

@@ -128,6 +128,7 @@
 			left: 40%;
 			}
 		
+				
 		.GOLDENKNIGHT {
 			position: absolute;
 			top: 5%;
