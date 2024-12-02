@@ -149,9 +149,17 @@
 			else {
 				alert('Der Code ist leider nicht richtig.');															// Ausgabe bei negativem Ergebnis
 			}
-		
+		}
 	
-        
+        function codeAuswaehlen(code) {
+            alert(`Code ${code} wurde ausgewählt! Du wirst weitergeleitet...`);
+            // Weiterleitungslogik, z.B.: window.location.href = `missionsstart.php?code=${code}`;
+        }
+
+        function neuStarten() {
+            alert("Neustart gewählt! Du wirst zur Startseite weitergeleitet.");
+            window.location.href = "../../index.php";
+        }
     </script>
 
     <!-- Footer -->
