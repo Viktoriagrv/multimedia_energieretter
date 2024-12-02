@@ -73,9 +73,25 @@
 			}
 		
 		.PAUSE{
-			 position:absolute;
+			position:absolute;
 			bottom: 10%;
-			left: 40%;
+			left: 27%;
+			height:5%;
+			width: 20%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: #285238;
+            border-radius: 10px;
+            font-family: 'Bangers', cursive;
+			z-index: 5;
+			visibility: hidden;
+			}
+		
+		.WEITER{
+			position:absolute;
+			bottom: 10%;
+			left: 52%;
 			height:5%;
 			width: 20%;
             font-size: 1.5rem;
@@ -115,7 +131,7 @@
 			position:absolute;
 			top: 59%;
 			left:9%;
-			font-size: 2rem;
+			font-size: 1.8rem;
 			font-family: verdana;
 			color: #285238;
 			visibility: hidden;
@@ -124,7 +140,7 @@
 			}
 		
 		.HELFEN:hover{
-			color: #e8a723;
+			transform: scale(1.2);
 			}
 		
 		
@@ -220,6 +236,7 @@
 			
 					
 				<button class="PAUSE">Pause</button>
+				<button class="WEITER">Weiter</button>
 		
 	
 	</main>
@@ -229,6 +246,7 @@
 		
 	
 		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
+		document.querySelector(".WEITER").addEventListener("click", TextStarten);
 		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 
 			let timer1;
@@ -240,6 +258,7 @@
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
 			document.querySelector(".SCROLL").classList.add("ZEIGEN");
 			document.querySelector(".PAUSE").classList.add("ZEIGEN");
+			document.querySelector(".WEITER").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
 
 			// Startet den Timer, der den Text scrollen lässt
@@ -275,6 +294,7 @@
 			document.querySelector(".STARTBUTTON").classList.add("WEG");
 			document.querySelector(".SCROLL").classList.remove("ZEIGEN");
 			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
+			document.querySelector(".WEITER").classList.remove("ZEIGEN");
 			document.querySelector(".WELT").classList.add("GROSS");
 			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
 			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
