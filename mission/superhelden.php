@@ -63,13 +63,28 @@
 		
 		
 		
-		.BILDINFOBOX{
-			position: relative;
-			top:20%;
-			left: 10%;
-			height:90%;
+		.BILDINFOBOXB{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
 			width: auto;
-			
+			}
+		
+		.BILDINFOBOXS{
+			position: absolute;
+			top:10%;
+			left: 10%;
+			height:70%;
+			width: auto;
+			}
+		
+		.BILDINFOBOXXS{
+			position: absolute;
+			top:10%;
+			left: 15%;
+			height:70%;
+			width: auto;
 			}
 		
 		.TEXTBLOCK{
@@ -99,7 +114,7 @@
 			font-family: verdana bold;
 			color: #285238;
 			font-size: 1.5rem;
-			text-align: left;
+			text-align: justify;
 			}
 		
 				
@@ -340,13 +355,13 @@
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
 				
-					<div><img class="BILDINFOBOX" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
+					<div><img class="BILDINFOBOXB" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
 					<div class="TEXTBLOCK">
 						<a class=NAME>Scarlet Shade</a>
 						<br>
-						<a class="TITEL">Superkraft:</a><a class="TEXT">Unsichtbarkeit und Tarnung</a>
+						<a class="TITEL">Superkraft:</a><a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
 						<br>
-						<a class="TITEL">Beschreibung:</a><a class="TEXT">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+						<a class="TITEL">Beschreibung:</a><a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
 					</div>
 					<br><br>
 				
@@ -356,7 +371,7 @@
 			<div class="INFOGOLDENKNIGHT">
 				<button id="buttonGK">&times;</button>
 				
-				<div><img class="BILDINFOBOX" src="../images/Prinz.png" alt="Golden Knight"></div>
+				<div><img class="BILDINFOBOXB" src="../images/Prinz.png" alt="Golden Knight"></div>
 				<div class="TEXTBLOCK">
 					<a class=NAME>Golden Knight</a>
 					<br>
@@ -372,7 +387,7 @@
 			<div class="INFOGREENBLAZE">
 				<button id="buttonGB">&times;</button>
 				
-				<div><img class="BILDINFOBOX" src="../images/Prinzessin.png" alt="Green Blaze"></div>
+				<div><img class="BILDINFOBOXS" src="../images/Prinzessin.png" alt="Green Blaze"></div>
 				
 				<div class="TEXTBLOCK">
 					<a class=NAME>Green Blaze</a>
@@ -389,7 +404,7 @@
 			<div class="INFOTHUNDERBOLT">
 				<button id="buttonTB">&times;</button>
 				
-				<div><img class="BILDINFOBOX" src="../images/AquaBoy.png" alt="Thunder Bolt"></div>
+				<div><img class="BILDINFOBOXS" src="../images/AquaBoy.png" alt="Thunder Bolt"></div>
 				
 				<div class="TEXTBLOCK">
 					<a class=NAME>Thunderbolt</a><br>
@@ -405,7 +420,7 @@
 			<div class="INFOCYBERTITAN">
 				<button id="buttonCT">&times;</button>
 				
-				<div><img class="BILDINFOBOX" src="../images/Biest.png" alt="Cyber Titan"></div>
+				<div><img class="BILDINFOBOXS" src="../images/Biest.png" alt="Cyber Titan"></div>
 				
 				<div class="TEXTBLOCK">
 					<a class=NAME>Cyber Titan</a><br>
@@ -421,7 +436,7 @@
 			<div class="INFOSONICSHIELD">
 				<button id="buttonSOS">&times;</button>
 				
-				<div><img class="BILDINFOBOX" src="../images/BadBoy.png" alt="Sonic Shield"></div>
+				<div><img class="BILDINFOBOXXS" src="../images/BadBoy.png" alt="Sonic Shield"></div>
 				<div class="TEXTBLOCK">
 					<a class=NAME>Sonic Shield</a><br>
 					<a class="TITEL">Superkraft:</a> <a class="TEXT">Schallwellenmanipulation</a>

@@ -11,35 +11,36 @@
 	 <link rel="stylesheet" href="../../include/css/styles.css">
 
 	<style>
-		/*.NEXT{flex-direction: row;
+		
+		.WELTBLAU{
+			position:absolute;
+			top:25%;
+			left:0%;
+			height:50%;
+			width:auto;
 			}
 		
 		.HERO{
-			justify-content: center;
-			flex-grow: 1;
-			position: sticky;
-			top: 15rem;
-			margin: 5rem;
+			position:absolute;
+			top: 50%;
+			left: 53%;
+			height:40%;
 			}
 		
-		.WELTBLAU{
-			justify-content: flex-start;
-			top: 15rem;
-			flex-grow: 2;
-			
-			}*/
-		
 		.SPRECHBLASE {
-			justify-content: flex-end;
-			flex-grow: 1;
-			position: sticky;
+			position: absolute;
 			padding: 30px;
-			top: 15rem;
-			height:400px;
-			width: 650px;
+			top: 25%;
+			left:70%;
+			height:30%;
+			width: 20%;
 			border-radius: 70px 70px 70px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
+			font-family: verdana;
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
 			visibility: visible;
 			}		
 
@@ -92,18 +93,16 @@
 		
     <main>
 		
-		<div class="NEXT">
-			<div class="WELTBLAU">
-				<img src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
-			</div>
-			<div class="HERO">
-				<img src="../images/AquaBoy.png"
-			</div>
+		
+			<img class="WELTBLAU" src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
+			
+			<img class="HERO" src="../images/Biest.png">
+			
 
 			<div class="SPRECHBLASE">
 				Hallo!
 			</div>	
-		</div>
+		
 			
     </main>
 
