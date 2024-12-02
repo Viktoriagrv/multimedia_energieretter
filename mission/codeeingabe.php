@@ -41,7 +41,7 @@
         #sprechblase {
             position: absolute;
 			top:25%;
-			left: 30%;
+			left: 35%;
             background: rgba(255, 255, 255, 1);
             border-radius: 15px;
             padding: 20px;
@@ -66,21 +66,39 @@
             border-right: 15px solid transparent;
             border-top: 15px solid rgba(255, 255, 255, 0.9);
         	}
-
-		.CODEEINGABE{
-			position: absolute;
+		
+		.HEADER{
+			position:absolute;
 			top:25%;
+			left:60%;
+			font-family: "bangers";
+			font-size:3rem;
+			color: #e8a723;
+			}
+
+		.CODE{
+			position: absolute;
+			top:40%;
 			left: 60%;
-            background: rgba(255, 255, 255, 1);
             border-radius: 15px;
             padding: 20px;
-            max-width: 300px;
+            max-width: 40%;
             text-align: left;
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 1rem;
+            font-family: "bangers";
+            font-size: 2rem;
 			color: #285238; 
             border: #333;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			}
+		
+		
+		.EINGEBEN{
+			position:absolute;
+			top:55%;
+			left: 60%;
+			font-family: verdana;
+			color:#285238;
+			background-color: white;
 			}
         
     </style>
@@ -128,9 +146,9 @@
             </div>
             
 				
-			<div class="CODEEINGABE">
-				Gebe deinen Code ein:<br>
-				<input value=''>
+			<div>
+				<p class="HEADER">Gebe deinen Code ein:</p>
+				<input class="CODE" value=''>
 				<button class="EINGEBEN">Weiter</button>		
 			</div>
                 
@@ -151,15 +169,7 @@
 			}
 		}
 	
-        function codeAuswaehlen(code) {
-            alert(`Code ${code} wurde ausgewählt! Du wirst weitergeleitet...`);
-            // Weiterleitungslogik, z.B.: window.location.href = `missionsstart.php?code=${code}`;
-        }
-
-        function neuStarten() {
-            alert("Neustart gewählt! Du wirst zur Startseite weitergeleitet.");
-            window.location.href = "../../index.php";
-        }
+        
     </script>
 
     <!-- Footer -->
