@@ -62,7 +62,6 @@
 			}
 		
 		
-		
 		.BILDINFOBOXB{
 			position: absolute;
 			top:10%;
@@ -494,11 +493,10 @@
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
-					
-					}
+				}
 				function ScarletShadeAus() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					}
+				}
 
 
 				document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
@@ -511,10 +509,10 @@
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
-					}
+				}
 				function GoldenKnightAus() {
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					}
+				}
 
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
 				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
@@ -526,10 +524,10 @@
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
-					}
+				}
 				function GreenBlazeAus() {
 					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					}
+				}
 
 				document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
 				document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
@@ -541,10 +539,10 @@
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
-					}
+				}
 				function ThunderBoltAus() {
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					}
+				}
 
 				document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
 				document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
@@ -556,10 +554,10 @@
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 					document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
-					}
+				}
 				function CyberTitanAus() {
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					}
+				}
 
 				document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
 				document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
@@ -571,12 +569,10 @@
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
 					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
 					document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
-					}
-
+				}
 				function SonicShieldAus() {
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					}
-
+				}
 
 			</script>
 

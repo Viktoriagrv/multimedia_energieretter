@@ -115,7 +115,7 @@
 			}
 		
 		.GROSS{
-			transition-delay: 2.5;
+			transition-delay: 2.5s;
 			visibility:visible;
 			}
 		
@@ -250,7 +250,6 @@
 		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 
 			let timer1;
-			let timer2;
 			let textEnde = false; 															// prüft, ob der Text zu Ende ist
 
 		// Funktion zum Starten des Textes
@@ -279,7 +278,7 @@
 				} 
 
 			else {
-				scrollTextElement.scrollTop += 1; 											// Scrollt den Text um 1 Pixel
+				scrollTextElement.scrollTop += +1; 											// Scrollt den Text um 1 Pixel
 				}
 			}
 		
