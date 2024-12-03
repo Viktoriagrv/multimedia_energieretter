@@ -8,7 +8,7 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../include/css/styles.css">
+	 <link rel="stylesheet" href="../css/styles.css">
 
 	<style>
 		
@@ -109,7 +109,7 @@
     <!-- Einbinden des Footers -->
     <footer class="footer-custom">
     <div class="footer-links">
-        <a href="../../impressum/impressum.php">Impressum</a>
+        <a href="../impressum/impressum.php">Impressum</a>
     </div>
 </footer>
    

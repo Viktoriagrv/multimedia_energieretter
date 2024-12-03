@@ -579,7 +579,7 @@
     
 	
  <!-- Einbinden des Footers -->
-  <?php include '../include/partials/footer.php'; ?> 
+  <?php include '../include/footer.php'; ?> 
 	   
    
 </body>
