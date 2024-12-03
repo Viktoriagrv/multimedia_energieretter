@@ -121,7 +121,7 @@
                 <div class="dropdown-content">
                     <a href="../../mission/superhelden.php">Die Superhelden</a>
                     <a href="../../mission/missionsstart.php">Missionsstart</a>
-                    <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+                    <a href="../../mission/codeeingabe.php">Spiel fortsetzen</a>
                 </div>
             </div>
             <div class="dropdown menu-item" style="margin-right: 50px;">

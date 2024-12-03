@@ -176,21 +176,21 @@
 		  <nav class="navbar-custom">
 
 				<!-- Branding -->
-				<a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
+				<a class="navbar-brand" href="mission/missionsstart.php">Die Energieretter</a>
 
 				<!-- Hauptmenü -->
 				<div class="menu">
 
 
-					<a href="../../index.php" class="menu-link menu-item">Vorspann</a>
+					<a href="index.php" class="menu-link menu-item">Vorspann</a>
 
 
 					<div class="dropdown menu-item">
 						<button class="dropbtn menu-link">Mission</button>
 						<div class="dropdown-content">
-							<a href="../../mission/superhelden.php">Die Superhelden</a>
-							<a href="../../mission/missionsstart.php">Missionsstart</a>
-							<a href="../../mission/codeeingabe.php">Code-Eingabe</a>
+							<a href="mission/superhelden.php">Die Superhelden</a>
+							<a href="mission/missionsstart.php">Missionsstart</a>
+							<a href="mission/codeeingabe.php">Spiel fortsetzen</a>
 						</div>
 					</div>
 
