@@ -6,7 +6,7 @@
 
     
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="include/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 	
 	
 	<style>	
@@ -198,9 +198,9 @@
 					<div class="dropdown menu-item" style="margin-right: 50px;">
 						<button class="dropbtn menu-link">Retterwissen</button>
 						<div class="dropdown-content">
-							<a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-							<a href="../../retterwissen/innovationen.php">Innovationen</a>
-							<a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
+							<a href="retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
+							<a href="retterwissen/innovationen.php">Innovationen</a>
+							<a href="retterwissen/klimaschaeden.php">Klimaschäden</a>
 						</div>
 					</div>
 				</div>
