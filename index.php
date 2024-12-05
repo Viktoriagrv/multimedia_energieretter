@@ -227,7 +227,7 @@
 			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Ich will helfen!</button>
 									
 			<button class="PAUSE">Pause</button>
-			<button class="WEITER">Test starten</button>
+			<button class="WEITER">Text starten</button>
 		
 	</main>
 			
