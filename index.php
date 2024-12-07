@@ -27,6 +27,7 @@
 			width:60%;
 			visibility: visible;
 			transition-delay: 0s;
+			cursor:pointer;
 			}
 		
 		.STARTBUTTON:hover {
@@ -43,6 +44,8 @@
 			top: 10%;
 			left:20%;
 			font-size: 5rem;
+			cursor: auto;
+			transform: none;
 			}	
 		
 		
@@ -137,6 +140,7 @@
 			visibility: hidden;
 			background-color: transparent;
 			border: 0;
+			cursor:pointer;
 			}
 		
 		.HELFEN:hover{
@@ -206,7 +210,7 @@
 	
 		<main>	
 				
-				<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
+			<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
 			
 			<div class="SCROLL" id="scrolltext"> 
 				<p><br><br><br><br><br>
