@@ -94,17 +94,20 @@
     <main>
 		
 		
-			<img class="WELTBLAU" src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
+		<img class="WELTBLAU" src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
 			
-			<img class="HERO" src="../images/Biest.png">
-			
+		<img class="HERO" src="../images/BadGirl.png">
+	
+		<div class="SPRECHBLASE">
+			Hallo! Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. ...
+		</div>	
 
-			<div class="SPRECHBLASE">
-				Hallo!
-			</div>	
+		<button class="LOS" onclick="window.location.href='kapitel1/wind_scarlett.htm'"> Auf geht's! </button>
 		
 			
     </main>
+		
+	
 
     <!-- Einbinden des Footers -->
     <footer class="footer-custom">

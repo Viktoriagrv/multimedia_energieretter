@@ -28,16 +28,16 @@
 			visibility: visible;
 			transition-delay: 0s;
 			cursor:pointer;
-			}
+		}
 		
 		.STARTBUTTON:hover {
 			transform: scale(1.3);
-			}
+		}
 		
 		.WEG{
 			visibility: hidden;
 			transition-delay: 0s;
-			}
+		}
 		
 		.KLEIN{
 			position: absolute;
@@ -45,8 +45,7 @@
 			left:20%;
 			font-size: 5rem;
 			cursor: auto;
-			transform: none;
-			}	
+		}	
 		
 		
 		.SCROLL{
@@ -64,7 +63,7 @@
 			overflow:hidden;
 			visibility: hidden;
 			opacity: 0;
-			}
+		}
 		
 		
 		.MINI {
@@ -72,8 +71,7 @@
 			height: 50%;
 			align-items: center;
 			left: 30%;
-			
-			}
+		}
 		
 		.PAUSE{
 			position:absolute;
@@ -89,7 +87,7 @@
             font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
-			}
+		}
 		
 		.WEITER{
 			position:absolute;
@@ -105,7 +103,7 @@
             font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
-			}
+		}
 		
 						
 		.WELT{
@@ -115,12 +113,12 @@
 			height: 60%;
 			width:auto;
 			visibility: hidden;
-			}
+		}
 		
 		.GROSS{
 			transition-delay: 2.5s;
 			visibility:visible;
-			}
+		}
 		
 		.BLASE{
 			position:absolute;
@@ -128,7 +126,7 @@
 			top: 50%;
 			left:8%;
 			visibility:hidden;
-			}
+		}
 		
 		.HELFEN{
 			position:absolute;
@@ -141,11 +139,11 @@
 			background-color: transparent;
 			border: 0;
 			cursor:pointer;
-			}
+		}
 		
 		.HELFEN:hover{
 			transform: scale(1.2);
-			}
+		}
 		
 		
 		.ZEIGEN{
@@ -153,13 +151,13 @@
 			transition-delay: 1.5s;
 			visibility: visible;
 			opacity: 1;
-			}
+		}
 		
 		.BLASEZEIGEN{
 			transition-property: all;
 			transition-delay: 2.5s;
 			visibility: visible;
-			}
+		}
 				
 		</style>
 

@@ -364,7 +364,7 @@
 					</div>
 					<br><br>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='missionsstart_scarlett.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOGOLDENKNIGHT">
