@@ -28,17 +28,61 @@
 			z-index: 1;
 			}
 		
-		.WINDRAD{
-			position:relative;
-			right: 5%;
+		.WINDRAD1{
+			position:absolute;
+			top: 10%;
+			right: 7%;
 			height:20%;
 			width:auto;
 			z-index: 4;
-			
+			cursor: pointer;
+		}
+		
+		.WINDRAD2{
+			position:absolute;
+			top:35%;
+			right: 7%;
+			height:20%;
+			width:auto;
+			z-index: 4;
+			cursor: pointer;
+		}
+		
+		.WINDRAD3{
+			position:absolute;
+			top:23%;
+			right: 20%;
+			height:20%;
+			width:auto;
+			z-index: 4;
+			cursor: pointer;
+		}
+		
+		.HERO{
+			position: absolute;
+			bottom: 10%;
+			right:5%;
+			height:25%;
+			width:auto;
+		}
+		
+		.INFOBOX{
+			position: absolute;
+			padding: 25px;
+			bottom: 28%;
+			right: 18%;
+			height:20%;
+			width: 10%;
+			font-family: verdana;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 0px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
 		}
 		
 		.DROP-ELEMENT {
-			position: relative;
 			height: 30px;
 			width: 30px;
 			border-radius: 40%;
@@ -52,6 +96,7 @@
 			background-color: purple;
 			border-radius: 100%;
 			z-index: 4;
+			cursor: pointer;
 		}
 		
 		#DROPEUROPA{
@@ -59,42 +104,6 @@
 			top: 22%;
 			left: 31%;
 			
-		}
-		
-		#DROPAUSTRALIEN{
-			position: absolute;
-			top: 62%;
-			right: 39%;
-		}
-		
-		#DROPASIEN{
-			position: absolute;
-			top: 30%;
-			left: 47%;
-		}
-		
-		#DROPSAHARA{
-			position: absolute;
-			top: 38%;
-			left: 33%;
-		}
-		
-		#DROPNIAGARA{
-			position: absolute;
-			top: 20%;
-			left: 15%;
-		}
-		
-		#DROPAMAZONAS{
-			position: absolute;
-			bottom:43%;
-			left: 18%;
-		}
-		
-		#DROPATLANTIK{
-			position: absolute;
-			top:30%;
-			left: 22%;
 		}
 		
 		.EUROPA{
@@ -113,6 +122,12 @@
 			z-index:5;
 		}
 		
+		#DROPAUSTRALIEN{
+			position: absolute;
+			top: 62%;
+			right: 39%;
+		}
+		
 		.AUSTRALIEN{
 			position: absolute;
 			top:55%;
@@ -129,10 +144,16 @@
 			z-index:5;
 		}
 		
+		#DROPASIEN{
+			position: absolute;
+			top: 30%;
+			left: 47%;
+		}
+		
 		.ASIEN{
 			position: absolute;
-			top:30%;
-			right: 45%;
+			top:25%;
+			right: 40%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -143,6 +164,12 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			z-index:5;
+		}
+		
+		#DROPSAHARA{
+			position: absolute;
+			top: 38%;
+			left: 33%;
 		}
 		
 		.SAHARA{
@@ -161,9 +188,15 @@
 			z-index:5;
 		}
 		
+		#DROPNIAGARA{
+			position: absolute;
+			top: 20%;
+			left: 15%;
+		}
+		
 		.NIAGARA{
 			position: absolute;
-			top: 35%;
+			top: 33%;
 			left: 15%;
 			height: auto;
 			width: 10%;
@@ -175,6 +208,12 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			z-index:5;
+		}
+		
+		#DROPAMAZONAS{
+			position: absolute;
+			bottom:43%;
+			left: 18%;
 		}
 		
 		.AMAZONAS{
@@ -193,9 +232,59 @@
 			z-index:5;
 		}
 		
+		#DROPATLANTIK{
+			position: absolute;
+			top:30%;
+			left: 22%;
+		}
+		
 		.ATLANTIK{
 			position: absolute;
 			bottom:45%;
+			left: 20%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		#DROPSIBIRIEN{
+			position: absolute;
+			top:15%;
+			left: 45%;
+		}
+				
+		.SIBIRIEN{
+			position: absolute;
+			top:20%;
+			right: 38%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		#DROPMEXIKO{
+			position: absolute;
+			top:43%;
+			left: 18%;
+		}
+		
+		.MEXIKO{
+			position: absolute;
+			top:43%;
 			left: 20%;
 			height: auto;
 			width: 10%;
@@ -271,40 +360,55 @@
 			<div class='DROP-ELEMENT' class="NIAGARA" id="DROPNIAGARA"></div>
 			<div class='DROP-ELEMENT' class="AMAZONAS" id="DROPAMAZONAS"></div>
 			<div class='DROP-ELEMENT' class="ATLANTIK" id="DROPATLANTIK"></div>
-			<div class='DROP-ELEMENT'></div>
-			<div class='DROP-ELEMENT'></div>
+			<div class='DROP-ELEMENT' class=SIBIRIEN id="DROPSIBIRIEN"></div>
+			<div class='DROP-ELEMENT' class="MEXIKO" id="MEXIKO"></div>
 		</div>
 		
-		<img class="WINDRAD" class='DRAG-ELEMENT' id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD" class='DRAG-ELEMENT' id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD" class='DRAG-ELEMENT' id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD1" class='DRAG-ELEMENT' id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD2" class='DRAG-ELEMENT' id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD3" class='DRAG-ELEMENT' id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		
+		
+			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<div class="INFOBOX">
+				<p>Ziehe die Windräder auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.</p>
+			</div>
+	
 		
 		<div class="EUROPA">
-			Die Küstenregionen Europas
+			Die Küstenregionen Europas.
 		</div>
 		
 		<div class="AUSTRALIEN">
-			Die weiten Steppen Australiens
+			Die sonnigen Weiten Australiens.
 		</div>
 		
 		<div class="ASIEN">
-			Die hohen Berge Asiens
+			Die hohen Berge Asiens.
 		</div>
 		
 		<div class="SAHARA">
-			Das sonnige Wüstenmeer Afrikas
+			Das heiße Wüstenmeer Afrikas.
 		</div>
 		
 		<div class="NIAGARA">
-			Die gewaltigen Wasserfälle Nordamerikas
+			Die gewaltigen Wasserfälle Nordamerikas.
 		</div>
 		
 		<div class="AMAZONAS">
-			Der mächtige Strom im Herzen des Regenwaldes
+			Der mächtige Strom im Herzen des Regenwaldes.
 		</div>
 		
 		<div class="ATLANTIK">
-			Der starken Strömungen des Atlantischen Ozeans
+			Der starken Strömungen des Atlantischen Ozeans.
+		</div>
+		
+		<div class="SIBIRIEN">
+			Die weiten Steppen im Norden Russlands.
+		</div>
+		
+		<div class="MEXIKO">
+			Die sonnigen Gebiete in Mittelamerika.
 		</div>
 		
 		
@@ -386,6 +490,15 @@
 					document.querySelector(".ATLANTIK").classList.remove("ZEIGEN");
 				}
 		
+			document.querySelector('#DROPSIBIRIEN').addEventListener('mouseover',ZeigeSibirien);   
+				document.querySelector('#DROPSIBIRIEN').addEventListener('mouseout',SibirienAus);
+				
+				function ZeigeSibirien() {
+					document.querySelector(".SIBIRIEN").classList.add("ZEIGEN");
+				}
+				function SibirienAus() {
+					document.querySelector(".SIBIRIEN").classList.remove("ZEIGEN");
+				}
 		
 		document.querySelector('#DRAGA').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGB').addEventListener('dragstart',ElementAufheben);
