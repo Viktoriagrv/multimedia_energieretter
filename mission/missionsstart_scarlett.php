@@ -42,7 +42,23 @@
 			color:#285238;
 			text-align: left;
 			visibility: visible;
-			}		
+			}
+		
+		.LOS{
+			position: relative;
+			display: inline-block;
+            padding: 20px 30px;
+            font-family: 'Bangers';
+            font-size: 1.5rem;
+			text-decoration: none;
+            color: white;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+			
+		}
 
 	</style>
 </head>
@@ -99,10 +115,13 @@
 		<img class="HERO" src="../images/BadGirl.png">
 	
 		<div class="SPRECHBLASE">
-			Hallo! Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. ...
+			
+			<p>Hallo! Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. ...</p>
+			
+			<button class="LOS" onclick="window.location.href='kapitel1/wind_scarlett.php'"> Auf geht's! </button>
 		</div>	
 
-		<button class="LOS" onclick="window.location.href='kapitel1/wind_scarlett.htm'"> Auf geht's! </button>
+		
 		
 			
     </main>

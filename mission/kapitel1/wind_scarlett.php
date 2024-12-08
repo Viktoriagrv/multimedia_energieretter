@@ -26,6 +26,14 @@
 			cursor: pointer;
 		}
 		
+		.HERO{
+			position: absolute;
+			bottom: 20%;
+			right:10%;
+			height:30%;
+			width:auto;
+		}
+		
 		.HEADER{
 			position: absolute;
 			top: 12%;
@@ -245,7 +253,7 @@
 				</div>						
 		</div>
 		
-				
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">		
 	</main>
 
     <script>	
