@@ -140,6 +140,7 @@
 			position: absolute;
 			top: 5%;
 			left: 40%;
+			cursor: pointer;
 			}
 		
 				
@@ -147,30 +148,35 @@
 			position: absolute;
 			top: 5%;
 			left: 60%;
+			cursor: pointer;
 			}
 		
 		.GREENBLAZE {
 			position: absolute;
 			top: 5%;
 			left: 80%;
+			cursor: pointer;
 			}
 		
 		.THUNDERBOLT {
 			position: absolute;
 			top: 40%;
 			left: 35%;
+			cursor: pointer;
 			}
 		
 		.CYBERTITAN {
 			position: absolute;
 			top: 40%;
 			left: 55%;
+			cursor: pointer;
 			}
 		
 		.SONICSHIELD {
 			position: absolute;
 			top: 40%;
 			left:75%;
+			cursor: pointer;
 			}
 		
 		.INFOSCARLETSHADE {

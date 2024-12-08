@@ -44,9 +44,13 @@
 			top: 10%;
 			left:20%;
 			font-size: 5rem;
+			transform: none;
 			cursor: auto;
-		}	
+			}	
 		
+		.KLEIN:hover{
+			transform: none;
+		}
 		
 		.SCROLL{
 			position: relative;
@@ -87,7 +91,12 @@
             font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
+			cursor: pointer;
 		}
+		
+		.PAUSE:hover {
+            background-color: #45a049;
+        }
 		
 		.WEITER{
 			position:absolute;
@@ -103,9 +112,13 @@
             font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
+			cursor: pointer;
 		}
 		
-						
+		.WEITER:mouseover {
+            background-color: #45a049;
+        }
+			
 		.WELT{
 			position:absolute;
 			top: 20%;
