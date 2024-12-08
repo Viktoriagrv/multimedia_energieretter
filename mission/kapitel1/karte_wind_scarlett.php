@@ -122,6 +122,22 @@
 			z-index:5;
 		}
 		
+		.EUROPAXL{
+			position: absolute;
+			top:18%;
+			left:25%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
 		#DROPAUSTRALIEN{
 			position: absolute;
 			top: 62%;
@@ -129,6 +145,22 @@
 		}
 		
 		.AUSTRALIEN{
+			position: absolute;
+			top:55%;
+			right: 35%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.AUSTRALIENXL{
 			position: absolute;
 			top:55%;
 			right: 35%;
@@ -166,6 +198,22 @@
 			z-index:5;
 		}
 		
+		.ASIENXL{
+			position: absolute;
+			top:25%;
+			right: 40%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
 		#DROPSAHARA{
 			position: absolute;
 			top: 38%;
@@ -173,6 +221,22 @@
 		}
 		
 		.SAHARA{
+			position: absolute;
+			top: 50%;
+			left: 28%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.SAHARAXL{
 			position: absolute;
 			top: 50%;
 			left: 28%;
@@ -210,6 +274,22 @@
 			z-index:5;
 		}
 		
+		.NIAGARAXL{
+			position: absolute;
+			top: 33%;
+			left: 15%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
 		#DROPAMAZONAS{
 			position: absolute;
 			bottom:43%;
@@ -217,6 +297,22 @@
 		}
 		
 		.AMAZONAS{
+			position: absolute;
+			bottom:43%;
+			left: 20%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.AMAZONASXL{
 			position: absolute;
 			bottom:43%;
 			left: 20%;
@@ -254,6 +350,22 @@
 			z-index:5;
 		}
 		
+		.ATLANTIKXL{
+			position: absolute;
+			bottom:45%;
+			left: 20%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
 		#DROPSIBIRIEN{
 			position: absolute;
 			top:15%;
@@ -276,16 +388,48 @@
 			z-index:5;
 		}
 		
+		.SIBIRIENXL{
+			position: absolute;
+			top:20%;
+			right: 38%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
 		#DROPMEXIKO{
 			position: absolute;
-			top:43%;
-			left: 18%;
+			top:41%;
+			left: 12%;
 		}
 		
 		.MEXIKO{
 			position: absolute;
-			top:43%;
-			left: 20%;
+			top:45%;
+			left: 19%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.MEXIKOXL{
+			position: absolute;
+			top:45%;
+			left: 19%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -360,8 +504,8 @@
 			<div class='DROP-ELEMENT' class="NIAGARA" id="DROPNIAGARA"></div>
 			<div class='DROP-ELEMENT' class="AMAZONAS" id="DROPAMAZONAS"></div>
 			<div class='DROP-ELEMENT' class="ATLANTIK" id="DROPATLANTIK"></div>
-			<div class='DROP-ELEMENT' class=SIBIRIEN id="DROPSIBIRIEN"></div>
-			<div class='DROP-ELEMENT' class="MEXIKO" id="MEXIKO"></div>
+			<div class='DROP-ELEMENT' class="SIBIRIEN" id="DROPSIBIRIEN"></div>
+			<div class='DROP-ELEMENT' class="MEXIKO" id="DROPMEXIKO"></div>
 		</div>
 		
 		<img class="WINDRAD1" class='DRAG-ELEMENT' id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
@@ -376,39 +520,76 @@
 	
 		
 		<div class="EUROPA">
-			Die Küstenregionen Europas.
+			Die windigen Küstenregionen Europas.
+		</div>
+		
+		<div class="EUROPAXL">
+			Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="AUSTRALIEN">
-			Die sonnigen Weiten Australiens.
+			Die trockenen Weiten Australiens.
+		</div>
+		
+		<div class="AUSTRALIENXL">
+			Die trockenen Weiten Australiens. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="ASIEN">
 			Die hohen Berge Asiens.
 		</div>
 		
+		<div class="ASIENXL">
+			<button id="CLOSE">&times;</button>
+			<p>Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.</p>
+		</div>
+		
 		<div class="SAHARA">
 			Das heiße Wüstenmeer Afrikas.
 		</div>
 		
+		<div class="SAHARAXL">
+			Das heiße Wüstenmeer Afrikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div> 
+		
 		<div class="NIAGARA">
 			Die gewaltigen Wasserfälle Nordamerikas.
+		</div>
+		
+		<div class="NIAGARAXL">
+			Die gewaltigen Wasserfälle Nordamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="AMAZONAS">
 			Der mächtige Strom im Herzen des Regenwaldes.
 		</div>
 		
+		<div class="AMAZONASXL">
+			Der mächtige Strom im Herzen des Regenwaldes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
 		<div class="ATLANTIK">
-			Der starken Strömungen des Atlantischen Ozeans.
+			Die starken Strömungen des Atlantischen Ozeans.
+		</div>
+		
+		<div class="ATLANTIKXL">
+			Die starken Strömungen des Atlantischen Ozeans. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="SIBIRIEN">
 			Die weiten Steppen im Norden Russlands.
 		</div>
 		
+		<div class="SIBIRIENXL">
+			Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
 		<div class="MEXIKO">
-			Die sonnigen Gebiete in Mittelamerika.
+			Die sonnigen Gebiete Mittelamerikas.
+		</div>
+		
+		<div class="MEXIKOXL">
+			Die sonnigen Gebiete Mittelamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		
@@ -490,7 +671,7 @@
 					document.querySelector(".ATLANTIK").classList.remove("ZEIGEN");
 				}
 		
-			document.querySelector('#DROPSIBIRIEN').addEventListener('mouseover',ZeigeSibirien);   
+				document.querySelector('#DROPSIBIRIEN').addEventListener('mouseover',ZeigeSibirien);   
 				document.querySelector('#DROPSIBIRIEN').addEventListener('mouseout',SibirienAus);
 				
 				function ZeigeSibirien() {
@@ -500,19 +681,30 @@
 					document.querySelector(".SIBIRIEN").classList.remove("ZEIGEN");
 				}
 		
+				document.querySelector('#DROPMEXIKO').addEventListener('mouseover',ZeigeMexiko);   
+				document.querySelector('#DROPMEXIKO').addEventListener('mouseout',MexikoAus);
+				
+				function ZeigeMexiko() {
+					document.querySelector(".MEXIKO").classList.add("ZEIGEN");
+				}
+				function MexikoAus() {
+					document.querySelector(".MEXIKO").classList.remove("ZEIGEN");
+				}
+		
 		document.querySelector('#DRAGA').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGB').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGC').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DROPEUROPA').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPEUROPA').addEventListener('drop',ElementAblegen);
-		document.querySelector('#DROPAUSTRALIEN').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPAUSTRALIEN').addEventListener('drop',ElementAblegen);
+		document.querySelector('#DROPSIBIRIEN').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPSIBIRIEN').addEventListener('drop',ElementAblegen);
 		document.querySelector('#DROPASIEN').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPASIEN').addEventListener('drop',ElementAblegen);
-		document.querySelector('button').addEventListener('click',AblagePruefen);
+		
 		
 		function ElementAufheben() {
 			event.dataTransfer.setData('text/plain',event.target.id);										// setzt das Drag-Element (Datentyp und Datenwert)
+			AlleAus();
 		}
 		
 		function AblegenErlauben() {
@@ -525,7 +717,20 @@
 		function ElementAblegen() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
-			alert('Kreis abgelegt');																		// Platzhalter für weitere Anweisungen
+			document.querySelector(".ASIENXL").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector('#CLOSE').addEventListener('click',AlleAus);
+		function AlleAus() {
+				document.querySelector(".EUROPAXL").classList.remove("ZEIGEN");
+				document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
+				document.querySelector(".AUSTRALIENXL").classList.remove("ZEIGEN");
+				document.querySelector(".SAHARAXL").classList.remove("ZEIGEN");
+				document.querySelector(".NIAGARAXL").classList.remove("ZEIGEN");
+				document.querySelector(".AMAZONASXL").classList.remove("ZEIGEN");
+				document.querySelector(".ATLANTIKXL").classList.remove("ZEIGEN");
+				document.querySelector(".SIBIRIENXL").classList.remove("ZEIGEN");
+				document.querySelector(".MEXIKOXL").classList.remove("ZEIGEN");
 		}
 		
 		function AblagePruefen() {

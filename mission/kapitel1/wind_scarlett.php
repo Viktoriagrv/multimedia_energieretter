@@ -289,6 +289,7 @@
 	
 		function FehlermeldungZu() {
 					document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+					
 		}
 		
 	</script>
