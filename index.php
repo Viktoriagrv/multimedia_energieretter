@@ -121,9 +121,9 @@
 			
 		.WELT{
 			position:absolute;
-			top: 33%;
-			Left:41%;
-			height: 25%;
+			top: 34.7%;
+			Left:41.7%;
+			height: 22%;
 			width:auto;
 			visibility: hidden;
 			transition-property: height, top, left;						/* betreffende Deklarationen (über Pseudoklassen) */
@@ -144,28 +144,49 @@
 		}
 		
 		.BLASE{
-			position:absolute;
-			height:30%;
-			top: 50%;
-			left:8%;
+			position: absolute;
+			padding: 25px;
+			top:27%;
+			left:20%;
+			height:20%;
+			width: 10%;
+			font-family: verdana;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
 			visibility:hidden;
+		}
+		
+		.HERO{
+			position:absolute;
+			height:45%;
+			bottom:15%;
+			left:4%;
+			visibility:hidden;
+			
 		}
 		
 		.HELFEN{
 			position:absolute;
-			top: 59%;
-			left:9%;
-			font-size: 1.8rem;
-			font-family: verdana;
-			color: #285238;
+			bottom: 22%;
+			left:19%;
+			height:5%;
+			width: 15%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: #285238;
+            border-radius: 10px;
+            font-family: 'Bangers';
 			visibility: hidden;
-			background-color: transparent;
-			border: 0;
-			cursor:pointer;
+			cursor: pointer;
 		}
 		
-		.HELFEN:hover{
-			transform: scale(1.2);
+		.HELFEN:mouseover{
+			background-color: #45a049;
 		}
 		
 		
@@ -246,10 +267,16 @@
 				
 			<div class="icon-container">
 				<img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
+				<img class="HERO" src="images/Prinz.png" alt="Golden Knight">
 			</div>
 						
-			<img class="BLASE" src="images/sprechblase.png" alt="Sprechblase">
-			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Ich will helfen!</button>
+			<div class="BLASE"> 
+				<p>Kurze Erklärung vom Superhelden</p>
+			</div>
+			
+			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Hier kannst du helfen!</button>
+			
+			
 									
 			<button class="PAUSE">Pause</button>
 			<button class="WEITER">Schneller</button>
@@ -310,6 +337,7 @@
 			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
 			document.querySelector(".WEITER").classList.remove("ZEIGEN");
 			document.querySelector(".WELT").classList.add("GROSS");
+			document.querySelector(".HERO").classList.add("BLASEZEIGEN");
 			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
 			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
 			}
