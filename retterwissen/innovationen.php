@@ -105,7 +105,7 @@
         <!-- Schwebe-Icons -->
         <div class="icon-container">
             <img src="bilder_retterwissen/pflanze.png" alt="Pflanzlich" id="icon-pflanze">
-            <img src="bilder_retterwissen/wasser.png" alt="Technologisch" id="icon-technologie">
+            <img src="bilder_retterwissen/technologie.png" alt="Technologisch" id="icon-technologie">
         </div>
 
         <!-- Buttons -->

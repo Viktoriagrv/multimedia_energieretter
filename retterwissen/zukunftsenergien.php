@@ -11,11 +11,15 @@
 
     <!-- Navigation einbinden -->
   <nav class="navbar-custom">
+<<<<<<< Updated upstream
 
     <!-- Branding -->
     <a class="navbar-brand" href="../mission/missionsstart.php">Die Energieretter</a>
+=======
+    <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
+>>>>>>> Stashed changes
     
-    <!-- Hauptmenü -->
+    <!-- HAUPTMENÜ -->
     <div class="menu">
 
        
@@ -31,7 +35,7 @@
             </div>
         </div>
         
-        <!-- Dropdown-Menü -->
+        <!-- DROPDOWN -->
         <div class="dropdown menu-item" style="margin-right: 50px;">
             <button class="dropbtn menu-link">Retterwissen</button>
             <div class="dropdown-content">
@@ -46,14 +50,8 @@
 
 
     <style>
-        /* Allgemeine Layout-Einstellungen */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Schwebe-Icons */
+ 
+        /* ICONS */
         .icon-container {
             display: flex;
             justify-content: space-around;
@@ -67,7 +65,7 @@
             height: 130px;
         }
 
-        /* Buttons */
+        /* BUTTON */
         .button-container {
             display: flex;
             gap: 50px;
@@ -94,6 +92,7 @@
 </head>
 
 <body>
+	
     <!-- Hintergrundvideo -->
 <video autoplay muted loop id="backgroundVideo">
     <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
@@ -102,14 +101,14 @@
 
 
     <main>
-        <!-- Schwebe-Icons -->
+        <!-- ICON -->
         <div class="icon-container">
             <img src="bilder_retterwissen/sonne.png" alt="Sonne" id="icon-sun">
             <img src="bilder_retterwissen/wasser.png" alt="Wasser" id="icon-water">
             <img src="bilder_retterwissen/wind.png" alt="Wind" id="icon-wind">
         </div>
 
-        <!-- Buttons -->
+        <!-- BUTTON -->
         <div class="button-container">
             <a href="zukunftsenergien/solar.php" class="button" id="button-sun">Sonnenenergie</a>
             <a href="zukunftsenergien/wasser.php" class="button" id="button-water">Wasserenergie</a>
@@ -117,8 +116,10 @@
         </div>
     </main>
 	
+	
 <script>
-    // Funktion, um Icons schweben zu lassen
+	
+    // FLOAT
     function floatIcons() {
         const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
 
@@ -141,7 +142,7 @@
         });
     }
 
-    // Funktion für Hover-Effekt auf Buttons
+    // HOVER
     function buttonHoverEffect() {
         const buttons = document.querySelectorAll('.button'); // Alle Buttons auswählen
         buttons.forEach(button => {
@@ -159,6 +160,7 @@
         floatIcons(); // Icons schweben lassen
         buttonHoverEffect(); // Hover-Effekt aktivieren
     });
+	
 </script>
 
 	    <!-- Footer -->
