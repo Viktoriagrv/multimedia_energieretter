@@ -6,7 +6,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../include/css/styles.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 
     <!-- Navigation einbinden -->
     <nav class="navbar-custom">

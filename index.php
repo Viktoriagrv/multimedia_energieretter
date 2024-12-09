@@ -76,7 +76,7 @@
 			align-items: center;
 			left: 30%;
 		}
-		
+			
 		.PAUSE{
 			position:absolute;
 			bottom: 10%;
@@ -121,16 +121,26 @@
 			
 		.WELT{
 			position:absolute;
-			top: 20%;
-			Left:35%;
-			height: 60%;
+			top: 33%;
+			Left:41%;
+			height: 25%;
 			width:auto;
 			visibility: hidden;
+			transition-property: height, top, left;						/* betreffende Deklarationen (über Pseudoklassen) */
+			transition-duration: 5s;							/* Dauer (n) */
+			transition-timing-function: ease-in-out;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			transition-delay: 2s;
 		}
 		
 		.GROSS{
-			transition-delay: 2.5s;
+			top: 20%;
+			left: 35%;
+			height: 60%;
 			visibility:visible;
+		}
+		
+		.WELT:focus{
+			height: 60%;
 		}
 		
 		.BLASE{
@@ -168,7 +178,7 @@
 		
 		.BLASEZEIGEN{
 			transition-property: all;
-			transition-delay: 2.5s;
+			transition-delay: 7s;
 			visibility: visible;
 		}
 				
@@ -242,7 +252,7 @@
 			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Ich will helfen!</button>
 									
 			<button class="PAUSE">Pause</button>
-			<button class="WEITER">Text starten</button>
+			<button class="WEITER">Schneller</button>
 		
 	</main>
 			

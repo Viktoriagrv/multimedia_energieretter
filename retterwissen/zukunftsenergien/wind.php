@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
     <!-- Einbinden der CSS-Datei -->
-    <link rel="stylesheet" href="../../include/css/styles.scss"> <!-- Pfad zu deiner CSS-Datei -->
+    <link rel="stylesheet" href="../../css/styles.scss"> <!-- Pfad zu deiner CSS-Datei -->
 
     <!-- Einbinden der Navigationsleiste -->
     <?php include '../../include/partials/nav.php'; ?>
