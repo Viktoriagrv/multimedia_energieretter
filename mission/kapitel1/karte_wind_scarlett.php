@@ -8,7 +8,7 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
 		.PLATZIERUNG{
@@ -499,7 +499,7 @@
 			<img class="WELTKARTE" src="../../images/Weltkarte_rot.png" alt="Weltkarte in alarm-rot">
 			<div class='DROP-ELEMENT' class="EUROPA" id='DROPEUROPA'></div>
 			<div class='DROP-ELEMENT' class="AUSTRALIEN" id='DROPAUSTRALIEN'></div>
-			<div class='DROP-ELEMENT'  class="ASIEN" id='DROPASIEN'></div>
+			<div class='DROP-ELEMENT' class="ASIEN" id='DROPASIEN'></div>
 			<div class='DROP-ELEMENT' class="SAHARA" id="DROPSAHARA"></div>
 			<div class='DROP-ELEMENT' class="NIAGARA" id="DROPNIAGARA"></div>
 			<div class='DROP-ELEMENT' class="AMAZONAS" id="DROPAMAZONAS"></div>
@@ -718,6 +718,12 @@
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
 			document.querySelector(".ASIENXL").classList.add("ZEIGEN");
+			WindradZeigen();
+		}
+		
+		function WindradZeigen(){
+			
+			
 		}
 		
 		document.querySelector('#CLOSE').addEventListener('click',AlleAus);
