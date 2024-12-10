@@ -79,6 +79,7 @@
 			border-radius: 20px 20px 0px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
+			visibility: visible;
 			z-index: 4;
 		}
 		
@@ -89,21 +90,20 @@
 			background-color: lightgrey;
 			z-index: 3;
 		}
+		
 		.DRAG-ELEMENT {
-			float: left;
-			height: 100px;
-			width: 100px;
-			background-color: purple;
-			border-radius: 100%;
 			z-index: 4;
-			cursor: pointer;
+			cursor: move;
 		}
 		
 		#DROPEUROPA{
 			position: absolute;
 			top: 22%;
-			left: 31%;
-			
+			left: 31%;		
+		}
+		
+		.EUROPABTN{
+			visibility: visible;
 		}
 		
 		.EUROPA{
@@ -125,7 +125,7 @@
 		.EUROPAXL{
 			position: absolute;
 			top:18%;
-			left:25%;
+			left:35%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -135,13 +135,30 @@
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
-			z-index:5;
+			z-index:6;
+			
 		}
 		
+		.WINDRADEUROPA{
+			position: absolute;
+			top: 25%;
+			left: 33%;
+			height:5%;
+			width: auto;
+			visibility: hidden;
+			z-index: 5;
+			cursor: pointer;
+		}
+		
+			
 		#DROPAUSTRALIEN{
 			position: absolute;
 			top: 62%;
 			right: 39%;
+		}
+		
+		.AUSTRALIENBTN{
+			visibility: visible;
 		}
 		
 		.AUSTRALIEN{
@@ -182,6 +199,10 @@
 			left: 47%;
 		}
 		
+		.ASIENBTN{
+			visibility: visible;
+		}
+		
 		.ASIEN{
 			position: absolute;
 			top:25%;
@@ -211,13 +232,27 @@
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
-			z-index:5;
+			z-index:6;
+		}
+		
+		.WINDRADASIEN{
+			position: absolute;
+			top:35%;
+			left: 48%;
+			height:5%;
+			width: auto;
+			visibility: hidden;
+			z-index: 5;
 		}
 		
 		#DROPSAHARA{
 			position: absolute;
 			top: 38%;
 			left: 33%;
+		}
+		
+		.SAHARABTN{
+			visibility: visible;
 		}
 		
 		.SAHARA{
@@ -258,6 +293,10 @@
 			left: 15%;
 		}
 		
+		.NIAGARABTN{
+			visibility: visible;
+		}
+		
 		.NIAGARA{
 			position: absolute;
 			top: 33%;
@@ -294,6 +333,10 @@
 			position: absolute;
 			bottom:43%;
 			left: 18%;
+		}
+		
+		.AMAZONASBTN{
+			visibility: visible;
 		}
 		
 		.AMAZONAS{
@@ -334,6 +377,10 @@
 			left: 22%;
 		}
 		
+		.ATLANTIKBTN{
+			visibility: visible;
+		}
+		
 		.ATLANTIK{
 			position: absolute;
 			bottom:45%;
@@ -371,6 +418,10 @@
 			top:15%;
 			left: 45%;
 		}
+		
+		.SIBIRIENBTN{
+			visibility: visible;
+		}
 				
 		.SIBIRIEN{
 			position: absolute;
@@ -404,10 +455,24 @@
 			z-index:5;
 		}
 		
+		.WINDRADSIBIRIEN{
+			position: absolute;
+			top:20%;
+			left: 45%;
+			height:5%;
+			width: auto;
+			visibility: hidden;
+			z-index: 5;
+		}
+		
 		#DROPMEXIKO{
 			position: absolute;
 			top:41%;
 			left: 12%;
+		}
+		
+		.MEXIKOBTN{
+			visibility: visible;
 		}
 		
 		.MEXIKO{
@@ -442,9 +507,70 @@
 			z-index:5;
 		}
 		
+		.HURRA{
+			position: absolute;
+			padding: 25px;
+			bottom: 28%;
+			right: 18%;
+			height:30%;
+			width: 10%;
+			font-family: verdana;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 0px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
+			visibility: hidden;
+		}
+		
+		.FEUERWERK{
+			position: absolute;
+			top:20%;
+			right: 5%;
+			heigh: auto;
+			width:30%;
+			visibility: hidden;
+		}
+		
+		.BTNWEITER{
+			position: absolute;
+			bottom: 15%;
+			right: 18%;
+            padding: 20px 30px;
+            font-family: 'Bangers';
+            font-size: 1.5rem;
+			text-decoration: none;
+            color: white;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+			visibility: hidden;
+		}
+		
 		.ZEIGEN{
 			visibility: visible;
 		}
+		
+		.WEG{
+			visibility: hidden;
+		}
+		
+		.ZU{
+			position: relative;
+			top: 7px;
+			right: 7px;
+		}
+		
+		.CODE{
+			font-family: "bangers";
+			font-size: 1.5rem;
+			color: #285238;
+		}
+		
+		
 
 	</style>
 </head>
@@ -497,20 +623,20 @@
 		
 		<div class="PLATZIERUNG">
 			<img class="WELTKARTE" src="../../images/Weltkarte_rot.png" alt="Weltkarte in alarm-rot">
-			<div class='DROP-ELEMENT' class="EUROPA" id='DROPEUROPA'></div>
-			<div class='DROP-ELEMENT' class="AUSTRALIEN" id='DROPAUSTRALIEN'></div>
-			<div class='DROP-ELEMENT' class="ASIEN" id='DROPASIEN'></div>
-			<div class='DROP-ELEMENT' class="SAHARA" id="DROPSAHARA"></div>
-			<div class='DROP-ELEMENT' class="NIAGARA" id="DROPNIAGARA"></div>
-			<div class='DROP-ELEMENT' class="AMAZONAS" id="DROPAMAZONAS"></div>
-			<div class='DROP-ELEMENT' class="ATLANTIK" id="DROPATLANTIK"></div>
-			<div class='DROP-ELEMENT' class="SIBIRIEN" id="DROPSIBIRIEN"></div>
-			<div class='DROP-ELEMENT' class="MEXIKO" id="DROPMEXIKO"></div>
+			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
+			<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
+			<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
+			<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
+			<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
+			<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
+			<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
+			<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
+			<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
 		</div>
 		
-		<img class="WINDRAD1" class='DRAG-ELEMENT' id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD2" class='DRAG-ELEMENT' id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD3" class='DRAG-ELEMENT' id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
 			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
@@ -524,7 +650,9 @@
 		</div>
 		
 		<div class="EUROPAXL">
-			Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			</p>	
 		</div>
 		
 		<div class="AUSTRALIEN">
@@ -532,7 +660,9 @@
 		</div>
 		
 		<div class="AUSTRALIENXL">
-			Die trockenen Weiten Australiens. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die trockenen Weiten Australiens. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			</p>
 		</div>
 		
 		<div class="ASIEN">
@@ -540,7 +670,7 @@
 		</div>
 		
 		<div class="ASIENXL">
-			<button id="CLOSE">&times;</button>
+			<button class="ZU">&times;</button>
 			<p>Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.</p>
 		</div>
 		
@@ -549,7 +679,8 @@
 		</div>
 		
 		<div class="SAHARAXL">
-			Das heiße Wüstenmeer Afrikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Das heiße Wüstenmeer Afrikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div> 
 		
 		<div class="NIAGARA">
@@ -557,7 +688,8 @@
 		</div>
 		
 		<div class="NIAGARAXL">
-			Die gewaltigen Wasserfälle Nordamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die gewaltigen Wasserfälle Nordamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
 		<div class="AMAZONAS">
@@ -565,7 +697,8 @@
 		</div>
 		
 		<div class="AMAZONASXL">
-			Der mächtige Strom im Herzen des Regenwaldes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Der mächtige Strom im Herzen des Regenwaldes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
 		<div class="ATLANTIK">
@@ -573,7 +706,8 @@
 		</div>
 		
 		<div class="ATLANTIKXL">
-			Die starken Strömungen des Atlantischen Ozeans. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die starken Strömungen des Atlantischen Ozeans. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
 		<div class="SIBIRIEN">
@@ -581,7 +715,8 @@
 		</div>
 		
 		<div class="SIBIRIENXL">
-			Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
 		<div class="MEXIKO">
@@ -589,25 +724,58 @@
 		</div>
 		
 		<div class="MEXIKOXL">
-			Die sonnigen Gebiete Mittelamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			<button class="ZU">&times;</button>
+			<p>Die sonnigen Gebiete Mittelamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+		</div>
+		
+		<div>
+			<img class="WINDRADEUROPA" src="../../images/windraeder.png" alt="Zwei Windräder">
+			<img class="WINDRADASIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
+			<img class="WINDRADSIBIRIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
 		</div>
 		
 		
+			<div class="HURRA">
+				<p>Fantastische Arbeit! Das hast du toll gemacht!<br>
+					Als Belohnung bekommst du von mir einen geheimen Code.</p>
+				<p class="CODE">xdf-338</p>
+				<p>Schreibe ihn dir auf und bewahre ihn gut!</p>
+			</div>
+
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel</button>
+				
+		<div>
+			<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+		
+		</div>
 			
     </main>
 	
 			
 	<script>
 		
+				document.querySelector(".ZU").addEventListener('click',AlleAus);
+		
+		
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
 				document.querySelector('#DROPEUROPA').addEventListener('mouseout',EuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
-				
+				document.querySelector('.WINDRADEUROPA').addEventListener('mouseover',ZeigeEuropaXL);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
+				document.querySelector('.WINDRADEUROPA').addEventListener('mouseout',EuropaXLAus);
+		
+		
 				function ZeigeEuropa() {
 					document.querySelector(".EUROPA").classList.add("ZEIGEN");
 				}
 				function EuropaAus() {
 					document.querySelector(".EUROPA").classList.remove("ZEIGEN");
+				}
+		
+				function ZeigeEuropaXL() {
+					document.querySelector(".EUROPAXL").classList.add("ZEIGEN");
+				}
+				function EuropaXLAus() {
+					document.querySelector(".EUROPAXL").classList.remove("ZEIGEN");
 				}
 		
 		
@@ -695,11 +863,14 @@
 		document.querySelector('#DRAGB').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGC').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DROPEUROPA').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPEUROPA').addEventListener('drop',ElementAblegen);
+		document.querySelector('#DROPEUROPA').addEventListener('drop',ElementAblegenEuropa);
 		document.querySelector('#DROPSIBIRIEN').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPSIBIRIEN').addEventListener('drop',ElementAblegen);
+		document.querySelector('#DROPSIBIRIEN').addEventListener('drop',ElementAblegenSibirien);
 		document.querySelector('#DROPASIEN').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPASIEN').addEventListener('drop',ElementAblegen);
+		document.querySelector('#DROPASIEN').addEventListener('drop',ElementAblegenAsien);
+		
+		
+		let abgelegteElemente = 0;
 		
 		
 		function ElementAufheben() {
@@ -714,19 +885,54 @@
 			}
 		}
 		
-		function ElementAblegen() {
+		function ElementAblegenEuropa() {
+			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
+			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
+			document.querySelector(".EUROPAXL").classList.add("ZEIGEN");
+			document.querySelector('#DROPEUROPA').removeEventListener('dragover',AblegenErlauben);
+			abgelegteElemente++;
+			WindradZeigenEuropa();
+			AbgelegteElementeZaehlen();
+		}
+		
+		
+		function ElementAblegenAsien() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
 			document.querySelector(".ASIENXL").classList.add("ZEIGEN");
-			WindradZeigen();
+			document.querySelector('#DROPASIEN').removeEventListener('dragover',AblegenErlauben);
+			abgelegteElemente++;
+			WindradZeigenAsien();
+			AbgelegteElementeZaehlen();
 		}
 		
-		function WindradZeigen(){
-			
+		function ElementAblegenSibirien() {
+			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
+			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
+			document.querySelector(".SIBIRIENXL").classList.add("ZEIGEN");
+			document.querySelector('#DROPSIBIRIEN').removeEventListener('dragover',AblegenErlauben);
+			abgelegteElemente++;
+			WindradZeigenSibirien();
+			AbgelegteElementeZaehlen();
 			
 		}
 		
-		document.querySelector('#CLOSE').addEventListener('click',AlleAus);
+		function WindradZeigenEuropa(){
+			document.querySelector(".WINDRADEUROPA").classList.add("ZEIGEN");
+			document.querySelector(".EUROPABTN").classList.add("WEG");
+		}
+		
+		function WindradZeigenAsien(){
+			document.querySelector(".WINDRADASIEN").classList.add("ZEIGEN");
+			document.querySelector(".ASIENBTN").classList.add("WEG");
+		}
+		
+		function WindradZeigenSibirien(){
+			document.querySelector(".WINDRADSIBIRIEN").classList.add("ZEIGEN");
+			document.querySelector(".SIBIRIENBTN").classList.add("WEG");
+		}
+		
+		
 		function AlleAus() {
 				document.querySelector(".EUROPAXL").classList.remove("ZEIGEN");
 				document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
@@ -739,14 +945,23 @@
 				document.querySelector(".MEXIKOXL").classList.remove("ZEIGEN");
 		}
 		
-		function AblagePruefen() {
-			alert(document.querySelectorAll('.DROP-ELEMENT > .DRAG-ELEMENT').length);						// zählt alle abgelegte Elemente
+		
+		// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
+			function AbgelegteElementeZaehlen(){
+				if (abgelegteElemente === 3){
+					AlleAbgelegt();
+				}																							
+			}
+		
+		
+		function AlleAbgelegt() {
+			AlleAus();
+			document.querySelector(".INFOBOX").classList.add("WEG");
+			document.querySelector(".HURRA").classList.add("ZEIGEN");
+			document.querySelector(".FEUERWERK").classList.add("ZEIGEN");
+			document.querySelector(".BTNWEITER").classList.add("ZEIGEN");
 		}
 		
-		// mögliche Events für das Drag-Element: dragstart, drag, dragend
-		// mögliche Events für das Drop-Element: dragenter, dragover, dragleave, drop
-		// erforderliche Events: dragstart, dragover, drop
-		// alle Events sind für Touch-Geräte nicht geeignet
 		
 		
 		

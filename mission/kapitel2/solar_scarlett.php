@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Kapitel Windenergie</title>
+    <title>Kapitel Sonnenenergie</title>
 
     
 
@@ -204,14 +204,14 @@
 		
     <main>
 		
-		<div class="HEADER">Windkraftanlagen</div>
-		<img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+		<div class="HEADER">Solaranlagen</div>
+		<img class="WINDRAD" src="../../images/Solarenergie.png" alt="Landschaft mit Solarmodulen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'">
 				Erfahre mehr <br>
-				über Windkraft!
+				über die Kraft der Sonne!
 			</p>
 		</div>
 		
