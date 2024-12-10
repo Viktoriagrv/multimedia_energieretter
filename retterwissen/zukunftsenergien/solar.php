@@ -1,18 +1,15 @@
-<html lang="de">
-<head>
+<html lang="de"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solarenergie</title>
 
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-<<<<<<< Updated upstream
     <link rel="stylesheet" href="../../css/styles.css">
-=======
+
     <!-- STYLESHEETS -->
 	<link rel="stylesheet" href="../../include/css/styles.css">
->>>>>>> Stashed changes
-
+	
     <!-- NAVIGATION  -->
     <nav class="navbar-custom">
         <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
@@ -217,7 +214,7 @@
     	</video>
 
 <main>
-	
+	  <div> <img src="../bilder_retterwissen/sonne.png" alt="Solarenergie" width="345" height="345"> </div>
 	
   <!-- SPRECHBLASE 1 -->
 
@@ -240,7 +237,30 @@
 
 			
     <script>
-		
+	
+    const sonnenBild = document.getElementById('sonnenBild');
+
+    // Aktueller Status der Sonne
+    let position = 'center'; // Optionen: 'center', 'right', 'left'
+
+    // Event-Listener für die Klicks
+    sonnenBild.addEventListener('click', () => {
+        if (position === 'center') {
+            // Bewege nach rechts
+            sonnenBild.style.transform = 'translateX(200px)';
+            position = 'right';
+        } else if (position === 'right') {
+            // Bewege nach links
+            sonnenBild.style.transform = 'translateX(-200px)';
+            position = 'left';
+        } else if (position === 'left') {
+            // Zurück zur Mitte
+            sonnenBild.style.transform = 'translateX(0)';
+            position = 'center';
+        }
+    });
+
+
 		// MUSIK 
 		document.querySelector('button').addEventListener('click', MusikAnAus);
 	
