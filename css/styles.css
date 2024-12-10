@@ -6,7 +6,7 @@ html, body {
     font-family: verdana;
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Verhindert das Scrollen der Seite */
+    overflow: auto; /* Verhindert das Scrollen der Seite */
 }
 
 /* Hintergrundvideo */
@@ -31,7 +31,7 @@ main {
     height: calc(100% - 60px); /* Höhe des Hauptinhalts anpassen */
     padding: 20px;
     z-index: 1; /* Inhalt wird über dem Video angezeigt */
-    overflow: hidden; /* Verhindert Scrollen */
+    overflow: auto; /* Verhindert Scrollen */
 }
 
 /* Gelbe Hintergründe für die spezifischen Abschnitte */

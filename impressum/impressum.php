@@ -11,7 +11,6 @@
 
     <!-- Navigation einbinden -->
     <nav class="navbar-custom">
-        <!-- Branding -->
         <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
         <!-- Hauptmenü -->
         <div class="menu">
@@ -35,62 +34,60 @@
         </div>
     </nav>
 
-    <!-- CSS-Stile -->
+	
     <style>
-     /* Allgemeine Seiteinstellungen */
-body {
-    font-family: Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    overflow-y: scroll;
-}
+ 
+		body {
+			font-family: Verdana, sans-serif;
+			background-color: #f4f4f4;
+			color: #000;
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+		}
 
-/* Sicherstellen, dass der Hauptinhalt unter der Navbar beginnt und den gleichen Abstand hat */
-main {
-    padding-top: 80px;  /* Abstand oben (wie Höhe der Navbar) */
-    padding-bottom: 80px;  /* Sicherstellen, dass der Abstand zum Footer genug ist */
-}
+		main {
+			padding-top: 80px;  /* Abstand oben (wie Höhe der Navbar) */
+			padding-bottom: 80px;  /* Sicherstellen, dass der Abstand zum Footer genug ist */
+		}
 
-/* Inhaltsbereich */
-.inhalt {
-    max-width: 600px; /* Kleinere Breite für die Box */
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;  /* Innenabstand */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;  /* Stellt sicher, dass der Inhalt immer sichtbar ist */
-}
+		/* Inhaltsbereich */
+		.inhalt {
+			max-width: 600px; 
+			margin: 0 auto;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 20px;  /* Innenabstand */
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			z-index: 1;  
+		}
 
-/* Hintergrundvideo */
-#hintergrundVideo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;  /* Video hinter dem Inhalt */
-}
+		/* Hintergrundvideo */
+		#hintergrundVideo {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			z-index: -1;  /* Video hinter dem Inhalt */
+		}
 
+			</style>
+		
+		</head>
 
-
-    </style>
-</head>
-
-<body>
-    <!-- Hintergrundvideo -->
-    <video autoplay muted loop id="hintergrundVideo">
-        <source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-        <source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
-    </video>
+		<body>
+			<!-- Hintergrundvideo -->
+			<video autoplay muted loop id="hintergrundVideo">
+				<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+				<source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
+			</video>
 
     <!-- Hauptinhalt -->
     <main>
         <div class="inhalt">
-            <!-- Einführung -->
+            
             <h1>Impressum</h1>
             <p>
                 Willkommen zu <strong>Die Energieretter</strong> – ein Projekt des Multimedia-Studiums im Wintersemester 2024/2025 
