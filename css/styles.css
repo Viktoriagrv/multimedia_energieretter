@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
-    font-family: Arial, sans-serif;
+    font-family: verdana;
     display: flex;
     flex-direction: column;
     overflow: auto; /* Verhindert das Scrollen der Seite */
@@ -27,8 +27,7 @@ main {
     align-items: center;
     justify-content: center;
     color: white;
-    text-align: center;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;    
     height: calc(100% - 60px); /* Höhe des Hauptinhalts anpassen */
     padding: 20px;
     z-index: 1; /* Inhalt wird über dem Video angezeigt */
@@ -43,7 +42,7 @@ main {
     margin: 20px;
     width: 100%; /* Stellt sicher, dass der Abschnitt die gesamte Breite einnimmt */
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: verdana;
     border-radius: 5px; /* Optional: Runde Ecken für den Abschnitt */
 }
 
