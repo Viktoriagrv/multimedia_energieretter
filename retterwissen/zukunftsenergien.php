@@ -11,7 +11,6 @@
 
     <!-- Navigation einbinden -->
   <nav class="navbar-custom">
-<<<<<<< Updated upstream
 
     <!-- Branding -->
     <a class="navbar-brand" href="../mission/missionsstart.php">Die Energieretter</a>

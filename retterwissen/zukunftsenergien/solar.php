@@ -1,19 +1,21 @@
-<html lang="de"><head>
+<!DOCTYPE html>
+<html lang="de">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solarenergie</title>
 
+	
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
 
     <!-- STYLESHEETS -->
-	<link rel="stylesheet" href="../../include/css/styles.css">
-	
-    <!-- NAVIGATION  -->
+    <link rel="stylesheet" href="../../include/css/styles.css">
+
+    <!-- NAVIGATION -->
     <nav class="navbar-custom">
         <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
-        <!-- Hauptmenü -->
         <div class="menu">
             <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
             <div class="dropdown menu-item">
@@ -34,257 +36,171 @@
             </div>
         </div>
     </nav>
-
+	
     <style>
-
 		
-		/* BODY */
-		body {
-  		  margin: 0;
-  		  padding: 0;
-  		  font-family: Arial, sans-serif;
-   			 overflow-x: auto; /* SCROLLEN */
-		}
-
-		/* SONNE */
-        .SONNE {
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-color: #f4f4f4;
             display: flex;
-            justify-content: space-around;
-            gap: 100px;
-            position: relative;
-            margin-bottom: 60px;
+            align-items: center;
+            justify-content: center;
         }
 
-		/* SPRECHBLASEN ALLGEMEIN*/
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            height: 100%;
+        }
 
-		main {
-			padding: 20px;
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
-			max-height: 90vh; /* MAX. HÖHE */
-			margin-top: 100px;
-			overflow-y: auto; /* SCROLLEN */
-		}
+        /* SONNEN CONTAINER */
+        .sonnen-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffeeba;
+        }
 
-		/* SPRECHBLASE STYLE */
+        .sonnen-container img {
+            width: 300px;
+            height: auto;
+            animation: schweben 3s ease-in-out infinite;
+        }
 
-		.sprechblase {
-			position: relative;
-			background: #fff;
-			border: 2px solid #333;
-			border-radius: 10px; /* RUNDUNG */
-			padding: 10px 20px; /* BREITERE SPRECHBLASE*/
-			font-size: 14px; /* SCHRIFTGRÖßE */
-			line-height: 1.3; /* ZEILENABSTAND */
-			color: black;
-			text-align: justify;
-			box-sizing: border-box;
-			width: fit-content; /* SPRECHBLASE NUR SO GROß WIE TEXT */
-			max-width: 500px; /* BREITE */
-			margin-left: 80px; /* ABSTAND ZUR LINKEN SEITE */
-			margin-right: 80px; /* ABSTAND ZUR RECHTEN SEITE */
-		}
+        @keyframes schweben {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
 
-			/* LAUTSPRECHER */
-			.sprechblase img {
-				width: 16px; /* LAUTSPRECHER-GRÖßE */
-				height: 16px;
-				cursor: pointer;
-				position: absolute;
-				top: 10px;
-				right: 10px; /* LAUTSPRECHER OBEN RECHTS IN DIE ECKE */
-			}
+        /* Sprechblasen rechts */
+        main {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
 
-			/* SPRECHBLASEN WEIßER TEIL DREIECK */
-		.sprechblase::after {
-			content: '';
-			position: absolute;
-			bottom: -8px; /* KLEINER PFEIL */
-			left: 20px; 
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 8px 8px 0 8px; 
-			border-color: #fff transparent transparent transparent;
-		}
+        .sprechblase {
+            position: relative;
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: black;
+            text-align: justify;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: erscheinen 0.5s ease-out;
+        }
 
-				/* SPRECHBLASEN SCHWARZER TEIL DREIECK */
-		.sprechblase::before {
-			content: '';
-			position: absolute;
-			bottom: -10px;
-			left: 18px; 
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 10px 10px 0 10px; 
-			border-color: #333 transparent transparent transparent;
-		}
+        @keyframes erscheinen {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
 
-		/* ANKLICKBARE WÖRTER */
-		.woerter span {
-			color: #e8a723; 
-			cursor: pointer;
-			text-decoration: underline;
-		}
+        .button {
+            background-color: #e8a723;
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
 
-		/* ANORDNUNG SPRECHBLASEN */
-		#sprechblase1 {
-			align-self: flex-start; /*LINKS */
-		}
+        .button:hover {
+            background-color: #d67b00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+		
+        <!-- SONNENBEREICH -->
+        <div class="sonnen-container">
+            <img src="../bilder_retterwissen/sonne.png" alt="Solarenergie">
+        </div>
 
-		#sprechblase2 {
-			align-self: flex-end; /* REVHTS */
-		}
+        <!-- SPRECHBLASENBEREICH -->
+        <main>
+            <!-- SPRECHBLASE 1 -->
+            <div class="sprechblase" id="SPRECHBLASE1">
+                <p id="TEXT1">Sonnenenergie ist Energie, die von der Sonne kommt und umweltfreundlich in Strom umgewandelt werden kann.</p>
+                <button class="button" onclick="toggleText('TEXT1', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
+            </div>
 
-		#sprechblase3 {
-			align-self: flex-start; /* LINKS */
-			margin-bottom: 55px; /* ABSTAND NACH UNTEN */
-		}
+            <!-- SPRECHBLASE 2 -->
+            <div class="sprechblase" id="SPRECHBLASE2">
+                <p id="TEXT2">Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.</p>
+                <button class="button" onclick="toggleText('TEXT2', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
+            </div>
 
-
-		/* BUTTONS */
-		.buttons {
-			margin-top: 5px; 
-			display: flex;
-			gap: 8px;
-		}
-
-		.button {
-			background-color: #e8a723;
-			color: white;
-			border: none;
-			padding: 6px 10px; 
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 10px; 
-		}
-
-		.button:hover {
-			background-color: #d67b00;
-		}
-
-		/* KARTEN */
-		.karte {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background: white;
-			padding: 12px;
-			border-radius: 10px;
-			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-			max-width: 60%; 
-			z-index: 1000;
-			display: none;
-		}
-
-		.karte h2 {
-			margin-top: 0;
-		}
-
-		.karte p {
-			font-size: 12px; /* Kleinere Schriftgröße */
-			line-height: 1.4; /* Kleinere Zeilenhöhe */
-		}
-
-				/* SCHLIEßBUTTON */
-		.close-button {
-			background: #e8a723;
-			border: none;
-			padding: 6px 10px; 
-			color: white;
-			border-radius: 5px;
-			cursor: pointer;
-			font-size: 10px; 
-		}
-
-		.close-button:hover {
-			background: #d67b00;
-		}
-
-</style>
-
-	</head>
-		<body>
-    	<!-- HINTERGRUNDVIDEO GALAXIE -->
-    	<video autoplay muted loop id="backgroundVideo">
-       	 <source src="../bilder_retterwissen/background_video.mp4" type="video/mp4">
-    	</video>
-
-<main>
-	  <div> <img src="../bilder_retterwissen/sonne.png" alt="Solarenergie" width="345" height="345"> </div>
-	
-  <!-- SPRECHBLASE 1 -->
-
-	  <div class="sprechblase" id="sprechblase1">
-
-		<p id="simple1">
-		  Sonnenenergie, oder auch Solarenergie genannt, ist Energie, die von der Sonne kommt. Die Sonne strahlt eine große Menge an Energie aus. Ein kleiner Teil dieser Strahlen erreicht die Erde und erwärmt sie. Die Menschen können diese Energie nutzen und in andere Energien umwandeln. Die Sonnenstrahlen liefern weit mehr Energie, als Mensch und Natur brauchen können. Mit Solarmodulen kann man die Sonnenenergie einfangen und in Stromb verwandeln. Das Besondere daran ist, dass sie keine schädlichen Gase produziert und deshalb gut für die Umwelt ist.
-		</p>
-
-
-			<div class="button">
-			<button> Play / Pause </button>
-		</div>
-	  </div>
-	</main>
-
-
-
+            <!-- SPRECHBLASE 3 -->
+            <div class="sprechblase" id="SPRECHBLASE3">
+                <p id="TEXT3">Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.</p>
+                <button class="button" onclick="toggleText('TEXT3', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
+            </div>
+			
+			 <!-- SPRECHBLASE 4 -->
+            <div class="sprechblase" id="SPRECHBLASE4">
+                <p id="TEXT4">Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.</p>
+                <button class="button" onclick="toggleText('TEXT4', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
+            </div>
+        </main>
     </div>
 
-			
     <script>
-	
-    const sonnenBild = document.getElementById('sonnenBild');
+        const texte = {
+            'TEXT1': {
+                'EINFACHE ERKLÄRUNG': 'Sonnenenergie ist Energie, die von der Sonne kommt und umweltfreundlich in Strom umgewandelt werden kann.',
+                'AUSFÜHRLICHE ERKLÄRUNG': 'Sonnenenergie ist eine der nachhaltigsten Energiequellen. Die Strahlung der Sonne kann durch moderne Technik effizient genutzt werden, um Energie ohne Umweltbelastung zu erzeugen.'
+            },
+            'TEXT2': {
+                'EINFACHE ERKLÄRUNG': 'Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.',
+                'AUSFÜHRLICHE ERKLÄRUNG': 'Solarmodule, auch Photovoltaikanlagen genannt, nutzen spezielle Halbleiter, um die Energie der Sonnenstrahlen in elektrischen Strom umzuwandeln. Dies geschieht effizient und ohne die Freisetzung von Schadstoffen.'
+            },
+            'TEXT3': {
+                'EINFACHE ERKLÄRUNG': 'Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.',
+                'AUSFÜHRLICHE ERKLÄRUNG': 'Die Sonne liefert pro Jahr Tausende von Terawattstunden Energie auf die Erde – genug, um den gesamten globalen Energiebedarf zu decken. Mit der richtigen Infrastruktur können fossile Brennstoffe schrittweise ersetzt werden.'
+            },
+			'TEXT4': {
+                'EINFACHE ERKLÄRUNG': 'Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.',
+                'AUSFÜHRLICHE ERKLÄRUNG': 'Solarmodule, auch Photovoltaikanlagen genannt, nutzen spezielle Halbleiter, um die Energie der Sonnenstrahlen in elektrischen Strom umzuwandeln. Dies geschieht effizient und ohne die Freisetzung von Schadstoffen.'
+            },
+        };
 
-    // Aktueller Status der Sonne
-    let position = 'center'; // Optionen: 'center', 'right', 'left'
-
-    // Event-Listener für die Klicks
-    sonnenBild.addEventListener('click', () => {
-        if (position === 'center') {
-            // Bewege nach rechts
-            sonnenBild.style.transform = 'translateX(200px)';
-            position = 'right';
-        } else if (position === 'right') {
-            // Bewege nach links
-            sonnenBild.style.transform = 'translateX(-200px)';
-            position = 'left';
-        } else if (position === 'left') {
-            // Zurück zur Mitte
-            sonnenBild.style.transform = 'translateX(0)';
-            position = 'center';
+        function toggleText(id, einfacheErklärung, ausführlicheErklärung) {
+            const textElement = document.getElementById(id);
+            textElement.textContent = textElement.textContent === texte[id][einfacheErklärung]
+                ? texte[id][ausführlicheErklärung]
+                : texte[id][einfacheErklärung];
         }
-    });
-
-
-		// MUSIK 
-		document.querySelector('button').addEventListener('click', MusikAnAus);
-	
-		const Klingelton = new Audio('spacey_button.mp3')
-		
-			function MusikAnAus (){ 
-				if (! Klingelton.paused)
-					Klingelton.paused();
-				}
-		
-		 		else {
-					Klingelton.play();
-					Klingelton.loop = true;
-				}
-				
     </script>
-			
-
-    <!-- FOOTER -->
-    <footer class="footer-custom">
-        <div class="footer-links">
-            <a href="../../impressum/impressum.php">Impressum</a>
-        </div>
-    </footer>
-	
+<footer class="footer-custom">
+    <div class="footer-links">
+        <a href="../../impressum/impressum.php">Impressum</a>
+    </div>
+</footer>
 </body>
 </html>
+
