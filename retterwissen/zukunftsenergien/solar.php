@@ -3,204 +3,205 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solarenergie</title>
+    <title>Retterwissen - Solarenergie</title>
 
-	
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css">
-
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" href="../../include/css/styles.css">
-
-    <!-- NAVIGATION -->
-    <nav class="navbar-custom">
-        <a class="navbar-brand" href="../../mission/missionsstart.php">Die Energieretter</a>
-        <div class="menu">
-            <a href="../../index.php" class="menu-link menu-item">Vorspann</a>
-            <div class="dropdown menu-item">
-                <button class="dropbtn menu-link">Mission</button>
-                <div class="dropdown-content">
-                    <a href="../../mission/superhelden.php">Die Superhelden</a>
-                    <a href="../../mission/missionsstart.php">Missionsstart</a>
-                    <a href="../../mission/codeeingabe.php">Code-Eingabe</a>
-                </div>
-            </div>
-            <div class="dropdown menu-item" style="margin-right: 50px;">
-                <button class="dropbtn menu-link">Retterwissen</button>
-                <div class="dropdown-content">
-                    <a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-                    <a href="../../retterwissen/innovationen.php">Innovationen</a>
-                    <a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-	
     <style>
-		
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
-            height: 100vh;
-            background-color: #f4f4f4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-color: #fff5cc;
+            color: #333;
         }
 
         .container {
-            display: flex;
-            width: 100%;
-            max-width: 1200px;
-            height: 100%;
-        }
-
-        /* SONNEN CONTAINER */
-        .sonnen-container {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #ffeeba;
-        }
-
-        .sonnen-container img {
-            width: 300px;
-            height: auto;
-            animation: schweben 3s ease-in-out infinite;
-        }
-
-        @keyframes schweben {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        /* Sprechblasen rechts */
-        main {
-            flex: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center;
             padding: 20px;
-            gap: 20px;
         }
 
-        .sprechblase {
-            position: relative;
-            background: #fff;
-            border: 2px solid #333;
-            border-radius: 10px;
-            padding: 15px;
-            font-size: 14px;
-            line-height: 1.4;
-            color: black;
-            text-align: justify;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            animation: erscheinen 0.5s ease-out;
+        h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 48px;
+            color: #f7b500;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        @keyframes erscheinen {
-            from {
-                transform: scale(0.9);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
+        .illustration {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .illustration img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .content {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
         }
 
         .button {
-            background-color: #e8a723;
+            display: inline-block;
+            background-color: #f7b500;
             color: white;
-            border: none;
-            padding: 6px 10px;
+            padding: 10px 20px;
             border-radius: 5px;
-            cursor: pointer;
-            font-size: 12px;
-            margin-top: 10px;
+            text-decoration: none;
+            font-size: 16px;
             transition: background-color 0.3s ease;
         }
 
         .button:hover {
-            background-color: #d67b00;
+            background-color: #e6a000;
         }
+
+        .quiz-header {
+            font-size: 24px;
+            margin-top: 50px;
+            color: #333;
+        }
+
+        .quiz-item {
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 15px;
+            max-width: 600px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .speech-bubble {
+            background-color: #fff5cc;
+            border: 2px solid #f7b500;
+            border-radius: 10px;
+            padding: 15px;
+            font-size: 16px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider-label {
+            font-size: 14px;
+            margin: 0 10px;
+            color: #555;
+        }
+
+        .slider {
+            width: 150px;
+            -webkit-appearance: none;
+            background: gray;
+            height: 5px;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            background: #f7b500;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        #confirm-button {
+            margin-top: 30px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #confirm-button:hover {
+            background-color: #218838;
+        }
+
+        #exclusive-content {
+            display: none;
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: #f7b500;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-		
-        <!-- SONNENBEREICH -->
-        <div class="sonnen-container">
-            <img src="../bilder_retterwissen/sonne.png" alt="Solarenergie">
+        <h1>Retterwissen - Solarenergie</h1>
+
+        <div class="illustration">
+            <img src="illustration_solar.jpg" alt="Solarenergie Illustration">
         </div>
 
-        <!-- SPRECHBLASENBEREICH -->
-        <main>
-            <!-- SPRECHBLASE 1 -->
-            <div class="sprechblase" id="SPRECHBLASE1">
-                <p id="TEXT1">Sonnenenergie ist Energie, die von der Sonne kommt und umweltfreundlich in Strom umgewandelt werden kann.</p>
-                <button class="button" onclick="toggleText('TEXT1', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
-            </div>
+        <div class="content">
+            <p>Willkommen bei den Retterwissen! Erfahre alles über Solarenergie, die Energiequelle der Zukunft. Sie ist sauber, nachhaltig und kommt direkt von der Sonne. Mit Solarenergie können wir unsere Welt heller und umweltfreundlicher machen!</p>
+            <a href="#quiz" class="button">Loslegen</a>
+        </div>
 
-            <!-- SPRECHBLASE 2 -->
-            <div class="sprechblase" id="SPRECHBLASE2">
-                <p id="TEXT2">Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.</p>
-                <button class="button" onclick="toggleText('TEXT2', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
-            </div>
+        <div class="quiz-header" id="quiz">Du willst noch mehr erfahren? Schalte exklusive Inhalte frei.</div>
+        <p>Alles was du dafür tun musst ist das Gelernte hier einzusetzen und zu bestätigen.</p>
 
-            <!-- SPRECHBLASE 3 -->
-            <div class="sprechblase" id="SPRECHBLASE3">
-                <p id="TEXT3">Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.</p>
-                <button class="button" onclick="toggleText('TEXT3', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
+        <!-- Schieberegler Fragen -->
+        <div class="quiz-item" id="item1">
+            <div class="speech-bubble">Solarenergie setzt schädliche Gase frei.</div>
+            <div class="slider-container">
+                <span class="slider-label" id="label1-false">Falsch</span>
+                <input type="range" id="slider1" class="slider" min="0" max="1" step="1">
+                <span class="slider-label" id="label1-true">Wahr</span>
             </div>
-			
-			 <!-- SPRECHBLASE 4 -->
-            <div class="sprechblase" id="SPRECHBLASE4">
-                <p id="TEXT4">Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.</p>
-                <button class="button" onclick="toggleText('TEXT4', 'EINFACHE ERKLÄRUNG', 'AUSFÜHRLICHE ERKLÄRUNG')">Wechseln</button>
-            </div>
-        </main>
+        </div>
+
+        <button id="confirm-button" onclick="checkAnswers()">Bestätigen</button>
+
+        <div id="exclusive-content">
+            <h2>Exklusive Inhalte</h2>
+            <p>Keine Sorge, für die Mission kommst du schon mit dem oberen Retterwissen klar. Bei den exklusiven Inhalten kannst du dir aber ein Zertifikat abholen und noch mehr spannende Videos anschauen!</p>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen style="width: 80%; max-width: 700px; height: 400px; border-radius: 10px;"></iframe>
+        </div>
     </div>
+
+    <footer>
+        © 2024 Retterwissen. Alle Rechte vorbehalten.
+    </footer>
 
     <script>
-        const texte = {
-            'TEXT1': {
-                'EINFACHE ERKLÄRUNG': 'Sonnenenergie ist Energie, die von der Sonne kommt und umweltfreundlich in Strom umgewandelt werden kann.',
-                'AUSFÜHRLICHE ERKLÄRUNG': 'Sonnenenergie ist eine der nachhaltigsten Energiequellen. Die Strahlung der Sonne kann durch moderne Technik effizient genutzt werden, um Energie ohne Umweltbelastung zu erzeugen.'
-            },
-            'TEXT2': {
-                'EINFACHE ERKLÄRUNG': 'Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.',
-                'AUSFÜHRLICHE ERKLÄRUNG': 'Solarmodule, auch Photovoltaikanlagen genannt, nutzen spezielle Halbleiter, um die Energie der Sonnenstrahlen in elektrischen Strom umzuwandeln. Dies geschieht effizient und ohne die Freisetzung von Schadstoffen.'
-            },
-            'TEXT3': {
-                'EINFACHE ERKLÄRUNG': 'Die Sonne liefert weit mehr Energie, als wir benötigen. Solarenergie hilft, fossile Brennstoffe zu ersetzen.',
-                'AUSFÜHRLICHE ERKLÄRUNG': 'Die Sonne liefert pro Jahr Tausende von Terawattstunden Energie auf die Erde – genug, um den gesamten globalen Energiebedarf zu decken. Mit der richtigen Infrastruktur können fossile Brennstoffe schrittweise ersetzt werden.'
-            },
-			'TEXT4': {
-                'EINFACHE ERKLÄRUNG': 'Solarmodule fangen Sonnenstrahlen ein und wandeln sie in saubere Energie um, die keine schädlichen Gase freisetzt.',
-                'AUSFÜHRLICHE ERKLÄRUNG': 'Solarmodule, auch Photovoltaikanlagen genannt, nutzen spezielle Halbleiter, um die Energie der Sonnenstrahlen in elektrischen Strom umzuwandeln. Dies geschieht effizient und ohne die Freisetzung von Schadstoffen.'
-            },
-        };
+        const correctAnswers = { 'slider1': 0 };
 
-        function toggleText(id, einfacheErklärung, ausführlicheErklärung) {
-            const textElement = document.getElementById(id);
-            textElement.textContent = textElement.textContent === texte[id][einfacheErklärung]
-                ? texte[id][ausführlicheErklärung]
-                : texte[id][einfacheErklärung];
+        function checkAnswers() {
+            const isCorrect = Object.keys(correctAnswers).every(id => 
+                parseInt(document.getElementById(id).value) === correctAnswers[id]
+            );
+
+            if (isCorrect) {
+                document.getElementById('exclusive-content').style.display = 'block';
+            } else {
+                alert('Nicht alle Antworten sind richtig. Bitte versuche es erneut!');
+            }
         }
     </script>
-<footer class="footer-custom">
-    <div class="footer-links">
-        <a href="../../impressum/impressum.php">Impressum</a>
-    </div>
-</footer>
 </body>
 </html>
-
