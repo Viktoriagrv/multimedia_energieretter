@@ -36,7 +36,6 @@
 		
 		.WEG{
 			visibility: hidden;
-			transition-delay: 0s;
 		}
 		
 		.KLEIN{
