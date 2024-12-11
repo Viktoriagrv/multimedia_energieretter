@@ -222,7 +222,7 @@
 		.ASIENXL{
 			position: absolute;
 			top:25%;
-			right: 40%;
+			right: 32%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -520,7 +520,7 @@
 			border-radius: 20px 20px 0px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			z-index: 4;
+			z-index: 5;
 			visibility: hidden;
 		}
 		
@@ -531,6 +531,7 @@
 			heigh: auto;
 			width:30%;
 			visibility: hidden;
+			z-index: 4;
 		}
 		
 		.BTNWEITER{
@@ -548,6 +549,7 @@
             border-radius: 8px;	
 			cursor: pointer;
 			visibility: hidden;
+			z-index: 5;
 		}
 		
 		.ZEIGEN{
@@ -577,48 +579,14 @@
 
 <body>
 	
+	<?php include '../../include/nav.php'; ?>
+	
 	 <!-- Hintergrundvideo -->
 		<video autoplay muted loop id="backgroundVideo">
 			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
 			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
 		</video>
 	
-	
-<!-- Navigation einbinden -->
-		  <nav class="navbar-custom">
-
-				<!-- Branding -->
-				<a class="navbar-brand" href="../missionsstart.php">Die Energieretter</a>
-
-				<!-- Hauptmenü -->
-				<div class="menu">
-
-
-					<a href="../../index.php" class="menu-link menu-item">Vorspann</a>
-
-
-					<div class="dropdown menu-item">
-						<button class="dropbtn menu-link">Mission</button>
-						<div class="dropdown-content">
-							<a href="../superhelden.php">Die Superhelden</a>
-							<a href="../missionsstart.php">Missionsstart</a>
-							<a href="../codeeingabe.php">Spiel fortsetzen</a>
-						</div>
-					</div>
-
-					<!-- Dropdown-Menü -->
-					<div class="dropdown menu-item" style="margin-right: 50px;">
-						<button class="dropbtn menu-link">Retterwissen</button>
-						<div class="dropdown-content">
-							<a href="../../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-							<a href="../retterwissen/innovationen.php">Innovationen</a>
-							<a href="../../retterwissen/klimaschaeden.php">Klimaschäden</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-
-		
     <main>
 		
 		<div class="PLATZIERUNG">
@@ -715,7 +683,7 @@
 		</div>
 		
 		<div class="SIBIRIENXL">
-			<button class="ZU">&times;</button>
+			<button class="ZU">Schließen</button>
 			<p>Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
@@ -742,7 +710,7 @@
 				<p>Schreibe ihn dir auf und bewahre ihn gut!</p>
 			</div>
 
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
 				
 		<div>
 			<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
@@ -753,10 +721,7 @@
 	
 			
 	<script>
-		
-				document.querySelector(".ZU").addEventListener('click',AlleAus);
-		
-		
+				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
 				document.querySelector('#DROPEUROPA').addEventListener('mouseout',EuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
@@ -791,12 +756,23 @@
 		
 				document.querySelector('#DROPASIEN').addEventListener('mouseover',ZeigeAsien);   
 				document.querySelector('#DROPASIEN').addEventListener('mouseout',AsienAus);
-				
+		
+				document.querySelector('.WINDRADASIEN').addEventListener('mouseover',ZeigeAsienXL);   	
+				document.querySelector('.WINDRADASIEN').addEventListener('mouseout',AsienXLAus);
+		
+		
 				function ZeigeAsien() {
 					document.querySelector(".ASIEN").classList.add("ZEIGEN");
 				}
 				function AsienAus() {
 					document.querySelector(".ASIEN").classList.remove("ZEIGEN");
+				}
+		
+				function ZeigeAsienXL() {
+					document.querySelector(".ASIENXL").classList.add("ZEIGEN");
+				}
+				function AsienXLAus() {
+					document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
 				}
 		
 				document.querySelector('#DROPSAHARA').addEventListener('mouseover',ZeigeSahara);   
@@ -933,6 +909,7 @@
 		}
 		
 		
+		document.querySelector(".ZU").addEventListener('click',AlleAus);
 		function AlleAus() {
 				document.querySelector(".EUROPAXL").classList.remove("ZEIGEN");
 				document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
@@ -969,12 +946,7 @@
 		
 	
 
-    <!-- Einbinden des Footers -->
-    <footer class="footer-custom">
-    <div class="footer-links">
-        <a href="../impressum/impressum.php">Impressum</a>
-    </div>
-</footer>
+    <?php include '../../include/footer.php'; ?>
    
     
     

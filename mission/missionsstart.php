@@ -12,42 +12,88 @@
 
 	<style>
 		
-		.WELTBLAU{
+		.WEG{
+			visibility: hidden;
+			transition-delay: 0s;
+		}
+		
+
+		.WELT{
 			position:absolute;
-			top:25%;
-			left:0%;
-			height:50%;
+			top: 20%;
+			left: 35%;
+			height: 60%;
 			width:auto;
-			}
+			visibility:visible;
+			transition-property: height, top, left;						/* betreffende Deklarationen (über Pseudoklassen) */
+			transition-duration: 5s;							/* Dauer (n) */
+			transition-timing-function: ease-in-out;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			transition-delay: 2s;
+		}
+	
+		
+		.BLASE{
+			position: absolute;
+			padding: 25px;
+			top:27%;
+			left:20%;
+			height:20%;
+			width: 10%;
+			font-family: verdana;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
+			visibility:visible;
+		}
 		
 		.HERO{
 			position:absolute;
-			top: 50%;
-			left: 53%;
-			height:40%;
-			}
+			height:45%;
+			bottom:15%;
+			left:4%;
+			visibility:visible;
+			
+		}
 		
-		.SPRECHBLASE {
-			position: absolute;
-			padding: 30px;
-			top: 25%;
-			left:70%;
-			height:30%;
-			width: 20%;
-			border-radius: 70px 70px 70px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
-			font-size: 1rem;
-			color:#285238;
-			text-align: left;
+		.HELFEN{
+			position:absolute;
+			bottom: 22%;
+			left:19%;
+			height:5%;
+			width: 15%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: #285238;
+            border-radius: 10px;
+            font-family: 'Bangers';
 			visibility: visible;
-			}		
+			cursor: pointer;
+		}
+		
+		.HELFEN:mouseover{
+			background-color: #45a049;
+		}
+		
+		
+		.ZEIGEN{
+			transition-property: all;
+			transition-delay: 1.5s;
+			visibility: visible;
+			opacity: 1;
+		}
+		
+	
+		</style>
 
-	</style>
 </head>
 
 <body>
+	
+	<?php include '../include/nav.php'; ?>
 	
 	 <!-- Hintergrundvideo -->
 		<video autoplay muted loop id="backgroundVideo">
@@ -56,63 +102,25 @@
 		</video>
 	
 	
-<!-- Navigation einbinden -->
-		  <nav class="navbar-custom">
-
-				<!-- Branding -->
-				<a class="navbar-brand" href="missionsstart.php">Die Energieretter</a>
-
-				<!-- Hauptmenü -->
-				<div class="menu">
-
-
-					<a href="../index.php" class="menu-link menu-item">Vorspann</a>
-
-
-					<div class="dropdown menu-item">
-						<button class="dropbtn menu-link">Mission</button>
-						<div class="dropdown-content">
-							<a href="superhelden.php">Die Superhelden</a>
-							<a href="missionsstart.php">Missionsstart</a>
-							<a href="codeeingabe.php">Spiel fortsetzen</a>
-						</div>
-					</div>
-
-					<!-- Dropdown-Menü -->
-					<div class="dropdown menu-item" style="margin-right: 50px;">
-						<button class="dropbtn menu-link">Retterwissen</button>
-						<div class="dropdown-content">
-							<a href="../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-							<a href="../retterwissen/innovationen.php">Innovationen</a>
-							<a href="../retterwissen/klimaschaeden.php">Klimaschäden</a>
-						</div>
-					</div>
-				</div>
-			</nav>
-
-		
+	
     <main>
 		
 		
-			<img class="WELTBLAU" src="../images/Weltkarte_blau.png" alt="Weltkarte in hellblau">
+			<div class="icon-container">
+				<img class="WELT" src="../images/weltkugel.png" alt="Weltkugel">
+				<img class="HERO" src="../images/Prinz.png" alt="Golden Knight">
+			</div>
+						
+			<div class="BLASE"> 
+				<p>Kurze Erklärung vom Superhelden</p>
+			</div>
 			
-			<img class="HERO" src="../images/Biest.png">
+			<button class="HELFEN" onclick="window.location.href='superhelden.php'">Hier kannst du helfen!</button>
 			
 
-			<div class="SPRECHBLASE">
-				Hallo!
-			</div>	
-		
-			
     </main>
 
-    <!-- Einbinden des Footers -->
-    <footer class="footer-custom">
-    <div class="footer-links">
-        <a href="../impressum/impressum.php">Impressum</a>
-    </div>
-</footer>
-   
+    <?php include '../include/footer.php'; ?>
     
     
 </body>
