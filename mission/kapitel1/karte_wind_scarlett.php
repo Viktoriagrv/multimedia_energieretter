@@ -69,12 +69,13 @@
 		.INFOBOX{
 			position: absolute;
 			padding: 25px;
-			bottom: 28%;
+			bottom: 23%;
 			right: 18%;
-			height:20%;
-			width: 10%;
+			height:auto;
+			width: 15%;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			text-align: left;
 			border-radius: 20px 20px 0px 20px;
 			background-color: white;
@@ -98,9 +99,10 @@
 		
 		.DRAG-ELEMENT {
 			z-index: 4;
-			cursor: move;
+			cursor: pointer;
 		}
 		
+				
 		#DROPEUROPA{
 			position: absolute;
 			top: 22%;
