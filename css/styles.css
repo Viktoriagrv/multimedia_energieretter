@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
+   	heigth: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
     font-family: verdana;
     display: flex;
     flex-direction: column;

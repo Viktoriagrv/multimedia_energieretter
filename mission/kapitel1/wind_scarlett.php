@@ -33,7 +33,27 @@
 			right:10%;
 			height:30%;
 			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 2;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;					/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
 		}
+		
+				
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
+		
+		
 		
 		.HEADER{
 			position: absolute;
@@ -64,8 +84,8 @@
 		
 		.INFOTEXT{
 			position: absolute;
-			top: 28%;
-			left: 42%;
+			top: 27%;
+			left: 44%;
 			font-family: verdana;
 			font-size: 1.5rem;
 			color: #e8a723;
@@ -253,6 +273,8 @@
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK").classList.add("WEG");
 			document.querySelector(".ABSCHLUSSTEXT").classList.add("ZEIGEN");
+			document.querySelector(".HERO").style.animationPlayState = "running";
+			
 		}
 		
 		function ZeigeFehlermeldung (){

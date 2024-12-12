@@ -91,6 +91,11 @@
 			z-index: 3;
 		}
 		
+		.DROP-ELEMENT:hover{
+			cursor: url('../../images/InfoI.gif'),auto;
+			background-color: #285238;
+		}
+		
 		.DRAG-ELEMENT {
 			z-index: 4;
 			cursor: move;
