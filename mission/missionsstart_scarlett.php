@@ -61,8 +61,8 @@
 		}
 		
 		.PUNKT{
-			height: 30px;
-			width: 30px;
+			height: 25px;
+			width: 25px;
 			border-radius: 40%;
 			background-color: lightgrey;
 			z-index: 3;
@@ -70,15 +70,13 @@
 		
 		.NORDEUROPA{
 			position:absolute;
-			top: 35%;
-			left:60%;
-			height:4%;
-			width:auto;
+			top: 22%;
+			left:63%;
 		}
 		
 		.INFONORDEUROPA{
 			position: absolute;
-			top: 35%;
+			top: 22%;
 			left:63%;
 			height: auto;
 			width: 10%;
@@ -94,16 +92,14 @@
 		
 		.SIBIRIEN{
 			position:absolute;
-			bottom: 25%;
-			right: 10%;
-			height:4%;
-			width:auto;
+			top: 28%;
+			left:73%;
 		}
 		
 		.INFOSIBIRIEN{
 			position: absolute;
-			top: 35%;
-			left:63%;
+			top: 28%;
+			left:73%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -118,16 +114,14 @@
 		
 		.CHINA{
 			position:absolute;
-			bottom: 33%;
-			left:46%;
-			height:4%;
-			width:auto;
+			top: 30%;
+			left:79%;
 		}
 		
 		.INFOCHINA{
 			position: absolute;
-			bottom: 33%;
-			left:49%;
+			top: 30%;
+			left:79%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -142,16 +136,14 @@
 		
 		.SUEDOSTASIEN{
 			position:absolute;
-			top: 30%;
-			left:57%;
-			height:4%;
-			width:auto;
+			top: 60%;
+			left:85%;
 		}
 		
 		.INFOSUEDOSTASIEN{
 			position: absolute;
-			top: 30%;
-			left:60%;
+			top: 60%;
+			left:85%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -166,16 +158,14 @@
 		
 		.ANTARKTISOST{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			bottom:10%;
+			right:25%;
 		}
 		
 		.INFOANTARKTISOST{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			bottom:10%;
+			right:25%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -190,16 +180,14 @@
 		
 		.ANTARKTISMITTE{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			bottom:10%;
+			right:35%;
 		}
 		
 		.INFOANTARKTISMITTE{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			bottom:10%;
+			right:35%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -214,16 +202,14 @@
 		
 		.ANTARKTISWEST{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			bottom:10%;
+			left:53%;
 		}
 		
 		.INFOANTARKTISWEST{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			bottom:10%;
+			left:53%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -238,16 +224,14 @@
 		
 		.CHILE{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 70%;
+			left:45%;
 		}
 		
 		.INFOCHILE{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 70%;
+			left:45%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -262,16 +246,14 @@
 		
 		.AMAZONAS{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 61%;
+			left:47%;
 		}
 		
 		.INFOAMAZONAS{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 61%;
+			left:47%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -286,16 +268,14 @@
 		
 		.ATLANTIK{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 42%;
+			left:48%;
 		}
 		
 		.INFOATLANTIK{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 42%;
+			left:48%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -310,16 +290,14 @@
 		
 		.KANADAOST{
 			position:absolute;
-			top: 38%;
+			top: 30%;
 			left:38%;
-			height:4%;
-			width:auto;
 		}
 		
 		.INFOKANADAOST{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 30%;
+			left:38%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -334,15 +312,13 @@
 		
 		.KANADAWEST{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 30%;
+			left:42%;
 		}
 		
 		.INFOKANADAWEST{
 			position: absolute;
-			top: 38%;
+			top: 30%;
 			left:42%;
 			height: auto;
 			width: 10%;
@@ -358,16 +334,14 @@
 		
 		.LABRADOR{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 25%;
+			left:48%;
 		}
 		
 		.INFOLABRADOR{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 25%;
+			left:48%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -382,16 +356,14 @@
 		
 		.GROENLAND{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 22%;
+			left:53%;
 		}
 		
 		.INFOGROENLAND{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 22%;
+			left:53%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -406,16 +378,14 @@
 		
 		.ARKTIS{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 16%;
+			left:59%;
 		}
 		
 		.INFOARKTIS{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 16%;
+			left:59%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -430,16 +400,14 @@
 				
 		.AFRIKA{
 			position:absolute;
-			top: 38%;
-			left:38%;
-			height:4%;
-			width:auto;
+			top: 51%;
+			left:62%;
 		}
 		
-		.AFRIKA{
+		.INFOAFRIKA{
 			position: absolute;
-			top: 38%;
-			left:42%;
+			top: 51%;
+			left:62%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -485,74 +453,196 @@
 			<button class="LOS" onclick="window.location.href='kapitel1/wind_scarlett.php'"> Auf geht's! </button>
 		</div>	
 
-		<img class="WALDBRANDEUR" src="../images/Waldbrand.png" alt="Brennender Wald">
-		<img class="WALDBRANDAUST" src="../images/Waldbrand.png" alt="Brennender Wald">
-		<img class="WALDBRANDSAM" src="../images/Waldbrand.png" alt="Brennender Wald">
-		<img class="FLUTEUR" src="../images/Überflutung.png" alt="Landschaft mit Flutwelle">
-		<img class="FLUTNAM" src="../images/Überflutung.png" alt="Landschaft mit Flutwelle">
 		
-		<div class="INFOWALDBRANDEUR">
+		<div class="PUNKT NORDEUROPA"></div>
+		<div class="PUNKT SIBIRIEN"></div>
+		<div class="PUNKT CHINA"></div>
+		<div class="PUNKT SUEDOSTASIEN"></div>
+		<div class="PUNKT ANTARKTISOST"></div>
+		<div class="PUNKT ANTARKTISMITTE"></div>
+		<div class="PUNKT ANTARKTISWEST"></div>
+		<div class="PUNKT CHILE"></div>
+		<div class="PUNKT AMAZONAS"></div>
+		<div class="PUNKT ATLANTIK"></div>
+		<div class="PUNKT KANADAWEST"></div>
+		<div class="PUNKT KANADAOST"></div>
+		<div class="PUNKT LABRADOR"></div>
+		<div class="PUNKT GROENLAND"></div>
+		<div class="PUNKT ARKTIS"></div>
+		<div class="PUNKT AFRIKA"></div>
+		
+		
+		<div class="INFONORDEUROPA">
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
-		<div class="INFOFLUTEUR">
+		<div class="INFOSIBIRIEN">
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
-		<div class="INFOFLUTNAM">
+		<div class="INFOCHINA">
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
-		<div class="INFOWALDBRANDSAM">
+		<div class="INFOSUEDOSTASIEN">
 			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
+		
+		<div class="INFOANTARKTISOST">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOANTARKTISMITTE">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOANTARKTISWEST">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOCHILE">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOAMAZONAS">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOATLANTIK">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOKANADAWEST">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOKANADAOST">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOLABRADOR">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOGROENLAND">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOARKTIS">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
+		<div class="INFOAFRIKA">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+		</div>
+		
 			
     </main>
 	
 	
 	<script>
   		//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
-		document.querySelector('.WALDBRANDEUR').addEventListener('mouseover',ZeigeEuropaBrand);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
-			document.querySelector('.WALDBRANDEUR').addEventListener('mouseout',EuropaBrandAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
+		document.querySelector('.NORDEUROPA').addEventListener('mouseover',ZeigeNordeuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
+			document.querySelector('.NORDEUROPA').addEventListener('mouseout',NordeuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
 				
-			function ZeigeEuropaBrand() {
-				document.querySelector(".INFOWALDBRANDEUR").classList.add("ZEIGEN");
+			function ZeigeNordeuropa() {
+				document.querySelector(".INFONORDEUROPA").classList.add("ZEIGEN");
 			}
-			function EuropaBrandAus() {
-				document.querySelector(".INFOWALDBRANDEUR").classList.remove("ZEIGEN");
+			function NordeuropaAus() {
+				document.querySelector(".INFONORDEUROPA").classList.remove("ZEIGEN");
 			} 
 		
 		
-		document.querySelector('.FLUTEUR').addEventListener('mouseover',ZeigeEuropaFlut);   	
-			document.querySelector('.FLUTEUR').addEventListener('mouseout',EuropaFlutAus);		
+		document.querySelector('.SIBIRIEN').addEventListener('mouseover',ZeigeSibirien);   	
+			document.querySelector('.SIBIRIEN').addEventListener('mouseout',SibirienAus);		
 				
-			function ZeigeEuropaFlut() {
-				document.querySelector(".INFOFLUTEUR").classList.add("ZEIGEN");
+			function ZeigeSibirien() {
+				document.querySelector(".INFOSIBIRIEN").classList.add("ZEIGEN");
 			}
-			function EuropaFlutAus() {
-				document.querySelector(".INFOFLUTEUR").classList.remove("ZEIGEN");
+			function SibirienAus() {
+				document.querySelector(".INFOSIBIRIEN").classList.remove("ZEIGEN");
 			} 
     
 		
-		document.querySelector('.FLUTNAM').addEventListener('mouseover',ZeigeNAmerikaFlut);   	
-			document.querySelector('.FLUTNAM').addEventListener('mouseout',NAmerikaFlutAus);		
+		document.querySelector('.CHINA').addEventListener('mouseover',ZeigeChina);   	
+			document.querySelector('.CHINA').addEventListener('mouseout',ChinaAus);		
 				
-			function ZeigeNAmerikaFlut() {
-				document.querySelector(".INFOFLUTNAM").classList.add("ZEIGEN");
+			function ZeigeChina() {
+				document.querySelector(".INFOCHINA").classList.add("ZEIGEN");
 			}
-			function NAmerikaFlutAus() {
-				document.querySelector(".INFOFLUTNAM").classList.remove("ZEIGEN");
+			function ChinaAus() {
+				document.querySelector(".INFOCHINA").classList.remove("ZEIGEN");
 			} 
 		
-		document.querySelector('.WALDBRANDSAM').addEventListener('mouseover',ZeigeSAmerikaBrand);   	
-			document.querySelector('.WALDBRANDSAM').addEventListener('mouseout',SAmerikaBrandAus);		
+		document.querySelector('.SUEDOSTASIEN').addEventListener('mouseover',ZeigeSuedostasien);   	
+			document.querySelector('.SUEDOSTASIEN').addEventListener('mouseout',SuedostasienAus);		
 				
-			function ZeigeSAmerikaBrand() {
-				document.querySelector(".INFOWALDBRANDSAM").classList.add("ZEIGEN");
+			function ZeigeSuedostasien() {
+				document.querySelector(".INFOSUEDOSTASIEN").classList.add("ZEIGEN");
 			}
-			function SAmerikaBrandAus() {
-				document.querySelector(".INFOWALDBRANDSAM").classList.remove("ZEIGEN");
+			function SuedostasienAus() {
+				document.querySelector(".INFOSUEDOSTASIEN").classList.remove("ZEIGEN");
 			} 
+		
+		document.querySelector('.ANTARKTISOST').addEventListener('mouseover',ZeigeAntarktisOst);   	
+			document.querySelector('.ANTARKTISOST').addEventListener('mouseout',AntarktisOstAus);		
+				
+			function ZeigeAntarktisOst() {
+				document.querySelector(".INFOANTARKTISOST").classList.add("ZEIGEN");
+			}
+			function AntarktisOstAus() {
+				document.querySelector(".INFOANTARKTISOST").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.ANTARKTISMITTE').addEventListener('mouseover',ZeigeAntarktisMitte);   	
+			document.querySelector('.ANTARKTISMITTE').addEventListener('mouseout',AntarktisMitteAus);		
+				
+			function ZeigeAntarktisMitte() {
+				document.querySelector(".INFOANTARKTISMITTE").classList.add("ZEIGEN");
+			}
+			function AntarktisMitteAus() {
+				document.querySelector(".INFOANTARKTISMITTE").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.ANTARKTISWEST').addEventListener('mouseover',ZeigeAntarktisWest);   	
+			document.querySelector('.ANTARKTISWEST').addEventListener('mouseout',AntarktisWestAus);		
+				
+			function ZeigeAntarktisWest() {
+				document.querySelector(".INFOANTARKTISWEST").classList.add("ZEIGEN");
+			}
+			function AntarktisWestAus() {
+				document.querySelector(".INFOANTARKTISWEST").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.CHILE').addEventListener('mouseover',ZeigeChile);   	
+			document.querySelector('.CHILE').addEventListener('mouseout',ChileAus);		
+				
+			function ZeigeChile() {
+				document.querySelector(".INFOCHILE").classList.add("ZEIGEN");
+			}
+			function ChileAus() {
+				document.querySelector(".INFOCHILE").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.AMAZONAS').addEventListener('mouseover',ZeigeAmazonas);   	
+			document.querySelector('.AMAZONAS').addEventListener('mouseout',AmazonasAus);		
+				
+			function ZeigeAmazonas() {
+				document.querySelector(".INFOAMAZONAS").classList.add("ZEIGEN");
+			}
+			function AmazonasAus() {
+				document.querySelector(".INFOAMAZONAS").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.AMAZONAS').addEventListener('mouseover',ZeigeAmazonas);   	
+			document.querySelector('.AMAZONAS').addEventListener('mouseout',AmazonasAus);		
+				
+			function ZeigeAmazonas() {
+				document.querySelector(".INFOAMAZONAS").classList.add("ZEIGEN");
+			}
+			function AmazonasAus() {
+				document.querySelector(".INFOAMAZONAS").classList.remove("ZEIGEN");
+			}
 		
     </script>
 	
