@@ -14,7 +14,7 @@
 		.Schriftzug{
 			position: absolute;
 			top: 35%;
-			left: 10%;
+			left: 8%;
 			font-family: "bangers";
 			font-size: 5rem;
 			color: #e8a723;
@@ -55,13 +55,16 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			top: 15%;
+			top: 21%;
 			left: 50%;
-			padding: 20px;
+			height: auto;
+			width: 43%;
 			}
 		
 		.NAME{
-			position: relative;
+			position: absolute;
+			top: 12%;
+			left: 50%;
 			font-family: "bangers";
 			color: #e8a723;
 			font-size: 2.5rem;
@@ -69,15 +72,14 @@
 			}
 		
 		.TITEL{
-			font-family: verdana bold;
+			font-family: verdana;
 			color: #285238;
-			text-decoration: underline;
 			font-size: 1.5rem;
 			text-align: left;
 			}
 		
 		.TEXT{
-			font-family: verdana bold;
+			font-family: verdana;
 			color: #285238;
 			font-size: 1.5rem;
 			text-align: justify;
@@ -88,7 +90,7 @@
 			position: absolute;
 			padding: 8px;
 			bottom: 10%;
-			left: 50%;
+			left: 45%;
 			font-family: "bangers";
 			font-size: 2rem;
 			color: #e8a723;
@@ -330,12 +332,14 @@
 				<button id="buttonSCS">&times;</button>
 				
 					<div><img class="BILDINFOBOXB" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
-					<div class="TEXTBLOCK">
+					
 						<a class=NAME>Scarlet Shade</a>
-						<br>
-						<a class="TITEL">Superkraft:</a><a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
-						<br>
-						<a class="TITEL">Beschreibung:</a><a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+						<div class="TEXTBLOCK">
+						<a class="TITEL">Superkraft:</a><br>
+							<a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
+						<br><br>
+						<a class="TITEL">Beschreibung:</a><br>
+							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
 					</div>
 					<br><br>
 				
@@ -346,13 +350,15 @@
 				<button id="buttonGK">&times;</button>
 				
 				<div><img class="BILDINFOBOXB" src="../images/Prinz.png" alt="Golden Knight"></div>
+				
+				<a class=NAME>Golden Knight</a>
+				
 				<div class="TEXTBLOCK">
-					<a class=NAME>Golden Knight</a>
-					<br>
-					<a class="TITEL">Superkraft:</a> <a class="TEXT">Schutzzauber und Fliegen</a>
-					<br>
-					<a class="TITEL">Beschreibung:</a> <a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
+					<a class="TITEL">Superkraft:</a><br>
+					<a class="TEXT">Schutzzauber und Fliegen</a>
 					<br><br>
+					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
@@ -363,13 +369,14 @@
 				
 				<div><img class="BILDINFOBOXS" src="../images/Prinzessin.png" alt="Green Blaze"></div>
 				
-				<div class="TEXTBLOCK">
-					<a class=NAME>Green Blaze</a>
-					<br>
-					<a class="TITEL">Superkraft:</a> <a class="TEXT">Pflanzenkontrolle</a>
-					<br>
-					<a class="TITEL">Beschreibung:</a> <a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
+				<a class=NAME>Green Blaze</a>
+				
+				<div class="TEXTBLOCK">				
+					<a class="TITEL">Superkraft:</a><br>
+					<a class="TEXT">Pflanzenkontrolle</a>
 					<br><br>
+					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
@@ -380,12 +387,14 @@
 				
 				<div><img class="BILDINFOBOXS" src="../images/AquaBoy.png" alt="Thunder Bolt"></div>
 				
+				<a class=NAME>Thunderbolt</a><br>
+				
 				<div class="TEXTBLOCK">
-					<a class=NAME>Thunderbolt</a><br>
-					<a class="TITEL">Superkraft:</a> <a class="TEXT">Überschallgeschwindigkeit</a>
-					<br>
-					<a class="TITEL">Beschreibung:</a> <a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
+					<a class="TITEL">Superkraft:</a><br>
+					<a class="TEXT">Überschallgeschwindigkeit</a>
 					<br><br>
+					<a class="TITEL">Beschreibung:</a>
+					<br><a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
@@ -396,12 +405,14 @@
 				
 				<div><img class="BILDINFOBOXS" src="../images/Biest.png" alt="Cyber Titan"></div>
 				
+				<a class=NAME>Cyber Titan</a>
+				
 				<div class="TEXTBLOCK">
-					<a class=NAME>Cyber Titan</a><br>
-					<a class="TITEL">Superkraft:</a> <a class="TEXT">Übermenschliche Stärke und technologische Kontrolle</a>
-					<br>
-					<a class="TITEL">Beschreibung:</a> <a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
+					<a class="TITEL">Superkraft:</a><br>
+					<a class="TEXT">Übermenschliche Stärke und technologische Kontrolle</a>
 					<br><br>
+					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
@@ -411,12 +422,15 @@
 				<button id="buttonSOS">&times;</button>
 				
 				<div><img class="BILDINFOBOXXS" src="../images/BadBoy.png" alt="Sonic Shield"></div>
+				
+				<a class=NAME>Sonic Shield</a>
+				
 				<div class="TEXTBLOCK">
-					<a class=NAME>Sonic Shield</a><br>
-					<a class="TITEL">Superkraft:</a> <a class="TEXT">Schallwellenmanipulation</a>
-					<br>
-					<a class="TITEL">Beschreibung:</a> <a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
+					<a class="TITEL">Superkraft:</a><br>
+					<a class="TEXT">Schallwellenmanipulation</a>
 					<br><br>
+					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>

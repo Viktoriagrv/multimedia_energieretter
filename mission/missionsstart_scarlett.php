@@ -60,7 +60,15 @@
 			
 		}
 		
-		.WALDBRANDEUR{
+		.PUNKT{
+			height: 30px;
+			width: 30px;
+			border-radius: 40%;
+			background-color: lightgrey;
+			z-index: 3;
+		}
+		
+		.NORDEUROPA{
 			position:absolute;
 			top: 35%;
 			left:60%;
@@ -68,7 +76,7 @@
 			width:auto;
 		}
 		
-		.INFOWALDBRANDEUR{
+		.INFONORDEUROPA{
 			position: absolute;
 			top: 35%;
 			left:63%;
@@ -84,7 +92,7 @@
 			z-index:5;
 		}
 		
-		.WALDBRANDAUST{
+		.SIBIRIEN{
 			position:absolute;
 			bottom: 25%;
 			right: 10%;
@@ -92,7 +100,7 @@
 			width:auto;
 		}
 		
-		.INFOWALDBRANDAUST{
+		.INFOSIBIRIEN{
 			position: absolute;
 			top: 35%;
 			left:63%;
@@ -108,7 +116,7 @@
 			z-index:5;
 		}
 		
-		.WALDBRANDSAM{
+		.CHINA{
 			position:absolute;
 			bottom: 33%;
 			left:46%;
@@ -116,7 +124,7 @@
 			width:auto;
 		}
 		
-		.INFOWALDBRANDSAM{
+		.INFOCHINA{
 			position: absolute;
 			bottom: 33%;
 			left:49%;
@@ -132,7 +140,7 @@
 			z-index:5;
 		}
 		
-		.FLUTEUR{
+		.SUEDOSTASIEN{
 			position:absolute;
 			top: 30%;
 			left:57%;
@@ -140,7 +148,7 @@
 			width:auto;
 		}
 		
-		.INFOFLUTEUR{
+		.INFOSUEDOSTASIEN{
 			position: absolute;
 			top: 30%;
 			left:60%;
@@ -156,7 +164,7 @@
 			z-index:5;
 		}
 		
-		.FLUTNAM{
+		.ANTARKTISOST{
 			position:absolute;
 			top: 38%;
 			left:38%;
@@ -164,7 +172,271 @@
 			width:auto;
 		}
 		
-		.INFOFLUTNAM{
+		.INFOANTARKTISOST{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ANTARKTISMITTE{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOANTARKTISMITTE{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ANTARKTISWEST{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOANTARKTISWEST{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.CHILE{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOCHILE{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.AMAZONAS{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOAMAZONAS{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ATLANTIK{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOATLANTIK{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.KANADAOST{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOKANADAOST{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.KANADAWEST{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOKANADAWEST{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.LABRADOR{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOLABRADOR{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.GROENLAND{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOGROENLAND{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ARKTIS{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.INFOARKTIS{
+			position: absolute;
+			top: 38%;
+			left:42%;
+			height: auto;
+			width: 10%;
+			padding: 30px;
+			font-family: verdana;
+			color: #285238;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+				
+		.AFRIKA{
+			position:absolute;
+			top: 38%;
+			left:38%;
+			height:4%;
+			width:auto;
+		}
+		
+		.AFRIKA{
 			position: absolute;
 			top: 38%;
 			left:42%;

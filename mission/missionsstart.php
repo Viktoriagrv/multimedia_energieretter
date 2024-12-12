@@ -21,7 +21,7 @@
 		.WELT{
 			position:absolute;
 			top: 20%;
-			left: 35%;
+			left: 45%;
 			height: 60%;
 			width:auto;
 			visibility:visible;
@@ -35,8 +35,8 @@
 		.BLASE{
 			position: absolute;
 			padding: 25px;
-			top:27%;
-			left:20%;
+			top:20%;
+			left:23%;
 			height:20%;
 			width: 10%;
 			font-family: verdana;
@@ -51,17 +51,17 @@
 		
 		.HERO{
 			position:absolute;
-			height:45%;
+			height:40%;
 			bottom:15%;
-			left:4%;
+			left:6%;
 			visibility:visible;
 			
 		}
 		
 		.HELFEN{
 			position:absolute;
-			bottom: 22%;
-			left:19%;
+			bottom: 28%;
+			left:23%;
 			height:5%;
 			width: 15%;
             font-size: 1.5rem;
