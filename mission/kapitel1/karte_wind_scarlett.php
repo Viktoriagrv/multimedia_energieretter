@@ -161,10 +161,13 @@
 			width: auto;
 			visibility: hidden;
 			z-index: 5;
-			cursor: pointer;
 		}
 		
 			
+		.WINDRADEUROPA:hover{
+			cursor: url('../../images/InfoI.gif'),auto;
+		}
+		
 		#DROPAUSTRALIEN{
 			position: absolute;
 			top: 62%;
@@ -235,8 +238,8 @@
 		
 		.ASIENXL{
 			position: absolute;
-			top:25%;
-			right: 32%;
+			top:28%;
+			right: 36%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -466,7 +469,7 @@
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
-			z-index:5;
+			z-index:6;
 		}
 		
 		.WINDRADSIBIRIEN{
@@ -632,7 +635,6 @@
 		</div>
 		
 		<div class="EUROPAXL">
-			<button class="ZU">&times;</button>
 			<p>Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 			</p>	
 		</div>

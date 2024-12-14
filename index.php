@@ -55,10 +55,10 @@
 			position: absolute;
 			justify-content: center;
 			align-items:center;
-			top: 30%;
+			top: 33%;
 			left: 28%;
 			width:45%;
-			height:40%;
+			height:45%;
 			background-color:transparent;
 			font-family:verdana;
 			font-size: 2rem;
@@ -121,8 +121,8 @@
 			
 		.WELT{
 			position:absolute;
-			top: 34.5%;
-			Left:42.4%;
+			top: 35.6%;
+			Left:41.7%;
 			height: 22%;
 			width:auto;
 			visibility: hidden;

@@ -32,7 +32,7 @@
 			font-family: verdana;
 			color:#e8a723;
 			font-size: 2rem;
-			padding-top: 10px;
+			padding-top: 0px;
 		}
 		
 		.WELT{
@@ -87,7 +87,7 @@
 			height: 25px;
 			width: 25px;
 			border-radius: 40%;
-			background-color: lightgrey;
+			background-color: grey;
 			z-index: 3;
 		}
 		
@@ -96,7 +96,6 @@
 			cursor: url('../images/InfoI.gif'),auto;
 			background-color: #285238;
 		}
-		
 		
 		
 		.NORDEUROPA{
@@ -111,6 +110,7 @@
 			left:65%;
 			height: auto;
 			width: 30%;
+			padding-top:10%;
 			padding: 30px;
 			font-family: verdana;
 			font-size: 1.5rem;
