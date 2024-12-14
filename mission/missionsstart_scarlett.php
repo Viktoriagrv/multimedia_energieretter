@@ -11,7 +11,12 @@
 	 <link rel="stylesheet" href="../css/styles.css">
 
 	<style>
-		
+		 body {
+            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
+            margin: 0;
+            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+            color: #333;
+        }
 		#hintergrund{
 			position: absolute;
 			margin: 0px;
@@ -484,9 +489,6 @@
 			visibility: visible;
 		}
 
-		body{
-			background-color: #19325F;
-		}
 		
 		
 	</style>

@@ -52,12 +52,13 @@
 		}
 		
 		.SCROLL{
-			position: relative;
+			position: absolute;
 			justify-content: center;
 			align-items:center;
-			top: 4rem;
-			width:800px;
-			height:400px;
+			top: 30%;
+			left: 28%;
+			width:45%;
+			height:40%;
 			background-color:transparent;
 			font-family:verdana;
 			font-size: 2rem;
@@ -79,7 +80,7 @@
 		.PAUSE{
 			position:absolute;
 			bottom: 10%;
-			left: 27%;
+			left: 30%;
 			height:5%;
 			width: 20%;
             font-size: 1.5rem;
@@ -120,8 +121,8 @@
 			
 		.WELT{
 			position:absolute;
-			top: 34.7%;
-			Left:41.7%;
+			top: 34.5%;
+			Left:42.4%;
 			height: 22%;
 			width:auto;
 			visibility: hidden;

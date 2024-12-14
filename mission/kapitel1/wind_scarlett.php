@@ -12,6 +12,13 @@
 
 	<style>
 		
+		body {
+            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
+            margin: 0;
+            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+            color: #333;
+        }
+		
 		
 		.KNOPF{
 			display: inline-block;
@@ -37,7 +44,7 @@
 			animation-duration: 2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 2;					/* Wiederholungen (n, infinite) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
 			animation-fill-mode: none;					/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;
@@ -130,7 +137,7 @@
 		.ABSCHLUSSTEXT{
 			position: absolute;
 			right: 8%;
-			top: 15%;
+			top: 20%;
 			font-family: verdana;
 			font-size: 2rem;
 			color: #e8a723;

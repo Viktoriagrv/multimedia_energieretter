@@ -12,6 +12,12 @@
 
 	<style>
 		
+		body {
+            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
+            margin: 0;
+            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+            color: #333;
+        }
 		
 		.KNOPF{
 			display: inline-block;

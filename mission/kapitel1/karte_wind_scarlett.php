@@ -11,6 +11,13 @@
 	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
+		
+		 body {
+            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
+            margin: 0;
+            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA */
+            color: #333;
+        }
 		.PLATZIERUNG{
 			position: absolute;
 			height:90%;
@@ -88,7 +95,7 @@
 			height: 30px;
 			width: 30px;
 			border-radius: 40%;
-			background-color: lightgrey;
+			background-color: grey;
 			z-index: 3;
 		}
 		
@@ -588,11 +595,11 @@
 	
 	<?php include '../../include/nav.php'; ?>
 	
-	 <!-- Hintergrundvideo -->
+	 <!-- Hintergrundvideo 
 		<video autoplay muted loop id="backgroundVideo">
 			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
 			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-		</video>
+		</video>-->
 	
     <main>
 		
@@ -645,7 +652,6 @@
 		</div>
 		
 		<div class="ASIENXL">
-			<button class="ZU">&times;</button>
 			<p>Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.</p>
 		</div>
 		
@@ -690,7 +696,6 @@
 		</div>
 		
 		<div class="SIBIRIENXL">
-			<button class="ZU">Schließen</button>
 			<p>Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
 		</div>
 		
@@ -825,6 +830,10 @@
 				document.querySelector('#DROPSIBIRIEN').addEventListener('mouseover',ZeigeSibirien);   
 				document.querySelector('#DROPSIBIRIEN').addEventListener('mouseout',SibirienAus);
 				
+		
+				document.querySelector('.WINDRADSIBIRIEN').addEventListener('mouseover',ZeigeSibirienXL);   	
+				document.querySelector('.WINDRADSIBIRIEN').addEventListener('mouseout',SibirienXLAus);
+		
 				function ZeigeSibirien() {
 					document.querySelector(".SIBIRIEN").classList.add("ZEIGEN");
 				}
@@ -832,6 +841,14 @@
 					document.querySelector(".SIBIRIEN").classList.remove("ZEIGEN");
 				}
 		
+				function ZeigeSibirienXL() {
+					document.querySelector(".SIBIRIENXL").classList.add("ZEIGEN");
+				}
+				function SibirienXLAus() {
+					document.querySelector(".SIBIRIENXL").classList.remove("ZEIGEN");
+				}
+		
+			
 				document.querySelector('#DROPMEXIKO').addEventListener('mouseover',ZeigeMexiko);   
 				document.querySelector('#DROPMEXIKO').addEventListener('mouseout',MexikoAus);
 				
