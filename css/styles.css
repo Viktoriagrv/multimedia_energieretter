@@ -6,7 +6,7 @@ html, body {
     font-family: verdana;
     display: flex;
     flex-direction: column;
-    overflow: auto; /* Verhindert das Scrollen der Seite */
+    overflow: hidden; /* Verhindert das Scrollen der Seite */
 }
 
 /* Hintergrundvideo */
@@ -28,10 +28,10 @@ main {
     justify-content: center;
     color: white;
     text-align: center;    
-    height: calc(100% - 60px); /* Höhe des Hauptinhalts anpassen */
+    height: 100%; /* Höhe des Hauptinhalts anpassen */
     padding: 20px;
     z-index: 1; /* Inhalt wird über dem Video angezeigt */
-    overflow: auto; /* Verhindert Scrollen */
+    overflow: hidden; /* Verhindert Scrollen */
 }
 
 /* Gelbe Hintergründe für die spezifischen Abschnitte */

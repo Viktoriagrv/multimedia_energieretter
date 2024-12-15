@@ -12,12 +12,7 @@
 
 	<style>
 		
-		 body {
-            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
-            margin: 0;
-            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA */
-            color: #333;
-        }
+		
 		.PLATZIERUNG{
 			position: absolute;
 			height:90%;
@@ -28,17 +23,17 @@
 		
 		.WELTKARTE{
 			position:absolute;
-			top:10%;
-			left:0%;
-			height:70%;
+			top:5%;
+			right:0%;
 			width:auto;
-			z-index: 1;
-			}
-		
+			height:95%;
+			overflow: hidden;
+		}
+	
 		.WINDRAD1{
 			position:absolute;
-			top: 10%;
-			right: 7%;
+			bottom: 2%;
+			left: 19%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -47,8 +42,8 @@
 		
 		.WINDRAD2{
 			position:absolute;
-			top:35%;
-			right: 7%;
+			bottom:2%;
+			left: 29%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -57,8 +52,8 @@
 		
 		.WINDRAD3{
 			position:absolute;
-			top:23%;
-			right: 20%;
+			bottom:2%;
+			left: 39%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -66,36 +61,34 @@
 		}
 		
 		.HERO{
-			position: absolute;
-			bottom: 10%;
-			right:5%;
-			height:25%;
-			width:auto;
+			position:absolute;
+			bottom:4%;
+			left: 3%;
+			height:30%;
 		}
 		
-		.INFOBOX{
+		.SPRECHBLASE {
 			position: absolute;
-			padding: 25px;
-			bottom: 23%;
-			right: 18%;
-			height:auto;
-			width: 15%;
-			font-family: verdana;
-			color: #285238;
-			font-size:1.5rem;
-			text-align: left;
-			border-radius: 20px 20px 0px 20px;
+			padding: 30px;
+			top:48%;
+			left:13%;
+			height:20%;
+			width: 10%;
+			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
+			font-family: verdana;
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
 			visibility: visible;
-			z-index: 4;
 		}
 		
 		.DROP-ELEMENT {
 			height: 30px;
 			width: 30px;
 			border-radius: 40%;
-			background-color: grey;
+			background-color: brown;
 			z-index: 3;
 		}
 		
@@ -112,8 +105,8 @@
 				
 		#DROPEUROPA{
 			position: absolute;
-			top: 22%;
-			left: 31%;		
+			top: 15%;
+			left: 50%;		
 		}
 		
 		.EUROPABTN{
@@ -170,8 +163,8 @@
 		
 		#DROPAUSTRALIEN{
 			position: absolute;
-			top: 62%;
-			right: 39%;
+			top: 63%;
+			right: 5%;
 		}
 		
 		.AUSTRALIENBTN{
@@ -212,8 +205,8 @@
 		
 		#DROPASIEN{
 			position: absolute;
-			top: 30%;
-			left: 47%;
+			top: 25%;
+			right: 20%;
 		}
 		
 		.ASIENBTN{
@@ -264,8 +257,8 @@
 		
 		#DROPSAHARA{
 			position: absolute;
-			top: 38%;
-			left: 33%;
+			top: 34%;
+			left: 53%;
 		}
 		
 		.SAHARABTN{
@@ -306,8 +299,8 @@
 		
 		#DROPNIAGARA{
 			position: absolute;
-			top: 20%;
-			left: 15%;
+			top: 16%;
+			left: 22%;
 		}
 		
 		.NIAGARABTN{
@@ -348,8 +341,8 @@
 		
 		#DROPAMAZONAS{
 			position: absolute;
-			bottom:43%;
-			left: 18%;
+			top:43%;
+			left: 30%;
 		}
 		
 		.AMAZONASBTN{
@@ -390,8 +383,8 @@
 		
 		#DROPATLANTIK{
 			position: absolute;
-			top:30%;
-			left: 22%;
+			top:24%;
+			left: 36%;
 		}
 		
 		.ATLANTIKBTN{
@@ -432,8 +425,8 @@
 		
 		#DROPSIBIRIEN{
 			position: absolute;
-			top:15%;
-			left: 45%;
+			top:12%;
+			right:23%;
 		}
 		
 		.SIBIRIENBTN{
@@ -484,8 +477,8 @@
 		
 		#DROPMEXIKO{
 			position: absolute;
-			top:41%;
-			left: 12%;
+			top:33%;
+			left: 19%;
 		}
 		
 		.MEXIKOBTN{
@@ -519,6 +512,23 @@
 			color: #285238;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.FEHLERMELDUNG{
+			position: absolute;
+			padding: 30px;
+			top: 30%;
+			left: 45%;
+			height:10%;
+			width: 15%;
+			font-family: verdana;
+			color: #285238;
+			font-size: 1.5rem;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			z-index:5;
@@ -606,8 +616,9 @@
 	
     <main>
 		
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+		
 		<div class="PLATZIERUNG">
-			<img class="WELTKARTE" src="../../images/Weltkarte_rot.png" alt="Weltkarte in alarm-rot">
 			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
 			<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
 			<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
@@ -625,8 +636,8 @@
 		
 		
 			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
-			<div class="INFOBOX">
-				<p>Ziehe die Windräder auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.</p>
+			<div class="SPRECHBLASE">
+				<p>Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.</p>
 			</div>
 	
 		
@@ -714,6 +725,10 @@
 			<img class="WINDRADEUROPA" src="../../images/windraeder.png" alt="Zwei Windräder">
 			<img class="WINDRADASIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
 			<img class="WINDRADSIBIRIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
+		</div>
+		
+		<div class="FEHLERMELDUNG">
+			<p>Das war leider nicht richtig. </p>
 		</div>
 		
 		
@@ -870,6 +885,18 @@
 		document.querySelector('#DROPSIBIRIEN').addEventListener('drop',ElementAblegenSibirien);
 		document.querySelector('#DROPASIEN').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPASIEN').addEventListener('drop',ElementAblegenAsien);
+		document.querySelector('#DROPAUSTRALIEN').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPAUSTRALIEN').addEventListener('drop',AblegenFalsch);
+		document.querySelector('#DROPNIAGARA').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPNIAGARA').addEventListener('drop',AblegenFalsch);
+		document.querySelector('#DROPATLANTIK').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPATLANTIK').addEventListener('drop',AblegenFalsch);
+		document.querySelector('#DROPMEXIKO').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPMEXIKO').addEventListener('drop',AblegenFalsch);
+		document.querySelector('#DROPAMAZONAS').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPAMAZONAS').addEventListener('drop',AblegenFalsch);
+		document.querySelector('#DROPSAHARA').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPSAHARA').addEventListener('drop',AblegenFalsch);
 		
 		
 		let abgelegteElemente = 0;
@@ -885,6 +912,10 @@
 				! event.target.classList.contains('DRAG-ELEMENT')) {										// wenn das Ziel kein Drag-Element ist
 				event.preventDefault();																		// dann ist Ablegen erlaubt, durch Verhindern der Default-Aktion des Events ("Öffnen als Link")
 			}
+		}
+		
+		function AblegenFalsch(){
+			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
 		}
 		
 		function ElementAblegenEuropa() {
@@ -946,6 +977,7 @@
 				document.querySelector(".ATLANTIKXL").classList.remove("ZEIGEN");
 				document.querySelector(".SIBIRIENXL").classList.remove("ZEIGEN");
 				document.querySelector(".MEXIKOXL").classList.remove("ZEIGEN");
+				document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
 		}
 		
 		
@@ -965,17 +997,9 @@
 			document.querySelector(".BTNWEITER").classList.add("ZEIGEN");
 		}
 		
-		
-		
-		
-	</script>
-		
-	
 
-    <?php include '../../include/footer.php'; ?>
-   
-    
-    
+	</script>
+	
 </body>
 </html>
 

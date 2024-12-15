@@ -8,25 +8,12 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../css/styles.css">
+	 <link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
-		 body {
-            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
-            margin: 0;
-            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-            color: #333;
-        }
-		#hintergrund{
-			position: absolute;
-			margin: 0px;
-			top: 0px;
-			left: 0px;
-			width: auto;
-			height:100%;
-			opacity: 0.3;
-			z-index:0;
-		}
+		main{
+			overflow: hidden; /* Verhindert das Scrollen der Seite */
+		}	
 		
 		h1{
 			font-family: verdana;
@@ -37,15 +24,14 @@
 		
 		.WELT{
 			position:absolute;
-			bottom:12%;
-			right:2%;
-			height:70%;
+			top:5%;
 			width:auto;
-			}
+			height:95%;
+		}
 		
 		.HERO{
 			position:absolute;
-			bottom:15%;
+			bottom:4%;
 			left: 3%;
 			height:30%;
 			}
@@ -53,11 +39,11 @@
 		.SPRECHBLASE {
 			position: absolute;
 			padding: 30px;
-			bottom:37%;
-			left:15%;
-			height:25%;
-			width: 15%;
-			border-radius: 70px 70px 70px 0px;
+			top:48%;
+			left:13%;
+			height:20%;
+			width: 10%;
+			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			font-family: verdana;
@@ -87,7 +73,7 @@
 			height: 25px;
 			width: 25px;
 			border-radius: 40%;
-			background-color: grey;
+			background-color: brown;
 			z-index: 3;
 		}
 		
@@ -179,11 +165,11 @@
 		
 		.INFOSUEDOSTASIEN{
 			position: absolute;
-			top: 55%;
+			top: 45%;
 			right:16%;
 			height: auto;
-			width: 30%;
-			padding: 30px;
+			width: 40%;
+			padding: 20px;
 			font-family: verdana;
 			font-size: 1.5rem;
 			color: #285238;
@@ -323,13 +309,13 @@
 		
 		.INFOATLANTIK{
 			position: absolute;
-			top: 20%;
+			top: 15%;
 			left:50%;
-			height: auto;
-			width: 40%;
+			height:auto;
+			width: 45%;
 			padding: 30px;
 			font-family: verdana;
-			font-size: 1.5rem;
+			font-size: 1.3rem;
 			color: #285238;
 			text-align: left;
 			text-align: left;
@@ -496,7 +482,7 @@
 
 <body>
 	
-	<?php include '../include/nav.php'; ?>
+	<?php include '../../include/nav.php'; ?>
 	
 	 <!-- Hintergrundvideo 
 		<video autoplay muted loop id="backgroundVideo">
@@ -508,15 +494,15 @@
     <main>
 		
 		<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
-		<img class="WELT" src="../images/Weltkarte_rot.png" alt="Weltkarte in rot">
+		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
-		<img class="HERO" src="../images/BadGirl.png">
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
 	
 		<div class="SPRECHBLASE">
 			
 			<p>Hallo! Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. ...</p>
 			
-			<button class="LOS" onclick="window.location.href='kapitel1/wind_scarlett.php'"> Auf geht's! </button>
+			<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlett.php'"> Auf geht's! </button>
 		</div>	
 
 			<div class="PUNKT NORDEUROPA"></div>
@@ -593,8 +579,8 @@
 		
 		<div class="INFOATLANTIK">
 			<h1>Atlantische Umwälzzirkulation</h1>
-			Die Umwälzzirkulation des Atlantiks stellt ein gewaltiges Energieförderband dar, mit dem warmes Wasser an der Oberfläche in den Norden und nach dem dortigen Abkühlen und Absinken in der Tiefe wieder in den Süden transportiert wird. Dies wird "thermohaline Zirkulation" genannt, weil es ein Kreislauf ist, angetrieben von der Temperatur (thermo) sowie vom Salzgehalt (haline) des Wassers. Der Golfstrom, verantwortlich für das milde Klima in Nordwest-Europa, ist Teil dieses Strömungssystems.<br>
-			Dies kann gravierende Auswirkungen haben auf Temperatur und Niederschlagsverteilungen - inklusive einer Erwärmung der südlichen Hemisphäre, einer Verschiebung der Intertropischen Konvergenzzone nach Süden, Monsunabschwächungen in Afrika und Asien und einer Verstärkung in der Südhemisphäre, was zu einer Austrocknung im Sahel und in Teilen des Amazonas führen kann, und verringerte natürliche Kohlenstoffsenken. Außerdem kann es zu einer Abkühlung im Nordatlantikraum kommen – das bedeutet aber nicht, dass dieser Effekt die globale Erwärmung wesentlich abschwächen kann, denn die verschiedenen Prozesse beeinflussen sich auf komplexe Weise, und man kann die Temperaturen nicht einfach zusammenzählen.
+			Die Umwälzzirkulation des Atlantiks stellt ein gewaltiges Energieförderband dar, mit dem warmes Wasser an der Oberfläche in den Norden und nach dem dortigen Abkühlen und Absinken in die Tiefe wieder in den Süden transportiert wird. Der Golfstrom, verantwortlich für das milde Klima in Nordwest-Europa, ist Teil dieses Strömungssystems.<br>
+			Die globale Erwärmung und die damit verbundene Erwärmung der Meere, kann dazu führen, dass diese Strömungen abgeschwächt werden oder sogar ganz verschwinden. Dies wiederum kann gravierende Auswirkungen haben auf Temperatur und Niederschlagsverteilungen - inklusive einer Erwärmung des südlichen Teils der Erde, Monsunabschwächungen in Afrika und Asien und einer Verstärkung auf der Südhalbkugel, was zu einer Austrocknung im Sahel und in Teilen des Amazonas führen kann. Außerdem kann es zu einer Abkühlung im Nordatlantikraum kommen – das bedeutet aber nicht, dass dieser Effekt die globale Erwärmung wesentlich abschwächen kann, denn die verschiedenen Prozesse beeinflussen sich auf komplexe Weise, und man kann die Temperaturen nicht einfach zusammenzählen.
 		</div>
 		
 		<div class="INFOKANADAWEST">
@@ -816,7 +802,7 @@
 		
     </script>
 	
-	<?php include '../include/footer.php'; ?>
+	
 	
 </body>
 </html>

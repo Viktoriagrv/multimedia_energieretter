@@ -343,7 +343,7 @@
 					</div>
 					<br><br>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart_scarlett.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_scarlett.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOGOLDENKNIGHT">
@@ -361,7 +361,7 @@
 					<a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_golden.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOGREENBLAZE">
@@ -379,7 +379,7 @@
 					<a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_blaze.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOTHUNDERBOLT">
@@ -397,7 +397,7 @@
 					<br><a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_thunder.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOCYBERTITAN">
@@ -415,7 +415,7 @@
 					<a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_titan.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOSONICSHIELD">
@@ -433,7 +433,7 @@
 					<a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='missionsstart.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_sonic.php'">Auswählen</button>
 			</div>
 		</div>
 		
