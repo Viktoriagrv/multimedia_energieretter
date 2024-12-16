@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wasserkraft</title>  
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	
+       <!-- Einbinden der Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="../../css/styles.css">
+	
   <style>
     body {
         font-family: Verdana, sans-serif;
@@ -93,7 +97,7 @@
         border-radius: 5px;
         font-size: 16px;
         cursor: pointer;
-        margin-top: 10px; /* zusätzlicher Abstand nach der Schaltfläche */
+        margin-top: 10px; 
     }
 
     .interactive-box {
@@ -143,14 +147,17 @@
 </style>
 </head>
 <body>
+	
+	<?php include '../../include/nav.php'; ?>
+	
     <div class="container">
         <h1>Wasserkraft</h1>
 		
        <p>
-    Fließendes <span class="hervorheben" data-infokasten="Wasser ist ein wichtiger Teil der Natur und eine Energiequelle.">Wasser</span> hat viel Kraft! Je schneller es fließt, desto stärker wird es. Diese Kraft können wir nutzen, um Strom zu machen. Dazu bauen wir große <span class="hervorheben" data-infokasten="Eine Staumauer hält das Wasser zurück, damit es sich sammeln kann.">Staumauern</span>, die das Wasser aufhalten. 
-    Das Wasser fließt dann durch große <span class="hervorheben" data-infokasten="Eine Turbine ist wie ein großes Rad, das sich dreht, wenn Wasser hindurchfließt.">Turbinen</span>, die sich drehen. Diese Bewegung wird in <span class="hervorheben" data-infokasten="Strom ist die Energie, die wir für Lampen, Computer und vieles mehr brauchen.">Strom</span> umgewandelt. 
-    Solche <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk ist eine Anlage, die Strom aus Wasser erzeugt.">Wasserkraftwerke</span> sind wichtig, weil sie saubere Energie liefern, ohne die Umwelt zu verschmutzen.
-	</p>
+   		 Fließendes <span class="hervorheben" data-infokasten="Wasser ist ein wichtiger Teil der Natur und eine Energiequelle.">Wasser</span> hat viel Kraft! Je schneller es fließt, desto stärker wird es. Diese Kraft können wir nutzen, um Strom zu machen. Dazu bauen wir große <span class="hervorheben" data-infokasten="Eine Staumauer hält das Wasser zurück, damit es sich sammeln kann.">Staumauern</span>, die das Wasser aufhalten. 
+  		 Das Wasser fließt dann durch große <span class="hervorheben" data-infokasten="Eine Turbine ist wie ein großes Rad, das sich dreht, wenn Wasser hindurchfließt.">Turbinen</span>, die sich drehen. Diese Bewegung wird in <span class="hervorheben" data-infokasten="Strom ist die Energie, die wir für Lampen, Computer und vieles mehr brauchen.">Strom</span> umgewandelt. 
+ 	     Solche <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk ist eine Anlage, die Strom aus Wasser erzeugt.">Wasserkraftwerke</span> sind wichtig, weil sie saubere Energie liefern, ohne die Umwelt zu verschmutzen.
+       </p>
 		
 <!-- Bild über die Funktionsweise einer Staumauer -->
 <div class="infokasten">
@@ -180,6 +187,7 @@
     <br><br>
     Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Tiere</span> wie Fische und Vögel genug Platz und Nahrung finden. Um das zu verbessern, werden oft spezielle Wege für <span class="hervorheben" data-infokasten="Fischtreppen helfen Fischen, über Hindernisse wie Staumauern hinwegzuschwimmen.">Fischtreppen</span> oder neue Lebensräume für Vögel gebaut.
 </p>
+		
 <h2>Teste dein Wissen über Wasserkraft!</h2>
 		
 <!-- Quiz Frage 1 -->
@@ -238,7 +246,9 @@
 
 <div class="infokasten" id="infokasten"></div>
 
+	
     <script>
+		
         // Interaktive Infoboxen
         const hervorhebungen = document.querySelectorAll('.hervorheben');
         const infokasten = document.getElementById('infokasten');
