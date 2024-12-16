@@ -1,4 +1,5 @@
 <nav class="navbar-custom">
+	
     <!-- Branding -->
     <a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.php">Die Energieretter</a>
     
