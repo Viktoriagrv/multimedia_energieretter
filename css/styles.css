@@ -80,23 +80,45 @@ main {
 
 /* Brand-Logo in der Navigation */
 .navbar-brand {
-    font-family: 'Bangers', cursive;
+    font-family: 'Bangers';
     font-size: 2rem;
     color: #e8a723; /* Gelb */
     text-decoration: none;
     margin-left: 10px;
+	letter-spacing: 0.05em;
 }
 
 .navbar-brand:hover {
     color: white;
 }
 
+
+.UEBERSCHRIFT{
+	font-family: "bangers";
+	font-size:1.7rem;
+	color: #e8a723;
+	text-decoration: none;
+	background-color: transparent;
+	box-shadow: none;
+	border:0;
+	letter-spacing: 0.05em;
+}
+
+.UEBERSCHRIFT:hover{
+	color:white;
+}
+
+.UNTERUEBERSCHRIFT{
+	font-family: verdana;
+	font-size: 1.5rem;
+	color: #285238;
+}
 /* Menülinks in der Navigation */
 .menu {
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: verdana; /* Helvetica für Menütexte */
+    font-family: "bangers"; /* Helvetica für Menütexte */
 }
 
 .menu-link {

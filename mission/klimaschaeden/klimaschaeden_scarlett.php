@@ -66,7 +66,7 @@
 			border-color: white;
             border-radius: 8px;	
 			cursor: pointer;
-			
+			visibility:hidden;
 		}
 		
 		.PUNKT{
@@ -77,23 +77,37 @@
 			z-index: 3;
 		}
 		
-				
 		.PUNKT:hover{
-			cursor: url('../images/InfoI.gif'),auto;
+			cursor: url('../../images/InfoI.gif'),auto;
 			background-color: #285238;
 		}
 		
+		zoom-in-zoom-out{
+			animation: zoom-in-zoom-out 2s ease infintiy;
+		}
 		
+		@keyframes zoom-in-zoom-out {
+			  0% {
+				transform: scale 1;
+			  }
+			  50% {
+				transform: scale 1.5;
+			  }
+			  100% {
+				transform: scale 1;
+			  }
+			}
+				
 		.NORDEUROPA{
 			position:absolute;
-			top: 22%;
-			left:63%;
+			top: 16%;
+			left:53%;
 		}
 		
 		.INFONORDEUROPA{
 			position: absolute;
-			top: 22%;
-			left:65%;
+			top: 18%;
+			left:55%;
 			height: auto;
 			width: 30%;
 			padding-top:10%;
@@ -111,14 +125,14 @@
 		
 		.SIBIRIEN{
 			position:absolute;
-			top: 28%;
-			left:73%;
+			top: 16%;
+			left:74%;
 		}
 		
 		.INFOSIBIRIEN{
 			position: absolute;
-			top: 28%;
-			right:28%;
+			top: 17%;
+			right:27%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -135,14 +149,14 @@
 		
 		.CHINA{
 			position:absolute;
-			top: 30%;
-			left:79%;
+			top: 27%;
+			left:77%;
 		}
 		
 		.INFOCHINA{
 			position: absolute;
-			top: 30%;
-			right:22%;
+			top: 28%;
+			right:24%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -159,14 +173,14 @@
 		
 		.SUEDOSTASIEN{
 			position:absolute;
-			top: 60%;
-			left:85%;
+			top: 50%;
+			left:82%;
 		}
 		
 		.INFOSUEDOSTASIEN{
 			position: absolute;
-			top: 45%;
-			right:16%;
+			top: 51%;
+			right:19%;
 			height: auto;
 			width: 40%;
 			padding: 20px;
@@ -183,14 +197,14 @@
 		
 		.ANTARKTISOST{
 			position:absolute;
-			bottom:10%;
-			right:25%;
+			bottom:8%;
+			right:28%;
 		}
 		
 		.INFOANTARKTISOST{
 			position: absolute;
 			bottom:10%;
-			right:27%;
+			right:30%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -207,14 +221,14 @@
 		
 		.ANTARKTISMITTE{
 			position:absolute;
-			bottom:10%;
-			right:35%;
+			bottom:8%;
+			right:38%;
 		}
 		
 		.INFOANTARKTISMITTE{
 			position: absolute;
 			bottom:10%;
-			right:37%;
+			right:40%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -231,14 +245,14 @@
 		
 		.ANTARKTISWEST{
 			position:absolute;
-			bottom:10%;
-			left:53%;
+			bottom:7%;
+			left:47%;
 		}
 		
 		.INFOANTARKTISWEST{
 			position: absolute;
 			bottom:10%;
-			left:55%;
+			left:49%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -256,13 +270,13 @@
 		.CHILE{
 			position:absolute;
 			top: 70%;
-			left:45%;
+			left:30%;
 		}
 		
 		.INFOCHILE{
 			position: absolute;
-			bottom:10%;
-			left:47%;
+			bottom:15%;
+			left:32%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -279,14 +293,14 @@
 		
 		.AMAZONAS{
 			position:absolute;
-			top: 61%;
-			left:47%;
+			top: 58%;
+			left:33%;
 		}
 		
 		.INFOAMAZONAS{
 			position: absolute;
 			bottom:25%;
-			left:49%;
+			left:35%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -303,14 +317,14 @@
 		
 		.ATLANTIK{
 			position:absolute;
-			top: 42%;
-			left:48%;
+			top: 45%;
+			left:38%;
 		}
 		
 		.INFOATLANTIK{
 			position: absolute;
 			top: 15%;
-			left:50%;
+			left:40%;
 			height:auto;
 			width: 45%;
 			padding: 30px;
@@ -328,14 +342,14 @@
 		
 		.KANADAOST{
 			position:absolute;
-			top: 30%;
-			left:38%;
+			top: 24%;
+			left:20%;
 		}
 		
 		.INFOKANADAOST{
 			position: absolute;
-			top: 30%;
-			left:40%;
+			top: 27%;
+			left:27%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -352,14 +366,14 @@
 		
 		.KANADAWEST{
 			position:absolute;
-			top: 30%;
-			left:42%;
+			top: 24%;
+			left:25%;
 		}
 		
 		.INFOKANADAWEST{
 			position: absolute;
-			top: 30%;
-			left:44%;
+			top: 25%;
+			left:27%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -376,14 +390,14 @@
 		
 		.LABRADOR{
 			position:absolute;
-			top: 25%;
-			left:48%;
+			top: 23%;
+			left:32%;
 		}
 		
 		.INFOLABRADOR{
 			position: absolute;
-			top: 25%;
-			left:50%;
+			top: 24%;
+			left:34%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -400,14 +414,14 @@
 		
 		.GROENLAND{
 			position:absolute;
-			top: 22%;
-			left:53%;
+			top: 16%;
+			left:36%;
 		}
 		
 		.INFOGROENLAND{
 			position: absolute;
-			top: 22%;
-			left:55%;
+			top: 17%;
+			left:38%;
 			height: auto;
 			width: 30%;
 			padding: 30px;
@@ -424,16 +438,16 @@
 		
 		.ARKTIS{
 			position:absolute;
-			top: 16%;
-			left:59%;
+			top: 9%;
+			left:54%;
 		}
 		
 		.INFOARKTIS{
 			position: absolute;
-			top: 16%;
-			left:61%;
+			top: 10%;
+			left:56%;
 			height: auto;
-			width: 30%;
+			width: 35%;
 			padding: 30px;
 			font-family: verdana;
 			font-size: 1.5rem;
@@ -448,14 +462,14 @@
 				
 		.AFRIKA{
 			position:absolute;
-			top: 51%;
-			left:62%;
+			top: 43%;
+			left:47%;
 		}
 		
 		.INFOAFRIKA{
 			position: absolute;
-			top: 51%;
-			left:64%;
+			top: 44%;
+			left:49%;
 			height: auto;
 			width: 30%;
 			padding-top: 5px;
@@ -500,12 +514,14 @@
 	
 		<div class="SPRECHBLASE">
 			
-			<p>Hallo! Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. ...</p>
+			<p>Hallo! Ich bin Scarlett Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die einzlnen WORT</p>
 			
 			<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlett.php'"> Auf geht's! </button>
 		</div>	
+		
+		<div class="zoom-in-zoom-out">
 
-			<div class="PUNKT NORDEUROPA"></div>
+			<div class="PUNKT NORDEUROPA zoom-in-zoom-out"></div>
 			<div class="PUNKT SIBIRIEN"></div>
 			<div class="PUNKT CHINA"></div>
 			<div class="PUNKT SUEDOSTASIEN"></div>
@@ -521,6 +537,7 @@
 			<div class="PUNKT GROENLAND"></div>
 			<div class="PUNKT ARKTIS"></div>
 			<div class="PUNKT AFRIKA"></div>
+		</div>
 		
 		
 		<div class="INFONORDEUROPA">
