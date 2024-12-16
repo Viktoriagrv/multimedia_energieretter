@@ -3,246 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windenergie</title>  
-    
-    <!-- Einbinden der Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>Windkraft</title>
     <link rel="stylesheet" href="../../css/styles.css">
-    
     <style>
-        body {
-            margin: 0;
-            background-color: #f0f0f0; /* Graue Hintergrundfarbe */
-            color: #333;
-            overflow-y: auto; /* Scrollbar ist erlaubt, auch wenn das Scrollen nicht unbedingt nötig ist */
-        }
+        
 
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 50px auto;
+		body {
+			background:#F0F0F0;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			font-family: 'Verdana', sans-serif;
+			position: relative;
+			flex-grow: 1;
+			overflow: auto;
+			
+		}
+
+        main {
+            margin-top: 80px; /* Abstand zur fixierten Navbar */
             padding: 20px;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 10; /* Slider und Hauptinhalt erscheinen über dem Hintergrund */
+            flex-grow: 1; /* Der Inhalt nimmt so viel Platz wie möglich ein */
         }
 
-        h1 {
-            font-family: 'Bangers', cursive;
-            color: #1976d2;
-            text-align: center;
-        }
 
-        h2 {
-            color: #1976d2;
-        }
+		
+		.text-kategorie {
+			display: grid;
+			grid-template-columns: 1fr; /* Eine Spalte */
+			justify-content: center;    /* Zentriere den Container horizontal */
+			width: 70%;                /* Begrenze die Breite auf 30% */
+			margin: 0 auto;            /* Zentriere den Container im Layout */
+			line-height: 1.6;          /* Lesbarkeit verbessern */
+		}
+		
+			
 
-        p {
-            line-height: 1.8;
-        }
-
-        .hervorheben {
-            color: #1976d2;
-            cursor: pointer;
-            font-weight: bold;
-            transition: color 0.3s ease; /* Effekt beim Hover */
-        }
-
-        .hervorheben:hover {
-            color: #64b5f6; /* Neues Hover-Farbe */
-        }
-
-        .infokasten {
-            display: none;
-            position: fixed;
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 100;
-        }
-
-        .infokasten img {
-            max-width: 100%; /* Bild passt sich der Breite des Containers an */
-            height: auto; /* Höhenanpassung, um die Bildproportionen beizubehalten */
-            display: block; /* Stellt das Bild als Block-Element dar, um die Größe des Containers zu füllen */
-            margin: 0 auto; /* Zentriert das Bild horizontal im Container */
-        }
-
-        .animation-container {
-            margin: 30px auto;
-            text-align: center;
-            position: relative;
-            height: 200px;
-            background-color: #e0e0e0; /* Grauer Hintergrund */
-            border: 2px solid #1976d2;
-            border-radius: 10px;
-            overflow: auto;
-        }
-
-        .animation-bar {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 0;
-            background-color: #64b5f6;
-            transition: height 1s ease-in-out;
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .button {
-            background-color: #1976d2;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px; 
-            transition: background-color 0.3s ease; /* Effekt beim Hover */
-        }
-
-        .button:hover {
-            background-color: #64b5f6; /* Neues Hover-Farbe */
-        }
-
-        .interactive-box {
-            border: 1px solid #1976d2;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 20px 0;
-            background-color: #e0e0e0; /* Grauer Hintergrund */
-            display: flex;
-            flex-direction: column;
-        }
-
-        .interactive-box p {
-            margin-bottom: 10px; /* Abstand zwischen der Frage und den Antwortoptionen */
-        }
-
-        .interactive-box label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px; /* zusätzlicher Abstand zwischen den Antwortoptionen */
-        }
-
-        .interactive-box input {
-            margin-right: 10px;
-        }
-
-        .interactive-box .button {
-            margin-top: 10px; /* zusätzlicher Abstand zwischen den Antwortoptionen und dem Button */
-        }
-
-        #quiz-result {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        #extra-info {
-            display: none;
-            margin-top: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 720px;
-            height: 405px;
-            border: none;
-        }
     </style>
 </head>
-	
+
 <body>
-	
+	<?php include '../../include/nav.php'; ?>
 
-	
-    <div class="container">
-        <h1>Windenergie</h1>
-		
-        <p>
-            Der Wind ist eine erneuerbare Energiequelle mit viel Potenzial! Windräder nutzen den Wind, um Strom zu erzeugen. Die Rotoren drehen sich, wenn der Wind darauf trifft, und dieser mechanische Strom wird dann durch einen Generator in Elektrizität umgewandelt. <span class="hervorheben" data-infokasten="Windräder nutzen die kinetische Energie des Windes, um mechanische Energie zu erzeugen.">Windräder</span> sind wichtig, weil sie saubere Energie ohne negative Umweltauswirkungen erzeugen.
-        </p>
-		
-        <!-- Bild über die Funktionsweise eines Windrads -->
-        <div class="infokasten">
-            <img src="../../images/windrad.jpg" alt="Bild eines Windrads">
+    <main>
+		<h1 style="text-align: center; margin-top: 4%; margin-bottom: 0;">Wasserstoff in Industrie und Gewerbe</h1>
+		<div class="text-kategorie">
+        <p style="margin-bottom: 4%;">In der Industrie und im Gewerbe wird Wasserstoff für viele wichtige Dinge gebraucht. Zum Beispiel in der Stahlproduktion oder der 
+		Chemieindustrie. Diese Bereiche brauchen viel Energie, und Wasserstoff kann helfen, diese Energie zu erzeugen. Wasserstoff hilft auch dabei, 
+		die schädlichen fossilen Brennstoffe zu ersetzen, die der Umwelt schaden. So wird weniger CO₂ in die Luft abgegeben, und das hilft, den Klimawandel zu stoppen. </p>
+		</div>
+        <div class="slider-container">
+            <button class="slider-btn prev-btn">&#8592;</button>
+            <div class="slider">
+                <div class="slide active" id="rohstoffe">
+                    <h2>Rohstoffe</h2>
+                    <video class="animation-video" id="animation-video" controls>
+                        <source src="videos/rohstoffe.mp4" type="video/mp4">
+                        Dein Browser unterstützt dieses Video-Format nicht.
+                    </video>
+                    <p>Wasserstoff wird als Rohstoff in der Chemie verwendet, z.B. in der Herstellung von Ammoniak.</p>
+                </div>
+                <div class="slide" id="maschinen">
+                    <h2>Maschinen und Geräte</h2>
+                    <video class="animation-video" id="animation-video" controls>
+                        <source src="videos/maschinen.mp4" type="video/mp4">
+                        Dein Browser unterstützt dieses Video-Format nicht.
+                    </video>
+                    <p>Wasserstoffbetriebene Maschinen bieten eine emissionsfreie Alternative.</p>
+                </div>
+                <div class="slide" id="waerme">
+                    <h2>Industrielle Wärme</h2>
+                    <video class="animation-video" id="animation-video" controls>
+                        <source src="videos/industrielle-waerme.mp4" type="video/mp4">
+                        Dein Browser unterstützt dieses Video-Format nicht.
+                    </video>
+                    <p>Wasserstoff kann zur Bereitstellung von hochtemperaturindustrieller Wärme verwendet werden.</p>
+                </div>
+            </div>
+            <button class="slider-btn next-btn">&#8594;</button>
+            <audio id="click-sound" src="ton/click-sound.mp3" preload="auto"></audio>
         </div>
 
-        <h2>Wie funktioniert ein Windrad?</h2>
-        <p>
-            Ein <span class="hervorheben" data-infokasten="Ein Windrad nutzt den Wind, um sich zu drehen und Energie zu erzeugen.">Windrad</span> besteht aus einem Rotor, der sich um eine vertikale oder horizontale Achse dreht. Der Rotor ist mit einem Generator verbunden, der die kinetische Energie des rotierenden Rotors in elektrische Energie umwandelt.
-        </p>
+        <section class="stand-prognose">
+			<h2 style="text-align: center;">Heutiger Stand und zukünftige Prognose</h2>
+			<div class="text-kategorie">
+            <p>
+                Im Moment verwenden viele Fabriken noch Kohle, Erdgas und Öl, um Energie zu erzeugen und Sachen herzustellen. 
+				Diese Brennstoffe sind billig, aber sie setzen viel CO₂ frei, das die Erde wärmer macht und den Klimawandel verstärkt. 
+				Besonders in der Stahl- und Zementindustrie ist es schwer, die CO₂-Emissionen zu vermeiden. Aber Wasserstoff könnte helfen, die CO₂-Emissionen zu reduzieren. 
+				Er ist sauber, weil er beim Verbrennen kein CO₂ produziert, und er ist vielseitig einsetzbar.
+				Wasserstoff ist wichtig, wenn wir klimaneutral werden wollen. Besonders in Prozessen, bei denen sehr hohe Temperaturen benötigt werden, 
+				kann Wasserstoff eine gute Alternative zu fossilen Brennstoffen sein. Wasserstoff könnte also viele schädliche Brennstoffe ersetzen und so dazu beitragen, dass weniger CO₂ in die Luft kommt.
+            </p>
+			</div>
+        </section>
+		
+    </main>	
+<div class="walter-container">
+			<img src="bilder/walter/walter-vorne.png" alt="Walter" class="walter-img">
+			<div class="sprechblase">Klick mich!</div>
+		</div>
+    <footer>
+        &copy; 2024 Wasserstoff Lernplattform
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        	// Nav Bar einbinden
+fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+        // Navbar in das Placeholder-Div einfügen
+        document.getElementById('navbar-placeholder').innerHTML = data;
+
+        // Event Listener für den Audio-Button setzen
+        const audioBtn = document.querySelector('#audio-btn');
+        const Klingelton = new Audio('ton/atmo2.mp3');
         
-        <div class="animation-container">
-            <div class="animation-bar" id="animation-bar-wind"></div>
-        </div>
-		
-        <div class="button-container">
-            <button class="button" id="generate-wind">Erfahre mehr zu Windrädern! </button>
-        </div>
-		
-        <p id="extra-info">
-            Windräder sind nicht nur für die Energiegewinnung wichtig, sondern können auch zur Verbesserung der Luftqualität beitragen, indem sie den Wind nutzen, um smoghaltige Luftmassen zu verdrängen. Darüber hinaus bieten sie Arbeitsplatzmöglichkeiten und tragen zur Energieunabhängigkeit bei. Allerdings gibt es auch Umwelteinflüsse wie Lärmbelästigung und Vogelschlag, die berücksichtigt werden müssen.
-        </p>
-		
-        <h2>Teste dein Wissen über Windenergie!</h2>
-		
-        <!-- Quiz Frage 1 -->
-        <div class="interactive-box">
-            <p>Welches Bauteil eines Windrads wandelt die kinetische Energie des Windes um?</p>
-            <label><input type="radio" name="quiz1-wind" value="rotor"> Der Rotor</label><br>
-            <label><input type="radio" name="quiz1-wind" value="generator"> Der Generator</label><br>
-            <label><input type="radio" name="quiz1-wind" value="turbine"> Die Turbine</label><br>
-            <button class="button" id="check-answer-1-wind">Antwort überprüfen</button>
-        </div>
-        <p id="quiz-result-1-wind"></p>
+        audioBtn.addEventListener('click', function MusikAnAus() {
+            if (!Klingelton.paused) {
+                Klingelton.pause();
+            } else {
+                Klingelton.play();
+                Klingelton.loop = true; // Endlosschleife aktivieren
+            }
+        });
+    })
+    .catch(error => console.error('Fehler beim Laden der Navbar:', error));
 
-        <!-- Quiz Frage 2 -->
-        <div class="interactive-box">
-            <p>Was beeinflusst die Effizienz eines Windrads am stärksten?</p>
-            <label><input type="radio" name="quiz2-wind" value="windgeschwindigkeit"> Die Windgeschwindigkeit</label><br>
-            <label><input type="radio" name="quiz2-wind" value="drehzahl"> Die Drehzahl des Generators</label><br>
-            <label><input type="radio" name="quiz2-wind" value="anzahl der Rotorblätter"> Die Anzahl der Rotorblätter</label><br>
-            <button class="button" id="check-answer-2-wind">Antwort überprüfen</button>
-        </div>
-        <p id="quiz-result-2-wind"></p>
-		
-        <script>
-            document.getElementById('generate-wind').addEventListener('click', () => {
-                const extraInfo = document.getElementById('extra-info');
-                extraInfo.style.display = extraInfo.style.display === 'none' ? 'block' : 'none';
-            });
+        // Slider-Funktionalität
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
 
-            // Event-Handler für die Überprüfung der Quizantworten
-            document.getElementById('check-answer-1-wind').addEventListener('click', () => {
-                const answer = document.querySelector('input[name="quiz1-wind"]:checked');
-                const result = document.getElementById('quiz-result-1-wind');
-                if (answer) {
-                    result.textContent = answer.value === 'generator' ? 'Richtig!' : 'Falsch!';
-                } else {
-                    result.textContent = 'Bitte eine Antwort auswählen.';
-                }
+        function updateSlider() {
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index === currentIndex);
             });
+        }
 
-            document.getElementById('check-answer-2-wind').addEventListener('click', () => {
-                const answer = document.querySelector('input[name="quiz2-wind"]:checked');
-                const result = document.getElementById('quiz-result-2-wind');
-                if (answer) {
-                    result.textContent = answer.value === 'windgeschwindigkeit' ? 'Richtig!' : 'Falsch!';
-                } else {
-                    result.textContent = 'Bitte eine Antwort auswählen.';
-                }
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+            document.getElementById('click-sound').play();
+        });
+
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+            document.getElementById('click-sound').play();
+        });
+
+        updateSlider();
+
+
+		let isSpeaking = false; // Variable, um den aktuellen Zustand der Vorlesefunktion zu verfolgen
+
+		// Funktion für Text-to-Speech
+		function vorlesen(text) {
+			const synth = window.speechSynthesis;
+
+			// Wenn bereits gesprochen wird, abbrechen
+			if (isSpeaking) {
+				synth.cancel(); // Stoppt das Vorlesen
+				isSpeaking = false; // Setze den Zustand auf "nicht sprechen"
+				return; // Beende die Funktion
+			}
+
+			const utterance = new SpeechSynthesisUtterance(text);
+
+			// Optional: Stimme und Einstellungen
+			utterance.lang = "de-DE"; // Deutsch
+			utterance.pitch = 2;      // Tonhöhe
+			utterance.rate = 1.2;     // Geschwindigkeit
+
+			synth.speak(utterance); // Startet das Vorlesen
+			isSpeaking = true; // Setze den Zustand auf "sprechen"
+		}
+
+
+		// Event-Listener für das Schaf
+		document.querySelector('.sheep-img').addEventListener('click', () => {
+			const prognoseText = document.getElementById('prognose-text').innerText; // Text aus dem Abschnitt holen
+			vorlesen(prognoseText); // Vorlesen starten oder stoppen
+		});
+
+
+       // Wolken erstellen
+        const maxWolken = 10;
+
+        function erzeugeWolke() {
+            if (document.querySelectorAll('.wolke').length >= maxWolken) return;
+
+            const wolke = document.createElement('img');
+            wolke.src = 'bilder/wolke4.png';
+            wolke.classList.add('wolke');
+
+            const zufaelligeHoehe = Math.random() * window.innerHeight * 0.4;
+            const zufaelligeGroesse = Math.random() * 100 + 100;
+            wolke.style.top = `${zufaelligeHoehe}px`;
+            wolke.style.width = `${zufaelligeGroesse}px`;
+
+            const dauer = Math.random() * 20 + 20;
+            wolke.style.animation = `fliegeNachRechts ${dauer}s linear forwards`;
+
+            document.getElementById('himmel').appendChild(wolke);
+
+            wolke.addEventListener('animationend', () => {
+                wolke.remove();
             });
-        </script>
-    </div>
-	
- 
-	
+        }
+
+        setInterval(erzeugeWolke, Math.random() * 2000 + 2000);
+        
+    </script>
 </body>
 </html>
 

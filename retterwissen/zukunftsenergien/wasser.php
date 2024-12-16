@@ -11,7 +11,7 @@
 	 <link rel="stylesheet" href="../../css/styles.css">
 	
   <style>
-	  
+	  	  
 	body {
     margin: 0;
     background-color: #e3f2fd;
@@ -163,6 +163,7 @@
        </p>
 		
 <!-- Bild über die Funktionsweise einer Staumauer -->
+		
 <div class="infokasten">
     <img src="../../images/staumauer.jpg" alt="Bild einer Staumauer">
 </div>
@@ -188,182 +189,81 @@
   		  <br><br>
   		  Stauseen bieten auch <span class="hervorheben" data-infokasten="Freizeit bedeutet, Dinge zu tun, die Spaß machen, wie Schwimmen oder Picknicks.">Freizeitmöglichkeiten</span> wie Schwimmen, Angeln oder Bootfahren. Viele Menschen kommen dorthin, um die Natur zu genießen. Allerdings gibt es auch <span class="hervorheben" data-infokasten="Umwelteinflüsse sind Veränderungen, die Tiere, Pflanzen oder die Landschaft betreffen.">Umwelteinflüsse</span>. Zum Beispiel müssen manchmal Tiere umziehen, wenn ihr Lebensraum vom Wasser überflutet wird. Pflanzen, die unter Wasser stehen, können nicht weiter wachsen.
   		  <br><br>
-    		Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Tiere</span> wie Fische und Vögel genug Platz und Nahrung finden. Um das zu verbessern, werden oft spezielle Wege für <span class="hervorheben" data-infokasten="Fischtreppen helfen Fischen, über Hindernisse wie Staumauern hinwegzuschwimmen.">Fischtreppen</span> oder neue Lebensräume für Vögel gebaut.
-			</p>
+    		Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Lebensräume</span> erhalten bleiben, damit Tiere und Pflanzen dort leben können.
+		</p>
 		
-<h2>Teste dein Wissen über Wasserkraft!</h2>
+		<div class="interactive-box">
+            <h3>Quiz: Teste dein Wissen über Stauseen!</h3>
+            <p>Wofür wird ein Stausee hauptsächlich verwendet?</p>
+            <label><input type="radio" name="quiz-answer" value="Trinkwasser speichern"> Trinkwasser speichern</label>
+            <label><input type="radio" name="quiz-answer" value="Kühlung von Kraftwerken"> Kühlung von Kraftwerken</label>
+            <label><input type="radio" name="quiz-answer" value="Schutz vor Überschwemmungen"> Schutz vor Überschwemmungen</label>
+            <button class="button" id="submit-answer">Antwort überprüfen</button>
+            <p id="quiz-result"></p>
+        </div>
 		
-<!-- Quiz Frage 1 -->
-<div class="interactive-box">
-    <p>Welche Komponente erzeugt den Strom?</p>
-    <label><input type="radio" name="quiz1" value="staumauer"> Staumauer</label><br>
-    <label><input type="radio" name="quiz1" value="turbine"> Turbine</label><br>
-    <label><input type="radio" name="quiz1" value="generator"> Generator</label><br>
-    <button class="button" id="check-answer-1">Antwort überprüfen</button>
-</div>
-<p id="quiz-result-1"></p>
+        <h2>Mehr zu Wasserkraftwerken</h2>
+        <p>
+            <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk nutzt die Energie von fließendem Wasser, um Strom zu erzeugen.">Wasserkraftwerke</span> sind Anlagen, in denen 
+            <span class="hervorheben" data-infokasten="Die Turbine ist das rotierende Gerät im Wasserkraftwerk.">Turbinen</span> durch die Kraft des 
+            <span class="hervorheben" data-infokasten="Das Wasser bewegt sich in Richtung Turbine und Generator.">Wassers</span> in Bewegung gesetzt werden. Die Drehbewegung der Turbinen 
+            wird in elektrischen Strom umgewandelt. Diese Form der Energieerzeugung ist besonders <span class="hervorheben" data-infokasten="Saubere Energie kommt ohne CO2-Ausstoß aus, was gut für die Umwelt ist.">umweltfreundlich</span>, da sie keine schädlichen Emissionen erzeugt.
+        </p>
+        
+        <h3>Wie funktioniert ein Wasserkraftwerk?</h3>
+        <p>
+            Ein <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk besteht aus einer Staumauer, einem Stausee, Turbinen und einem Generator.">Wasserkraftwerk</span> funktioniert ähnlich wie ein 
+            <span class="hervorheben" data-infokasten="Ein Windkraftwerk nutzt den Wind, um Turbinen anzutreiben und Strom zu erzeugen.">Windkraftwerk</span>, aber anstelle von Wind nutzen wir hier 
+            <span class="hervorheben" data-infokasten="Kraftwerk ist der allgemeine Begriff für eine Einrichtung, die Energie erzeugt.">Wasser</span>. Das Wasser fällt aus einem hohen Punkt auf die 
+            <span class="hervorheben" data-infokasten="Turbinen sind rotierende Geräte im Wasserkraftwerk.">Turbinen</span> und bewegt sie. Diese Turbinen treiben dann den 
+            <span class="hervorheben" data-infokasten="Ein Generator wandelt mechanische Energie in elektrische Energie um.">Generator</span> an, der Strom erzeugt.
+        </p>
+		
+        <h3>Beispiele für Wasserkraftwerke</h3>
+        <p>Ein bekanntes Beispiel für ein Wasserkraftwerk in Deutschland ist das 
+            <span class="hervorheben" data-infokasten="Das <i>Kraftwerk in Rappbode</i> liegt im Harz, einem Gebirge in Deutschland.">Kraftwerk in Rappbode</i></span> im Harz. 
+            Es nutzt die Energie des Wassers des 
+            <span class="hervorheben" data-infokasten="Die Rappbode ist ein Fluss im Harzgebirge.">Rappbode-Flusses</span>, um Strom zu erzeugen.
+        </p>
+		
+		<div class="button-container">
+            <a href="../../media/kraftwerk.mp4" class="button" target="_blank">Mehr zur Funktionsweise eines Wasserkraftwerks sehen</a>
+        </div>
+		
+	</div>
 
-<!-- Quiz Frage 2 -->
-<div class="interactive-box">
-    <p>Warum sind Fischtreppen wichtig?</p>
-    <label><input type="radio" name="quiz2" value="sicherheit"> Zur Sicherheit der Arbeiter</label><br>
-    <label><input type="radio" name="quiz2" value="tiere"> Damit Fische Hindernisse überwinden</label><br>
-    <label><input type="radio" name="quiz2" value="überwachung"> Zur Überwachung des Wassers</label><br>
-    <button class="button" id="check-answer-2">Antwort überprüfen</button>
-</div>
-<p id="quiz-result-2"></p>
-
-<!-- Quiz Frage 3 -->
-<div class="interactive-box">
-    <p>Welche Wirkung hat ein Stausee auf das Klima?</p>
-    <label><input type="radio" name="quiz3" value="kühlung"> Der Stausee kühlt die Umgebung ab.</label><br>
-    <label><input type="radio" name="quiz3" value="erwärmung"> Der Stausee erwärmt die Umgebung.</label><br>
-    <label><input type="radio" name="quiz3" value="keine"> Kein Einfluss auf das Klima.</label><br>
-    <button class="button" id="check-answer-3">Antwort überprüfen</button>
-</div>
-<p id="quiz-result-3"></p>
-
-<!-- Quiz Frage 4 -->
-<div class="interactive-box">
-    <p>Welche Komponente sorgt dafür, dass das Wasser in der Nähe eines Wasserkraftwerks schnell genug fließt, um Energie zu erzeugen?</p>
-    <label><input type="radio" name="quiz4" value="schaufeln"> Die Schaufeln eines Wasserrads</label><br>
-    <label><input type="radio" name="quiz4" value="düsen"> Die Düsen, durch die das Wasser strömt</label><br>
-    <label><input type="radio" name="quiz4" value="flügel"> Die Flügel einer Windturbine</label><br>
-    <button class="button" id="check-answer-4">Antwort überprüfen</button>
-</div>
-<p id="quiz-result-4"></p>
-
-<!-- Quiz Frage 5 -->
-<div class="interactive-box">
-    <p>Welches Merkmal eines Stausees hilft, das Wasser zu regulieren und zu speichern?</p>
-    <label><input type="radio" name="quiz5" value="tiefe"> Die Tiefe des Sees</label><br>
-    <label><input type="radio" name="quiz5" value="oberfläche"> Die Größe der Oberfläche des Sees</label><br>
-    <label><input type="radio" name="quiz5" value="breite"> Die Breite des Sees</label><br>
-    <button class="button" id="check-answer-5">Antwort überprüfen</button>
-</div>
-<p id="quiz-result-5"></p>
-
-<h2>Video: Wie funktioniert Wasserkraft?</h2>
-<iframe src="https://www.youtube.com/embed/dR8PvGTE9Cw" allowfullscreen></iframe>
-</div>
-
-<div class="infokasten" id="infokasten"></div>
-
-	
     <script>
-		
-        // Interaktive Infoboxen
-        const hervorhebungen = document.querySelectorAll('.hervorheben');
-        const infokasten = document.getElementById('infokasten');
-
-        hervorhebungen.forEach(hervorheben => {
-            hervorheben.addEventListener('mouseover', (event) => {
-                infokasten.innerText = event.target.getAttribute('data-infokasten');
-                infokasten.style.display = 'block';
-                infokasten.style.left = (event.pageX + 10) + 'px';
-                infokasten.style.top = (event.pageY + 10) + 'px';
+        document.addEventListener('DOMContentLoaded', function() {
+            var infokasten = document.querySelectorAll('.hervorheben');
+            infokasten.forEach(function(el) {
+                el.addEventListener('click', function() {
+                    var imageSrc = el.getAttribute('data-infokasten');
+                    var infobox = document.querySelector('.infokasten');
+                    infobox.querySelector('img').src = '../../images/' + imageSrc + '.jpg';
+                    infobox.style.display = 'block';
+                });
             });
-            hervorheben.addEventListener('mouseout', () => {
-                infokasten.style.display = 'none';
-            });
-        });
-
-        // Animation für Stausee
-        const fillButton = document.getElementById('fill-sea');
-        const animationBar = document.getElementById('animation-bar');
-        const extraInfo = document.getElementById('extra-info');
-
-        fillButton.addEventListener('click', () => {
-            animationBar.style.height = '100%';
-            setTimeout(() => {
+			
+            document.getElementById('fill-sea').addEventListener('click', function() {
+                var extraInfo = document.getElementById('extra-info');
                 extraInfo.style.display = 'block';
-                fillButton.style.display = 'none';
-            }, 1000);
+            });
+			
+            document.getElementById('submit-answer').addEventListener('click', function() {
+                var answer = document.querySelector('input[name="quiz-answer"]:checked');
+                var result = document.getElementById('quiz-result');
+                if (!answer) {
+                    result.textContent = 'Bitte wähle eine Antwort aus!';
+                } else if (answer.value === 'Schutz vor Überschwemmungen') {
+                    result.textContent = 'Richtig!';
+                } else {
+                    result.textContent = 'Leider falsch!';
+                }
+            });
         });
-
-     // Quiz-Interaktion für alle Fragen
-document.getElementById('check-answer-1').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz1"]:checked');
-    const quizResult = document.getElementById('quiz-result-1');
-    if (selected) {
-        if (selected.value === 'generator') {
-            quizResult.innerText = 'Richtig! Der Generator ist die Komponente, die den erzeugten mechanischen Strom in elektrische Energie umwandelt. Dies geschieht durch den Einsatz von Magnetfeldern und Spulen, die die kinetische Energie der Turbine nutzen, um Elektrizität zu erzeugen.';
-        } else if (selected.value === 'turbine') {
-            quizResult.innerText = 'Fast! Die Turbine erzeugt mechanische Energie, indem sie das Wasser in Bewegung setzt, aber sie wandelt diesen Strom nicht direkt in Elektrizität um. Dafür ist der Generator notwendig, der die kinetische Energie der Turbine in elektrische Energie umwandelt.';
-        } else if (selected.value === 'staumauer') {
-            quizResult.innerText = 'Nicht ganz! Die Staumauer speichert das Wasser und reguliert dessen Fluss, aber sie erzeugt keinen Strom direkt. Erst die Turbine und der Generator kombinieren die mechanische Energie des fließenden Wassers, um Strom zu erzeugen.';
-        }
-    } else {
-        quizResult.innerText = 'Bitte wähle eine Antwort aus!';
-    }
-});
-
-document.getElementById('check-answer-2').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz2"]:checked');
-    const quizResult = document.getElementById('quiz-result-2');
-    if (selected) {
-        if (selected.value === 'tiere') {
-            quizResult.innerText = 'Richtig! Fischtreppen sind wichtig, um Fischen den Weg vorbei an Barrieren wie Wasserkraftwerken zu ermöglichen. Diese Strukturen helfen, die natürliche Wanderung der Fische aufrechtzuerhalten und den Einfluss auf die Ökosysteme zu minimieren.';
-        } else if (selected.value === 'sicherheit') {
-            quizResult.innerText = 'Fast! Während Fischtreppen auch für die Sicherheit der Arbeiter von Bedeutung sind, dienen sie hauptsächlich dem Überleben und der Fortpflanzung von Fischen, indem sie ihnen den Zugang zu verschiedenen Lebensräumen ermöglichen.';
-        } else if (selected.value === 'überwachung') {
-            quizResult.innerText = 'Nicht ganz! Die Überwachung des Wassers ist wichtig für den Umweltschutz, aber Fischtreppen sind speziell darauf ausgelegt, Fische zu unterstützen, nicht nur zur Überwachung des Wassers.';
-        }
-    } else {
-        quizResult.innerText = 'Bitte wähle eine Antwort aus!';
-    }
-});
-
-document.getElementById('check-answer-3').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz3"]:checked');
-    const quizResult = document.getElementById('quiz-result-3');
-    if (selected) {
-        if (selected.value === 'kühlung') {
-            quizResult.innerText = 'Richtig! Stauseen können eine kühlende Wirkung auf die Umgebung haben, indem sie Wärme speichern und langsam wieder an die Atmosphäre abgeben. Dies kann lokale Mikroklimata beeinflussen, indem die Temperaturen reguliert und extremes Wetter wie Hitzeperioden gemildert werden.';
-        } else if (selected.value === 'erwärmung') {
-            quizResult.innerText = 'Nicht ganz! Stauseen erwärmen die Umgebung nicht, sondern tragen in der Regel zu einer kühlenden Wirkung bei, da sie große Mengen an Wasser speichern, das bei Bedarf langsam wieder verdunstet und so die Umgebung abkühlt.';
-        } else if (selected.value === 'keine') {
-            quizResult.innerText = 'Nein, Stauseen haben Auswirkungen auf das Klima. Sie beeinflussen sowohl die lokale als auch die globale Umgebung, indem sie den Wasserkreislauf und die Wärmeregulierung verändern.';
-        }
-    } else {
-        quizResult.innerText = 'Bitte wähle eine Antwort aus!';
-    }
-});
-
-document.getElementById('check-answer-4').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz4"]:checked');
-    const quizResult = document.getElementById('quiz-result-4');
-    if (selected) {
-        if (selected.value === 'schaufeln') {
-            quizResult.innerText = 'Richtig! Die Schaufeln eines Wasserrads sorgen dafür, dass das Wasser schnell genug fließt, um Energie zu erzeugen.';
-        } else if (selected.value === 'düsen') {
-            quizResult.innerText = 'Nicht ganz! Die Düsen helfen, das Wasser in Bewegung zu bringen, aber die Schaufeln eines Wasserrads sind entscheidend für die Bewegung und Energieerzeugung des Wassers.';
-        } else if (selected.value === 'flügel') {
-            quizResult.innerText = 'Nein, die Flügel sind für Windturbinen geeignet, aber nicht für Wasserkraftwerke. Die Schaufeln eines Wasserrads sind die richtige Wahl, um das Wasser zu bewegen und Energie zu erzeugen.';
-        }
-    } else {
-        quizResult.innerText = 'Bitte wähle eine Antwort aus!';
-    }
-});
-document.getElementById('check-answer-5').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="quiz5"]:checked');
-    const quizResult = document.getElementById('quiz-result-5');
-    if (selected) {
-        if (selected.value === 'tiefe') {
-            quizResult.innerText = 'Richtig! Die Tiefe eines Stausees hilft, das Wasser zu regulieren und zu speichern.';
-        } else if (selected.value === 'oberfläche') {
-            quizResult.innerText = 'Nicht ganz! Die Größe der Oberfläche eines Stausees ist wichtig, aber die Tiefe hilft noch besser, das Wasser zu regulieren und zu speichern.';
-        } else if (selected.value === 'breite') {
-            quizResult.innerText = 'Nicht ganz! Die Breite eines Stausees beeinflusst die Wassermenge, aber die Tiefe ist noch wichtiger für das Regulieren und Speichern des Wassers.';
-        }
-    } else {
-        quizResult.innerText = 'Bitte wähle eine Antwort aus!';
-    }
-});
-
-
     </script>
 </body>
+	
 </html>
 
 
