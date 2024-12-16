@@ -4,17 +4,12 @@
     <meta charset="utf-8">
     <title>Windräder bauen</title>
 
-    
-
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
 		
-		body {
-            background-color: #b9e5ef; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-         }
 		
 		.PLATZIERUNG{
 			position: absolute;
@@ -231,8 +226,8 @@
 		
 		#DROPASIEN{
 			position: absolute;
-			top: 30%;
-			right:17%;
+			top: 25%;
+			right:20%;
 		}
 		
 		.ASIENBTN{
@@ -241,8 +236,8 @@
 		
 		.ASIEN{
 			position: absolute;
-			top: 38%;
-			right:23%;
+			top: 35%;
+			right:25%;
 			height: auto;
 			width: 10%;
 			padding-top: 15px;
@@ -291,8 +286,8 @@
 		
 		#DROPSAHARA{
 			position: absolute;
-			top: 34%;
-			left: 53%;
+			top: 25%;
+			right:20%;
 		}
 		
 		.SAHARABTN{
@@ -735,7 +730,7 @@
 		</div>
 		
 		<div class="ASIENXL">
-			Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.
+			Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</div>
 		
 		<div class="SAHARA">
