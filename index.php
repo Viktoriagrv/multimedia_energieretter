@@ -121,7 +121,7 @@
 			
 		.WELT{
 			position:absolute;
-			top: 35.6%;
+			top: 35.8%;
 			Left:41.7%;
 			height: 22%;
 			width:auto;
@@ -353,12 +353,5 @@
 			
 	</script>
 
-	
-	
-	<footer class="footer-custom">
-    <div class="footer-links">
-        <a href="impressum/impressum.php">Impressum</a>
-    </div>
-</footer>
 </body>
 </html>

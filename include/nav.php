@@ -21,6 +21,7 @@
                 <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.php" class="green-text">Klimaschäden</a>
             </div>
         </div>
+		<a href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.php" class="menu-link yellow-bg green-text">Impressum</a>
     </div>
 </nav>
 
