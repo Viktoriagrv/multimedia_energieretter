@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+	
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
 	 <link rel="stylesheet" href="../../css/styles.css">
 	
   <style>
-    body {
-        font-family: Verdana, sans-serif;
-        margin: 0;
-        background-color: #e3f2fd;
-        color: #333;
-    }
+	  
+	body {
+    margin: 0;
+    background-color: #e3f2fd;
+    color: #333;
+ 	overflow: auto;
+}
 
     .container {
         background-color: rgba(255, 255, 255, 0.9);
@@ -32,10 +34,10 @@
         text-align: center;
     }
 
-    h2 {
-        color: #1976d2;
-    }
-
+  h2 {
+    color: #1976d2;
+    text-align: center;
+}
     p {
         line-height: 1.8;
     }
@@ -72,7 +74,7 @@
         background-color: #bbdefb;
         border: 2px solid #1976d2;
         border-radius: 10px;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .animation-bar {
@@ -146,6 +148,7 @@
     }
 </style>
 </head>
+	
 <body>
 	
 	<?php include '../../include/nav.php'; ?>
@@ -181,12 +184,12 @@
         </div>
 		
        <p id="extra-info">
-    Ein <span class="hervorheben" data-infokasten="Ein Stausee ist ein künstlich angelegter See, der Wasser speichert.">Stausee</span> ist nicht nur wichtig für die Energiegewinnung, sondern auch für viele andere Dinge. Er kann <span class="hervorheben" data-infokasten="Trinkwasser ist sauberes Wasser, das wir täglich trinken und für das Kochen nutzen.">Trinkwasser</span> speichern und so Menschen in Städten und Dörfern versorgen. Außerdem hilft er dabei, <span class="hervorheben" data-infokasten="Überschwemmungen entstehen, wenn Flüsse zu viel Wasser führen und das Land überfluten.">Überschwemmungen</span> zu verhindern, indem das Wasser kontrolliert abgelassen wird.
-    <br><br>
-    Stauseen bieten auch <span class="hervorheben" data-infokasten="Freizeit bedeutet, Dinge zu tun, die Spaß machen, wie Schwimmen oder Picknicks.">Freizeitmöglichkeiten</span> wie Schwimmen, Angeln oder Bootfahren. Viele Menschen kommen dorthin, um die Natur zu genießen. Allerdings gibt es auch <span class="hervorheben" data-infokasten="Umwelteinflüsse sind Veränderungen, die Tiere, Pflanzen oder die Landschaft betreffen.">Umwelteinflüsse</span>. Zum Beispiel müssen manchmal Tiere umziehen, wenn ihr Lebensraum vom Wasser überflutet wird. Pflanzen, die unter Wasser stehen, können nicht weiter wachsen.
-    <br><br>
-    Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Tiere</span> wie Fische und Vögel genug Platz und Nahrung finden. Um das zu verbessern, werden oft spezielle Wege für <span class="hervorheben" data-infokasten="Fischtreppen helfen Fischen, über Hindernisse wie Staumauern hinwegzuschwimmen.">Fischtreppen</span> oder neue Lebensräume für Vögel gebaut.
-</p>
+  		  Ein <span class="hervorheben" data-infokasten="Ein Stausee ist ein künstlich angelegter See, der Wasser speichert.">Stausee</span> ist nicht nur wichtig für die Energiegewinnung, sondern auch für viele andere Dinge. Er kann <span class="hervorheben" data-infokasten="Trinkwasser ist sauberes Wasser, das wir täglich trinken und für das Kochen nutzen.">Trinkwasser</span> speichern und so Menschen in Städten und Dörfern versorgen. Außerdem hilft er dabei, <span class="hervorheben" data-infokasten="Überschwemmungen entstehen, wenn Flüsse zu viel Wasser führen und das Land überfluten.">Überschwemmungen</span> zu verhindern, indem das Wasser kontrolliert abgelassen wird.
+  		  <br><br>
+  		  Stauseen bieten auch <span class="hervorheben" data-infokasten="Freizeit bedeutet, Dinge zu tun, die Spaß machen, wie Schwimmen oder Picknicks.">Freizeitmöglichkeiten</span> wie Schwimmen, Angeln oder Bootfahren. Viele Menschen kommen dorthin, um die Natur zu genießen. Allerdings gibt es auch <span class="hervorheben" data-infokasten="Umwelteinflüsse sind Veränderungen, die Tiere, Pflanzen oder die Landschaft betreffen.">Umwelteinflüsse</span>. Zum Beispiel müssen manchmal Tiere umziehen, wenn ihr Lebensraum vom Wasser überflutet wird. Pflanzen, die unter Wasser stehen, können nicht weiter wachsen.
+  		  <br><br>
+    		Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Tiere</span> wie Fische und Vögel genug Platz und Nahrung finden. Um das zu verbessern, werden oft spezielle Wege für <span class="hervorheben" data-infokasten="Fischtreppen helfen Fischen, über Hindernisse wie Staumauern hinwegzuschwimmen.">Fischtreppen</span> oder neue Lebensräume für Vögel gebaut.
+			</p>
 		
 <h2>Teste dein Wissen über Wasserkraft!</h2>
 		
