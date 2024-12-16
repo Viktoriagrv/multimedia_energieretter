@@ -12,6 +12,9 @@
 
 	<style>
 		
+		body {
+            background-color: #b9e5ef; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+         }
 		
 		.PLATZIERUNG{
 			position: absolute;
@@ -25,9 +28,10 @@
 			position:absolute;
 			top:5%;
 			right:0%;
-			width:auto;
-			height:95%;
+			width:100%;
+			height:auto;
 			overflow: hidden;
+			z-index:0;
 		}
 	
 		.WINDRAD1{
@@ -115,13 +119,14 @@
 		
 		.EUROPA{
 			position: absolute;
-			top:18%;
-			left:25%;
+			top: 20%;
+			left: 52%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
 			font-family: verdana;
 			color: #285238;
+			text-align: center;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -131,13 +136,14 @@
 		
 		.EUROPAXL{
 			position: absolute;
-			top:18%;
-			left:35%;
+			top: 20%;
+			left: 53%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
 			font-family: verdana;
 			color: #285238;
+			text-align: left;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -148,8 +154,8 @@
 		
 		.WINDRADEUROPA{
 			position: absolute;
-			top: 25%;
-			left: 33%;
+			top: 23%;
+			left: 50%;
 			height:5%;
 			width: auto;
 			visibility: hidden;
@@ -173,8 +179,8 @@
 		
 		.AUSTRALIEN{
 			position: absolute;
-			top:55%;
-			right: 35%;
+			top: 69%;
+			right: 11%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -189,8 +195,8 @@
 		
 		.AUSTRALIENXL{
 			position: absolute;
-			top:55%;
-			right: 35%;
+			bottom:10%;
+			right: 11%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -215,8 +221,8 @@
 		
 		.ASIEN{
 			position: absolute;
-			top:25%;
-			right: 40%;
+			top: 32%;
+			right:25%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -231,8 +237,8 @@
 		
 		.ASIENXL{
 			position: absolute;
-			top:28%;
-			right: 36%;
+			top: 32%;
+			right:24%;
 			height: auto;
 			width: 10%;
 			padding: 30px;
@@ -247,8 +253,8 @@
 		
 		.WINDRADASIEN{
 			position: absolute;
-			top:35%;
-			left: 48%;
+			top: 35%;
+			right:20%;
 			height:5%;
 			width: auto;
 			visibility: hidden;
@@ -525,7 +531,7 @@
 			height:10%;
 			width: 15%;
 			font-family: verdana;
-			color: #285238;
+			color: brown;
 			font-size: 1.5rem;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
@@ -537,8 +543,8 @@
 		.HURRA{
 			position: absolute;
 			padding: 25px;
-			bottom: 28%;
-			right: 18%;
+			top:48%;
+			left:13%;
 			height:30%;
 			width: 10%;
 			font-family: verdana;
@@ -554,8 +560,8 @@
 		.FEUERWERK{
 			position: absolute;
 			top:20%;
-			right: 5%;
-			heigh: auto;
+			left:45%;
+			height: auto;
 			width:30%;
 			visibility: hidden;
 			z-index: 4;
@@ -731,7 +737,7 @@
 			<p>Das war leider nicht richtig. </p>
 		</div>
 		
-		
+		<div>
 			<div class="HURRA">
 				<p>Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.</p>
@@ -741,11 +747,12 @@
 
 			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
 				
-		<div>
-			<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+			<div>
+				<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
 		
+			</div>
 		</div>
-			
+		
     </main>
 	
 			

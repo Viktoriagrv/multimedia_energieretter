@@ -25,8 +25,8 @@
 		.WELT{
 			position:absolute;
 			top:5%;
-			width:auto;
-			height:95%;
+			width:100%;
+			height:auto;
 		}
 		
 		.HERO{

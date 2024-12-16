@@ -96,7 +96,7 @@ main {
     display: flex;
     gap: 20px;
     align-items: center;
-    font-family: Helvetica, Arial, sans-serif; /* Helvetica für Menütexte */
+    font-family: verdana; /* Helvetica für Menütexte */
 }
 
 .menu-link {

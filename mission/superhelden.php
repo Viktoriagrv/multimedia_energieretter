@@ -563,14 +563,9 @@
 					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
 				}
 
-			</script>
+	</script>
 
-    
-	
- <!-- Einbinden des Footers -->
-  <?php include '../include/footer.php'; ?> 
-	   
-   
+ 
 </body>
 </html>
 
