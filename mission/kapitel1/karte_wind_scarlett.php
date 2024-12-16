@@ -67,22 +67,26 @@
 		.HERO{
 			position:absolute;
 			bottom:4%;
-			left: 3%;
+			left: 1%;
 			height:30%;
 		}
 		
 		.SPRECHBLASE {
 			position: absolute;
 			padding: 30px;
-			top:48%;
-			left:13%;
-			height:20%;
-			width: 10%;
+			top:46%;
+			left:11%;
+			height:27%;
+			width: 14%;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			font-family: verdana;
-			font-size: 1rem;
+			font-size: 1.5rem;
 			color:#285238;
 			text-align: left;
 			visibility: visible;
@@ -123,9 +127,13 @@
 			left: 52%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			text-align: center;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
@@ -139,9 +147,13 @@
 			top: 20%;
 			left: 53%;
 			height: auto;
-			width: 10%;
-			padding: 30px;
+			width: 25%;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
+			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
 			background-color: white;
@@ -183,9 +195,13 @@
 			right: 11%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -199,9 +215,13 @@
 			right: 11%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -211,8 +231,8 @@
 		
 		#DROPASIEN{
 			position: absolute;
-			top: 25%;
-			right: 20%;
+			top: 30%;
+			right:17%;
 		}
 		
 		.ASIENBTN{
@@ -221,13 +241,17 @@
 		
 		.ASIEN{
 			position: absolute;
-			top: 32%;
-			right:25%;
+			top: 38%;
+			right:23%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -240,10 +264,14 @@
 			top: 32%;
 			right:24%;
 			height: auto;
-			width: 10%;
-			padding: 30px;
+			width: 25%;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -273,13 +301,17 @@
 		
 		.SAHARA{
 			position: absolute;
-			top: 50%;
-			left: 28%;
+			top: 42%;
+			left: 40%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -293,9 +325,13 @@
 			left: 28%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -315,13 +351,17 @@
 		
 		.NIAGARA{
 			position: absolute;
-			top: 33%;
-			left: 15%;
+			top: 25%;
+			left: 27%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -335,9 +375,13 @@
 			left: 15%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -347,7 +391,7 @@
 		
 		#DROPAMAZONAS{
 			position: absolute;
-			top:43%;
+			top:44%;
 			left: 30%;
 		}
 		
@@ -357,13 +401,17 @@
 		
 		.AMAZONAS{
 			position: absolute;
-			bottom:43%;
-			left: 20%;
+			top:48%;
+			left: 34%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -377,9 +425,13 @@
 			left: 20%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -399,13 +451,17 @@
 		
 		.ATLANTIK{
 			position: absolute;
-			bottom:45%;
-			left: 20%;
+			top:31%;
+			left: 40%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -419,9 +475,13 @@
 			left: 20%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -442,12 +502,16 @@
 		.SIBIRIEN{
 			position: absolute;
 			top:20%;
-			right: 38%;
+			right: 28%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -458,12 +522,16 @@
 		.SIBIRIENXL{
 			position: absolute;
 			top:20%;
-			right: 38%;
+			right: 28%;
 			height: auto;
-			width: 10%;
-			padding: 30px;
+			width: 25%;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -473,8 +541,8 @@
 		
 		.WINDRADSIBIRIEN{
 			position: absolute;
-			top:20%;
-			left: 45%;
+			top:17%;
+			right: 26%;
 			height:5%;
 			width: auto;
 			visibility: hidden;
@@ -493,13 +561,17 @@
 		
 		.MEXIKO{
 			position: absolute;
-			top:45%;
-			left: 19%;
+			top:29%;
+			left: 24%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size:1.5rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -513,9 +585,13 @@
 			left: 19%;
 			height: auto;
 			width: 10%;
-			padding: 30px;
+			padding-top: 5px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: #285238;
+			font-size: 1.3rem;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -525,14 +601,17 @@
 		
 		.FEHLERMELDUNG{
 			position: absolute;
-			padding: 30px;
-			top: 30%;
-			left: 45%;
+			top: 45%;
+			left: 40%;
 			height:10%;
 			width: 15%;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
 			font-family: verdana;
 			color: brown;
-			font-size: 1.5rem;
+			font-size: 2rem;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -569,8 +648,8 @@
 		
 		.BTNWEITER{
 			position: absolute;
-			bottom: 15%;
-			right: 18%;
+			bottom: 5%;
+			right: 5%;
             padding: 20px 30px;
             font-family: 'Bangers';
             font-size: 1.5rem;
@@ -593,12 +672,6 @@
 			visibility: hidden;
 		}
 		
-		.ZU{
-			position: relative;
-			top: 7px;
-			right: 7px;
-		}
-		
 		.CODE{
 			font-family: "bangers";
 			font-size: 1.5rem;
@@ -613,12 +686,6 @@
 <body>
 	
 	<?php include '../../include/nav.php'; ?>
-	
-	 <!-- Hintergrundvideo 
-		<video autoplay muted loop id="backgroundVideo">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-		</video>-->
 	
     <main>
 		
@@ -643,7 +710,7 @@
 		
 			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
 			<div class="SPRECHBLASE">
-				<p>Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.</p>
+				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.
 			</div>
 	
 		
@@ -652,8 +719,7 @@
 		</div>
 		
 		<div class="EUROPAXL">
-			<p>Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-			</p>	
+			Die windigen Küstenregionen Europas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.	
 		</div>
 		
 		<div class="AUSTRALIEN">
@@ -661,9 +727,7 @@
 		</div>
 		
 		<div class="AUSTRALIENXL">
-			<button class="ZU">&times;</button>
-			<p>Die trockenen Weiten Australiens. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-			</p>
+			Die trockenen Weiten Australiens. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="ASIEN">
@@ -671,7 +735,7 @@
 		</div>
 		
 		<div class="ASIENXL">
-			<p>Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.</p>
+			Die hohen Berge Asiens sind besonders geeignet für Windkraft, weil hier oft starke Winde wehen.
 		</div>
 		
 		<div class="SAHARA">
@@ -679,8 +743,7 @@
 		</div>
 		
 		<div class="SAHARAXL">
-			<button class="ZU">&times;</button>
-			<p>Das heiße Wüstenmeer Afrikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Das heiße Wüstenmeer Afrikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</div> 
 		
 		<div class="NIAGARA">
@@ -688,8 +751,7 @@
 		</div>
 		
 		<div class="NIAGARAXL">
-			<button class="ZU">&times;</button>
-			<p>Die gewaltigen Wasserfälle Nordamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Die gewaltigen Wasserfälle Nordamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="AMAZONAS">
@@ -697,8 +759,7 @@
 		</div>
 		
 		<div class="AMAZONASXL">
-			<button class="ZU">&times;</button>
-			<p>Der mächtige Strom im Herzen des Regenwaldes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Der mächtige Strom im Herzen des Regenwaldes. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div class="ATLANTIK">
@@ -706,8 +767,7 @@
 		</div>
 		
 		<div class="ATLANTIKXL">
-			<button class="ZU">&times;</button>
-			<p>Die starken Strömungen des Atlantischen Ozeans. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Die starken Strömungen des Atlantischen Ozeans. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</div>
 		
 		<div class="SIBIRIEN">
@@ -715,7 +775,7 @@
 		</div>
 		
 		<div class="SIBIRIENXL">
-			<p>Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Die weiten Steppen im Norden Russlands. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 		</div>
 		
 		<div class="MEXIKO">
@@ -723,8 +783,7 @@
 		</div>
 		
 		<div class="MEXIKOXL">
-			<button class="ZU">&times;</button>
-			<p>Die sonnigen Gebiete Mittelamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+			Die sonnigen Gebiete Mittelamerikas. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
 		</div>
 		
 		<div>
@@ -734,22 +793,21 @@
 		</div>
 		
 		<div class="FEHLERMELDUNG">
-			<p>Das war leider nicht richtig. </p>
+			Das war leider nicht richtig.
 		</div>
 		
 		<div>
 			<div class="HURRA">
-				<p>Fantastische Arbeit! Das hast du toll gemacht!<br>
-					Als Belohnung bekommst du von mir einen geheimen Code.</p>
-				<p class="CODE">xdf-338</p>
-				<p>Schreibe ihn dir auf und bewahre ihn gut!</p>
+				Fantastische Arbeit! Das hast du toll gemacht!<br>
+				Als Belohnung bekommst du von mir einen geheimen Code.
+				<div class="CODE">xdf-338</div>
+				Schreibe ihn dir auf und bewahre ihn gut!
 			</div>
 
 			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
 				
 			<div>
 				<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-		
 			</div>
 		</div>
 		
@@ -911,7 +969,6 @@
 		
 		function ElementAufheben() {
 			event.dataTransfer.setData('text/plain',event.target.id);										// setzt das Drag-Element (Datentyp und Datenwert)
-			AlleAus();
 		}
 		
 		function AblegenErlauben() {
@@ -919,10 +976,6 @@
 				! event.target.classList.contains('DRAG-ELEMENT')) {										// wenn das Ziel kein Drag-Element ist
 				event.preventDefault();																		// dann ist Ablegen erlaubt, durch Verhindern der Default-Aktion des Events ("Öffnen als Link")
 			}
-		}
-		
-		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
 		}
 		
 		function ElementAblegenEuropa() {
@@ -935,6 +988,10 @@
 			AbgelegteElementeZaehlen();
 		}
 		
+		function WindradZeigenEuropa(){
+			document.querySelector(".WINDRADEUROPA").classList.add("ZEIGEN");
+			document.querySelector(".EUROPABTN").classList.add("WEG");
+		}
 		
 		function ElementAblegenAsien() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
@@ -944,6 +1001,11 @@
 			abgelegteElemente++;
 			WindradZeigenAsien();
 			AbgelegteElementeZaehlen();
+		}
+		
+		function WindradZeigenAsien(){
+			document.querySelector(".WINDRADASIEN").classList.add("ZEIGEN");
+			document.querySelector(".ASIENBTN").classList.add("WEG");
 		}
 		
 		function ElementAblegenSibirien() {
@@ -957,36 +1019,14 @@
 			
 		}
 		
-		function WindradZeigenEuropa(){
-			document.querySelector(".WINDRADEUROPA").classList.add("ZEIGEN");
-			document.querySelector(".EUROPABTN").classList.add("WEG");
-		}
-		
-		function WindradZeigenAsien(){
-			document.querySelector(".WINDRADASIEN").classList.add("ZEIGEN");
-			document.querySelector(".ASIENBTN").classList.add("WEG");
-		}
-		
 		function WindradZeigenSibirien(){
 			document.querySelector(".WINDRADSIBIRIEN").classList.add("ZEIGEN");
 			document.querySelector(".SIBIRIENBTN").classList.add("WEG");
 		}
 		
-		
-		document.querySelector(".ZU").addEventListener('click',AlleAus);
-		function AlleAus() {
-				document.querySelector(".EUROPAXL").classList.remove("ZEIGEN");
-				document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
-				document.querySelector(".AUSTRALIENXL").classList.remove("ZEIGEN");
-				document.querySelector(".SAHARAXL").classList.remove("ZEIGEN");
-				document.querySelector(".NIAGARAXL").classList.remove("ZEIGEN");
-				document.querySelector(".AMAZONASXL").classList.remove("ZEIGEN");
-				document.querySelector(".ATLANTIKXL").classList.remove("ZEIGEN");
-				document.querySelector(".SIBIRIENXL").classList.remove("ZEIGEN");
-				document.querySelector(".MEXIKOXL").classList.remove("ZEIGEN");
-				document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+		function AblegenFalsch(){
+			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
 		}
-		
 		
 		// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
 			function AbgelegteElementeZaehlen(){
@@ -995,9 +1035,7 @@
 				}																							
 			}
 		
-		
-		function AlleAbgelegt() {
-			AlleAus();
+		function AlleAbgelegt(){
 			document.querySelector(".INFOBOX").classList.add("WEG");
 			document.querySelector(".HURRA").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK").classList.add("ZEIGEN");
