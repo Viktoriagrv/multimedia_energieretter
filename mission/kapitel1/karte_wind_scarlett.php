@@ -964,6 +964,7 @@
 		
 		function ElementAufheben() {
 			event.dataTransfer.setData('text/plain',event.target.id);										// setzt das Drag-Element (Datentyp und Datenwert)
+			AlleAus();
 		}
 		
 		function AblegenErlauben() {
@@ -1021,6 +1022,10 @@
 		
 		function AblegenFalsch(){
 			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+		}
+		
+		function AlleAus(){
+			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
 		}
 		
 		// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
