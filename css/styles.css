@@ -80,11 +80,12 @@ main {
 
 /* Brand-Logo in der Navigation */
 .navbar-brand {
-    font-family: 'Bangers', cursive;
+    font-family: 'Bangers';
     font-size: 2rem;
     color: #e8a723; /* Gelb */
     text-decoration: none;
     margin-left: 10px;
+	letter-spacing: 0.05em;
 }
 
 .navbar-brand:hover {
@@ -100,6 +101,7 @@ main {
 	background-color: transparent;
 	box-shadow: none;
 	border:0;
+	letter-spacing: 0.05em;
 }
 
 .UEBERSCHRIFT:hover{
