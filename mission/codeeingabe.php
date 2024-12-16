@@ -134,7 +134,7 @@
 		
 		function EingabeAuswerten() {														// 		Funktion mit Verzweigung
 			if (document.querySelector('input').value.toLowerCase() == 'geht') {			//Überprüfung der Eingabe
-				window.location.href = "missionsstart.php";															// Ausgabe bei positivem Ergebnis
+				window.location.href = "kapitel2/solar_scarlett.php";															// Ausgabe bei positivem Ergebnis
 				}
 			else {
 				alert('Der Code ist leider nicht richtig.');															// Ausgabe bei negativem Ergebnis
@@ -143,8 +143,6 @@
 	
         
     </script>
-
-   <?php include '../include/footer.php'; ?>
 		
 </body>
 </html>

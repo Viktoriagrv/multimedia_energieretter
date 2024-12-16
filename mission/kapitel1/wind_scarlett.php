@@ -36,7 +36,7 @@
 		
 		.HERO{
 			position: absolute;
-			bottom: 20%;
+			bottom: 10%;
 			right:10%;
 			height:30%;
 			width:auto;
@@ -64,7 +64,7 @@
 		
 		.HEADER{
 			position: absolute;
-			top: 12%;
+			top: 16%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
@@ -73,15 +73,15 @@
 			
 		.WINDRAD{
 			position:absolute;
-			top:38%;
-			left: 3%;
+			bottom:10%;
+			left: 2%;
 			height:40%;
 			width:auto;
 			}
 		
 		.INFOBLASE{
 			position: absolute;
-			top: 20%;
+			top: 27%;
 			left: 38%;
 			height: 12%;
 			width: auto;
@@ -91,7 +91,7 @@
 		
 		.INFOTEXT{
 			position: absolute;
-			top: 27%;
+			top: 34%;
 			left: 44%;
 			font-family: verdana;
 			font-size: 1.5rem;
@@ -102,13 +102,13 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			right: 8%;
+			right: 2%;
 			top: 15%;
 			font-family: verdana;
 			font-size: 2rem;
-			color: #e8a723;
+			color: #285238;
 			text-align: left;
-			width: 32%;
+			width: 40%;
 			height: auto;
 			visibility: visible;
 		}
@@ -140,7 +140,7 @@
 			top: 20%;
 			font-family: verdana;
 			font-size: 2rem;
-			color: #e8a723;
+			color: #285238;
 			text-align: left;
 			width: 32%;
 			height: auto;
@@ -211,7 +211,8 @@
 		
 		<div class="TEXTBLOCK">
 			<p>
-				Windkraftanlagen sind das und das und benötigen das und das, um effizient arbeiten zu können. Welche drei Standorte eignen sich besonders für den Bau von Windparks?
+				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
+				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke DREI geeignete Standorte an:
 			</p>
 			
 				
@@ -222,7 +223,7 @@
 					<br>
 				<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
 					<br>
-				<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüsten	
+				<input class="CHECKBOX" type="checkbox" id="WUESTE"> Steppe	
 					<br>
 				<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
 					<br>
@@ -301,8 +302,7 @@
 		
 	</script>
 	
-    <?php include '../../include/footer.php'; ?>
-   
+    
     
     
 </body>

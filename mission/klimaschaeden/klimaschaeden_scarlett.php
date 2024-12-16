@@ -32,17 +32,20 @@
 		.HERO{
 			position:absolute;
 			bottom:4%;
-			left: 3%;
+			left: 2%;
 			height:30%;
 			}
 		
 		.SPRECHBLASE {
 			position: absolute;
-			padding: 30px;
-			top:48%;
-			left:13%;
-			height:20%;
-			width: 10%;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			bottom:25%;
+			left:12%;
+			height:27%;
+			width: 12%;
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -53,8 +56,30 @@
 			visibility: visible;
 			}
 		
+		.SPRECHBLASEWEITER {
+			position: absolute;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			bottom:25%;
+			left:12%;
+			height:18%;
+			width: 12%;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: verdana;
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
+			visibility: hidden;
+			}
+		
 		.LOS{
-			position: relative;
+			position: absolute;
+			bottom: 5%;
+			right: 5%;
 			display: inline-block;
             padding: 10px 15px;
             font-family: 'Bangers';
@@ -66,8 +91,24 @@
 			border-color: white;
             border-radius: 8px;	
 			cursor: pointer;
-			visibility:hidden;
 		}
+		
+		.PFEIL-LI{
+			position: absolute;
+			bottom:5%;
+			left:5%;
+			height:15%;
+			width:auto;
+		}
+		
+		.PFEIL-RE{
+			position: absolute;
+			bottom:5%;
+			right:5%;
+			height:10%;
+			width:auto;
+		}
+		
 		
 		.PUNKT{
 			height: 25px;
@@ -488,6 +529,10 @@
 		.ZEIGEN{
 			visibility: visible;
 		}
+		
+		.WEG{
+			visibility: hidden;
+		}
 
 		
 		
@@ -514,10 +559,19 @@
 	
 		<div class="SPRECHBLASE">
 			
-			<p>Hallo! Ich bin Scarlett Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die einzlnen WORT</p>
+			<p>Hallo! Ich bin Scarlett Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die Gefahren des Klimawandels.</p>
+			
+			<img class="PFEIL-RE" src="../../images/pfeil_rechts.png" alt="Roter Pfeil nach rechts">
+		</div>	
+		
+		<div class="SPRECHBLASEWEITER">
+			
+			<p>Wenn du genug über Klimaschäden gelernt hast, kannst du die Mission starten.</p>
+			
+			<img class="PFEIL-LI" src="../../images/pfeil_links.png" alt="Roter Pfeil nach links">
 			
 			<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlett.php'"> Auf geht's! </button>
-		</div>	
+		</div>
 		
 		<div class="zoom-in-zoom-out">
 
@@ -641,12 +695,16 @@
 	
 	
 	<script>
+		
+		let angeseheneInfos = 0;
+		
   		//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 		document.querySelector('.NORDEUROPA').addEventListener('mouseover',ZeigeNordeuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
 			document.querySelector('.NORDEUROPA').addEventListener('mouseout',NordeuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
 				
 			function ZeigeNordeuropa() {
 				document.querySelector(".INFONORDEUROPA").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 				
 			}
 			function NordeuropaAus() {
@@ -661,6 +719,7 @@
 				
 			function ZeigeSibirien() {
 				document.querySelector(".INFOSIBIRIEN").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function SibirienAus() {
 				document.querySelector(".INFOSIBIRIEN").classList.remove("ZEIGEN");
@@ -672,6 +731,7 @@
 				
 			function ZeigeChina() {
 				document.querySelector(".INFOCHINA").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function ChinaAus() {
 				document.querySelector(".INFOCHINA").classList.remove("ZEIGEN");
@@ -682,6 +742,7 @@
 				
 			function ZeigeSuedostasien() {
 				document.querySelector(".INFOSUEDOSTASIEN").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function SuedostasienAus() {
 				document.querySelector(".INFOSUEDOSTASIEN").classList.remove("ZEIGEN");
@@ -692,6 +753,7 @@
 				
 			function ZeigeAntarktisOst() {
 				document.querySelector(".INFOANTARKTISOST").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AntarktisOstAus() {
 				document.querySelector(".INFOANTARKTISOST").classList.remove("ZEIGEN");
@@ -702,6 +764,7 @@
 				
 			function ZeigeAntarktisMitte() {
 				document.querySelector(".INFOANTARKTISMITTE").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AntarktisMitteAus() {
 				document.querySelector(".INFOANTARKTISMITTE").classList.remove("ZEIGEN");
@@ -712,6 +775,7 @@
 				
 			function ZeigeAntarktisWest() {
 				document.querySelector(".INFOANTARKTISWEST").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AntarktisWestAus() {
 				document.querySelector(".INFOANTARKTISWEST").classList.remove("ZEIGEN");
@@ -722,6 +786,7 @@
 				
 			function ZeigeChile() {
 				document.querySelector(".INFOCHILE").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function ChileAus() {
 				document.querySelector(".INFOCHILE").classList.remove("ZEIGEN");
@@ -732,6 +797,7 @@
 				
 			function ZeigeAmazonas() {
 				document.querySelector(".INFOAMAZONAS").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AmazonasAus() {
 				document.querySelector(".INFOAMAZONAS").classList.remove("ZEIGEN");
@@ -742,6 +808,7 @@
 				
 			function ZeigeAmazonas() {
 				document.querySelector(".INFOAMAZONAS").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AmazonasAus() {
 				document.querySelector(".INFOAMAZONAS").classList.remove("ZEIGEN");
@@ -752,6 +819,7 @@
 				
 			function ZeigeAtlantik() {
 				document.querySelector(".INFOATLANTIK").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AtlantikAus() {
 				document.querySelector(".INFOATLANTIK").classList.remove("ZEIGEN");
@@ -762,6 +830,7 @@
 				
 			function ZeigeKanadaWest() {
 				document.querySelector(".INFOKANADAWEST").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function KanadaWestAus() {
 				document.querySelector(".INFOKANADAWEST").classList.remove("ZEIGEN");
@@ -772,6 +841,7 @@
 				
 			function ZeigeKanadaOst() {
 				document.querySelector(".INFOKANADAOST").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function KanadaOstAus() {
 				document.querySelector(".INFOKANADAOST").classList.remove("ZEIGEN");
@@ -782,6 +852,7 @@
 				
 			function ZeigeLabrador() {
 				document.querySelector(".INFOLABRADOR").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function LabradorAus() {
 				document.querySelector(".INFOLABRADOR").classList.remove("ZEIGEN");
@@ -792,6 +863,7 @@
 				
 			function ZeigeGroenland() {
 				document.querySelector(".INFOGROENLAND").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function GroenlandAus() {
 				document.querySelector(".INFOGROENLAND").classList.remove("ZEIGEN");
@@ -802,6 +874,7 @@
 				
 			function ZeigeArktis() {
 				document.querySelector(".INFOARKTIS").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function ArktisAus() {
 				document.querySelector(".INFOARKTIS").classList.remove("ZEIGEN");
@@ -812,10 +885,32 @@
 				
 			function ZeigeAfrika() {
 				document.querySelector(".INFOAFRIKA").classList.add("ZEIGEN");
+				angeseheneInfos ++;
 			}
 			function AfrikaAus() {
 				document.querySelector(".INFOAFRIKA").classList.remove("ZEIGEN");
 			}
+		
+		// zählt alle angesehenen Infos und startet die Funktion WeiterButtonZeigen, wenn Ergebnis 5 ist
+			function AngeseheneInfosZaehlen(){
+				if (angeseheneInfos === 5){
+					document.querySelector(".LOS").classList.add("ZEIGEN");
+				}																							
+			}
+		
+		document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
+		
+		function ZeigeSprechblaseWeiter(){
+			document.querySelector(".SPRECHBLASE").classList.add("WEG");
+			document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
+		
+		function ZeigeSprechblase(){
+			document.querySelector(".SPRECHBLASE").classList.remove("WEG");
+			document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
+		}
 		
     </script>
 	

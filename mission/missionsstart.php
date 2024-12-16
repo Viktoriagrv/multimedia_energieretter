@@ -120,6 +120,39 @@
 
     </main>
      
+	<script>
+		// Funktion, um Icons schweben zu lassen
+				function floatIcons() {
+				const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+
+        		icons.forEach(icon => {
+					let position = 0; // Startposition
+					let direction = 1; // Bewegung nach oben oder unten
+					const maxMovement = 6; // Maximale Bewegung in Pixel
+					const stepSize = 0.1; // Bewegungsschritt
+
+					const iconFloat = () => {
+						if (position >= maxMovement || position <= -maxMovement) {
+							direction *= -1; // Richtung wechseln
+						}
+						position += direction * stepSize; // Position aktualisieren
+						icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+						requestAnimationFrame(iconFloat); // Animation wiederholen
+					};
+
+            	iconFloat(); // Animation starten
+        		});
+					
+    			}
+				
+				// Startet die Funktionen nach dem Laden der Seite
+				document.addEventListener('DOMContentLoaded', () => {
+					floatIcons(); // Icons schweben lassen
+					buttonHoverEffect(); // Hover-Effekt aktivieren
+				});
+		
+	</script>
+	
 </body>
 </html>
 
