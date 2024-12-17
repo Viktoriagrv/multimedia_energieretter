@@ -21,7 +21,7 @@
 		
 		.WELTKARTE{
 			position:absolute;
-			top:5%;
+			top:6%;
 			right:0%;
 			width:100%;
 			height:auto;
@@ -108,7 +108,7 @@
 				
 		#DROPEUROPA{
 			position: absolute;
-			top: 15%;
+			top: 18%;
 			left: 50%;		
 		}
 		
@@ -286,8 +286,8 @@
 		
 		#DROPSAHARA{
 			position: absolute;
-			top: 25%;
-			right:20%;
+			top: 37%;
+			left: 50%;
 		}
 		
 		.SAHARABTN{
@@ -619,12 +619,12 @@
 			padding: 25px;
 			top:48%;
 			left:13%;
-			height:30%;
+			height:20%;
 			width: 10%;
 			font-family: verdana;
 			color: #285238;
 			text-align: left;
-			border-radius: 20px 20px 0px 20px;
+			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			z-index: 5;
@@ -634,7 +634,7 @@
 		.FEUERWERK{
 			position: absolute;
 			top:20%;
-			left:45%;
+			left:25%;
 			height: auto;
 			width:30%;
 			visibility: hidden;
@@ -1028,15 +1028,15 @@
 			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
 		}
 		
-		// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
-			function AbgelegteElementeZaehlen(){
-				if (abgelegteElemente === 3){
-					AlleAbgelegt();
+			// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
+		function AbgelegteElementeZaehlen(){
+			if (abgelegteElemente === 3){
+				AlleAbgelegt();
 				}																							
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".INFOBOX").classList.add("WEG");
+			document.querySelector(".SPRECHBLASE").classList.add("WEG");
 			document.querySelector(".HURRA").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK").classList.add("ZEIGEN");
 			document.querySelector(".BTNWEITER").classList.add("ZEIGEN");

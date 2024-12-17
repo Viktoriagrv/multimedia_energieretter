@@ -133,7 +133,7 @@
 		document.querySelector(".EINGEBEN").addEventListener('click',EingabeAuswerten);
 		
 		function EingabeAuswerten() {														// 		Funktion mit Verzweigung
-			if (document.querySelector('input').value.toLowerCase() == 'geht') {			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == 'xdf-338') {			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_scarlett.php";															// Ausgabe bei positivem Ergebnis
 				}
 			else {
