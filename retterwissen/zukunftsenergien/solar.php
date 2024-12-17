@@ -1,207 +1,228 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retterwissen - Solarenergie</title>
+    <title>Sonnenenergie</title>
 
-    <!-- GOOGLE FONTS -->
+    <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+	
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff5cc;
+            background-color: #fff8e1;
             color: #333;
+            overflow: auto;
         }
 
         .container {
-            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 50px auto;
             padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             font-family: 'Bangers', cursive;
-            font-size: 48px;
-            color: #f7b500;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #f9a825;
+            text-align: center;
         }
 
-        .illustration {
-            margin: 20px auto;
-            max-width: 600px;
+        h2 {
+            color: #f9a825;
+            text-align: center;
         }
 
-        .illustration img {
-            width: 100%;
-            border-radius: 15px;
+        p {
+            line-height: 1.8;
         }
 
-        .content {
-            font-size: 18px;
-            color: #555;
-            line-height: 1.6;
-            margin: 20px auto;
-            max-width: 800px;
+        .hervorheben {
+            color: #f9a825;
+            cursor: pointer;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .hervorheben:hover {
+            color: #ffd700; /* Gelb Akzent für Hover-Effekt */
+        }
+
+        .infokasten {
+            display: none;
+            position: fixed;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .infokasten img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
         }
 
         .button {
-            display: inline-block;
-            background-color: #f7b500;
-            color: white;
+            background-color: #f9a825;
+            color: #fff;
             padding: 10px 20px;
-            border-radius: 5px;
             text-decoration: none;
+            border-radius: 5px;
             font-size: 16px;
-            transition: background-color 0.3s ease;
+            cursor: pointer;
+            margin-top: 10px;
         }
 
-        .button:hover {
-            background-color: #e6a000;
-        }
-
-        .quiz-header {
-            font-size: 24px;
-            margin-top: 50px;
-            color: #333;
-        }
-
-        .quiz-item {
-            margin: 20px auto;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 15px;
-            max-width: 600px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .speech-bubble {
-            background-color: #fff5cc;
-            border: 2px solid #f7b500;
+        .interactive-box {
+            border: 1px solid #f9a825;
             border-radius: 10px;
             padding: 15px;
-            font-size: 16px;
-            position: relative;
+            margin: 20px 0;
+            background-color: #fff8e1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .interactive-box p {
             margin-bottom: 10px;
         }
 
-        .slider-container {
+        .interactive-box label {
             display: flex;
-            justify-content: center;
             align-items: center;
+            margin-bottom: 5px;
         }
 
-        .slider-label {
-            font-size: 14px;
-            margin: 0 10px;
-            color: #555;
+        .interactive-box input {
+            margin-right: 10px;
         }
 
-        .slider {
-            width: 150px;
-            -webkit-appearance: none;
-            background: gray;
-            height: 5px;
+        .interactive-box .button {
+            margin-top: 10px;
         }
 
-        .slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 15px;
-            height: 15px;
-            background: #f7b500;
-            border-radius: 50%;
-            cursor: pointer;
+        #quiz-result {
+            margin-top: 10px;
+            font-weight: bold;
         }
 
-        #confirm-button {
-            margin-top: 30px;
-            background-color: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 10px 20px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-
-        #confirm-button:hover {
-            background-color: #218838;
-        }
-
-        #exclusive-content {
+        #extra-info {
             display: none;
-            margin-top: 50px;
+            margin-top: 20px;
         }
 
-        footer {
-            background-color: #f7b500;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
+        iframe {
             width: 100%;
+            max-width: 720px;
+            height: 405px;
+            border: none;
         }
-
     </style>
 </head>
+	
 <body>
+	
+    <?php include '../../include/nav.php'; ?>
+	
     <div class="container">
-        <h1>Retterwissen - Solarenergie</h1>
-
-        <div class="illustration">
-            <img src="illustration_solar.jpg" alt="Solarenergie Illustration">
+        <h1>Sonnenenergie</h1>
+		
+        <p>
+            Die <span class="hervorheben" data-infokasten="Sonnenenergie ist die Energie, die von der Sonne ausgestrahlt wird.">Sonnenenergie</span> ist eine der saubersten und umweltfreundlichsten Energiequellen. Sie wird durch Photovoltaikzellen in elektrischen Strom umgewandelt, der dann für den Betrieb von Geräten und zur Beleuchtung genutzt werden kann. Diese Technologie nutzt direkt die Energie der Sonne, um unseren Energiebedarf zu decken.
+        </p>
+		
+        <!-- Bild über die Funktionsweise von Photovoltaikzellen -->
+        <div class="infokasten">
+            <img src="../../images/photovoltaikzellen.jpg" alt="Bild einer Photovoltaikanlage">
         </div>
 
-        <div class="content">
-            <p>Willkommen bei den Retterwissen! Erfahre alles über Solarenergie, die Energiequelle der Zukunft. Sie ist sauber, nachhaltig und kommt direkt von der Sonne. Mit Solarenergie können wir unsere Welt heller und umweltfreundlicher machen!</p>
-            <a href="#quiz" class="button">Loslegen</a>
+        <h2>Wie funktioniert eine Photovoltaikanlage?</h2>
+        <p>
+            Eine <span class="hervorheben" data-infokasten="Photovoltaikanlagen bestehen aus Solarmodulen, die Sonnenlicht direkt in Strom umwandeln.">Photovoltaikanlage</span> funktioniert, indem sie Sonnenlicht aufnimmt und es in elektrische Energie umwandelt. Die Module bestehen aus vielen kleinen Zellen, die Lichtenergie absorbieren und in elektrischen Strom umwandeln. Der erzeugte Strom kann direkt genutzt oder in einem Speichersystem für später aufbewahrt werden.
+        </p>
+        
+        <div class="button-container">
+            <button class="button" id="fill-sea">Erfahre mehr zu Speichersystemen!</button>
         </div>
-
-        <div class="quiz-header" id="quiz">Du willst noch mehr erfahren? Schalte exklusive Inhalte frei.</div>
-        <p>Alles was du dafür tun musst ist das Gelernte hier einzusetzen und zu bestätigen.</p>
-
-        <!-- Schieberegler Fragen -->
-        <div class="quiz-item" id="item1">
-            <div class="speech-bubble">Solarenergie setzt schädliche Gase frei.</div>
-            <div class="slider-container">
-                <span class="slider-label" id="label1-false">Falsch</span>
-                <input type="range" id="slider1" class="slider" min="0" max="1" step="1">
-                <span class="slider-label" id="label1-true">Wahr</span>
-            </div>
+		
+        <p id="extra-info">
+            <span class="hervorheben" data-infokasten="Speichersysteme helfen, überschüssigen Solarstrom für die Nacht oder bewölkte Tage aufzuheben.">Speichersysteme</span> sind wichtig, um die Stromversorgung auch dann sicherzustellen, wenn die Sonne nicht scheint. Diese Speichertechnologien nutzen Akkus, um den erzeugten Strom für später zu speichern und bei Bedarf abzugeben. Dies ermöglicht eine kontinuierliche Stromversorgung auch außerhalb der Tageslichtstunden.
+        </p>
+		
+        <div class="interactive-box">
+            <h3>Quiz: Teste dein Wissen über Photovoltaikanlagen!</h3>
+            <p>Wofür wird eine Photovoltaikanlage hauptsächlich verwendet?</p>
+            <label><input type="radio" name="quiz-answer" value="Stromerzeugung aus Sonnenenergie"> Stromerzeugung aus Sonnenenergie</label>
+            <label><input type="radio" name="quiz-answer" value="Wasseraufbereitung"> Wasseraufbereitung</label>
+            <label><input type="radio" name="quiz-answer" value="Luftreinigung"> Luftreinigung</label>
+            <button class="button" id="submit-answer">Antwort überprüfen</button>
+            <p id="quiz-result"></p>
         </div>
-
-        <button id="confirm-button" onclick="checkAnswers()">Bestätigen</button>
-
-        <div id="exclusive-content">
-            <h2>Exklusive Inhalte</h2>
-            <p>Keine Sorge, für die Mission kommst du schon mit dem oberen Retterwissen klar. Bei den exklusiven Inhalten kannst du dir aber ein Zertifikat abholen und noch mehr spannende Videos anschauen!</p>
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen style="width: 80%; max-width: 700px; height: 400px; border-radius: 10px;"></iframe>
+		
+        <h2>Mehr zu Sonnenenergie</h2>
+        <p>
+            <span class="hervorheben" data-infokasten="Sonnenenergie ist eine nachhaltige Energiequelle, die keine schädlichen Emissionen erzeugt.">Sonnenenergie</span> ist eine nachhaltige und unbegrenzte Energiequelle. Sie trägt dazu bei, die CO2-Emissionen zu reduzieren und die Umwelt zu schützen. Photovoltaikanlagen sind eine wichtige Technologie, um diese saubere Energie zu nutzen.
+        </p>
+        
+        <h3>Wie funktioniert ein Solarkraftwerk?</h3>
+        <p>
+            Ein <span class="hervorheben" data-infokasten="Ein Solarkraftwerk nutzt die Sonnenstrahlen, um Strom zu erzeugen.">Solarkraftwerk</span> funktioniert ähnlich wie eine Photovoltaikanlage, aber auf einer größeren Skala. Es nutzt große Solarmodule, die auf Sonnenstrahlen ausgerichtet sind, um den erzeugten Strom in ein Netz zu speisen. Der erzeugte Strom kann in einem Speichersystem oder direkt genutzt werden.
+        </p>
+		
+        <h3>Beispiele für Solarkraftwerke</h3>
+        <p>Ein bekanntes Beispiel für ein Solarkraftwerk in Deutschland ist das 
+            <span class="hervorheben" data-infokasten="Das Solarkraftwerk in Helmstedt ist ein großes Kraftwerk zur Sonnenstromproduktion.">Solarkraftwerk in Helmstedt</span>. 
+            Es nutzt die Sonnenstrahlen, um sauberen Strom zu erzeugen und zur Verfügung zu stellen.
+        </p>
+		
+        <div class="button-container">
+            <a href="../../media/solarkraftwerk.mp4" class="button" target="_blank">Mehr zur Funktionsweise eines Solarkraftwerks sehen</a>
         </div>
     </div>
 
-    <footer>
-        © 2024 Retterwissen. Alle Rechte vorbehalten.
-    </footer>
-
     <script>
-        const correctAnswers = { 'slider1': 0 };
+        document.addEventListener('DOMContentLoaded', function() {
+            var infokasten = document.querySelectorAll('.hervorheben');
+            infokasten.forEach(function(el) {
+                el.addEventListener('click', function() {
+                    var imageSrc = el.getAttribute('data-infokasten');
+                    var infobox = document.querySelector('.infokasten');
+                    infobox.querySelector('img').src = imageSrc;
+                    infobox.style.display = 'block';
+                    setTimeout(function() {
+                        infobox.style.display = 'none';
+                    }, 3000);
+                });
+            });
 
-        function checkAnswers() {
-            const isCorrect = Object.keys(correctAnswers).every(id => 
-                parseInt(document.getElementById(id).value) === correctAnswers[id]
-            );
-
-            if (isCorrect) {
-                document.getElementById('exclusive-content').style.display = 'block';
-            } else {
-                alert('Nicht alle Antworten sind richtig. Bitte versuche es erneut!');
-            }
-        }
+            var quizButton = document.getElementById('submit-answer');
+            quizButton.addEventListener('click', function() {
+                var selectedAnswer = document.querySelector('input[name="quiz-answer"]:checked');
+                var result = document.getElementById('quiz-result');
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === 'Stromerzeugung aus Sonnenenergie') {
+                        result.textContent = 'Richtig!';
+                    } else {
+                        result.textContent = 'Leider falsch. Die richtige Antwort ist „Stromerzeugung aus Sonnenenergie“.';
+                    }
+                } else {
+                    result.textContent = 'Bitte wähle eine Antwort.';
+                }
+            });
+        });
     </script>
 </body>
 </html>
