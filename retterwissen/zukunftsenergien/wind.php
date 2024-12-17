@@ -1,229 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonnenenergie</title>
+    <meta charset="utf-8">
+    <title>Missions-Start</title>
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css">
-	
-    <style>
-        body {
-            margin: 0;
-            background-color: #fff8e1;
-            color: #333;
-            overflow: auto;
+	<link rel="stylesheet" href="../../css/styles.css">
+
+	<style>
+		main{
+			background-color: #b9e5ef;
+			overflow: hidden; /* Verhindert das Scrollen der Seite */
+		}	
+		
+		h1{
+			font-family: verdana;
+			color:#285238;
+			font-size: 2rem;
+			padding-top: 0px;
+		}
+		
+		details {
+				background: #eee; 
+				border: 1px solid #e8a723;
+				border-radius: 3px; 
+                margin-bottom: 1.5rem;
+		}
+		
+		summary {
+			background: #e8a723;
+			color: #fff;
+			cursor: pointer; 
+                padding: 1rem;
+		}
+
+		/* Der verzögerungseffekt */
+		details[open] summary ~ * {
+                animation: sweep .7s ease-in-out;
         }
 
-        .container {
-            background-color: rgba(255, 255, 255, 0.9);
-            margin: 50px auto;
-            padding: 20px;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        @keyframes sweep {
+            0%    {opacity: 0; margin-left: -20px}
+            100%  {opacity: 1; margin-left: 0px}
         }
 
-        h1 {
-            font-family: 'Bangers', cursive;
-            color: #f9a825;
-            text-align: center;
+		.HERO{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:30%;
+			}
+		
+		.SPRECHBLASE {
+			position: absolute;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			bottom:25%;
+			left:12%;
+			height:27%;
+			width: 12%;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: verdana;
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
+			visibility: visible;
+			}
+		
+		.SPRECHBLASEWEITER {
+			position: absolute;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			bottom:25%;
+			left:12%;
+			height:18%;
+			width: 12%;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: verdana;
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
+			visibility: hidden;
+			}
+		
+		.LOS{
+			position: absolute;
+			bottom: 5%;
+			right: 5%;
+			display: inline-block;
+            padding: 10px 15px;
+            font-family: 'Bangers';
+            font-size: 1.5rem;
+			text-decoration: none;
+            color: white;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+		}
+		
+		.PFEIL-LI{
+			position: absolute;
+			bottom:5%;
+			left:5%;
+			height:15%;
+			width:auto;
+		}
+		
+		.PFEIL-RE{
+			position: absolute;
+			bottom:5%;
+			right:5%;
+			height:10%;
+			width:auto;
+		}
+		
+		.HEADER{
+			position: absolute;
+			top: 16%;
+			left: 8%;
+			font-family: "bangers";
+			color: #285238;
+			font-size: 5rem;
+			}
+		
+		.WINDRAD{
+			position:absolute;
+			bottom:-4%;
+			left: -10%;
+			height:40%;
+			width:auto;
+			}
+		
+		.AKKORDEON-INHALT {
+			padding: 1rem 1rem 1px 1rem;
+            color: black;
         }
 
-        h2 {
-            color: #f9a825;
-            text-align: center;
+        .AKKORDEON-INHALT p:hover {
+            color: yellow;
         }
+		
+		.AKKORDEON {
+			position: absolute;
+			top: 26%;
+			right: 15%;
+			width: 25%;
+			}
+		
+		zoom-in-zoom-out{
+			animation: zoom-in-zoom-out 2s ease infintiy;
+		}
+		
+		@keyframes zoom-in-zoom-out {
+			  0% {
+				transform: scale 1;
+			  }
+			  50% {
+				transform: scale 1.5;
+			  }
+			  100% {
+				transform: scale 1;
+			  }
+			}
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
+		.WEG{
+			visibility: hidden;
+		}
 
-        p {
-            line-height: 1.8;
-        }
-
-        .hervorheben {
-            color: #f9a825;
-            cursor: pointer;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .hervorheben:hover {
-            color: #ffd700; /* Gelb Akzent für Hover-Effekt */
-        }
-
-        .infokasten {
-            display: none;
-            position: fixed;
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            z-index: 100;
-        }
-
-        .infokasten img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .button {
-            background-color: #f9a825;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .interactive-box {
-            border: 1px solid #f9a825;
-            border-radius: 10px;
-            padding: 15px;
-            margin: 20px 0;
-            background-color: #fff8e1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .interactive-box p {
-            margin-bottom: 10px;
-        }
-
-        .interactive-box label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-
-        .interactive-box input {
-            margin-right: 10px;
-        }
-
-        .interactive-box .button {
-            margin-top: 10px;
-        }
-
-        #quiz-result {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        #extra-info {
-            display: none;
-            margin-top: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            max-width: 720px;
-            height: 405px;
-            border: none;
-        }
-    </style>
+	</style>
 </head>
-	
+
 <body>
 	
-    <?php include '../../include/nav.php'; ?>
+	<?php include '../../include/nav.php'; ?>
 	
-    <div class="container">
-        <h1>Sonnenenergie</h1>
-		
-        <p>
-            Die <span class="hervorheben" data-infokasten="Sonnenenergie ist die Energie, die von der Sonne ausgestrahlt wird.">Sonnenenergie</span> ist eine der saubersten und umweltfreundlichsten Energiequellen. Sie wird durch Photovoltaikzellen in elektrischen Strom umgewandelt, der dann für den Betrieb von Geräten und zur Beleuchtung genutzt werden kann. Diese Technologie nutzt direkt die Energie der Sonne, um unseren Energiebedarf zu decken.
-        </p>
-		
-        <!-- Bild über die Funktionsweise von Photovoltaikzellen -->
-        <div class="infokasten">
-            <img src="../../images/photovoltaikzellen.jpg" alt="Bild einer Photovoltaikanlage">
-        </div>
+	
+    <main>
 
-        <h2>Wie funktioniert eine Photovoltaikanlage?</h2>
-        <p>
-            Eine <span class="hervorheben" data-infokasten="Photovoltaikanlagen bestehen aus Solarmodulen, die Sonnenlicht direkt in Strom umwandeln.">Photovoltaikanlage</span> funktioniert, indem sie Sonnenlicht aufnimmt und es in elektrische Energie umwandelt. Die Module bestehen aus vielen kleinen Zellen, die Lichtenergie absorbieren und in elektrischen Strom umwandeln. Der erzeugte Strom kann direkt genutzt oder in einem Speichersystem für später aufbewahrt werden.
-        </p>
-        
-        <div class="button-container">
-            <button class="button" id="fill-sea">Erfahre mehr zu Speichersystemen!</button>
-        </div>
+		<div class="HEADER"> Retterwissen <br> 
+		                     Windkraft</div>
+		<img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 		
-        <p id="extra-info">
-            <span class="hervorheben" data-infokasten="Speichersysteme helfen, überschüssigen Solarstrom für die Nacht oder bewölkte Tage aufzuheben.">Speichersysteme</span> sind wichtig, um die Stromversorgung auch dann sicherzustellen, wenn die Sonne nicht scheint. Diese Speichertechnologien nutzen Akkus, um den erzeugten Strom für später zu speichern und bei Bedarf abzugeben. Dies ermöglicht eine kontinuierliche Stromversorgung auch außerhalb der Tageslichtstunden.
-        </p>
 		
-        <div class="interactive-box">
-            <h3>Quiz: Teste dein Wissen über Photovoltaikanlagen!</h3>
-            <p>Wofür wird eine Photovoltaikanlage hauptsächlich verwendet?</p>
-            <label><input type="radio" name="quiz-answer" value="Stromerzeugung aus Sonnenenergie"> Stromerzeugung aus Sonnenenergie</label>
-            <label><input type="radio" name="quiz-answer" value="Wasseraufbereitung"> Wasseraufbereitung</label>
-            <label><input type="radio" name="quiz-answer" value="Luftreinigung"> Luftreinigung</label>
-            <button class="button" id="submit-answer">Antwort überprüfen</button>
-            <p id="quiz-result"></p>
-        </div>
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+	
+		<div class="SPRECHBLASE">
+			
+			<p>Hallo! <br> <br>
+				Toll, dass du mehr über Windenergie lernen willst.<br> <br>
+				Windenergie ist einer der wichtigsten Sachen in der Enerige und versorgt und durch
+				Windstöße und Windkraftanlagen und ist daher für die Zukunft extrem wichtig.</p>
+			
+			<img class="PFEIL-RE" src="../../images/pfeil_rechts.png" alt="Roter Pfeil nach rechts">
+		</div>	
 		
-        <h2>Mehr zu Sonnenenergie</h2>
-        <p>
-            <span class="hervorheben" data-infokasten="Sonnenenergie ist eine nachhaltige Energiequelle, die keine schädlichen Emissionen erzeugt.">Sonnenenergie</span> ist eine nachhaltige und unbegrenzte Energiequelle. Sie trägt dazu bei, die CO2-Emissionen zu reduzieren und die Umwelt zu schützen. Photovoltaikanlagen sind eine wichtige Technologie, um diese saubere Energie zu nutzen.
-        </p>
-        
-        <h3>Wie funktioniert ein Solarkraftwerk?</h3>
-        <p>
-            Ein <span class="hervorheben" data-infokasten="Ein Solarkraftwerk nutzt die Sonnenstrahlen, um Strom zu erzeugen.">Solarkraftwerk</span> funktioniert ähnlich wie eine Photovoltaikanlage, aber auf einer größeren Skala. Es nutzt große Solarmodule, die auf Sonnenstrahlen ausgerichtet sind, um den erzeugten Strom in ein Netz zu speisen. Der erzeugte Strom kann in einem Speichersystem oder direkt genutzt werden.
-        </p>
+		<div class="SPRECHBLASEWEITER">
+			
+			<p>Ich habe dir hier einige interessante Themen reinfliegen lassen. Klick einfach drauf und stöber rum. <br> <br> 
+				Viel Spaß beim Lernen!.</p>
+			
+			<img class="PFEIL-LI" src="../../images/pfeil_links.png" alt="Roter Pfeil nach links">
+			
+		</div>
 		
-        <h3>Beispiele für Solarkraftwerke</h3>
-        <p>Ein bekanntes Beispiel für ein Solarkraftwerk in Deutschland ist das 
-            <span class="hervorheben" data-infokasten="Das Solarkraftwerk in Helmstedt ist ein großes Kraftwerk zur Sonnenstromproduktion.">Solarkraftwerk in Helmstedt</span>. 
-            Es nutzt die Sonnenstrahlen, um sauberen Strom zu erzeugen und zur Verfügung zu stellen.
-        </p>
+		<div class="AKKORDEON">
+			<details>
+				<summary>Was ist Windenergie?</summary>
+				<div class="AKKORDEON-INHALT">
+					<p>Was ist Windenergie? Eine grundlegende Einführung.</p>
+				</div>
+			</details>
+			<details>
+				<summary>Was sind Windkraftanlagen?</summary>
+				<div class="AKKORDEON-INHALT">
+					<p>Wie funktionieren Windkraftanlagen?</p>
+				</div>
+			</details>
+			<details>
+				<summary>Wasserkraft und Umwelt</summary>
+				<div class="AKKORDEON-INHALT">
+					<p>Vorteile von Windenergie für die Umwelt.</p>
+				</div>
+			</details>
+			<details>
+				<summary>Zukunft</summary>
+				<div class="AKKORDEON-INHALT">
+					<p>Die Rolle der Windenergie in der Energiewende.</p>
+				</div>
+			</details>
+		</div>
+			
+    </main>
+	
+	
+	<script>
+		document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
 		
-        <div class="button-container">
-            <a href="../../media/solarkraftwerk.mp4" class="button" target="_blank">Mehr zur Funktionsweise eines Solarkraftwerks sehen</a>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var infokasten = document.querySelectorAll('.hervorheben');
-            infokasten.forEach(function(el) {
-                el.addEventListener('click', function() {
-                    var imageSrc = el.getAttribute('data-infokasten');
-                    var infobox = document.querySelector('.infokasten');
-                    infobox.querySelector('img').src = imageSrc;
-                    infobox.style.display = 'block';
-                    setTimeout(function() {
-                        infobox.style.display = 'none';
-                    }, 3000);
-                });
-            });
-
-            var quizButton = document.getElementById('submit-answer');
-            quizButton.addEventListener('click', function() {
-                var selectedAnswer = document.querySelector('input[name="quiz-answer"]:checked');
-                var result = document.getElementById('quiz-result');
-                if (selectedAnswer) {
-                    if (selectedAnswer.value === 'Stromerzeugung aus Sonnenenergie') {
-                        result.textContent = 'Richtig!';
-                    } else {
-                        result.textContent = 'Leider falsch. Die richtige Antwort ist „Stromerzeugung aus Sonnenenergie“.';
-                    }
-                } else {
-                    result.textContent = 'Bitte wähle eine Antwort.';
-                }
-            });
-        });
-    </script>
+		function ZeigeSprechblaseWeiter(){
+			document.querySelector(".SPRECHBLASE").classList.add("WEG");
+			document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
+		
+		function ZeigeSprechblase(){
+			document.querySelector(".SPRECHBLASE").classList.remove("WEG");
+			document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
+		}
+	</script>
+	
 </body>
 </html>
 
