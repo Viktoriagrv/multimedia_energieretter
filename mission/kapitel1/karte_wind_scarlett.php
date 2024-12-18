@@ -92,13 +92,13 @@
 			height: 30px;
 			width: 30px;
 			border-radius: 40%;
-			background-color: brown;
+			background-color: #e8a723;
 			z-index: 3;
 		}
 		
 		.DROP-ELEMENT:hover{
 			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: #285238;
+			background-color: brown;
 		}
 		
 		.DRAG-ELEMENT {

@@ -51,6 +51,10 @@
 			visibility: visible;
 		}
 		
+		.HERO:hover{
+			visibility: hidden;
+		}
+		
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
 			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(180deg);
@@ -140,8 +144,8 @@
 		
 		.ABSCHLUSSTEXT{
 			position: absolute;
-			right: 8%;
-			top: 20%;
+			top: 23%;
+			left: 8%;
 			font-family: verdana;
 			font-size: 2rem;
 			color: #285238;
@@ -217,7 +221,7 @@
 		<div class="TEXTBLOCK">
 			<p>
 				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke DREI geeignete Standorte an:
+				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
@@ -264,19 +268,7 @@
 	</main>
 
     <script>	
-		
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
-		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".HERO").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".HERO").classList.remove("WEG");
-		}
-		
-		
+				
 		document.querySelector(".PRUEFEN").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		

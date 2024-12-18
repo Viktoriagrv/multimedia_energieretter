@@ -37,6 +37,10 @@
 			visibility: visible;
 			}
 		
+		.HERO:hover{
+			visibility: hidden;
+		}
+		
 		.SPRECHBLASE {
 			position: absolute;
 			padding-top: 5px;
@@ -115,7 +119,7 @@
 			height: 25px;
 			width: 25px;
 			border-radius: 40%;
-			background-color: brown;
+			background-color: #e8a723;
 			z-index: 3;
 		}
 		
@@ -697,16 +701,7 @@
 	
 	<script>
 	
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
 		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".HERO").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".HERO").classList.remove("WEG");
-		}
 		
 		let angeseheneInfos = 0;
 		
