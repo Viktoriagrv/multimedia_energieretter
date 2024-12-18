@@ -126,8 +126,8 @@
 			height: 22%;
 			width:auto;
 			visibility: hidden;
-			transition-property: height, top, left;						/* betreffende Deklarationen (über Pseudoklassen) */
-			transition-duration: 5s;							/* Dauer (n) */
+			transition-property: height, top, left;					/* betreffende Deklarationen (über Pseudoklassen) */
+			transition-duration: 5s;								/* Dauer (n) */
 			transition-timing-function: ease-in-out;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			transition-delay: 2s;
 		}

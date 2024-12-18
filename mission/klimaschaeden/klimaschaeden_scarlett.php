@@ -34,6 +34,7 @@
 			bottom:4%;
 			left: 2%;
 			height:30%;
+			visibility: visible;
 			}
 		
 		.SPRECHBLASE {
@@ -695,6 +696,17 @@
 	
 	
 	<script>
+	
+		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
+		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
+		
+		function ScarlettUnsichtbar(){
+			document.querySelector(".HERO").classList.add("WEG");
+		}
+		
+		function ScarlettSichtbar(){
+			document.querySelector(".HERO").classList.remove("WEG");
+		}
 		
 		let angeseheneInfos = 0;
 		

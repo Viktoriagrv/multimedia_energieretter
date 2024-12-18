@@ -36,8 +36,8 @@
 		
 		.HERO{
 			position: absolute;
-			bottom: 10%;
-			right:10%;
+			bottom:5%;
+			left: 5%;
 			height:30%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
@@ -46,11 +46,11 @@
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;					/* Endzustand (none, forwards, backwards, both) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;
+			visibility: visible;
 		}
 		
-				
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
 			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(180deg);
@@ -61,10 +61,9 @@
 		}
 		
 		
-		
 		.HEADER{
 			position: absolute;
-			top: 16%;
+			top: 15%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
@@ -73,16 +72,16 @@
 			
 		.WINDRAD{
 			position:absolute;
-			bottom:10%;
-			left: 2%;
+			bottom:8%;
+			right: 5%;
 			height:40%;
 			width:auto;
 			}
 		
 		.INFOBLASE{
 			position: absolute;
-			top: 27%;
-			left: 38%;
+			top: 25%;
+			right:10%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -92,7 +91,7 @@
 		.INFOTEXT{
 			position: absolute;
 			top: 34%;
-			left: 44%;
+			right:15%;
 			font-family: verdana;
 			font-size: 1.5rem;
 			color: #e8a723;
@@ -102,15 +101,20 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			right: 2%;
-			top: 15%;
+			top: 23%;
+			left: 8%;
 			font-family: verdana;
 			font-size: 2rem;
 			color: #285238;
 			text-align: left;
-			width: 40%;
+			width: 60%;
 			height: auto;
 			visibility: visible;
+		}
+		
+		.ANTWORTEN{
+			position: absolute;
+			left: 22%;
 		}
 		
 		.TEXT{
@@ -162,6 +166,7 @@
 		}
 		
 		.WEG{
+			
 			visibility: hidden;
 		}
 		
@@ -254,10 +259,24 @@
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">		
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		
 	</main>
 
     <script>	
+		
+		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
+		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
+		
+		function ScarlettUnsichtbar(){
+			document.querySelector(".HERO").classList.add("WEG");
+		}
+		
+		function ScarlettSichtbar(){
+			document.querySelector(".HERO").classList.remove("WEG");
+		}
+		
+		
 		document.querySelector(".PRUEFEN").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
@@ -297,8 +316,6 @@
         			checkbox.checked = false;                                           // Zustand auf "nicht ausgewählt" setzen (Programmiert mit ChatGPT)
     		});
 		}
-					
-		
 		
 	</script>
 	

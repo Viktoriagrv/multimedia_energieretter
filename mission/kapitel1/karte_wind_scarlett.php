@@ -64,6 +64,7 @@
 			bottom:4%;
 			left: 1%;
 			height:30%;
+			visibility: visible;
 		}
 		
 		.SPRECHBLASE {
@@ -810,6 +811,17 @@
 	
 			
 	<script>
+		
+		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
+		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
+		
+		function ScarlettUnsichtbar(){
+			document.querySelector(".HERO").classList.add("WEG");
+		}
+		
+		function ScarlettSichtbar(){
+			document.querySelector(".HERO").classList.remove("WEG");
+		}
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
