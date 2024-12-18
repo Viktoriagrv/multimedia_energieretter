@@ -36,8 +36,8 @@
 		
 		.HERO{
 			position: absolute;
-			bottom: 10%;
-			right:10%;
+			bottom:5%;
+			left: 5%;
 			height:30%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
@@ -63,7 +63,7 @@
 		
 		.HEADER{
 			position: absolute;
-			top: 16%;
+			top: 15%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
@@ -72,16 +72,16 @@
 			
 		.WINDRAD{
 			position:absolute;
-			bottom:10%;
-			left: 2%;
+			bottom:8%;
+			right: 5%;
 			height:40%;
 			width:auto;
 			}
 		
 		.INFOBLASE{
 			position: absolute;
-			top: 27%;
-			left: 38%;
+			top: 25%;
+			right:10%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -91,7 +91,7 @@
 		.INFOTEXT{
 			position: absolute;
 			top: 34%;
-			left: 44%;
+			right:15%;
 			font-family: verdana;
 			font-size: 1.5rem;
 			color: #e8a723;
@@ -101,15 +101,20 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			right: 2%;
-			top: 15%;
+			top: 23%;
+			left: 8%;
 			font-family: verdana;
 			font-size: 2rem;
 			color: #285238;
 			text-align: left;
-			width: 40%;
+			width: 60%;
 			height: auto;
 			visibility: visible;
+		}
+		
+		.ANTWORTEN{
+			position: absolute;
+			left: 22%;
 		}
 		
 		.TEXT{
