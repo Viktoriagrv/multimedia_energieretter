@@ -64,6 +64,25 @@
 			bottom:4%;
 			left: 1%;
 			height:30%;
+			animation-name: VERSCHWINDEN;					/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			opacity: 1;
+		}
+		
+		
+		@keyframes VERSCHWINDEN{
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: opacity (0);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: opacity(1);
+			}
 		}
 		
 		.SPRECHBLASE {
