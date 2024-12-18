@@ -46,9 +46,27 @@
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;					/* Endzustand (none, forwards, backwards, both) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: visible;
+		}
+		
+		.SCARLETT{
+			position: absolute;
+			bottom: 10%;
+			right:10%;
+			height:30%;
+			width:auto;
+			animation-name: VERSCHWINDEN;					/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;
 		}
+		
 		
 				
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
@@ -57,6 +75,15 @@
 			}
 			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(360deg);
+			}
+		}
+		
+		@keyframes VERSCHWINDEN{
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: opacity (0);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: opacity(1);
 			}
 		}
 		
@@ -162,6 +189,7 @@
 		}
 		
 		.WEG{
+			
 			visibility: hidden;
 		}
 		
@@ -254,7 +282,7 @@
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">		
+		<img class="HERO SCARLETT" src="../../images/BadGirl.png" alt="Scarlett Shade">		
 	</main>
 
     <script>	
@@ -297,8 +325,22 @@
         			checkbox.checked = false;                                           // Zustand auf "nicht ausgewählt" setzen (Programmiert mit ChatGPT)
     		});
 		}
-					
 		
+		var TimeoutZaehler;															// legt eine Variable als Referenz für clearTimeout an
+		document.querySelector(".HERO").addEventListener("click",ScarlettUnsichtbar);
+		
+		function TimeoutStarten() {
+			TimeoutZaehler = setTimeout(ScarlettUnsichtbar,2000);						// führt die Funktion TimeoutHinweis nach 2000ms einmalig aus
+		}
+		
+		function ScarlettUnsichtbar(){
+			document.querySelector(".HERO").classList.add("WEG");
+			document.querySelector(".SCARLETT").style.animationPlayState = "running";
+		}
+					
+		function ScarlettUnsichtbarStoppen() {
+			clearTimeout(TimeoutZaehler);											// stoppt setTimeout mit der Referenz TimeoutZaehler
+		}
 		
 	</script>
 	
