@@ -14,7 +14,7 @@
 				
 		.SCHRIFTZUG{
 			position: absolute;
-			top: 38%;
+			top: 40%;
 			left: 8%;
 			font-family: "bangers";
 			font-size: 5rem;
@@ -101,6 +101,7 @@
 			border: 2px solid #285238;
 			border-radius: 5px;
 			background-color: #285238;
+			cursor: pointer;
 			}
 		
 		.AUSWAHL:hover{
@@ -111,7 +112,7 @@
 		
 		.SCARLETSHADE {
 			position: absolute;
-			top: 5%;
+			top: 10%;
 			left: 40%;
 			cursor: pointer;
 			}
@@ -119,35 +120,35 @@
 				
 		.GOLDENKNIGHT {
 			position: absolute;
-			top: 5%;
+			top: 10%;
 			left: 60%;
 			cursor: pointer;
 			}
 		
 		.GREENBLAZE {
 			position: absolute;
-			top: 5%;
+			top: 10%;
 			left: 80%;
 			cursor: pointer;
 			}
 		
 		.THUNDERBOLT {
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left: 35%;
 			cursor: pointer;
 			}
 		
 		.CYBERTITAN {
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left: 55%;
 			cursor: pointer;
 			}
 		
 		.SONICSHIELD {
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left:75%;
 			cursor: pointer;
 			}
