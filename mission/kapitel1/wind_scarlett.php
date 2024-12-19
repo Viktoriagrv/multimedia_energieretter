@@ -8,7 +8,8 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
 		
@@ -134,12 +135,19 @@
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
 			border-color: white;
             border-radius: 8px;	
 			cursor: pointer;
+		}
+		
+		.PRUEFEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
 		}
 		
 		.ABSCHLUSSTEXT{

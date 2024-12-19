@@ -6,6 +6,7 @@
 
     
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 	
 	
@@ -60,7 +61,7 @@
 			width:45%;
 			height:45%;
 			background-color:transparent;
-			font-family:verdana;
+			font-family:"open sans";
 			font-size: 2rem;
 			color:#FFFFFF;
 			text-align: justify;
@@ -104,19 +105,22 @@
 			left: 52%;
 			height:5%;
 			width: 20%;
+			font-family: "Bangers";
             font-size: 1.5rem;
+			color: #e8a723;
             text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
             background-color: #285238;
             border-radius: 10px;
-            font-family: 'Bangers', cursive;
 			z-index: 5;
 			visibility: hidden;
 			cursor: pointer;
 		}
 		
-		.WEITER:mouseover {
-            background-color: #45a049;
+		.WEITER:hover{
+            color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
         }
 			
 		.WELT{
@@ -150,7 +154,7 @@
 			left:23%;
 			height:20%;
 			width: 10%;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			text-align: left;
 			border-radius: 20px 20px 20px 0px;
@@ -186,18 +190,21 @@
 			left:23%;
 			height:5%;
 			width: 15%;
+            font-family: "Bangers";
             font-size: 1.5rem;
+			color: #e8a723;
             text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
             background-color: #285238;
             border-radius: 10px;
-            font-family: 'Bangers';
 			visibility: hidden;
 			cursor: pointer;
 		}
 		
-		.HELFEN:mouseover{
+		.HELFEN:hover{
+			color: #285238;
 			background-color: #45a049;
+			border: 2px solid #285238;
 		}
 		
 		

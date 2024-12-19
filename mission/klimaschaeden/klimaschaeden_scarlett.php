@@ -8,6 +8,7 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
@@ -16,7 +17,7 @@
 		}	
 		
 		h1{
-			font-family: verdana;
+			font-family: "open sans";
 			color:#e8a723;
 			font-size: 2rem;
 			padding-top: 0px;
@@ -54,7 +55,7 @@
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1rem;
 			color:#285238;
 			text-align: left;
@@ -74,7 +75,7 @@
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1rem;
 			color:#285238;
 			text-align: left;
@@ -90,12 +91,19 @@
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
 			border-color: white;
             border-radius: 8px;	
 			cursor: pointer;
+		}
+		
+		.LOS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
 		}
 		
 		.PFEIL-LI{
@@ -125,7 +133,7 @@
 		
 		.PUNKT:hover{
 			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: #285238;
+			background-color: brown;
 		}
 		
 		zoom-in-zoom-out{
@@ -158,7 +166,7 @@
 			width: 30%;
 			padding-top:10%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -182,7 +190,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -206,7 +214,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -230,7 +238,7 @@
 			height: auto;
 			width: 40%;
 			padding: 20px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -254,7 +262,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -278,7 +286,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -302,7 +310,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -326,7 +334,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -339,7 +347,7 @@
 		
 		.AMAZONAS{
 			position:absolute;
-			top: 58%;
+			top: 53%;
 			left:33%;
 		}
 		
@@ -350,7 +358,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -374,7 +382,7 @@
 			height:auto;
 			width: 45%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.3rem;
 			color: #285238;
 			text-align: left;
@@ -399,7 +407,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -423,7 +431,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -447,7 +455,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -471,7 +479,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -495,7 +503,7 @@
 			height: auto;
 			width: 35%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -520,7 +528,7 @@
 			width: 30%;
 			padding-top: 5px;
 			padding: 25px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;

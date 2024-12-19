@@ -5,6 +5,7 @@
     <title>Die Superhelden</title>
 	
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 	
 	
@@ -19,6 +20,7 @@
 			font-size: 5rem;
 			color: #e8a723;
 			line-height: 1.1;
+			letter-spacing: 0.05em;
 			}
 		
 		.BILD{
@@ -63,23 +65,24 @@
 		
 		.NAME{
 			position: absolute;
-			top: 12%;
+			top: 8%;
 			left: 50%;
 			font-family: "bangers";
 			color: #e8a723;
-			font-size: 3rem;
+			font-size: 4rem;
+			letter-spacing: 0.05em;
 			text-align: left;
 			}
 		
 		.TITEL{
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			text-align: left;
 			}
 		
 		.TEXT{
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			text-align: justify;
@@ -89,11 +92,12 @@
 		.AUSWAHL{
 			position: absolute;
 			padding: 8px;
-			bottom: 10%;
-			left: 45%;
+			bottom: 7%;
+			right: 23%;
 			font-family: "bangers";
 			font-size: 2rem;
 			color: #e8a723;
+			letter-spacing: 0.05em;
 			border: 2px solid #285238;
 			border-radius: 5px;
 			background-color: #285238;
@@ -273,8 +277,8 @@
 		
 		#buttonSOS{
 			position: absolute;
-			right:5%;
-			top: 5%;	
+			right:20px;
+			top: 20px;	
 			}
 		
 	</style>
@@ -354,10 +358,10 @@
 				<a class=NAME>Golden Knight</a>
 				
 				<div class="TEXTBLOCK">
-					<a class="TITEL">Superkraft:</a><br>
+					<a class="TITEL"><strong>Superkraft:</strong></a><br>
 					<a class="TEXT">Schutzzauber und Fliegen</a>
 					<br><br>
-					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
 					<a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
 				</div>
 				
@@ -372,10 +376,10 @@
 				<a class=NAME>Green Blaze</a>
 				
 				<div class="TEXTBLOCK">				
-					<a class="TITEL">Superkraft:</a><br>
+					<a class="TITEL"><strong>Superkraft:</strong></a><br>
 					<a class="TEXT">Pflanzenkontrolle</a>
 					<br><br>
-					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
 					<a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
 				</div>
 				
@@ -390,10 +394,10 @@
 				<a class=NAME>Thunderbolt</a><br>
 				
 				<div class="TEXTBLOCK">
-					<a class="TITEL">Superkraft:</a><br>
+					<a class="TITEL"><strong>Superkraft:</strong></a><br>
 					<a class="TEXT">Überschallgeschwindigkeit</a>
 					<br><br>
-					<a class="TITEL">Beschreibung:</a>
+					<a class="TITEL"><strong>Beschreibung:</strong></a>
 					<br><a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
 				</div>
 				
@@ -408,10 +412,10 @@
 				<a class=NAME>Cyber Titan</a>
 				
 				<div class="TEXTBLOCK">
-					<a class="TITEL">Superkraft:</a><br>
+					<a class="TITEL"><strong>Superkraft:</strong></a><br>
 					<a class="TEXT">Übermenschliche Stärke und technologische Kontrolle</a>
 					<br><br>
-					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
 					<a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
 				</div>
 				
@@ -426,10 +430,10 @@
 				<a class=NAME>Sonic Shield</a>
 				
 				<div class="TEXTBLOCK">
-					<a class="TITEL">Superkraft:</a><br>
+					<a class="TITEL"><strong>Superkraft:</strong></a><br>
 					<a class="TEXT">Schallwellenmanipulation</a>
 					<br><br>
-					<a class="TITEL">Beschreibung:</a><br>
+					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
 					<a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
 				</div>
 				
