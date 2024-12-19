@@ -12,9 +12,9 @@
     <style>
 
 				
-		.Schriftzug{
+		.SCHRIFTZUG{
 			position: absolute;
-			top: 35%;
+			top: 38%;
 			left: 8%;
 			font-family: "bangers";
 			font-size: 5rem;
@@ -241,7 +241,7 @@
 			visibility: hidden;
 			}	
 		
-		.SICHTBAR {
+		.ZEIGEN {
 			visibility: visible;
 			}
 		
@@ -299,7 +299,7 @@
 	
 	
 
-			<div class="Schriftzug">
+			<div class="SCHRIFTZUG">
 				WÄHLE DEINEN <br/> SUPERHELDEN
 			</div>
 			
@@ -340,10 +340,10 @@
 						<a class=NAME>Scarlet Shade</a>
 						<div class="TEXTBLOCK">
 						<a class="TITEL"><strong>Superkraft:</strong></a><br>
-							<a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
+							<a class="TEXT" style="text-align: left">UnZEIGENkeit und Tarnung</a>
 						<br><br>
 						<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unZEIGEN machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
 					</div>
 					<br><br>
 				
@@ -480,15 +480,15 @@
 				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
 				
 				function ZeigeScarletShade() {
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSCARLETSHADE").classList.add("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
 				}
 				function ScarletShadeAus() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
 				}
 
 
@@ -496,75 +496,75 @@
 				document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
 				
 				function ZeigeGoldenKnight() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.add("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
 				}
 				function GoldenKnightAus() {
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 				}
 
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
 				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
 				
 				function ZeigeGreenBlaze() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.add("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.add("ZEIGEN");
 				}
 				function GreenBlazeAus() {
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 				}
 
 				document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
 				document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
 				
 				function ZeigeThunderBolt() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.add("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
 				}
 				function ThunderBoltAus() {
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 				}
 
 				document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
 				document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
 				
 				function ZeigeCyberTitan() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.add("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
 				}
 				function CyberTitanAus() {
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
 				}
 
 				document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
 				document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
 				
 				function ZeigeSonicShield() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("SICHTBAR");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("SICHTBAR");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("SICHTBAR");
-					document.querySelector(".INFOSONICSHIELD").classList.add("SICHTBAR");
+					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					document.querySelector(".INFOSONICSHIELD").classList.add("ZEIGEN");
 				}
 				function SonicShieldAus() {
-					document.querySelector(".INFOSONICSHIELD").classList.remove("SICHTBAR");
+					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 				}
 
 	</script>

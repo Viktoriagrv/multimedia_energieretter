@@ -14,25 +14,30 @@
 	<style>
 		
 		body {
-            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
             margin: 0;
             background-color: #b9e5ef; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-            color: #333;
         }
-		
-		
-		.KNOPF{
+
+		.BTNLINKS{
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
-			border-color: white;
+			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+		}
+		
+		.BTNLINKS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			
 		}
 		
 		.HERO{
@@ -253,7 +258,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="KNOPF" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -266,7 +271,7 @@
 					
 					Oder lese noch mehr über Windkraft
 					<br><br>
-					<button  class="KNOPF" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
 						
 				</div>						
 		</div>
