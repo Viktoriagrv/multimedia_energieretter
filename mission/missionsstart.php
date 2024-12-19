@@ -8,16 +8,11 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/styles.css">
 
 	<style>
 		
-		.WEG{
-			visibility: hidden;
-			transition-delay: 0s;
-		}
-		
-
 		.WELT{
 			position:absolute;
 			top: 20%;
@@ -60,32 +55,26 @@
 		
 		.HELFEN{
 			position:absolute;
-			bottom: 28%;
+			bottom: 23%;
 			left:23%;
-			height:5%;
-			width: 15%;
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: white;
-            background-color: #285238;
-            border-radius: 10px;
-            font-family: 'Bangers';
-			visibility: visible;
+			height:7%;
+			width: auto;
+			padding: 15px;
+           	font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
 			cursor: pointer;
 		}
 		
-		.HELFEN:mouseover{
+		.HELFEN:hover{
+			color: #285238;
 			background-color: #45a049;
+			border: 2px solid #285238;
 		}
-		
-		
-		.ZEIGEN{
-			transition-property: all;
-			transition-delay: 1.5s;
-			visibility: visible;
-			opacity: 1;
-		}
-		
 	
 		</style>
 
