@@ -341,10 +341,10 @@
 						<a class=NAME>Scarlet Shade</a>
 						<div class="TEXTBLOCK">
 						<a class="TITEL"><strong>Superkraft:</strong></a><br>
-							<a class="TEXT" style="text-align: left">UnZEIGENkeit und Tarnung</a>
+							<a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
 						<br><br>
 						<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unZEIGEN machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
 					</div>
 					<br><br>
 				
