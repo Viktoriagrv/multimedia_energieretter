@@ -572,14 +572,14 @@
 	
 		<div class="SPRECHBLASE">
 			
-			<p>Hallo! Ich bin Scarlett Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die Gefahren des Klimawandels.</p>
+			<p>Hallo! Ich bin Scarlet Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die Gefahren des Klimawandels.</p>
 			
 			<img class="PFEIL-RE" src="../../images/pfeil_rechts.png" alt="Roter Pfeil nach rechts">
 		</div>	
 		
 		<div class="SPRECHBLASEWEITER">
 			
-			<p>Wenn du genug über Klimaschäden gelernt hast, kannst du die Mission starten.</p>
+			<p>Wenn du genug über Klimaschäden gelernt hast, können wir die Mission starten.</p>
 			
 			<img class="PFEIL-LI" src="../../images/pfeil_links.png" alt="Roter Pfeil nach links">
 			
