@@ -232,36 +232,70 @@
 		
 	</div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var infokasten = document.querySelectorAll('.hervorheben');
-            infokasten.forEach(function(el) {
-                el.addEventListener('click', function() {
-                    var imageSrc = el.getAttribute('data-infokasten');
-                    var infobox = document.querySelector('.infokasten');
-                    infobox.querySelector('img').src = '../../images/' + imageSrc + '.jpg';
-                    infobox.style.display = 'block';
-                });
+  <script>
+    // Funtion to close all accordion sections
+    function closeAllAccordions() {
+        document.querySelectorAll('.AKKORDEON details[open]').forEach(detail => {
+            detail.removeAttribute('open');
+        });
+    }
+
+    document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
+
+    function ZeigeSprechblaseWeiter() {
+        document.querySelector(".SPRECHBLASE").classList.add("WEG");
+        document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
+
+        // Akkordeons sichtbar machen
+        document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
+    }
+
+    document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
+
+    function ZeigeSprechblase() {
+        document.querySelector(".SPRECHBLASE").classList.remove("WEG");
+        document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
+
+        // AKKORDEON SCHLIEßen WENN ANDERES AUF CLICK GEÖFFNET WIRD
+        closeAllAccordions();
+    }
+
+    document.querySelectorAll('.AKKORDEON details summary').forEach(summary => {
+        summary.addEventListener('click', closeAllAccordions);
+    });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        var accordeonContents = document.querySelectorAll(".AKKORDEON-INHALT p");
+
+        accordeonContents.forEach(function(content) {
+            content.addEventListener("mouseover", function(event) {
+                var target = event.target;
+                if (target.classList.contains("highlight")) {
+                    // Setze den Hintergrund auf gelb, um das Wort hervorzuheben
+                    target.style.backgroundColor = "yellow";
+                }
             });
-			
-            document.getElementById('fill-sea').addEventListener('click', function() {
-                var extraInfo = document.getElementById('extra-info');
-                extraInfo.style.display = 'block';
-            });
-			
-            document.getElementById('submit-answer').addEventListener('click', function() {
-                var answer = document.querySelector('input[name="quiz-answer"]:checked');
-                var result = document.getElementById('quiz-result');
-                if (!answer) {
-                    result.textContent = 'Bitte wähle eine Antwort aus!';
-                } else if (answer.value === 'Schutz vor Überschwemmungen') {
-                    result.textContent = 'Richtig!';
-                } else {
-                    result.textContent = 'Leider falsch!';
+
+            content.addEventListener("mouseout", function(event) {
+                var target = event.target;
+                if (target.classList.contains("highlight")) {
+                    // Entferne den gelben Hintergrund, wenn die Maus nicht mehr über dem Wort ist
+                    target.style.backgroundColor = "";
                 }
             });
         });
-    </script>
+
+        var infokasten = document.querySelectorAll('.hervorheben');
+        infokasten.forEach(function(el) {
+            el.addEventListener('click', function() {
+                var imageSrc = el.getAttribute('data-infokasten');
+                var infobox = document.querySelector('.infokasten');
+                infobox.querySelector('img').src = '../../images/' + imageSrc + '.jpg';
+                infobox.style.display = 'block';
+            });
+        });
+    });
+</script>
 </body>
 	
 </html>
