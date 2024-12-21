@@ -55,7 +55,7 @@
 		
 		.HELFEN{
 			position:absolute;
-			bottom: 23%;
+			bottom:20%;
 			left:23%;
 			height:7%;
 			width: auto;

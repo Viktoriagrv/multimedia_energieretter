@@ -15,7 +15,7 @@
 		
 		body {
             margin: 0;
-            background-color: #b9e5ef; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
         }
 
 		.BTNLINKS{
@@ -42,9 +42,9 @@
 		
 		.HERO{
 			position: absolute;
-			bottom:5%;
-			left: 5%;
-			height:30%;
+			bottom: 10%;
+			right:5%;
+			height:35%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
 			animation-duration: 2s;							/* Dauer (n) */
@@ -73,7 +73,7 @@
 		
 		.HEADER{
 			position: absolute;
-			top: 15%;
+			top: 18%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
@@ -82,16 +82,16 @@
 			
 		.WINDRAD{
 			position:absolute;
-			bottom:8%;
-			right: 5%;
+			bottom:10%;
+			left: 3%;
 			height:40%;
 			width:auto;
 			}
 		
 		.INFOBLASE{
 			position: absolute;
-			top: 25%;
-			right:10%;
+			top: 20%;
+			left: 38%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -100,9 +100,9 @@
 		
 		.INFOTEXT{
 			position: absolute;
-			top: 34%;
-			right:15%;
-			font-family: verdana;
+			top: 28%;
+			left: 42%;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #e8a723;
 			text-align: left;
@@ -111,24 +111,25 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			top: 23%;
-			left: 8%;
-			font-family: verdana;
+			right:5%;
+			top: 13%;
+			width:39%;
+			height: auto;
+			font-family: "open sans";
 			font-size: 2rem;
 			color: #285238;
 			text-align: left;
-			width: 60%;
-			height: auto;
 			visibility: visible;
 		}
 		
 		.ANTWORTEN{
 			position: absolute;
-			left: 22%;
+			left: 18%;
+			
 		}
 		
 		.TEXT{
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color:#285238;
 			text-align:left;
@@ -138,7 +139,7 @@
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
-            font-size: 1.5rem;
+            font-size: 2rem;
 			text-decoration: none;
 			letter-spacing: 0.05em;
             color: #e8a723;
@@ -158,8 +159,8 @@
 		.ABSCHLUSSTEXT{
 			position: absolute;
 			top: 23%;
-			left: 8%;
-			font-family: verdana;
+			right: 8%;
+			font-family: "open sans";
 			font-size: 2rem;
 			color: #285238;
 			text-align: left;
@@ -239,21 +240,20 @@
 			
 				
 			<div class="ANTWORTEN">
-				<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="WUESTE"> Steppe	
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
-					<br><br>
-				<button class="PRUEFEN">Überprüfen</button>
-			</div>	
-		
+					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Steppe	
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+						<br><br>
+					<button class="PRUEFEN">Überprüfen</button>	
+			</div>
 		</div>
 		
 		<div class="ABSCHLUSSTEXT">

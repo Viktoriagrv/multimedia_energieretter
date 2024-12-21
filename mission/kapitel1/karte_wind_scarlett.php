@@ -11,6 +11,62 @@
 
 	<style>
 		
+		.INFOBOX {
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 15%;
+			left: 25%;
+			height:60%;
+			width: 50%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility:visible;
+			z-index:5;
+			}
+		
+		.BILDINFOBOX{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: visible;
+			}
+		
+		.TEXT-START{
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			height: auto;
+			width: 48%;
+			font-family: "open sans";
+			color: #285238;
+			font-size: 1.7rem;
+			text-align: left;
+		}
+		
+		.KARTE-ANSEHEN{
+			position: absolute;
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 12%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			}
+		
+		.KARTE-ANSEHEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
 		
 		.PLATZIERUNG{
 			position: absolute;
@@ -22,59 +78,59 @@
 		
 		.WELTKARTE{
 			position:absolute;
-			top:6%;
-			right:0%;
+			top:5%;
 			width:100%;
 			height:auto;
-			overflow: hidden;
 			z-index:0;
 		}
 	
 		.WINDRAD1{
 			position:absolute;
 			bottom: 2%;
-			left: 19%;
+			left: 18%;
 			height:20%;
 			width:auto;
 			z-index: 4;
 			cursor: pointer;
+			visibility: hidden;
 		}
 		
 		.WINDRAD2{
 			position:absolute;
 			bottom:2%;
-			left: 29%;
+			left: 36%;
 			height:20%;
 			width:auto;
 			z-index: 4;
 			cursor: pointer;
+			visibility: hidden;
 		}
 		
 		.WINDRAD3{
 			position:absolute;
 			bottom:2%;
-			left: 39%;
+			left: 48%;
 			height:20%;
 			width:auto;
 			z-index: 4;
 			cursor: pointer;
+			visibility: hidden;
 		}
 		
 		.HERO{
 			position:absolute;
 			bottom:4%;
-			left: 1%;
-			height:30%;
-			visibility: visible;
+			left: 2%;
+			height:35%;
+			visibility: hidden;
 		}
 		
-		.SPRECHBLASE {
+		.SPRECHBLASE1 {
 			position: absolute;
-			padding: 30px;
-			top:46%;
-			left:11%;
-			height:27%;
-			width: 14%;
+			bottom:29%;
+			left:14%;
+			height:auto;
+			width: 10%;
 			padding-top: 15px;
 			padding-left: 25px;
 			padding-right: 25px;
@@ -82,11 +138,51 @@
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
-			font-size: 1.5rem;
+			font-family: "open sans";
+			font-size: 1.3rem;
 			color:#285238;
 			text-align: left;
-			visibility: visible;
+			visibility: hidden;
+		}
+		
+		.SPRECHBLASE2 {
+			position: absolute;
+			bottom:29%;
+			left:14%;
+			height:auto;
+			width: 10%;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: "open sans";
+			font-size: 1.3rem;
+			color:#285238;
+			text-align: left;
+			visibility: hidden;
+		}
+		
+		.SPRECHBLASE3 {
+			position: absolute;
+			bottom:29%;
+			left:14%;
+			height:auto;
+			width: 10%;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: "open sans";
+			font-size: 1.3rem;
+			color:#285238;
+			text-align: left;
+			visibility: hidden;
 		}
 		
 		.DROP-ELEMENT {
@@ -128,10 +224,10 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
-			text-align: center;
+			text-align: left;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -149,7 +245,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -196,9 +292,10 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
+			text-align: left;
 			background-color: white;
 			border-radius: 20px 20px 20px 20px;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -216,7 +313,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -246,7 +343,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -266,7 +363,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			background-color: white;
@@ -306,7 +403,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -326,7 +423,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -356,7 +453,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -376,7 +473,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -406,7 +503,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -426,7 +523,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -456,7 +553,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -476,7 +573,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -506,7 +603,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			background-color: white;
@@ -526,7 +623,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			background-color: white;
@@ -566,7 +663,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size:1.5rem;
 			background-color: white;
@@ -586,7 +683,7 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			font-size: 1.3rem;
 			background-color: white;
@@ -606,9 +703,10 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			padding-bottom: 15px;
-			font-family: verdana;
+			font-family: "open sans";
 			color: brown;
 			font-size: 2rem;
+			text-align: center;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
@@ -623,7 +721,7 @@
 			left:13%;
 			height:20%;
 			width: 10%;
-			font-family: verdana;
+			font-family: "open sans";
 			color: #285238;
 			text-align: left;
 			border-radius: 20px 20px 20px 0px;
@@ -633,33 +731,83 @@
 			visibility: hidden;
 		}
 		
-		.FEUERWERK{
+		.FEUERWERK-LINKS{
 			position: absolute;
 			top:20%;
-			left:25%;
+			left:5%;
 			height: auto;
 			width:30%;
 			visibility: hidden;
 			z-index: 4;
 		}
 		
+		.FEUERWERK-RECHTS{
+			position: absolute;
+			top:20%;
+			right:5%;
+			height: auto;
+			width:30%;
+			visibility: hidden;
+			z-index: 4;
+		}
+		
+		.INFOBOX-WEITER {
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 15%;
+			left: 25%;
+			height:60%;
+			width: 50%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility:hidden;
+			z-index:5;
+			}
+		
+		.BILDINFOBOX-ENDE{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: hidden;
+			}
+		
+		.TEXT-ENDE{
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			height: auto;
+			width: 48%;
+			font-family: "open sans";
+			color: #285238;
+			font-size: 2rem;
+			text-align: left;
+		}
+		
 		.BTNWEITER{
 			position: absolute;
-			bottom: 5%;
-			right: 5%;
-            padding: 20px 30px;
-            font-family: 'Bangers';
-            font-size: 1.5rem;
-			text-decoration: none;
-            color: white;
-            background-color: #285238;
-			border: 2px;
-			border-color: white;
-            border-radius: 8px;	
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 12%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
 			cursor: pointer;
-			visibility: hidden;
-			z-index: 5;
-		}
+			}
+		
+		.BTNWEITER:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+		
 		
 		.ZEIGEN{
 			visibility: visible;
@@ -671,8 +819,9 @@
 		
 		.CODE{
 			font-family: "bangers";
-			font-size: 1.5rem;
+			font-size: 3rem;
 			color: #285238;
+			text-align: center;
 		}
 		
 		
@@ -685,6 +834,17 @@
 	<?php include '../../include/nav.php'; ?>
 	
     <main>
+		
+		<div class="INFOBOX">
+			
+			<img class="BILDINFOBOX" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<div class="TEXT-START">
+				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
+				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
+			</div>
+								
+			<button class="KARTE-ANSEHEN">Windräder platzieren</button>
+		</div>
 		
 		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 		
@@ -706,8 +866,16 @@
 		
 		
 			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
-			<div class="SPRECHBLASE">
-				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte. Wenn Du über die Punkte gehst, bekommst du eine Information zu der Region.
+			<div class="SPRECHBLASE1">
+				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
+			</div>
+		
+			<div class="SPRECHBLASE2">
+				Super! Das erste Windrad hast du richtig platziert.
+			</div>
+		
+			<div class="SPRECHBLASE3">
+				Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
 			</div>
 	
 		
@@ -793,25 +961,58 @@
 			Das war leider nicht richtig.
 		</div>
 		
-		<div>
-			<div class="HURRA">
-				Fantastische Arbeit! Das hast du toll gemacht!<br>
-				Als Belohnung bekommst du von mir einen geheimen Code.
-				<div class="CODE">xdf-338</div>
-				Schreibe ihn dir auf und bewahre ihn gut!
-			</div>
-
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
-				
+		
 			<div>
-				<img class="FEUERWERK" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
 			</div>
+			<div>
+				<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+			</div>
+		
+		
+		<div class="INFOBOX-WEITER">
+			
+			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			
+			<div class="TEXT-ENDE">
+				<div>
+					Fantastische Arbeit! Das hast du toll gemacht!<br>
+					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
+					<div class="CODE">xdf-338</div><br>
+					Schreibe ihn dir auf und bewahre ihn gut!
+				</div>
+			</div>
+								
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
 	
 			
 	<script>
+		
+		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", HeroWeg);
+			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", HeroDa);
+
+			function HeroWeg(){
+				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+			}
+			function HeroDa(){
+				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+			}
+		
+		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
+		
+			function ZeigeWeltkarte(){
+				document.querySelector(".INFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".HERO").classList.add("ZEIGEN");
+				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
+				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
+				document.querySelector(".WINDRAD2").classList.add("ZEIGEN");
+				document.querySelector(".WINDRAD3").classList.add("ZEIGEN");
+			}
+		
 		
 		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
 		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
@@ -859,9 +1060,7 @@
 				document.querySelector('#DROPASIEN').addEventListener('mouseover',ZeigeAsien);   
 				document.querySelector('#DROPASIEN').addEventListener('mouseout',AsienAus);
 		
-				document.querySelector('.WINDRADASIEN').addEventListener('mouseover',ZeigeAsienXL);   	
-				document.querySelector('.WINDRADASIEN').addEventListener('mouseout',AsienXLAus);
-		
+				
 		
 				function ZeigeAsien() {
 					document.querySelector(".ASIEN").classList.add("ZEIGEN");
@@ -870,12 +1069,8 @@
 					document.querySelector(".ASIEN").classList.remove("ZEIGEN");
 				}
 		
-				function ZeigeAsienXL() {
-					document.querySelector(".ASIENXL").classList.add("ZEIGEN");
-				}
-				function AsienXLAus() {
-					document.querySelector(".ASIENXL").classList.remove("ZEIGEN");
-				}
+				
+				
 		
 				document.querySelector('#DROPSAHARA').addEventListener('mouseover',ZeigeSahara);   
 				document.querySelector('#DROPSAHARA').addEventListener('mouseout',SaharaAus);
@@ -1005,7 +1200,7 @@
 		function ElementAblegenAsien() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
-			document.querySelector(".ASIENXL").classList.add("ZEIGEN");
+			
 			document.querySelector('#DROPASIEN').removeEventListener('dragover',AblegenErlauben);
 			abgelegteElemente++;
 			WindradZeigenAsien();
@@ -1041,7 +1236,30 @@
 			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
 		}
 		
-			// zählt alle abgelegte Elemente und startet die Funktion AlleAbgelegt, wenn Ergebnis 3 ist
+			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion
+		
+		function AbgelegteElementeZaehlen(){
+			if (abgelegteElemente === 1){
+				EinsAbgelegt();
+				}																							
+			}
+		
+		function EinsAbgelegt(){
+			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
+			document.querySelector(".SPRECHBLASE2").classList.add("ZEIGEN");
+		}
+		
+		function AbgelegteElementeZaehlen(){
+			if (abgelegteElemente === 2){
+				ZweiAbgelegt();
+				}																							
+			}
+		
+		function ZweiAbgelegt(){
+			document.querySelector(".SPRECHBLASE2").classList.remove("ZEIGEN");
+			document.querySelector(".SPRECHBLASE3").classList.add("ZEIGEN");
+		}
+		
 		function AbgelegteElementeZaehlen(){
 			if (abgelegteElemente === 3){
 				AlleAbgelegt();
@@ -1049,13 +1267,24 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SPRECHBLASE").classList.add("WEG");
-			document.querySelector(".HURRA").classList.add("ZEIGEN");
-			document.querySelector(".FEUERWERK").classList.add("ZEIGEN");
-			document.querySelector(".BTNWEITER").classList.add("ZEIGEN");
+			document.querySelector(".HERO").classList.remove("ZEIGEN");
+			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
+			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
+			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
 		
+		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
+			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
 
+			function HeroWegEnde(){
+				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
+			}
+			function HeroDaEnde(){
+				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			}
+		
 	</script>
 	
 </body>
