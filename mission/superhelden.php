@@ -158,7 +158,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
