@@ -158,11 +158,27 @@
             width: auto;
         }
 		
-		.VIDEO
-		  }
+			.BUTTONBILDER {
+			position: absolute;
+			top: 20%;
+			right: 15%;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.BUTTON {
+			height: 100px; /* Passe die Größe nach Bedarf an */
+			width: auto;
+			cursor: pointer;
+			transition: transform 0.2s ease;
+		}
+
+		.BUTTON:hover {
+			transform: scale(1.1); /* Leichter Vergrößerungseffekt beim Hover */
+		}
 		
-		.LUPE
- }
 		/* ÜBERGEORDNETES AKKORDEON */
         .AKKORDEON {
             position: absolute;
@@ -261,6 +277,12 @@
 
     </div>
 	
+	    <!-- Bilder als Buttons -->
+    <div class="BUTTON-IMAGES">
+        <a href="https://www.ardmediathek.de/video/die-maus/wie-viel-energie-erzeugt-ein-windrad-bei-einer-umdrehung/das-erste/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYjc1MWY5ZjQtY2Y3My00NDRmLTg1MWYtYmMwNDgxMjJiZWIw?isChildContent=" target="_blank">
+            <img src="../../images/video.png" alt="Button 1" class="BUTTON">
+        </a>
+    </div>
 
     <div class="AKKORDEON">
         <details>
@@ -403,6 +425,4 @@
 
 </body>
 </html>
-
-
 
