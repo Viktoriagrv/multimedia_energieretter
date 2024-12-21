@@ -3,7 +3,7 @@ html, body {
     margin: 0;
     padding: 0;
    	heigth: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
-    font-family: verdana;
+    font-family: "open sans";
     display: flex;
     flex-direction: column;
     overflow: hidden; /* Verhindert das Scrollen der Seite */
@@ -42,7 +42,7 @@ main {
     margin: 20px;
     width: 100%; /* Stellt sicher, dass der Abschnitt die gesamte Breite einnimmt */
     text-align: center;
-    font-family: verdana;
+    font-family: "open sans";
     border-radius: 5px; /* Optional: Runde Ecken für den Abschnitt */
 }
 
@@ -109,7 +109,7 @@ main {
 }
 
 .UNTERUEBERSCHRIFT{
-	font-family: verdana;
+	font-family: "open sans";
 	font-size: 1.5rem;
 	color: #285238;
 }

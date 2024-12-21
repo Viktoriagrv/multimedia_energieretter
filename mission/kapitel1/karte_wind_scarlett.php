@@ -6,6 +6,7 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
@@ -92,13 +93,13 @@
 			height: 30px;
 			width: 30px;
 			border-radius: 40%;
-			background-color: brown;
+			background-color: #e8a723;
 			z-index: 3;
 		}
 		
 		.DROP-ELEMENT:hover{
 			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: #285238;
+			background-color: brown;
 		}
 		
 		.DRAG-ELEMENT {

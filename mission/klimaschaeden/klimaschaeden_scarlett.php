@@ -8,6 +8,7 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
@@ -16,7 +17,7 @@
 		}	
 		
 		h1{
-			font-family: verdana;
+			font-family: "open sans";
 			color:#e8a723;
 			font-size: 2rem;
 			padding-top: 0px;
@@ -37,6 +38,10 @@
 			visibility: visible;
 			}
 		
+		.HERO:hover{
+			visibility: hidden;
+		}
+		
 		.SPRECHBLASE {
 			position: absolute;
 			padding-top: 5px;
@@ -50,7 +55,7 @@
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1rem;
 			color:#285238;
 			text-align: left;
@@ -70,7 +75,7 @@
 			border-radius: 20px 20px 20px 0px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1rem;
 			color:#285238;
 			text-align: left;
@@ -86,12 +91,19 @@
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
 			border-color: white;
             border-radius: 8px;	
 			cursor: pointer;
+		}
+		
+		.LOS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
 		}
 		
 		.PFEIL-LI{
@@ -115,13 +127,13 @@
 			height: 25px;
 			width: 25px;
 			border-radius: 40%;
-			background-color: brown;
+			background-color: #e8a723;
 			z-index: 3;
 		}
 		
 		.PUNKT:hover{
 			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: #285238;
+			background-color: brown;
 		}
 		
 		zoom-in-zoom-out{
@@ -154,7 +166,7 @@
 			width: 30%;
 			padding-top:10%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -178,7 +190,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -202,7 +214,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -226,7 +238,7 @@
 			height: auto;
 			width: 40%;
 			padding: 20px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -250,7 +262,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -274,7 +286,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -298,7 +310,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -322,7 +334,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -335,7 +347,7 @@
 		
 		.AMAZONAS{
 			position:absolute;
-			top: 58%;
+			top: 53%;
 			left:33%;
 		}
 		
@@ -346,7 +358,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -370,7 +382,7 @@
 			height:auto;
 			width: 45%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.3rem;
 			color: #285238;
 			text-align: left;
@@ -395,7 +407,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -419,7 +431,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -443,7 +455,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -467,7 +479,7 @@
 			height: auto;
 			width: 30%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -491,7 +503,7 @@
 			height: auto;
 			width: 35%;
 			padding: 30px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -516,7 +528,7 @@
 			width: 30%;
 			padding-top: 5px;
 			padding: 25px;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
@@ -560,14 +572,14 @@
 	
 		<div class="SPRECHBLASE">
 			
-			<p>Hallo! Ich bin Scarlett Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die Gefahren des Klimawandels.</p>
+			<p>Hallo! Ich bin Scarlet Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.Gehe über die roten Punkte und erfahre mehr über die Gefahren des Klimawandels.</p>
 			
 			<img class="PFEIL-RE" src="../../images/pfeil_rechts.png" alt="Roter Pfeil nach rechts">
 		</div>	
 		
 		<div class="SPRECHBLASEWEITER">
 			
-			<p>Wenn du genug über Klimaschäden gelernt hast, kannst du die Mission starten.</p>
+			<p>Wenn du genug über Klimaschäden gelernt hast, können wir die Mission starten.</p>
 			
 			<img class="PFEIL-LI" src="../../images/pfeil_links.png" alt="Roter Pfeil nach links">
 			
@@ -697,16 +709,7 @@
 	
 	<script>
 	
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
 		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".HERO").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".HERO").classList.remove("WEG");
-		}
 		
 		let angeseheneInfos = 0;
 		

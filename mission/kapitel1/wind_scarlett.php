@@ -8,30 +8,36 @@
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
 		
 		body {
-            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
             margin: 0;
             background-color: #b9e5ef; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-            color: #333;
         }
-		
-		
-		.KNOPF{
+
+		.BTNLINKS{
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
-			border-color: white;
+			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+		}
+		
+		.BTNLINKS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			
 		}
 		
 		.HERO{
@@ -49,6 +55,10 @@
 			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;
 			visibility: visible;
+		}
+		
+		.HERO:hover{
+			visibility: hidden;
 		}
 		
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
@@ -130,7 +140,8 @@
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
 			border-color: white;
@@ -138,10 +149,16 @@
 			cursor: pointer;
 		}
 		
+		.PRUEFEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+		
 		.ABSCHLUSSTEXT{
 			position: absolute;
-			right: 8%;
-			top: 20%;
+			top: 23%;
+			left: 8%;
 			font-family: verdana;
 			font-size: 2rem;
 			color: #285238;
@@ -217,7 +234,7 @@
 		<div class="TEXTBLOCK">
 			<p>
 				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke DREI geeignete Standorte an:
+				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
@@ -241,7 +258,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="KNOPF" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -254,7 +271,7 @@
 					
 					Oder lese noch mehr über Windkraft
 					<br><br>
-					<button  class="KNOPF" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
 						
 				</div>						
 		</div>
@@ -264,19 +281,7 @@
 	</main>
 
     <script>	
-		
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
-		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".HERO").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".HERO").classList.remove("WEG");
-		}
-		
-		
+				
 		document.querySelector(".PRUEFEN").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
