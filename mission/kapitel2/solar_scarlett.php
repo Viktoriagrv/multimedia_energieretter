@@ -2,59 +2,89 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Kapitel Sonnenenergie</title>
+    <title>KapitelSolarenergie</title>
 
     
 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
 		
 		body {
-            font-family: Verdana, sans-serif; /* VERDANA FÜR LEICHTE LESBARKEIT */
             margin: 0;
             background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-            color: #333;
         }
-		
-		.KNOPF{
+
+		.BTNLINKS{
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
             font-size: 1.5rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
-			border-color: white;
+			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
 		}
 		
+		.BTNLINKS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			
+		}
+		
 		.HERO{
 			position: absolute;
-			bottom: 20%;
-			right:10%;
-			height:30%;
+			bottom: 10%;
+			right:5%;
+			height:35%;
 			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: visible;
 		}
+		
+		.HERO:hover{
+			visibility: hidden;
+		}
+		
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
+		
 		
 		.HEADER{
 			position: absolute;
-			top: 12%;
+			top: 18%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
 			font-size: 5rem;
 			}
 			
-		.WINDRAD{
+		.SOLARPANEEL{
 			position:absolute;
-			top:38%;
+			bottom:7%;
 			left: 3%;
-			height:40%;
+			height:60%;
 			width:auto;
 			}
 		
@@ -72,7 +102,7 @@
 			position: absolute;
 			top: 28%;
 			left: 42%;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #e8a723;
 			text-align: left;
@@ -81,19 +111,25 @@
 		
 		.TEXTBLOCK{
 			position: absolute;
-			right: 8%;
-			top: 15%;
-			font-family: verdana;
-			font-size: 2rem;
-			color: #e8a723;
-			text-align: left;
-			width: 32%;
+			right:5%;
+			top: 13%;
+			width:39%;
 			height: auto;
+			font-family: "open sans";
+			font-size: 2rem;
+			color: #285238;
+			text-align: left;
 			visibility: visible;
 		}
 		
+		.ANTWORTEN{
+			position: absolute;
+			left: 18%;
+			
+		}
+		
 		.TEXT{
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 1.5rem;
 			color:#285238;
 			text-align:left;
@@ -103,9 +139,10 @@
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
-            font-size: 1.5rem;
+            font-size: 2rem;
 			text-decoration: none;
-            color: white;
+			letter-spacing: 0.05em;
+            color: #e8a723;
             background-color: #285238;
 			border: 2px;
 			border-color: white;
@@ -113,13 +150,19 @@
 			cursor: pointer;
 		}
 		
+		.PRUEFEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+		
 		.ABSCHLUSSTEXT{
 			position: absolute;
+			top: 23%;
 			right: 8%;
-			top: 15%;
-			font-family: verdana;
+			font-family: "open sans";
 			font-size: 2rem;
-			color: #e8a723;
+			color: #285238;
 			text-align: left;
 			width: 32%;
 			height: auto;
@@ -141,6 +184,7 @@
 		}
 		
 		.WEG{
+			
 			visibility: hidden;
 		}
 		
@@ -174,47 +218,47 @@
 			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
 		</video>-->
 	
-		
+	
     <main>
 		
 		<div class="HEADER">Solaranlagen</div>
-		<img class="WINDRAD" src="../../images/Solarenergie.png" alt="Landschaft mit Solarmodulen">
+		<img class="SOLARPANEEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
 			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'">
 				Erfahre mehr <br>
-				über die Kraft der Sonne!
+				über Solarenergie!
 			</p>
 		</div>
 		
 		<div class="TEXTBLOCK">
 			<p>
-				Windkraftanlagen sind das und das und benötigen das und das, um effizient arbeiten zu können. Welche drei Standorte eignen sich besonders für den Bau von Windparks?
+				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
+				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
 			<div class="ANTWORTEN">
-				<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüsten	
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
-					<br>
-				<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
-					<br><br>
-				<button class="PRUEFEN">Überprüfen</button>
-			</div>	
-		
+					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Steppe	
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
+						<br>
+					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+						<br><br>
+					<button class="PRUEFEN">Überprüfen</button>	
+			</div>
 		</div>
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="KNOPF" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -225,17 +269,19 @@
 					Das war leider noch nicht richtig. Versuche es noch einmal.
 					<br><br>
 					
-					Oder lese noch mehr über Windkraft
+					Oder lese noch mehr über Solarenergie
 					<br><br>
-					<button  class="KNOPF" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'">Zum Retterwissen Solarenergie</button>
 						
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">		
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		
 	</main>
 
     <script>	
+				
 		document.querySelector(".PRUEFEN").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
@@ -259,6 +305,8 @@
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK").classList.add("WEG");
 			document.querySelector(".ABSCHLUSSTEXT").classList.add("ZEIGEN");
+			document.querySelector(".HERO").style.animationPlayState = "running";
+			
 		}
 		
 		function ZeigeFehlermeldung (){
@@ -273,14 +321,11 @@
         			checkbox.checked = false;                                           // Zustand auf "nicht ausgewählt" setzen (Programmiert mit ChatGPT)
     		});
 		}
-					
-		
 		
 	</script>
 	
-    <?php include '../../include/footer.php'; ?>
+    
     
     
 </body>
 </html>
-
