@@ -46,6 +46,7 @@
 			left: 5%;
 			height:70%;
 			width: auto;
+			visibility: visible;
 			}
 		
 		.TEXT{
@@ -572,14 +573,26 @@
 	
 	<script>
 		
+		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", BildInfoboxWeg);
+			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", BildInfoboxDa);
+
+			function BildInfoboxWeg(){
+				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+			}
+			function BildInfoboxDa(){
+				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+			}
+		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX").classList.add("WEG");
 				document.querySelector(".HERO").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE").classList.add("ZEIGEN");
 				document.querySelector(".LOS").classList.add("ZEIGEN");
 			}
+		
 		
 		document.querySelector(".HERO").addEventListener("mouseover", HeroWeg);
 			document.querySelector(".HERO").addEventListener("mouseout", HeroDa);
