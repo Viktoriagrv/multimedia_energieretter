@@ -79,6 +79,31 @@
 			background-color: #45a049;
 			border: 2px solid #285238;
 		}
+		
+		.FEHLERMELDUNG{
+			position: absolute;
+			top: 45%;
+			left: 40%;
+			height:10%;
+			width: 15%;
+			padding-top: 15px;
+			padding-left: 25px;
+			padding-right: 25px;
+			padding-bottom: 15px;
+			font-family: "open sans";
+			color: brown;
+			font-size: 2rem;
+			text-align: center;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
         
     </style>
 </head>
@@ -111,7 +136,13 @@
 				<button class="EINGEBEN">Weiter</button>		
 			</div>
                 
-        
+        <div class="FEHLERMELDUNG">
+			<button id="SCHLIESSEN">&times;</button>
+			<div>Das war leider nicht der richtig Code.<br><br>
+				Bist du dir sicher, dass du ihn korrekt eingeben hast? <br><br>
+				Versuche es noch einmal.
+			</div>
+		</div>
     </main>
 
     <script>
@@ -120,15 +151,61 @@
 		document.querySelector(".EINGEBEN").addEventListener('click',EingabeAuswerten);
 		
 		function EingabeAuswerten() {														// 		Funktion mit Verzweigung
-			if (document.querySelector('input').value.toLowerCase() == 'xdf-338') {			//Überprüfung der Eingabe
-				window.location.href = "kapitel2/solar_scarlett.php";															// Ausgabe bei positivem Ergebnis
+			if (document.querySelector('input').value.toLowerCase() == 'xdf-338'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_scarlet.php";															// Ausgabe bei positivem Ergebnis
 				}
+			if(document.querySelector('input').value.toLowerCase() == "sdl-204"){
+				window.location.href = "kapitel3/wasser_scarlet.php";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == 'XXX-001'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_knight.php";															// Ausgabe bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "XXX-0002"){
+				window.location.href = "kapitel3/wasser_knight.php";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == 'XXX-0003'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_blaze.php";															// Ausgabe bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "XXX-0004"){
+				window.location.href = "kapitel3/wasser_blaze.php";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == 'XXX-0005'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_thunder.php";															// Ausgabe bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "XXX-0006"){
+				window.location.href = "kapitel3/wasser_thunder.php";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == 'XXX-0007'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_titan.php";															// Ausgabe bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "XXX-0008"){
+				window.location.href = "kapitel3/wasser_titan.php";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == 'XXX-0009'){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_sonic.php";															// Ausgabe bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "XXX-009"){
+				window.location.href = "kapitel3/wasser_sonic.php";
+			}
 			else {
-				alert('Der Code ist leider nicht richtig.');															// Ausgabe bei negativem Ergebnis
+				ZeigeFehlermeldung();															// Ausgabe bei negativem Ergebnis
 			}
 		}
+		
+		function ZeigeFehlermeldung(){
+			document.querySelector(".FEHLERMELDUNG").classList.add(".ZEIGEN");
+		}
 	
-        
+        document.querySelector("#SCHLIESSEN").addEventListener("click",FehlermeldungAus);
+		
+		function FehlermeldungAus(){
+			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+		}
     </script>
 		
 </body>

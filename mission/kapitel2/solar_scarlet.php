@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Kapitel Windenergie</title>
+    <title>Kapitel Solarenergie</title>
 
     
 
@@ -80,11 +80,11 @@
 			font-size: 5rem;
 			}
 			
-		.WINDRAD{
+		.SOLARPANEL{
 			position:absolute;
-			bottom:10%;
+			bottom:7%;
 			left: 3%;
-			height:40%;
+			height:60%;
 			width:auto;
 			}
 		
@@ -124,7 +124,7 @@
 		
 		.ANTWORTEN{
 			position: absolute;
-			left: 18%;
+			left: 15%;
 			
 		}
 		
@@ -194,8 +194,8 @@
 		
 		#ZU{
 			position:absolute;
-			top: 15px;
-			right: 15px;
+			top: 20px;
+			right: 20px;
 		}
 		
 		.CHECKBOX{
@@ -212,45 +212,37 @@
 	
 	<?php include '../../include/nav.php'; ?>
 	
-	 <!-- Hintergrundvideo 
-		<video autoplay muted loop id="backgroundVideo">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-		</video>-->
-	
-	
     <main>
 		
-		<div class="HEADER">Windkraftanlagen</div>
-		<img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+		<div class="HEADER">Solaranlagen</div>
+		<img class="SOLARPANEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">
 				Erfahre mehr <br>
-				über Windkraft!
+				über Solarenergie!
 			</p>
 		</div>
 		
 		<div class="TEXTBLOCK">
 			<p>
-				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
+				Solaranlagen brauchen Orte, an denen viel Sonnenlicht vorhanden ist. Besonders wichtig ist, dass sie möglichst lange und direkt von der Sonne beschienen werden. Außerdem sollten diese Orte flach oder leicht geneigt sein, damit die Solarpanels optimal ausgerichtet werden können. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
 			<div class="ANTWORTEN">
 					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüsten
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+					<input class="CHECKBOX" type="checkbox" id="FELDER"> Offene Felder
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="STEPPE"> Steppe	
+					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+					<input class="CHECKBOX" type="checkbox" id="DAECHER"> Dächer von Gebäuden	
 						<br><br>
 					<button class="PRUEFEN">Überprüfen</button>	
 			</div>
@@ -258,7 +250,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_scarlet.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -270,14 +262,14 @@
 					Das war leider nicht richtig. Versuche es noch einmal.
 					<br><br>
 					
-					Oder lese noch mehr über Windkraft:
+					Oder lese noch mehr über Solarenergie:
 					<br><br>
-					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">Zum Retterwissen Solarenergie</button>
 						
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlet Shade">
 		
 	</main>
 
@@ -287,11 +279,11 @@
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
 		function AuswahlAuswerten(){
-			if ((document.querySelector ("#KUESTE").checked &&		
-				document.querySelector ("#BERGE").checked &&
-				document.querySelector ("#STEPPE").checked) &&
-				(!document.querySelector ("#TAL").checked &&
-				!document.querySelector ("#WALD").checked &&
+			if ((document.querySelector ("#WUESTE").checked &&		
+				document.querySelector ("#FELDER").checked &&
+				document.querySelector ("#DAECHER").checked) &&
+				(!document.querySelector ("#KUESTE").checked &&
+				!document.querySelector ("#BERGE").checked &&
 				!document.querySelector ("#SUMPF").checked)
 				)		
 				
@@ -330,4 +322,3 @@
     
 </body>
 </html>
-

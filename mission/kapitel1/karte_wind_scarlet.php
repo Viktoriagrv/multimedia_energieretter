@@ -871,7 +871,7 @@
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
-			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="SPRECHBLASE1">
 				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -963,7 +963,7 @@
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlet.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
@@ -994,14 +994,14 @@
 			}
 		
 		
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
+		document.querySelector(".HERO").addEventListener("mouseover",ScarletUnsichtbar);
+		document.querySelector(".HERO").addEventListener("mouseout",ScarletSichtbar);
 		
-		function ScarlettUnsichtbar(){
+		function ScarletUnsichtbar(){
 			document.querySelector(".HERO").classList.add("WEG");
 		}
 		
-		function ScarlettSichtbar(){
+		function ScarletSichtbar(){
 			document.querySelector(".HERO").classList.remove("WEG");
 		}
 				

@@ -26,7 +26,6 @@
 		}
 		
 		.INFOBOX {
-			flex-direction: row;
 			position: absolute;
 			padding: 30px;
 			top: 15%;
@@ -37,16 +36,27 @@
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility:visible;
-			z-index:5;
+			z-index:4;
 			}
 		
 		.BILDINFOBOX{
 			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
+			bottom:12%;
+			left: 10%;
+			height:75%;
 			width: auto;
+			transform: rotateY(180deg);
 			visibility: visible;
+			}
+		
+		.BLUMEN-INFOBOX{
+			position: absolute;
+			bottom:0%;
+			left: 3%;
+			height:50%;
+			width: auto;
+			visibility:hidden;
+			z-index:5;
 			}
 		
 		.TEXT{
@@ -94,9 +104,17 @@
 			bottom:4%;
 			left: 2%;
 			height:35%;
-			background-color: transparent;
-			border:5px;
-			border-color: transparent;
+			width:auto;
+			transform: rotateY(180deg);
+			visibility: hidden;		
+		}
+		
+		.BLUMEN{
+			position:absolute;
+			bottom:0%;
+			left: 0%;
+			height:23%;
+			width:auto;
 			visibility: hidden;		
 		}
 				
@@ -447,6 +465,7 @@
 		<div class="INFOBOX">
 			
 			<img class="BILDINFOBOX" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BLUMEN-INFOBOX" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 			
 			<div class="TEXT">
 				Hallo! <br>
@@ -458,10 +477,11 @@
 			<button class="KARTE-ANSEHEN">Karte ansehen</button>
 		</div>
 		
-		<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
+		
 		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
 		<img class="HERO" src="../../images/Prinzessin.png" alt="Green Blaze">
+		<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 	
 		<div class="SPRECHBLASE">
 			
@@ -566,14 +586,14 @@
 	
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", BildInfoboxWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", BildInfoboxDa);
+		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", BlumenDa);
+			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", BlumenWeg);
 
-			function BildInfoboxWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+			function BlumenDa(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
 			}
-			function BildInfoboxDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+			function BlumenWeg(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
 			}
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
@@ -587,14 +607,14 @@
 			}
 		
 		
-		document.querySelector(".HERO").addEventListener("mouseover", HeroWeg);
-			document.querySelector(".HERO").addEventListener("mouseout", HeroDa);
+		document.querySelector(".HERO").addEventListener("mouseover", BlumenWiederDa);
+			document.querySelector(".HERO").addEventListener("mouseout", BlumenWiederWeg);
 
-			function HeroWeg(){
-				document.querySelector(".HERO").classList.remove("ZEIGEN");
+			function BlumenWiederDa(){
+				document.querySelector(".BLUMEN").classList.add("ZEIGEN");
 			}
-			function HeroDa(){
-				document.querySelector(".HERO").classList.add("ZEIGEN");
+			function BlumenWiederWeg(){
+				document.querySelector(".BLUMEN").classList.remove("ZEIGEN");
 			}
 	
 		

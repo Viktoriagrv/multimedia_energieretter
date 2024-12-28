@@ -26,7 +26,6 @@
 		}
 		
 		.INFOBOX {
-			flex-direction: row;
 			position: absolute;
 			padding: 30px;
 			top: 15%;
@@ -442,13 +441,6 @@
 	
 	<?php include '../../include/nav.php'; ?>
 	
-	 <!-- Hintergrundvideo 
-		<video autoplay muted loop id="backgroundVideo">
-			<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-			<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-		</video>-->
-	
-	
     <main>
 		
 		<div class="INFOBOX">
@@ -468,7 +460,7 @@
 		<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
 		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlet Shade">
 	
 		<div class="SPRECHBLASE">
 			
@@ -476,7 +468,7 @@
 			
 		</div>	
 		
-		<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlett.php'"> Auf geht's! </button>
+		<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlet.php'"> Auf geht's! </button>
 		
 		
 			<div class="PUNKT EUROPA"></div>

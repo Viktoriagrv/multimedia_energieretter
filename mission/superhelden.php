@@ -30,6 +30,33 @@
 			margin: 5rem;
 			}
 		
+		.BILDINFOBOX-SCARLET{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: hidden;
+			}
+		
+		.BILDINFOBOX-BLAZE{
+			position: absolute;
+			bottom:12%;
+			left: 10%;
+			height:75%;
+			width: auto;
+			transform: rotateY(180deg);
+			}
+		
+		.BLUMEN-INFOBOX{
+			position: absolute;
+			bottom:0%;
+			left: 3%;
+			height:50%;
+			width: auto;
+			visibility:hidden;
+			z-index:5;
+			}
 		
 		.BILDINFOBOXB{
 			position: absolute;
@@ -173,7 +200,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
@@ -188,7 +215,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
@@ -203,7 +230,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
@@ -218,7 +245,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
@@ -233,7 +260,7 @@
 			position: absolute;
 			padding: 30px;
 			top: 15%;
-			left: 30%;
+			left: 25%;
 			height:60%;
 			width: 50%;
 			border-radius: 20px 20px 20px 20px;
@@ -336,7 +363,7 @@
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
 				
-					<div><img class="BILDINFOBOXB" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
+					<div><img class="BILDINFOBOX-SCARLET" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
 					
 						<a class=NAME>Scarlet Shade</a>
 						<div class="TEXTBLOCK">
@@ -348,7 +375,7 @@
 					</div>
 					<br><br>
 				
-				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_scarlett.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_scarlet.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOGOLDENKNIGHT">
@@ -372,7 +399,8 @@
 			<div class="INFOGREENBLAZE">
 				<button id="buttonGB">&times;</button>
 				
-				<div><img class="BILDINFOBOXS" src="../images/Prinzessin.png" alt="Green Blaze"></div>
+				<img class="BILDINFOBOX-BLAZE" src="../images/Prinzessin.png" alt="Green Blaze">
+				<img class="BLUMEN-INFOBOX" src="../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 				
 				<a class=NAME>Green Blaze</a>
 				
@@ -443,7 +471,7 @@
 		</div>
 		
 	
-			<script>
+	<script>
 				
 				 // Funktion, um Icons schweben zu lassen
 				function floatIcons() {
@@ -480,6 +508,9 @@
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);   //Bei Anklicken des Bildes "SCARLETSHADE" öffnet sich Infobox
 				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
 				
+				document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover",ScarletWeg);
+				document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout",ScarletDa);
+				
 				function ZeigeScarletShade() {
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
@@ -487,9 +518,20 @@
 					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 					document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
 				}
+		
+				function ScarletWeg(){
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+				}
+		
+				function ScarletDa(){
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
+				}
+		
 				function ScarletShadeAus() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 				}
 
 
@@ -498,6 +540,7 @@
 				
 				function ZeigeGoldenKnight() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
@@ -510,15 +553,28 @@
 
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
 				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
+		
+				document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover",BlumenDa);
+				document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout",BlumenWeg);
 				
 				function ZeigeGreenBlaze() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
 					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.add("ZEIGEN");
 				}
+		
+				function BlumenDa(){
+					document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
+				}
+		
+				function BlumenWeg(){
+					document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
+				}
+		
 				function GreenBlazeAus() {
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 				}
@@ -528,6 +584,7 @@
 				
 				function ZeigeThunderBolt() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
@@ -543,6 +600,7 @@
 				
 				function ZeigeCyberTitan() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
@@ -558,6 +616,7 @@
 				
 				function ZeigeSonicShield() {
 					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");

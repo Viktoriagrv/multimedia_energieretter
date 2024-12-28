@@ -37,17 +37,17 @@
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility:visible;
-			z-index:5;
+			z-index:4;
 			}
 		
 		.BILDINFOBOX{
 			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
+			top:20%;
+			left: 27%;
+			height:50%;
 			width: auto;
 			visibility: visible;
-			transform: rotateY(180deg);
+			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
 			animation-duration: 5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
@@ -56,26 +56,28 @@
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
 			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
 		}
+		
 		
 		@keyframes FLIEGEN {
 			49.99% {
-				top:50%;
-				left: 60%;
+				top:30%;
+				left: 80%;
 				transform: rotateY(180deg);
 			}
 			50% {
-				top:50%;
-				left: 60%;
+				top:30%;
+				left: 80%;
 				transform: rotateY(0deg);
 			}
+			
 			100% {
-				top:10%;
-				left: 5%;
+				top: 20%;
+				left: 27%;
 				transform: rotateY(0deg);
 			}
 		}
-			}
 		
 		.TEXT{
 			position: absolute;
@@ -87,6 +89,8 @@
 			color: #285238;
 			font-size: 1.7rem;
 			text-align: left;
+			visibility: visible;
+			z-index:5;
 		}
 		
 		.KARTE-ANSEHEN{
@@ -126,9 +130,9 @@
 			border:5px;
 			border-color: transparent;
 			visibility: hidden;
-			transform: rotateY(180deg);
+			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 5s;							/* Dauer (n) */
+			animation-duration: 4s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -138,15 +142,28 @@
 			z-index:5;
 		}
 		
+		
 		@keyframes FLIEGEN {
 			49.99% {
 				bottom:60%;
 				left: 60%;
-				transform: rotateY(180deg);
+				transform: rotateY(0deg);
 			}
 			50% {
 				bottom:60%;
 				left: 60%;
+				transform: rotateY(180deg);
+			}
+			
+			75%{
+				bottom:4%;
+				left:60%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:4%;
+				left: 2%;
 				transform: rotateY(180deg);
 			}
 			100% {
@@ -500,9 +517,9 @@
 	
     <main>
 		
+		<img class="BILDINFOBOX" src="../../images/Prinz.png" alt="Golden Knight">
+		
 		<div class="INFOBOX">
-			
-			<img class="BILDINFOBOX" src="../../images/Prinz.png" alt="Golden Knight">
 			
 			<div class="TEXT">
 				Hallo! <br>
@@ -569,7 +586,7 @@
 		
 		<div class="INFOANTARKTIS">
 			<h1>Meeresspiegelanstieg</h1>
-			Die Ostantarktis beherbergt in ihren Eispanzern die größten Süßwasserreserven der Welt.Diese Eismassen entsprechen etwa 50 Metern Meeresspiegelanstieg. Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.<br><br>
+			Die Ostantarktis beherbergt in ihren Eispanzern die größten Süßwasserreserven der Welt. Diese Eismassen entsprechen etwa 50 Metern Meeresspiegelanstieg. Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.<br><br>
 			Bis zum Jahr 2100 könnte der Meeresspiegel um mehr als einen Meter steigen, was Küstenregionen und Inselstaaten bedroht.<br><br>
 			Städte wie Hamburg, Jakarta oder Miami sind gefährdet, dauerhaft überflutet zu werden.
 		</div>
@@ -633,6 +650,7 @@
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".TEXT").classList.add("WEG");
 				document.querySelector(".HERO").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE").classList.add("ZEIGEN");
 				document.querySelector(".LOS").classList.add("ZEIGEN");
@@ -644,8 +662,6 @@
 		function HeroFliegtWieder(){
 				document.querySelector(".HERO").style.animationPlayState = "running";
 			}
-		
-		
 		
 		
   		//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 

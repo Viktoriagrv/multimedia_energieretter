@@ -26,8 +26,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: white;
-    text-align: center;    
+     
     height: 100%; /* Höhe des Hauptinhalts anpassen */
     padding: 20px;
     z-index: 1; /* Inhalt wird über dem Video angezeigt */
