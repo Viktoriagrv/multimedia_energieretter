@@ -366,7 +366,7 @@
 					<a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_golden.php'">Auswählen</button>
+				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_knight.php'">Auswählen</button>
 			</div>
 
 			<div class="INFOGREENBLAZE">

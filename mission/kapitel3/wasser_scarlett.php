@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>Kapitel Windenergie</title>
+    <title>Kapitel Wasserkraft</title>
 
     
 
@@ -80,11 +80,11 @@
 			font-size: 5rem;
 			}
 			
-		.WINDRAD{
+		.WASSERKRAFTWERK{
 			position:absolute;
 			bottom:10%;
 			left: 3%;
-			height:40%;
+			height:35%;
 			width:auto;
 			}
 		
@@ -221,36 +221,35 @@
 	
     <main>
 		
-		<div class="HEADER">Windkraftanlagen</div>
-		<img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+		<div class="HEADER">Wasserkraftwerke</div>
+		<img class="WASSERKRAFTWERK" src="../../images/wasserkraftwerk.png" alt="Landschaft mit Wasserkraftwerk">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">
 				Erfahre mehr <br>
-				über Windkraft!
+				über Wasserkraft!
 			</p>
 		</div>
 		
 		<div class="TEXTBLOCK">
 			<p>
-				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
+				Wasserkraftwerke nutzen die Energie von fließendem oder fallendem Wasser, um Strom zu erzeugen. Besonders gut eignen sich Gegenden, wo Flüsse schnell fließen oder große Mengen Wasser aus Höhenunterschieden Energie freisetzen können. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
 			<div class="ANTWORTEN">
-					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
+					<input  class="CHECKBOX" type="checkbox" id="FLUSS"> Flüsse	
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüste	
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="STEPPE"> Steppe	
+					<input class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten mit Gezeiten
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
+					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+					<input class="CHECKBOX" type="checkbox" id="STAUSEEN"> Stauseen	
 						<br><br>
 					<button class="PRUEFEN">Überprüfen</button>	
 			</div>
@@ -258,7 +257,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wasser_scarlett.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -270,9 +269,9 @@
 					Das war leider nicht richtig. Versuche es noch einmal.
 					<br><br>
 					
-					Oder lese noch mehr über Windkraft:
+					Oder lese noch mehr über Wasserkraft
 					<br><br>
-					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">Zum Retterwissen Wasserkraft</button>
 						
 				</div>						
 		</div>
@@ -287,11 +286,11 @@
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
 		function AuswahlAuswerten(){
-			if ((document.querySelector ("#KUESTE").checked &&		
-				document.querySelector ("#BERGE").checked &&
-				document.querySelector ("#STEPPE").checked) &&
+			if ((document.querySelector ("#FLUSS").checked &&		
+				document.querySelector ("#KUESTE").checked &&
+				document.querySelector ("#STAUSEEN").checked) &&
 				(!document.querySelector ("#TAL").checked &&
-				!document.querySelector ("#WALD").checked &&
+				!document.querySelector ("#WUESTE").checked &&
 				!document.querySelector ("#SUMPF").checked)
 				)		
 				

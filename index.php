@@ -274,10 +274,11 @@
 		
 	
 		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
-		document.querySelector(".WEITER").addEventListener("click", TextStarten);
+		document.querySelector(".WEITER").addEventListener("mouseover", TextSchneller);
+		document.querySelector(".WEITER").removeEventListener("mouseout",TextSchneller);
 		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 
-			let timer1;
+			var timer1;
 			let textEnde = false; 															// prüft, ob der Text zu Ende ist
 
 		// Funktion zum Starten des Textes
@@ -294,7 +295,7 @@
 
 		// Funktion, die den Text kontinuierlich scrollt
 		function scrollText() {
-			let scrollTextElement = document.querySelector("#scrolltext");
+			var scrollTextElement = document.querySelector("#scrolltext");
 
 			// Wenn das Ende des Textes erreicht ist, stoppt der Timer und ruft AbschlussStarten auf
 			if (scrollTextElement.scrollTop + scrollTextElement.clientHeight >= scrollTextElement.scrollHeight) {
@@ -303,18 +304,23 @@
 					textEnde = true;
 					AbschlussStarten();
 					}
-				} 
+			} 
 
 			else {
 				scrollTextElement.scrollTop += +1; 											// Scrollt den Text um 1 Pixel
-				}
 			}
+		}
 		
-
+		//Funktion zur Erhöhung der Laufgeschwindigkeit des Textes
+		function TextSchneller(){
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setInterval(scrollText, 60);
+		}
+		
 		// Funktion zum Pausieren des Textes
 		function TextPause(){
 			clearInterval(timer1); 															// Stoppt den Scroll-Timer
-			}
+		}
 
 		// Funktion, die nach dem Ende des Textes ausgeführt wird
 		function AbschlussStarten(){
@@ -326,10 +332,10 @@
 			document.querySelector(".HERO").classList.add("HEROGROSS");
 			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
 			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
-			}
+		}
 		
 		 // Funktion, um Icons schweben zu lassen
-				function floatIcons() {
+		function floatIcons() {
 				const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
 
         		icons.forEach(icon => {
@@ -350,7 +356,7 @@
             	iconFloat(); // Animation starten
         		});
 					
-    			}
+    	}
 				
 				// Startet die Funktionen nach dem Laden der Seite
 				document.addEventListener('DOMContentLoaded', () => {

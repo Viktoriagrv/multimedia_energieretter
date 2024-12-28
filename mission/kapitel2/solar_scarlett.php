@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <title>KapitelSolarenergie</title>
+    <title>Kapitel Solarenergie</title>
 
     
 
@@ -22,7 +22,7 @@
 			display: inline-block;
             padding: 20px 30px;
             font-family: 'Bangers';
-            font-size: 1.5rem;
+            font-size: 2rem;
 			text-decoration: none;
 			letter-spacing: 0.05em;
             color: #e8a723;
@@ -73,14 +73,14 @@
 		
 		.HEADER{
 			position: absolute;
-			top: 18%;
+			top: 16%;
 			left: 8%;
 			font-family: "bangers";
 			color: #e8a723;
 			font-size: 5rem;
 			}
 			
-		.SOLARPANEEL{
+		.SOLARPANEL{
 			position:absolute;
 			bottom:7%;
 			left: 3%;
@@ -90,8 +90,8 @@
 		
 		.INFOBLASE{
 			position: absolute;
-			top: 20%;
-			left: 38%;
+			top: 26%;
+			left: 37%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -100,8 +100,8 @@
 		
 		.INFOTEXT{
 			position: absolute;
-			top: 28%;
-			left: 42%;
+			top: 31%;
+			left: 43%;
 			font-family: "open sans";
 			font-size: 1.5rem;
 			color: #e8a723;
@@ -124,13 +124,13 @@
 		
 		.ANTWORTEN{
 			position: absolute;
-			left: 18%;
+			left: 15%;
 			
 		}
 		
 		.TEXT{
 			font-family: "open sans";
-			font-size: 1.5rem;
+			font-size: 2rem;
 			color:#285238;
 			text-align:left;
 			}
@@ -172,11 +172,11 @@
 		.FEHLERMELDUNG{
 			position: absolute;
 			padding: 30px;
-			right: 25%;
-			top: 25%;
-			height:30%;
-			width: 20%;
-			border-radius: 20px 20px 20px 20px;
+			right: 20%;
+			top: 20%;
+			height:auto;
+			width: 30%;
+			border-radius: 20px 20px 0px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
@@ -194,8 +194,8 @@
 		
 		#ZU{
 			position:absolute;
-			top: 15px;
-			right: 15px;
+			top: 20px;
+			right: 20px;
 		}
 		
 		.CHECKBOX{
@@ -222,10 +222,10 @@
     <main>
 		
 		<div class="HEADER">Solaranlagen</div>
-		<img class="SOLARPANEEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
+		<img class="SOLARPANEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'" src="../../images/InfoBlase.png" alt="Infoblase">
 			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'">
 				Erfahre mehr <br>
 				über Solarenergie!
@@ -234,23 +234,22 @@
 		
 		<div class="TEXTBLOCK">
 			<p>
-				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
+				Solaranlagen brauchen Orte, an denen viel Sonnenlicht vorhanden ist. Besonders wichtig ist, dass sie möglichst lange und direkt von der Sonne beschienen werden. Außerdem sollten diese Orte flach oder leicht geneigt sein, damit die Solarpanels optimal ausgerichtet werden können. Klicke <strong>DREI</strong> geeignete Standorte an:
 			</p>
 			
 				
 			<div class="ANTWORTEN">
 					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüsten
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+					<input class="CHECKBOX" type="checkbox" id="FELDER"> Offene Felder
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Steppe	
+					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+					<input class="CHECKBOX" type="checkbox" id="DAECHER"> Dächer von Gebäuden	
 						<br><br>
 					<button class="PRUEFEN">Überprüfen</button>	
 			</div>
@@ -258,7 +257,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_scarlett.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -266,10 +265,11 @@
 				<button id="ZU">&times;</button>	
 			
 				<div class="TEXT">
-					Das war leider noch nicht richtig. Versuche es noch einmal.
+					<br>
+					Das war leider nicht richtig. Versuche es noch einmal.
 					<br><br>
 					
-					Oder lese noch mehr über Solarenergie
+					Oder lese noch mehr über Solarenergie:
 					<br><br>
 					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar.php'">Zum Retterwissen Solarenergie</button>
 						
@@ -286,11 +286,11 @@
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
 		
 		function AuswahlAuswerten(){
-			if ((document.querySelector ("#KUESTE").checked &&		
-				document.querySelector ("#BERGE").checked &&
-				document.querySelector ("#WUESTE").checked) &&
-				(!document.querySelector ("#TAL").checked &&
-				!document.querySelector ("#WALD").checked &&
+			if ((document.querySelector ("#WUESTE").checked &&		
+				document.querySelector ("#FELDER").checked &&
+				document.querySelector ("#DAECHER").checked) &&
+				(!document.querySelector ("#KUESTE").checked &&
+				!document.querySelector ("#BERGE").checked &&
 				!document.querySelector ("#SUMPF").checked)
 				)		
 				

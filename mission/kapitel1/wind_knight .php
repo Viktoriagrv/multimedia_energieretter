@@ -212,13 +212,6 @@
 	
 	<?php include '../../include/nav.php'; ?>
 	
-	 <!-- Hintergrundvideo 
-		<video autoplay muted loop id="backgroundVideo">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-			<source src="../../retterwissen/bilder_retterwissen/background_video.mp4" type="video/webm">
-		</video>-->
-	
-	
     <main>
 		
 		<div class="HEADER">Windkraftanlagen</div>
@@ -258,7 +251,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wind_knight.php'">Zur Weltkarte</button>
 		
 		</div>
 		
@@ -277,7 +270,7 @@
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		<img class="HERO" src="../../images/Prinz.png" alt="Golden Knight">
 		
 	</main>
 
