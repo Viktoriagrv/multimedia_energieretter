@@ -32,12 +32,55 @@
 		
 		.BILDINFOBOX-SCARLET{
 			position: absolute;
-			top:10%;
+			bottom:12%;
 			left: 5%;
 			height:70%;
 			width: auto;
 			visibility: hidden;
 			}
+		
+		.BILDINFOBOX-KNIGHT{
+			position: absolute;
+			bottom:12%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			transform: rotateY(0deg);
+			animation-name: FLIEGEN;						/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
+		}
+		
+		@keyframes FLIEGEN {
+			49.99% {
+				bottom:50%;
+				left: 60%;
+				transform: rotateY(0deg);
+			}
+			50% {
+				bottom:50%;
+				left: 60%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:12%;
+				left: 5%;
+				transform: rotateY(180deg);
+			}
+			
+			100% {
+				bottom:12%;
+				left: 5%;
+				transform: rotateY(0deg);
+			}
+		}
 		
 		.BILDINFOBOX-BLAZE{
 			position: absolute;
@@ -58,52 +101,9 @@
 			z-index:5;
 		}
 		
-		.BILDINFOBOX-KNIGHT{
-			position: absolute;
-			bottom:7%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			transform: rotateY(0deg);
-			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
-			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
-			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
-			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: paused;					/* für JavaScript (running, paused) */
-			z-index:5;
-		}
-		
-		@keyframes FLIEGEN {
-			49.99% {
-				bottom:35%;
-				left: 60%;
-				transform: rotateY(0deg);
-			}
-			50% {
-				bottom:35%;
-				left: 60%;
-				transform: rotateY(180deg);
-			}
-			
-			99.99%{
-				bottom:7%;
-				left: 5%;
-				transform: rotateY(180deg);
-			}
-			
-			100% {
-				bottom:7%;
-				left: 5%;
-				transform: rotateY(0deg);
-			}
-		}
-		
 		.BILDINFOBOX-THUNDER{
 			position: absolute;
-			bottom:7%;
+			bottom:12%;
 			left: 10%;
 			height:70%;
 			width: auto;
@@ -120,60 +120,93 @@
 		
 		@keyframes RENNEN{
 			49.99% {
-				bottom:7%;
+				bottom:12%;
 				left: 90%;
 				transform: rotateY(0deg);
 			}
 			50% {
-				bottom:7%;
+				bottom:12%;
 				left: 90%;
 				transform: rotateY(180deg);
 			}
 			
 			99.99%{
-				bottom:7%;
+				bottom:12%;
 				left: 10%;
 				transform: rotateY(180deg);
 			}
 			
 			100% {
-				bottom:7%;
+				bottom:12%;
 				left: 10%;
 				transform: rotateY(0deg);
 			}
 		}
 		
-		
-		.BILDINFOBOXB{
+		.BILDINFOBOX-TITAN{
 			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			}
-		
-		.BILDINFOBOXS{
-			position: absolute;
-			top:10%;
+			bottom:12%;
 			left: 10%;
 			height:70%;
 			width: auto;
-			}
+			z-index:5;
+		}
 		
-		.BILDINFOBOXXS{
+		.ERDE-TITAN{
 			position: absolute;
-			top:10%;
-			left: 15%;
-			height:70%;
+			bottom:69%;
+			left: 3%;
+			height:60%;
 			width: auto;
+			visibility: hidden;
+			z-index:4;
+		}
+		
+		.BILDINFOBOX-SONIC{
+			position: absolute;
+			bottom:15%;
+			left: 20%;
+			height:68%;
+			width: auto;
+			z-index:5;
 			}
 		
+		.SCHUTZSCHILD{
+			position: absolute;
+			bottom:1%;
+			left: 1%;
+			height:96%;
+			width: auto;
+			visibility: hidden;
+			opacity: 0.3;
+			z-index:3;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: infinite;			/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: running;
+		}
+		
+		
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
+
 		.TEXTBLOCK{
 			position: absolute;
 			top: 21%;
 			left: 50%;
 			height: auto;
 			width: 43%;
+			z-index:4;
 			}
 		
 		.NAME{
@@ -520,7 +553,8 @@
 			<div class="INFOCYBERTITAN">
 				<button id="buttonCT">&times;</button>
 				
-				<div><img class="BILDINFOBOXS" src="../images/Biest.png" alt="Cyber Titan"></div>
+				<img class="ERDE-TITAN" src="../images/weltkugel.png" alt="Weltkugel">
+				<img class="BILDINFOBOX-TITAN" src="../images/Biest.png" alt="Cyber Titan">
 				
 				<a class=NAME>Cyber Titan</a>
 				
@@ -538,7 +572,8 @@
 			<div class="INFOSONICSHIELD">
 				<button id="buttonSOS">&times;</button>
 				
-				<div><img class="BILDINFOBOXXS" src="../images/BadBoy.png" alt="Sonic Shield"></div>
+				<img class="SCHUTZSCHILD" src="../images/schutzschild.png" alt="Funkelnder Lichtkreis">
+				<img class="BILDINFOBOX-SONIC" src="../images/BadBoy.png" alt="Sonic Shield">
 				
 				<a class=NAME>Sonic Shield</a>
 				
@@ -589,150 +624,176 @@
 				
 				//Funktion, um Infobox von Scralet Shade anzeigen zu lassen 
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);   //Bei Anklicken des Bildes "SCARLETSHADE" öffnet sich Infobox
-				document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
-				
-				document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover",ScarletWeg);
-				document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout",ScarletDa);
-				
-				function ZeigeScarletShade() {
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
-				}
-		
-				function ScarletWeg(){
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-				}
-		
-				function ScarletDa(){
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
-				}
-		
-				function ScarletShadeAus() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
+
+					document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover",ScarletWeg);
+					document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout",ScarletDa);
+
+					function ZeigeScarletShade() {
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
+					}
+
+					function ScarletWeg(){
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+					}
+
+					function ScarletDa(){
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
+					}
+
+					function ScarletShadeAus() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+					}
 
 
 				document.querySelector('.GOLDENKNIGHT').addEventListener('click',ZeigeGoldenKnight);
-				document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
-				
-				function ZeigeGoldenKnight() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
-				}
-		
-				document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
-		
-				function KnightFliegt(){
-					document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
-			
-					const hero = document.querySelector(".BILDINFOBOX-KNIGHT");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-					hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-					void hero.offsetWidth;														// Füge die Animation wieder hinzu
-					hero.style.animation = "FLIEGEN 2s linear 1 forwards";
-				}
-		
-				function GoldenKnightAus() {
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonGK').addEventListener('click',GoldenKnightAus);
+
+					function ZeigeGoldenKnight() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
+					}
+
+					document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
+
+					function KnightFliegt(){
+						document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
+
+						const hero = document.querySelector(".BILDINFOBOX-KNIGHT");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void hero.offsetWidth;														// Füge die Animation wieder hinzu
+						hero.style.animation = "FLIEGEN 2s linear 1 forwards";
+					}
+
+					function GoldenKnightAus() {
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+					}
 
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
-				document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
-		
-				document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover",BlumenDa);
-				document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout",BlumenWeg);
-				
-				function ZeigeGreenBlaze() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.add("ZEIGEN");
-				}
-		
-				function BlumenDa(){
-					document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
-				}
-		
-				function BlumenWeg(){
-					document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
-				}
-		
-				function GreenBlazeAus() {
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
+
+					document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover",BlumenDa);
+					document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout",BlumenWeg);
+
+					function ZeigeGreenBlaze() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.add("ZEIGEN");
+					}
+
+					function BlumenDa(){
+						document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
+					}
+
+					function BlumenWeg(){
+						document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
+					}
+
+					function GreenBlazeAus() {
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+					}
 
 				document.querySelector('.THUNDERBOLT').addEventListener('click',ZeigeThunderBolt);
-				document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
-				
-				function ZeigeThunderBolt() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
-				}
-		
-				document.querySelector(".BILDINFOBOX-THUNDER").addEventListener("click",ThunderRennt);
-		
-				function ThunderRennt(){
-					document.querySelector(".BILDINFOBOX-THUNDER").style.animationPlayState = "running";
-			
-					const thunder = document.querySelector(".BILDINFOBOX-THUNDER");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-					thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-					void thunder.offsetWidth;														// Füge die Animation wieder hinzu
-					thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
-				}
-		
-				function ThunderBoltAus() {
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonTB').addEventListener('click',ThunderBoltAus);
+
+					function ZeigeThunderBolt() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
+					}
+
+					document.querySelector(".BILDINFOBOX-THUNDER").addEventListener("click",ThunderRennt);
+
+					function ThunderRennt(){
+						document.querySelector(".BILDINFOBOX-THUNDER").style.animationPlayState = "running";
+
+						const thunder = document.querySelector(".BILDINFOBOX-THUNDER");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void thunder.offsetWidth;														// Füge die Animation wieder hinzu
+						thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
+					}
+
+					function ThunderBoltAus() {
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+					}
 
 				document.querySelector('.CYBERTITAN').addEventListener('click',ZeigeCyberTitan);
-				document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
-				
-				function ZeigeCyberTitan() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
-				}
-				function CyberTitanAus() {
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonCT').addEventListener('click',CyberTitanAus);
+
+					function ZeigeCyberTitan() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
+					}
+
+					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseover",ErdeTitanDa);
+					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseout",ErdeTitanWeg);
+
+
+					function ErdeTitanDa(){
+						document.querySelector(".ERDE-TITAN").classList.add("ZEIGEN");
+					}
+
+					function ErdeTitanWeg(){
+						document.querySelector(".ERDE-TITAN").classList.remove("ZEIGEN");
+					}
+
+					function CyberTitanAus() {
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+					}
 
 				document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
-				document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
-				
-				function ZeigeSonicShield() {
-					document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-					document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
-					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
-					document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
-					document.querySelector(".INFOSONICSHIELD").classList.add("ZEIGEN");
-				}
-				function SonicShieldAus() {
-					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
-				}
+					document.querySelector('#buttonSOS').addEventListener('click',SonicShieldAus);
+
+					function ZeigeSonicShield() {
+						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
+						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
+						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".INFOSONICSHIELD").classList.add("ZEIGEN");
+					}
+		
+					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseover",SchutzschildDa);
+					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseout",SchutzschildWeg);
+
+
+					function SchutzschildDa(){
+						document.querySelector(".SCHUTZSCHILD").classList.add("ZEIGEN");
+					}
+
+					function SchutzschildWeg(){
+						document.querySelector(".SCHUTZSCHILD").classList.remove("ZEIGEN");
+					}
+
+					function SonicShieldAus() {
+						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
+					}
 
 	</script>
 
