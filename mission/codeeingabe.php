@@ -151,49 +151,50 @@
 		document.querySelector(".EINGEBEN").addEventListener('click',EingabeAuswerten);
 		
 		function EingabeAuswerten() {														// 		Funktion mit Verzweigung
-			if (document.querySelector('input').value.toLowerCase() == 'xdf-338'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "xdf-338"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_scarlet.php";															// Ausgabe bei positivem Ergebnis
 				}
 			if(document.querySelector('input').value.toLowerCase() == "sdl-204"){
 				window.location.href = "kapitel3/wasser_scarlet.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == 'XXX-001'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "ftf-909"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_knight.php";															// Ausgabe bei positivem Ergebnis
-				}
-			if(document.querySelector('input').value.toLowerCase() == "XXX-0002"){
+			}
+			if(document.querySelector('input').value.toLowerCase() == "ess-112"){
 				window.location.href = "kapitel3/wasser_knight.php";
 			}
 			
 			if (document.querySelector('input').value.toLowerCase() == 'XXX-0003'){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_blaze.php";															// Ausgabe bei positivem Ergebnis
-				}
+			}
 			if(document.querySelector('input').value.toLowerCase() == "XXX-0004"){
 				window.location.href = "kapitel3/wasser_blaze.php";
 			}
 			
 			if (document.querySelector('input').value.toLowerCase() == 'XXX-0005'){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_thunder.php";															// Ausgabe bei positivem Ergebnis
-				}
+			}
 			if(document.querySelector('input').value.toLowerCase() == "XXX-0006"){
 				window.location.href = "kapitel3/wasser_thunder.php";
 			}
 			
 			if (document.querySelector('input').value.toLowerCase() == 'XXX-0007'){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_titan.php";															// Ausgabe bei positivem Ergebnis
-				}
+			}
 			if(document.querySelector('input').value.toLowerCase() == "XXX-0008"){
 				window.location.href = "kapitel3/wasser_titan.php";
 			}
 			
 			if (document.querySelector('input').value.toLowerCase() == 'XXX-0009'){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_sonic.php";															// Ausgabe bei positivem Ergebnis
-				}
+			}
 			if(document.querySelector('input').value.toLowerCase() == "XXX-009"){
 				window.location.href = "kapitel3/wasser_sonic.php";
 			}
+			
 			else {
-				ZeigeFehlermeldung();															// Ausgabe bei negativem Ergebnis
+				ZeigeFehlermeldung();	// Ausgabe bei negativem Ergebnis
 			}
 		}
 		
