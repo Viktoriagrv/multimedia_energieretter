@@ -956,7 +956,7 @@
 				<div>
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">sdl-204</div><br>
+					<div class="CODE">iqn-432</div><br>
 					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>

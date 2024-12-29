@@ -46,7 +46,7 @@
 			height:75%;
 			width: auto;
 			transform: rotateY(180deg);
-			}
+		}
 		
 		.BLUMEN-INFOBOX{
 			position: absolute;
@@ -56,7 +56,93 @@
 			width: auto;
 			visibility:hidden;
 			z-index:5;
+		}
+		
+		.BILDINFOBOX-KNIGHT{
+			position: absolute;
+			bottom:7%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			transform: rotateY(0deg);
+			animation-name: FLIEGEN;						/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
+		}
+		
+		@keyframes FLIEGEN {
+			49.99% {
+				bottom:35%;
+				left: 60%;
+				transform: rotateY(0deg);
 			}
+			50% {
+				bottom:35%;
+				left: 60%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:7%;
+				left: 5%;
+				transform: rotateY(180deg);
+			}
+			
+			100% {
+				bottom:7%;
+				left: 5%;
+				transform: rotateY(0deg);
+			}
+		}
+		
+		.BILDINFOBOX-THUNDER{
+			position: absolute;
+			bottom:7%;
+			left: 10%;
+			height:70%;
+			width: auto;
+			animation-name: RENNEN;							/* Name (keyframe) */
+			animation-duration: 0.5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
+		}
+		
+		@keyframes RENNEN{
+			49.99% {
+				bottom:7%;
+				left: 90%;
+				transform: rotateY(0deg);
+			}
+			50% {
+				bottom:7%;
+				left: 90%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:7%;
+				left: 10%;
+				transform: rotateY(180deg);
+			}
+			
+			100% {
+				bottom:7%;
+				left: 10%;
+				transform: rotateY(0deg);
+			}
+		}
+		
 		
 		.BILDINFOBOXB{
 			position: absolute;
@@ -344,8 +430,6 @@
 				<div class="GREENBLAZE">
 					<img class="BILD" src="../images/Prinzessin.png" alt="Green Blaze">
 				</div>
-			 
-
 			
 				<div class="THUNDERBOLT">
 					<img class="BILD" src="../images/AquaBoy.png" alt="Thunder Bolt">
@@ -381,7 +465,7 @@
 			<div class="INFOGOLDENKNIGHT">
 				<button id="buttonGK">&times;</button>
 				
-				<div><img class="BILDINFOBOXB" src="../images/Prinz.png" alt="Golden Knight"></div>
+				<div><img class="BILDINFOBOX-KNIGHT" src="../images/Prinz.png" alt="Golden Knight"></div>
 				
 				<a class=NAME>Golden Knight</a>
 				
@@ -418,7 +502,7 @@
 			<div class="INFOTHUNDERBOLT">
 				<button id="buttonTB">&times;</button>
 				
-				<div><img class="BILDINFOBOXS" src="../images/AquaBoy.png" alt="Thunder Bolt"></div>
+				<img class="BILDINFOBOX-THUNDER" src="../images/AquaBoy.png" alt="Thunderbolt">
 				
 				<a class=NAME>Thunderbolt</a><br>
 				
@@ -500,7 +584,6 @@
 				// Startet die Funktionen nach dem Laden der Seite
 				document.addEventListener('DOMContentLoaded', () => {
 					floatIcons(); // Icons schweben lassen
-					buttonHoverEffect(); // Hover-Effekt aktivieren
 				});
 
 				
@@ -547,6 +630,18 @@
 					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 					document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
 				}
+		
+				document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
+		
+				function KnightFliegt(){
+					document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
+			
+					const hero = document.querySelector(".BILDINFOBOX-KNIGHT");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+					hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+					void hero.offsetWidth;														// Füge die Animation wieder hinzu
+					hero.style.animation = "FLIEGEN 2s linear 1 forwards";
+				}
+		
 				function GoldenKnightAus() {
 					document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 				}
@@ -591,6 +686,18 @@
 					document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 					document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
 				}
+		
+				document.querySelector(".BILDINFOBOX-THUNDER").addEventListener("click",ThunderRennt);
+		
+				function ThunderRennt(){
+					document.querySelector(".BILDINFOBOX-THUNDER").style.animationPlayState = "running";
+			
+					const thunder = document.querySelector(".BILDINFOBOX-THUNDER");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+					thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+					void thunder.offsetWidth;														// Füge die Animation wieder hinzu
+					thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
+				}
+		
 				function ThunderBoltAus() {
 					document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 				}

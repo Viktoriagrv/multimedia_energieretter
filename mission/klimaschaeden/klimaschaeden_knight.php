@@ -37,24 +37,24 @@
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility:visible;
-			z-index:4;
+			z-index:3;
 			}
 		
 		.BILDINFOBOX{
 			position: absolute;
-			top:20%;
-			left: 27%;
-			height:50%;
+			bottom:7%;
+			left: 5%;
+			height:80%;
 			width: auto;
 			visibility: visible;
 			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 5s;							/* Dauer (n) */
+			animation-duration: 3s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 1;			/* Wiederholungen (n, infinite) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;					/* für JavaScript (running, paused) */
 			z-index:5;
 		}
@@ -62,19 +62,19 @@
 		
 		@keyframes FLIEGEN {
 			49.99% {
-				top:30%;
-				left: 80%;
+				top:1%;
+				left: 60%;
 				transform: rotateY(180deg);
 			}
 			50% {
-				top:30%;
-				left: 80%;
+				top:1%;
+				left: 60%;
 				transform: rotateY(0deg);
 			}
 			
 			100% {
-				top: 20%;
-				left: 27%;
+				bottom:7%;
+				left: 5%;
 				transform: rotateY(0deg);
 			}
 		}
@@ -90,7 +90,7 @@
 			font-size: 1.7rem;
 			text-align: left;
 			visibility: visible;
-			z-index:5;
+			z-index:4;
 		}
 		
 		.KARTE-ANSEHEN{
@@ -139,6 +139,7 @@
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
 			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			animation-finished: reverse;
 			z-index:5;
 		}
 		
@@ -224,7 +225,7 @@
 			width: 25px;
 			border-radius: 40%;
 			background-color: #e8a723;
-			z-index: 3;
+			z-index: 2;
 		}
 		
 		.PUNKT:hover{
@@ -517,9 +518,11 @@
 	
     <main>
 		
-		<img class="BILDINFOBOX" src="../../images/Prinz.png" alt="Golden Knight">
+		
 		
 		<div class="INFOBOX">
+			
+			<img class="BILDINFOBOX" src="../../images/Prinz.png" alt="Golden Knight">
 			
 			<div class="TEXT">
 				Hallo! <br>
@@ -642,6 +645,17 @@
 
 			function HeroFliegt(){
 				document.querySelector(".BILDINFOBOX").style.animationPlayState = "running";
+				
+				const hero = document.querySelector(".BILDINFOBOX");
+    
+    // Entferne die Animation, indem du den `animation-name` auf "none" setzt
+    hero.style.animation = "none";
+    
+    // Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+    void hero.offsetWidth;
+    
+    // Füge die Animation wieder hinzu
+    hero.style.animation = "FLIEGEN 4s linear 1 forwards";
 			}
 			
 		
@@ -661,6 +675,11 @@
 		
 		function HeroFliegtWieder(){
 				document.querySelector(".HERO").style.animationPlayState = "running";
+			
+				const hero = document.querySelector(".HERO");								// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+    			hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+    			void hero.offsetWidth;														// Füge die Animation wieder hinzu
+    			hero.style.animation = "FLIEGEN 4s linear 1 forwards";
 			}
 		
 		

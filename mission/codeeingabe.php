@@ -154,42 +154,42 @@
 			if (document.querySelector('input').value.toLowerCase() == "xdf-338"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_scarlet.php";															// Ausgabe bei positivem Ergebnis
 				}
-			if(document.querySelector('input').value.toLowerCase() == "sdl-204"){
+			if(document.querySelector('input').value.toLowerCase() == "iqn-432"){
 				window.location.href = "kapitel3/wasser_scarlet.php";
 			}
 			
 			if (document.querySelector('input').value.toLowerCase() == "ftf-909"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_knight.php";															// Ausgabe bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "ess-112"){
+			if(document.querySelector('input').value.toLowerCase() == "bjs-162"){
 				window.location.href = "kapitel3/wasser_knight.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == 'XXX-0003'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "cds-157"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_blaze.php";															// Ausgabe bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "XXX-0004"){
+			if(document.querySelector('input').value.toLowerCase() == "smc-612"){
 				window.location.href = "kapitel3/wasser_blaze.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == 'XXX-0005'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "fvk-842"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_thunder.php";															// Ausgabe bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "XXX-0006"){
+			if(document.querySelector('input').value.toLowerCase() == "hsa-792"){
 				window.location.href = "kapitel3/wasser_thunder.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == 'XXX-0007'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "jko-264"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_titan.php";															// Ausgabe bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "XXX-0008"){
+			if(document.querySelector('input').value.toLowerCase() == "xrg-518"){
 				window.location.href = "kapitel3/wasser_titan.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == 'XXX-0009'){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "sdl-204"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_sonic.php";															// Ausgabe bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "XXX-009"){
+			if(document.querySelector('input').value.toLowerCase() == "pok-672"){
 				window.location.href = "kapitel3/wasser_sonic.php";
 			}
 			
@@ -207,6 +207,7 @@
 		function FehlermeldungAus(){
 			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
 		}
+		
     </script>
 		
 </body>

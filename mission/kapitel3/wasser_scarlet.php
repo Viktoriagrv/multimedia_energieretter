@@ -257,7 +257,7 @@
 		
 		<div class="ABSCHLUSSTEXT">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_wasser_scarlett.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_wasser_scarlet.php'">Zur Weltkarte</button>
 		
 		</div>
 		
