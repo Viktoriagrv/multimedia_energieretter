@@ -158,7 +158,7 @@
 				window.location.href = "kapitel3/wasser_scarlet.php";
 			}
 			
-			if (document.querySelector('input').value.toLowerCase() == "ftf-909"){			//Überprüfung der Eingabe
+			if (document.querySelector('input').value.toLowerCase() == "fts-909"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_knight.php";															// Ausgabe bei positivem Ergebnis
 			}
 			if(document.querySelector('input').value.toLowerCase() == "bjs-162"){

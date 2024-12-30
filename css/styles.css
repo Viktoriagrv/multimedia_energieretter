@@ -1,235 +1,692 @@
 /* Allgemeines Layout */
-html, body {
-    margin: 0;
-    padding: 0;
-   	heigth: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
-    font-family: "open sans";
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Verhindert das Scrollen der Seite */
-}
+		html, body {
+			margin: 0;
+			padding: 0;
+			heigth: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
+			font-family: "open sans";
+			display: flex;
+			flex-direction: column;
+			overflow: hidden; /* Verhindert das Scrollen der Seite */
+		}
 
 /* Hintergrundvideo */
-#backgroundVideo {
-    position: fixed; /* Fixiert das Hintergrundvideo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; /* Setzt das Video hinter den Inhalt */
-}
+		#backgroundVideo {
+			position: fixed; /* Fixiert das Hintergrundvideo */
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; 
+			z-index: -1; /* Setzt das Video hinter den Inhalt */
+		}
 
 /* Hauptinhalt */
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-     
-    height: 100%; /* Höhe des Hauptinhalts anpassen */
-    padding: 20px;
-    z-index: 1; /* Inhalt wird über dem Video angezeigt */
-    overflow: hidden; /* Verhindert Scrollen */
-}
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: left;
+			justify-content: left;
+			height: 100%; /* Höhe des Hauptinhalts anpassen */
+			padding: 20px;
+			z-index: 1; /* Inhalt wird über dem Video angezeigt */
+			overflow: hidden; /* Verhindert Scrollen */
+		}
 
 /* Gelbe Hintergründe für die spezifischen Abschnitte */
-.vorspann, .mission, .energieretter {
-    background-color: #e8a723; /* Gelber Hintergrund */
-    color: #285238; /* Grüne Schriftfarbe */
-    padding: 20px;
-    margin: 20px;
-    width: 100%; /* Stellt sicher, dass der Abschnitt die gesamte Breite einnimmt */
-    text-align: center;
-    font-family: "open sans";
-    border-radius: 5px; /* Optional: Runde Ecken für den Abschnitt */
-}
+		.vorspann, .mission, .energieretter {
+			background-color: #e8a723; /* Gelber Hintergrund */
+			color: #285238; /* Grüne Schriftfarbe */
+			padding: 20px;
+			margin: 20px;
+			width: 100%; /* Stellt sicher, dass der Abschnitt die gesamte Breite einnimmt */
+			text-align: center;
+			font-family: "open sans";
+			border-radius: 5px; /* Optional: Runde Ecken für den Abschnitt */
+		}
 
 /* Start-Button und andere Layout-Elemente */
-.STARTBUTTON {
-    position: sticky;
-    justify-content: center;
-    background-color: transparent;
-    font-family: "Bangers";
-    font-size: 12rem;
-    line-height: 1.2;
-    color: #e8a723;
-    border: none;
-    top: 5rem;
-    align-items: center;
-    text-align: center;
-    transition: all 1s;
-    width: 800px;
-}
+		.STARTBUTTON {
+			position: sticky;
+			justify-content: center;
+			background-color: transparent;
+			font-family: "Bangers";
+			font-size: 12rem;
+			line-height: 1.2;
+			color: #e8a723;
+			border: none;
+			top: 5rem;
+			align-items: center;
+			text-align: center;
+			transition: all 1s;
+			width: 800px;
+		}
 
 /* Navigation Styling */
-.navbar-custom {
-    background-color: #285238; /* Dunkelgrün */
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Trennung zwischen Brand und Menu */
-    padding: 15px 20px; /* Erhöhte Höhe der Navbar */
-    position: fixed; /* Fixiert die Navigation oben */
-    top: 0; /* Setzt sie an den oberen Rand */
-    left: 0;
-    right: 0;
-    z-index: 10; /* Über dem Hintergrundvideo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für die Navigation */
-}
+		.navbar-custom {
+			background-color: #285238; /* Dunkelgrün */
+			display: flex;
+			align-items: center;
+			justify-content: space-between; /* Trennung zwischen Brand und Menu */
+			padding: 15px 20px; /* Erhöhte Höhe der Navbar */
+			position: fixed; /* Fixiert die Navigation oben */
+			top: 0; /* Setzt sie an den oberen Rand */
+			left: 0;
+			right: 0;
+			z-index: 10; /* Über dem Hintergrundvideo */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für die Navigation */
+		}
 
-/* Brand-Logo in der Navigation */
-.navbar-brand {
-    font-family: 'Bangers';
-    font-size: 2rem;
-    color: #e8a723; /* Gelb */
-    text-decoration: none;
-    margin-left: 10px;
-	letter-spacing: 0.05em;
-}
+	/* Brand-Logo in der Navigation */
+		.navbar-brand {
+			font-family: 'Bangers';
+			font-size: 2rem;
+			color: #e8a723; /* Gelb */
+			text-decoration: none;
+			margin-left: 10px;
+			letter-spacing: 0.05em;
+		}
 
-.navbar-brand:hover {
-    color: white;
-}
+		.navbar-brand:hover {
+			color: white;
+		}
 
 
-.UEBERSCHRIFT{
-	font-family: "bangers";
-	font-size:1.7rem;
-	color: #e8a723;
-	text-decoration: none;
-	background-color: transparent;
-	box-shadow: none;
-	border:0;
-	letter-spacing: 0.05em;
-}
+		.UEBERSCHRIFT{
+			font-family: "bangers";
+			font-size:1.7rem;
+			color: #e8a723;
+			text-decoration: none;
+			background-color: transparent;
+			box-shadow: none;
+			border:0;
+			letter-spacing: 0.05em;
+		}
 
-.UEBERSCHRIFT:hover{
-	color:white;
-}
+		.UEBERSCHRIFT:hover{
+			color:white;
+		}
 
-.UNTERUEBERSCHRIFT{
-	font-family: "open sans";
-	font-size: 1.5rem;
-	color: #285238;
-}
-/* Menülinks in der Navigation */
-.menu {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    font-family: "bangers"; /* Helvetica für Menütexte */
-}
+		.UNTERUEBERSCHRIFT{
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+		}
 
-.menu-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, color 0.3s;
-}
+	/* Menülinks in der Navigation */
+		.menu {
+			display: flex;
+			gap: 20px;
+			align-items: center;
+			font-family: "bangers"; /* Helvetica für Menütexte */
+		}
 
-.menu-link:hover {
-    background-color: #e8a723; /* Gelber Hover-Effekt */
-    color: #285238; /* Dunkelgrün */
-}
+		.menu-link {
+			color: white;
+			text-decoration: none;
+			font-size: 1rem;
+			padding: 5px 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out, color 0.3s;
+		}
+
+		.menu-link:hover {
+			background-color: #e8a723; /* Gelber Hover-Effekt */
+			color: #285238; /* Dunkelgrün */
+		}
 
 /* Dropdown Menü Styling */
-.dropdown {
-    position: relative;
-}
+		.dropdown {
+			position: relative;
+		}
 
-.dropbtn {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out, color 0.3s;
-}
+		.dropbtn {
+			background: none;
+			border: none;
+			color: white;
+			cursor: pointer;
+			font-size: 1rem;
+			padding: 5px 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out, color 0.3s;
+		}
 
-.dropbtn:hover {
-    background-color: #e8a723; /* Gelber Hover-Effekt */
-    color: #285238; /* Dunkelgrün */
-}
+		.dropbtn:hover {
+			background-color: #e8a723; /* Gelber Hover-Effekt */
+			color: #285238; /* Dunkelgrün */
+		}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    top: 100%;
-    left: 0;
-    z-index: 3;
-}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: white;
+			min-width: 150px;
+			box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			top: 100%;
+			left: 0;
+			z-index: 3;
+		}
 
-.dropdown-content a {
-    color: #285238; /* Dunkelgrün */
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-size: 0.9rem;
-}
+		.dropdown-content a {
+			color: #285238; /* Dunkelgrün */
+			text-decoration: none;
+			display: block;
+			padding: 10px;
+			font-size: 0.9rem;
+		}
 
-.dropdown-content a:hover {
-    background-color: #e8a723; /* Gelber Hover-Effekt */
-    color: #285238;
-}
+		.dropdown-content a:hover {
+			background-color: #e8a723; /* Gelber Hover-Effekt */
+			color: #285238;
+		}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Footer Styling */
-.footer-custom {
-    background-color: #285238; /* Dunkelgrün */
-    color: #e8a723; /* Gelb für den Text */
-    padding: 20px;
-    position: fixed;
-    left: 0; /* Footer ist am linken Rand fixiert */
-    bottom: 0; /* Footer ist am unteren Rand fixiert */
-    width: 100%; /* Footer nimmt die gesamte Breite ein */
-    font-family: 'Bangers', cursive; /* Schriftart auf Bangers setzen */
-    text-align: center; /* Text im Footer zentrieren */
-    z-index: 10; /* Sicherstellen, dass der Footer immer über dem Inhalt liegt */
-    height: 20px; /* Höhe des Footers festlegen */
-}
-
-/* Styling für den Link im Footer */
-.footer-links {
-    display: flex;
-    justify-content: right; /* Zentriert den Link im Footer */
-    align-items: center; /* Vertikal zentrieren */
-    margin-top: 10px;
-    width: 100%; /* Stellt sicher, dass der Container den gesamten Footer einnimmt */
-}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
 
 
-.footer-links a {
-    color: #e8a723; /* Gelb */
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Bangers'; /* Impressum-Link auch in Bangers */
-    display: inline-block;
-    width: 150px; /* Schmaleren Link für das Impressum setzen */
-    overflow: hidden;
-    white-space: nowrap; /* Verhindert das Umbruch von Text */
-    text-overflow: ellipsis; /* Wenn der Text zu lang ist, wird er abgeschnitten */
-    margin-right: 0px; /* Abstand nach rechts, um den Link leicht nach links zu verschieben */
-}
+/*allgemein Weltkarten-Styles*/
 
-.footer-links a:hover {
-    color: white; /* Weiß beim Hover */
-    text-decoration: underline;
-}
+		.PUNKT{
+			height: 25px;
+			width: 25px;
+			border-radius: 40%;
+			background-color: #e8a723;
+			z-index: 3;
+		}
+		
+		.PUNKT:hover{
+			cursor: url('../../images/InfoI.gif'),auto;
+			background-color: brown;
+		}
 
-/* Verhindert Scrollen der Seite */
-body {
-    padding-bottom: 60px; /* Platz für den Footer lassen */
-    overflow: hidden; /* Verhindert das Scrollen der Seite */
-}
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
+		.WEG{
+			visibility: hidden;
+		}
 
+/*Styles Klima-Schäden-Seiten*/
+		h1{
+			font-family: "open sans";
+			color:#e8a723;
+			font-size: 2rem;
+			padding: 0px;
+			margin: 0px;
+			margin-bottom: 20px;
+		}
+	
+		.INFOBOX {
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 15%;
+			left: 25%;
+			height:60%;
+			width: 50%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility:visible;
+			z-index:5;
+			}
+
+		.TEXT{
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			height: auto;
+			width: 45%;
+			font-family: "open sans";
+			color: #285238;
+			font-size: 1.7rem;
+			text-align: left;
+		}
+		
+		.KARTE-ANSEHEN{
+			position: absolute;
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 23%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			}
+		
+		.KARTE-ANSEHEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+		
+		.WELT{
+			position:absolute;
+			top:5%;
+			width:100%;
+			height:auto;
+		}
+
+		.SPRECHBLASE-KLIMA {
+			position: absolute;
+			padding-top: 10px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			bottom:29%;
+			left:14%;
+			height:auto;
+			width: 10%;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: "open sans";
+			font-size: 1.3rem;
+			color:#285238;
+			text-align: left;
+			visibility: hidden;
+			}
+		
+		.LOS-KLIMA{
+			position: absolute;
+			bottom: 8%;
+			left: 18%;
+			display: inline-block;
+            padding: 15px 20px;
+            font-family: 'Bangers';
+            font-size: 2rem;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+            color: #e8a723;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+			visibility: hidden;
+		}
+		
+		.LOS-KLIMA:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+				
+		.EUROPA-KLIMA{
+			position:absolute;
+			top: 27%;
+			left:50%;
+		}
+		
+		.INFOEUROPA-KLIMA{
+			position: absolute;
+			top: 28%;
+			left:52%;
+			height: auto;
+			width: 25%;
+			padding-top:10%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.CHINA-KLIMA{
+			position:absolute;
+			top: 27%;
+			left:71%;
+		}
+		
+		.INFOCHINA-KLIMA{
+			position: absolute;
+			top: 28%;
+			right:30%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.SUEDOSTASIEN-KLIMA{
+			position:absolute;
+			top: 50%;
+			left:82%;
+		}
+		
+		.INFOSUEDOSTASIEN-KLIMA{
+			position: absolute;
+			bottom: 10%;
+			right:19%;
+			height: auto;
+			width: 40%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.AUSTRALIEN-KLIMA{
+			position:absolute;
+			bottom:33%;
+			right:12%;
+		}
+		
+		.INFOAUSTRALIEN-KLIMA{
+			position: absolute;
+			bottom:15%;
+			right:14%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ANTARKTIS-KLIMA{
+			position:absolute;
+			bottom:4%;
+			right:23%;
+		}
+		
+		.INFOANTARKTIS-KLIMA{
+			position: absolute;
+			bottom:8%;
+			right:25%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+	
+		.CHILE-KLIMA{
+			position:absolute;
+			top: 70%;
+			left:30.5%;
+		}
+		
+		.INFOCHILE-KLIMA{
+			position: absolute;
+			bottom:15%;
+			left:33%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.AMAZONAS-KLIMA{
+			position:absolute;
+			top: 53%;
+			left:32%;
+		}
+		
+		.INFOAMAZONAS-KLIMA{
+			position: absolute;
+			bottom:25%;
+			left:34%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ATLANTIK-KLIMA{
+			position:absolute;
+			top: 35%;
+			left:38%;
+		}
+		
+		.INFOATLANTIK-KLIMA{
+			position: absolute;
+			top: 25%;
+			left:40%;
+			height:auto;
+			width: 35%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.KANADA-KLIMA{
+			position:absolute;
+			top: 12%;
+			left:38%;
+		}
+		
+		.INFOKANADA-KLIMA{
+			position: absolute;
+			top: 17%;
+			left:38%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.USA-KLIMA{
+			position:absolute;
+			top: 33%;
+			left:25%;
+		}
+		
+		.INFOUSA-KLIMA{
+			position: absolute;
+			top: 25%;
+			left:27%;
+			height: auto;
+			width: 30%;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+				
+		.AFRIKA-KLIMA{
+			position:absolute;
+			top: 41%;
+			left:50%;
+		}
+		
+		.INFOAFRIKA-KLIMA{
+			position: absolute;
+			top: 39%;
+			left:52%;
+			height: auto;
+			width: 30%;
+			padding-top: 5px;
+			padding: 40px;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			background-color: white;
+			border-radius: 20px 20px 20px 20px;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:5;
+		}
+		
+/*Superhelden*/
+	
+	/*Scarlet*/
+
+
+	/*Knight*/
+
+	/*Blaze*/
+
+	/*Tunder*/
+		
+		.BILDINFOBOX-THUNDER{
+			position: absolute;
+			bottom:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: visible;
+			animation-name: RENNEN;							/* Name (keyframe) */
+			animation-duration: 0.2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
+		}
+		
+		@keyframes RENNEN{
+			49.99% {
+				bottom:10%;
+				left: 90%;
+				transform: rotateY(0deg);
+			}
+			50% {
+				bottom:10%;
+				left: 90%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:10%;
+				left: 10%;
+				transform: rotateY(180deg);
+			}
+			
+			100% {
+				bottom:10%;
+				left: 10%;
+				transform: rotateY(0deg);
+			}
+		}
+		
+		.THUNDER{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:35%;
+			background-color: transparent;
+			border:5px;
+			border-color: transparent;
+			visibility: hidden;		
+			animation-name: RENNEN;							/* Name (keyframe) */
+			animation-duration: 0.2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			z-index:5;
+		}
+		
+		@keyframes RENNEN{
+			49.99% {
+				bottom:4%;
+				left: 90%;
+				transform: rotateY(0deg);
+			}
+			50% {
+				bottom:4%;
+				left: 90%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:4%;
+				left: 2%;
+				transform: rotateY(180deg);
+			}
+			
+			100% {
+				bottom:4%;
+				left: 2%;
+				transform: rotateY(0deg);
+			}
+		}
+
+	/*Titan*/
+
+	/*Sonic*/
+				
+		
+		
