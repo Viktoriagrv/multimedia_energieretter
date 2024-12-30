@@ -187,6 +187,14 @@
 
 /*allgemein Weltkarten-Styles*/
 
+		.WELT{
+			position:absolute;
+			top:5%;
+			left:0%;
+			width:100%;
+			height:auto;
+		}
+
 		.PUNKT{
 			height: 25px;
 			width: 25px;
@@ -238,7 +246,7 @@
 			height:70%;
 			width: auto;
 			transform: rotateY(0deg);
-			animation-name: FLIEGEN;						/* Name (keyframe) */
+			animation-name: FLIEGENAUSWAHL;						/* Name (keyframe) */
 			animation-duration: 2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
@@ -249,7 +257,7 @@
 			z-index:5;
 		}
 		
-		@keyframes FLIEGEN {
+		@keyframes FLIEGENAUSWAHL {
 			49.99% {
 				bottom:50%;
 				left: 60%;
@@ -305,7 +313,7 @@
 			left: 10%;
 			height:70%;
 			width: auto;
-			animation-name: RENNEN;							/* Name (keyframe) */
+			animation-name: RENNENAUSWAHL;							/* Name (keyframe) */
 			animation-duration: 0.2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
@@ -316,7 +324,7 @@
 			z-index:5;
 		}
 		
-		@keyframes RENNEN{
+		@keyframes RENNENAUSWAHL{
 			49.99% {
 				bottom:12%;
 				left: 90%;
@@ -394,7 +402,7 @@
 			visibility: hidden;
 			opacity: 0.3;
 			z-index:3;
-			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-name: DREHENAUSWAHL;							/* Name (keyframe) */
 			animation-duration: 5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
@@ -405,7 +413,7 @@
 		}
 		
 		
-		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+		@keyframes DREHENAUSWAHL {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
 			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(180deg);
 			}
@@ -726,14 +734,7 @@
 			border: 2px solid #285238;
 			}
 		
-		.WELT{
-			position:absolute;
-			top:5%;
-			left:0%;
-			width:100%;
-			height:auto;
-		}
-
+		
 		.SPRECHBLASE-KLIMA {
 			position: absolute;
 			padding-top: 10px;

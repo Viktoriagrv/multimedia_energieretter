@@ -215,7 +215,6 @@
 						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 						document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
 						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.add("ZEIGEN");
-						document.querySelector(".AUSWAHL").classList.add("ZEIGEN");
 					}
 
 					function ScarletWeg(){
@@ -251,10 +250,10 @@
 					function KnightFliegt(){
 						document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").style.animationPlayState = "running";
 
-						const hero = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-						hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-						void hero.offsetWidth;														// Füge die Animation wieder hinzu
-						hero.style.animation = "FLIEGEN 2s linear 1 forwards";
+						const knightauswahl = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						knightauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void knightauswahl.offsetWidth;														// Füge die Animation wieder hinzu
+						knightauswahl.style.animation = "FLIEGENAUSWAHL 2s linear 1 forwards";
 					}
 
 					function GoldenKnightAus() {
@@ -307,10 +306,10 @@
 					function ThunderRennt(){
 						document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").style.animationPlayState = "running";
 
-						const thunder = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-						thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-						void thunder.offsetWidth;														// Füge die Animation wieder hinzu
-						thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
+						const thunderauswahl = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						thunderauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void thunderauswahl.offsetWidth;														// Füge die Animation wieder hinzu
+						thunderauswahl.style.animation = "RENNENAUSWAHL 0.5s linear 1 forwards";
 					}
 
 					function ThunderBoltAus() {
@@ -351,6 +350,7 @@
 
 					function CyberTitanAus() {
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".RAHMEN-INFO").classList.remove("ZEIGEN");
 						document.querySelector(".AUSWAHL-TITAN").classList.remove("ZEIGEN");
 						document.querySelector(".TITAN-ZU").classList.remove("ZEIGEN");
 					}
