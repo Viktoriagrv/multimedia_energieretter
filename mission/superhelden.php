@@ -69,6 +69,12 @@
 				transform: rotateY(180deg);
 			}
 			
+			75%{
+				bottom:12%;
+				left: 60%;
+				transform: rotateY(180deg);
+			}
+			
 			99.99%{
 				bottom:12%;
 				left: 5%;
@@ -108,7 +114,7 @@
 			height:70%;
 			width: auto;
 			animation-name: RENNEN;							/* Name (keyframe) */
-			animation-duration: 0.5s;							/* Dauer (n) */
+			animation-duration: 0.2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -152,14 +158,15 @@
 			z-index:5;
 		}
 		
-		.ERDE-TITAN{
+		.BLACKSCREEN{
 			position: absolute;
-			bottom:69%;
-			left: 3%;
-			height:60%;
-			width: auto;
+			top:0%;
+			left: 0%;
+			height:100%;
+			width: 100%;
 			visibility: hidden;
 			z-index:4;
+			overflow: hidden;
 		}
 		
 		.BILDINFOBOX-SONIC{
@@ -181,7 +188,7 @@
 			opacity: 0.3;
 			z-index:3;
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
+			animation-duration: 5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: infinite;			/* Wiederholungen (n, infinite) */
@@ -553,7 +560,6 @@
 			<div class="INFOCYBERTITAN">
 				<button id="buttonCT">&times;</button>
 				
-				<img class="ERDE-TITAN" src="../images/weltkugel.png" alt="Weltkugel">
 				<img class="BILDINFOBOX-TITAN" src="../images/Biest.png" alt="Cyber Titan">
 				
 				<a class=NAME>Cyber Titan</a>
@@ -568,6 +574,8 @@
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_titan.php'">Auswählen</button>
 			</div>
+	
+			<img class="BLACKSCREEN" src="../images/blackscreen.png" alt="Schwarzer Bildschirm">
 
 			<div class="INFOSONICSHIELD">
 				<button id="buttonSOS">&times;</button>
@@ -750,16 +758,16 @@
 						document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseover",ErdeTitanDa);
-					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseout",ErdeTitanWeg);
+					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseover",BlackScreenDa);
+					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseout",BlackScreenWeg);
 
 
-					function ErdeTitanDa(){
-						document.querySelector(".ERDE-TITAN").classList.add("ZEIGEN");
+					function BlackScreenDa(){
+						document.querySelector(".BLACKSCREEN").classList.add("ZEIGEN");
 					}
 
-					function ErdeTitanWeg(){
-						document.querySelector(".ERDE-TITAN").classList.remove("ZEIGEN");
+					function BlackScreenWeg(){
+						document.querySelector(".BLACKSCREEN").classList.remove("ZEIGEN");
 					}
 
 					function CyberTitanAus() {

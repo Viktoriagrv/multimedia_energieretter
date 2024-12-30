@@ -481,6 +481,15 @@
 			z-index:5;
 		}
 		
+		.KRAFTWERKNIAGARA{
+			position: absolute;
+			top: 23%;
+			left: 24%;
+			height:3%;
+			width:auto;
+			visibility: hidden;
+		}
+		
 		#DROPAMAZONAS{
 			position: absolute;
 			top:48%;
@@ -531,6 +540,15 @@
 			z-index:5;
 		}
 		
+		.KRAFTWERKAMAZONAS{
+			position: absolute;
+			top:53%;
+			left: 31%;
+			height:3%;
+			width:auto;
+			visibility: hidden;
+		}
+		
 		#DROPATLANTIK{
 			position: absolute;
 			top:24%;
@@ -579,6 +597,15 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility: hidden;
 			z-index:5;
+		}
+		
+		.KRAFTWERKATLANTIK{
+			position: absolute;
+			top:31%;
+			left: 36%;
+			height:3%;
+			width:auto;
+			visibility: hidden;
 		}
 		
 		#DROPSIBIRIEN{
@@ -929,9 +956,9 @@
 		
 		
 		<div>
-			<img class="SOLARPANELMEXIKO" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-			<img class="SOLARPANELAUSTRALIEN" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-			<img class="SOLARPANELSAHARA" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+			<img class="KRAFTWERKNIAGARA" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+			<img class="KRAFTWERKAMAZONAS" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+			<img class="KRAFTWERKATLANTIK" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 		</div>
 		
 		<div class="FEHLERMELDUNG">
@@ -954,10 +981,10 @@
 			
 			<div class="TEXT-ENDE">
 				<div>
-					Fantastische Arbeit! Das hast du toll gemacht!<br>
-					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">sdl-204</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					Du bist ein wahrer Energieretter!<br>
+					Du es es geschafft und die Welt von morgen vor dem Untergang bewahrt.<br><br>
+					
+					
 				</div>
 			</div>
 								
@@ -1103,24 +1130,25 @@
 		document.querySelector('#DRAGA').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGB').addEventListener('dragstart',ElementAufheben);
 		document.querySelector('#DRAGC').addEventListener('dragstart',ElementAufheben);
+		document.querySelector('#DROPNIAGARA').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPNIAGARA').addEventListener('drop',ElementAblegenNiagara);
+		document.querySelector('#DROPATLANTIK').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPATLANTIK').addEventListener('drop',ElementAblegenAtlantik);
+		document.querySelector('#DROPAMAZONAS').addEventListener('dragover',AblegenErlauben);
+		document.querySelector('#DROPAMAZONAS').addEventListener('drop',ElementAblegenAmazonas);
 		document.querySelector('#DROPMEXIKO').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPMEXIKO').addEventListener('drop',ElementAblegenMexiko);
+		document.querySelector('#DROPMEXIKO').addEventListener('drop',AblegenFalsch);
 		document.querySelector('#DROPSAHARA').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPSAHARA').addEventListener('drop',ElementAblegenSahara);
+		document.querySelector('#DROPSAHARA').addEventListener('drop',AblegenFalsch);
 		document.querySelector('#DROPAUSTRALIEN').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPAUSTRALIEN').addEventListener('drop',ElementAblegenAustralien);
+		document.querySelector('#DROPAUSTRALIEN').addEventListener('drop',AblegenFalsch);
 		document.querySelector('#DROPEUROPA').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPEUROPA').addEventListener('drop',AblegenFalsch);
 		document.querySelector('#DROPSIBIRIEN').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPSIBIRIEN').addEventListener('drop',AblegenFalsch);
 		document.querySelector('#DROPASIEN').addEventListener('dragover',AblegenErlauben);
 		document.querySelector('#DROPASIEN').addEventListener('drop',AblegenFalsch);
-		document.querySelector('#DROPNIAGARA').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPNIAGARA').addEventListener('drop',AblegenFalsch);
-		document.querySelector('#DROPATLANTIK').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPATLANTIK').addEventListener('drop',AblegenFalsch);
-		document.querySelector('#DROPAMAZONAS').addEventListener('dragover',AblegenErlauben);
-		document.querySelector('#DROPAMAZONAS').addEventListener('drop',AblegenFalsch);
+		
 		
 		
 		
@@ -1139,48 +1167,48 @@
 			}
 		}
 		
-		function ElementAblegenMexiko() {
+		function ElementAblegenNiagara() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
-			document.querySelector('#DROPMEXIKO').removeEventListener('dragover',AblegenErlauben);
+			document.querySelector('#DROPNIAGARA').removeEventListener('dragover',AblegenErlauben);
 			abgelegteElemente++;
-			SolarpanelZeigenMexiko();
+			WasserkraftwerkZeigenNiagara();
 			AbgelegteElementeZaehlen();
 		}
 		
-		function SolarpanelZeigenMexiko(){
-			document.querySelector(".SOLARPANELMEXIKO").classList.add("ZEIGEN");
-			document.querySelector(".MEXIKOBTN").classList.add("WEG");
+		function WasserkraftwerkZeigenNiagara(){
+			document.querySelector(".KRAFTWERKNIAGARA").classList.add("ZEIGEN");
+			document.querySelector(".NIAGARABTN").classList.add("WEG");
 		}
 		
-		function ElementAblegenSahara() {
+		function ElementAblegenAmazonas() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
 			
-			document.querySelector('#DROPSAHARA').removeEventListener('dragover',AblegenErlauben);
+			document.querySelector('#DROPAMAZONAS').removeEventListener('dragover',AblegenErlauben);
 			abgelegteElemente++;
-			SolarpanelZeigenSahara();
+			WasserkraftwerkZeigenAmazonas();
 			AbgelegteElementeZaehlen();
 		}
 		
-		function SolarpanelZeigenSahara(){
-			document.querySelector(".SOLARPANELSAHARA").classList.add("ZEIGEN");
-			document.querySelector(".SAHARABTN").classList.add("WEG");
+		function WasserkraftwerkZeigenAmazonas(){
+			document.querySelector(".KRAFTWERKAMAZONAS").classList.add("ZEIGEN");
+			document.querySelector(".AMAZONASBTN").classList.add("WEG");
 		}
 		
-		function ElementAblegenAustralien() {
+		function ElementAblegenAtlantik() {
 			event.preventDefault();																			// verhindert Default-Aktion des Events ("Öffnen als Link")
 			event.target.appendChild(document.querySelector('#'+event.dataTransfer.getData('text/plain')));	// liest das Drag-Element und verschiebt es ins Drop-Element
-			document.querySelector('#DROPAUSTRALIEN').removeEventListener('dragover',AblegenErlauben);
+			document.querySelector('#DROPATLANTIK').removeEventListener('dragover',AblegenErlauben);
 			abgelegteElemente++;
-			SolarpanelZeigenAustralien();
+			WasserkraftwerkZeigenAtlantik();
 			AbgelegteElementeZaehlen();
 			
 		}
 		
-		function SolarpanelZeigenAustralien(){
-			document.querySelector(".SOLARPANELAUSTRALIEN").classList.add("ZEIGEN");
-			document.querySelector(".AUSTRALIENBTN").classList.add("WEG");
+		function WasserkraftwerkZeigenAtlantik(){
+			document.querySelector(".KRAFTWERKATLANTIK").classList.add("ZEIGEN");
+			document.querySelector(".ATLANTIKBTN").classList.add("WEG");
 		}
 		
 		function AblegenFalsch(){
