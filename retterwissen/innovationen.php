@@ -2,172 +2,312 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovationen</title>
+    <title>Retterwissen: Innovationen</title>
 
-    <!-- Google Fonts -->
+    <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/styles.css">
-
-    <!-- Navigation einbinden -->
-  <nav class="navbar-custom">
-
-    <!-- Branding -->
-    <a class="navbar-brand" href="../mission/missionsstart.php">Die Energieretter</a>
-    
-    <!-- Hauptmenü -->
-    <div class="menu">
-
-       
-        <a href="../index.php" class="menu-link menu-item">Vorspann</a>
-
-        
-        <div class="dropdown menu-item">
-            <button class="dropbtn menu-link">Mission</button>
-            <div class="dropdown-content">
-                <a href="../mission/superhelden.php">Die Superhelden</a>
-                <a href="../mission/missionsstart.php">Missionsstart</a>
-                <a href="../mission/codeeingabe.php">Spiel fortsetzen</a>
-            </div>
-        </div>
-        
-        <!-- Dropdown-Menü -->
-        <div class="dropdown menu-item" style="margin-right: 50px;">
-            <button class="dropbtn menu-link">Retterwissen</button>
-            <div class="dropdown-content">
-                <a href="../retterwissen/zukunftsenergien.php">Zukunftsenergie</a>
-                <a href="../retterwissen/innovationen.php">Innovationen</a>
-                <a href="../retterwissen/klimaschaeden.php">Klimaschäden</a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
 
     <style>
-        /* Allgemeine Layout-Einstellungen */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+        main {
+            background-color: #b9e5ef;
+            overflow: hidden; /* Verhindert das Scrollen der Seite */
         }
 
-        /* Schwebe-Icons */
-        .icon-container {
-            display: flex;
-            justify-content: space-around;
-            gap: 100px;
-            position: relative;
-            margin-bottom: 60px;
+        h1 {
+            font-family: "open sans";
+            color: #e8a723;
+            font-size: 2rem;
+            padding-top: 0px;
         }
 
-        .icon-container img {
-            width: 130px;
-            height: 130px;
+        p {
+            text-align: left;
         }
 
-        /* Buttons */
-        .button-container {
-            display: flex;
-            gap: 50px;
+        details {
+            background: #eee;
+            border: 1px solid #e8a723;
+            border-radius: 3px;
+            margin-bottom: 1.5rem;
         }
 
-        .button-container a {
+        summary {
+            background: #e8a723;
+            color: #fff;
+            cursor: pointer;
+            padding: 1rem;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Verzögerungseffekt */
+        details[open] summary ~ * {
+            animation: sweep .7s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {
+                opacity: 0;
+                margin-left: -20px
+            }
+
+            100% {
+                opacity: 1;
+                margin-left: 0px
+            }
+        }
+
+        .HERO {
+            position: absolute;
+            bottom: -3%;
+            left: 2%;
+            height: 30%;
+        }
+
+        /* SPRECHBLASE SUPERHELD */
+        .SPRECHBLASE {
+            position: absolute;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            bottom: 25%;
+            left: 12%;
+            height: 27%;
+            width: 12%;
+            border-radius: 20px 20px 20px 0px;
+            background-color: white;
+            box-shadow: 5px 5px 10px 0px gray;
+            font-family: "open sans";
+            font-size: 1rem;
+            color: #285238;
+            text-align: left;
+            visibility: visible;
+            cursor: default;
+        }
+
+        /* SPRECHBLASE SUPERHELD NUMMER ZWEI */
+        .SPRECHBLASEWEITER {
+            position: absolute;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            bottom: 25%;
+            left: 12%;
+            height: 18%;
+            width: 12%;
+            border-radius: 20px 20px 20px 0px;
+            background-color: white;
+            box-shadow: 5px 5px 10px 0px gray;
+            font-family: "open sans";
+            font-size: 1rem;
+            color: #285238;
+            text-align: left;
+            visibility: hidden;
+            cursor: default;
+        }
+
+        .LOS {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
             display: inline-block;
-            padding: 20px 30px;
-            font-size: 22px;
+            padding: 10px 15px;
+            font-family: 'Bangers';
+            font-size: 1.5rem;
             text-decoration: none;
             color: white;
             background-color: #285238;
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-            font-family: 'Bangers', cursive;
+            border: 2px;
+            border-color: white;
+            border-radius: 8px;
+            cursor: pointer;
         }
 
-        .button-container a.hovered {
-            background-color: #45a049;
+        /* PFEIL LINKS */
+        .PFEIL-LI {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 15%;
+            width: auto;
         }
 
-    
+        /* PFEIL RECHTS */
+        .PFEIL-RE {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 10%;
+            width: auto;
+        }
+
+        .HEADER {
+            position: absolute;
+            top: 16%;
+            left: 8%;
+            font-family: "bangers";
+            color: #285238;
+            font-size: 5rem;
+            cursor: default;
+        }
+
+        /* BILD VOM WINDRAD */
+        .BLUMEN {
+            position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+        }
+
+        .BUTTONBILDER {
+            position: absolute;
+            top: 20%;
+            right: 15%;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .BUTTON {
+            height: 100px;
+            /* Passe die Größe nach Bedarf an */
+            width: auto;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .BUTTON:hover {
+            transform: scale(1.1);
+            /* Leichter Vergrößerungseffekt beim Hover */
+        }
+
+		.KARUSELL {
+			position: absolute;
+			top: 26%;
+			right: 10%; 
+			width: 25%; /* Nimmt nur 25% der Breite ein */
+			visibility: hidden; /* Standardmäßig unsichtbar */
+			opacity: 0;
+			transform: translateY(-20px);
+			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s ease 0.5s; /* Verzögerung beim Anzeigen */
+		}
+
+		.KARUSELL-SICHTBAR {
+			visibility: visible; /* Karussell sichtbar machen */
+			opacity: 1;
+			transform: translateY(0); /* Sanfte Animation */
+			transition: opacity 0.5s ease, transform 0.5s ease;
+		}
+
+
+        /* Text Slider CSS */
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carousel-inner {
+            min-height: 300px;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            background-color: #bbbbbb;
+        }
+
     </style>
 </head>
 
 <body>
-    <!-- Hintergrundvideo -->
-<video autoplay muted loop id="backgroundVideo">
-    <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
-    <source src="video/background_video.webm" type="video/webm">
-</video>
 
+<?php include '../include/nav.php'; ?>
 
-    <main>
-        <!-- Schwebe-Icons -->
-        <div class="icon-container">
-            <img src="bilder_retterwissen/pflanze.png" alt="Pflanzlich" id="icon-pflanze">
-            <img src="bilder_retterwissen/technologie.png" alt="Technologisch" id="icon-technologie">
+<main>
+
+    <div class="HEADER"> Retterwissen <br>
+                         Innovationen
+    </div>
+
+    <img class="BLUMEN" src="../images/blumenwiese.png" alt="Blumenwiese">
+
+    <img class="HERO" src="../images/Prinzessin.png" alt="Prinzessin">
+
+    <div class="SPRECHBLASE">
+        <p>Oh...Hallo! <br> <br>
+            Dich interessieren neue Technologien?<br> <br>
+            Das ist toll! Ich zeig dir gerne einige spannende Invnovationen!</p>
+        <img class="PFEIL-RE" src="../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
+    </div>
+
+    <div class="SPRECHBLASEWEITER">
+        <p>Das ist total spannend, oder? <br> <br>
+            Viel Spaß beim Lesen!</p>
+        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
+    </div>
+
+<div class="KARUSELL">
+    <!-- Dein Karussell-Inhalt -->
+    <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item text-center p-4 active">
+                <p>Inhalt 1<br>Hier kann beliebiger Text eingefügt werden</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <p>Inhalt 2<br>Es kann jede Art von HTML verwendet werden,<br> wie z.B. dieser <a href="#top">Link nach oben</a></p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <p>Inhalt 3<br><b>Hier kann beliebiger Text eingefügt werden</b></p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                <p>Inhalt 4<br><i>Hier kann auch ein Bild eingefügt werden</i></p>
+                <p><a href="http://www.mobirise-tutorials.com/" target="_blank"><img src="http://www.mobirise-tutorials.com/LawyerM4-Tutorials/assets/images/logo-mobirise-122x122.png" alt="Logo" title="Mobirise-Tutorials.com"></a></p>
+            </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
 
-        <!-- Buttons -->
-        <div class="button-container">
-            <a href="zukunftsenergien/" class="button" id="button-pflanze">Pflanzliche Innovationen</a>
-            <a href="zukunftsenergien/" class="button" id="button-technologie">Technologische Innovationen</a>
-        </div>
-    </main>
-	
+</main>
+
 <script>
-    // Funktion, um Icons schweben zu lassen
-    function floatIcons() {
-        const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+// Eventlistener für den Pfeil nach rechts (weiter)
+document.querySelector(".PFEIL-RE").addEventListener("click", function() {
+    // Blase 1 ausblenden
+    document.querySelector(".SPRECHBLASE").classList.add("WEG");
 
-        icons.forEach(icon => {
-            let position = 0; // Startposition
-            let direction = 1; // Bewegung nach oben oder unten
-            const maxMovement = 15; // Maximale Bewegung in Pixel
-            const stepSize = 0.25; // Bewegungsschritt
+    // Blase 2 einblenden
+    document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
 
-            const iconFloat = () => {
-                if (position >= maxMovement || position <= -maxMovement) {
-                    direction *= -1; // Richtung wechseln
-                }
-                position += direction * stepSize; // Position aktualisieren
-                icon.style.transform = `translateY(${position}px)`; // Icon bewegen
-                requestAnimationFrame(iconFloat); // Animation wiederholen
-            };
+    // Karussell sichtbar machen
+    document.querySelector(".KARUSELL").classList.add("KARUSELL-SICHTBAR");
+});
 
-            iconFloat(); // Animation starten
-        });
-    }
+// Eventlistener für den Pfeil nach links (zurück)
+document.querySelector(".PFEIL-LI").addEventListener("click", function() {
+    // Blase 1 wieder einblenden
+    document.querySelector(".SPRECHBLASE").classList.remove("WEG");
 
-    // Funktion für Hover-Effekt auf Buttons
-    function buttonHoverEffect() {
-        const buttons = document.querySelectorAll('.button'); // Alle Buttons auswählen
-        buttons.forEach(button => {
-            button.addEventListener('mouseover', () => {
-                button.classList.add('hovered'); // Klasse hinzufügen bei Hover
-            });
-            button.addEventListener('mouseout', () => {
-                button.classList.remove('hovered'); // Klasse entfernen bei Hover-Ende
-            });
-        });
-    }
+    // Blase 2 ausblenden
+    document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
 
-    // Startet die Funktionen nach dem Laden der Seite
-    document.addEventListener('DOMContentLoaded', () => {
-        floatIcons(); // Icons schweben lassen
-        buttonHoverEffect(); // Hover-Effekt aktivieren
-    });
+    // Karussell unsichtbar machen
+    document.querySelector(".KARUSELL").classList.remove("KARUSELL-SICHTBAR");
+});
+
+
 </script>
 
-	    <!-- Footer -->
-	<footer class="footer-custom">
-    <div class="footer-links">
-        <a href="../impressum/impressum.php">Impressum</a>
-    </div>
-</footer>
- <!-- Footer-Container -->
-
-
- 
 </body>
 </html>

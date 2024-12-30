@@ -1,239 +1,384 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-	
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasserkraft</title>  
-	
-       <!-- Einbinden der Google Fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Retterwissen: Wasserenergie</title>
+
+  <!-- Einbinden der Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="../../css/styles.css">
+
+    <style>
+        main {
+            background-color: #b9e5ef;
+            overflow: hidden; /* Verhindert das Scrollen der Seite */
+        }
+
+   		h1{
+			font-family: "open sans";
+			color:#e8a723;
+			font-size: 2rem;
+			padding-top: 0px;
+		}
+		
+		p {
+			text-align: left;
+		}
+		
+        details {
+            background: #eee;
+            border: 1px solid #e8a723;
+            border-radius: 3px;
+            margin-bottom: 1.5rem;
+        }
+
+        summary {
+            background: #e8a723;
+            color: #fff;
+            cursor: pointer;
+            padding: 1rem;
+			text-align: left;
+			font-weight: bold;
+        }
+
+        /* Verzögerungseffekt */
+        details[open] summary ~ * {
+            animation: sweep .7s ease-in-out;
+        }
+
+        @keyframes sweep {
+            0% {opacity: 0; margin-left: -20px}
+            100% {opacity: 1; margin-left: 0px}
+        }
+
+		
+        .HERO {
+            position: absolute;
+            bottom: 4%;
+            left: 2%;
+            height: 30%;
+        }
+
+		/* SPRECHBLASE SUPERHELD */
+        .SPRECHBLASE {
+            position: absolute;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			bottom:25%;
+			left:12%;
+			height:27%;
+			width: 12%;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			font-family: "open sans";
+			font-size: 1rem;
+			color:#285238;
+			text-align: left;
+			visibility: visible;
+			cursor: default;
+			}
+		
+		/* SPRECHBLASE SUPERHELD NUMMER ZWEI */
+        .SPRECHBLASEWEITER {
+            position: absolute;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            bottom: 25%;
+            left: 12%;
+            height: 18%;
+            width: 12%;
+            border-radius: 20px 20px 20px 0px;
+            background-color: white;
+            box-shadow: 5px 5px 10px 0px gray;
+            font-family: "open sans";
+            font-size: 1rem;
+            color: #285238;
+            text-align: left;
+            visibility: hidden;
+			cursor: default;
+        }
+
+        .LOS {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            display: inline-block;
+            padding: 10px 15px;
+            font-family: 'Bangers';
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: white;
+            background-color: #285238;
+            border: 2px;
+            border-color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+		
+		/* PFEIL LINKS */
+
+        .PFEIL-LI {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 15%;
+            width: auto;
+        }
+ 		/* PFEIL RECHTS */
+        .PFEIL-RE {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 10%;
+            width: auto;
+        }
+
+        .HEADER {
+            position: absolute;
+            top: 16%;
+            left: 8%;
+            font-family: "bangers";
+            color: #285238;
+            font-size: 5rem;
+			cursor: default;
+        }
+
+		 /* BILD VOM WINDRAD */
+        .WINDRAD {
+            position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+        }
+		
+			.BUTTONBILDER {
+			position: absolute;
+			top: 20%;
+			right: 15%;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.BUTTON {
+			height: 100px; /* Passe die Größe nach Bedarf an */
+			width: auto;
+			cursor: pointer;
+			transition: transform 0.2s ease;
+		}
+
+		.BUTTON:hover {
+			transform: scale(1.1); /* Leichter Vergrößerungseffekt beim Hover */
+		}
+		
+		/* ÜBERGEORDNETES AKKORDEON */
+        .AKKORDEON {
+            position: absolute;
+            top: 26%;
+            right: 15%;
+            width: 25%;
+            visibility: hidden;
+            transform: translateY(-20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+		
+		/* AKKORDEON INHALT */
+        .AKKORDEON-INHALT {
+            padding: 0.5rem 1rem 1px 1rem;
+            color: black;
+			cursor: default;
+        }
+
+		  .AKKORDEON-SICHTBAR {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+		
+  		 .HERVORHEBEN {
+			color: #e8a723;
+			font-weight: bold;
+			cursor: pointer;
+			position: relative;
+		}
+		
+		/* INFOBOX BEIM HOVERN */
+		.HERVORHEBEN:hover::after {
+			content: attr(data-infokasten);
+			background-color: #285238;
+			color: #FFFFFF;
+			position: absolute;
+			padding: 10px; /* Etwas mehr Padding für mehr Abstand */
+			border-radius: 10px; 
+			font-size: 0.9rem;
+			font-family: 'Open Sans', sans-serif; /* Schriftart Open Sans */
+			z-index: 1000;
+			white-space: normal; /* Textumbrüche erlauben */
+			width: 250px; /* Feste Breite */
+			pointer-events: none; /* Verhindert, dass der Infokasten das Hover-Verhalten blockiert */
+			left: calc(100% + 10px); /* Abstand zum Cursor auf der X-Achse */
+			top: calc(100% + 10px); /* Abstand zum Cursor auf der Y-Achse */
+		}
+
+
+  
+        .ZEIGEN {
+            visibility: visible;
+        }
+
+        .WEG {
+            visibility: hidden;
+        }
+		
+    </style>
 	
-  <style>
-	  	  
-	body {
-    margin: 0;
-    background-color: #e3f2fd;
-    color: #333;
- 	overflow: auto;
-}
-
-    .container {
-        background-color: rgba(255, 255, 255, 0.9);
-        margin: 50px auto;
-        padding: 20px;
-        max-width: 800px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    h1 {
-        font-family: 'Bangers', cursive;
-        color: #1976d2;
-        text-align: center;
-    }
-
-  h2 {
-    color: #1976d2;
-    text-align: center;
-}
-    p {
-        line-height: 1.8;
-    }
-
-    .hervorheben {
-        color: #1976d2;
-        cursor: pointer;
-        font-weight: bold;
-    }
-
-    .infokasten {
-        display: none;
-        position: fixed;
-        background: #fff;
-        border: 1px solid #ddd;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        z-index: 100;
-    }
-
-    .infokasten img {
-        max-width: 100%; /* Bild passt sich der Breite des Containers an */
-        height: auto; /* Höhenanpassung, um die Bildproportionen beizubehalten */
-        display: block; /* Stellt das Bild als Block-Element dar, um die Größe des Containers zu füllen */
-        margin: 0 auto; /* Zentriert das Bild horizontal im Container */
-    }
-
-    .animation-container {
-        margin: 30px auto;
-        text-align: center;
-        position: relative;
-        height: 200px;
-        background-color: #bbdefb;
-        border: 2px solid #1976d2;
-        border-radius: 10px;
-        overflow: auto;
-    }
-
-    .animation-bar {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 0;
-        background-color: #64b5f6;
-        transition: height 1s ease-in-out;
-    }
-
-    .button-container {
-        text-align: center;
-        margin-top: 30px;
-    }
-
-    .button {
-        background-color: #1976d2;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-top: 10px; 
-    }
-
-    .interactive-box {
-        border: 1px solid #1976d2;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 20px 0;
-        background-color: #e3f2fd;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .interactive-box p {
-        margin-bottom: 10px; /* Abstand zwischen der Frage und den Antwortoptionen */
-    }
-
-    .interactive-box label {
-        display: flex;
-        align-items: center;
-        margin-bottom: 5px; /* zusätzlicher Abstand zwischen den Antwortoptionen */
-    }
-
-    .interactive-box input {
-        margin-right: 10px;
-    }
-
-    .interactive-box .button {
-        margin-top: 10px; /* zusätzlicher Abstand zwischen den Antwortoptionen und dem Button */
-    }
-
-    #quiz-result {
-        margin-top: 10px;
-        font-weight: bold;
-    }
-
-    #extra-info {
-        display: none;
-        margin-top: 20px;
-    }
-
-    iframe {
-        width: 100%;
-        max-width: 720px;
-        height: 405px;
-        border: none;
-    }
-</style>
 </head>
-	
+
 <body>
+
+<?php include '../../include/nav.php'; ?>
+
+<main>
+
+    <div class="HEADER"> Retterwissen <br>
+                         Wasserkraft
+	</div>
 	
-	<?php include '../../include/nav.php'; ?>
+    <img class="WINDRAD" src="../../images/wasserkraftwerk.png" alt="Wasserkraftwerk">
+
+
+    <img class="HERO" src="../../images/AquaBoy.png" alt="Aqua Boy">
+
+    <div class="SPRECHBLASE">
+
+        <p>Hallo! <br> <br>
+            Es freut mich, dass du mehr über Wasserkraft lernen willst.<br> <br>
+            Wasserkraft nutzt die Kraft von fließendem Wasser, um Strom zu machen, und ist super wichtig für unsere Zukunft!</p>
+
+        <img class="PFEIL-RE" src="../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
+    </div>
+
+    <div class="SPRECHBLASEWEITER">
+
+        <p>Hier sind einige Informationen zu Wasserkraft! Viel Spaß beim Rumstöbern.</p>
+
+        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
+
+    </div>
 	
-    <div class="container">
-        <h1>Wasserkraft</h1>
-		
-       <p>
-   		 Fließendes <span class="hervorheben" data-infokasten="Wasser ist ein wichtiger Teil der Natur und eine Energiequelle.">Wasser</span> hat viel Kraft! Je schneller es fließt, desto stärker wird es. Diese Kraft können wir nutzen, um Strom zu machen. Dazu bauen wir große <span class="hervorheben" data-infokasten="Eine Staumauer hält das Wasser zurück, damit es sich sammeln kann.">Staumauern</span>, die das Wasser aufhalten. 
-  		 Das Wasser fließt dann durch große <span class="hervorheben" data-infokasten="Eine Turbine ist wie ein großes Rad, das sich dreht, wenn Wasser hindurchfließt.">Turbinen</span>, die sich drehen. Diese Bewegung wird in <span class="hervorheben" data-infokasten="Strom ist die Energie, die wir für Lampen, Computer und vieles mehr brauchen.">Strom</span> umgewandelt. 
- 	     Solche <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk ist eine Anlage, die Strom aus Wasser erzeugt.">Wasserkraftwerke</span> sind wichtig, weil sie saubere Energie liefern, ohne die Umwelt zu verschmutzen.
-       </p>
-		
-<!-- Bild über die Funktionsweise einer Staumauer -->
-		
-<div class="infokasten">
-    <img src="../../images/staumauer.jpg" alt="Bild einer Staumauer">
+
+
+  <div class="AKKORDEON">
+    <details>
+        <summary>Was ist Wasserkraft?</summary>
+        <div class="AKKORDEON-INHALT">
+            <p>
+                <span class="HERVORHEBEN" data-infokasten="Eine Art von Energie, die aus Wasser gewonnen wird. Fließendes Wasser wird genutzt, um Strom zu erzeugen.">Wasserkraft</span>
+                ist eine erneuerbare Energiequelle, die durch die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Die Bewegung von Wasser, z. B. in Flüssen oder bei fallendem Wasser in Staudämmen.">Bewegung von Wasser</span>
+                erzeugt wird. Wenn Wasser fließt oder fällt, treibt es die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Drehscheiben oder Turbinen, die durch die Kraft des Wassers bewegt werden. Diese wandeln die Energie des Wassers in mechanische Energie um.">Turbinen</span>
+                an, die in Wasserkraftwerken installiert sind. <br><br> Diese Bewegung treibt einen 
+                
+                <span class="HERVORHEBEN" data-infokasten="Ein Gerät, das Bewegung in elektrische Energie umwandelt. In einem Wasserkraftwerk wird der Generator durch die Bewegung der Turbinen aktiviert.">Generator</span>
+                an, der die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Die Energie, die ein bewegter Körper hat. Im Fall der Wasserkraft ist es die Bewegung des Wassers.">kinetische Energie</span>
+                des Wassers in elektrischen Strom umwandelt. Der erzeugte Strom wird zur Beleuchtung, für elektrische Geräte und zur Heizung verwendet.</p>
+        </div>
+    </details>
+    
+    <details>
+        <summary>Was sind Wasserkraftwerke?</summary>
+        <div class="AKKORDEON-INHALT">
+            <p>Wasserkraftwerke sind Anlagen, die kinetische Energie von Wasser in elektrische Energie umwandeln. Sie bestehen in der Regel aus einem 
+                <span class="HERVORHEBEN" data-infokasten="Ein Staudamm oder eine Struktur, die Wasser leitet, um es zur Stromerzeugung zu nutzen.">Staudamm</span>, 
+                einer 
+                
+                <span class="HERVORHEBEN" data-infokasten="Ein rotierendes Gerät, das Energie durch die Bewegung von Wasser erzeugt.">Turbine</span> 
+                und einem 
+                
+                <span class="HERVORHEBEN" data-infokasten="Maschine, die mechanische Energie in elektrische Energie umwandelt.">Generator</span>. 
+                <br><br> Die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Turbinen, die durch die Bewegung des Wassers angetrieben werden, um Strom zu erzeugen.">Turbinen</span> 
+                sind die rotierenden Teile, die durch die Kraft des Wassers in Bewegung gesetzt werden und den Generator antreiben. Diese Anlagen werden oft in Flüssen oder an Wasserfällen betrieben, um eine größere Menge an Strom zu erzeugen. <br><br> Die Technik hat sich im Laufe der Jahre weiterentwickelt, um effizienter und umweltfreundlicher zu werden.</p>
+        </div>
+    </details>
+    
+    <details>
+        <summary>Wasserkraft und Umwelt</summary>
+        <div class="AKKORDEON-INHALT">
+            <p>Wasserkraft ist besonders umweltfreundlich, da sie keine 
+                <span class="HERVORHEBEN" data-infokasten="Luftverschmutzung, die durch Verbrennung fossiler Brennstoffe entsteht.">Luftverschmutzung</span> verursacht und keine 
+                
+                <span class="HERVORHEBEN" data-infokasten="Gase, die zur globalen Erwärmung beitragen.">Treibhausgase</span> 
+                freisetzt. Sie nutzt die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Die Bewegung von Wasser, z. B. in Flüssen oder durch fallendes Wasser.">Kraft des Wassers</span>
+                als Energiequelle und hinterlässt keine 
+                
+                <span class="HERVORHEBEN" data-infokasten="Abfälle oder Stoffe, die in die Umwelt gelangen und ihre Qualität beeinträchtigen.">Abfälle</span> 
+                oder 
+                
+                <span class="HERVORHEBEN" data-infokasten="Stoffe, die die Umwelt negativ beeinflussen.">Verunreinigungen</span>.
+                <br><br> Durch die Nutzung von Wasserkraft werden weniger 
+                
+                <span class="HERVORHEBEN" data-infokasten="Rohstoffe, die für die Energieproduktion benötigt werden.">natürliche Ressourcen</span> 
+                wie Kohle und Gas benötigt, was gut für die Umwelt ist. <br><br> Wasserkraftwerke sollten so gebaut werden, dass sie die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Die natürliche Umgebung ohne negative Auswirkungen.">Natur</span>
+                möglichst wenig beeinträchtigen, zum Beispiel durch den Schutz von Fischwanderungen und lokalen Ökosystemen.</p>
+        </div>
+    </details>
+
+    <details>
+        <summary>Zukunft</summary>
+        <div class="AKKORDEON-INHALT">
+            <p>Wasserkraft hat eine wichtige Rolle in der 
+                <span class="HERVORHEBEN" data-infokasten="Der Übergang zu erneuerbaren Energien, um die Umwelt zu schützen und die fossile Brennstoffnutzung zu reduzieren.">Energiewende</span>. 
+                Sie trägt dazu bei, unseren 
+                
+                <span class="HERVORHEBEN" data-infokasten="Der gesamte elektrische Energieverbrauch eines Gebiets oder Landes.">Strombedarf</span> 
+                mit 
+                
+                <span class="HERVORHEBEN" data-infokasten="Energie, die aus natürlichen Quellen wie Wasser gewonnen wird.">sauberer Energie</span> 
+                zu decken und die 
+                
+                <span class="HERVORHEBEN" data-infokasten="Abhängigkeit von fossilen Brennstoffen wie Kohle, Öl und Gas.">Abhängigkeit von fossilen Brennstoffen</span> 
+                zu verringern. <br><br> In Zukunft könnten 
+                
+                <span class="HERVORHEBEN" data-infokasten="Wasserkraftwerke, die noch effizienter und leistungsfähiger sind.">Wasserkraftwerke</span> 
+                noch leistungsfähiger und effizienter werden, wodurch sie noch mehr 
+                
+                <span class="HERVORHEBEN" data-infokasten="Elektrische Energie, die durch Wasserkraft erzeugt wird.">Strom</span> 
+                produzieren könnten. <br><br> Die Energiewende setzt auf erneuerbare Energiequellen wie Wasser, um die Umwelt zu schützen und eine nachhaltige Energieversorgung sicherzustellen.</p>
+        </div>
+    </details>
 </div>
 
-        <h2>Wie funktioniert eine Staumauer?</h2>
-        <p>
-            Eine <span class="hervorheben" data-infokasten="Eine Staumauer blockiert das Wasser in einem Fluss, um es zu speichern.">Staumauer</span> bildet einen 
-            <span class="hervorheben" data-infokasten="Ein Stausee ist ein künstlicher See, der durch eine Staumauer entsteht.">Stausee</span>. Das Wasser wird zu einer 
-            <span class="hervorheben" data-infokasten="Die Turbine wandelt Wasserenergie in mechanische Energie um.">Turbine</span> geleitet, die mit einem 
-            <span class="hervorheben" data-infokasten="Der Generator erzeugt Strom aus mechanischer Energie.">Generator</span> verbunden ist.
-        </p>
-        
-        <div class="animation-container">
-            <div class="animation-bar" id="animation-bar"></div>
-        </div>
-		
-		 <div class="button-container">
-            <button class="button" id="fill-sea">Erfahre mehr zu Stauseen! </button>
-        </div>
-		
-       <p id="extra-info">
-  		  Ein <span class="hervorheben" data-infokasten="Ein Stausee ist ein künstlich angelegter See, der Wasser speichert.">Stausee</span> ist nicht nur wichtig für die Energiegewinnung, sondern auch für viele andere Dinge. Er kann <span class="hervorheben" data-infokasten="Trinkwasser ist sauberes Wasser, das wir täglich trinken und für das Kochen nutzen.">Trinkwasser</span> speichern und so Menschen in Städten und Dörfern versorgen. Außerdem hilft er dabei, <span class="hervorheben" data-infokasten="Überschwemmungen entstehen, wenn Flüsse zu viel Wasser führen und das Land überfluten.">Überschwemmungen</span> zu verhindern, indem das Wasser kontrolliert abgelassen wird.
-  		  <br><br>
-  		  Stauseen bieten auch <span class="hervorheben" data-infokasten="Freizeit bedeutet, Dinge zu tun, die Spaß machen, wie Schwimmen oder Picknicks.">Freizeitmöglichkeiten</span> wie Schwimmen, Angeln oder Bootfahren. Viele Menschen kommen dorthin, um die Natur zu genießen. Allerdings gibt es auch <span class="hervorheben" data-infokasten="Umwelteinflüsse sind Veränderungen, die Tiere, Pflanzen oder die Landschaft betreffen.">Umwelteinflüsse</span>. Zum Beispiel müssen manchmal Tiere umziehen, wenn ihr Lebensraum vom Wasser überflutet wird. Pflanzen, die unter Wasser stehen, können nicht weiter wachsen.
-  		  <br><br>
-    		Ein Stausee kann auch das <span class="hervorheben" data-infokasten="Das Klima beschreibt das Wetter über einen langen Zeitraum, zum Beispiel ob es in einer Region oft regnet oder heiß ist.">Klima</span> beeinflussen, weil die große Wasserfläche die Umgebung kühler machen kann. Gleichzeitig müssen wir sicherstellen, dass <span class="hervorheben" data-infokasten="Tiere wie Fische und Vögel brauchen ihre Lebensräume, um zu überleben.">Lebensräume</span> erhalten bleiben, damit Tiere und Pflanzen dort leben können.
-		</p>
-		
-		<div class="interactive-box">
-            <h3>Quiz: Teste dein Wissen über Stauseen!</h3>
-            <p>Wofür wird ein Stausee hauptsächlich verwendet?</p>
-            <label><input type="radio" name="quiz-answer" value="Trinkwasser speichern"> Trinkwasser speichern</label>
-            <label><input type="radio" name="quiz-answer" value="Kühlung von Kraftwerken"> Kühlung von Kraftwerken</label>
-            <label><input type="radio" name="quiz-answer" value="Schutz vor Überschwemmungen"> Schutz vor Überschwemmungen</label>
-            <button class="button" id="submit-answer">Antwort überprüfen</button>
-            <p id="quiz-result"></p>
-        </div>
-		
-        <h2>Mehr zu Wasserkraftwerken</h2>
-        <p>
-            <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk nutzt die Energie von fließendem Wasser, um Strom zu erzeugen.">Wasserkraftwerke</span> sind Anlagen, in denen 
-            <span class="hervorheben" data-infokasten="Die Turbine ist das rotierende Gerät im Wasserkraftwerk.">Turbinen</span> durch die Kraft des 
-            <span class="hervorheben" data-infokasten="Das Wasser bewegt sich in Richtung Turbine und Generator.">Wassers</span> in Bewegung gesetzt werden. Die Drehbewegung der Turbinen 
-            wird in elektrischen Strom umgewandelt. Diese Form der Energieerzeugung ist besonders <span class="hervorheben" data-infokasten="Saubere Energie kommt ohne CO2-Ausstoß aus, was gut für die Umwelt ist.">umweltfreundlich</span>, da sie keine schädlichen Emissionen erzeugt.
-        </p>
-        
-        <h3>Wie funktioniert ein Wasserkraftwerk?</h3>
-        <p>
-            Ein <span class="hervorheben" data-infokasten="Ein Wasserkraftwerk besteht aus einer Staumauer, einem Stausee, Turbinen und einem Generator.">Wasserkraftwerk</span> funktioniert ähnlich wie ein 
-            <span class="hervorheben" data-infokasten="Ein Windkraftwerk nutzt den Wind, um Turbinen anzutreiben und Strom zu erzeugen.">Windkraftwerk</span>, aber anstelle von Wind nutzen wir hier 
-            <span class="hervorheben" data-infokasten="Kraftwerk ist der allgemeine Begriff für eine Einrichtung, die Energie erzeugt.">Wasser</span>. Das Wasser fällt aus einem hohen Punkt auf die 
-            <span class="hervorheben" data-infokasten="Turbinen sind rotierende Geräte im Wasserkraftwerk.">Turbinen</span> und bewegt sie. Diese Turbinen treiben dann den 
-            <span class="hervorheben" data-infokasten="Ein Generator wandelt mechanische Energie in elektrische Energie um.">Generator</span> an, der Strom erzeugt.
-        </p>
-		
-        <h3>Beispiele für Wasserkraftwerke</h3>
-        <p>Ein bekanntes Beispiel für ein Wasserkraftwerk in Deutschland ist das 
-            <span class="hervorheben" data-infokasten="Das <i>Kraftwerk in Rappbode</i> liegt im Harz, einem Gebirge in Deutschland.">Kraftwerk in Rappbode</i></span> im Harz. 
-            Es nutzt die Energie des Wassers des 
-            <span class="hervorheben" data-infokasten="Die Rappbode ist ein Fluss im Harzgebirge.">Rappbode-Flusses</span>, um Strom zu erzeugen.
-        </p>
-		
-		<div class="button-container">
-            <a href="../../media/kraftwerk.mp4" class="button" target="_blank">Mehr zur Funktionsweise eines Wasserkraftwerks sehen</a>
-        </div>
-		
-	</div>
 
-  <script>
-    // Funtion to close all accordion sections
+    </div>
+
+</main>
+
+
+<script>
+
+	
+	
+    // ALLE OFFENEN AKKORDEONS SCHLIEßEN SOBALD EINS GEÖFFNET
     function closeAllAccordions() {
         document.querySelectorAll('.AKKORDEON details[open]').forEach(detail => {
             detail.removeAttribute('open');
@@ -246,10 +391,11 @@
         document.querySelector(".SPRECHBLASE").classList.add("WEG");
         document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
 
-        // Akkordeons sichtbar machen
+        // AKKORDEONS SICHTBAR MACHEN
         document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
     }
 
+	   //SPRECHBLASE
     document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
 
     function ZeigeSprechblase() {
@@ -263,41 +409,9 @@
     document.querySelectorAll('.AKKORDEON details summary').forEach(summary => {
         summary.addEventListener('click', closeAllAccordions);
     });
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        var accordeonContents = document.querySelectorAll(".AKKORDEON-INHALT p");
 
-        accordeonContents.forEach(function(content) {
-            content.addEventListener("mouseover", function(event) {
-                var target = event.target;
-                if (target.classList.contains("highlight")) {
-                    // Setze den Hintergrund auf gelb, um das Wort hervorzuheben
-                    target.style.backgroundColor = "yellow";
-                }
-            });
-
-            content.addEventListener("mouseout", function(event) {
-                var target = event.target;
-                if (target.classList.contains("highlight")) {
-                    // Entferne den gelben Hintergrund, wenn die Maus nicht mehr über dem Wort ist
-                    target.style.backgroundColor = "";
-                }
-            });
-        });
-
-        var infokasten = document.querySelectorAll('.hervorheben');
-        infokasten.forEach(function(el) {
-            el.addEventListener('click', function() {
-                var imageSrc = el.getAttribute('data-infokasten');
-                var infobox = document.querySelector('.infokasten');
-                infobox.querySelector('img').src = '../../images/' + imageSrc + '.jpg';
-                infobox.style.display = 'block';
-            });
-        });
-    });
+  
 </script>
+
 </body>
-	
 </html>
-
-

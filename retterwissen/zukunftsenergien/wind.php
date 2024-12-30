@@ -277,12 +277,7 @@
 
     </div>
 	
-	    <!-- Bilder als Buttons -->
-    <div class="BUTTON-IMAGES">
-        <a href="https://www.ardmediathek.de/video/die-maus/wie-viel-energie-erzeugt-ein-windrad-bei-einer-umdrehung/das-erste/Y3JpZDovL3dkci5kZS9CZWl0cmFnLXNvcGhvcmEtYjc1MWY5ZjQtY2Y3My00NDRmLTg1MWYtYmMwNDgxMjJiZWIw?isChildContent=" target="_blank">
-            <img src="../../images/video.png" alt="Button 1" class="BUTTON">
-        </a>
-    </div>
+
 
     <div class="AKKORDEON">
         <details>
