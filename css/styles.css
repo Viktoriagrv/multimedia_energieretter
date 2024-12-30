@@ -1082,7 +1082,7 @@
 			visibility: visible;
 			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 3s;							/* Dauer (n) */
+			animation-duration: 1.5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1124,7 +1124,7 @@
 			visibility: hidden;
 			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 4s;							/* Dauer (n) */
+			animation-duration: 2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1450,6 +1450,86 @@
 			}
 		}
 
+		.KNIGHT-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:5%;
+			height:35%;
+			width:auto;
+			transform: rotateY(180deg);
+			animation-name: FLIEGENKAPITELSTART;						/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			animation-finished: reverse;
+			visibility: visible;
+			z-index:5;
+		}
+		
+		
+		@keyframes FLIEGENKAPITELSTART {
+			49.99% {
+				bottom:60%;
+				right: 80%;
+				transform: rotateY(180deg);
+			}
+			50% {
+				bottom:60%;
+				right: 80%;
+				transform: rotateY(0deg);
+			}
+			
+			75%{
+				bottom:10%;
+				right:80%;
+				transform: rotateY(0deg);
+			}
+			
+			99.99%{
+				bottom:10%;
+				right: 5%;
+				transform: rotateY(0deg);
+			}
+			100% {
+				bottom:10%;
+				right: 5%;
+				transform: rotateY(180deg);
+			}
+		}
+
+		.KNIGHT-KAPITELSTART-ENDE{
+			position: absolute;
+			bottom: 10%;
+			right:5%;
+			height:35%;
+			width:auto;
+			transform: rotateY(180deg);
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: hidden;
+		}
+		
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateX(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateX(360deg);	
+			}
+		}
+	
+		
+
 
 /*Kapitel-Karten */
 
@@ -1647,6 +1727,56 @@
 			left: 2%;
 			height:35%;
 			visibility: hidden;
+		}
+
+		.KNIGHT-KARTE{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:35%;
+			visibility: hidden;
+			transform: rotateY(0deg);
+			animation-name: FLIEGEN;						/* Name (keyframe) */
+			animation-duration: 4s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			animation-finished: reverse;
+			z-index:5;
+		}
+		
+		
+		@keyframes FLIEGEN {
+			49.99% {
+				bottom:60%;
+				left: 60%;
+				transform: rotateY(0deg);
+			}
+			50% {
+				bottom:60%;
+				left: 60%;
+				transform: rotateY(180deg);
+			}
+			
+			75%{
+				bottom:4%;
+				left:60%;
+				transform: rotateY(180deg);
+			}
+			
+			99.99%{
+				bottom:4%;
+				left: 2%;
+				transform: rotateY(180deg);
+			}
+			100% {
+				bottom:4%;
+				left: 2%;
+				transform: rotateY(0deg);
+			}
 		}
 		
 		.WINDRAD1{

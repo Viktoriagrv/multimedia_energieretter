@@ -9,830 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
-	<style>
-		
-		.INFOBOX {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility:visible;
-			z-index:5;
-			}
-		
-		.BILDINFOBOX{
-			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: visible;
-			}
-		
-		.TEXT-START{
-			position: absolute;
-			top: 7%;
-			left: 50%;
-			height: auto;
-			width: 48%;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.7rem;
-			text-align: left;
-		}
-		
-		.KARTE-ANSEHEN{
-			position: absolute;
-			padding: 15px 20px;
-			bottom: 7%;
-			right: 12%;
-			font-family: "bangers";
-			font-size: 2rem;
-			color: #e8a723;
-			letter-spacing: 0.05em;
-			border: 2px solid #285238;
-			border-radius: 5px;
-			background-color: #285238;
-			cursor: pointer;
-			}
-		
-		.KARTE-ANSEHEN:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-			}
-		
-		.PLATZIERUNG{
-			position: absolute;
-			height:90%;
-			width: 90%;	
-			top:10%;
-			left:5%;
-		}
-		
-		.WELTKARTE{
-			position:absolute;
-			top:5%;
-			width:100%;
-			height:auto;
-			z-index:0;
-		}
-	
-		.WINDRAD1{
-			position:absolute;
-			bottom: 2%;
-			left: 18%;
-			height:20%;
-			width:auto;
-			z-index: 4;
-			cursor: pointer;
-			visibility: hidden;
-		}
-		
-		.WINDRAD2{
-			position:absolute;
-			bottom:2%;
-			left: 36%;
-			height:20%;
-			width:auto;
-			z-index: 4;
-			cursor: pointer;
-			visibility: hidden;
-		}
-		
-		.WINDRAD3{
-			position:absolute;
-			bottom:2%;
-			left: 48%;
-			height:20%;
-			width:auto;
-			z-index: 4;
-			cursor: pointer;
-			visibility: hidden;
-		}
-		
-		.HERO{
-			position:absolute;
-			bottom:4%;
-			left: 2%;
-			height:35%;
-			visibility: hidden;
-		}
-		
-		.SPRECHBLASE1 {
-			position: absolute;
-			bottom:29%;
-			left:14%;
-			height:auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: "open sans";
-			font-size: 1.3rem;
-			color:#285238;
-			text-align: left;
-			visibility: hidden;
-		}
-		
-		.SPRECHBLASE2 {
-			position: absolute;
-			bottom:29%;
-			left:14%;
-			height:auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: "open sans";
-			font-size: 1.3rem;
-			color:#285238;
-			text-align: left;
-			visibility: hidden;
-		}
-		
-		.SPRECHBLASE3 {
-			position: absolute;
-			bottom:29%;
-			left:14%;
-			height:auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: "open sans";
-			font-size: 1.3rem;
-			color:#285238;
-			text-align: left;
-			visibility: hidden;
-		}
-		
-		.DROP-ELEMENT {
-			height: 30px;
-			width: 30px;
-			border-radius: 40%;
-			background-color: #e8a723;
-			z-index: 3;
-		}
-		
-		.DROP-ELEMENT:hover{
-			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: brown;
-		}
-		
-		.DRAG-ELEMENT {
-			z-index: 4;
-			cursor: pointer;
-		}
-		
-				
-		#DROPEUROPA{
-			position: absolute;
-			top: 18%;
-			left: 50%;		
-		}
-		
-		.EUROPABTN{
-			visibility: visible;
-		}
-		
-		.EUROPA{
-			position: absolute;
-			top: 20%;
-			left: 52%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.EUROPAXL{
-			position: absolute;
-			top: 20%;
-			left: 53%;
-			height: auto;
-			width: 25%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:6;
-			
-		}
-		
-		.WINDRADEUROPA{
-			position: absolute;
-			top: 23%;
-			left: 50%;
-			height:5%;
-			width: auto;
-			visibility: hidden;
-			z-index: 5;
-		}
-		
-			
-		.WINDRADEUROPA:hover{
-			cursor: url('../../images/InfoI.gif'),auto;
-		}
-		
-		#DROPAUSTRALIEN{
-			position: absolute;
-			top: 60%;
-			right: 8%;
-		}
-		
-		.AUSTRALIENBTN{
-			visibility: visible;
-		}
-		
-		.AUSTRALIEN{
-			position: absolute;
-			top: 65%;
-			right: 14%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.AUSTRALIENXL{
-			position: absolute;
-			bottom:10%;
-			right: 11%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#DROPASIEN{
-			position: absolute;
-			top: 25%;
-			right:20%;
-		}
-		
-		.ASIENBTN{
-			visibility: visible;
-		}
-		
-		.ASIEN{
-			position: absolute;
-			top: 35%;
-			right:25%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.ASIENXL{
-			position: absolute;
-			top: 32%;
-			right:24%;
-			height: auto;
-			width: 25%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:6;
-		}
-		
-		.WINDRADASIEN{
-			position: absolute;
-			top: 35%;
-			right:20%;
-			height:5%;
-			width: auto;
-			visibility: hidden;
-			z-index: 5;
-		}
-		
-		#DROPSAHARA{
-			position: absolute;
-			top: 35%;
-			left: 52%;
-		}
-		
-		.SAHARABTN{
-			visibility: visible;
-		}
-		
-		.SAHARA{
-			position: absolute;
-			top: 42%;
-			left: 38%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.SAHARAXL{
-			position: absolute;
-			top: 50%;
-			left: 28%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#DROPNIAGARA{
-			position: absolute;
-			top: 16%;
-			left: 22%;
-		}
-		
-		.NIAGARABTN{
-			visibility: visible;
-		}
-		
-		.NIAGARA{
-			position: absolute;
-			top: 25%;
-			left: 27%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.NIAGARAXL{
-			position: absolute;
-			top: 33%;
-			left: 15%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#DROPAMAZONAS{
-			position: absolute;
-			top:48%;
-			left: 31%;
-		}
-		
-		.AMAZONASBTN{
-			visibility: visible;
-		}
-		
-		.AMAZONAS{
-			position: absolute;
-			top:48%;
-			left: 36%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.AMAZONASXL{
-			position: absolute;
-			bottom:43%;
-			left: 20%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#DROPATLANTIK{
-			position: absolute;
-			top:24%;
-			left: 36%;
-		}
-		
-		.ATLANTIKBTN{
-			visibility: visible;
-		}
-		
-		.ATLANTIK{
-			position: absolute;
-			top:31%;
-			left: 40%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.ATLANTIKXL{
-			position: absolute;
-			bottom:45%;
-			left: 20%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#DROPSIBIRIEN{
-			position: absolute;
-			top:12%;
-			right:23%;
-		}
-		
-		.SIBIRIENBTN{
-			visibility: visible;
-		}
-				
-		.SIBIRIEN{
-			position: absolute;
-			top:20%;
-			right: 28%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.SIBIRIENXL{
-			position: absolute;
-			top:20%;
-			right: 28%;
-			height: auto;
-			width: 25%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:6;
-		}
-		
-		.WINDRADSIBIRIEN{
-			position: absolute;
-			top:17%;
-			right: 26%;
-			height:5%;
-			width: auto;
-			visibility: hidden;
-			z-index: 5;
-		}
-		
-		#DROPMEXIKO{
-			position: absolute;
-			top:34%;
-			left: 17.5%;
-		}
-		
-		.MEXIKOBTN{
-			visibility: visible;
-		}
-		
-		.MEXIKO{
-			position: absolute;
-			top:35%;
-			left: 23%;
-			height: auto;
-			width: 10%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size:1.5rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.MEXIKOXL{
-			position: absolute;
-			top:45%;
-			left: 19%;
-			height: auto;
-			width: 10%;
-			padding-top: 5px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.3rem;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.FEHLERMELDUNG{
-			position: absolute;
-			top: 45%;
-			left: 40%;
-			height:10%;
-			width: 15%;
-			padding-top: 15px;
-			padding-left: 25px;
-			padding-right: 25px;
-			padding-bottom: 15px;
-			font-family: "open sans";
-			color: brown;
-			font-size: 2rem;
-			text-align: center;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		#SCHLIESSEN{
-			position: absolute;
-			top:15px;
-			right: 15px;
-		}
-		
-		.HURRA{
-			position: absolute;
-			padding: 25px;
-			top:48%;
-			left:13%;
-			height:20%;
-			width: 10%;
-			font-family: "open sans";
-			color: #285238;
-			text-align: left;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			z-index: 5;
-			visibility: hidden;
-		}
-		
-		.FEUERWERK-LINKS{
-			position: absolute;
-			top:20%;
-			left:5%;
-			height: auto;
-			width:30%;
-			visibility: hidden;
-			z-index: 4;
-		}
-		
-		.FEUERWERK-RECHTS{
-			position: absolute;
-			top:20%;
-			right:5%;
-			height: auto;
-			width:30%;
-			visibility: hidden;
-			z-index: 4;
-		}
-		
-		.INFOBOX-WEITER {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility:hidden;
-			z-index:5;
-			}
-		
-		.BILDINFOBOX-ENDE{
-			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: hidden;
-			}
-		
-		.TEXT-ENDE{
-			position: absolute;
-			top: 7%;
-			left: 50%;
-			height: auto;
-			width: 48%;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.6rem;
-			text-align: left;
-		}
-		
-		.BTNWEITER{
-			position: absolute;
-			padding: 15px 20px;
-			bottom: 7%;
-			right: 12%;
-			font-family: "bangers";
-			font-size: 2rem;
-			color: #e8a723;
-			letter-spacing: 0.05em;
-			border: 2px solid #285238;
-			border-radius: 5px;
-			background-color: #285238;
-			cursor: pointer;
-			}
-		
-		.BTNWEITER:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-			}
-		
-		
-		.ZEIGEN{
-			visibility: visible;
-		}
-		
-		.WEG{
-			visibility: hidden;
-		}
-		
-		.CODE{
-			font-family: "bangers";
-			font-size: 3rem;
-			color: #285238;
-			text-align: center;
-		}
-		
-		
-
-	</style>
 </head>
 
 <body>
@@ -843,7 +19,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-KNIGHT" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
 				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
@@ -864,6 +40,16 @@
 			<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
 			<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
 			<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
+			
+			<div class="EUROPA-GRUEN"></div>
+			<div class="AUSTRALIEN-GRUEN"></div>
+			<div class="ASIEN-GRUEN"></div>
+			<div class="SAHARA-GRUEN"></div>
+			<div class="NIAGARA-GRUEN"></div>
+			<div class="AMAZONAS-GRUEN"></div>
+			<div class="ATLANTIK-BLAU"></div>
+			<div class="SIBIRIEN-GRUEN"></div>
+			<div class="MEXIKO-GRUEN"></div>
 		</div>
 		
 		<img class="WINDRAD1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
@@ -871,7 +57,7 @@
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
-			<img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<img class="KNIGHT-KARTE" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="SPRECHBLASE1">
 				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -952,13 +138,13 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-KNIGHT" src="../../images/Prinz.png" alt="Golden Knight">
 			
 			<div class="TEXT-ENDE">
 				<div>
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">xdf-338</div><br>
+					<div class="CODE">fts-909</div><br>
 					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>
@@ -971,39 +157,47 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", HeroWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", HeroDa);
+		document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
 
-			function HeroWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
-			}
-			function HeroDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
-			}
+			function KnightFliegt(){
+				document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
+				
+				const knight = document.querySelector(".BILDINFOBOX-KNIGHT");
+
+				// Entferne die Animation, indem du den `animation-name` auf "none" setzt
+				knight.style.animation = "none";
+
+				// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+				void knight.offsetWidth;
+
+				// Füge die Animation wieder hinzu
+				knight.style.animation = "FLIEGEN 4s linear 1 forwards";
+						}
+
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX").classList.add("WEG");
-				document.querySelector(".HERO").classList.add("ZEIGEN");
+				document.querySelector(".KNIGHT-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD2").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD3").classList.add("ZEIGEN");
 			}
 		
+		document.querySelector(".KNIGHT-KARTE").addEventListener("click", KnightFliegtWieder);
 		
-		document.querySelector(".HERO").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".HERO").addEventListener("mouseout",ScarlettSichtbar);
+		function KnightFliegtWieder(){
+				document.querySelector(".KNIGHT-KARTE").style.animationPlayState = "running";
+			
+				const knightgross = document.querySelector(".KNIGHT-KARTE");								// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+    			knightgross.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+    			void knightgross.offsetWidth;														// Füge die Animation wieder hinzu
+    			knightgross.style.animation = "FLIEGEN 4s linear 1 forwards";
+			}
 		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".HERO").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".HERO").classList.remove("WEG");
-		}
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
@@ -1226,10 +420,10 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".HERO").classList.remove("ZEIGEN");
+			document.querySelector(".KNIGHT-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-KNIGHT").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
