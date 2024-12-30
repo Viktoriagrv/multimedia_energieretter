@@ -421,7 +421,7 @@
 
 	/*Tunder*/
 		
-		.BILDINFOBOX-THUNDER{
+		.BILDINFOBOX-THUNDER-VISIBLE{
 			position: absolute;
 			bottom:10%;
 			left: 5%;
@@ -525,7 +525,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-THUNDER" src="../../images/AquaBoy.png" alt="Thunder Bold">
+			<img class="BILDINFOBOX-THUNDER-VISIBLE" src="../../images/AquaBoy.png" alt="Thunder Bold">
 			
 			<div class="TEXT">
 				Hallo! <br>
@@ -659,7 +659,7 @@
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX-THUNDER").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-THUNDER-VISIBLE").classList.add("WEG");
 				document.querySelector(".THUNDER").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE-KLIMA").classList.add("ZEIGEN");
 				document.querySelector(".LOS-KLIMA").classList.add("ZEIGEN");

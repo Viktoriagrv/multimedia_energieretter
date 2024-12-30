@@ -30,7 +30,7 @@
 			margin: 5rem;
 			}
 		
-		.BILDINFOBOX-SCARLET{
+		.BILDINFOBOX-SCARLET-AUSWAHL{
 			position: absolute;
 			bottom:12%;
 			left: 5%;
@@ -39,7 +39,7 @@
 			visibility: hidden;
 			}
 		
-		.BILDINFOBOX-KNIGHT{
+		.BILDINFOBOX-KNIGHT-AUSWAHL{
 			position: absolute;
 			bottom:12%;
 			left: 5%;
@@ -88,7 +88,7 @@
 			}
 		}
 		
-		.BILDINFOBOX-BLAZE{
+		.BILDINFOBOX-BLAZE-AUSWAHL{
 			position: absolute;
 			bottom:12%;
 			left: 10%;
@@ -97,7 +97,7 @@
 			transform: rotateY(180deg);
 		}
 		
-		.BLUMEN-INFOBOX{
+		.BLUMEN-INFOBOX-AUSWAHL{
 			position: absolute;
 			bottom:0%;
 			left: 3%;
@@ -107,7 +107,7 @@
 			z-index:5;
 		}
 		
-		.BILDINFOBOX-THUNDER{
+		.BILDINFOBOX-THUNDER-AUSWAHL{
 			position: absolute;
 			bottom:12%;
 			left: 10%;
@@ -149,7 +149,7 @@
 			}
 		}
 		
-		.BILDINFOBOX-TITAN{
+		.BILDINFOBOX-TITAN-AUSWAHL{
 			position: absolute;
 			bottom:12%;
 			left: 10%;
@@ -169,7 +169,7 @@
 			overflow: hidden;
 		}
 		
-		.BILDINFOBOX-SONIC{
+		.BILDINFOBOX-SONIC-AUSWAHL{
 			position: absolute;
 			bottom:15%;
 			left: 20%;
@@ -178,7 +178,7 @@
 			z-index:5;
 			}
 		
-		.SCHUTZSCHILD{
+		.SCHUTZSCHILD-AUSWAHL{
 			position: absolute;
 			bottom:1%;
 			left: 1%;
@@ -207,7 +207,7 @@
 			}
 		}
 
-		.TEXTBLOCK{
+		.TEXTBLOCK-AUSWAHL{
 			position: absolute;
 			top: 21%;
 			left: 50%;
@@ -216,7 +216,7 @@
 			z-index:4;
 			}
 		
-		.NAME{
+		.NAME-AUSWAHL{
 			position: absolute;
 			top: 8%;
 			left: 50%;
@@ -227,14 +227,14 @@
 			text-align: left;
 			}
 		
-		.TITEL{
+		.TITEL-AUSWAHL{
 			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
 			text-align: left;
 			}
 		
-		.TEXT{
+		.TEXT-AUSWAHL{
 			font-family: "open sans";
 			color: #285238;
 			font-size: 1.5rem;
@@ -487,15 +487,15 @@
 			<div class="INFOSCARLETSHADE">
 				<button id="buttonSCS">&times;</button>
 				
-					<div><img class="BILDINFOBOX-SCARLET" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
+					<div><img class="BILDINFOBOX-SCARLET-AUSWAHL" src="../images/BadGirl.png" alt="Scarlet Shade"></div>
 					
-						<a class=NAME>Scarlet Shade</a>
-						<div class="TEXTBLOCK">
-						<a class="TITEL"><strong>Superkraft:</strong></a><br>
-							<a class="TEXT" style="text-align: left">Unsichtbarkeit und Tarnung</a>
+						<a class=NAME-AUSWAHL>Scarlet Shade</a>
+						<div class="TEXTBLOCK-AUSWAHL">
+						<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+							<a class="TEXT-AUSWAHL" style="text-align: left">Unsichtbarkeit und Tarnung</a>
 						<br><br>
-						<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-							<a class="TEXT" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
+						<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a><br>
+							<a class="TEXT-AUSWAHL" style="text-align: justify">Scarlet Shade trägt einen roten Umhang und eine passende rote Maske, die sie bei Bedarf unsichtbar machen. Sie kann sich lautlos bewegen und ist eine hervorragende Spionin, die Geheimnisse aufdeckt und Gerechtigkeit bringt.</a>
 					</div>
 					<br><br>
 				
@@ -505,16 +505,16 @@
 			<div class="INFOGOLDENKNIGHT">
 				<button id="buttonGK">&times;</button>
 				
-				<div><img class="BILDINFOBOX-KNIGHT" src="../images/Prinz.png" alt="Golden Knight"></div>
+				<div><img class="BILDINFOBOX-KNIGHT-AUSWAHL" src="../images/Prinz.png" alt="Golden Knight"></div>
 				
-				<a class=NAME>Golden Knight</a>
+				<a class=NAME-AUSWAHL>Golden Knight</a>
 				
-				<div class="TEXTBLOCK">
-					<a class="TITEL"><strong>Superkraft:</strong></a><br>
-					<a class="TEXT">Schutzzauber und Fliegen</a>
+				<div class="TEXTBLOCK-AUSWAHL">
+					<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Schutzzauber und Fliegen</a>
 					<br><br>
-					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-					<a class="TEXT">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
+					<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Golden Knight kann Schutzschilde für sich und andere errichten und fliegt mit übernatürlicher Anmut über den Himmel, um Menschen vor Gefahren zu bewahren.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_knight.php'">Auswählen</button>
@@ -523,17 +523,17 @@
 			<div class="INFOGREENBLAZE">
 				<button id="buttonGB">&times;</button>
 				
-				<img class="BILDINFOBOX-BLAZE" src="../images/Prinzessin.png" alt="Green Blaze">
-				<img class="BLUMEN-INFOBOX" src="../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+				<img class="BILDINFOBOX-BLAZE-AUSWAHL" src="../images/Prinzessin.png" alt="Green Blaze">
+				<img class="BLUMEN-INFOBOX-AUSWAHL" src="../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 				
-				<a class=NAME>Green Blaze</a>
+				<a class=NAME-AUSWAHL>Green Blaze</a>
 				
-				<div class="TEXTBLOCK">				
-					<a class="TITEL"><strong>Superkraft:</strong></a><br>
-					<a class="TEXT">Pflanzenkontrolle</a>
+				<div class="TEXTBLOCK-AUSWAHL">				
+					<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Pflanzenkontrolle</a>
 					<br><br>
-					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-					<a class="TEXT">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
+					<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Green Blaze ist eine Meisterin der Natur. Sie kann Pflanzen wachsen lassen, heilen und sogar zu Schutzschilden formen. Sie setzt sich für den Schutz der Natur und den Erhalt des Ökosystems ein.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_blaze.php'">Auswählen</button>
@@ -542,16 +542,16 @@
 			<div class="INFOTHUNDERBOLT">
 				<button id="buttonTB">&times;</button>
 				
-				<img class="BILDINFOBOX-THUNDER" src="../images/AquaBoy.png" alt="Thunderbolt">
+				<img class="BILDINFOBOX-THUNDER-AUSWAHL" src="../images/AquaBoy.png" alt="Thunderbolt">
 				
-				<a class=NAME>Thunderbolt</a><br>
+				<a class=NAME-AUSWAHL>Thunderbolt</a><br>
 				
-				<div class="TEXTBLOCK">
-					<a class="TITEL"><strong>Superkraft:</strong></a><br>
-					<a class="TEXT">Überschallgeschwindigkeit</a>
+				<div class="TEXTBLOCK-AUSWAHL">
+					<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Überschallgeschwindigkeit</a>
 					<br><br>
-					<a class="TITEL"><strong>Beschreibung:</strong></a>
-					<br><a class="TEXT">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
+					<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a>
+					<br><a class="TEXT-AUSWAHL">Thunderbolt, von Blitzen durchzogen, kann sich blitzschnell bewegen und sogar durch die Zeit reisen. Er nutzt seine Geschwindigkeit, um Menschen zu retten und Verbrecher zu stoppen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_thunder.php'">Auswählen</button>
@@ -560,16 +560,16 @@
 			<div class="INFOCYBERTITAN">
 				<button id="buttonCT">&times;</button>
 				
-				<img class="BILDINFOBOX-TITAN" src="../images/Biest.png" alt="Cyber Titan">
+				<img class="BILDINFOBOX-TITAN-AUSWAHL" src="../images/Biest.png" alt="Cyber Titan">
 				
-				<a class=NAME>Cyber Titan</a>
+				<a class=NAME-AUSWAHL>Cyber Titan</a>
 				
-				<div class="TEXTBLOCK">
-					<a class="TITEL"><strong>Superkraft:</strong></a><br>
-					<a class="TEXT">Übermenschliche Stärke und technologische Kontrolle</a>
+				<div class="TEXTBLOCK-AUSWAHL">
+					<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Übermenschliche Stärke und technologische Kontrolle</a>
 					<br><br>
-					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-					<a class="TEXT">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
+					<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_titan.php'">Auswählen</button>
@@ -580,17 +580,17 @@
 			<div class="INFOSONICSHIELD">
 				<button id="buttonSOS">&times;</button>
 				
-				<img class="SCHUTZSCHILD" src="../images/schutzschild.png" alt="Funkelnder Lichtkreis">
-				<img class="BILDINFOBOX-SONIC" src="../images/BadBoy.png" alt="Sonic Shield">
+				<img class="SCHUTZSCHILD-AUSWAHL" src="../images/schutzschild.png" alt="Funkelnder Lichtkreis">
+				<img class="BILDINFOBOX-SONIC-AUSWAHL" src="../images/BadBoy.png" alt="Sonic Shield">
 				
-				<a class=NAME>Sonic Shield</a>
+				<a class=NAME-AUSWAHL>Sonic Shield</a>
 				
-				<div class="TEXTBLOCK">
-					<a class="TITEL"><strong>Superkraft:</strong></a><br>
-					<a class="TEXT">Schallwellenmanipulation</a>
+				<div class="TEXTBLOCK-AUSWAHL">
+					<a class="TITEL-AUSWAHL"><strong>Superkraft:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Schallwellenmanipulation</a>
 					<br><br>
-					<a class="TITEL"><strong>Beschreibung:</strong></a><br>
-					<a class="TEXT">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
+					<a class="TITEL-AUSWAHL"><strong>Beschreibung:</strong></a><br>
+					<a class="TEXT-AUSWAHL">Sonic Shield kann Schallwellen erzeugen und kontrollieren, um massive Wände zu zerstören oder Verteidigungsfelder zu schaffen. Er kann zudem mit elektrischen Geräten kommunizieren und sie auch ohne Strom zu benutzen.</a>
 				</div>
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_sonic.php'">Auswählen</button>
@@ -634,8 +634,8 @@
 				document.querySelector('.SCARLETSHADE').addEventListener('click',ZeigeScarletShade);   //Bei Anklicken des Bildes "SCARLETSHADE" öffnet sich Infobox
 					document.querySelector('#buttonSCS').addEventListener('click',ScarletShadeAus);			// Bei KLicken des Schließen-Buttons schließt sich die Infobox
 
-					document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover",ScarletWeg);
-					document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout",ScarletDa);
+					document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").addEventListener("mouseover",ScarletWeg);
+					document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").addEventListener("mouseout",ScarletDa);
 
 					function ZeigeScarletShade() {
 						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
@@ -644,20 +644,20 @@
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
 						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 						document.querySelector(".INFOSCARLETSHADE").classList.add("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.add("ZEIGEN");
 					}
 
 					function ScarletWeg(){
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 					}
 
 					function ScarletDa(){
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.add("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.add("ZEIGEN");
 					}
 
 					function ScarletShadeAus() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 					}
 
 
@@ -666,7 +666,7 @@
 
 					function ZeigeGoldenKnight() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
@@ -674,12 +674,12 @@
 						document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
+					document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").addEventListener("click", KnightFliegt);
 
 					function KnightFliegt(){
-						document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
+						document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").style.animationPlayState = "running";
 
-						const hero = document.querySelector(".BILDINFOBOX-KNIGHT");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						const hero = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
 						hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
 						void hero.offsetWidth;														// Füge die Animation wieder hinzu
 						hero.style.animation = "FLIEGEN 2s linear 1 forwards";
@@ -692,12 +692,12 @@
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
 					document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
 
-					document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover",BlumenDa);
-					document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout",BlumenWeg);
+					document.querySelector(".BILDINFOBOX-BLAZE-AUSWAHL").addEventListener("mouseover",BlumenDa);
+					document.querySelector(".BILDINFOBOX-BLAZE-AUSWAHL").addEventListener("mouseout",BlumenWeg);
 
 					function ZeigeGreenBlaze() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
@@ -706,11 +706,11 @@
 					}
 
 					function BlumenDa(){
-						document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
+						document.querySelector(".BLUMEN-INFOBOX-AUSWAHL").classList.add("ZEIGEN");
 					}
 
 					function BlumenWeg(){
-						document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
+						document.querySelector(".BLUMEN-INFOBOX-AUSWAHL").classList.remove("ZEIGEN");
 					}
 
 					function GreenBlazeAus() {
@@ -722,7 +722,7 @@
 
 					function ZeigeThunderBolt() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
@@ -730,12 +730,12 @@
 						document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-THUNDER").addEventListener("click",ThunderRennt);
+					document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").addEventListener("click",ThunderRennt);
 
 					function ThunderRennt(){
-						document.querySelector(".BILDINFOBOX-THUNDER").style.animationPlayState = "running";
+						document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").style.animationPlayState = "running";
 
-						const thunder = document.querySelector(".BILDINFOBOX-THUNDER");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						const thunder = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
 						thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
 						void thunder.offsetWidth;														// Füge die Animation wieder hinzu
 						thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
@@ -750,7 +750,7 @@
 
 					function ZeigeCyberTitan() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
@@ -758,8 +758,8 @@
 						document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseover",BlackScreenDa);
-					document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseout",BlackScreenWeg);
+					document.querySelector(".BILDINFOBOX-TITAN-AUSWAHL").addEventListener("mouseover",BlackScreenDa);
+					document.querySelector(".BILDINFOBOX-TITAN-AUSWAHL").addEventListener("mouseout",BlackScreenWeg);
 
 
 					function BlackScreenDa(){
@@ -779,7 +779,7 @@
 
 					function ZeigeSonicShield() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
-						document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("ZEIGEN");
+						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGOLDENKNIGHT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOGREENBLAZE").classList.remove("ZEIGEN");
 						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
@@ -787,16 +787,16 @@
 						document.querySelector(".INFOSONICSHIELD").classList.add("ZEIGEN");
 					}
 		
-					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseover",SchutzschildDa);
-					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseout",SchutzschildWeg);
+					document.querySelector(".BILDINFOBOX-SONIC-AUSWAHL").addEventListener("mouseover",SchutzschildDa);
+					document.querySelector(".BILDINFOBOX-SONIC-AUSWAHL").addEventListener("mouseout",SchutzschildWeg);
 
 
 					function SchutzschildDa(){
-						document.querySelector(".SCHUTZSCHILD").classList.add("ZEIGEN");
+						document.querySelector(".SCHUTZSCHILD-AUSWAHL").classList.add("ZEIGEN");
 					}
 
 					function SchutzschildWeg(){
-						document.querySelector(".SCHUTZSCHILD").classList.remove("ZEIGEN");
+						document.querySelector(".SCHUTZSCHILD-AUSWAHL").classList.remove("ZEIGEN");
 					}
 
 					function SonicShieldAus() {
