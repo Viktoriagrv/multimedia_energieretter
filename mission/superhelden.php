@@ -7,437 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-	
-	
-    <style>
 
-				
-		.SCHRIFTZUG{
-			position: absolute;
-			top: 40%;
-			left: 8%;
-			font-family: "bangers";
-			font-size: 5rem;
-			color: #e8a723;
-			line-height: 1.1;
-			letter-spacing: 0.05em;
-			}
-		
-		.BILD{
-			position: fixed;
-			height: 30%;
-			width: auto;
-			margin: 5rem;
-			}
-		
-		.BILDINFOBOX-SCARLET-AUSWAHL{
-			position: absolute;
-			bottom:12%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: hidden;
-			}
-		
-		.BILDINFOBOX-KNIGHT-AUSWAHL{
-			position: absolute;
-			bottom:12%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			transform: rotateY(0deg);
-			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
-			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
-			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
-			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: paused;					/* für JavaScript (running, paused) */
-			z-index:5;
-		}
-		
-		@keyframes FLIEGEN {
-			49.99% {
-				bottom:50%;
-				left: 60%;
-				transform: rotateY(0deg);
-			}
-			50% {
-				bottom:50%;
-				left: 60%;
-				transform: rotateY(180deg);
-			}
-			
-			75%{
-				bottom:12%;
-				left: 60%;
-				transform: rotateY(180deg);
-			}
-			
-			99.99%{
-				bottom:12%;
-				left: 5%;
-				transform: rotateY(180deg);
-			}
-			
-			100% {
-				bottom:12%;
-				left: 5%;
-				transform: rotateY(0deg);
-			}
-		}
-		
-		.BILDINFOBOX-BLAZE-AUSWAHL{
-			position: absolute;
-			bottom:12%;
-			left: 10%;
-			height:75%;
-			width: auto;
-			transform: rotateY(180deg);
-		}
-		
-		.BLUMEN-INFOBOX-AUSWAHL{
-			position: absolute;
-			bottom:0%;
-			left: 3%;
-			height:50%;
-			width: auto;
-			visibility:hidden;
-			z-index:5;
-		}
-		
-		.BILDINFOBOX-THUNDER-AUSWAHL{
-			position: absolute;
-			bottom:12%;
-			left: 10%;
-			height:70%;
-			width: auto;
-			animation-name: RENNEN;							/* Name (keyframe) */
-			animation-duration: 0.2s;							/* Dauer (n) */
-			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
-			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
-			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: paused;					/* für JavaScript (running, paused) */
-			z-index:5;
-		}
-		
-		@keyframes RENNEN{
-			49.99% {
-				bottom:12%;
-				left: 90%;
-				transform: rotateY(0deg);
-			}
-			50% {
-				bottom:12%;
-				left: 90%;
-				transform: rotateY(180deg);
-			}
-			
-			99.99%{
-				bottom:12%;
-				left: 10%;
-				transform: rotateY(180deg);
-			}
-			
-			100% {
-				bottom:12%;
-				left: 10%;
-				transform: rotateY(0deg);
-			}
-		}
-		
-		.BILDINFOBOX-TITAN-AUSWAHL{
-			position: absolute;
-			bottom:12%;
-			left: 10%;
-			height:70%;
-			width: auto;
-			z-index:5;
-		}
-		
-		.BLACKSCREEN{
-			position: absolute;
-			top:0%;
-			left: 0%;
-			height:100%;
-			width: 100%;
-			visibility: hidden;
-			z-index:4;
-			overflow: hidden;
-		}
-		
-		.BILDINFOBOX-SONIC-AUSWAHL{
-			position: absolute;
-			bottom:15%;
-			left: 20%;
-			height:68%;
-			width: auto;
-			z-index:5;
-			}
-		
-		.SCHUTZSCHILD-AUSWAHL{
-			position: absolute;
-			bottom:1%;
-			left: 1%;
-			height:96%;
-			width: auto;
-			visibility: hidden;
-			opacity: 0.3;
-			z-index:3;
-			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 5s;							/* Dauer (n) */
-			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
-			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: infinite;			/* Wiederholungen (n, infinite) */
-			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: running;
-		}
-		
-		
-		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
-			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
-				transform: rotate(180deg);
-			}
-			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
-				transform: rotate(360deg);
-			}
-		}
-
-		.TEXTBLOCK-AUSWAHL{
-			position: absolute;
-			top: 21%;
-			left: 50%;
-			height: auto;
-			width: 43%;
-			z-index:4;
-			}
-		
-		.NAME-AUSWAHL{
-			position: absolute;
-			top: 8%;
-			left: 50%;
-			font-family: "bangers";
-			color: #e8a723;
-			font-size: 4rem;
-			letter-spacing: 0.05em;
-			text-align: left;
-			}
-		
-		.TITEL-AUSWAHL{
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.5rem;
-			text-align: left;
-			}
-		
-		.TEXT-AUSWAHL{
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.5rem;
-			text-align: justify;
-			}
-		
-				
-		.AUSWAHL{
-			position: absolute;
-			padding: 8px;
-			bottom: 7%;
-			right: 23%;
-			font-family: "bangers";
-			font-size: 2rem;
-			color: #e8a723;
-			letter-spacing: 0.05em;
-			border: 2px solid #285238;
-			border-radius: 5px;
-			background-color: #285238;
-			cursor: pointer;
-			}
-		
-		.AUSWAHL:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-			}
-		
-		.SCARLETSHADE {
-			position: absolute;
-			top: 10%;
-			left: 40%;
-			cursor: pointer;
-			}
-		
-				
-		.GOLDENKNIGHT {
-			position: absolute;
-			top: 10%;
-			left: 60%;
-			cursor: pointer;
-			}
-		
-		.GREENBLAZE {
-			position: absolute;
-			top: 10%;
-			left: 80%;
-			cursor: pointer;
-			}
-		
-		.THUNDERBOLT {
-			position: absolute;
-			top: 50%;
-			left: 35%;
-			cursor: pointer;
-			}
-		
-		.CYBERTITAN {
-			position: absolute;
-			top: 50%;
-			left: 55%;
-			cursor: pointer;
-			}
-		
-		.SONICSHIELD {
-			position: absolute;
-			top: 50%;
-			left:75%;
-			cursor: pointer;
-			}
-		
-		.INFOSCARLETSHADE {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}
-		
-		
-		.INFOGOLDENKNIGHT {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}
-		
-		
-		.INFOGREENBLAZE {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}
-		
-		
-		.INFOTHUNDERBOLT {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}
-		
-		
-		.INFOCYBERTITAN {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}
-		
-		
-		.INFOSONICSHIELD {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			}	
-		
-		.ZEIGEN {
-			visibility: visible;
-			}
-		
-		#buttonSCS{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-		#buttonGK{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-		#buttonGB{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-		#buttonTB{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-		#buttonCT{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-		#buttonSOS{
-			position: absolute;
-			right:20px;
-			top: 20px;	
-			}
-		
-	</style>
-  
-	
 
 </head>
 
@@ -450,37 +20,35 @@
 		<source src="../videos/background_video.mp4" type="video/mp4">
 		
 	</video>
-	
-	
 
-			<div class="SCHRIFTZUG">
+			<div class="SCHRIFTZUG-AUSWAHL">
 				WÄHLE DEINEN <br/> SUPERHELDEN
 			</div>
 			
 		
 			<div class="icon-container">
 				<div class="SCARLETSHADE">
-					<img class="BILD" src="../images/BadGirl.png" alt="Scarlet Shade">
+					<img class="BILD-AUSWAHL" src="../images/BadGirl.png" alt="Scarlet Shade">
 				</div>
 
 				<div class="GOLDENKNIGHT">
-					<img class="BILD" src="../images/Prinz.png" alt="Golden Knight">
+					<img class="BILD-AUSWAHL" src="../images/Prinz.png" alt="Golden Knight">
 				</div>
 
 				<div class="GREENBLAZE">
-					<img class="BILD" src="../images/Prinzessin.png" alt="Green Blaze">
+					<img class="BILD-AUSWAHL" src="../images/Prinzessin.png" alt="Green Blaze">
 				</div>
 			
 				<div class="THUNDERBOLT">
-					<img class="BILD" src="../images/AquaBoy.png" alt="Thunder Bolt">
+					<img class="BILD-AUSWAHL" src="../images/AquaBoy.png" alt="Thunder Bolt">
 				</div>
 
 				<div class="CYBERTITAN">
-					<img class="BILD" src="../images/Biest.png" alt="Cyber Titan">
+					<img class="BILD-AUSWAHL" src="../images/Biest.png" alt="Cyber Titan">
 				</div>
 
 				<div class="SONICSHIELD">
-					<img class="BILD" src="../images/BadBoy.png" alt="Sonic Shield">
+					<img class="BILD-AUSWAHL" src="../images/BadBoy.png" alt="Sonic Shield">
 				</div>
 	</div>
 			
@@ -556,12 +124,15 @@
 				
 				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_thunder.php'">Auswählen</button>
 			</div>
+	
+			<div class="RAHMEN-INFO">
+				<button class="TITAN-ZU" id="buttonCT">&times;</button>
+				<img class="BILDINFOBOX-TITAN-AUSWAHL" src="../images/Biest.png" alt="Cyber Titan">
+				<button class="AUSWAHL-TITAN" onclick="window.location.href='klimaschaeden/klimaschaeden_titan.php'">Auswählen</button>
+			</div>
 
 			<div class="INFOCYBERTITAN">
-				<button id="buttonCT">&times;</button>
-				
-				<img class="BILDINFOBOX-TITAN-AUSWAHL" src="../images/Biest.png" alt="Cyber Titan">
-				
+			
 				<a class=NAME-AUSWAHL>Cyber Titan</a>
 				
 				<div class="TEXTBLOCK-AUSWAHL">
@@ -572,7 +143,6 @@
 					<a class="TEXT-AUSWAHL">Cyber Titan ist eine Mischung aus Mensch und Maschine. Mit enormer Kraft und der Fähigkeit, Technologie zu kontrollieren, bekämpft er Feinde, die die Menschheit bedrohen.</a>
 				</div>
 				
-				<button class="AUSWAHL" onclick="window.location.href='klimaschaeden/klimaschaeden_titan.php'">Auswählen</button>
 			</div>
 	
 			<img class="BLACKSCREEN" src="../images/blackscreen.png" alt="Schwarzer Bildschirm">
@@ -658,6 +228,7 @@
 					function ScarletShadeAus() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
 						document.querySelector(".BILDINFOBOX-SCARLET-AUSWAHL").classList.remove("ZEIGEN");
+						
 					}
 
 
@@ -679,10 +250,10 @@
 					function KnightFliegt(){
 						document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").style.animationPlayState = "running";
 
-						const hero = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-						hero.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-						void hero.offsetWidth;														// Füge die Animation wieder hinzu
-						hero.style.animation = "FLIEGEN 2s linear 1 forwards";
+						const knightauswahl = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						knightauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void knightauswahl.offsetWidth;														// Füge die Animation wieder hinzu
+						knightauswahl.style.animation = "FLIEGENAUSWAHL 2s linear 1 forwards";
 					}
 
 					function GoldenKnightAus() {
@@ -735,10 +306,10 @@
 					function ThunderRennt(){
 						document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").style.animationPlayState = "running";
 
-						const thunder = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
-						thunder.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
-						void thunder.offsetWidth;														// Füge die Animation wieder hinzu
-						thunder.style.animation = "RENNEN 0.5s linear 1 forwards";
+						const thunderauswahl = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
+						thunderauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
+						void thunderauswahl.offsetWidth;														// Füge die Animation wieder hinzu
+						thunderauswahl.style.animation = "RENNENAUSWAHL 0.5s linear 1 forwards";
 					}
 
 					function ThunderBoltAus() {
@@ -756,6 +327,9 @@
 						document.querySelector(".INFOTHUNDERBOLT").classList.remove("ZEIGEN");
 						document.querySelector(".INFOSONICSHIELD").classList.remove("ZEIGEN");
 						document.querySelector(".INFOCYBERTITAN").classList.add("ZEIGEN");
+						document.querySelector(".RAHMEN-INFO").classList.add("ZEIGEN");
+						document.querySelector(".AUSWAHL-TITAN").classList.add("ZEIGEN");
+						document.querySelector(".TITAN-ZU").classList.add("ZEIGEN");
 					}
 
 					document.querySelector(".BILDINFOBOX-TITAN-AUSWAHL").addEventListener("mouseover",BlackScreenDa);
@@ -764,14 +338,21 @@
 
 					function BlackScreenDa(){
 						document.querySelector(".BLACKSCREEN").classList.add("ZEIGEN");
+						document.querySelector(".AUSWAHL-TITAN").classList.remove("ZEIGEN");
+						document.querySelector(".TITAN-ZU").classList.remove("ZEIGEN");
 					}
 
 					function BlackScreenWeg(){
 						document.querySelector(".BLACKSCREEN").classList.remove("ZEIGEN");
+						document.querySelector(".AUSWAHL-TITAN").classList.add("ZEIGEN");
+						document.querySelector(".TITAN-ZU").classList.add("ZEIGEN");
 					}
 
 					function CyberTitanAus() {
 						document.querySelector(".INFOCYBERTITAN").classList.remove("ZEIGEN");
+						document.querySelector(".RAHMEN-INFO").classList.remove("ZEIGEN");
+						document.querySelector(".AUSWAHL-TITAN").classList.remove("ZEIGEN");
+						document.querySelector(".TITAN-ZU").classList.remove("ZEIGEN");
 					}
 
 				document.querySelector('.SONICSHIELD').addEventListener('click',ZeigeSonicShield);
