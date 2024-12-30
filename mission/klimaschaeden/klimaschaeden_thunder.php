@@ -31,7 +31,7 @@
 			<button class="KARTE-ANSEHEN">Karte ansehen</button>
 		</div>
 		
-		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
 		<img class="THUNDER" src="../../images/AquaBoy.png" alt="Thunder Bolt">
 	

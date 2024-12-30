@@ -4,437 +4,11 @@
     <meta charset="utf-8">
     <title>Missions-Start</title>
 
-    
-
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	<link rel="stylesheet" href="../../css/styles.css">
 
-	<style>
-		main{
-			overflow: hidden; /* Verhindert das Scrollen der Seite */
-		}	
-		
-		h1{
-			font-family: "open sans";
-			color:#e8a723;
-			font-size: 2rem;
-			padding: 0px;
-			margin: 0px;
-			margin-bottom: 20px;
-		}
-		
-		.INFOBOX {
-			position: absolute;
-			padding: 30px;
-			top: 15%;
-			left: 25%;
-			height:60%;
-			width: 50%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility:visible;
-			z-index:5;
-			}
-		
-		.BILDINFOBOX-SCARLET{
-			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: visible;
-			}
-		
-		.TEXT{
-			position: absolute;
-			top: 7%;
-			left: 50%;
-			height: auto;
-			width: 45%;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.7rem;
-			text-align: left;
-		}
-		
-		.KARTE-ANSEHEN{
-			position: absolute;
-			padding: 15px 20px;
-			bottom: 7%;
-			right: 23%;
-			font-family: "bangers";
-			font-size: 2rem;
-			color: #e8a723;
-			letter-spacing: 0.05em;
-			border: 2px solid #285238;
-			border-radius: 5px;
-			background-color: #285238;
-			cursor: pointer;
-			}
-		
-		.KARTE-ANSEHEN:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-			}
-		
-		.WELT{
-			position:absolute;
-			top:5%;
-			width:100%;
-			height:auto;
-		}
-		
-		.SCARLET{
-			position:absolute;
-			bottom:4%;
-			left: 2%;
-			height:35%;
-			background-color: transparent;
-			border:5px;
-			border-color: transparent;
-			visibility: hidden;		
-		}
-				
-		.SPRECHBLASE {
-			position: absolute;
-			padding-top: 10px;
-			padding-left: 20px;
-			padding-right: 20px;
-			padding-bottom: 10px;
-			bottom:29%;
-			left:14%;
-			height:auto;
-			width: 10%;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: "open sans";
-			font-size: 1.3rem;
-			color:#285238;
-			text-align: left;
-			visibility: hidden;
-			}
-		
-		.LOS{
-			position: absolute;
-			bottom: 8%;
-			left: 18%;
-			display: inline-block;
-            padding: 15px 20px;
-            font-family: 'Bangers';
-            font-size: 2rem;
-			text-decoration: none;
-			letter-spacing: 0.05em;
-            color: #e8a723;
-            background-color: #285238;
-			border: 2px;
-			border-color: white;
-            border-radius: 8px;	
-			cursor: pointer;
-			visibility: hidden;
-		}
-		
-		.LOS:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-		}
-		
-		
-		.PUNKT{
-			height: 25px;
-			width: 25px;
-			border-radius: 40%;
-			background-color: #e8a723;
-			z-index: 3;
-		}
-		
-		.PUNKT:hover{
-			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: brown;
-		}
-				
-		.EUROPA-KLIMA{
-			position:absolute;
-			top: 27%;
-			left:50%;
-		}
-		
-		.INFOEUROPA-KLIMA{
-			position: absolute;
-			top: 28%;
-			left:52%;
-			height: auto;
-			width: 25%;
-			padding-top:10%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.CHINA-KLIMA{
-			position:absolute;
-			top: 27%;
-			left:71%;
-		}
-		
-		.INFOCHINA-KLIMA{
-			position: absolute;
-			top: 28%;
-			right:30%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.SUEDOSTASIEN-KLIMA{
-			position:absolute;
-			top: 50%;
-			left:82%;
-		}
-		
-		.INFOSUEDOSTASIEN-KLIMA{
-			position: absolute;
-			bottom: 10%;
-			right:19%;
-			height: auto;
-			width: 40%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.AUSTRALIEN-KLIMA{
-			position:absolute;
-			bottom:33%;
-			right:12%;
-		}
-		
-		.INFOAUSTRALIEN-KLIMA{
-			position: absolute;
-			bottom:15%;
-			right:14%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.ANTARKTIS-KLIMA{
-			position:absolute;
-			bottom:4%;
-			right:23%;
-		}
-		
-		.INFOANTARKTIS-KLIMA{
-			position: absolute;
-			bottom:8%;
-			right:25%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-	
-		.CHILE-KLIMA{
-			position:absolute;
-			top: 70%;
-			left:30.5%;
-		}
-		
-		.INFOCHILE-KLIMA{
-			position: absolute;
-			bottom:15%;
-			left:33%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.AMAZONAS-KLIMA{
-			position:absolute;
-			top: 53%;
-			left:32%;
-		}
-		
-		.INFOAMAZONAS-KLIMA{
-			position: absolute;
-			bottom:25%;
-			left:34%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.ATLANTIK-KLIMA{
-			position:absolute;
-			top: 35%;
-			left:38%;
-		}
-		
-		.INFOATLANTIK-KLIMA{
-			position: absolute;
-			top: 25%;
-			left:40%;
-			height:auto;
-			width: 35%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.KANADA-KLIMA{
-			position:absolute;
-			top: 12%;
-			left:38%;
-		}
-		
-		.INFOKANADA-KLIMA{
-			position: absolute;
-			top: 17%;
-			left:38%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.USA-KLIMA{
-			position:absolute;
-			top: 33%;
-			left:25%;
-		}
-		
-		.INFOUSA-KLIMA{
-			position: absolute;
-			top: 25%;
-			left:27%;
-			height: auto;
-			width: 30%;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-				
-		.AFRIKA-KLIMA{
-			position:absolute;
-			top: 41%;
-			left:50%;
-		}
-		
-		.INFOAFRIKA-KLIMA{
-			position: absolute;
-			top: 39%;
-			left:52%;
-			height: auto;
-			width: 30%;
-			padding-top: 5px;
-			padding: 40px;
-			font-family: "open sans";
-			font-size: 1.5rem;
-			color: #285238;
-			text-align: left;
-			background-color: white;
-			border-radius: 20px 20px 20px 20px;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility: hidden;
-			z-index:5;
-		}
-		
-		.ZEIGEN{
-			visibility: visible;
-		}
-		
-		.WEG{
-			visibility: hidden;
-		}
-
-		
-		
-	</style>
 </head>
 
 <body>
@@ -443,11 +17,11 @@
 	
     <main>
 		
-		<div class="INFOBOX">
+		<div class="INFOBOX-KLIMA">
 			
 			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			
-			<div class="TEXT">
+			<div class="TEXT-KLIMA">
 				Hallo! <br>
 				Ich bin Scarlet Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. <br>
 				Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.<br>
@@ -458,19 +32,19 @@
 		</div>
 		
 		<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
-		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
 		<img class="SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
 	
-		<div class="SPRECHBLASE">
+		<div class="SPRECHBLASE-KLIMA">
 			
 			<p>Wenn du genug über Klimaschäden gelernt hast, können wir die Mission starten.</p>
 			
 		</div>	
 		
-		<button class="LOS" onclick="window.location.href='../kapitel1/wind_scarlet.php'"> Auf geht's! </button>
+		<button class="LOS-KLIMA" onclick="window.location.href='../kapitel1/wind_scarlet.php'"> Auf geht's! </button>
 		
-		<div class="PUNKT EUROPA-KLIMA"></div>
+			<div class="PUNKT EUROPA-KLIMA"></div>
 			<div class="PUNKT CHINA-KLIMA"></div>
 			<div class="PUNKT SUEDOSTASIEN-KLIMA"></div>
 			<div class="PUNKT AUSTRALIEN-KLIMA"></div>
@@ -480,7 +54,6 @@
 			<div class="PUNKT ATLANTIK-KLIMA"></div>
 			<div class="PUNKT USA-KLIMA"></div>
 			<div class="PUNKT KANADA-KLIMA"></div>
-			<div class="PUNKT ARKTIS-KLIMA"></div>
 			<div class="PUNKT AFRIKA-KLIMA"></div>
 
 	
@@ -577,11 +150,11 @@
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
-				document.querySelector(".INFOBOX").classList.add("WEG");
+				document.querySelector(".INFOBOX-KLIMA").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
 				document.querySelector(".SCARLET").classList.add("ZEIGEN");
-				document.querySelector(".SPRECHBLASE").classList.add("ZEIGEN");
-				document.querySelector(".LOS").classList.add("ZEIGEN");
+				document.querySelector(".SPRECHBLASE-KLIMA").classList.add("ZEIGEN");
+				document.querySelector(".LOS-KLIMA").classList.add("ZEIGEN");
 			}
 		
 		

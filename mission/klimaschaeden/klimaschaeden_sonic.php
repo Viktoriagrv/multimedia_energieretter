@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <title>Missions-Start</title>
 
-
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
-
 
 </head>
 
@@ -34,7 +32,7 @@
 			<button class="KARTE-ANSEHEN">Karte ansehen</button>
 		</div>
 		
-		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 		
 		<img class="SCHUTZSCHILD-GROSS" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 		<img class="SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">

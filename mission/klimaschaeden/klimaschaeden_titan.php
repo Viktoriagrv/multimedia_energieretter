@@ -9,7 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
-	
 </head>
 
 <body>
@@ -38,8 +37,7 @@
 			
 		</div>
 		
-		<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
-		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
 		<img class="TITAN" src="../../images/Biest.png" alt="Cyber Titan">
 	

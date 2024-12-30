@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <title>Missions-Start</title>
  
-
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
-	
 	
 </head>
 
@@ -35,7 +33,7 @@
 		</div>
 		
 		
-		<img class="WELT" src="../../images/Weltkarte.png" alt="Weltkarte">
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 			
 		<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
 		<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
