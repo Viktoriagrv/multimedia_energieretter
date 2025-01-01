@@ -3,311 +3,321 @@
 <head>
     <meta charset="utf-8">
     <title>Retterwissen: Innovationen</title>
-
+ 
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/styles.css">
-
-    <style>
-        main {
-            background-color: #b9e5ef;
-            overflow: hidden; /* Verhindert das Scrollen der Seite */
-        }
-
-        h1 {
-            font-family: "open sans";
-            color: #e8a723;
-            font-size: 2rem;
-            padding-top: 0px;
-        }
-
-        p {
-            text-align: left;
-        }
-
-        details {
-            background: #eee;
-            border: 1px solid #e8a723;
-            border-radius: 3px;
-            margin-bottom: 1.5rem;
-        }
-
-        summary {
-            background: #e8a723;
-            color: #fff;
-            cursor: pointer;
-            padding: 1rem;
-            text-align: left;
-            font-weight: bold;
-        }
-
-        /* Verzögerungseffekt */
-        details[open] summary ~ * {
-            animation: sweep .7s ease-in-out;
-        }
-
-        @keyframes sweep {
-            0% {
-                opacity: 0;
-                margin-left: -20px
-            }
-
-            100% {
-                opacity: 1;
-                margin-left: 0px
-            }
-        }
-
-        .HERO {
-            position: absolute;
-            bottom: -3%;
-            left: 2%;
-            height: 30%;
-        }
-
-        /* SPRECHBLASE SUPERHELD */
-        .SPRECHBLASE {
-            position: absolute;
-            padding-top: 5px;
-            padding-bottom: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            bottom: 25%;
-            left: 12%;
-            height: 27%;
-            width: 12%;
-            border-radius: 20px 20px 20px 0px;
-            background-color: white;
-            box-shadow: 5px 5px 10px 0px gray;
-            font-family: "open sans";
-            font-size: 1rem;
-            color: #285238;
-            text-align: left;
-            visibility: visible;
-            cursor: default;
-        }
-
-        /* SPRECHBLASE SUPERHELD NUMMER ZWEI */
-        .SPRECHBLASEWEITER {
-            position: absolute;
-            padding-top: 5px;
-            padding-bottom: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            bottom: 25%;
-            left: 12%;
-            height: 18%;
-            width: 12%;
-            border-radius: 20px 20px 20px 0px;
-            background-color: white;
-            box-shadow: 5px 5px 10px 0px gray;
-            font-family: "open sans";
-            font-size: 1rem;
-            color: #285238;
-            text-align: left;
-            visibility: hidden;
-            cursor: default;
-        }
-
-        .LOS {
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            display: inline-block;
-            padding: 10px 15px;
-            font-family: 'Bangers';
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: white;
-            background-color: #285238;
-            border: 2px;
-            border-color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        /* PFEIL LINKS */
-        .PFEIL-LI {
-            position: absolute;
-            bottom: 5%;
-            left: 5%;
-            height: 15%;
-            width: auto;
-        }
-
-        /* PFEIL RECHTS */
-        .PFEIL-RE {
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            height: 10%;
-            width: auto;
-        }
-
-        .HEADER {
-            position: absolute;
-            top: 16%;
-            left: 8%;
-            font-family: "bangers";
-            color: #285238;
-            font-size: 5rem;
-            cursor: default;
-        }
-
-        /* BILD VOM WINDRAD */
-        .BLUMEN {
-            position: absolute;
-            bottom: -4%;
-            left: -10%;
-            height: 40%;
-            width: auto;
-        }
-
-        .BUTTONBILDER {
-            position: absolute;
-            top: 20%;
-            right: 15%;
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .BUTTON {
-            height: 100px;
-            /* Passe die Größe nach Bedarf an */
-            width: auto;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
-
-        .BUTTON:hover {
-            transform: scale(1.1);
-            /* Leichter Vergrößerungseffekt beim Hover */
-        }
-
-		.KARUSELL {
-			position: absolute;
-			top: 26%;
-			right: 10%; 
-			width: 25%; /* Nimmt nur 25% der Breite ein */
-			visibility: hidden; /* Standardmäßig unsichtbar */
-			opacity: 0;
-			transform: translateY(-20px);
-			transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s ease 0.5s; /* Verzögerung beim Anzeigen */
-		}
-
-		.KARUSELL-SICHTBAR {
-			visibility: visible; /* Karussell sichtbar machen */
-			opacity: 1;
-			transform: translateY(0); /* Sanfte Animation */
-			transition: opacity 0.5s ease, transform 0.5s ease;
-		}
-
-
-        /* Text Slider CSS */
-        .carousel-item.active,
-        .carousel-item-next,
-        .carousel-item-prev {
-            display: block;
-        }
-
-        .carousel-inner {
-            min-height: 300px;
-            border: 1px solid #fff;
-            border-radius: 30px;
-            background-color: #bbbbbb;
-        }
-
-    </style>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/styles.css">
+	
+	<style>
+	.INNOVATIONSBILDER {
+		width: 70%;  /* Passt das Bild auf die Breite des Containers an */
+		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
+		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
+		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
+	}
+		
+	  .SOLARPUMPE {
+		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
+		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
+		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
+		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
+	}
+	</style>
 </head>
 
 <body>
+	
+	<?php include '../include/nav.php'; ?>
+	
+    <main>
+		
+		<div class="INFOBOX-KLIMA">
+			
+			<img class="BILDINFOBOX-BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BLUMEN-INFOBOX" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+			
+			<div class="TEXT-KLIMA">
+				Hallo! <br><br>
+Ich bin Green Blaze und es ist super, dass du mehr über die spannenden Innovationen erfahren möchtest, die unser Klima schützen! <br><br>
+Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, die Umwelt zu retten und den Klimawandel zu bekämpfen. <br><br>
 
-<?php include '../include/nav.php'; ?>
 
-<main>
+			</div>
+								
+			<button class="KARTE-ANSEHEN">Innovations-Karte ansehen</button>
+		</div>
+		
+		
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+			
+		<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+		<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+	
+		<div class="SPRECHBLASE-KLIMA">
+			
+			<p>Klicke auf die gelben Punkte, um mehr über die Ideen zu erfahren, die die Welt verändern könnten!</p>
+			
+		</div>	
+		
+		<button class="LOS-KLIMA" onclick="window.location.href='../retterwissen/klimaschaeden.php'"> Zum Retterwissen: Klimaschäden </button>
+		
+		
+			<div class="PUNKT EUROPA-KLIMA"></div>
+			<div class="PUNKT CHINA-KLIMA"></div>
+			<div class="PUNKT SUEDOSTASIEN-KLIMA"></div>
+			<div class="PUNKT AUSTRALIEN-KLIMA"></div>
+			<div class="PUNKT ANTARKTIS-KLIMA"></div>
+			<div class="PUNKT CHILE-KLIMA"></div>
+			<div class="PUNKT AMAZONAS-KLIMA"></div>
+			<div class="PUNKT ATLANTIK-KLIMA"></div>
+			<div class="PUNKT USA-KLIMA"></div>
+			<div class="PUNKT KANADA-KLIMA"></div>
+			<div class="PUNKT AFRIKA-KLIMA"></div>
+		
+		
+<div class="INFOEUROPA-KLIMA">
+	<h1>Innovationen in Europa</h1>
+	<strong>Grüne Dächer</strong><br>
+	In vielen Städten gibt es jetzt Dächer, die mit Pflanzen und Bäumen bedeckt sind. Diese grünen Dächer helfen, die Luft zu reinigen, kühlen die Städte und bieten Tieren ein Zuhause.<br><br>
+	<img src="../images/grüne_dächer.jpg" alt="Grüne Dächer" class="INNOVATIONSBILDER" /><br><br>
 
-    <div class="HEADER"> Retterwissen <br>
-                         Innovationen
-    </div>
-
-    <img class="BLUMEN" src="../images/blumenwiese.png" alt="Blumenwiese">
-
-    <img class="HERO" src="../images/Prinzessin.png" alt="Prinzessin">
-
-    <div class="SPRECHBLASE">
-        <p>Oh...Hallo! <br> <br>
-            Dich interessieren neue Technologien?<br> <br>
-            Das ist toll! Ich zeig dir gerne einige spannende Invnovationen!</p>
-        <img class="PFEIL-RE" src="../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
-    </div>
-
-    <div class="SPRECHBLASEWEITER">
-        <p>Das ist total spannend, oder? <br> <br>
-            Viel Spaß beim Lesen!</p>
-        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
-    </div>
-
-<div class="KARUSELL">
-    <!-- Dein Karussell-Inhalt -->
-    <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="6000">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item text-center p-4 active">
-                <p>Inhalt 1<br>Hier kann beliebiger Text eingefügt werden</p>
-            </div>
-            <div class="carousel-item text-center p-4">
-                <p>Inhalt 2<br>Es kann jede Art von HTML verwendet werden,<br> wie z.B. dieser <a href="#top">Link nach oben</a></p>
-            </div>
-            <div class="carousel-item text-center p-4">
-                <p>Inhalt 3<br><b>Hier kann beliebiger Text eingefügt werden</b></p>
-            </div>
-            <div class="carousel-item text-center p-4">
-                <p>Inhalt 4<br><i>Hier kann auch ein Bild eingefügt werden</i></p>
-                <p><a href="http://www.mobirise-tutorials.com/" target="_blank"><img src="http://www.mobirise-tutorials.com/LawyerM4-Tutorials/assets/images/logo-mobirise-122x122.png" alt="Logo" title="Mobirise-Tutorials.com"></a></p>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 </div>
 
-</main>
+<div class="INFOCHINA-KLIMA">
+	<h1>Innovationen in China</h1>
+	<strong>Solare Straßen</strong><br>
+	In China gibt es Straßen, die mit Solarzellen bedeckt sind. Diese Zellen sammeln Sonnenenergie und wandeln sie in Strom um, den wir für alles Mögliche nutzen können.<br><br>
+	<img src="../images/solarstraße.jpg" alt="Solarstraße" class="INNOVATIONSBILDER" /><br><br>
+</div>
 
-<script>
-// Eventlistener für den Pfeil nach rechts (weiter)
-document.querySelector(".PFEIL-RE").addEventListener("click", function() {
-    // Blase 1 ausblenden
-    document.querySelector(".SPRECHBLASE").classList.add("WEG");
+<div class="INFOSUEDOSTASIEN-KLIMA">
+	<h1>Innovationen in Südostasien</h1>
+	<strong>Wasser aus der Luft</strong><br>
+	In vielen südostasiatischen Ländern gibt es Maschinen, die das Wasser aus der Luft filtern und es in sauberes Trinkwasser verwandeln. So wird frisches Wasser verfügbar, selbst wenn es wenig regnet.<br><br>
+	<strong>Hydrokultur</strong><br>
+	Hydrokultur ist eine Methode, bei der Pflanzen ohne Erde wachsen. In Südostasien werden diese Pflanzen oft in Städten angebaut, um frisches Gemüse zu erzeugen, ohne viel Wasser zu verschwenden.<br><br>
+</div>
 
-    // Blase 2 einblenden
-    document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
+<div class="INFOAUSTRALIEN-KLIMA">
+	<h1>Innovationen in Australien</h1>
+	<strong>Solarbetriebene Kühlsysteme</strong><br>
+	Australien nutzt Sonne, um Häuser zu kühlen. Diese Solar-Kühlsysteme sorgen dafür, dass wir nicht so viel Strom brauchen, um Räume angenehm kühl zu halten.<br><br>
+	<strong>Regenwassersammelsysteme</strong><br>
+	In Australien gibt es Häuser, die Regenwasser sammeln und speichern. Dieses Wasser wird dann zum Gießen von Pflanzen oder für andere alltägliche Dinge genutzt.<br><br>
+</div>
 
-    // Karussell sichtbar machen
-    document.querySelector(".KARUSELL").classList.add("KARUSELL-SICHTBAR");
-});
+<div class="INFOANTARKTIS-KLIMA">
+	<h1>Innovationen in der Antarktis</h1>
+	<strong>Geothermische Energie</strong><br>
+	In der Antarktis nutzen Forscher die Wärme aus dem Inneren der Erde, um umweltfreundliche Energie zu gewinnen. Diese Technologie könnte in kalten Regionen helfen, ohne fossile Brennstoffe zu verbrauchen.<br><br>
+	<strong>Antarktische Forschungslabore</strong><br>
+	In der Antarktis gibt es spezielle Labore, die dabei helfen, den Klimawandel zu verstehen. Hier erforscht man, wie wir die Umwelt besser schützen können.<br><br>
+</div>
 
-// Eventlistener für den Pfeil nach links (zurück)
-document.querySelector(".PFEIL-LI").addEventListener("click", function() {
-    // Blase 1 wieder einblenden
-    document.querySelector(".SPRECHBLASE").classList.remove("WEG");
+<div class="INFOCHILE-KLIMA">
+	<h1>Innovationen in Chile</h1>
+	<strong>Desert-Technologien</strong><br>
+	In Chile gibt es Technologien, die Wasser aus der Luft holen. Diese Maschinen helfen, in trockenen Gebieten Wasser zu gewinnen und die Landwirtschaft zu unterstützen.<br><br>
+	<strong>Solaranlagen in der Wüste</strong><br>
+	In der Atacama-Wüste in Chile gibt es riesige Solarfelder, die Sonnenlicht in Strom umwandeln. Diese Technologie hilft, saubere Energie zu erzeugen und die Umwelt zu schonen.<br><br>
+</div>
 
-    // Blase 2 ausblenden
-    document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
+<div class="INFOAMAZONAS-KLIMA">
+	<h1>Innovationen im Amazonas</h1>
+	<strong>Nachhaltige Holzernte</strong><br>
+	Im Amazonas arbeiten Forscher an Methoden, mit denen Bäume so geerntet werden können, dass der Wald weiterhin gesund bleibt. Dies hilft, die Natur zu schützen, ohne den Wald zu zerstören.<br><br>
+	<strong>Digitale Regenwald-Überwachung</strong><br>
+	In Brasilien gibt es nun Drohnen, die den Regenwald überwachen. Diese helfen dabei, illegale Abholzung zu erkennen und den Wald zu schützen.<br><br>
+</div>
 
-    // Karussell unsichtbar machen
-    document.querySelector(".KARUSELL").classList.remove("KARUSELL-SICHTBAR");
-});
+<div class="INFOATLANTIK-KLIMA">
+	<h1>Innovationen im Atlantik</h1>
+	<strong>Wellenkraftwerke</strong><br>
+	Im Atlantik gibt es Wellenkraftwerke, die die Energie der Meereswellen nutzen, um Strom zu erzeugen. So wird die Kraft des Ozeans für uns nutzbar gemacht.<br><br>
+	<strong>Unterwasser-Kraftwerke</strong><br>
+	Es gibt Pläne, unter Wasser Strom zu erzeugen, indem man die Meeresströmungen nutzt. Diese Technologien helfen uns, mehr saubere Energie zu bekommen.<br><br>
+</div>
+
+<div class="INFOUSA-KLIMA">
+	<h1>Innovationen in den USA</h1>
+	<strong>Selbstfahrende Elektroautos</strong><br>
+	In den USA werden Autos entwickelt, die sich selbst fahren und mit Strom betrieben werden. Diese Autos sind umweltfreundlich und könnten in der Zukunft den Verkehr sicherer und effizienter machen.<br><br>
+	<strong>Vertical Farming</strong><br>
+	In den USA gibt es nun vertikale Farmen, bei denen in großen Gebäuden auf mehreren Ebenen Lebensmittel angebaut werden. Diese Technologie spart Platz und hilft, die Städte grüner zu machen.<br><br>
+</div>
+
+<div class="INFOKANADA-KLIMA">
+	<h1>Innovationen in Kanada</h1>
+	<strong>Permafrost-Dämmung</strong><br>
+	In Kanada gibt es Technologien, um den Permafrost, den Boden in kalten Gebieten, vor dem Schmelzen zu schützen. Dies hilft, die Umwelt in der Arktis zu bewahren.<br><br>
+	<strong>Wasseraufbereitungstechnologien</strong><br>
+	Kanada entwickelt Maschinen, die auch sehr verschmutztes Wasser reinigen können. Diese Technologie sorgt dafür, dass jeder Zugang zu sauberem Wasser hat, auch in abgelegenen Gebieten.<br><br>
+</div>
+
+<div class="INFOAFRIKA-KLIMA">
+	<h1>Innovationen in Afrika</h1>
+	<strong>Solare Wasserpumpen</strong><br>
+	In vielen afrikanischen Ländern gibt es bereits Wasserpumpen, die mit Solarenergie betrieben werden. Diese Pumpen holen Wasser aus Brunnen und versorgen die Menschen mit Trinkwasser.<br><br>
+	<img src="../images/solarpumpe.jpg" alt="Solarpumpe" class="SOLARPUMPE" /><br><br>
+</div>
 
 
-</script>
 
+			
+    </main>
+	
+	
+	<script>
+		
+		document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover", BlumenDa);
+			document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout", BlumenWeg);
+
+			function BlumenDa(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
+			}
+			function BlumenWeg(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
+		
+			function ZeigeWeltkarte(){
+				document.querySelector(".INFOBOX-KLIMA").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-BLAZE").classList.add("WEG");
+				document.querySelector(".BLAZE").classList.add("ZEIGEN");
+				document.querySelector(".SPRECHBLASE-KLIMA").classList.add("ZEIGEN");
+				document.querySelector(".LOS-KLIMA").classList.add("ZEIGEN");
+			}
+		
+		
+		document.querySelector(".BLAZE").addEventListener("mouseover", BlumenWiederDa);
+			document.querySelector(".BLAZE").addEventListener("mouseout", BlumenWiederWeg);
+
+			function BlumenWiederDa(){
+				document.querySelector(".BLUMEN").classList.add("ZEIGEN");
+			}
+			function BlumenWiederWeg(){
+				document.querySelector(".BLUMEN").classList.remove("ZEIGEN");
+			}
+	
+		//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
+		document.querySelector('.EUROPA-KLIMA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
+			document.querySelector('.EUROPA-KLIMA').addEventListener('mouseout',EuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
+				
+			function ZeigeEuropa() {
+				document.querySelector(".INFOEUROPA-KLIMA").classList.add("ZEIGEN");
+			}
+			function EuropaAus() {
+				document.querySelector(".INFOEUROPA-KLIMA").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.CHINA-KLIMA').addEventListener('mouseover',ZeigeChina);   	
+			document.querySelector('.CHINA-KLIMA').addEventListener('mouseout',ChinaAus);		
+				
+			function ZeigeChina() {
+				document.querySelector(".INFOCHINA-KLIMA").classList.add("ZEIGEN");
+				}
+			function ChinaAus() {
+				document.querySelector(".INFOCHINA-KLIMA").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.SUEDOSTASIEN-KLIMA').addEventListener('mouseover',ZeigeSuedostasien);   	
+			document.querySelector('.SUEDOSTASIEN-KLIMA').addEventListener('mouseout',SuedostasienAus);		
+				
+			function ZeigeSuedostasien() {
+				document.querySelector(".INFOSUEDOSTASIEN-KLIMA").classList.add("ZEIGEN");
+				}
+			function SuedostasienAus() {
+				document.querySelector(".INFOSUEDOSTASIEN-KLIMA").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.AUSTRALIEN-KLIMA').addEventListener('mouseover',ZeigeAustralien);   	
+			document.querySelector('.AUSTRALIEN-KLIMA').addEventListener('mouseout',AustralienAus);		
+				
+			function ZeigeAustralien() {
+				document.querySelector(".INFOAUSTRALIEN-KLIMA").classList.add("ZEIGEN");
+				}
+			function AustralienAus() {
+				document.querySelector(".INFOAUSTRALIEN-KLIMA").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.ANTARKTIS-KLIMA').addEventListener('mouseover',ZeigeAntarktis);   	
+			document.querySelector('.ANTARKTIS-KLIMA').addEventListener('mouseout',AntarktisAus);		
+				
+			function ZeigeAntarktis() {
+				document.querySelector(".INFOANTARKTIS-KLIMA").classList.add("ZEIGEN");
+				}
+			function AntarktisAus() {
+				document.querySelector(".INFOANTARKTIS-KLIMA").classList.remove("ZEIGEN");
+			} 
+		
+		document.querySelector('.CHILE-KLIMA').addEventListener('mouseover',ZeigeChile);   	
+			document.querySelector('.CHILE-KLIMA').addEventListener('mouseout',ChileAus);		
+				
+			function ZeigeChile() {
+				document.querySelector(".INFOCHILE-KLIMA").classList.add("ZEIGEN");
+			}
+			function ChileAus() {
+				document.querySelector(".INFOCHILE-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.AMAZONAS-KLIMA').addEventListener('mouseover',ZeigeAmazonas);   	
+			document.querySelector('.AMAZONAS-KLIMA').addEventListener('mouseout',AmazonasAus);		
+				
+			function ZeigeAmazonas() {
+				document.querySelector(".INFOAMAZONAS-KLIMA").classList.add("ZEIGEN");
+			}
+			function AmazonasAus() {
+				document.querySelector(".INFOAMAZONAS-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.ATLANTIK-KLIMA').addEventListener('mouseover',ZeigeAtlantik);   	
+			document.querySelector('.ATLANTIK-KLIMA').addEventListener('mouseout',AtlantikAus);		
+				
+			function ZeigeAtlantik() {
+				document.querySelector(".INFOATLANTIK-KLIMA").classList.add("ZEIGEN");
+			}
+			function AtlantikAus() {
+				document.querySelector(".INFOATLANTIK-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.USA-KLIMA').addEventListener('mouseover',ZeigeUSA);   	
+			document.querySelector('.USA-KLIMA').addEventListener('mouseout',USAAus);		
+				
+			function ZeigeUSA() {
+				document.querySelector(".INFOUSA-KLIMA").classList.add("ZEIGEN");
+			}
+			function USAAus() {
+				document.querySelector(".INFOUSA-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.KANADA-KLIMA').addEventListener('mouseover',ZeigeKanada);   	
+			document.querySelector('.KANADA-KLIMA').addEventListener('mouseout',KanadaAus);		
+				
+			function ZeigeKanada() {
+				document.querySelector(".INFOKANADA-KLIMA").classList.add("ZEIGEN");
+			}
+			function KanadaAus() {
+				document.querySelector(".INFOKANADA-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+		document.querySelector('.AFRIKA-KLIMA').addEventListener('mouseover',ZeigeAfrika);   	
+			document.querySelector('.AFRIKA-KLIMA').addEventListener('mouseout',AfrikaAus);		
+				
+			function ZeigeAfrika() {
+				document.querySelector(".INFOAFRIKA-KLIMA").classList.add("ZEIGEN");
+			}
+			function AfrikaAus() {
+				document.querySelector(".INFOAFRIKA-KLIMA").classList.remove("ZEIGEN");
+			}
+		
+    </script>
+	
+	
+	
 </body>
 </html>
+
+
+

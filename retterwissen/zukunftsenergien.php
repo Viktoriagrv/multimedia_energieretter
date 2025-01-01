@@ -15,9 +15,17 @@
             height: 100%;
             margin: 0;
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100%; /* Nimmt die volle Höhe ein */
+            width: 100%;
         }
 
         /* ICONS */
@@ -25,8 +33,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 150px; /* Abstand zwischen den Icons vergrößern */
-            margin-bottom: 60px;
+            gap: 150px; /* Abstand zwischen den Icons */
+            margin-bottom: 60px; /* Optionaler Abstand zu den Buttons */
         }
 
         .icon-container img {
@@ -37,8 +45,8 @@
         /* BUTTONS */
         .button-container {
             display: flex;
-            justify-content: flex-start; /* Schaltflächen nach links verschieben */
-            gap: 160px; /* Regelmäßige horizontale Abstände zwischen den Buttons */
+            justify-content: center; /* Buttons zentrieren */
+            gap: 160px; /* Regelmäßige horizontale Abstände */
         }
 
         .button-container a {
@@ -57,19 +65,31 @@
         .button-container a.hovered {
             background-color: #FFD700; /* Leicht heller beim Hover */
         }
+		
+		.HINTERGRUNDBILD-ZUKUNFT1 {
+		    position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+			
+		}
+		
+
     </style>
 </head>
 
 <body>
-    <?php include '../include/nav.php'; ?>
+    
+	<?php include '../include/nav.php'; ?>
 
-    <!-- Hintergrundvideo -->
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="bilder_retterwissen/background_video.mp4" type="video/mp4">
-        <source src="video/background_video.webm" type="video/webm">
-    </video>
 
     <main>
+	
+    <img class="HINTERGRUNDBILD-ZUKUNFT1" src="../../images/wasserkraftwerk.png" alt="Wasserkraftwerk">
+
+ 
+    </div>
         <!-- ICONS -->
         <div class="icon-container">
             <a href="zukunftsenergien/solar.php"><img src="bilder_retterwissen/sonne.png" alt="Sonne"></a>
@@ -130,5 +150,6 @@
     </script>
 </body>
 </html>
+
 
 
