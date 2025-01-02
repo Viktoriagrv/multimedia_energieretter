@@ -19,7 +19,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-KNIGHT" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-KNIGHT" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
 				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
@@ -179,7 +179,7 @@
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-KNIGHT").classList.add("WEG");
 				document.querySelector(".KNIGHT-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
@@ -423,20 +423,11 @@
 			document.querySelector(".KNIGHT-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-KNIGHT").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-KNIGHT").classList.remove("WEG");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
-		
-		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
-
-			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
-			}
-			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
-			}
+	
 		
 	</script>
 	
