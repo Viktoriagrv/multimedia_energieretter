@@ -1100,7 +1100,7 @@
 				transform: rotateY(180deg);
 			}
 			50% {
-				top:1%;
+				bottom:60%;
 				left: 60%;
 				transform: rotateY(0deg);
 			}
