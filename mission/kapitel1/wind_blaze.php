@@ -14,6 +14,43 @@
 		body{
 			background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
 		}
+		
+		.BLAZE-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:7%;
+			height:40%;
+			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: visible;
+		}
+		
+	
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
+		
+		.BLUMEN-KAPITELSTART{
+			position:absolute;
+			bottom:0%;
+			right: 3%;
+			height:28%;
+			width:auto;
+			visibility: hidden;		
+		}
+		
 	
 	</style>
 </head>
@@ -82,10 +119,21 @@
 		</div>
 		
 		<img class="BLAZE-KAPITELSTART" src="../../images/Prinzessin.png" alt="Green Blaze">
+		<img class="BLUMEN-KAPITELSTART" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 		
 	</main>
 
     <script>	
+		
+		document.querySelector(".BLAZE-KAPITELSTART").addEventListener("mouseover", BlumenDa);
+			document.querySelector(".BLAZE-KAPITELSTART").addEventListener("mouseout", BlumenWeg);
+
+			function BlumenDa(){
+				document.querySelector(".BLUMEN-KAPITELSTART").classList.add("ZEIGEN");
+			}
+			function BlumenWeg(){
+				document.querySelector(".BLUMEN-KAPITELSTART").classList.remove("ZEIGEN");
+			}
 				
 		document.querySelector(".PRUEFEN-WIND").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);

@@ -1532,8 +1532,8 @@
 		.BLAZE-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
-			right:5%;
-			height:35%;
+			right:7%;
+			height:40%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
 			animation-duration: 2s;							/* Dauer (n) */
@@ -1546,10 +1546,7 @@
 			visibility: visible;
 		}
 		
-		.BLAZE-KAPITELSTART:hover{
-			visibility: hidden;
-		}
-		
+	
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
 			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(180deg);
