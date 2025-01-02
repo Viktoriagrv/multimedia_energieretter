@@ -7,7 +7,7 @@
     <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../../css/styles.css">
+	<link rel="stylesheet" href="../css/styles.css">
 	
 	<style>
 	.INNOVATIONSBILDER {
@@ -17,12 +17,34 @@
 		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
 	}
 		
-	  .SOLARPUMPE {
+	 .SOLARPUMPE {
 		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
 		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
 		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
 		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
 	}
+		
+ 	.ELEKTROAUTO {
+		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
+		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
+		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
+		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
+	}
+		
+	.REGENWALD {
+		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
+		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
+		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
+		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
+	}
+	
+	.SOLARWUESTE {
+		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
+		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
+		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
+		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
+	}
+		
 	</style>
 </head>
 
@@ -93,66 +115,61 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 
 <div class="INFOSUEDOSTASIEN-KLIMA">
 	<h1>Innovationen in Südostasien</h1>
-	<strong>Wasser aus der Luft</strong><br>
-	In vielen südostasiatischen Ländern gibt es Maschinen, die das Wasser aus der Luft filtern und es in sauberes Trinkwasser verwandeln. So wird frisches Wasser verfügbar, selbst wenn es wenig regnet.<br><br>
-	<strong>Hydrokultur</strong><br>
-	Hydrokultur ist eine Methode, bei der Pflanzen ohne Erde wachsen. In Südostasien werden diese Pflanzen oft in Städten angebaut, um frisches Gemüse zu erzeugen, ohne viel Wasser zu verschwenden.<br><br>
+	<strong>Bambusfahrräder</strong><br>
+	In Südostasien  wächst Bambus überall! Dort wird er schon seit Jahrhunderten für Häuser, Möbel und sogar Brücken verwendet. <br><br>
+	Diese Fahrräder sind besonders nachhaltig, da sie aus einem natürlichen Material bestehen, das sich schnell erneuert und nach dem Gebrauch keinen Müll hinterlässt.<br><br>
+	<img src="../images/bambusfahrrad.jpg" alt="Bambusfahrrad" class="INNOVATIONSBILDER" /><br><br>
 </div>
 
 <div class="INFOAUSTRALIEN-KLIMA">
 	<h1>Innovationen in Australien</h1>
-	<strong>Solarbetriebene Kühlsysteme</strong><br>
-	Australien nutzt Sonne, um Häuser zu kühlen. Diese Solar-Kühlsysteme sorgen dafür, dass wir nicht so viel Strom brauchen, um Räume angenehm kühl zu halten.<br><br>
 	<strong>Regenwassersammelsysteme</strong><br>
 	In Australien gibt es Häuser, die Regenwasser sammeln und speichern. Dieses Wasser wird dann zum Gießen von Pflanzen oder für andere alltägliche Dinge genutzt.<br><br>
+	<img src="../images/wasserbehälter.jpg" alt="Wassersysteme" class="INNOVATIONSBILDER" /><br><br>
 </div>
 
 <div class="INFOANTARKTIS-KLIMA">
 	<h1>Innovationen in der Antarktis</h1>
-	<strong>Geothermische Energie</strong><br>
-	In der Antarktis nutzen Forscher die Wärme aus dem Inneren der Erde, um umweltfreundliche Energie zu gewinnen. Diese Technologie könnte in kalten Regionen helfen, ohne fossile Brennstoffe zu verbrauchen.<br><br>
 	<strong>Antarktische Forschungslabore</strong><br>
 	In der Antarktis gibt es spezielle Labore, die dabei helfen, den Klimawandel zu verstehen. Hier erforscht man, wie wir die Umwelt besser schützen können.<br><br>
+	<img src="../images/forschungsstation.jpg" alt="Forschungsstation" class="INNOVATIONSBILDER" /><br><br>
 </div>
 
 <div class="INFOCHILE-KLIMA">
-	<h1>Innovationen in Chile</h1>
-	<strong>Desert-Technologien</strong><br>
-	In Chile gibt es Technologien, die Wasser aus der Luft holen. Diese Maschinen helfen, in trockenen Gebieten Wasser zu gewinnen und die Landwirtschaft zu unterstützen.<br><br>
+	<h1> Innovationen in Chile </h1>
 	<strong>Solaranlagen in der Wüste</strong><br>
 	In der Atacama-Wüste in Chile gibt es riesige Solarfelder, die Sonnenlicht in Strom umwandeln. Diese Technologie hilft, saubere Energie zu erzeugen und die Umwelt zu schonen.<br><br>
+	<img src="../images/solarwüste.jpg" alt="Solaranlagen in der Wüste" class="SOLARWUESTE" /><br><br>
+
 </div>
 
 <div class="INFOAMAZONAS-KLIMA">
 	<h1>Innovationen im Amazonas</h1>
-	<strong>Nachhaltige Holzernte</strong><br>
-	Im Amazonas arbeiten Forscher an Methoden, mit denen Bäume so geerntet werden können, dass der Wald weiterhin gesund bleibt. Dies hilft, die Natur zu schützen, ohne den Wald zu zerstören.<br><br>
 	<strong>Digitale Regenwald-Überwachung</strong><br>
 	In Brasilien gibt es nun Drohnen, die den Regenwald überwachen. Diese helfen dabei, illegale Abholzung zu erkennen und den Wald zu schützen.<br><br>
+	<img src="../images/regenwaldüberwachung.jpg" alt="Regenwaldüberwachung" class="REGENWALD" /><br><br>
+
 </div>
 
 <div class="INFOATLANTIK-KLIMA">
 	<h1>Innovationen im Atlantik</h1>
 	<strong>Wellenkraftwerke</strong><br>
 	Im Atlantik gibt es Wellenkraftwerke, die die Energie der Meereswellen nutzen, um Strom zu erzeugen. So wird die Kraft des Ozeans für uns nutzbar gemacht.<br><br>
-	<strong>Unterwasser-Kraftwerke</strong><br>
-	Es gibt Pläne, unter Wasser Strom zu erzeugen, indem man die Meeresströmungen nutzt. Diese Technologien helfen uns, mehr saubere Energie zu bekommen.<br><br>
+	<img src="../images/wellenkraftwerk.jpg" alt="Wellenkraftwerk" class="INNOVATIONSBILDER" /><br><br>
 </div>
 
 <div class="INFOUSA-KLIMA">
 	<h1>Innovationen in den USA</h1>
 	<strong>Selbstfahrende Elektroautos</strong><br>
 	In den USA werden Autos entwickelt, die sich selbst fahren und mit Strom betrieben werden. Diese Autos sind umweltfreundlich und könnten in der Zukunft den Verkehr sicherer und effizienter machen.<br><br>
-	<strong>Vertical Farming</strong><br>
-	In den USA gibt es nun vertikale Farmen, bei denen in großen Gebäuden auf mehreren Ebenen Lebensmittel angebaut werden. Diese Technologie spart Platz und hilft, die Städte grüner zu machen.<br><br>
+	<img src="../images/elektroautos.jpg" alt="Elektroauto" class="ELEKTROAUTO" /><br><br>
 </div>
 
 <div class="INFOKANADA-KLIMA">
 	<h1>Innovationen in Kanada</h1>
-	<strong>Permafrost-Dämmung</strong><br>
-	In Kanada gibt es Technologien, um den Permafrost, den Boden in kalten Gebieten, vor dem Schmelzen zu schützen. Dies hilft, die Umwelt in der Arktis zu bewahren.<br><br>
-	<strong>Wasseraufbereitungstechnologien</strong><br>
-	Kanada entwickelt Maschinen, die auch sehr verschmutztes Wasser reinigen können. Diese Technologie sorgt dafür, dass jeder Zugang zu sauberem Wasser hat, auch in abgelegenen Gebieten.<br><br>
+	<strong>Fisch-Taxis</strong><br>
+	Kanada hat "Fisch-Taxis" erfunden! Das sind große Röhren, die Fische sicher über Dämme oder Hindernisse bringen, wenn sie in Flüssen schwimmen. So können die Fische wieder an ihre Brutplätze gelangen, und der Fluss bleibt gesund.<br><br>
+	<img src="../images/fischtaxis.jpg" alt="Fischtaxis" class="INNOVATIONSBILDER" /><br><br>
 </div>
 
 <div class="INFOAFRIKA-KLIMA">
