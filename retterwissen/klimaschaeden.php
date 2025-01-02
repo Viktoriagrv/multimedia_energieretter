@@ -8,41 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="../../css/styles.css">
-	
-	   <style>
-.LOS-KLIMA2, .LOS-KLIMA3, .LOS-KLIMA4 {
-    display: inline-block; /* Damit die Buttons nebeneinander angezeigt werden */
-    padding: 15px 20px;
-    font-family: 'Bangers';
-    font-size: 2rem;
-    text-decoration: none;
-    letter-spacing: 0.05em;
-    color: #e8a723;
-    background-color: #285238;
-    border: 2px solid white;
-    border-radius: 8px;
-    cursor: pointer;
-    visibility: hidden; /* Standard unsichtbar */
-    z-index: 3;
-    margin-right: 20px; /* Abstand zwischen den Buttons */
-}
 
-/* Hover-Effekt */
-.LOS-KLIMA2:hover, .LOS-KLIMA3:hover, .LOS-KLIMA4:hover {
-    color: #285238;
-    background-color: #45a049;
-    border: 2px solid #285238;
-}
-
-/* Positioniere die Buttons am unteren Rand */
-.LOS-KLIMA2, .LOS-KLIMA3, .LOS-KLIMA4 {
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translateX(-50%); /* Zentriert die Buttons */
-}
-   </style>
-	
 </head>
 
 <body>
@@ -76,9 +42,6 @@
 		</div>	
 		
 		<button class="LOS-KLIMA" onclick="window.location.href='../retterwissen/innovationen.php'"> Zum Retterwissen: Innovationen </button>
-		<button class="LOS-KLIMA2" onclick="window.location.href='../retterwissen/zukunftsenergien/solar.php'"> Zum Retterwissen: Solarenergie </button>
-		<button class="LOS-KLIMA3" onclick="window.location.href='../retterwissen/zukunftsenergien/wasser.php'"> Zum Retterwissen: Wasserkraft </button>
-		<button class="LOS-KLIMA4" onclick="window.location.href='../retterwissen/zukunftsenergien/wind.php'"> Zum Retterwissen: Windenergie </button>
 		
 			<div class="PUNKT EUROPA-KLIMA"></div>
 			<div class="PUNKT CHINA-KLIMA"></div>
