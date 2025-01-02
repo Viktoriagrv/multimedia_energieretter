@@ -269,7 +269,8 @@
 
     <div class="SPRECHBLASEWEITER">
 
-        <p>Hier sind einige Informationen zu Wasserkraft! Viel Spaß beim Rumstöbern.</p>
+        <p>Hier sind einige Informationen zu Wasserkraft! <br> <br>
+			Viel Spaß beim Rumstöbern.</p>
 
         <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
