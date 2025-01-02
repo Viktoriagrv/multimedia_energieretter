@@ -1527,7 +1527,37 @@
 				transform: rotateX(360deg);	
 			}
 		}
+
 	
+		.BLAZE-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:5%;
+			height:35%;
+			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 2s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: visible;
+		}
+		
+		.BLAZE-KAPITELSTART:hover{
+			visibility: hidden;
+		}
+		
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
 		
 
 
@@ -1669,15 +1699,6 @@
 			box-shadow: 5px 5px 10px 0px gray;
 			visibility:visible;
 			z-index:5;
-			}
-		
-		.BILDINFOBOX{
-			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: visible;
 			}
 		
 		.TEXT-START{

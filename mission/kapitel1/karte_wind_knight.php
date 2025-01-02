@@ -346,6 +346,7 @@
 		function WindradZeigenEuropa(){
 			document.querySelector(".WINDRADEUROPA").classList.add("ZEIGEN");
 			document.querySelector(".EUROPABTN").classList.add("WEG");
+			document.querySelector(".EUROPA-GRUEN").classList.add("ZEIGEN");
 		}
 		
 		function ElementAblegenAsien() {
@@ -361,6 +362,7 @@
 		function WindradZeigenAsien(){
 			document.querySelector(".WINDRADASIEN").classList.add("ZEIGEN");
 			document.querySelector(".ASIENBTN").classList.add("WEG");
+			document.querySelector(".ASIEN-GRUEN").classList.add("ZEIGEN");
 		}
 		
 		function ElementAblegenSibirien() {
@@ -376,17 +378,18 @@
 		function WindradZeigenSibirien(){
 			document.querySelector(".WINDRADSIBIRIEN").classList.add("ZEIGEN");
 			document.querySelector(".SIBIRIENBTN").classList.add("WEG");
+			document.querySelector(".SIBIRIEN-GRUEN").classList.add("ZEIGEN");
 		}
 		
 		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.add("ZEIGEN");
 		}
 		
 		
 		document.querySelector("#SCHLIESSEN").addEventListener("click",AlleAus);
 		
 		function AlleAus(){
-			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.remove("ZEIGEN");
 		}
 		
 			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion
@@ -420,10 +423,10 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".KNIGHT-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-KNIGHT").classList.remove("WEG");
+			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
