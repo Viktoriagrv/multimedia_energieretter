@@ -263,7 +263,7 @@
 			</div>
 						
 			<div class="BLASE"> 
-				<p>Bevor du mit der Mission starten kannst, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
+				<p>Bevor du mit der Mission startest, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
 			</div>
 			
 			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Zu den Superhelden</button>

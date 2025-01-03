@@ -149,7 +149,7 @@
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel3/wasser_scarlett.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../zertifikate/zertifikat_scarlet.php'">Zu Deinem Zertifikat</button>
 		</div>
 		
     </main>

@@ -103,7 +103,7 @@
 			</div>
 						
 			<div class="BLASE-STARTSEITE"> 
-				<p>Bevor du mit der Mission starten kannst, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
+				<p>Bevor du mit der Mission startest, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
 			</div>
 			
 			<button class="HELFEN-STARTSEITE" onclick="window.location.href='superhelden.php'">Zu den Superhelden</button>
