@@ -78,28 +78,31 @@
 			left: 30%;
 		}
 			
-		.PAUSE{
+		.LANGSAMER{
 			position:absolute;
 			bottom: 10%;
 			left: 30%;
 			height:5%;
 			width: 20%;
+			font-family: "Bangers";
             font-size: 1.5rem;
+			color: #e8a723;
             text-decoration: none;
-            color: white;
+            letter-spacing: 0.05em;
             background-color: #285238;
             border-radius: 10px;
-            font-family: 'Bangers', cursive;
-			z-index: 5;
+            z-index: 5;
 			visibility: hidden;
 			cursor: pointer;
 		}
 		
-		.PAUSE:hover {
-            background-color: #45a049;
+		.LANGSAMER:hover {
+            color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
         }
 		
-		.WEITER{
+		.SCHNELLER{
 			position:absolute;
 			bottom: 10%;
 			left: 52%;
@@ -117,7 +120,7 @@
 			cursor: pointer;
 		}
 		
-		.WEITER:hover{
+		.SCHNELLER:hover{
             color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
@@ -140,6 +143,7 @@
 			top: 20%;
 			left: 45%;
 			height: 60%;
+			width:auto;
 			visibility:visible;
 		}
 		
@@ -150,11 +154,12 @@
 		.BLASE{
 			position: absolute;
 			padding: 25px;
-			top:20%;
-			left:23%;
-			height:20%;
-			width: 10%;
+			top:21%;
+			left:22%;
+			height:auto;
+			width: 13%;
 			font-family: "open sans";
+			font-size: 1.7rem;
 			color: #285238;
 			text-align: left;
 			border-radius: 20px 20px 20px 0px;
@@ -170,8 +175,8 @@
 			top:35%;
 			left:0%;
 			visibility:hidden;
-			transition-property: height, top, left;						/* betreffende Deklarationen (über Pseudoklassen) */
-			transition-duration: 5s;							/* Dauer (n) */
+			transition-property: height, top, left;					/* betreffende Deklarationen (über Pseudoklassen) */
+			transition-duration: 5s;								/* Dauer (n) */
 			transition-timing-function: ease-in-out;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			transition-delay: 2s;
 			
@@ -180,16 +185,17 @@
 		.HEROGROSS{
 			height:40%;
 			bottom:15%;
+			top:auto;
 			left:6%;
 			visibility:visible;	
 		}
 		
 		.HELFEN{
 			position:absolute;
-			bottom: 28%;
+			bottom:20%;
 			left:23%;
-			height:5%;
-			width: 15%;
+			height:7%;
+			width: auto;
             font-family: "Bangers";
             font-size: 1.5rem;
 			color: #e8a723;
@@ -257,26 +263,25 @@
 			</div>
 						
 			<div class="BLASE"> 
-				<p>Kurze Erklärung vom Superhelden</p>
+				<p>Bevor du mit der Mission starten kannst, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
 			</div>
 			
-			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Hier kannst du helfen!</button>
+			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Zu den Superhelden</button>
 			
 			
 									
-			<button class="PAUSE">Pause</button>
-			<button class="WEITER">Schneller</button>
+			<button class="LANGSAMER">Langsamer</button>
+			<button class="SCHNELLER">Schneller</button>
 		
 	</main>
 			
 	
 	<script> 
-		
 	
 		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
-		document.querySelector(".WEITER").addEventListener("mouseover", TextSchneller);
-		document.querySelector(".WEITER").removeEventListener("mouseout",TextSchneller);
-		document.querySelector(".PAUSE").addEventListener("click", TextPause);
+		document.querySelector(".SCHNELLER").addEventListener("click", TextSchneller);
+		document.querySelector(".LANGSAMER").addEventListener("click", TextLangsamer);
+		
 
 			var timer1;
 			let textEnde = false; 															// prüft, ob der Text zu Ende ist
@@ -285,12 +290,12 @@
 		function TextStarten(){
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
 			document.querySelector(".SCROLL").classList.add("ZEIGEN");
-			document.querySelector(".PAUSE").classList.add("ZEIGEN");
-			document.querySelector(".WEITER").classList.add("ZEIGEN");
+			document.querySelector(".LANGSAMER").classList.add("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
 
 			// Startet den Timer, der den Text scrollen lässt
-			timer1 = setInterval(scrollText, 60); 												// Text scrollt alle 60ms
+			timer1 = setInterval(scrollText, 50); 												// Text scrollt alle 60ms
 			}
 
 		// Funktion, die den Text kontinuierlich scrollt
@@ -313,21 +318,25 @@
 		
 		//Funktion zur Erhöhung der Laufgeschwindigkeit des Textes
 		function TextSchneller(){
+			clearInterval(timer1);
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setInterval(scrollText, 60);
+			timer1 = setInterval(scrollText, 20);
 		}
 		
-		// Funktion zum Pausieren des Textes
-		function TextPause(){
-			clearInterval(timer1); 															// Stoppt den Scroll-Timer
+		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes
+		function TextLangsamer(){
+			clearInterval(timer1);
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setInterval(scrollText, 80); 															
 		}
-
+		
+		
 		// Funktion, die nach dem Ende des Textes ausgeführt wird
 		function AbschlussStarten(){
 			document.querySelector(".STARTBUTTON").classList.add("WEG");
 			document.querySelector(".SCROLL").classList.remove("ZEIGEN");
-			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
-			document.querySelector(".WEITER").classList.remove("ZEIGEN");
+			document.querySelector(".LANGSAMER").classList.remove("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
 			document.querySelector(".WELT").classList.add("GROSS");
 			document.querySelector(".HERO").classList.add("HEROGROSS");
 			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
@@ -336,32 +345,31 @@
 		
 		 // Funktion, um Icons schweben zu lassen
 		function floatIcons() {
-				const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+				const icons = document.querySelectorAll('.icon-container img'); 	// Alle Icons auswählen
 
         		icons.forEach(icon => {
-					let position = 0; // Startposition
-					let direction = 1; // Bewegung nach oben oder unten
-					const maxMovement = 6; // Maximale Bewegung in Pixel
-					const stepSize = 0.1; // Bewegungsschritt
+					let position = 0; 												// Startposition
+					let direction = 1; 												// Bewegung nach oben oder unten
+					const maxMovement = 6; 											// Maximale Bewegung in Pixel
+					const stepSize = 0.1; 											// Bewegungsschritt
 
 					const iconFloat = () => {
 						if (position >= maxMovement || position <= -maxMovement) {
 							direction *= -1; // Richtung wechseln
 						}
-						position += direction * stepSize; // Position aktualisieren
-						icon.style.transform = `translateY(${position}px)`; // Icon bewegen
-						requestAnimationFrame(iconFloat); // Animation wiederholen
+						position += direction * stepSize; 							// Position aktualisieren
+						icon.style.transform = `translateY(${position}px)`; 		// Icon bewegen
+						requestAnimationFrame(iconFloat); 							// Animation wiederholen
 					};
 
-            	iconFloat(); // Animation starten
+            	iconFloat(); 														// Animation starten
         		});
 					
     	}
 				
 				// Startet die Funktionen nach dem Laden der Seite
 				document.addEventListener('DOMContentLoaded', () => {
-					floatIcons(); // Icons schweben lassen
-					buttonHoverEffect(); // Hover-Effekt aktivieren
+					floatIcons(); 													// Icons schweben lassen
 				});
 			
 	</script>

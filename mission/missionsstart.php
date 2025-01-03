@@ -13,7 +13,7 @@
 
 	<style>
 		
-		.WELT{
+		.WELT-STARTSEITE{
 			position:absolute;
 			top: 20%;
 			left: 45%;
@@ -27,14 +27,15 @@
 		}
 	
 		
-		.BLASE{
+		.BLASE-STARTSEITE{
 			position: absolute;
 			padding: 25px;
-			top:20%;
-			left:23%;
-			height:20%;
-			width: 10%;
-			font-family: verdana;
+			top:21%;
+			left:22%;
+			height:auto;
+			width: 13%;
+			font-family: "open sans";
+			font-size: 1.7rem;
 			color: #285238;
 			text-align: left;
 			border-radius: 20px 20px 20px 0px;
@@ -44,16 +45,17 @@
 			visibility:visible;
 		}
 		
-		.HERO{
+		.HERO-STARTSEITE{
 			position:absolute;
 			height:40%;
+			width:auto;
 			bottom:15%;
 			left:6%;
 			visibility:visible;
 			
 		}
 		
-		.HELFEN{
+		.HELFEN-STARTSEITE{
 			position:absolute;
 			bottom:20%;
 			left:23%;
@@ -70,7 +72,7 @@
 			cursor: pointer;
 		}
 		
-		.HELFEN:hover{
+		.HELFEN-STARTSEITE:hover{
 			color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
@@ -96,15 +98,15 @@
 		
 		
 			<div class="icon-container">
-				<img class="WELT" src="../images/weltkugel.png" alt="Weltkugel">
-				<img class="HERO" src="../images/Prinz.png" alt="Golden Knight">
+				<img class="WELT-STARTSEITE" src="../images/weltkugel.png" alt="Weltkugel">
+				<img class="HERO-STARTSEITE" src="../images/Prinz.png" alt="Golden Knight">
 			</div>
 						
-			<div class="BLASE"> 
-				<p>Kurze Erklärung vom Superhelden</p>
+			<div class="BLASE-STARTSEITE"> 
+				<p>Bevor du mit der Mission starten kannst, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
 			</div>
 			
-			<button class="HELFEN" onclick="window.location.href='superhelden.php'">Hier kannst du helfen!</button>
+			<button class="HELFEN-STARTSEITE" onclick="window.location.href='superhelden.php'">Zu den Superhelden</button>
 			
 
     </main>
@@ -137,7 +139,6 @@
 				// Startet die Funktionen nach dem Laden der Seite
 				document.addEventListener('DOMContentLoaded', () => {
 					floatIcons(); // Icons schweben lassen
-					buttonHoverEffect(); // Hover-Effekt aktivieren
 				});
 		
 	</script>
