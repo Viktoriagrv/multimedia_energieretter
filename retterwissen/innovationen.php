@@ -9,43 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/styles.css">
 	
-	<style>
-	.INNOVATIONSBILDER {
-		width: 70%;  /* Passt das Bild auf die Breite des Containers an */
-		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
-		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
-		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
-	}
-		
-	 .SOLARPUMPE {
-		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
-		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
-		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
-		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
-	}
-		
- 	.ELEKTROAUTO {
-		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
-		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
-		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
-		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
-	}
-		
-	.REGENWALD {
-		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
-		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
-		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
-		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
-	}
-	
-	.SOLARWUESTE {
-		width: 80%;  /* Passt das Bild auf die Breite des Containers an */
-		height: auto; /* Stellt sicher, dass die Höhe des Bildes im richtigen Verhältnis zur Breite bleibt */
-		margin-bottom: 20px; /* Abstand zwischen dem Bild und dem Text */
-		border-radius: 10px;  /* Optional: Runden der Ecken des Bildes */
-	}
-		
-	</style>
 </head>
 
 <body>
@@ -102,7 +65,7 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 	<h1>Innovationen in Europa</h1>
 	<strong>Grüne Dächer</strong><br>
 	In vielen Städten gibt es jetzt Dächer, die mit Pflanzen und Bäumen bedeckt sind. Diese grünen Dächer helfen, die Luft zu reinigen, kühlen die Städte und bieten Tieren ein Zuhause.<br><br>
-	<img src="../images/grüne_dächer.jpg" alt="Grüne Dächer" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/grüne_dächer.jpg" alt="Grüne Dächer" width="500" height="300"  /><br><br>
 
 </div>
 
@@ -110,7 +73,7 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 	<h1>Innovationen in China</h1>
 	<strong>Solare Straßen</strong><br>
 	In China gibt es Straßen, die mit Solarzellen bedeckt sind. Diese Zellen sammeln Sonnenenergie und wandeln sie in Strom um, den wir für alles Mögliche nutzen können.<br><br>
-	<img src="../images/solarstraße.jpg" alt="Solarstraße" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/solarstraße.jpg" alt="Solarstraße" width="500" height="300" /><br><br>
 </div>
 
 <div class="INFOSUEDOSTASIEN-KLIMA">
@@ -118,28 +81,28 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 	<strong>Bambusfahrräder</strong><br>
 	In Südostasien  wächst Bambus überall! Dort wird er schon seit Jahrhunderten für Häuser, Möbel und sogar Brücken verwendet. <br><br>
 	Diese Fahrräder sind besonders nachhaltig, da sie aus einem natürlichen Material bestehen, das sich schnell erneuert und nach dem Gebrauch keinen Müll hinterlässt.<br><br>
-	<img src="../images/bambusfahrrad.jpg" alt="Bambusfahrrad" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/bambusfahrrad.jpg" alt="Bambusfahrrad" width="500" height="300" /><br><br>
 </div>
 
 <div class="INFOAUSTRALIEN-KLIMA">
 	<h1>Innovationen in Australien</h1>
 	<strong>Regenwassersammelsysteme</strong><br>
 	In Australien gibt es Häuser, die Regenwasser sammeln und speichern. Dieses Wasser wird dann zum Gießen von Pflanzen oder für andere alltägliche Dinge genutzt.<br><br>
-	<img src="../images/wasserbehälter.jpg" alt="Wassersysteme" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/wasserbehälter.jpg" alt="Wassersysteme" width="500" height="300"  /><br><br>
 </div>
 
 <div class="INFOANTARKTIS-KLIMA">
 	<h1>Innovationen in der Antarktis</h1>
 	<strong>Antarktische Forschungslabore</strong><br>
 	In der Antarktis gibt es spezielle Labore, die dabei helfen, den Klimawandel zu verstehen. Hier erforscht man, wie wir die Umwelt besser schützen können.<br><br>
-	<img src="../images/forschungsstation.jpg" alt="Forschungsstation" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/forschungsstation.jpg" alt="Forschungsstation" width="500" height="300"   /><br><br>
 </div>
 
 <div class="INFOCHILE-KLIMA">
 	<h1> Innovationen in Chile </h1>
 	<strong>Solaranlagen in der Wüste</strong><br>
 	In der Atacama-Wüste in Chile gibt es riesige Solarfelder, die Sonnenlicht in Strom umwandeln. Diese Technologie hilft, saubere Energie zu erzeugen und die Umwelt zu schonen.<br><br>
-	<img src="../images/solarwüste.jpg" alt="Solaranlagen in der Wüste" class="SOLARWUESTE" /><br><br>
+	<img src="../images/solarwüste.jpg" alt="Solaranlagen in der Wüste" width="500" height="300"  /><br><br>
 
 </div>
 
@@ -147,7 +110,7 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 	<h1>Innovationen im Amazonas</h1>
 	<strong>Digitale Regenwald-Überwachung</strong><br>
 	In Brasilien gibt es nun Drohnen, die den Regenwald überwachen. Diese helfen dabei, illegale Abholzung zu erkennen und den Wald zu schützen.<br><br>
-	<img src="../images/regenwaldüberwachung.jpg" alt="Regenwaldüberwachung" class="REGENWALD" /><br><br>
+	<img src="../images/regenwaldüberwachung.jpg" alt="Regenwaldüberwachung" width="500" height="300"  /><br><br>
 
 </div>
 
@@ -155,28 +118,28 @@ Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, di
 	<h1>Innovationen im Atlantik</h1>
 	<strong>Wellenkraftwerke</strong><br>
 	Im Atlantik gibt es Wellenkraftwerke, die die Energie der Meereswellen nutzen, um Strom zu erzeugen. So wird die Kraft des Ozeans für uns nutzbar gemacht.<br><br>
-	<img src="../images/wellenkraftwerk.jpg" alt="Wellenkraftwerk" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/wellenkraftwerk.jpg" alt="Wellenkraftwerk" width="500" height="300"  /><br><br>
 </div>
 
 <div class="INFOUSA-KLIMA">
 	<h1>Innovationen in den USA</h1>
 	<strong>Selbstfahrende Elektroautos</strong><br>
 	In den USA werden Autos entwickelt, die sich selbst fahren und mit Strom betrieben werden. Diese Autos sind umweltfreundlich und könnten in der Zukunft den Verkehr sicherer und effizienter machen.<br><br>
-	<img src="../images/elektroautos.jpg" alt="Elektroauto" class="ELEKTROAUTO" /><br><br>
+	<img src="../images/elektroautos.jpg" alt="Elektroauto" width="500" height="300" /><br><br>
 </div>
 
 <div class="INFOKANADA-KLIMA">
 	<h1>Innovationen in Kanada</h1>
 	<strong>Fisch-Taxis</strong><br>
 	Kanada hat "Fisch-Taxis" erfunden! Das sind große Röhren, die Fische sicher über Dämme oder Hindernisse bringen, wenn sie in Flüssen schwimmen. So können die Fische wieder an ihre Brutplätze gelangen, und der Fluss bleibt gesund.<br><br>
-	<img src="../images/fischtaxis.jpg" alt="Fischtaxis" class="INNOVATIONSBILDER" /><br><br>
+	<img src="../images/fischtaxis.jpg" alt="Fischtaxis" width="500" height="300" /><br><br>
 </div>
 
 <div class="INFOAFRIKA-KLIMA">
 	<h1>Innovationen in Afrika</h1>
 	<strong>Solare Wasserpumpen</strong><br>
 	In vielen afrikanischen Ländern gibt es bereits Wasserpumpen, die mit Solarenergie betrieben werden. Diese Pumpen holen Wasser aus Brunnen und versorgen die Menschen mit Trinkwasser.<br><br>
-	<img src="../images/solarpumpe.jpg" alt="Solarpumpe" class="SOLARPUMPE" /><br><br>
+	<img src="../images/solarpumpe.jpg" alt="Solarpumpe" width="400" height="200" /><br><br>
 </div>
 
 

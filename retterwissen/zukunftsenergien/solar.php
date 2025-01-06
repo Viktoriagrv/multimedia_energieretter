@@ -10,21 +10,7 @@
 	 <link rel="stylesheet" href="../../css/styles.css">
 
     <style>
-        main {
-            background-color: #b9e5ef;
-            overflow: hidden; /* Verhindert das Scrollen der Seite */
-        }
-
-   		h1{
-			font-family: "open sans";
-			color:#e8a723;
-			font-size: 2rem;
-			padding-top: 0px;
-		}
-		
-		p {
-			text-align: left;
-		}
+       
 		
         details {
             background: #eee;

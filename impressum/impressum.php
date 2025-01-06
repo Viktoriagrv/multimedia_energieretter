@@ -6,110 +6,149 @@
     <title>Impressum</title>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
 
     <style>
- 
-		body {
-			font-family: Verdana, sans-serif;
-			background-color: #f4f4f4;
-			color: #000;
-			margin: 0;
-			padding: 0;
-			overflow-y: scroll;
-		}
+      body {
+    font-family: Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    height: 100vh; /* Setzt die Höhe auf 100% des Viewports */
+}
 
-		main {
-			padding-top: 80px;  /* Abstand oben (wie Höhe der Navbar) */
-			padding-bottom: 80px;  /* Sicherstellen, dass der Abstand zum Footer genug ist */
-		}
+main {
+    padding-top: 80px;  /* Abstand oben (wie Höhe der Navbar) */
+    padding-bottom: 80px;  /* Sicherstellen, dass der Abstand zum Footer genug ist */
+    text-align: center; /* Zentriert den Text */
+}
 
-		/* Inhaltsbereich */
-		.inhalt {
-			max-width: 600px; 
-			margin: 0 auto;
-			background: rgba(255, 255, 255, 0.8);
-			padding: 20px;  /* Innenabstand */
-			border-radius: 10px;
-			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-			z-index: 1;  
-		}
+#hintergrundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;  /* Video hinter dem Inhalt */
+}
 
-		/* Hintergrundvideo */
-		#hintergrundVideo {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			z-index: -1;  /* Video hinter dem Inhalt */
-		}
+#scarletShade {
+    position: fixed;
+    right: 0;
+    bottom: 20px;
+    width: 300px; /* Größeres Bild */
+    z-index: 2;  /* Über dem Inhalt */
+}
 
-			</style>
-		
-		</head>
+.inhalt {
+    max-width: 800px; /* Maximalbreite */
+    margin: 0 auto; /* Zentriert den Inhalt */
+    padding: 20px;
+    color: #FFC107; /* Gelbe Schriftfarbe */
+    letter-spacing: -0.5px; /* Verringerung des Abstandes zwischen den Wörtern */
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    color: #FFC107; /* Gelb für den Titel */
+    text-align: center; /* Zentriert den Titel */
+    margin-left: 0;
+    font-size: 3rem; /* Größere Schriftgröße */
+    letter-spacing: -1px; /* Verringerung des Abstandes zwischen den Wörtern für den Titel */
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    color: #FFC107; /* Energieretter Gelb */
+    font-size: 2rem; /* Größere Schriftgröße */
+    margin-left: 0;
+    letter-spacing: -0.5px; /* Verringerung des Abstandes zwischen den Wörtern für die Sub-Titel */
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem; /* Größere Schriftgröße */
+    line-height: 1.6;
+    color: #FFC107;  /* Gelb für den normalen Text */
+    letter-spacing: -0.5px; /* Verringerung des Abstandes zwischen den Wörtern */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    color: #FFC107;
+    letter-spacing: -0.5px; /* Verringerung des Abstandes zwischen den Wörtern */
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+    </style>
+</head>
 
 <body>
-	
-	<?php include '../include/nav.php'; ?>
-	
-	
-			<!-- Hintergrundvideo -->
-			<video autoplay muted loop id="hintergrundVideo">
-				<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-				<source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
-			</video>
+    <?php include '../include/nav.php'; ?>
+    
+    <!-- Hintergrundvideo -->
+    <video autoplay muted loop id="hintergrundVideo">
+        <source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+        <source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
+    </video>
+
+    <!-- Superheldenbild (Scarlet Shade) am rechten Rand -->
+    <img src="../images/BadGirl.png" alt="Scarlet Shade" id="scarletShade">
 
     <!-- Hauptinhalt -->
     <main>
         <div class="inhalt">
-            
             <h1>Impressum</h1>
-            <p>
-                Willkommen zu <strong>Die Energieretter</strong> – ein Projekt des Multimedia-Studiums im Wintersemester 2024/2025 
-                unter der Leitung von <strong>Prof. Götz Greiner</strong> und <strong>Dipl.-Phys. Thomas Severiens</strong>. 
-                Dieses Projekt wurde erstellt von:
-            </p>
-            <ul>
-                <li><strong>Sabrina Siebels</strong></li>
-                <li><strong>Viktoria Grushev</strong></li>
-                <li><strong>Sophie Hecker</strong></li>
-            </ul>
-
-            <!-- Bild- und Literaturverzeichnis -->
-            <div class="interaktiver-abschnitt">
-                <h2>Bildverzeichnis</h2>
-                <p>Alle Bilder und Videos wurden unter Berücksichtigung der Lizenzbedingungen genutzt:</p>
-                <ul>
-                    <li>Background-Video: <a href="https://example.com" target="_blank">Link zur Quelle</a></li>
-                    <li>Illustrationen: Eigene Anfertigungen durch die Projektgruppe.</li>
-                    <li>Icons: Bezogen von <a href="https://www.flaticon.com" target="_blank">Flaticon</a>.</li>
-                </ul>
+            
+            <h2>Gestaltung</h2>
+            <p>Viktoria Grushev, Sabrina Siebels und Sophie Hecker</p>
+            
+            <br>
+           
+                <h2>Kurs:</h2>
+                <p>Multimedia</p>
             </div>
 
-            <div class="interaktiver-abschnitt">
-                <h2>Literaturverzeichnis</h2>
-                <p>Die folgenden Quellen wurden für die Inhalte verwendet:</p>
-                <ul>
-                    <li>Buch: "Die Zukunft der Energie", Verlag XYZ, 2023</li>
-                    <li>Artikel: "Innovation in der Klimaforschung", Online-Magazin ABC</li>
-                    <li>Studie: "Nachhaltige Technologien 2024", Universität DEF</li>
-                </ul>
+    
+                <h2>Betreut von:</h2>
+                <p>Prof. Götz Greiner und Dipl.-Phys. Thomas Severiens</p>
             </div>
-
-            <!-- Kontakt -->
-            <div class="interaktiver-abschnitt">
-                <h2>Kontakt</h2>
-                <p>Bei Fragen zu diesem Projekt können Sie uns unter folgender E-Mail-Adresse erreichen:</p>
-                <p><a href="mailto:info@energieretter.de">info@energieretter.de</a></p>
-            </div>
+            
+            <br>
+            <h2>Institution:</h2>
+            <p>Jade HS Wilhelmshaven</p>
+            
+            <h2>Studiengang:</h2>
+            <p>Medienwirtschaft und Journalismus</p>
+            
+            <br>
+            <h2>Verwendete Schriften</h2>
+            <p>Bangers und Open Sans</p>
+            
         </div>
     </main>
-
-  <?php include '../include/footer.php'; ?>
-	
 </body>
 </html>
 

@@ -73,7 +73,7 @@
 			left: 0;
 			right: 0;
 			z-index: 10; /* Über dem Hintergrundvideo */
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Schattierung für die Navigation */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 		}
 
 	/* Brand-Logo in der Navigation */
@@ -87,6 +87,7 @@
 		}
 
 		.navbar-brand:hover {
+			border-radius: 15px; /* Abrundung der Ecken bei Hover */
 			color: white;
 		}
 
@@ -3045,4 +3046,59 @@
 			visibility: hidden;
 		}	
 
+/*SEITE ZUKUNFTSENERGIE*/	
+
+        /* ICONS */
+        .ZUKUNFTSENERGIE-icons-container {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            gap: 100px; 
+            position: absolute;
+            top: 40%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+        }
+
+        .ZUKUNFTSENERGIE-icons-container img {
+            width: 160px; 
+            height: 160px; 
+        }
+
+        /* BUTTONS */
+        .ZUKUNFTSENERGIE-button-container {
+            display: flex;
+            justify-content: center; /* BUTTONS ZENTRIEREN */
+            align-items: center;
+            gap: 100px; /* ABSTAND BUTTONS */
+            position: absolute;
+            top: 55%; /* ABSTAND BUTTONS UND ICONS */
+            left: 50%; /* HORIZONTALE ZENTRIERUNG */
+            transform: translate(-50%, -50%); /* ZENTRIERUNG */
+        }
+
+        .ZUKUNFTSENERGIE-button-container a {
+            display: inline-block;
+            padding: 15px 30px; /* PADDING  */
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background-color: #285238; 
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            font-family: 'Bangers', cursive;
+            text-align: center; /* TEXT ZENTRIERUNG */
+        }
+
+        .ZUKUNFTSENERGIE-button-container a.hovered {
+            background-color: #FFD700; /* HOVER EFFEKT */
+        }
+
+        .ZUKUNFTSENERGIE-hintergrundbild {
+            position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+        }
 		
