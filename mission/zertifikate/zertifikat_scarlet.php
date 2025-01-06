@@ -11,25 +11,51 @@
 	<style>
 		
 		.ZERTIFIKAT{
+			position: absolute;
 			top:5%;
-			height:5%;
-			width:auto;
+			left: 19%;
+			height:auto;
+			width:70%;
 		}
 		
+		.BTNDOWNLOAD{
+			position:absolute;
+			bottom: 3%;
+			left: 42%;
+			padding: 8px;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			z-index:4;
+			}
 		
+		.BTNDOWNLOAD:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+			
 	</style>
 </head>
 
 <body>
 	
-	<?php include '../include/nav.php'; ?>
+	<?php include '../../include/nav.php'; ?>
 	
 	<main>
+		
+		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
 	
-		<div>
+		<div class="INFOBOX-KLIMA">
 			
-			<img  class="ZERTIFIKAT" src="../../images/zertifikat_scarlet.png" alt="Zertifikat als Energieretter">
-			<a href="../../images/zertifikat_scarlet.pdf" download><button>Download Zertifikat</button></a>
+			<img  class="ZERTIFIKAT" src="../../images/urkunde_scarlet.png" alt="Urkunde als Energieretter">
+			<br>
+			<a href="../../images/urkunde_scarlet.pdf" download><button class="BTNDOWNLOAD">Download Urkunde</button></a>
 			
 		</div>
 		

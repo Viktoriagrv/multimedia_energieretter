@@ -45,13 +45,16 @@
 		.BLUMEN-KAPITELSTART{
 			position:absolute;
 			bottom:0%;
-			right: 3%;
+			right: 1%;
 			height:28%;
 			width:auto;
 			visibility: hidden;		
 		}
 		
-	
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
 	</style>
 </head>
 

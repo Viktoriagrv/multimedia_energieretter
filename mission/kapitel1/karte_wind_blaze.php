@@ -9,6 +9,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
+	<style>
+	.ZEIGEN{
+			visibility: visible;
+		}
+		
+	</style>
+	
 </head>
 
 <body>
@@ -19,7 +26,9 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BLUMEN-INFOBOX" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+			
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
 				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
@@ -29,6 +38,9 @@
 		</div>
 		
 		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+		
+		<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+		<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 		
 		<div class="PLATZIERUNG">
 			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
@@ -57,7 +69,7 @@
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
-			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			
 			<div class="SPRECHBLASE1">
 				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -157,22 +169,22 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", ScarletDa);
+		document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseover", BlumenDa);
+			document.querySelector(".BILDINFOBOX-BLAZE").addEventListener("mouseout", BlumenWeg);
 
-			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+			function BlumenDa(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.add("ZEIGEN");
 			}
-			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+			function BlumenWeg(){
+				document.querySelector(".BLUMEN-INFOBOX").classList.remove("ZEIGEN");
 			}
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
-				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-BLAZE").classList.add("WEG");
+				document.querySelector(".BLAZE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD2").classList.add("ZEIGEN");
@@ -180,16 +192,17 @@
 			}
 		
 		
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseover",ScarletUnsichtbar);
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseout",ScarletSichtbar);
+	
+			document.querySelector(".BLAZE").addEventListener("mouseover", BlumenWiederDa);
+			document.querySelector(".BLAZE").addEventListener("mouseout", BlumenWiederWeg);
+
+			function BlumenWiederDa(){
+				document.querySelector(".BLUMEN").classList.add("ZEIGEN");
+			}
+			function BlumenWiederWeg(){
+				document.querySelector(".BLUMEN").classList.remove("ZEIGEN");
+			}
 		
-		function ScarletUnsichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.add("WEG");
-		}
-		
-		function ScarletSichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("WEG");
-		}
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
@@ -415,7 +428,7 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".BLAZE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
 			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
@@ -423,15 +436,7 @@
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
 		
-		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
-
-			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
-			}
-			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
-			}
+		
 		
 	</script>
 	
