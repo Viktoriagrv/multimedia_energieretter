@@ -11,6 +11,10 @@
 
 	<style>
 		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
 		.WEG{
 			visibility: hidden;
 		}
@@ -26,10 +30,11 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-KNIGHT" src="../../images/Prinz.png" alt="Golden Knight">
+			<div class="HILFSBOX-FLIEGEN-AUSWAHL"></div>
+			<img class="BILDINFOBOX-KNIGHT-AUSWAHL" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
+				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Windräder platzieren</button>
@@ -63,10 +68,11 @@
 		<img class="WINDRAD2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
-		
+			
+			<div class="HILFSBOX-FLIEGEN-KARTE"></div>
 			<img class="KNIGHT-KARTE" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="SPRECHBLASE1">
-				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
+				Ziehe die Windräder unten auf die richtigen Punkte auf der Weltkarte.
 			</div>
 		
 			<div class="SPRECHBLASE2">
@@ -145,18 +151,19 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-KNIGHT" src="../../images/Prinz.png" alt="Golden Knight">
+			<div class="HILFSBOX-FLIEGEN-AUSWAHL"></div>
+			<img class="BILDINFOBOX-KNIGHT-AUSWAHL" src="../../images/Prinz.png" alt="Golden Knight">
 			
 			<div class="TEXT-ENDE">
 				<div>
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
 					<div class="CODE">fts-909</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlett.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_knight.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
@@ -164,12 +171,12 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX-KNIGHT").addEventListener("click", KnightFliegt);
+		document.querySelector(".HILFSBOX-FLIEGEN-AUSWAHL").addEventListener("mouseover", KnightFliegt);
 
 			function KnightFliegt(){
-				document.querySelector(".BILDINFOBOX-KNIGHT").style.animationPlayState = "running";
+				document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").style.animationPlayState = "running";
 				
-				const knight = document.querySelector(".BILDINFOBOX-KNIGHT");
+				const knight = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");
 
 				// Entferne die Animation, indem du den `animation-name` auf "none" setzt
 				knight.style.animation = "none";
@@ -186,7 +193,7 @@
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX-KNIGHT").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").classList.add("WEG");
 				document.querySelector(".KNIGHT-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
@@ -194,7 +201,7 @@
 				document.querySelector(".WINDRAD3").classList.add("ZEIGEN");
 			}
 		
-		document.querySelector(".KNIGHT-KARTE").addEventListener("click", KnightFliegtWieder);
+		document.querySelector(".HILFSBOX-FLIEGEN-KARTE").addEventListener("mouseover", KnightFliegtWieder);
 		
 		function KnightFliegtWieder(){
 				document.querySelector(".KNIGHT-KARTE").style.animationPlayState = "running";
@@ -202,7 +209,7 @@
 				const knightgross = document.querySelector(".KNIGHT-KARTE");								// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
     			knightgross.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
     			void knightgross.offsetWidth;														// Füge die Animation wieder hinzu
-    			knightgross.style.animation = "FLIEGEN 4s linear 1 forwards";
+    			knightgross.style.animation = "FLIEGEN 7s linear 1 forwards";
 			}
 		
 				
@@ -430,13 +437,14 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".KNIGHT-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
+		
 	
 		
 	</script>

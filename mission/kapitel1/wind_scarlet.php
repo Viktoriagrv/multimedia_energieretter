@@ -60,11 +60,13 @@
 			</div>
 		</div>
 		
-		<div class="ABSCHLUSSTEXT-WIND">
+		<div class="GRATULATION">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_scarlet.php'">Zur Weltkarte</button>
-		
 		</div>
+		
+		<div class="ABSCHLUSSTEXT-KAPITELSTART">
+			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_scarlet.php'">Zur Weltkarte</button>
+		</div>	
 		
 		<div class="FEHLERMELDUNG">
 				<button id="ZU">&times;</button>	
@@ -109,7 +111,8 @@
 		
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK-WIND").classList.add("WEG");
-			document.querySelector(".ABSCHLUSSTEXT-WIND").classList.add("ZEIGEN");
+			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
+			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
 			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
 			
 		}

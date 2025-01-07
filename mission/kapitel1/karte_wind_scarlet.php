@@ -22,7 +22,7 @@
 			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
+				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Stellen zu finden. Viel Erfolg!
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Windräder platzieren</button>
@@ -59,7 +59,7 @@
 		
 			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="SPRECHBLASE1">
-				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
+				Ziehe die Windräder unten auf die richtigen Punkte auf der Weltkarte.
 			</div>
 		
 			<div class="SPRECHBLASE2">
@@ -145,7 +145,7 @@
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
 					<div class="CODE">xdf-338</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>
 								

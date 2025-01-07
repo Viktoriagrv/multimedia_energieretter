@@ -25,6 +25,8 @@
 	
     <main>
 		
+		<img class="BLACKSCREEN" src="../../images/blackscreen.png" alt="Schwarzer Bildschirm">
+		
 		<div class="HEADER-WIND">Windkraftanlagen</div>
 		<img class="LANDSCHAFT-WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 		
@@ -60,11 +62,13 @@
 			</div>
 		</div>
 		
-		<div class="ABSCHLUSSTEXT-WIND">
+		<div class="GRATULATION">
 			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_scarlet.php'">Zur Weltkarte</button>
-		
 		</div>
+		
+		<div class="ABSCHLUSSTEXT-KAPITELSTART">
+			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_titan.php'">Zur Weltkarte</button>
+		</div>	
 		
 		<div class="FEHLERMELDUNG">
 				<button id="ZU">&times;</button>	
@@ -81,11 +85,22 @@
 				</div>						
 		</div>
 		
-		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlet Shade">
+		<img class="TITAN-KAPITELSTART" src="../../images/Biest.png" alt="Cyber Titan">
 		
 	</main>
 
-    <script>	
+    <script>
+		
+		document.querySelector(".TITAN-KAPITELSTART").addEventListener("mouseover", BlackScreenDa);
+			document.querySelector(".TITAN-KAPITELSTART").addEventListener("mouseout", BlackScreenWeg);
+			
+			function BlackScreenDa(){
+				document.querySelector(".BLACKSCREEN").classList.add("ZEIGEN");
+			}
+		
+			function BlackScreenWeg(){
+				document.querySelector(".BLACKSCREEN").classList.remove("ZEIGEN");
+			}
 				
 		document.querySelector(".PRUEFEN-WIND").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
@@ -109,8 +124,9 @@
 		
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK-WIND").classList.add("WEG");
-			document.querySelector(".ABSCHLUSSTEXT-WIND").classList.add("ZEIGEN");
-			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
+			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
+			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
+			document.querySelector(".TITAN-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
 		

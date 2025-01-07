@@ -1,4 +1,5 @@
 /* Allgemeines Layout */
+
 		html, body {
 			margin: 0;
 			padding: 0;
@@ -238,10 +239,20 @@
 			width: auto;
 			visibility: hidden;
 			}
+
+		.HILFSBOX-FLIEGEN-AUSWAHL{
+			position: absolute;
+			bottom:12%;
+			left: 12%;
+			height:70%;
+			width: 25%;
+			background-color: transparent;
+			z-index:6;
+		}
 		
 		.BILDINFOBOX-KNIGHT-AUSWAHL{
 			position: absolute;
-			bottom:12%;
+			bottom:15%;
 			left: 5%;
 			height:70%;
 			width: auto;
@@ -270,22 +281,32 @@
 			}
 			
 			75%{
-				bottom:12%;
+				bottom:15%;
 				left: 60%;
 				transform: rotateY(180deg);
 			}
 			
 			99.99%{
-				bottom:12%;
+				bottom:15%;
 				left: 5%;
 				transform: rotateY(180deg);
 			}
 			
 			100% {
-				bottom:12%;
+				bottom:15%;
 				left: 5%;
 				transform: rotateY(0deg);
 			}
+		}
+
+		.HILFSBOX-BLUMEN-AUSWAHL{
+			position: absolute;
+			bottom:12%;
+			left: 12%;
+			height:70%;
+			width: 25%;
+			background-color: transparent;
+			z-index:6;
 		}
 		
 		.BILDINFOBOX-BLAZE-AUSWAHL{
@@ -306,6 +327,16 @@
 			visibility:hidden;
 			z-index:5;
 		}
+
+		.HILFSBOX-RENNEN-AUSWAHL{
+			position: absolute;
+			bottom:12%;
+			left: 15%;
+			height:70%;
+			width: 25%;
+			background-color: transparent;
+			z-index:6;
+		}
 		
 		.BILDINFOBOX-THUNDER-AUSWAHL{
 			position: absolute;
@@ -314,7 +345,7 @@
 			height:70%;
 			width: auto;
 			animation-name: RENNENAUSWAHL;							/* Name (keyframe) */
-			animation-duration: 0.2s;							/* Dauer (n) */
+			animation-duration: 0.5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1073,6 +1104,16 @@
 
 
 	/*Knight*/
+
+		.HILFSBOX-FLIEGEN-KARTE{
+			position: absolute;
+			bottom:5%;
+			left: 3%;
+			height:30%;
+			width: 10%;
+			background-color: transparent;
+			z-index:6;
+		}
 		
 		.BILDINFOBOX-KNIGHT{
 			position: absolute;
@@ -1080,7 +1121,6 @@
 			left: 5%;
 			height:80%;
 			width: auto;
-			visibility: visible;
 			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
 			animation-duration: 1.5s;							/* Dauer (n) */
@@ -1090,6 +1130,46 @@
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
 			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
 			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			visibility: visible;
+			z-index:5;
+		}
+		
+		
+		@keyframes FLIEGEN {
+			49.99% {
+				top:1%;
+				left: 60%;
+				transform: rotateY(180deg);
+			}
+			50% {
+				bottom:60%;
+				left: 60%;
+				transform: rotateY(0deg);
+			}
+			
+			100% {
+				bottom:7%;
+				left: 5%;
+				transform: rotateY(0deg);
+			}
+		}
+
+		.BILDINFOBOX-KNIGHT-ENDE{
+			position: absolute;
+			bottom:7%;
+			left: 5%;
+			height:80%;
+			width: auto;
+			transform: rotateY(0deg);
+			animation-name: FLIEGEN;						/* Name (keyframe) */
+			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;					/* für JavaScript (running, paused) */
+			visibility: hidden;
 			z-index:5;
 		}
 		
@@ -1428,7 +1508,7 @@
 			height:35%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
+			animation-duration: 1.5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1451,6 +1531,16 @@
 			}
 		}
 
+		.HILFSBOX-FLIEGEN-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:5%;
+			height:35%;
+			width:15%;
+			background-color: transparent;
+			z-index:6;
+		}
+
 		.KNIGHT-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
@@ -1459,7 +1549,7 @@
 			width:auto;
 			transform: rotateY(180deg);
 			animation-name: FLIEGENKAPITELSTART;						/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
+			animation-duration: 7s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1510,7 +1600,7 @@
 			width:auto;
 			transform: rotateY(180deg);
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
+			animation-duration: 1.5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1522,9 +1612,11 @@
 		
 		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
 			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateY(180deg);
 				transform: rotateX(180deg);
 			}
 			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateY(180deg);
 				transform: rotateX(360deg);	
 			}
 		}
@@ -1537,7 +1629,7 @@
 			height:40%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
+			animation-duration: 1.5s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1556,10 +1648,56 @@
 				transform: rotate(360deg);
 			}
 		}
+
+		.TITAN-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:7%;
+			height:40%;
+			width:auto;
+			transform: rotateY(180deg);
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			z-index:6;
+			visibility: visible;
+		}
 		
+	
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateY(180deg);
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateY(180deg);
+				transform: rotate(360deg);
+			}
+		}
 
-
-/*Kapitel-Karten */
+		.GRATULATION{
+			position: absolute;
+			padding: 25px;
+			top:23%;
+			right:21%;
+			height:auto;
+			width: 13%;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 0px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
+			visibility: hidden;
+		}
+		
 
 		.BTNLINKS-WIND{
 			display: inline-block;
@@ -1668,10 +1806,10 @@
 			border: 2px solid #285238;
 		}
 		
-		.ABSCHLUSSTEXT-WIND{
+		.ABSCHLUSSTEXT-KAPITELSTART{
 			position: absolute;
-			top: 23%;
-			right: 8%;
+			bottom: 20%;
+			right: 4%;
 			font-family: "open sans";
 			font-size: 2rem;
 			color: #285238;
@@ -1756,7 +1894,7 @@
 			visibility: hidden;
 			transform: rotateY(0deg);
 			animation-name: FLIEGEN;						/* Name (keyframe) */
-			animation-duration: 4s;							/* Dauer (n) */
+			animation-duration: 7s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1968,7 +2106,7 @@
 		
 		.DROP-ELEMENT:hover{
 			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: brown;
+			background-color: #45a049;
 		}
 		
 		.DRAG-ELEMENT {

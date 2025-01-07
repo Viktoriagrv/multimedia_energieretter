@@ -21,8 +21,8 @@
 			
 			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="TEXT-START">
-				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Solarpanels platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du wieder die kurze Erklärung über den Standort, die dir hilft, die geeigneten Standorte zu finden. Viel Erfolg!
+				Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
+				Auf der Karte müssen nun an den richtigen Stellen die Solarpanels platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du wieder die kurze Erklärung über den Standort, die dir hilft, die geeigneten Standorte zu finden. Viel Erfolg!
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Solarpanels platzieren</button>

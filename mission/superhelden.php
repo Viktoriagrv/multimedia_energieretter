@@ -73,6 +73,7 @@
 			<div class="INFOGOLDENKNIGHT">
 				<button id="buttonGK">&times;</button>
 				
+				<div class="HILFSBOX-FLIEGEN-AUSWAHL"></div>
 				<div><img class="BILDINFOBOX-KNIGHT-AUSWAHL" src="../images/Prinz.png" alt="Golden Knight"></div>
 				
 				<a class=NAME-AUSWAHL>Golden Knight</a>
@@ -91,6 +92,7 @@
 			<div class="INFOGREENBLAZE">
 				<button id="buttonGB">&times;</button>
 				
+				<div class="HILFSBOX-BLUMEN-AUSWAHL"></div>
 				<img class="BILDINFOBOX-BLAZE-AUSWAHL" src="../images/Prinzessin.png" alt="Green Blaze">
 				<img class="BLUMEN-INFOBOX-AUSWAHL" src="../images/blumenwiese.png" alt="Blumenwiese mit Biene">
 				
@@ -110,6 +112,7 @@
 			<div class="INFOTHUNDERBOLT">
 				<button id="buttonTB">&times;</button>
 				
+				<div class="HILFSBOX-RENNEN-AUSWAHL"></div>
 				<img class="BILDINFOBOX-THUNDER-AUSWAHL" src="../images/AquaBoy.png" alt="Thunderbolt">
 				
 				<a class=NAME-AUSWAHL>Thunderbolt</a><br>
@@ -245,10 +248,10 @@
 						document.querySelector(".INFOGOLDENKNIGHT").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").addEventListener("click", KnightFliegt);
+					document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").addEventListener("mouseover", KnightFliegt);
 
 					function KnightFliegt(){
-						document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL").style.animationPlayState = "running";
+						document.querySelector(".HILFSBOX-FLIEGEN-AUSWAHL").style.animationPlayState = "running";
 
 						const knightauswahl = document.querySelector(".BILDINFOBOX-KNIGHT-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
 						knightauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
@@ -263,8 +266,8 @@
 				document.querySelector('.GREENBLAZE').addEventListener('click',ZeigeGreenBlaze);
 					document.querySelector('#buttonGB').addEventListener('click',GreenBlazeAus);
 
-					document.querySelector(".BILDINFOBOX-BLAZE-AUSWAHL").addEventListener("mouseover",BlumenDa);
-					document.querySelector(".BILDINFOBOX-BLAZE-AUSWAHL").addEventListener("mouseout",BlumenWeg);
+					document.querySelector(".HILFSBOX-BLUMEN-AUSWAHL").addEventListener("mouseover",BlumenDa);
+					document.querySelector(".HILFSBOX-BLUMEN-AUSWAHL").addEventListener("mouseout",BlumenWeg);
 
 					function ZeigeGreenBlaze() {
 						document.querySelector(".INFOSCARLETSHADE").classList.remove("ZEIGEN");
@@ -301,15 +304,16 @@
 						document.querySelector(".INFOTHUNDERBOLT").classList.add("ZEIGEN");
 					}
 
-					document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").addEventListener("click",ThunderRennt);
+					document.querySelector(".HILFSBOX-RENNEN-AUSWAHL").addEventListener("mouseover",ThunderRennt);
+			
 
 					function ThunderRennt(){
 						document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL").style.animationPlayState = "running";
-
+					
 						const thunderauswahl = document.querySelector(".BILDINFOBOX-THUNDER-AUSWAHL");					// Die nächsten drei Schritte sind mit ChatGPT programmiert: Entferne die Animation, indem du den `animation-name` auf "none" setzt
 						thunderauswahl.style.animation = "none";												// Erzwungene Neuberechnung des Styles, um den Browser die Änderung registrieren zu lassen
 						void thunderauswahl.offsetWidth;														// Füge die Animation wieder hinzu
-						thunderauswahl.style.animation = "RENNENAUSWAHL 0.5s linear 1 forwards";
+						thunderauswahl.style.animation = "RENNENAUSWAHL 0.3s linear 1 forwards";
 					}
 
 					function ThunderBoltAus() {

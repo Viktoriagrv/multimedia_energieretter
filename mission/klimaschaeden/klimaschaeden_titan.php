@@ -47,7 +47,7 @@
 			
 		</div>	
 		
-		<button class="LOS-KLIMA" onclick="window.location.href='../kapitel1/wind_sonic.php'"> Auf geht's! </button>
+		<button class="LOS-KLIMA" onclick="window.location.href='../kapitel1/wind_titan.php'"> Auf geht's! </button>
 		
 		
 			<div class="PUNKT EUROPA-KLIMA"></div>

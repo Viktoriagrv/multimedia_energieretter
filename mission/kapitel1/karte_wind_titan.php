@@ -17,12 +17,14 @@
 	
     <main>
 		
+		<img class="BLACKSCREEN" src="../../images/blackscreen.png" alt="Schwarzer Bildschirm">
+		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-TITAN" src="../../images/Biest.png" alt="Cyber Titan">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
+				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Windräder platzieren</button>
@@ -57,7 +59,7 @@
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
-			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="TITAN-KARTE" src="../../images/Biest.png" alt="Cyber Titan">
 			<div class="SPRECHBLASE1">
 				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -138,18 +140,18 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-TITAN" src="../../images/Biest.png" alt="Cyber Titan">
 			
 			<div class="TEXT-ENDE">
 				<div>
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">xdf-338</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					<div class="CODE">jko-264</div><br>
+					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlet.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_titan.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
@@ -157,22 +159,37 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", ScarletDa);
-
-			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+			document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseover", BlackScreenDaInfo);
+			document.querySelector(".BILDINFOBOX-TITAN").addEventListener("mouseout", BlackScreenWegInfo);
+			
+			function BlackScreenDaInfo(){
+				document.querySelector(".BLACKSCREEN").classList.add("ZEIGEN");
+				document.querySelector(".KARTE-ANSEHEN").classList.add("WEG");
 			}
-			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+		
+			function BlackScreenWegInfo(){
+				document.querySelector(".BLACKSCREEN").classList.remove("ZEIGEN");
+				document.querySelector(".KARTE-ANSEHEN").classList.remove("WEG");
 			}
+		
+			document.querySelector(".TITAN-KARTE").addEventListener("mouseover", BlackScreenDa);
+			document.querySelector(".TITAN-KARTE").addEventListener("mouseout", BlackScreenWeg);
+			
+			function BlackScreenDa(){
+				document.querySelector(".BLACKSCREEN").classList.add("ZEIGEN");
+			}
+		
+			function BlackScreenWeg(){
+				document.querySelector(".BLACKSCREEN").classList.remove("ZEIGEN");
+			}
+		
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
-				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-TITAN").classList.add("WEG");
+				document.querySelector(".TITAN-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD2").classList.add("ZEIGEN");
@@ -180,17 +197,6 @@
 			}
 		
 		
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseover",ScarletUnsichtbar);
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseout",ScarletSichtbar);
-		
-		function ScarletUnsichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.add("WEG");
-		}
-		
-		function ScarletSichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("WEG");
-		}
-				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
 				document.querySelector('#DROPEUROPA').addEventListener('mouseout',EuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
@@ -415,23 +421,15 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".TITAN-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-TITAN").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
 		
-		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
-
-			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
-			}
-			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
-			}
+		
 		
 	</script>
 	
