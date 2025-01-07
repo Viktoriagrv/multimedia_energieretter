@@ -205,8 +205,8 @@
 		}
 		
 		.PUNKT:hover{
-			cursor: url('../../images/InfoI.gif'),auto;
-			background-color: brown;
+			cursor: url('../images/InfoI.gif'),auto;
+			background-color: #45a049;
 		}
 
 

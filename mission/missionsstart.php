@@ -30,12 +30,12 @@
 		.BLASE-STARTSEITE{
 			position: absolute;
 			padding: 25px;
-			top:21%;
+			top:23%;
 			left:22%;
 			height:auto;
 			width: 13%;
 			font-family: "open sans";
-			font-size: 1.7rem;
+			font-size: 1.5rem;
 			color: #285238;
 			text-align: left;
 			border-radius: 20px 20px 20px 0px;
