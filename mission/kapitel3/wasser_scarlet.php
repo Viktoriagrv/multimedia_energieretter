@@ -43,13 +43,13 @@
 			</p>
 		
 			<div class="ANTWORTEN-WASSER">
-					<input  class="CHECKBOX" type="checkbox" id="FLUSS"> Flüsse	
+					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten mit Gezeiten	
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüste	
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten mit Gezeiten
+					<input class="CHECKBOX" type="checkbox" id="FLUSS"> Flüsse
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe
 						<br>

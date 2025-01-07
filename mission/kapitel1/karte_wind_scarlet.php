@@ -157,21 +157,21 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", ScarletDa);
+		document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover", ScarletWeg);
+			document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout", ScarletDa);
 
 			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
 			}
 			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("WEG");
 			}
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
 				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");

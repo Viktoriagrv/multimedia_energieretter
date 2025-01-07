@@ -214,15 +214,19 @@
 		}
 		
 		
-		.ZEIGEN{
+		.ZEIGEN-TEXT{
 			transition-property: all;
 			transition-delay: 1.5s;
 			visibility: visible;
 			opacity: 1;
 		}
 		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
 		.BLASEZEIGEN{
-			transition-property: all;
+			transition-property: visibility;
 			transition-delay: 7s;
 			visibility: visible;
 		}
@@ -284,20 +288,20 @@
 		
 
 			var timer1;
-			let textEnde = false; 															// prüft, ob der Text zu Ende ist
-
-		// Funktion zum Starten des Textes
-		function TextStarten(){
-			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
-			document.querySelector(".SCROLL").classList.add("ZEIGEN");
-			document.querySelector(".LANGSAMER").classList.add("ZEIGEN");
-			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
-			document.querySelector("#scrolltext").scrollTop -=-1;
-
-			// Startet den Timer, der den Text scrollen lässt
-			timer1 = setInterval(scrollText, 50); 												// Text scrollt alle 60ms
-			}
-
+																		
+		
+		// Funktion, die nach dem Ende des Textes ausgeführt wird
+		function AbschlussStarten(){
+			document.querySelector(".STARTBUTTON").classList.add("WEG");
+			document.querySelector(".SCROLL").classList.remove("ZEIGEN-TEXT");
+			document.querySelector(".LANGSAMER").classList.remove("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
+			document.querySelector(".WELT").classList.add("GROSS");
+			document.querySelector(".HERO").classList.add("HEROGROSS");
+			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
+			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
+		}
+		
 		// Funktion, die den Text kontinuierlich scrollt
 		function scrollText() {
 			var scrollTextElement = document.querySelector("#scrolltext");
@@ -305,16 +309,28 @@
 			// Wenn das Ende des Textes erreicht ist, stoppt der Timer und ruft AbschlussStarten auf
 			if (scrollTextElement.scrollTop + scrollTextElement.clientHeight >= scrollTextElement.scrollHeight) {
 				clearInterval(timer1);
-				if (!textEnde) {
-					textEnde = true;
-					AbschlussStarten();
-					}
-			} 
+				AbschlussStarten();
+			}
+			
 
 			else {
 				scrollTextElement.scrollTop += +1; 											// Scrollt den Text um 1 Pixel
 			}
 		}
+		
+
+		// Funktion zum Starten des Textes
+		function TextStarten(){
+			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
+			document.querySelector(".SCROLL").classList.add("ZEIGEN-TEXT");
+			document.querySelector(".LANGSAMER").classList.add("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
+			document.querySelector("#scrolltext").scrollTop -=-1;
+
+			// Startet den Timer, der den Text scrollen lässt
+			timer1 = setInterval(scrollText, 50); 												// Text scrollt alle 50ms
+			}
+
 		
 		//Funktion zur Erhöhung der Laufgeschwindigkeit des Textes
 		function TextSchneller(){
@@ -330,18 +346,6 @@
 			timer1 = setInterval(scrollText, 80); 															
 		}
 		
-		
-		// Funktion, die nach dem Ende des Textes ausgeführt wird
-		function AbschlussStarten(){
-			document.querySelector(".STARTBUTTON").classList.add("WEG");
-			document.querySelector(".SCROLL").classList.remove("ZEIGEN");
-			document.querySelector(".LANGSAMER").classList.remove("ZEIGEN");
-			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
-			document.querySelector(".WELT").classList.add("GROSS");
-			document.querySelector(".HERO").classList.add("HEROGROSS");
-			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
-			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
-		}
 		
 		 // Funktion, um Icons schweben zu lassen
 		function floatIcons() {

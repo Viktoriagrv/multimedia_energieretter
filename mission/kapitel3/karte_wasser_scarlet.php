@@ -19,7 +19,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlett Shade">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
 				Auf der Karte müssen nun an den richtigen Stellen die Wasserkraftwerke platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du wieder die kurze Erklärung über den Standort, die dir hilft, die geeigneten Standorte zu finden. Viel Erfolg!
@@ -157,21 +157,21 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX").addEventListener("mouseout", ScarletDa);
+		document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover", ScarletWeg);
+			document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout", ScarletDa);
 
 			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
 			}
 			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX").classList.remove("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("WEG");
 			}
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
 				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WASSERKRAFT1").classList.add("ZEIGEN");
