@@ -22,7 +22,7 @@
 			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			<div class="TEXT-START">
 				Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Solarpanels platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du wieder die kurze Erklärung über den Standort, die dir hilft, die geeigneten Standorte zu finden. Viel Erfolg!
+				Hier auf dieser Karte müssen wieder die richtigen Stellen gefunden werden, um die Solarpanels zu platzieren. Wenn du über die gelben Punkte gehst, kannst du die kleinen Info-Boxen wieder sehen, die dir helfen, die geeigneten Standorte zu finden. Viel Erfolg!
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Solarpanels platzieren</button>
@@ -142,10 +142,10 @@
 			
 			<div class="TEXT-ENDE">
 				<div>
-					Fantastische Arbeit! Das hast du toll gemacht!<br>
-					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
+					Großartig! Du bist wirklich eine tolle Hilfe!<br>
+					Als Belohnung bekommst du von mir wieder einen geheimen Code.<br><br>
 					<div class="CODE">iqn-432</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					Schreibe ihn zu deinem ersten Code! Wenn du später beim nächsten Kapitel weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben.
 				</div>
 			</div>
 								

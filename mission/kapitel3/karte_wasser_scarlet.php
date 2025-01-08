@@ -8,7 +8,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
+<style>
+	.INFOBOX-ABSCHLUSS {
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 13%;
+			left: 22%;
+			height:70%;
+			width: 60%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility:hidden;
+			z-index:5;
+			}
 
+		.BILDINFOBOX-ABSCHLUSS{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: hidden;
+			}
+		
+		.TEXT-ABSCHLUSS{
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			height: auto;
+			width: 48%;
+			font-family: "open sans";
+			color: #285238;
+			font-size: 1.6rem;
+			text-align: left;
+		}
+
+		
+		.BTNABSCHLUSS{
+			position: absolute;
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 15%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			}
+		
+		.BTNABSCHLUSS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+	
+	.ZEIGEN{
+		visibility: visible;
+	}
+	
+	</style>
 </head>
 
 <body>
@@ -21,8 +84,8 @@
 			
 			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlett Shade">
 			<div class="TEXT-START">
-				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Wasserkraftwerke platziert werden, um die Mission fortzuführen. Wenn Du über die gelben Punkte gehst, bekommst Du wieder die kurze Erklärung über den Standort, die dir hilft, die geeigneten Standorte zu finden. Viel Erfolg!
+				Klasse gemacht! Du hast den letzten Test mit Bravour bestanden.<br><br>
+				Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
 			</div>
 								
 			<button class="KARTE-ANSEHEN">Wasserkraftwerke platzieren</button>
@@ -59,7 +122,7 @@
 		
 			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlett Shade">
 			<div class="SPRECHBLASE1">
-				Ziehe die Wasserkraftwerke unten auf die richtigen Stellen auf der Weltkarte.
+				Ziehe die Wasserkraftwerke unten auf die richtigen Punkte auf der Weltkarte.
 			</div>
 		
 			<div class="SPRECHBLASE2">
@@ -136,20 +199,19 @@
 			</div>
 		
 		
-		<div class="INFOBOX-WEITER">
+		<div class="INFOBOX-ABSCHLUSS">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/BadGirl.png" alt="Scarlet Shade">
 			
-			<div class="TEXT-ENDE">
+			<div class="TEXT-ABSCHLUSS">
 				<div>
-					Du bist ein wahrer Energieretter!<br>
-					Du es es geschafft und die Welt von morgen vor dem Untergang bewahrt.<br><br>
-					
-					
+					Herzlichen Glückwunsch, du mutiger Energieretter!<br>
+					Du hast alle drei Spielrunden erfolgreich gemeistert und gezeigt, dass du die Kraft der erneuerbaren Energien verstehst und nutzt, um unsere Erde zu schützen. Dein Einsatz für die Zukunft war beeindruckend, und dafür hast du dir etwas ganz Besonderes verdient: du bist jetzt Mitglied der Energieretter-Liga!<br>
+					Deine Urkunde zeigt, dass du ein wahrer Held für unseren Planeten bist. Halte sie stolz in den Händen und erinnere dich daran, wie wichtig es ist, die Umwelt zu schützen. Weiter so – die Welt braucht Energieretter wie dich!
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../zertifikate/zertifikat_scarlet.php'">Zu Deinem Zertifikat</button>
+			<button class="BTNABSCHLUSS" onclick="window.location.href='../zertifikate/zertifikat_scarlet.php'">Zu Deiner Urkunde</button>
 		</div>
 		
     </main>
@@ -419,20 +481,20 @@
 		function AlleAbgelegt(){
 			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
-			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".INFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
 		
-		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
+		document.querySelector(".BILDINFOBOX-ABSCHLUSS").addEventListener("mouseover", HeroWegEnde);
+			document.querySelector(".BILDINFOBOX-ABSCHLUSS").addEventListener("mouseout", HeroDaEnde);
 
 			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.remove("ZEIGEN");
 			}
 			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
 			}
 		
 	</script>

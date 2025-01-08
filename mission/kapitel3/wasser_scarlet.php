@@ -59,10 +59,12 @@
 			</div>
 		</div>
 		
-		<div class="ABSCHLUSSTEXT-WASSER">
-			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS-WASSER" onclick="window.location.href='karte_wasser_scarlet.php'">Zur Weltkarte</button>
+		<div class="GRATULATION">
+			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Wasserkraftwerke.</p>
+		</div>
 		
+		<div class="ABSCHLUSSTEXT-KAPITELSTART">
+			<button  class="BTNLINKS-WASSER" onclick="window.location.href='karte_wasser_scarlet.php'">Zur Weltkarte</button>
 		</div>
 		
 		<div class="FEHLERMELDUNG">
@@ -108,7 +110,8 @@
 		
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK-WASSER").classList.add("WEG");
-			document.querySelector(".ABSCHLUSSTEXT-WASSER").classList.add("ZEIGEN");
+			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
+			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
 			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
