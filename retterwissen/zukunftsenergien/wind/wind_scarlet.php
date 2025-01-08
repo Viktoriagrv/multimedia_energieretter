@@ -34,7 +34,6 @@
 
     <img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
 
-
     <div class="SPRECHBLASE">
 
         <p>Hallo! <br> <br>
@@ -153,10 +152,6 @@
 
     </div>
 
-	<div> 
-	
-	
-	</div>
 </main>
 
 

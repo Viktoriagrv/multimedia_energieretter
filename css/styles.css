@@ -3452,4 +3452,32 @@
 		top: calc(100% + 10px);
 	}
 
+/* Buttons für Retterwssen - Zurück zur Mission */
+
+		.ZURUECK-WIND{
+			position: absolute;
+			bottom: 8%;
+			left: 18%;
+			display: inline-block;
+            padding: 15px 20px;
+            font-family: 'Bangers';
+            font-size: 2rem;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+            color: #e8a723;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+			visibility: hidden;
+			z-index:3;
+		}
+		
+		.ZURUECK-WIND:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+
 		

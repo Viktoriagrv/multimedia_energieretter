@@ -7,7 +7,7 @@
   <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	 <link rel="stylesheet" href="../../../css/styles.css">
 
 	<style>
 		
@@ -20,7 +20,7 @@
 
 <body>
 
-<?php include '../../include/nav.php'; ?>
+<?php include '../../../include/nav.php'; ?>
 
 <main>
 
@@ -28,10 +28,10 @@
                          Wasserkraft
 	</div>
 	
-    <img class="WASSERKRAFTBILD" src="../../images/wasserkraftwerk.png" alt="Wasserkraftwerk">
+    <img class="WASSERKRAFTBILD" src="../../../images/wasserkraftwerk.png" alt="Wasserkraftwerk">
 
 
-    <img class="HERO" src="../../images/AquaBoy.png" alt="Aqua Boy">
+    <img class="HERO" src="../../../images/BadBoy.png" alt="Bad Boy">
 
     <div class="SPRECHBLASE">
 
@@ -39,7 +39,7 @@
             Es freut mich, dass du mehr über Wasserkraft lernen willst.<br> <br>
             Wasserkraft nutzt die Kraft von fließendem Wasser, um Strom zu machen, und ist super wichtig für unsere Zukunft!</p>
 
-        <img class="PFEIL-RE" src="../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
+        <img class="PFEIL-RE" src="../../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
     </div>
 
     <div class="SPRECHBLASEWEITER">
@@ -47,7 +47,7 @@
         <p>Hier sind einige Informationen zu Wasserkraft! <br> <br>
 			Viel Spaß beim Rumstöbern.</p>
 
-        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
+        <img class="PFEIL-LI" src="../../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
     </div>
 	
@@ -141,6 +141,7 @@
                 <span class="HERVORHEBEN" data-infokasten="Elektrische Energie, die durch Wasserkraft erzeugt wird.">Strom</span> 
                 produzieren könnten. <br><br> Die Energiewende setzt auf erneuerbare Energiequellen wie Wasser, um die Umwelt zu schützen und eine nachhaltige Energieversorgung sicherzustellen.</p>
         </div>
+
     </details>
 </div>
 
