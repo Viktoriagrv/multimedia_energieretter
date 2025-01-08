@@ -153,7 +153,7 @@
     </div>
 
 	<!-- Zurück-Button -->
-<a class="ZURUECK-WIND" href="index.html">Zurück zur Mission!</a>
+<a class="ZURUECK-WIND" href="../../../mission/kapitel1/wind_titan.php">Zurück zur Mission!</a>
 	
 </main>
 
@@ -178,6 +178,9 @@
 
 			// AKKORDEONS SICHTBAR MACHEN
 			document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
+			
+			// ZURUECK-BUTTON SICHTBAR
+			document.querySelector(".ZURUECK-WIND").style.visibility = "visible";
 		}
 
 		// Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)

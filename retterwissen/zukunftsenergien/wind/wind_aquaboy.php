@@ -153,8 +153,8 @@
     </div>
 
 	<!-- Zurück-Button -->
-<a class="ZURUECK-WIND" href="index.html">Zurück zur Mission!</a>
-	
+<a class="ZURUECK-WIND" href="">Zurück zur Mission!</a>
+
 </main>
 
 
