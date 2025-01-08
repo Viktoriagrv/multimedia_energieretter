@@ -3236,200 +3236,220 @@
             width: auto;
         }
 
-/*SEITE RETTERWISSEN ZUKUNFTSENERGIEN-EINZELN*/	
-/* Allgemeine Styles für das Akkordeon */
-details {
-    background: #eee;
-    border: 1px solid #e8a723;
-    border-radius: 3px;
-    margin-bottom: 1.5rem;
-}
+	/*SEITE SOLAR RETTERWISSEN */	
+	/* Allgemeine Styles für das Akkordeon */
+	details {
+		background: #eee;
+		border: 1px solid #e8a723;
+		border-radius: 3px;
+		margin-bottom: 1.5rem;
+	}
 
-summary {
-    background: #e8a723;
-    color: #fff;
-    cursor: pointer;
-    padding: 1rem;
-    text-align: left;
-    font-weight: bold;
-}
+	summary {
+		background: #e8a723;
+		color: #fff;
+		cursor: pointer;
+		padding: 1rem;
+		text-align: left;
+		font-weight: bold;
+	}
 
-/* Verzögerungseffekt */
-details[open] summary ~ * {
-    animation: sweep .7s ease-in-out;
-}
+	/* Verzögerungseffekt */
+	details[open] summary ~ * {
+		animation: sweep .7s ease-in-out;
+	}
 
-@keyframes sweep {
-    0% {opacity: 0; margin-left: -20px}
-    100% {opacity: 1; margin-left: 0px}
-}
+	@keyframes sweep {
+		0% {opacity: 0; margin-left: -20px}
+		100% {opacity: 1; margin-left: 0px}
+	}
 
-.HERO {
-    position: absolute;
-    bottom: 4%;
-    left: 10%;
-    height: 30%;
-}
+	.HERO {
+		position: absolute;
+		bottom: 4%;
+		left: 10%;
+		height: 30%;
+	}
 
-.SPRECHBLASE {
-    position: absolute;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    bottom: 25%;
-    left: 22%;
-    height: 27%;
-    width: 12%;
-    border-radius: 20px 20px 20px 0px;
-    background-color: white;
-    box-shadow: 5px 5px 10px 0px gray;
-    font-family: "open sans";
-    font-size: 1rem;
-    color: #285238;
-    text-align: left;
-    display: block; /* Standardmäßig sichtbar */
-    cursor: default;
-}
+	.SPRECHBLASE {
+		position: absolute;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		bottom: 25%;
+		left: 22%;
+		height: 27%;
+		width: 12%;
+		border-radius: 20px 20px 20px 0px;
+		background-color: white;
+		box-shadow: 5px 5px 10px 0px gray;
+		font-family: "open sans";
+		font-size: 1rem;
+		color: #285238;
+		text-align: left;
+		display: block; /* Standardmäßig sichtbar */
+		cursor: default;
+	}
 
-.SPRECHBLASEWEITER {
-    position: absolute;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    bottom: 25%;
-    left: 22%;
-    height: 18%;
-    width: 12%;
-    border-radius: 20px 20px 20px 0px;
-    background-color: white;
-    box-shadow: 5px 5px 10px 0px gray;
-    font-family: "open sans";
-    font-size: 1rem;
-    color: #285238;
-    text-align: left;
-    display: none; /* Anfangs versteckt */
-    cursor: default;
-}
+	.SPRECHBLASEWEITER {
+		position: absolute;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		bottom: 25%;
+		left: 22%;
+		height: 18%;
+		width: 12%;
+		border-radius: 20px 20px 20px 0px;
+		background-color: white;
+		box-shadow: 5px 5px 10px 0px gray;
+		font-family: "open sans";
+		font-size: 1rem;
+		color: #285238;
+		text-align: left;
+		display: none; /* Anfangs versteckt */
+		cursor: default;
+	}
 
 
-.LOS {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    display: inline-block;
-    padding: 10px 15px;
-    font-family: 'Bangers';
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
-    background-color: #285238;
-    border: 2px;
-    border-color: white;
-    border-radius: 8px;
-    cursor: pointer;
-}
+	.LOS {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		display: inline-block;
+		padding: 10px 15px;
+		font-family: 'Bangers';
+		font-size: 1.5rem;
+		text-decoration: none;
+		color: white;
+		background-color: #285238;
+		border: 2px;
+		border-color: white;
+		border-radius: 8px;
+		cursor: pointer;
+	}
 
-.PFEIL-LI {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    height: 15%;
-    width: auto;
-}
+	.PFEIL-LI {
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
+		height: 15%;
+		width: auto;
+	}
 
-.PFEIL-RE {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    height: 10%;
-    width: auto;
-}
+	.PFEIL-RE {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		height: 10%;
+		width: auto;
+	}
 
-.HEADER {
-    position: absolute;
-    top: 16%;
-    left: 8%;
-    font-family: "bangers";
-    color: #285238;
-    font-size: 5rem;
-    cursor: default;
-}
+	.HEADER {
+		position: absolute;
+		top: 16%;
+		left: 8%;
+		font-family: "bangers";
+		color: #285238;
+		font-size: 5rem;
+		cursor: default;
+	}
 
-.SOLAR {
-    position: absolute;
-    bottom: -4%;
-    left: -10%;
-    height: 50%;
-    width: auto;
-}
+	/* BILD VON SOLARPANEL */
+	.SOLAR {
+		position: absolute;
+		bottom: -4%;
+		left: -10%;
+		height: 50%;
+		width: auto;
+	}
 
-.BUTTONBILDER {
-    position: absolute;
-    top: 20%;
-    right: 15%;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
+	 /* BILD VOM WINDRAD */
+     .WASSERKRAFTBILD {
+            position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+        }
+	
 
-.BUTTON {
-    height: 100px;
-    width: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
+	 /* BILD VOM WINDRAD */
+      .WINDRAD {
+            position: absolute;
+            bottom: -4%;
+            left: -10%;
+            height: 40%;
+            width: auto;
+        }
+		
+	.BUTTONBILDER {
+		position: absolute;
+		top: 20%;
+		right: 15%;
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+	}
 
-.BUTTON:hover {
-    transform: scale(1.1);
-}
+	.BUTTON {
+		height: 100px;
+		width: auto;
+		cursor: pointer;
+		transition: transform 0.2s ease;
+	}
 
-.AKKORDEON {
-    position: absolute;
-    top: 26%;
-    right: 15%;
-    width: 25%;
-    visibility: hidden;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
+	.BUTTON:hover {
+		transform: scale(1.1);
+	}
 
-.AKKORDEON-INHALT {
-    padding: 0.5rem 1rem 1px 1rem;
-    color: black;
-    cursor: default;
-}
+	.AKKORDEON {
+		position: absolute;
+		top: 26%;
+		right: 15%;
+		width: 25%;
+		visibility: hidden;
+		transform: translateY(-20px);
+		transition: opacity 0.5s ease, transform 0.5s ease;
+	}
 
-.AKKORDEON-SICHTBAR {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
+	.AKKORDEON-INHALT {
+		padding: 0.5rem 1rem 1px 1rem;
+		color: black;
+		cursor: default;
+	}
 
-.HERVORHEBEN {
-    color: #e8a723;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-}
+	.AKKORDEON-SICHTBAR {
+		visibility: visible;
+		opacity: 1;
+		transform: translateY(0);
+	}
 
-.HERVORHEBEN:hover::after {
-    content: attr(data-infokasten);
-    background-color: #285238;
-    color: #FFFFFF;
-    position: absolute;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: 0.9rem;
-    font-family: 'Open Sans', sans-serif;
-    z-index: 1000;
-    white-space: normal;
-    width: 250px;
-    pointer-events: none;
-    left: calc(100% + 10px);
-    top: calc(100% + 10px);
-}
+	.HERVORHEBEN {
+		color: #e8a723;
+		font-weight: bold;
+		cursor: pointer;
+		position: relative;
+	}
+
+	.HERVORHEBEN:hover::after {
+		content: attr(data-infokasten);
+		background-color: #285238;
+		color: #FFFFFF;
+		position: absolute;
+		padding: 10px;
+		border-radius: 10px;
+		font-size: 0.9rem;
+		font-family: 'Open Sans', sans-serif;
+		z-index: 1000;
+		white-space: normal;
+		width: 250px;
+		pointer-events: none;
+		left: calc(100% + 10px);
+		top: calc(100% + 10px);
+	}
 
 		
