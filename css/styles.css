@@ -3189,35 +3189,31 @@
         /* ICONS */
         .ZUKUNFTSENERGIE-icons-container {
             display: flex;
-            justify-content: center; 
-            align-items: center; 
-            gap: 100px; 
-            position: absolute;
-            top: 40%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
+            justify-content: center; /* Zentrieren der Icons */
+            align-items: center; /* Vertikales Zentrieren */
+            gap: 115px; /* Regelmäßiger Abstand zwischen den Icons */
+            position: relative;
+            margin-top: 15%; /* Abstand vom oberen Rand */
         }
 
         .ZUKUNFTSENERGIE-icons-container img {
-            width: 160px; 
-            height: 160px; 
+            width: 160px; /* Größere Breite */
+            height: 160px; /* Größere Höhe */
         }
 
         /* BUTTONS */
         .ZUKUNFTSENERGIE-button-container {
             display: flex;
-            justify-content: center; /* BUTTONS ZENTRIEREN */
+            justify-content: center; /* Zentrieren der Buttons */
             align-items: center;
-            gap: 100px; /* ABSTAND BUTTONS */
-            position: absolute;
-            top: 55%; /* ABSTAND BUTTONS UND ICONS */
-            left: 50%; /* HORIZONTALE ZENTRIERUNG */
-            transform: translate(-50%, -50%); /* ZENTRIERUNG */
+            gap: 130px; /* Regelmäßiger Abstand zwischen den Buttons */
+            position: relative;
+            margin-top: 1%; /* Abstand zu den Icons */
         }
 
         .ZUKUNFTSENERGIE-button-container a {
             display: inline-block;
-            padding: 15px 30px; /* PADDING  */
+            padding: 15px 30px; /* Größere Padding */
             font-size: 18px;
             text-decoration: none;
             color: white;
@@ -3225,11 +3221,11 @@
             border-radius: 10px;
             transition: background-color 0.3s ease;
             font-family: 'Bangers', cursive;
-            text-align: center; /* TEXT ZENTRIERUNG */
+            text-align: center; /* Text zentrieren */
         }
 
         .ZUKUNFTSENERGIE-button-container a.hovered {
-            background-color: #FFD700; /* HOVER EFFEKT */
+            background-color: #FFD700; /* Leicht heller beim Hover */
         }
 
         .ZUKUNFTSENERGIE-hintergrundbild {
@@ -3239,4 +3235,201 @@
             height: 40%;
             width: auto;
         }
+
+/*SEITE RETTERWISSEN ZUKUNFTSENERGIEN-EINZELN*/	
+/* Allgemeine Styles für das Akkordeon */
+details {
+    background: #eee;
+    border: 1px solid #e8a723;
+    border-radius: 3px;
+    margin-bottom: 1.5rem;
+}
+
+summary {
+    background: #e8a723;
+    color: #fff;
+    cursor: pointer;
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Verzögerungseffekt */
+details[open] summary ~ * {
+    animation: sweep .7s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {opacity: 0; margin-left: -20px}
+    100% {opacity: 1; margin-left: 0px}
+}
+
+.HERO {
+    position: absolute;
+    bottom: 4%;
+    left: 10%;
+    height: 30%;
+}
+
+.SPRECHBLASE {
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    bottom: 25%;
+    left: 22%;
+    height: 27%;
+    width: 12%;
+    border-radius: 20px 20px 20px 0px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px gray;
+    font-family: "open sans";
+    font-size: 1rem;
+    color: #285238;
+    text-align: left;
+    display: block; /* Standardmäßig sichtbar */
+    cursor: default;
+}
+
+.SPRECHBLASEWEITER {
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    bottom: 25%;
+    left: 22%;
+    height: 18%;
+    width: 12%;
+    border-radius: 20px 20px 20px 0px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px gray;
+    font-family: "open sans";
+    font-size: 1rem;
+    color: #285238;
+    text-align: left;
+    display: none; /* Anfangs versteckt */
+    cursor: default;
+}
+
+
+.LOS {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    display: inline-block;
+    padding: 10px 15px;
+    font-family: 'Bangers';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: #285238;
+    border: 2px;
+    border-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.PFEIL-LI {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    height: 15%;
+    width: auto;
+}
+
+.PFEIL-RE {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 10%;
+    width: auto;
+}
+
+.HEADER {
+    position: absolute;
+    top: 16%;
+    left: 8%;
+    font-family: "bangers";
+    color: #285238;
+    font-size: 5rem;
+    cursor: default;
+}
+
+.SOLAR {
+    position: absolute;
+    bottom: -4%;
+    left: -10%;
+    height: 50%;
+    width: auto;
+}
+
+.BUTTONBILDER {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.BUTTON {
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.BUTTON:hover {
+    transform: scale(1.1);
+}
+
+.AKKORDEON {
+    position: absolute;
+    top: 26%;
+    right: 15%;
+    width: 25%;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.AKKORDEON-INHALT {
+    padding: 0.5rem 1rem 1px 1rem;
+    color: black;
+    cursor: default;
+}
+
+.AKKORDEON-SICHTBAR {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.HERVORHEBEN {
+    color: #e8a723;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+
+.HERVORHEBEN:hover::after {
+    content: attr(data-infokasten);
+    background-color: #285238;
+    color: #FFFFFF;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1000;
+    white-space: normal;
+    width: 250px;
+    pointer-events: none;
+    left: calc(100% + 10px);
+    top: calc(100% + 10px);
+}
+
 		

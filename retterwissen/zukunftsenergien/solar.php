@@ -8,224 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	 <link rel="stylesheet" href="../../css/styles.css">
-
-    <style>
-       
-		
-        details {
-            background: #eee;
-            border: 1px solid #e8a723;
-            border-radius: 3px;
-            margin-bottom: 1.5rem;
-        }
-
-        summary {
-            background: #e8a723;
-            color: #fff;
-            cursor: pointer;
-            padding: 1rem;
-			text-align: left;
-			font-weight: bold;
-        }
-
-        /* Verzögerungseffekt */
-        details[open] summary ~ * {
-            animation: sweep .7s ease-in-out;
-        }
-
-        @keyframes sweep {
-            0% {opacity: 0; margin-left: -20px}
-            100% {opacity: 1; margin-left: 0px}
-        }
-
-		
-        .HERO {
-            position: absolute;
-            bottom: 4%;
-            left: 10%;
-            height: 30%;
-        }
-
-		/* SPRECHBLASE SUPERHELD */
-        .SPRECHBLASE {
-            position: absolute;
-			padding-top: 5px;
-			padding-bottom: 15px;
-			padding-left: 15px;
-			padding-right: 15px;
-			bottom:25%;
-			left:22%;
-			height:27%;
-			width: 12%;
-			border-radius: 20px 20px 20px 0px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			font-family: "open sans";
-			font-size: 1rem;
-			color:#285238;
-			text-align: left;
-			visibility: visible;
-			cursor: default;
-			}
-		
-		/* SPRECHBLASE SUPERHELD NUMMER ZWEI */
-        .SPRECHBLASEWEITER {
-            position: absolute;
-            padding-top: 5px;
-            padding-bottom: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            bottom: 25%;
-            left: 22%;
-            height: 18%;
-            width: 12%;
-            border-radius: 20px 20px 20px 0px;
-            background-color: white;
-            box-shadow: 5px 5px 10px 0px gray;
-            font-family: "open sans";
-            font-size: 1rem;
-            color: #285238;
-            text-align: left;
-            visibility: hidden;
-			cursor: default;
-        }
-
-        .LOS {
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            display: inline-block;
-            padding: 10px 15px;
-            font-family: 'Bangers';
-            font-size: 1.5rem;
-            text-decoration: none;
-            color: white;
-            background-color: #285238;
-            border: 2px;
-            border-color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-		
-		/* PFEIL LINKS */
-
-        .PFEIL-LI {
-            position: absolute;
-            bottom: 5%;
-            left: 5%;
-            height: 15%;
-            width: auto;
-        }
- 		/* PFEIL RECHTS */
-        .PFEIL-RE {
-            position: absolute;
-            bottom: 5%;
-            right: 5%;
-            height: 10%;
-            width: auto;
-        }
-
-        .HEADER {
-            position: absolute;
-            top: 16%;
-            left: 8%;
-            font-family: "bangers";
-            color: #285238;
-            font-size: 5rem;
-			cursor: default;
-        }
-
-		 /* BILD VOM SOLARPANEL */
-        .SOLAR {
-            position: absolute;
-            bottom: -4%;
-            left: -10%;
-            height: 40%;
-            width: auto;
-        }
-		
-			.BUTTONBILDER {
-			position: absolute;
-			top: 20%;
-			right: 15%;
-			display: flex;
-			gap: 1rem;
-			justify-content: center;
-			align-items: center;
-		}
-
-		.BUTTON {
-			height: 100px; /* Passe die Größe nach Bedarf an */
-			width: auto;
-			cursor: pointer;
-			transition: transform 0.2s ease;
-		}
-
-		.BUTTON:hover {
-			transform: scale(1.1); /* Leichter Vergrößerungseffekt beim Hover */
-		}
-		
-		/* ÜBERGEORDNETES AKKORDEON */
-        .AKKORDEON {
-            position: absolute;
-            top: 26%;
-            right: 15%;
-            width: 25%;
-            visibility: hidden;
-            transform: translateY(-20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-		
-		/* AKKORDEON INHALT */
-        .AKKORDEON-INHALT {
-            padding: 0.5rem 1rem 1px 1rem;
-            color: black;
-			cursor: default;
-        }
-
-		  .AKKORDEON-SICHTBAR {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-		
-  		 .HERVORHEBEN {
-			color: #e8a723;
-			font-weight: bold;
-			cursor: pointer;
-			position: relative;
-		}
-		
-		/* INFOBOX BEIM HOVERN */
-		.HERVORHEBEN:hover::after {
-			content: attr(data-infokasten);
-			background-color: #285238;
-			color: #FFFFFF;
-			position: absolute;
-			padding: 10px; /* Etwas mehr Padding für mehr Abstand */
-			border-radius: 10px; 
-			font-size: 0.9rem;
-			font-family: 'Open Sans', sans-serif; /* Schriftart Open Sans */
-			z-index: 1000;
-			white-space: normal; /* Textumbrüche erlauben */
-			width: 250px; /* Feste Breite */
-			pointer-events: none; /* Verhindert, dass der Infokasten das Hover-Verhalten blockiert */
-			left: calc(100% + 10px); /* Abstand zum Cursor auf der X-Achse */
-			top: calc(100% + 10px); /* Abstand zum Cursor auf der Y-Achse */
-		}
-
-
-  
-        .ZEIGEN {
-            visibility: visible;
-        }
-
-        .WEG {
-            visibility: hidden;
-        }
-		
-    </style>
 	
 </head>
 
@@ -350,40 +132,40 @@
 
 
 <script>
-
 	
-	
-    // ALLE OFFENEN AKKORDEONS SCHLIEßEN SOBALD EINS GEÖFFNET
-    function closeAllAccordions() {
-        document.querySelectorAll('.AKKORDEON details[open]').forEach(detail => {
-            detail.removeAttribute('open');
-        });
-    }
-
-    document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
-
-    function ZeigeSprechblaseWeiter() {
-        document.querySelector(".SPRECHBLASE").classList.add("WEG");
-        document.querySelector(".SPRECHBLASEWEITER").classList.add("ZEIGEN");
-
-        // AKKORDEONS SICHTBAR MACHEN
-        document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
-    }
-
-	   //SPRECHBLASE
-    document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
-
-    function ZeigeSprechblase() {
-        document.querySelector(".SPRECHBLASE").classList.remove("WEG");
-        document.querySelector(".SPRECHBLASEWEITER").classList.remove("ZEIGEN");
-
-        // AKKORDEON SCHLIEßen WENN ANDERES AUF CLICK GEÖFFNET WIRD
-        closeAllAccordions();
-    }
-
-    document.querySelectorAll('.AKKORDEON details summary').forEach(summary => {
-        summary.addEventListener('click', closeAllAccordions);
+// ALLE OFFENEN AKKORDEONS SCHLIEßEN
+function closeAllAccordions() {
+    document.querySelectorAll('.AKKORDEON details[open]').forEach(detail => {
+        detail.removeAttribute('open');
     });
+}
+
+// Wenn der rechte Pfeil geklickt wird (Zeigt "Weiter" Sprechblase)
+document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
+
+function ZeigeSprechblaseWeiter() {
+    document.querySelector(".SPRECHBLASE").style.display = "none"; // Verstecke die erste Sprechblase
+    document.querySelector(".SPRECHBLASEWEITER").style.display = "block"; // Zeige die zweite Sprechblase
+
+    // AKKORDEONS SICHTBAR MACHEN
+    document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
+}
+
+// Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)
+document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
+
+function ZeigeSprechblase() {
+    document.querySelector(".SPRECHBLASE").style.display = "block"; // Zeige die erste Sprechblase
+    document.querySelector(".SPRECHBLASEWEITER").style.display = "none"; // Verstecke die zweite Sprechblase
+
+    // AKKORDEON SCHLIEßEN WENN ANDERES GEÖFFNET WIRD
+    closeAllAccordions();
+}
+
+// Stelle sicher, dass Akkordeons geschlossen werden, wenn auf einen anderen Bereich geklickt wird
+document.querySelectorAll('.AKKORDEON details summary').forEach(summary => {
+    summary.addEventListener('click', closeAllAccordions);
+});
 
   
 </script>

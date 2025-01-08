@@ -24,8 +24,8 @@
 			
 			<div class="TEXT-KLIMA">
 				Hallo! <br><br>
-Ich bin Green Blaze und es ist super, dass du mehr über die spannenden Innovationen erfahren möchtest, die unser Klima schützen! <br><br>
-Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, die Umwelt zu retten und den Klimawandel zu bekämpfen. <br><br>
+				Ich bin Green Blaze und es ist super, dass du mehr über die spannenden Innovationen erfahren möchtest, die unser Klima schützen! <br><br>
+				Auf dieser Karte kannst du entdecken, wie neue Technologien uns dabei helfen, die Umwelt zu retten und den Klimawandel zu bekämpfen. <br><br>
 
 
 			</div>

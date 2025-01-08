@@ -9,58 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-
-    <style>
-        /* ICONS */
-        .ZUKUNFTSENERGIE-icons-container {
-            display: flex;
-            justify-content: center; /* Zentrieren der Icons */
-            align-items: center; /* Vertikales Zentrieren */
-            gap: 115px; /* Regelmäßiger Abstand zwischen den Icons */
-            position: relative;
-            margin-top: 15%; /* Abstand vom oberen Rand */
-        }
-
-        .ZUKUNFTSENERGIE-icons-container img {
-            width: 160px; /* Größere Breite */
-            height: 160px; /* Größere Höhe */
-        }
-
-        /* BUTTONS */
-        .ZUKUNFTSENERGIE-button-container {
-            display: flex;
-            justify-content: center; /* Zentrieren der Buttons */
-            align-items: center;
-            gap: 130px; /* Regelmäßiger Abstand zwischen den Buttons */
-            position: relative;
-            margin-top: 3%; /* Abstand zu den Icons */
-        }
-
-        .ZUKUNFTSENERGIE-button-container a {
-            display: inline-block;
-            padding: 15px 30px; /* Größere Padding */
-            font-size: 18px;
-            text-decoration: none;
-            color: white;
-            background-color: #285238; 
-            border-radius: 10px;
-            transition: background-color 0.3s ease;
-            font-family: 'Bangers', cursive;
-            text-align: center; /* Text zentrieren */
-        }
-
-        .ZUKUNFTSENERGIE-button-container a.hovered {
-            background-color: #FFD700; /* Leicht heller beim Hover */
-        }
-
-        .ZUKUNFTSENERGIE-hintergrundbild {
-            position: absolute;
-            bottom: -4%;
-            left: -10%;
-            height: 40%;
-            width: auto;
-        }
-    </style>
+	
+	<style>
+		
+		body{
+			background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND */
+		}
+		
+	</style>
+	
 </head>
 
 <body>
