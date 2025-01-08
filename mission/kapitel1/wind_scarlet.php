@@ -30,7 +30,7 @@
 		
 		<div>
 			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'">
+			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind/wind_scarlet.php'">
 				Erfahre mehr <br>
 				über Windkraft!
 			</p>

@@ -7,7 +7,7 @@
   <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	 <link rel="stylesheet" href="../../../css/styles.css">
 	
 	<style>
 		
@@ -21,7 +21,7 @@
 
 <body>
 
-<?php include '../../include/nav.php'; ?>
+<?php include '../../../include/nav.php'; ?>
 
 <main>
 
@@ -29,11 +29,10 @@
                          Windkraft
 	</div>
 	
-    <img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+    <img class="WINDRAD" src="../../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 
 
-    <img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
-
+    <img class="HERO" src="../../../images/Prinz.png" alt="Prinz">
 
     <div class="SPRECHBLASE">
 
@@ -42,7 +41,7 @@
             Windenergie ist eine der wichtigsten Sachen in der Energie und versorgt uns durch
             Windstöße und Windkraftanlagen und ist daher für die Zukunft extrem wichtig.</p>
 
-        <img class="PFEIL-RE" src="../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
+        <img class="PFEIL-RE" src="../../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
     </div>
 
     <div class="SPRECHBLASEWEITER">
@@ -50,7 +49,7 @@
         <p>Ich habe dir hier einige interessante Themen reinfliegen lassen. Klick einfach drauf und stöber rum. <br> <br>
             Viel Spaß beim Lernen!</p>
 
-        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
+        <img class="PFEIL-LI" src="../../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
     </div>
 	
@@ -153,10 +152,10 @@
 
     </div>
 
-	<div> 
+	<!-- Zurück-Button -->
+<a class="ZURUECK-WIND" href="../../../mission/kapitel1/wind_knight.php">Zurück zur Mission!</a>
 	
 	
-	</div>
 </main>
 
 
@@ -174,11 +173,15 @@
 		document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
 
 		function ZeigeSprechblaseWeiter() {
+
 			document.querySelector(".SPRECHBLASE").style.display = "none"; // Verstecke die erste Sprechblase
 			document.querySelector(".SPRECHBLASEWEITER").style.display = "block"; // Zeige die zweite Sprechblase
 
 			// AKKORDEONS SICHTBAR MACHEN
 			document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
+			
+			// ZURUECK-BUTTON SICHTBAR
+			document.querySelector(".ZURUECK-WIND").style.visibility = "visible";
 		}
 
 		// Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)
@@ -198,9 +201,9 @@
 		});
 
 
+
   
 </script>
 
 </body>
 </html>
-
