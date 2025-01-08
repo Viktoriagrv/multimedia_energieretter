@@ -188,8 +188,8 @@
 		<img class="SOLARPANEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_thunder.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_thunder.php'">
 				Erfahre mehr <br>
 				über Solarenergie!
 			</p>
@@ -223,7 +223,7 @@
 		</div>
 		
 		<div class="ABSCHLUSSTEXT-KAPITELSTART">
-			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_scarlet.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_thunder.php'">Zur Weltkarte</button>
 		</div>
 		
 		<div class="FEHLERMELDUNG">
@@ -236,12 +236,12 @@
 					
 					Oder lese noch mehr über Solarenergie:
 					<br><br>
-					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">Zum Retterwissen Solarenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_thunder.php'">Zum Retterwissen Solarenergie</button>
 						
 				</div>						
 		</div>
 		
-		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlet Shade">
+		<img class="THUNDER-KAPITELSTART" src="../../images/AquaBoy.png" alt="Thunderbolt">
 		
 	</main>
 
@@ -271,7 +271,7 @@
 			document.querySelector(".TEXTBLOCK").classList.add("WEG");
 			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
 			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
-			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
+			document.querySelector(".THUNDER-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
 		
@@ -290,8 +290,6 @@
 		
 	</script>
 	
-    
-    
-    
+
 </body>
 </html>

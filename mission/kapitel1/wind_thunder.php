@@ -65,7 +65,7 @@
 		</div>
 		
 		<div class="ABSCHLUSSTEXT-KAPITELSTART">
-			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_scarlet.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_thunder.php'">Zur Weltkarte</button>
 		</div>	
 		
 		<div class="FEHLERMELDUNG">
@@ -78,12 +78,12 @@
 					
 					Oder lese noch mehr über Windkraft:
 					<br><br>
-					<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_thunder.php'">Zum Retterwissen Windenergie</button>
 						
 				</div>						
 		</div>
 		
-		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlet Shade">
+		<img class="THUNDER-KAPITELSTART" src="../../images/AquaBoy.png" alt="Thunderbolt">
 		
 	</main>
 
@@ -113,7 +113,7 @@
 			document.querySelector(".TEXTBLOCK-WIND").classList.add("WEG");
 			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
 			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
-			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
+			document.querySelector(".THUNDER-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
 		

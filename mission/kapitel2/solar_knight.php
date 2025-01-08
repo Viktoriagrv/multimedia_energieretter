@@ -40,36 +40,6 @@
 			
 		}
 		
-		.HERO{
-			position: absolute;
-			bottom: 10%;
-			right:5%;
-			height:35%;
-			width:auto;
-			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 2s;							/* Dauer (n) */
-			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
-			animation-delay: 0s;							/* Verzögerung (n) */
-			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
-			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: paused;
-			visibility: visible;
-		}
-		
-		.HERO:hover{
-			visibility: hidden;
-		}
-		
-		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
-			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
-				transform: rotate(180deg);
-			}
-			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
-				transform: rotate(360deg);
-			}
-		}
-		
 		
 		.HEADER{
 			position: absolute;
@@ -218,8 +188,8 @@
 		<img class="SOLARPANEL" src="../../images/Solarenergie.png" alt="Landschaft mit Solarpaneelen">
 		
 		<div>
-			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">
+			<img class="INFOBLASE" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_knight.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_knight.php'">
 				Erfahre mehr <br>
 				über Solarenergie!
 			</p>
@@ -242,16 +212,18 @@
 						<br>
 					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
 						<br>
-					<input class="CHECKBOX" type="checkbox" id="DAECHER"> Dächer von Gebäuden	
+					<input class="CHECKBOX" type="checkbox" id="DAECHER"> Gebäude	
 						<br><br>
 					<button class="PRUEFEN">Überprüfen</button>	
 			</div>
 		</div>
 		
-		<div class="ABSCHLUSSTEXT">
-			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_scarlet.php'">Zur Weltkarte</button>
+		<div class="GRATULATION">
+			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Solaranlagen.</p>
+		</div>
 		
+		<div class="ABSCHLUSSTEXT-KAPITELSTART">
+			<button  class="BTNLINKS" onclick="window.location.href='karte_solar_knight.php'">Zur Weltkarte</button>
 		</div>
 		
 		<div class="FEHLERMELDUNG">
@@ -264,12 +236,12 @@
 					
 					Oder lese noch mehr über Solarenergie:
 					<br><br>
-					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_scarlet.php'">Zum Retterwissen Solarenergie</button>
+					<button  class="BTNLINKS" onclick="window.location.href='../../retterwissen/zukunftsenergien/solar_knight.php'">Zum Retterwissen Solarenergie</button>
 						
 				</div>						
 		</div>
 		
-		<img class="HERO" src="../../images/BadGirl.png" alt="Scarlet Shade">
+		<img class="KNIGHT-KAPITELSTART" src="../../images/Prinz.png" alt="Golden Knight">
 		
 	</main>
 
@@ -297,8 +269,9 @@
 		
 		function WeiterleitenStarten(){
 			document.querySelector(".TEXTBLOCK").classList.add("WEG");
-			document.querySelector(".ABSCHLUSSTEXT").classList.add("ZEIGEN");
-			document.querySelector(".HERO").style.animationPlayState = "running";
+			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
+			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
+			document.querySelector(".KNIGHT-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
 		

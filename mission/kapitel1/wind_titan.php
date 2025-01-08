@@ -31,8 +31,8 @@
 		<img class="LANDSCHAFT-WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 		
 		<div>
-			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'">
+			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_titan.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_titan.php'">
 				Erfahre mehr <br>
 				über Windkraft!
 			</p>
@@ -80,7 +80,7 @@
 					
 					Oder lese noch mehr über Windkraft:
 					<br><br>
-					<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_scarlet.php'">Zum Retterwissen Windenergie</button>
+					<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_titan.php'">Zum Retterwissen Windenergie</button>
 						
 				</div>						
 		</div>

@@ -19,7 +19,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 			<div class="TEXT-START">
 				Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
 				Hier auf dieser Karte müssen wieder die richtigen Stellen gefunden werden, um die Solarpanels zu platzieren. Wenn du über die gelben Punkte gehst, kannst du die kleinen Info-Boxen wieder sehen, die dir helfen, die geeigneten Standorte zu finden. Viel Erfolg!
@@ -57,7 +57,7 @@
 		<img class="SOLARPANEL3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
 		
 		
-			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="SONIC-KARTE" src="../../images/BadBoy.png" alt="Sonic Shield">
 			<div class="SPRECHBLASE1">
 				Ziehe die Solarpanels unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -138,18 +138,18 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-ENDE" src="../../images/BadBoy.png" alt="Sonic Shield">
 			
 			<div class="TEXT-ENDE">
 				<div>
 					Großartig! Du bist wirklich eine tolle Hilfe!<br>
 					Als Belohnung bekommst du von mir wieder einen geheimen Code.<br><br>
-					<div class="CODE">iqn-432</div><br>
+					<div class="CODE">luv-315</div><br>
 					Schreibe ihn zu deinem ersten Code! Wenn du später beim nächsten Kapitel weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben.
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel3/wasser_scarlet.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel3/wasser_sonic.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
@@ -157,39 +157,19 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout", ScarletDa);
-
-			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
-			}
-			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("WEG");
-			}
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
-				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-SONIC").classList.add("WEG");
+				document.querySelector(".SONIC-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL1").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL2").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL3").classList.add("ZEIGEN");
 			}
 		
-		
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseover",ScarletUnsichtbar);
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseout",ScarletSichtbar);
-		
-		function ScarletUnsichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.add("WEG");
-		}
-		
-		function ScarletSichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("WEG");
-		}
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
@@ -416,23 +396,13 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".SONIC-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
 			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
-		
-		document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ENDE").addEventListener("mouseout", HeroDaEnde);
-
-			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.remove("ZEIGEN");
-			}
-			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
-			}
 		
 	</script>
 	

@@ -150,18 +150,18 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-ENDE" src="../../images/Prinzessin.png" alt="Green Shade">
 			
 			<div class="TEXT-ENDE">
 				<div>
 					Fantastische Arbeit! Das hast du toll gemacht!<br>
 					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">xdf-338</div><br>
+					<div class="CODE">cds-157</div><br>
 					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
 				</div>
 			</div>
 								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_scarlet.php'">Auf zum nächsten Kapitel!</button>
+			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_blaze.php'">Auf zum nächsten Kapitel!</button>
 		</div>
 		
     </main>
