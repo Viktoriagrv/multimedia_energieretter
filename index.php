@@ -81,9 +81,9 @@
 		.LANGSAMER{
 			position:absolute;
 			bottom: 10%;
-			left: 30%;
+			left: 31%;
 			height:5%;
-			width: 20%;
+			width: 12%;
 			font-family: "Bangers";
             font-size: 1.5rem;
 			color: #e8a723;
@@ -102,12 +102,36 @@
 			border: 2px solid #285238;
         }
 		
+		.NORMAL{
+			position:absolute;
+			bottom: 10%;
+			left: 44%;
+			height:5%;
+			width: 12%;
+			font-family: "Bangers";
+            font-size: 1.5rem;
+			color: #e8a723;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            background-color: #285238;
+            border-radius: 10px;
+            z-index: 5;
+			visibility: hidden;
+			cursor: pointer;
+		}
+		
+		.NORMAL:hover {
+            color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+        }
+		
 		.SCHNELLER{
 			position:absolute;
 			bottom: 10%;
-			left: 52%;
+			left: 57%;
 			height:5%;
-			width: 20%;
+			width: 12%;
 			font-family: "Bangers";
             font-size: 1.5rem;
 			color: #e8a723;
@@ -196,13 +220,14 @@
 			left:23%;
 			height:7%;
 			width: auto;
-            font-family: "Bangers";
-            font-size: 1.5rem;
+			padding: 15px;
+           	font-family: "bangers";
+			font-size: 2rem;
 			color: #e8a723;
-            text-decoration: none;
 			letter-spacing: 0.05em;
-            background-color: #285238;
-            border-radius: 10px;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
 			visibility: hidden;
 			cursor: pointer;
 		}
@@ -273,8 +298,8 @@
 			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Zu den Superhelden</button>
 			
 			
-									
-			<button class="LANGSAMER">Langsamer</button>
+			<button class="LANGSAMER">Langsamer</button>						
+			<button class="NORMAL">Normal</button>
 			<button class="SCHNELLER">Schneller</button>
 		
 	</main>
@@ -284,6 +309,7 @@
 	
 		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
 		document.querySelector(".SCHNELLER").addEventListener("click", TextSchneller);
+		document.querySelector(".NORMAL").addEventListener("click", TextNormal);
 		document.querySelector(".LANGSAMER").addEventListener("click", TextLangsamer);
 		
 
@@ -294,6 +320,7 @@
 			document.querySelector(".STARTBUTTON").classList.add("WEG");
 			document.querySelector(".SCROLL").classList.remove("ZEIGEN-TEXT");
 			document.querySelector(".LANGSAMER").classList.remove("ZEIGEN");
+			document.querySelector(".NORMAL").classList.remove("ZEIGEN");
 			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
 			document.querySelector(".WELT").classList.add("GROSS");
 			document.querySelector(".HERO").classList.add("HEROGROSS");
@@ -323,6 +350,7 @@
 			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
 			document.querySelector(".SCROLL").classList.add("ZEIGEN-TEXT");
 			document.querySelector(".LANGSAMER").classList.add("ZEIGEN");
+			document.querySelector(".NORMAL").classList.add("ZEIGEN");
 			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
 
@@ -335,7 +363,14 @@
 		function TextSchneller(){
 			clearInterval(timer1);
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setInterval(scrollText, 20);
+			timer1 = setInterval(scrollText, 10);
+		}
+		
+		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes
+		function TextNormal(){
+			clearInterval(timer1);
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setInterval(scrollText, 40); 															
 		}
 		
 		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes

@@ -161,7 +161,7 @@
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
+				document.querySelector(".BILDINFOBOX-THUNDER").classList.add("WEG");
 				document.querySelector(".THUNDER-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL1").classList.add("ZEIGEN");

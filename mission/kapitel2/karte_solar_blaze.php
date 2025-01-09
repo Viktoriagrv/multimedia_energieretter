@@ -8,7 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
+
+	<style>
 		
+		.BILDINFOBOX-ENDE-BLAZE{
+			position: absolute;
+			bottom:12%;
+			left: 10%;
+			height:75%;
+			width: auto;
+			transform: rotateY(180deg);
+			visibility: hidden;
+			z-index:5;
+		}
+		
+		.ZEIGEN{
+		visibility: visible;
+	}
+		
+	</style>
 </head>
 
 <body>
@@ -57,7 +75,7 @@
 		<img class="SOLARPANEL3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
 		
 		
-			<img class="BLAZE-KARTE" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
 			<div class="SPRECHBLASE1">
 				Ziehe die Solarpanels unten auf die richtigen Stellen auf der Weltkarte.
 			</div>
@@ -138,7 +156,7 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BILDINFOBOX-ENDE-BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
 			
 			<div class="TEXT-ENDE">
 				<div>
@@ -162,7 +180,7 @@
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX-BLAZE").classList.add("WEG");
-				document.querySelector(".BLAZE-KARTE").classList.add("ZEIGEN");
+				document.querySelector(".BLAZE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL1").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL2").classList.add("ZEIGEN");
@@ -354,14 +372,14 @@
 		}
 		
 		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.add("ZEIGEN");
 		}
 		
 		
 		document.querySelector("#SCHLIESSEN").addEventListener("click",AlleAus);
 		
 		function AlleAus(){
-			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.remove("ZEIGEN");
 		}
 		
 			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion
@@ -395,10 +413,10 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".BLAZE-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".BLAZE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE-BLAZE").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}

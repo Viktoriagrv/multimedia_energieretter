@@ -8,7 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
-
+	
+	<style>
+		.SONIC-KARTE{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:35%;
+			visibility: hidden;
+		}
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
+		.WEG{
+			visibility: hidden;
+		}
+	
+	</style>
 </head>
 
 <body>
@@ -19,6 +37,7 @@
 		
 		<div class="INFOBOX">
 			
+			<img class="SCHUTZSCHILD" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 			<img class="BILDINFOBOX-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 			<div class="TEXT-START">
 				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
@@ -57,7 +76,8 @@
 		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
 		
 		
-			<img class="SCARLET-KARTE" src="../../images/BadBoy.png" alt="Sonic Shield">
+			<img class="SCHUTZSCHILD-GROSS" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
+			<img class="SONIC-KARTE" src="../../images/BadBoy.png" alt="Sonic Shield">
 			<div class="SPRECHBLASE1">
 				Ziehe die Windräder unten auf die richtigen Punkte auf der Weltkarte.
 			</div>
@@ -138,7 +158,8 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadBoy.png" alt="Sonic Shield">
+			<img class="SCHUTZSCHILD-ENDE" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
+			<img class="BILDINFOBOX-ENDE-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 			
 			<div class="TEXT-ENDE">
 				<div>
@@ -156,18 +177,44 @@
 			
 	<script>
 		
+		document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseover",SchutzschildDa);
+					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseout",SchutzschildWeg);
+
+
+					function SchutzschildDa(){
+						document.querySelector(".SCHUTZSCHILD").classList.add("ZEIGEN");
+					}
+
+					function SchutzschildWeg(){
+						document.querySelector(".SCHUTZSCHILD").classList.remove("ZEIGEN");
+					}
+		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
+				document.querySelector(".SCHUTZSCHILD").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX-SONIC").classList.add("WEG");
+				document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
 				document.querySelector(".SONIC-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD2").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD3").classList.add("ZEIGEN");
 			}
-	
+		
+		document.querySelector(".SONIC-KARTE").addEventListener("mouseover",SchutzschildGrossDa);
+					document.querySelector(".SONIC-KARTE").addEventListener("mouseout",SchutzschildGrossWeg);
+
+
+					function SchutzschildGrossDa(){
+						document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
+					}
+
+					function SchutzschildGrossWeg(){
+						document.querySelector(".SCHUTZSCHILD-GROSS").classList.remove("ZEIGEN");
+					}
+		
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
@@ -396,9 +443,22 @@
 			document.querySelector(".SONIC-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseover",SchutzschildBoxDa);
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseout",SchutzschildBoxWeg);
+
+
+		function SchutzschildBoxDa(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.add("ZEIGEN");
+		}
+
+		function SchutzschildBoxWeg(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.remove("ZEIGEN");
 		}
 		
 	</script>

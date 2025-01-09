@@ -138,7 +138,7 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/BadBoy.png" alt="Sonic Shield">
+			<img class="BILDINFOBOX-ENDE-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 			
 			<div class="TEXT-ENDE">
 				<div>
@@ -399,7 +399,7 @@
 			document.querySelector(".SONIC-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}

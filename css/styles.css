@@ -1649,6 +1649,37 @@
 			}
 		}
 
+		.THUNDER-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:7%;
+			height:35%;
+			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			transform: rotateY(180deg);
+			visibility: visible;
+		}
+		
+		.THUNDER-KAPITELSTART:hover{
+			visibility: hidden;
+		}
+		
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateX(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotateX(360deg);
+			}
+		}
+
 		.TITAN-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
@@ -1676,6 +1707,33 @@
 			}
 			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotateY(180deg);
+				transform: rotate(360deg);
+			}
+		}
+
+		.SONIC-KAPITELSTART{
+			position: absolute;
+			bottom: 10%;
+			right:7%;
+			height:40%;
+			width:auto;
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
+			visibility: visible;
+		}
+		
+	
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(360deg);
 			}
 		}
@@ -1941,6 +1999,33 @@
 			bottom:4%;
 			left: 2%;
 			height:35%;
+			visibility: hidden;
+		}
+
+		.THUNDER-KARTE{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:35%;
+			visibility: hidden;
+		}
+
+		.TITAN-KARTE{
+			position:absolute;
+			bottom:4%;
+			left: 2%;
+			height:35%;
+			visibility: hidden;
+		}
+
+		.SONIC-KARTE{
+			position:absolute;
+			bottom:5.5%;
+			left: 5.5%;
+			height:35%;
+			background-color: transparent;
+			border:5px;
+			border-color: transparent;
 			visibility: hidden;
 		}
 		
@@ -2863,6 +2948,55 @@
 			width: auto;
 			visibility: hidden;
 			}
+
+		.BILDINFOBOX-ENDE-BLAZE{
+			position: absolute;
+			bottom:12%;
+			left: 10%;
+			height:75%;
+			width: auto;
+			transform: rotateY(180deg);
+			visibility: hidden;
+			}
+
+		.BILDINFOBOX-ENDE-SONIC{
+			position: absolute;
+			bottom:15%;
+			left: 20%;
+			height:68%;
+			width: auto;
+			z-index:5;
+			visibility: hidden;
+			}
+
+		.SCHUTZSCHILD-ENDE{
+			position: absolute;
+			bottom:1%;
+			left: 1%;
+			height:96%;
+			width: auto;
+			visibility: hidden;
+			opacity: 0.3;
+			z-index:3;
+			animation-name: DREHENENDE;							/* Name (keyframe) */
+			animation-duration: 5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: infinite;			/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: running;
+		}
+		
+		
+		@keyframes DREHENENDE{									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
 		
 		.TEXT-ENDE{
 			position: absolute;

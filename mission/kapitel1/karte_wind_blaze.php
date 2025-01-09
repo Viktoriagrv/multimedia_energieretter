@@ -10,12 +10,26 @@
 	<link rel="stylesheet" href="../../css/styles.css">
 
 	<style>
-	.ZEIGEN{
-			visibility: visible;
-		}
 		
-	</style>
+	.BILDINFOBOX-ENDE-BLAZE{
+			position: absolute;
+			bottom:12%;
+			left: 10%;
+			height:75%;
+			width: auto;
+			transform: rotateY(180deg);
+			visibility: hidden;
+	}
+		
+	.ZEIGEN{
+		visibility: visible;
+	}
+		
+	.WEG{
+		visibility: hidden;
+	}
 	
+	</style>
 </head>
 
 <body>
@@ -150,7 +164,7 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-ENDE" src="../../images/Prinzessin.png" alt="Green Shade">
+			<img class="BILDINFOBOX-ENDE-BLAZE" src="../../images/Prinzessin.png" alt="Green Shade">
 			
 			<div class="TEXT-ENDE">
 				<div>
@@ -431,7 +445,7 @@
 			document.querySelector(".BLAZE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE-BLAZE").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}

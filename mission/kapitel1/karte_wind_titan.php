@@ -9,6 +9,17 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
+	<style>
+		
+	.ZEIGEN{
+		visibility: visible;
+	}
+		
+	.WEG{
+		visibility: hidden;
+	}
+	
+	</style>
 </head>
 
 <body>
@@ -140,7 +151,7 @@
 		
 		<div class="INFOBOX-WEITER">
 			
-			<img class="BILDINFOBOX-TITAN" src="../../images/Biest.png" alt="Cyber Titan">
+			<img class="BILDINFOBOX-ENDE" src="../../images/Biest.png" alt="Cyber Titan">
 			
 			<div class="TEXT-ENDE">
 				<div>
@@ -424,12 +435,10 @@
 			document.querySelector(".TITAN-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-TITAN").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
-		
-		
 		
 	</script>
 	
