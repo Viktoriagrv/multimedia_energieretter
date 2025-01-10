@@ -8,88 +8,83 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
-
-	<style>
-		
-		body {
-            background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
-        }
-		
-	</style>
 	
 </head>
 
 <body>
 	
-	<?php include '../../include/nav.php'; ?>
+	<div class="ALLES">
 	
-    <main>
-		
-		<div class="HEADER-WIND">Windkraftanlagen</div>
-		<img class="LANDSCHAFT-WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
-		
-		<div>
-			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">
-				Erfahre mehr <br>
-				über Windkraft!
-			</p>
-		</div>
-		
-		<div class="HILFSBOX-FLIEGEN-KAPITELSTART"></div>
-		<img class="KNIGHT-KAPITELSTART" src="../../images/Prinz.png" alt="Golden Knight">
-		
-		<div class="TEXTBLOCK-WIND">
-			<p>
-				Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
-				Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
-			</p>
-			
-				
-			<div class="ANTWORTEN-WIND">
-					<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
-						<br>
-					<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
-						<br>
-					<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
-						<br>
-					<input class="CHECKBOX" type="checkbox" id="STEPPE"> Steppe	
-						<br>
-					<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
-						<br>
-					<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
-						<br><br>
-					<button class="PRUEFEN-WIND">Überprüfen</button>	
-			</div>
-		</div>
-		
-		<div class="GRATULATION">
-			<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
-		</div>
-		
-		<div class="ABSCHLUSSTEXT-KAPITELSTART">
-			<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_knight.php'">Zur Weltkarte</button>
-		</div>	
-		
-		<div class="FEHLERMELDUNG">
-				<button id="ZU">&times;</button>	
-			
-				<div class="TEXT-WIND">
-					<br>
-					Das war leider nicht richtig. Versuche es noch einmal.
-					<br><br>
-					
-					Oder lese noch mehr über Windkraft:
-					<br><br>
-					<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind.php'">Zum Retterwissen Windenergie</button>
-						
-				</div>						
-		</div>
-		
-		<img class="KNIGHT-KAPITELSTART-ENDE" src="../../images/Prinz.png" alt="Golden Knight">
-		
-	</main>
+		<?php include '../../include/nav.php'; ?>
 
+		<main>
+
+			<div class="HEADER-WIND">Windkraftanlagen</div>
+			<img class="LANDSCHAFT-WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+
+			<div>
+				<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind/wind_knight.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+				<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind/wind_knight.php'">
+					Erfahre mehr <br>
+					über Windkraft!
+				</p>
+			</div>
+
+			<div class="HILFSBOX-FLIEGEN-KAPITELSTART"></div>
+			<img class="KNIGHT-KAPITELSTART" src="../../images/Prinz.png" alt="Golden Knight">
+
+			<div class="TEXTBLOCK-WIND">
+				<p>
+					Windkraftanlagen, auch Windräder genannt, sind große Maschinen, die mit Wind Strom erzeugen.<br>
+					Windräder brauchen Orte, an denen es viel Wind gibt, damit sie sich schnell drehen können. Wichtig dabei ist, dass nichts im Weg steht, was den Wind blockieren könnte. Klicke <strong>DREI</strong> geeignete Standorte an:
+				</p>
+
+
+				<div class="ANTWORTEN-WIND">
+						<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten	
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="WALD"> Wälder
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="STEPPE"> Steppe	
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="BERGE"> Berge
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe	
+							<br><br>
+						<button class="PRUEFEN-WIND">Überprüfen</button>	
+				</div>
+			</div>
+
+			<div class="GRATULATION">
+				<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Windkraftanlagen.</p>
+			</div>
+
+			<div class="ABSCHLUSSTEXT-KAPITELSTART">
+				<button  class="BTNLINKS-WIND" onclick="window.location.href='karte_wind_knight.php'">Zur Weltkarte</button>
+			</div>	
+
+			<div class="FEHLERMELDUNG">
+					<button id="ZU">&times;</button>	
+
+					<div class="TEXT-WIND">
+						<br>
+						Das war leider nicht richtig. Versuche es noch einmal.
+						<br><br>
+
+						Oder lese noch mehr über Windkraft:
+						<br><br>
+						<button  class="BTNLINKS-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind/wind_knight.php'">Zum Retterwissen Windenergie</button>
+
+					</div>						
+			</div>
+
+			<img class="KNIGHT-KAPITELSTART-ENDE" src="../../images/Prinz.png" alt="Golden Knight">
+
+		</main>
+	</div>
+	
     <script>	
 		
 		document.querySelector(".HILFSBOX-FLIEGEN-KAPITELSTART").addEventListener("mouseover", KnightFliegt);

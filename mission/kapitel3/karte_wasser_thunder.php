@@ -8,214 +8,153 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
-<style>
-	.INFOBOX-ABSCHLUSS {
-			flex-direction: row;
-			position: absolute;
-			padding: 30px;
-			top: 13%;
-			left: 22%;
-			height:70%;
-			width: 60%;
-			border-radius: 20px 20px 20px 20px;
-			background-color: white;
-			box-shadow: 5px 5px 10px 0px gray;
-			visibility:hidden;
-			z-index:5;
-			}
 
-		.BILDINFOBOX-ABSCHLUSS{
-			position: absolute;
-			top:10%;
-			left: 5%;
-			height:70%;
-			width: auto;
-			visibility: hidden;
-			}
-		
-		.TEXT-ABSCHLUSS{
-			position: absolute;
-			top: 7%;
-			left: 50%;
-			height: auto;
-			width: 48%;
-			font-family: "open sans";
-			color: #285238;
-			font-size: 1.6rem;
-			text-align: left;
-		}
-
-		
-		.BTNABSCHLUSS{
-			position: absolute;
-			padding: 15px 20px;
-			bottom: 7%;
-			right: 15%;
-			font-family: "bangers";
-			font-size: 2rem;
-			color: #e8a723;
-			letter-spacing: 0.05em;
-			border: 2px solid #285238;
-			border-radius: 5px;
-			background-color: #285238;
-			cursor: pointer;
-			}
-		
-		.BTNABSCHLUSS:hover{
-			color: #285238;
-			background-color: #45a049;
-			border: 2px solid #285238;
-			}
-	
-	.ZEIGEN{
-		visibility: visible;
-	}
-	
-	</style>
 </head>
 
 <body>
 	
-	<?php include '../../include/nav.php'; ?>
+	<div class="ALLES">
 	
-    <main>
-		
-		<div class="INFOBOX">
-			
-			<img class="BILDINFOBOX-THUNDER" src="../../images/AquaBoy.png" alt="Thunderbolt">
-			<div class="TEXT-START">
-				Klasse gemacht! Du hast den letzten Test mit Bravour bestanden.<br><br>
-				Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
-			</div>
-								
-			<button class="KARTE-ANSEHEN">Wasserkraftwerke platzieren</button>
-		</div>
-		
-		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
-		
-		<div class="PLATZIERUNG">
-			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
-			<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
-			<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
-			<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
-			<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
-			<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
-			<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
-			<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
-			<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
-			
-			<div class="EUROPA-GRUEN"></div>
-			<div class="AUSTRALIEN-GRUEN"></div>
-			<div class="ASIEN-GRUEN"></div>
-			<div class="SAHARA-GRUEN"></div>
-			<div class="NIAGARA-GRUEN"></div>
-			<div class="AMAZONAS-GRUEN"></div>
-			<div class="ATLANTIK-BLAU"></div>
-			<div class="SIBIRIEN-GRUEN"></div>
-			<div class="MEXIKO-GRUEN"></div>
-		</div>
-		
-		<img class="WASSERKRAFT1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-		<img class="WASSERKRAFT2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-		<img class="WASSERKRAFT3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-		
-		
-			<img class="THUNDER-KARTE" src="../../images/AquaBoy.png" alt="Thunderbolt">
-			<div class="SPRECHBLASE1">
-				Ziehe die Wasserkraftwerke unten auf die richtigen Punkte auf der Weltkarte.
-			</div>
-		
-			<div class="SPRECHBLASE2">
-				Super! Das erste Windrad hast du richtig platziert.
-			</div>
-		
-			<div class="SPRECHBLASE3">
-				Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
-			</div>
-	
-		
-		<div class="EUROPA">
-			Die windigen Küstenregionen Europas.
-		</div>
-		
-		
-		<div class="AUSTRALIEN">
-			Die trockenen Weiten Australiens.
-		</div>
-		
-		
-		<div class="ASIEN">
-			Die hohen Berge Asiens.
-		</div>
-		
-		
-		<div class="SAHARA">
-			Das heiße Wüstenmeer Afrikas.
-		</div>
-		
-		
-		<div class="NIAGARA">
-			Die gewaltigen Wasserfälle Nordamerikas.
-		</div>
-		
-		
-		<div class="AMAZONAS">
-			Der mächtige Strom im Herzen des Regenwaldes.
-		</div>
-		
-		
-		<div class="ATLANTIK">
-			Die starken Strömungen des Atlantischen Ozeans.
-		</div>
-		
-		
-		<div class="SIBIRIEN">
-			Die weiten Steppen im Norden Russlands.
-		</div>
-		
-		
-		<div class="MEXIKO">
-			Die sonnigen Gebiete Mittelamerikas.
-		</div>
-		
-		
-		<div>
-			<img class="KRAFTWERKNIAGARA" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-			<img class="KRAFTWERKAMAZONAS" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-			<img class="KRAFTWERKATLANTIK" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
-		</div>
-		
-		<div class="FEHLERMELDUNG">
-			<button id="SCHLIESSEN">&times;</button>
-			<div>Das war leider nicht richtig.</div>
-		</div>
-		
-		
-			<div>
-				<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-			<div>
-				<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-		
-		
-		<div class="INFOBOX-ABSCHLUSS">
-			
-			<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/AquaBoy.png" alt="Thunderbolt">
-			
-			<div class="TEXT-ABSCHLUSS">
-				<div>
-					Herzlichen Glückwunsch, du mutiger Energieretter!<br>
-					Du hast alle drei Spielrunden erfolgreich gemeistert und gezeigt, dass du die Kraft der erneuerbaren Energien verstehst und nutzt, um unsere Erde zu schützen. Dein Einsatz für die Zukunft war beeindruckend, und dafür hast du dir etwas ganz Besonderes verdient: du bist jetzt Mitglied der Energieretter-Liga!<br>
-					Deine Urkunde zeigt, dass du ein wahrer Held für unseren Planeten bist. Halte sie stolz in den Händen und erinnere dich daran, wie wichtig es ist, die Umwelt zu schützen. Weiter so – die Welt braucht Energieretter wie dich!
+		<?php include '../../include/nav.php'; ?>
+
+		<main>
+
+			<div class="INFOBOX">
+
+				<img class="BILDINFOBOX-THUNDER" src="../../images/AquaBoy.png" alt="Thunderbolt">
+				<div class="TEXT-START">
+					Klasse gemacht! Du hast den letzten Test mit Bravour bestanden.<br><br>
+					Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
 				</div>
+
+				<button class="KARTE-ANSEHEN">Wasserkraftwerke platzieren</button>
 			</div>
-								
-			<button class="BTNABSCHLUSS" onclick="window.location.href='../zertifikate/zertifikat_thunder.php'">Zu Deiner Urkunde</button>
-		</div>
-		
-    </main>
-	
+
+			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+
+			<div class="PLATZIERUNG">
+				<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
+				<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
+				<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
+				<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
+				<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
+				<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
+				<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
+				<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
+				<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
+
+				<div class="EUROPA-GRUEN"></div>
+				<div class="AUSTRALIEN-GRUEN"></div>
+				<div class="ASIEN-GRUEN"></div>
+				<div class="SAHARA-GRUEN"></div>
+				<div class="NIAGARA-GRUEN"></div>
+				<div class="AMAZONAS-GRUEN"></div>
+				<div class="ATLANTIK-BLAU"></div>
+				<div class="SIBIRIEN-GRUEN"></div>
+				<div class="MEXIKO-GRUEN"></div>
+			</div>
+
+			<img class="WASSERKRAFT1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+			<img class="WASSERKRAFT2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+			<img class="WASSERKRAFT3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+
+
+				<img class="THUNDER-KARTE" src="../../images/AquaBoy.png" alt="Thunderbolt">
+				<div class="SPRECHBLASE1">
+					Ziehe die Wasserkraftwerke unten auf die richtigen Punkte auf der Weltkarte.
+				</div>
+
+				<div class="SPRECHBLASE2">
+					Super! Das erste Windrad hast du richtig platziert.
+				</div>
+
+				<div class="SPRECHBLASE3">
+					Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
+				</div>
+
+
+			<div class="EUROPA">
+				Die windigen Küstenregionen Europas.
+			</div>
+
+
+			<div class="AUSTRALIEN">
+				Die trockenen Weiten Australiens.
+			</div>
+
+
+			<div class="ASIEN">
+				Die hohen Berge Asiens.
+			</div>
+
+
+			<div class="SAHARA">
+				Das heiße Wüstenmeer Afrikas.
+			</div>
+
+
+			<div class="NIAGARA">
+				Die gewaltigen Wasserfälle Nordamerikas.
+			</div>
+
+
+			<div class="AMAZONAS">
+				Der mächtige Strom im Herzen des Regenwaldes.
+			</div>
+
+
+			<div class="ATLANTIK">
+				Die starken Strömungen des Atlantischen Ozeans.
+			</div>
+
+
+			<div class="SIBIRIEN">
+				Die weiten Steppen im Norden Russlands.
+			</div>
+
+
+			<div class="MEXIKO">
+				Die sonnigen Gebiete Mittelamerikas.
+			</div>
+
+
+			<div>
+				<img class="KRAFTWERKNIAGARA" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+				<img class="KRAFTWERKAMAZONAS" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+				<img class="KRAFTWERKATLANTIK" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
+			</div>
+
+			<div class="FEHLERMELDUNG">
+				<button id="SCHLIESSEN">&times;</button>
+				<div>Das war leider nicht richtig.</div>
+			</div>
+
+
+				<div>
+					<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+				<div>
+					<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+
+
+			<div class="INFOBOX-ABSCHLUSS">
+
+				<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/AquaBoy.png" alt="Thunderbolt">
+
+				<div class="TEXT-ABSCHLUSS">
+					<div>
+						Herzlichen Glückwunsch, du mutiger Energieretter!<br>
+						Du hast alle drei Spielrunden erfolgreich gemeistert und gezeigt, dass du die Kraft der erneuerbaren Energien verstehst und nutzt, um unsere Erde zu schützen. Dein Einsatz für die Zukunft war beeindruckend, und dafür hast du dir etwas ganz Besonderes verdient: du bist jetzt Mitglied der Energieretter-Liga!<br>
+						Deine Urkunde zeigt, dass du ein wahrer Held für unseren Planeten bist. Halte sie stolz in den Händen und erinnere dich daran, wie wichtig es ist, die Umwelt zu schützen. Weiter so – die Welt braucht Energieretter wie dich!
+					</div>
+				</div>
+
+				<button class="BTNABSCHLUSS" onclick="window.location.href='../zertifikate/zertifikat_thunder.php'">Zu Deiner Urkunde</button>
+			</div>
+
+		</main>
+	</div>
 			
 	<script>
 	

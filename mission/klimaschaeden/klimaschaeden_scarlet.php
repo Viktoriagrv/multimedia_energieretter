@@ -13,127 +13,129 @@
 
 <body>
 	
-	<?php include '../../include/nav.php'; ?>
-	
-    <main>
-		
-		<div class="INFOBOX-KLIMA">
-			
-			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
-			
-			<div class="TEXT-KLIMA">
-				Hallo! <br>
-				Ich bin Scarlet Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. <br>
-				Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.<br>
-				Gehe über die gelben Punkte und erfahre mehr über die Gefahren des Klimawandels.
-			</div>
-								
-			<button class="KARTE-ANSEHEN">Karte ansehen</button>
-		</div>
-		
-		<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
-		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
-			
-		<img class="SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
-	
-		<div class="SPRECHBLASE-KLIMA">
-			
-			<p>Wenn du genug über Klimaschäden gelernt hast, können wir die Mission starten.</p>
-			
-		</div>	
-		
-		<button class="LOS-KLIMA" onclick="window.location.href='../kapitel1/wind_scarlet.php'"> Auf geht's! </button>
-		
-			<div class="PUNKT EUROPA-KLIMA"></div>
-			<div class="PUNKT CHINA-KLIMA"></div>
-			<div class="PUNKT SUEDOSTASIEN-KLIMA"></div>
-			<div class="PUNKT AUSTRALIEN-KLIMA"></div>
-			<div class="PUNKT ANTARKTIS-KLIMA"></div>
-			<div class="PUNKT CHILE-KLIMA"></div>
-			<div class="PUNKT AMAZONAS-KLIMA"></div>
-			<div class="PUNKT ATLANTIK-KLIMA"></div>
-			<div class="PUNKT USA-KLIMA"></div>
-			<div class="PUNKT KANADA-KLIMA"></div>
-			<div class="PUNKT AFRIKA-KLIMA"></div>
+	<div class="ALLES">
 
-	
-		<div class="INFOEUROPA-KLIMA">
-			<h1>Gesellschaftliche Konflikte</h1>
-			<strong>Migration:</strong><br> Menschen aus unbewohnbaren Regionen wie Dürreregionen oder überfluteten Gebieten könnten gezwungen sein, ihre Heimat zu verlassen.<br><br>
-			<strong>Konflikte um Ressourcen:</strong><br> Wasser- und Nahrungsknappheit könnten politische Spannungen und Konflikte verstärken.
-		</div>
-		
-		<div class="INFOCHINA-KLIMA">
-			<h1>Bedrohung der Landwirtschaft</h1>
-			Die Produktivität in der Landwirtschaft wird in vielen Regionen zurückgehen, was die globale Ernährungssicherheit gefährdet.<br><br>
-			Veränderte Wachstumsbedingungen können zu Nahrungsknappheit und Preisanstiegen führen.
-		</div>
-		
-		<div class="INFOSUEDOSTASIEN-KLIMA">
-			<h1>Abstreben von Korallenriffe</h1>
-			Tropische und subtropische Korallenriffe sind Ökosysteme mit der höchsten Biodiversität auf der Erde. Sie haben einen enormen Einfluss auf die Nahrungskette im Meer, den Nähr- und Kohlenstoffkreislauf im Ozean und sind entscheidend für die Lebensbedingungen von Millionen Menschen weltweit. Sie bieten zum Beispiel Küstenschutz und sind wichtig für die Tourismuswirtschaft.<br><br>
-			All die oben genannten wichtigen Funktionen der Korallenriffe fallen bei einem Absterben weg.
-		</div>
-		
-		<div class="INFOAUSTRALIEN-KLIMA">
-			<h1>Steigende Temperaturen</h1>
-			<strong>Hitzetzewellen:</strong><br>
-			Extreme Hitzeperioden werden häufiger, intensiver und länger andauern. Dies erhöht die Gesundheitsrisiken wie Hitzeschläge und Herz-Kreislauf-Erkrankungen.<br><br>
-			<strong>Schmelzen von Gletschern und Eisschilden:</strong>
-			<br> Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.
-		</div>
-		
-		<div class="INFOANTARKTIS-KLIMA">
-			<h1>Meeresspiegelanstieg</h1>
-			Die Ostantarktis beherbergt in ihren Eispanzern die größten Süßwasserreserven der Welt.Diese Eismassen entsprechen etwa 50 Metern Meeresspiegelanstieg. Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.<br><br>
-			Bis zum Jahr 2100 könnte der Meeresspiegel um mehr als einen Meter steigen, was Küstenregionen und Inselstaaten bedroht.<br><br>
-			Städte wie Hamburg, Jakarta oder Miami sind gefährdet, dauerhaft überflutet zu werden.
-		</div>
-		
-		
-		<div class="INFOCHILE-KLIMA">
-			<h1>Gefährdung der Wasserversorgung</h1>
-			Die Versorgung mit Süßwasser hängt in vielen Gebieten der Welt ganz entscheidend vom jährlich zuverlässig und gleichmäßig auftretenden Schmelzwasser der Gletscher ab. Schmelzende Gletscher und veränderte Niederschlagsmuster könnten die Trinkwasserversorgung von Milliarden Menschen beeinträchtigen.
-		</div>
-		
-		<div class="INFOAMAZONAS-KLIMA">
-			<h1>Verlust von Biodiversität</h1>
-			Biodiversität bedeutet, dass es auf der Erde viele verschiedene Lebewesen gibt. Dazu gehören Tiere, Pflanzen, Pilze und winzig kleine Lebewesen wie Bakterien. Sie alle leben zusammen in der Natur und brauchen sich gegenseitig, um zu überleben.<br><br>
-			Viele Tier- und Pflanzenarten können sich jedoch nicht schnell genug anpassen und könnten aussterben.Ökosysteme wie Korallenriffe sterben ab, was ganze Nahrungsketten bedroht.	
-		</div>
-		
-		<div class="INFOATLANTIK-KLIMA">
-			<h1>Atlantische Umwälzzirkulation</h1>
-			Die Atlantische Umwälzzirkulation ist wie ein riesiges Fließband im Meer. Sie sorgt dafür, dass warmes Wasser aus den Tropen in den Norden fließt und kaltes Wasser zurück in den Süden. Dadurch bleibt das Klima auf der Erde ausgeglichen. Wenn diese Strömung aber langsamer wird oder sogar ganz stoppt, könnte das schlimme Folgen haben:<br><br>
-			In Europa könnte es viel kälter werden, während in anderen Teilen der Welt mehr Stürme und Überschwemmungen auftreten. Das passiert, weil der Klimawandel die Meere erwärmt und viel Süßwasser aus schmelzendem Eis hinzukommt, was das Fließband durcheinanderbringt.
-		</div>
-		
-		<div class="INFOUSA-KLIMA">
-			<h1>Extreme Wetterereignisse</h1>
-			<strong>Stürme und Hurrikane:</strong><br> Diese werden durch höhere Meerestemperaturen stärker und zerstörerischer.<br>
-			<strong>Überschwemmungen:</strong><br> 
-			Heftige Regenfälle werden zunehmen, da wärmere Luft mehr Feuchtigkeit aufnehmen kann.<br>
-			<strong>Dürren:</strong><br>
-			In einigen Regionen wie Südeuropa und Afrika werden Dürreperioden intensiver, was die Landwirtschaft gefährdet.
-		</div>
-		
-		<div class="INFOKANADA-KLIMA">
-			<h1>Auftauen der Permafrostböden</h1>
-			Permafrostböden sind Böden, die in sehr kalten Regionen das ganze Jahr über gefroren bleiben, wie in der Arktis.<br><br>
-			Doch durch den Klimawandel tauen diese Böden langsam auf. Das ist ein Problem, weil im Permafrost riesige Mengen an Treibhausgasen wie Kohlendioxid und Methan gespeichert sind. Wenn der Boden auftaut, gelangen diese Gase in die Luft und verstärken den Klimawandel noch mehr. Außerdem kann der Boden instabil werden, was Häuser und Straßen beschädigen kann.
-		</div>
-		
-		<div class="INFOAFRIKA-KLIMA">
-			<h1>Gesundheitsrisiken</h1>
-			<strong>Ausbreitung von Krankheiten:</strong><br> 
-			Tropische Krankheiten wie Malaria könnten sich durch höhere Temperaturen in neue Regionen ausbreiten.<br><br>
-			<strong>Luftqualität:</strong><br>
-			Hitzewellen können die Luftverschmutzung verstärken und Atemwegserkrankungen verschlimmern.
-		</div>
-		
-			
-    </main>
-	
+		<?php include '../../include/nav.php'; ?>
+
+		<main>
+
+			<div class="INFOBOX-KLIMA">
+
+				<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
+
+				<div class="TEXT-KLIMA">
+					Hallo! <br>
+					Ich bin Scarlet Shade. Ich freue mich, dass du mit mir auf diese Mission gehen möchtest. <br>
+					Auf dieser Karte kannst du sehen, welche Klimaschäden die Nutzung fossiler Brennstoffe hervorgerufen hat.<br>
+					Gehe über die gelben Punkte und erfahre mehr über die Gefahren des Klimawandels.
+				</div>
+
+				<button class="KARTE-ANSEHEN">Karte ansehen</button>
+			</div>
+
+			<!--<img id="hintergrund" src="../images/waldbrand_hintergrund_II.png" alt="Brennender Wald">-->
+			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+
+			<img class="SCARLET" src="../../images/BadGirl.png" alt="Scarlet Shade">
+
+			<div class="SPRECHBLASE-KLIMA">
+
+				<p>Wenn du genug über Klimaschäden gelernt hast, können wir die Mission starten.</p>
+
+			</div>	
+
+			<button class="LOS-KLIMA" onclick="window.location.href='../kapitel1/wind_scarlet.php'"> Auf geht's! </button>
+
+				<div class="PUNKT EUROPA-KLIMA"></div>
+				<div class="PUNKT CHINA-KLIMA"></div>
+				<div class="PUNKT SUEDOSTASIEN-KLIMA"></div>
+				<div class="PUNKT AUSTRALIEN-KLIMA"></div>
+				<div class="PUNKT ANTARKTIS-KLIMA"></div>
+				<div class="PUNKT CHILE-KLIMA"></div>
+				<div class="PUNKT AMAZONAS-KLIMA"></div>
+				<div class="PUNKT ATLANTIK-KLIMA"></div>
+				<div class="PUNKT USA-KLIMA"></div>
+				<div class="PUNKT KANADA-KLIMA"></div>
+				<div class="PUNKT AFRIKA-KLIMA"></div>
+
+
+			<div class="INFOEUROPA-KLIMA">
+				<h1>Gesellschaftliche Konflikte</h1>
+				<strong>Migration:</strong><br> Menschen aus unbewohnbaren Regionen wie Dürreregionen oder überfluteten Gebieten könnten gezwungen sein, ihre Heimat zu verlassen.<br><br>
+				<strong>Konflikte um Ressourcen:</strong><br> Wasser- und Nahrungsknappheit könnten politische Spannungen und Konflikte verstärken.
+			</div>
+
+			<div class="INFOCHINA-KLIMA">
+				<h1>Bedrohung der Landwirtschaft</h1>
+				Die Produktivität in der Landwirtschaft wird in vielen Regionen zurückgehen, was die globale Ernährungssicherheit gefährdet.<br><br>
+				Veränderte Wachstumsbedingungen können zu Nahrungsknappheit und Preisanstiegen führen.
+			</div>
+
+			<div class="INFOSUEDOSTASIEN-KLIMA">
+				<h1>Abstreben von Korallenriffe</h1>
+				Tropische und subtropische Korallenriffe sind Ökosysteme mit der höchsten Biodiversität auf der Erde. Sie haben einen enormen Einfluss auf die Nahrungskette im Meer, den Nähr- und Kohlenstoffkreislauf im Ozean und sind entscheidend für die Lebensbedingungen von Millionen Menschen weltweit. Sie bieten zum Beispiel Küstenschutz und sind wichtig für die Tourismuswirtschaft.<br><br>
+				All die oben genannten wichtigen Funktionen der Korallenriffe fallen bei einem Absterben weg.
+			</div>
+
+			<div class="INFOAUSTRALIEN-KLIMA">
+				<h1>Steigende Temperaturen</h1>
+				<strong>Hitzetzewellen:</strong><br>
+				Extreme Hitzeperioden werden häufiger, intensiver und länger andauern. Dies erhöht die Gesundheitsrisiken wie Hitzeschläge und Herz-Kreislauf-Erkrankungen.<br><br>
+				<strong>Schmelzen von Gletschern und Eisschilden:</strong>
+				<br> Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.
+			</div>
+
+			<div class="INFOANTARKTIS-KLIMA">
+				<h1>Meeresspiegelanstieg</h1>
+				Die Ostantarktis beherbergt in ihren Eispanzern die größten Süßwasserreserven der Welt.Diese Eismassen entsprechen etwa 50 Metern Meeresspiegelanstieg. Der Verlust von Eismassen in den Polarregionen und Gebirgen trägt zum Anstieg des Meeresspiegels bei.<br><br>
+				Bis zum Jahr 2100 könnte der Meeresspiegel um mehr als einen Meter steigen, was Küstenregionen und Inselstaaten bedroht.<br><br>
+				Städte wie Hamburg, Jakarta oder Miami sind gefährdet, dauerhaft überflutet zu werden.
+			</div>
+
+
+			<div class="INFOCHILE-KLIMA">
+				<h1>Gefährdung der Wasserversorgung</h1>
+				Die Versorgung mit Süßwasser hängt in vielen Gebieten der Welt ganz entscheidend vom jährlich zuverlässig und gleichmäßig auftretenden Schmelzwasser der Gletscher ab. Schmelzende Gletscher und veränderte Niederschlagsmuster könnten die Trinkwasserversorgung von Milliarden Menschen beeinträchtigen.
+			</div>
+
+			<div class="INFOAMAZONAS-KLIMA">
+				<h1>Verlust von Biodiversität</h1>
+				Biodiversität bedeutet, dass es auf der Erde viele verschiedene Lebewesen gibt. Dazu gehören Tiere, Pflanzen, Pilze und winzig kleine Lebewesen wie Bakterien. Sie alle leben zusammen in der Natur und brauchen sich gegenseitig, um zu überleben.<br><br>
+				Viele Tier- und Pflanzenarten können sich jedoch nicht schnell genug anpassen und könnten aussterben.Ökosysteme wie Korallenriffe sterben ab, was ganze Nahrungsketten bedroht.	
+			</div>
+
+			<div class="INFOATLANTIK-KLIMA">
+				<h1>Atlantische Umwälzzirkulation</h1>
+				Die Atlantische Umwälzzirkulation ist wie ein riesiges Fließband im Meer. Sie sorgt dafür, dass warmes Wasser aus den Tropen in den Norden fließt und kaltes Wasser zurück in den Süden. Dadurch bleibt das Klima auf der Erde ausgeglichen. Wenn diese Strömung aber langsamer wird oder sogar ganz stoppt, könnte das schlimme Folgen haben:<br><br>
+				In Europa könnte es viel kälter werden, während in anderen Teilen der Welt mehr Stürme und Überschwemmungen auftreten. Das passiert, weil der Klimawandel die Meere erwärmt und viel Süßwasser aus schmelzendem Eis hinzukommt, was das Fließband durcheinanderbringt.
+			</div>
+
+			<div class="INFOUSA-KLIMA">
+				<h1>Extreme Wetterereignisse</h1>
+				<strong>Stürme und Hurrikane:</strong><br> Diese werden durch höhere Meerestemperaturen stärker und zerstörerischer.<br>
+				<strong>Überschwemmungen:</strong><br> 
+				Heftige Regenfälle werden zunehmen, da wärmere Luft mehr Feuchtigkeit aufnehmen kann.<br>
+				<strong>Dürren:</strong><br>
+				In einigen Regionen wie Südeuropa und Afrika werden Dürreperioden intensiver, was die Landwirtschaft gefährdet.
+			</div>
+
+			<div class="INFOKANADA-KLIMA">
+				<h1>Auftauen der Permafrostböden</h1>
+				Permafrostböden sind Böden, die in sehr kalten Regionen das ganze Jahr über gefroren bleiben, wie in der Arktis.<br><br>
+				Doch durch den Klimawandel tauen diese Böden langsam auf. Das ist ein Problem, weil im Permafrost riesige Mengen an Treibhausgasen wie Kohlendioxid und Methan gespeichert sind. Wenn der Boden auftaut, gelangen diese Gase in die Luft und verstärken den Klimawandel noch mehr. Außerdem kann der Boden instabil werden, was Häuser und Straßen beschädigen kann.
+			</div>
+
+			<div class="INFOAFRIKA-KLIMA">
+				<h1>Gesundheitsrisiken</h1>
+				<strong>Ausbreitung von Krankheiten:</strong><br> 
+				Tropische Krankheiten wie Malaria könnten sich durch höhere Temperaturen in neue Regionen ausbreiten.<br><br>
+				<strong>Luftqualität:</strong><br>
+				Hitzewellen können die Luftverschmutzung verstärken und Atemwegserkrankungen verschlimmern.
+			</div>
+
+
+		</main>
+	</div>
 	
 	<script>
 		

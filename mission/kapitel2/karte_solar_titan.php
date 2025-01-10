@@ -13,147 +13,149 @@
 
 <body>
 	
-	<?php include '../../include/nav.php'; ?>
+	<div class="ALLES">
 	
-    <main>
-		
-		<div class="INFOBOX">
-			
-			<img class="BILDINFOBOX-TITAN" src="../../images/Biest.png" alt="Cyber Titan">
-			<div class="TEXT-START">
-				Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
-				Hier auf dieser Karte müssen wieder die richtigen Stellen gefunden werden, um die Solarpanels zu platzieren. Wenn du über die gelben Punkte gehst, kannst du die kleinen Info-Boxen wieder sehen, die dir helfen, die geeigneten Standorte zu finden. Viel Erfolg!
-			</div>
-								
-			<button class="KARTE-ANSEHEN">Solarpanels platzieren</button>
-		</div>
-		
-		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
-		
-		<div class="PLATZIERUNG">
-			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
-			<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
-			<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
-			<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
-			<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
-			<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
-			<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
-			<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
-			<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
-			
-			<div class="EUROPA-GRUEN"></div>
-			<div class="AUSTRALIEN-GRUEN"></div>
-			<div class="ASIEN-GRUEN"></div>
-			<div class="SAHARA-GRUEN"></div>
-			<div class="NIAGARA-GRUEN"></div>
-			<div class="AMAZONAS-GRUEN"></div>
-			<div class="ATLANTIK-BLAU"></div>
-			<div class="SIBIRIEN-GRUEN"></div>
-			<div class="MEXIKO-GRUEN"></div>
-		</div>
-		
-		<img class="SOLARPANEL1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-		<img class="SOLARPANEL2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-		<img class="SOLARPANEL3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-		
-		
-			<img class="TITAN-KARTE" src="../../images/Biest.png" alt="Cyber Titan">
-			<div class="SPRECHBLASE1">
-				Ziehe die Solarpanels unten auf die richtigen Stellen auf der Weltkarte.
-			</div>
-		
-			<div class="SPRECHBLASE2">
-				Super! Das erste Windrad hast du richtig platziert.
-			</div>
-		
-			<div class="SPRECHBLASE3">
-				Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
-			</div>
-	
-		
-		<div class="EUROPA">
-			Die windigen Küstenregionen Europas.
-		</div>
-		
-		
-		<div class="AUSTRALIEN">
-			Die trockenen Weiten Australiens.
-		</div>
-		
-		
-		<div class="ASIEN">
-			Die hohen Berge Asiens.
-		</div>
-		
-		
-		<div class="SAHARA">
-			Das heiße Wüstenmeer Afrikas.
-		</div>
-		
-		
-		<div class="NIAGARA">
-			Die gewaltigen Wasserfälle Nordamerikas.
-		</div>
-		
-		
-		<div class="AMAZONAS">
-			Der mächtige Strom im Herzen des Regenwaldes.
-		</div>
-		
-		
-		<div class="ATLANTIK">
-			Die starken Strömungen des Atlantischen Ozeans.
-		</div>
-		
-		
-		<div class="SIBIRIEN">
-			Die weiten Steppen im Norden Russlands.
-		</div>
-		
-		
-		<div class="MEXIKO">
-			Die sonnigen Gebiete Mittelamerikas.
-		</div>
-		
-		
-		<div>
-			<img class="SOLARPANELMEXIKO" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-			<img class="SOLARPANELAUSTRALIEN" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-			<img class="SOLARPANELSAHARA" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
-		</div>
-		
-		<div class="FEHLERMELDUNG-KARTE">
-			<button id="SCHLIESSEN">&times;</button>
-			<div>Das war leider nicht richtig.</div>
-		</div>
-		
-		
-			<div>
-				<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-			<div>
-				<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-		
-		
-		<div class="INFOBOX-WEITER">
-			
-			<img class="BILDINFOBOX-ENDE" src="../../images/Biest.png" alt="Cyber Titan">
-			
-			<div class="TEXT-ENDE">
-				<div>
-					Großartig! Du bist wirklich eine tolle Hilfe!<br>
-					Als Belohnung bekommst du von mir wieder einen geheimen Code.<br><br>
-					<div class="CODE">xrg-518</div><br>
-					Schreibe ihn zu deinem ersten Code! Wenn du später beim nächsten Kapitel weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben.
+		<?php include '../../include/nav.php'; ?>
+
+		<main>
+
+			<div class="INFOBOX">
+
+				<img class="BILDINFOBOX-TITAN" src="../../images/Biest.png" alt="Cyber Titan">
+				<div class="TEXT-START">
+					Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
+					Hier auf dieser Karte müssen wieder die richtigen Stellen gefunden werden, um die Solarpanels zu platzieren. Wenn du über die gelben Punkte gehst, kannst du die kleinen Info-Boxen wieder sehen, die dir helfen, die geeigneten Standorte zu finden. Viel Erfolg!
 				</div>
+
+				<button class="KARTE-ANSEHEN">Solarpanels platzieren</button>
 			</div>
-								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel3/wasser_titan.php'">Auf zum nächsten Kapitel!</button>
-		</div>
-		
-    </main>
-	
+
+			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+
+			<div class="PLATZIERUNG">
+				<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
+				<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
+				<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
+				<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
+				<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
+				<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
+				<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
+				<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
+				<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
+
+				<div class="EUROPA-GRUEN"></div>
+				<div class="AUSTRALIEN-GRUEN"></div>
+				<div class="ASIEN-GRUEN"></div>
+				<div class="SAHARA-GRUEN"></div>
+				<div class="NIAGARA-GRUEN"></div>
+				<div class="AMAZONAS-GRUEN"></div>
+				<div class="ATLANTIK-BLAU"></div>
+				<div class="SIBIRIEN-GRUEN"></div>
+				<div class="MEXIKO-GRUEN"></div>
+			</div>
+
+			<img class="SOLARPANEL1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+			<img class="SOLARPANEL2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+			<img class="SOLARPANEL3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+
+
+				<img class="TITAN-KARTE" src="../../images/Biest.png" alt="Cyber Titan">
+				<div class="SPRECHBLASE1">
+					Ziehe die Solarpanels unten auf die richtigen Stellen auf der Weltkarte.
+				</div>
+
+				<div class="SPRECHBLASE2">
+					Super! Das erste Windrad hast du richtig platziert.
+				</div>
+
+				<div class="SPRECHBLASE3">
+					Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
+				</div>
+
+
+			<div class="EUROPA">
+				Die windigen Küstenregionen Europas.
+			</div>
+
+
+			<div class="AUSTRALIEN">
+				Die trockenen Weiten Australiens.
+			</div>
+
+
+			<div class="ASIEN">
+				Die hohen Berge Asiens.
+			</div>
+
+
+			<div class="SAHARA">
+				Das heiße Wüstenmeer Afrikas.
+			</div>
+
+
+			<div class="NIAGARA">
+				Die gewaltigen Wasserfälle Nordamerikas.
+			</div>
+
+
+			<div class="AMAZONAS">
+				Der mächtige Strom im Herzen des Regenwaldes.
+			</div>
+
+
+			<div class="ATLANTIK">
+				Die starken Strömungen des Atlantischen Ozeans.
+			</div>
+
+
+			<div class="SIBIRIEN">
+				Die weiten Steppen im Norden Russlands.
+			</div>
+
+
+			<div class="MEXIKO">
+				Die sonnigen Gebiete Mittelamerikas.
+			</div>
+
+
+			<div>
+				<img class="SOLARPANELMEXIKO" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+				<img class="SOLARPANELAUSTRALIEN" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+				<img class="SOLARPANELSAHARA" src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
+			</div>
+
+			<div class="FEHLERMELDUNG-KARTE">
+				<button id="SCHLIESSEN">&times;</button>
+				<div>Das war leider nicht richtig.</div>
+			</div>
+
+
+				<div>
+					<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+				<div>
+					<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+
+
+			<div class="INFOBOX-WEITER">
+
+				<img class="BILDINFOBOX-ENDE" src="../../images/Biest.png" alt="Cyber Titan">
+
+				<div class="TEXT-ENDE">
+					<div>
+						Großartig! Du bist wirklich eine tolle Hilfe!<br>
+						Als Belohnung bekommst du von mir wieder einen geheimen Code.<br><br>
+						<div class="CODE-AUSGABE">xrg-518</div><br>
+						Schreibe ihn zu deinem ersten Code! Wenn du später beim nächsten Kapitel weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben.
+					</div>
+				</div>
+
+				<button class="BTNWEITER" onclick="window.location.href='../kapitel3/wasser_titan.php'">Auf zum nächsten Kapitel!</button>
+			</div>
+
+		</main>
+	</div>
 			
 	<script>
 		

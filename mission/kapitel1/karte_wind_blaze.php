@@ -9,177 +9,158 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../../css/styles.css">
 
-	<style>
-		
-	.BILDINFOBOX-ENDE-BLAZE{
-			position: absolute;
-			bottom:12%;
-			left: 10%;
-			height:75%;
-			width: auto;
-			transform: rotateY(180deg);
-			visibility: hidden;
-	}
-		
-	.ZEIGEN{
-		visibility: visible;
-	}
-		
-	.WEG{
-		visibility: hidden;
-	}
-	
-	</style>
 </head>
 
 <body>
 	
-	<?php include '../../include/nav.php'; ?>
+	<div class="ALLES">
 	
-    <main>
-		
-		<div class="INFOBOX">
-			
-			<img class="BILDINFOBOX-BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
-			<img class="BLUMEN-INFOBOX" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
-			
-			<div class="TEXT-START">
-				Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
-				Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
-			</div>
-								
-			<button class="KARTE-ANSEHEN">Windräder platzieren</button>
-		</div>
-		
-		<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
-		
-		<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
-		<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
-		
-		<div class="PLATZIERUNG">
-			<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
-			<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
-			<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
-			<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
-			<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
-			<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
-			<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
-			<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
-			<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
-			
-			<div class="EUROPA-GRUEN"></div>
-			<div class="AUSTRALIEN-GRUEN"></div>
-			<div class="ASIEN-GRUEN"></div>
-			<div class="SAHARA-GRUEN"></div>
-			<div class="NIAGARA-GRUEN"></div>
-			<div class="AMAZONAS-GRUEN"></div>
-			<div class="ATLANTIK-BLAU"></div>
-			<div class="SIBIRIEN-GRUEN"></div>
-			<div class="MEXIKO-GRUEN"></div>
-		</div>
-		
-		<img class="WINDRAD1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
-		
-		
-			
-			<div class="SPRECHBLASE1">
-				Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
-			</div>
-		
-			<div class="SPRECHBLASE2">
-				Super! Das erste Windrad hast du richtig platziert.
-			</div>
-		
-			<div class="SPRECHBLASE3">
-				Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
-			</div>
-	
-		
-		<div class="EUROPA">
-			Die windigen Küstenregionen Europas.
-		</div>
-		
-		
-		<div class="AUSTRALIEN">
-			Die trockenen Weiten Australiens.
-		</div>
-		
-		
-		<div class="ASIEN">
-			Die hohen Berge Asiens.
-		</div>
-		
-		
-		<div class="SAHARA">
-			Das heiße Wüstenmeer Afrikas.
-		</div>
-		
-		
-		<div class="NIAGARA">
-			Die gewaltigen Wasserfälle Nordamerikas.
-		</div>
-		
-		
-		<div class="AMAZONAS">
-			Der mächtige Strom im Herzen des Regenwaldes.
-		</div>
-		
-		
-		<div class="ATLANTIK">
-			Die starken Strömungen des Atlantischen Ozeans.
-		</div>
-		
-		
-		<div class="SIBIRIEN">
-			Die weiten Steppen im Norden Russlands.
-		</div>
-		
-		
-		<div class="MEXIKO">
-			Die sonnigen Gebiete Mittelamerikas.
-		</div>
-		
-		
-		<div>
-			<img class="WINDRADEUROPA" src="../../images/windraeder.png" alt="Zwei Windräder">
-			<img class="WINDRADASIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
-			<img class="WINDRADSIBIRIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
-		</div>
-		
-		<div class="FEHLERMELDUNG-KARTE">
-			<button id="SCHLIESSEN">&times;</button>
-			<div>Das war leider nicht richtig.</div>
-		</div>
-		
-		
-			<div>
-				<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-			<div>
-				<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
-			</div>
-		
-		
-		<div class="INFOBOX-WEITER">
-			
-			<img class="BILDINFOBOX-ENDE-BLAZE" src="../../images/Prinzessin.png" alt="Green Shade">
-			
-			<div class="TEXT-ENDE">
-				<div>
-					Fantastische Arbeit! Das hast du toll gemacht!<br>
-					Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
-					<div class="CODE">cds-157</div><br>
-					Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+		<?php include '../../include/nav.php'; ?>
+
+		<main>
+
+			<div class="INFOBOX">
+
+				<img class="BILDINFOBOX-BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+				<img class="BLUMEN-INFOBOX" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+
+				<div class="TEXT-START">
+					Das hast du sehr gut gemacht! Den ersten Test hast du bestanden.<br><br>
+					Auf der Karte müssen nun an den richtigen Stellen die Windräder platziert werden, um die Mission fortzuführen. Wenn du über die gelben Punkte gehst, bekommst du eine kurze Erklärung über den Standort, die dir hilft, die geeigneten Standort zu finden. Viel Erfolg!
 				</div>
+
+				<button class="KARTE-ANSEHEN">Windräder platzieren</button>
 			</div>
-								
-			<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_blaze.php'">Auf zum nächsten Kapitel!</button>
-		</div>
-		
-    </main>
-	
+
+			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
+
+			<img class="BLAZE" src="../../images/Prinzessin.png" alt="Green Blaze">
+			<img class="BLUMEN" src="../../images/blumenwiese.png" alt="Blumenwiese mit Biene">
+
+			<div class="PLATZIERUNG">
+				<div class="DROP-ELEMENT EUROPABTN" id='DROPEUROPA'></div>
+				<div class="DROP-ELEMENT AUSTRALIENBTN" id='DROPAUSTRALIEN'></div>
+				<div class="DROP-ELEMENT ASIENBTN" id='DROPASIEN'></div>
+				<div class="DROP-ELEMENT SAHARABTN" id="DROPSAHARA"></div>
+				<div class="DROP-ELEMENT NIAGARABTN" id="DROPNIAGARA"></div>
+				<div class="DROP-ELEMENT AMAZONASBTN" id="DROPAMAZONAS"></div>
+				<div class="DROP-ELEMENT ATLANTIKBTN" id="DROPATLANTIK"></div>
+				<div class="DROP-ELEMENT SIBIRIENBTN" id="DROPSIBIRIEN"></div>
+				<div class="DROP-ELEMENT MEXIKOBTN" id="DROPMEXIKO"></div>
+
+				<div class="EUROPA-GRUEN"></div>
+				<div class="AUSTRALIEN-GRUEN"></div>
+				<div class="ASIEN-GRUEN"></div>
+				<div class="SAHARA-GRUEN"></div>
+				<div class="NIAGARA-GRUEN"></div>
+				<div class="AMAZONAS-GRUEN"></div>
+				<div class="ATLANTIK-BLAU"></div>
+				<div class="SIBIRIEN-GRUEN"></div>
+				<div class="MEXIKO-GRUEN"></div>
+			</div>
+
+			<img class="WINDRAD1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+			<img class="WINDRAD2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+			<img class="WINDRAD3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/windraeder.png" alt="Zwei Windräder">
+
+
+
+				<div class="SPRECHBLASE1">
+					Ziehe die Windräder unten auf die richtigen Stellen auf der Weltkarte.
+				</div>
+
+				<div class="SPRECHBLASE2">
+					Super! Das erste Windrad hast du richtig platziert.
+				</div>
+
+				<div class="SPRECHBLASE3">
+					Sehr gut! Auch das zweite Windrad ist richtig abgelegt.
+				</div>
+
+
+			<div class="EUROPA">
+				Die windigen Küstenregionen Europas.
+			</div>
+
+
+			<div class="AUSTRALIEN">
+				Die trockenen Weiten Australiens.
+			</div>
+
+
+			<div class="ASIEN">
+				Die hohen Berge Asiens.
+			</div>
+
+
+			<div class="SAHARA">
+				Das heiße Wüstenmeer Afrikas.
+			</div>
+
+
+			<div class="NIAGARA">
+				Die gewaltigen Wasserfälle Nordamerikas.
+			</div>
+
+
+			<div class="AMAZONAS">
+				Der mächtige Strom im Herzen des Regenwaldes.
+			</div>
+
+
+			<div class="ATLANTIK">
+				Die starken Strömungen des Atlantischen Ozeans.
+			</div>
+
+
+			<div class="SIBIRIEN">
+				Die weiten Steppen im Norden Russlands.
+			</div>
+
+
+			<div class="MEXIKO">
+				Die sonnigen Gebiete Mittelamerikas.
+			</div>
+
+
+			<div>
+				<img class="WINDRADEUROPA" src="../../images/windraeder.png" alt="Zwei Windräder">
+				<img class="WINDRADASIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
+				<img class="WINDRADSIBIRIEN" src="../../images/windraeder.png" alt="Zwei Windräder">
+			</div>
+
+			<div class="FEHLERMELDUNG-KARTE">
+				<button id="SCHLIESSEN">&times;</button>
+				<div>Das war leider nicht richtig.</div>
+			</div>
+
+
+				<div>
+					<img class="FEUERWERK-LINKS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+				<div>
+					<img class="FEUERWERK-RECHTS" src="../../images/feuerwerk.gif" alt="Feuerwerk">
+				</div>
+
+
+			<div class="INFOBOX-WEITER">
+
+				<img class="BILDINFOBOX-ENDE-BLAZE" src="../../images/Prinzessin.png" alt="Green Shade">
+
+				<div class="TEXT-ENDE">
+					<div>
+						Fantastische Arbeit! Das hast du toll gemacht!<br>
+						Als Belohnung bekommst du von mir einen geheimen Code.<br><br>
+						<div class="CODE-AUSGABE">cds-157</div><br>
+						Schreibe ihn dir auf und bewahre ihn gut! Wenn du später weitermachen möchtest, kannst Du ihn unter "Spiel fortsetzen" im Menü eingeben, um zum nächsten Kapitel zu kommen.
+					</div>
+				</div>
+
+				<button class="BTNWEITER" onclick="window.location.href='../kapitel2/solar_blaze.php'">Auf zum nächsten Kapitel!</button>
+			</div>
+
+		</main>
+	</div>
 			
 	<script>
 		

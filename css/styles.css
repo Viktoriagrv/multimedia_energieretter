@@ -3,12 +3,17 @@
 		html, body {
 			margin: 0;
 			padding: 0;
-			heigth: 100%; /* Die Höhe des Viewports soll immer 100% betragen */
+			heigth: 100%; 									/* Die Höhe des Viewports soll immer 100% betragen */
 			font-family: "open sans";
 			display: flex;
 			flex-direction: column;
-			overflow: hidden; /* Verhindert das Scrollen der Seite */
+			background-color: #e3f2fd; 						/* hellerblauer Hintergrund auf den Kapitelstartseiten*/
+			overflow: hidden; 								/* Verhindert das Scrollen der Seite */
 		}
+
+	.ALLES{
+		width: 1920px;
+	}
 
 /* Hintergrundvideo */
 		#backgroundVideo {
@@ -186,7 +191,184 @@
 			display: block;
 		}
 
+/* Missionsstart-Startseite*/
 
+		.WELT-STARTSEITE{
+			position:absolute;
+			top: 20%;
+			left: 45%;
+			height: 60%;
+			width:auto;
+			visibility:visible;
+			transition-property: height, top, left;					/* betreffende Deklarationen (über Pseudoklassen) */
+			transition-duration: 5s;								/* Dauer (n) */
+			transition-timing-function: ease-in-out;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			transition-delay: 2s;
+		}
+	
+		
+		.BLASE-STARTSEITE{
+			position: absolute;
+			padding: 25px;
+			top:23%;
+			left:22%;
+			height:auto;
+			width: 13%;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #285238;
+			text-align: left;
+			border-radius: 20px 20px 20px 0px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			z-index: 4;
+			visibility:visible;
+		}
+		
+		.HERO-STARTSEITE{
+			position:absolute;
+			height:40%;
+			width:auto;
+			bottom:15%;
+			left:6%;
+			visibility:visible;
+			
+		}
+		
+		.HELFEN-STARTSEITE{
+			position:absolute;
+			bottom:20%;
+			left:23%;
+			height:7%;
+			width: auto;
+			padding: 15px;
+           	font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+		}
+		
+		.HELFEN-STARTSEITE:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+
+/*Codeeingabe*/
+
+		.HELD-CODE{
+			position:absolute;
+			top:30%;
+			left:10%;
+			height: 60%;
+            width: auto;
+			}
+
+        #sprechblase {
+            position: absolute;
+			top:20%;
+			left: 30%;
+            width:20%;
+            height:28%;
+            border-radius: 20px 20px 20px 0px;
+            background-color: white;
+            box-shadow: 5px 5px 10px 0px gray;
+            padding: 20px;
+            text-align: left;
+            font-family: "open sans";
+            font-size: 1.5rem;
+			color: #285238; 
+        }
+  						
+		.HEADER-CODE{
+			position:absolute;
+			top:25%;
+			left:60%;
+			font-family: "bangers";
+			font-size:4rem;
+			color: #e8a723;
+		}
+
+		.CODE{
+			position: absolute;
+			top:42%;
+			left: 60%;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 40%;
+            text-align: left;
+            font-family: "bangers";
+            font-size: 2rem;
+			color: #285238; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		
+		
+		.EINGEBEN{
+			position:absolute;
+			top:55%;
+			left: 60%;
+            height: 5%;
+            width: 10%;
+            font-family: "bangers";
+            font-size: 2rem;
+			color: #e8a723;
+			text-decoration: none;  
+            background-color: #285238;
+            border-radius: 10px;
+        }
+		
+		.EINGEBEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+		
+		.FEHLER-CODE{
+			position:absolute;
+			bottom:6%;
+			left: 18%;
+            height: auto;
+            width: auto;
+			padding: 15px;
+            font-family: "bangers";
+            font-size: 1.5rem;
+			letter-spacing: 0.05em;
+			color: #e8a723;
+			text-decoration: none;  
+            background-color: #285238;
+            border-radius: 10px;
+        }
+		
+		.FEHLER-CODE:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+		
+		
+		.FEHLERMELDUNG-CODE{
+			position: absolute;
+			top:20%;
+			left: 30%;
+            width:20%;
+            height: 28%;
+            border-radius: 20px 20px 20px 0px;
+            background-color: white;
+            box-shadow: 5px 5px 10px 0px gray;
+            padding: 20px;
+            text-align: left;
+            font-family: "open sans";
+            font-size: 1.5rem;
+			color: #285238; 
+			visibility: hidden;
+			z-index:5;
+			
+		}
 /*allgemein Weltkarten-Styles*/
 
 		.WELTKARTE{
@@ -1508,7 +1690,7 @@
 			height:35%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-duration: 1.5s;						/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1621,7 +1803,6 @@
 			}
 		}
 
-	
 		.BLAZE-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
@@ -1629,7 +1810,7 @@
 			height:40%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
-			animation-duration: 1.5s;							/* Dauer (n) */
+			animation-duration: 2s;							/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
@@ -1647,6 +1828,15 @@
 			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
 				transform: rotate(360deg);
 			}
+		}
+		
+		.BLUMEN-KAPITELSTART{
+			position:absolute;
+			bottom:0%;
+			right: 1%;
+			height:28%;
+			width:auto;
+			visibility: hidden;		
 		}
 
 		.THUNDER-KAPITELSTART{
@@ -1711,6 +1901,7 @@
 			}
 		}
 
+		
 		.SONIC-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
@@ -1877,6 +2068,162 @@
 			visibility:hidden;
 		}
 
+		.BTNLINKS{
+			display: inline-block;
+            padding: 20px 30px;
+            font-family: 'Bangers';
+            font-size: 2rem;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+            color: #e8a723;
+            background-color: #285238;
+			border: 2px;
+			border-color: #285238;
+            border-radius: 8px;	
+			cursor: pointer;
+		}
+		
+		.BTNLINKS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			
+		}
+		
+		
+		.HEADER-SOLAR{
+			position: absolute;
+			top: 16%;
+			left: 8%;
+			font-family: "bangers";
+			color: #e8a723;
+			font-size: 5rem;
+			}
+			
+		.SOLARPANEL{
+			position:absolute;
+			bottom:7%;
+			left: 3%;
+			height:60%;
+			width:auto;
+			}
+		
+		.INFOBLASE{
+			position: absolute;
+			top: 26%;
+			left: 37%;
+			height: 12%;
+			width: auto;
+			z-index:4;
+			cursor: pointer;
+		}
+		
+		.INFOTEXT{
+			position: absolute;
+			top: 31%;
+			left: 43%;
+			font-family: "open sans";
+			font-size: 1.5rem;
+			color: #e8a723;
+			text-align: left;
+			cursor: pointer;
+		}
+		
+		.TEXTBLOCK{
+			position: absolute;
+			right:5%;
+			top: 13%;
+			width:39%;
+			height: auto;
+			font-family: "open sans";
+			font-size: 2rem;
+			color: #285238;
+			text-align: left;
+			visibility: visible;
+		}
+		
+		.ANTWORTEN{
+			position: absolute;
+			left: 15%;
+			
+		}
+		
+		.TEXT{
+			font-family: "open sans";
+			font-size: 2rem;
+			color:#285238;
+			text-align:left;
+			}
+		
+		.PRUEFEN{
+			display: inline-block;
+            padding: 20px 30px;
+            font-family: 'Bangers';
+            font-size: 2rem;
+			text-decoration: none;
+			letter-spacing: 0.05em;
+            color: #e8a723;
+            background-color: #285238;
+			border: 2px;
+			border-color: white;
+            border-radius: 8px;	
+			cursor: pointer;
+		}
+		
+		.PRUEFEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
+		
+		.ABSCHLUSSTEXT{
+			position: absolute;
+			top: 23%;
+			right: 8%;
+			font-family: "open sans";
+			font-size: 2rem;
+			color: #285238;
+			text-align: left;
+			width: 32%;
+			height: auto;
+			visibility:hidden;
+		}
+		
+		.FEHLERMELDUNG{
+			position: absolute;
+			padding: 30px;
+			right: 20%;
+			top: 20%;
+			height:auto;
+			width: 30%;
+			border-radius: 20px 20px 0px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index: 5;
+		}
+		
+		.WEG{
+			
+			visibility: hidden;
+		}
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
+		#ZU{
+			position:absolute;
+			top: 20px;
+			right: 20px;
+		}
+		
+		.CHECKBOX{
+			height: 1.5rem;
+			width:1.5rem;
+			cursor: pointer;
+		}
+
 	/*Spiel Weltkarte */
 
 		
@@ -2023,9 +2370,6 @@
 			bottom:5.5%;
 			left: 5.5%;
 			height:35%;
-			background-color: transparent;
-			border:5px;
-			border-color: transparent;
 			visibility: hidden;
 		}
 		
@@ -2947,7 +3291,7 @@
 			height:70%;
 			width: auto;
 			visibility: hidden;
-			}
+		}
 
 		.BILDINFOBOX-ENDE-BLAZE{
 			position: absolute;
@@ -2957,7 +3301,7 @@
 			width: auto;
 			transform: rotateY(180deg);
 			visibility: hidden;
-			}
+		}
 
 		.BILDINFOBOX-ENDE-SONIC{
 			position: absolute;
@@ -2967,7 +3311,7 @@
 			width: auto;
 			z-index:5;
 			visibility: hidden;
-			}
+		}
 
 		.SCHUTZSCHILD-ENDE{
 			position: absolute;
@@ -3090,7 +3434,7 @@
 			border: 2px solid #285238;
 			}
 		
-		.CODE{
+		.CODE-AUSGABE{
 			font-family: "bangers";
 			font-size: 3rem;
 			color: #285238;
@@ -3223,6 +3567,64 @@
 		}
 
 /*Kapitel 3 - Wasser */
+
+		.INFOBOX-ABSCHLUSS {
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 13%;
+			left: 22%;
+			height:70%;
+			width: 60%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility:hidden;
+			z-index:5;
+		}
+
+		.BILDINFOBOX-ABSCHLUSS{
+			position: absolute;
+			top:10%;
+			left: 5%;
+			height:70%;
+			width: auto;
+			visibility: hidden;
+		}
+		
+		.TEXT-ABSCHLUSS{
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			height: auto;
+			width: 48%;
+			font-family: "open sans";
+			color: #285238;
+			font-size: 1.6rem;
+			text-align: left;
+		}
+
+		
+		.BTNABSCHLUSS{
+			position: absolute;
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 15%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+		}
+		
+		.BTNABSCHLUSS:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+		}
 
 		.BTNLINKS-WASSER{
 			display: inline-block;
@@ -3374,6 +3776,60 @@
 			width:1.5rem;
 			cursor: pointer;
 		}
+
+/*Zertifikate*/
+
+		.ZERTIFIKAT{
+			position: absolute;
+			top:5%;
+			left: 19%;
+			height:auto;
+			width:70%;
+		}
+		
+		.BTNNEUSTART{
+			position:absolute;
+			bottom: 3%;
+			right: 20%;
+			padding: 8px;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			z-index:4;
+			}
+		
+		.BTNNEUSTART:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+		
+		.BTNDOWNLOAD{
+			position:absolute;
+			bottom: 3%;
+			left: 27%;
+			padding: 8px;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			z-index:4;
+			}
+		
+		.BTNDOWNLOAD:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
 
 /*Sichtbarketi von Elementen*/	
 		
