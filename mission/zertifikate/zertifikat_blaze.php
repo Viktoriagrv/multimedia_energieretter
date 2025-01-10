@@ -75,9 +75,9 @@
 	
 		<div class="INFOBOX-KLIMA">
 			
-			<img  class="ZERTIFIKAT" src="../../images/urkunde_scarlet.png" alt="Urkunde als Energieretter">
+			<img  class="ZERTIFIKAT" src="../../images/urkunde_blaze.png" alt="Urkunde als Energieretter">
 			<br>
-			<a href="../../images/urkunde_scarlet.pdf" download><button class="BTNDOWNLOAD">Download Urkunde</button></a>
+			<a href="../../images/urkunde_blaze.pdf" download><button class="BTNDOWNLOAD">Download Urkunde</button></a>
 			<button class="BTNNEUSTART" onclick="window.location.href='../superhelden.php'">Spiel neu starten</button>
 			
 		</div>

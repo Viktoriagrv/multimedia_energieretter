@@ -82,7 +82,7 @@
 		
 		<div class="INFOBOX">
 			
-			<img class="BILDINFOBOX-SCARLET" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<img class="BILDINFOBOX-KNIGHT" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="TEXT-START">
 				Klasse gemacht! Du hast den letzten Test mit Bravour bestanden.<br><br>
 				Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
@@ -120,7 +120,7 @@
 		<img class="WASSERKRAFT3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 		
 		
-			<img class="SCARLET-KARTE" src="../../images/BadGirl.png" alt="Scarlett Shade">
+			<img class="KNIGHT-KARTE" src="../../images/Prinz.png" alt="Golden Knight">
 			<div class="SPRECHBLASE1">
 				Ziehe die Wasserkraftwerke unten auf die richtigen Punkte auf der Weltkarte.
 			</div>
@@ -201,7 +201,7 @@
 		
 		<div class="INFOBOX-ABSCHLUSS">
 			
-			<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/BadGirl.png" alt="Scarlet Shade">
+			<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/Prinz.png" alt="Golden Knight">
 			
 			<div class="TEXT-ABSCHLUSS">
 				<div>
@@ -211,7 +211,7 @@
 				</div>
 			</div>
 								
-			<button class="BTNABSCHLUSS" onclick="window.location.href='../zertifikate/zertifikat_scarlet.php'">Zu Deiner Urkunde</button>
+			<button class="BTNABSCHLUSS" onclick="window.location.href='../zertifikate/zertifikat_knight.php'">Zu Deiner Urkunde</button>
 		</div>
 		
     </main>
@@ -219,22 +219,12 @@
 			
 	<script>
 		
-		document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseover", ScarletWeg);
-			document.querySelector(".BILDINFOBOX-SCARLET").addEventListener("mouseout", ScarletDa);
-
-			function ScarletWeg(){
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
-			}
-			function ScarletDa(){
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.remove("WEG");
-			}
-		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
-				document.querySelector(".BILDINFOBOX-SCARLET").classList.add("WEG");
-				document.querySelector(".SCARLET-KARTE").classList.add("ZEIGEN");
+				document.querySelector(".BILDINFOBOX-KNIGHT").classList.add("WEG");
+				document.querySelector(".KNIGHT-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WASSERKRAFT1").classList.add("ZEIGEN");
 				document.querySelector(".WASSERKRAFT2").classList.add("ZEIGEN");
@@ -242,17 +232,6 @@
 			}
 		
 		
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseover",ScarlettUnsichtbar);
-		document.querySelector(".SCARLET-KARTE").addEventListener("mouseout",ScarlettSichtbar);
-		
-		function ScarlettUnsichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.add("WEG");
-		}
-		
-		function ScarlettSichtbar(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("WEG");
-		}
-				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
 				document.querySelector('#DROPEUROPA').addEventListener('mouseover',ZeigeEuropa);   	//Bei Mouseover wird die Funktion "ZeigeEuropa" ausgeführt und es öffnet sich eine kleine Info zu dem Standort
 				document.querySelector('#DROPEUROPA').addEventListener('mouseout',EuropaAus);		//Geht der Mousezeiger weiter, wird die Funktion EuropaAus augeführt und die Info schließt sich wieder
@@ -479,23 +458,13 @@
 			}
 		
 		function AlleAbgelegt(){
-			document.querySelector(".SCARLET-KARTE").classList.remove("ZEIGEN");
+			document.querySelector(".KNIGHT-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
 			document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
 		}
-		
-		document.querySelector(".BILDINFOBOX-ABSCHLUSS").addEventListener("mouseover", HeroWegEnde);
-			document.querySelector(".BILDINFOBOX-ABSCHLUSS").addEventListener("mouseout", HeroDaEnde);
-
-			function HeroWegEnde(){
-				document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.remove("ZEIGEN");
-			}
-			function HeroDaEnde(){
-				document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
-			}
 		
 	</script>
 	

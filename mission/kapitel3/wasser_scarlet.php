@@ -30,8 +30,8 @@
 		<img class="LANDSCHAFT-WASSERKRAFTWERK" src="../../images/wasserkraftwerk.png" alt="Landschaft mit Wasserkraftwerk">
 		
 		<div>
-			<img class="INFOBLASE-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">
+			<img class="INFOBLASE-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_scarlet.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_scarlet.php'">
 				Erfahre mehr <br>
 				über Wasserkraft!
 			</p>
@@ -77,12 +77,12 @@
 					
 					Oder lese noch mehr über Wasserkraft
 					<br><br>
-					<button  class="BTNLINKS-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">Zum Retterwissen Wasserkraft</button>
+					<button  class="BTNLINKS-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_scarlet.php'">Zum Retterwissen Wasserkraft</button>
 						
 				</div>						
 		</div>
 		
-		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlet Shade">
 		
 	</main>
 

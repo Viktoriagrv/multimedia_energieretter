@@ -30,8 +30,8 @@
 		<img class="LANDSCHAFT-WASSERKRAFTWERK" src="../../images/wasserkraftwerk.png" alt="Landschaft mit Wasserkraftwerk">
 		
 		<div>
-			<img class="INFOBLASE-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'" src="../../images/InfoBlase.png" alt="Infoblase">
-			<p class="INFOTEXT-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">
+			<img class="INFOBLASE-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_knight.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<p class="INFOTEXT-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_knight.php'">
 				Erfahre mehr <br>
 				über Wasserkraft!
 			</p>
@@ -64,7 +64,7 @@
 		</div>
 		
 		<div class="ABSCHLUSSTEXT-KAPITELSTART">
-			<button  class="BTNLINKS-WASSER" onclick="window.location.href='karte_wasser_scarlet.php'">Zur Weltkarte</button>
+			<button  class="BTNLINKS-WASSER" onclick="window.location.href='karte_wasser_knight.php'">Zur Weltkarte</button>
 		</div>
 		
 		<div class="FEHLERMELDUNG">
@@ -77,12 +77,12 @@
 					
 					Oder lese noch mehr über Wasserkraft
 					<br><br>
-					<button  class="BTNLINKS-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser.php'">Zum Retterwissen Wasserkraft</button>
+					<button  class="BTNLINKS-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser_knight.php'">Zum Retterwissen Wasserkraft</button>
 						
 				</div>						
 		</div>
 		
-		<img class="SCARLET-KAPITELSTART" src="../../images/BadGirl.png" alt="Scarlett Shade">
+		<img class="KNIGHT-KAPITELSTART" src="../../images/Prinz.png" alt="Golden Knight">
 		
 	</main>
 
@@ -112,7 +112,7 @@
 			document.querySelector(".TEXTBLOCK-WASSER").classList.add("WEG");
 			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
 			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
-			document.querySelector(".SCARLET-KAPITELSTART").style.animationPlayState = "running";
+			document.querySelector(".KNIGHT-KAPITELSTART").style.animationPlayState = "running";
 			
 		}
 		
