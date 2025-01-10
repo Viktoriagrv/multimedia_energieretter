@@ -12,7 +12,7 @@
 	<style>
 		
 		body{
-			background-color: #e3f2fd; /* HELLBLAUER HINTERGRUND, WASSER-THEMA background-color: #19325F;*/
+			background-color: #e3f2fd; 
 		}
 	
 	</style>
@@ -31,7 +31,7 @@
     <img class="SOLAR" src="../../../images/Solarenergie.png" alt="Solarenergie">
 
 
-    <img class="HERO" src="../../../images/BadBoy.png" alt="BadBoy">
+    <img class="HERO" src="../../../images/BadBoy.png" alt="Sonic">
 
     <div class="SPRECHBLASE">
 
@@ -73,23 +73,23 @@
     <details>
         <summary>Was sind Solaranlagen?</summary>
         <div class="AKKORDEON-INHALT">
-            <p>Solaranlagen sind Geräte, die Sonnenenergie in elektrische Energie umwandeln. Sie bestehen in der Regel aus einem 
-                <span class="HERVORHEBEN" data-infokasten="Platten, die das Sonnenlicht auffangen und in Strom umwandeln.">Solarmodul</span>, 
-                einer 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die Geräte, die das Sonnenlicht in Strom umwandeln.">Photovoltaikzelle</span> 
-                und einem 
-                
-                <span class="HERVORHEBEN" data-infokasten="Maschine, die Strom speichert, um ihn später zu verwenden.">Speicher</span>. 
-                <br><br> Die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Platten, die das Sonnenlicht einfangen und in Strom umwandeln.">Solarmodule</span> 
-                sind die Teile der Anlage, die das Licht der Sonne auffangen. Sie sind meistens auf Dächern oder Feldern montiert. <br><br> Diese Anlagen werden oft in großen Feldern oder auf Häuserdächern betrieben, um so viel Sonnenenergie wie möglich zu nutzen. Die Technik hat sich im Laufe der Jahre verbessert, um effizienter und umweltfreundlicher zu werden.</p>
+    <p>Solaranlagen sind Geräte, die Sonnenlicht in Strom umwandeln. Sie bestehen aus 
+        <span class="HERVORHEBEN" data-infokasten="Platten, die das Sonnenlicht einfangen und in Strom umwandeln.">Solarmodulen</span>, 
+		
+        <span class="HERVORHEBEN" data-infokasten="Die kleinen Teile in den Solarmodulen, die das Sonnenlicht in Strom verwandeln.">Photovoltaikzellen</span> 
+		
+        und einem <span class="HERVORHEBEN" data-infokasten="Ein Gerät, das Strom speichert, damit man ihn später verwenden kann.">Speicher</span>, 
+		
+        der den Strom aufbewahrt. <br><br> 
+		
+		Die <span class="HERVORHEBEN" data-infokasten="Platten, die das Sonnenlicht einfangen und in Strom umwandeln.">Solarmodule</span> 
+		sind die Teile, die das Sonnenlicht auffangen. Sie werden oft auf Dächern von Häusern oder in großen Feldern aufgestellt. <br><br>
+    </p>
         </div>
     </details>
     
     <details>
-        <summary>Sonnenenergie und Umwelt</summary>
+        <summary>Wie hilft Solarenergie der Umwelt?</summary>
         <div class="AKKORDEON-INHALT">
             <p>Sonnenenergie ist besonders umweltfreundlich, weil sie keine 
                 <span class="HERVORHEBEN" data-infokasten="Luftverschmutzung, die durch Verbrennen von Kohle, Öl oder Gas entsteht.">Luftverschmutzung</span> verursacht und keine 
@@ -112,29 +112,27 @@
     </details>
 
     <details>
-        <summary>Zukunft</summary>
+        <summary>Welche Orte eignen sich für Solaranlagen?</summary>
         <div class="AKKORDEON-INHALT">
-            <p>Sonnenenergie hat eine wichtige Rolle in der 
-                <span class="HERVORHEBEN" data-infokasten="Der Prozess, bei dem wir auf erneuerbare Energiequellen umsteigen, um die Umwelt zu schützen.">Energiewende</span>. 
-                Sie hilft dabei, unseren 
-                
-                <span class="HERVORHEBEN" data-infokasten="Der gesamte Stromverbrauch in einem Land oder einer Region.">Strombedarf</span> 
-                mit 
-                
-                <span class="HERVORHEBEN" data-infokasten="Energie, die aus der Sonne kommt.">sauberer Energie</span> 
-                zu decken und die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die Abhängigkeit von nicht erneuerbaren Energiequellen wie Kohle oder Öl.">Abhängigkeit von fossilen Brennstoffen</span> 
-                zu reduzieren. <br><br> In Zukunft könnten 
-                
-                <span class="HERVORHEBEN" data-infokasten="Solaranlagen, die noch besser und leistungsfähiger sind.">Solaranlagen</span> 
-                noch effizienter werden, sodass wir noch mehr Strom aus der Sonne gewinnen können. <br><br> Die Energiewende setzt auf saubere Energiequellen wie die Sonne, um die Umwelt zu schonen und die Energie für die Zukunft sicherzustellen.</p>
+<p>
+   Solaranlagen funktionieren besonders gut an Orten, wo viel Sonne scheint und nichts im Weg ist. Ein Beispiel sind 
+	
+	<span class="HERVORHEBEN" data-infokasten="Offene Felder sind große, flache Gebiete ohne viele Bäume oder Gebäude, die viel Sonne einfangen.">weite Flächen von offenen Feldern</span>, die viel Platz bieten und den ganzen Tag direkte Sonneneinstrahlung erhalten. Auch 
+	
+	<span class="HERVORHEBEN" data-infokasten="Dächer von Gebäuden wie Häusern oder Schulen sind oft ungenutzt und erhalten den ganzen Tag viel Sonnenlicht.">Dächer von Gebäuden</span> eignen sich gut, weil sie viel Sonne abbekommen. In 
+	
+	<span class="HERVORHEBEN" data-infokasten="Wüsten sind trockene, heiße Gebiete, in denen es fast immer sonnig ist und keine hohen Bäume oder Wolken das Sonnenlicht blockieren.">Wüsten</span> scheint die Sonne fast den ganzen Tag, und es gibt keine Hindernisse. <br><br> Weniger geeignet sind Orte wie 
+	
+	<span class="HERVORHEBEN" data-infokasten="Regenwälder sind Gebiete mit vielen Bäumen und starkem Regen, die oft bewölkt sind und das Sonnenlicht blockieren.">Regenwälder</span>, wo Bäume das Sonnenlicht blockieren und es oft bewölkt oder regnerisch ist.
+</p>
+
+
         </div>
     </details>
 </div>
 
     </div>
-
+<a class="ZURUECK-SOLAR" href="../../../mission/kapitel2/solar_sonic.php">Zurück zur Mission!</a>
 </main>
 
 
@@ -156,7 +154,9 @@ function ZeigeSprechblaseWeiter() {
 
     // AKKORDEONS SICHTBAR MACHEN
     document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
-}
+	// ZURUECK-BUTTON SICHTBAR
+	document.querySelector(".ZURUECK-SOLAR").style.visibility = "visible";
+	}
 
 // Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)
 document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
@@ -179,3 +179,4 @@ document.querySelectorAll('.AKKORDEON details summary').forEach(summary => {
 
 </body>
 </html>
+
