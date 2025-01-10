@@ -69,7 +69,7 @@
 		<img class="LANDSCHAFT-WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 		
 		<div>
-			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_blaze.php'" src="../../images/InfoBlase.png" alt="Infoblase">
+			<img class="INFOBLASE-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind/wind_blaze.php'" src="../../images/InfoBlase.png" alt="Infoblase">
 			<p class="INFOTEXT-WIND" onclick="window.location.href='../../retterwissen/zukunftsenergien/wind_blaze.php'">
 				Erfahre mehr <br>
 				über Windkraft!
