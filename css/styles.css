@@ -3409,7 +3409,7 @@
             align-items: center;
             gap: 130px; /* Regelmäßiger Abstand zwischen den Buttons */
             position: relative;
-            margin-top: 1%; /* Abstand zu den Icons */
+            margin-top: 7%; /* Abstand zu den Icons */
         }
 
         .ZUKUNFTSENERGIE-button-container a {
@@ -3417,7 +3417,7 @@
             padding: 15px 30px; /* Größere Padding */
             font-size: 18px;
             text-decoration: none;
-            color: white;
+            color: #e8a723;
             background-color: #285238; 
             border-radius: 10px;
             transition: background-color 0.3s ease;
@@ -3426,7 +3426,7 @@
         }
 
         .ZUKUNFTSENERGIE-button-container a.hovered {
-            background-color: #FFD700; /* Leicht heller beim Hover */
+            background-color: #45a049; /*HOVER-FARBE*/
         }
 
         .ZUKUNFTSENERGIE-hintergrundbild {
@@ -3655,7 +3655,7 @@
 
 /* Buttons für Retterwssen - Zurück zur Mission */
 
-		.ZURUECK-WIND{
+		.ZURUECK-WIND, .ZURUECK-WASSER, .ZURUECK-SOLAR{
 			position: absolute;
 			bottom: 59%;
 			left: 8%;
@@ -3675,10 +3675,8 @@
 			z-index:3;
 		}
 		
-		.ZURUECK-WIND:hover{
+		.ZURUECK-WIND:hover, .ZURUECK-WASSER:hover, .ZURUECK-SOLAR:hover{
 			color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
 		}
-
-		

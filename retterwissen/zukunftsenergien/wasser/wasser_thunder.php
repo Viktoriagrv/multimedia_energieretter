@@ -31,21 +31,22 @@
     <img class="WASSERKRAFTBILD" src="../../../images/wasserkraftwerk.png" alt="Wasserkraftwerk">
 
 
-    <img class="HERO" src="../../../images/AquaBoy.png" alt="Aqua Boy">
+    <img class="HERO" src="../../../images/AquaBoy.png" alt="Thunder">
 
     <div class="SPRECHBLASE">
 
-        <p>Hallo! <br> <br>
-            Es freut mich, dass du mehr über Wasserkraft lernen willst.<br> <br>
-            Wasserkraft nutzt die Kraft von fließendem Wasser, um Strom zu machen, und ist super wichtig für unsere Zukunft!</p>
+        <p>   Es ist toll, dass du mehr über Wasserkraft erfahren möchtest! <br><br>
+			  Diese Art von Energie ist sehr wichtig, weil sie uns hilft, die Umwelt zu schützen und saubere Energie zu nutzen, die immer wieder erneuert wird – so wie der Fluss des Wassers! 
+       <br><br>
 
         <img class="PFEIL-RE" src="../../../images/pfeil_gelb_rechts.png" alt="Gelber Pfeil nach rechts">
     </div>
 
     <div class="SPRECHBLASEWEITER">
 
-        <p>Hier sind einige Informationen zu Wasserkraft! <br> <br>
-			Viel Spaß beim Rumstöbern.</p>
+        <p>   Hier gibt es viele spannende Informationen rund um das Thema Wasserkraft! <br><br>
+   			  Es gibt einiges zu lernen und zu entdecken, also viel Spaß beim Stöbern und Forschen!
+    </p>
 
         <img class="PFEIL-LI" src="../../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
@@ -54,99 +55,107 @@
 
 
   <div class="AKKORDEON">
+<details>
+    <summary>Was ist Wasserkraft?</summary>
+    <div class="AKKORDEON-INHALT">
+        <p>
+            <span class="HERVORHEBEN" data-infokasten="Wasserkraft ist Energie, die wir aus fließendem Wasser gewinnen.">Wasserkraft</span> 
+			ist eine besondere Art von Energie, die wir aus Wasser bekommen. Wenn Wasser fließt oder von oben herab fällt, nutzt man diese Bewegung, um Strom zu machen. <br><br> Das fließende Wasser dreht spezielle 
+			
+			<span class="HERVORHEBEN" data-infokasten="Turbinen sind große Räder, die sich drehen, wenn Wasser dagegen fließt.">Turbinen</span> 
+			– das sind große, sich drehende Räder. Diese Turbinen drehen sich und machen einen 
+			
+			<span class="HERVORHEBEN" data-infokasten="Der Generator ist eine Maschine, die die Bewegung in Strom umwandelt.">Generator</span> 
+			an. Der Generator verwandelt die Bewegung in 
+			
+			<span class="HERVORHEBEN" data-infokasten="Die Energie, die durch Bewegung erzeugt wird.">Strom</span>,
+			den wir für viele Dinge wie Licht und Fernsehen nutzen können.</p>
+    </div>
+</details>
+
+    
     <details>
-        <summary>Was ist Wasserkraft?</summary>
-        <div class="AKKORDEON-INHALT">
-            <p>
-                <span class="HERVORHEBEN" data-infokasten="Eine Art von Energie, die aus Wasser gewonnen wird. Fließendes Wasser wird genutzt, um Strom zu erzeugen.">Wasserkraft</span>
-                ist eine erneuerbare Energiequelle, die durch die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die Bewegung von Wasser, z. B. in Flüssen oder bei fallendem Wasser in Staudämmen.">Bewegung von Wasser</span>
-                erzeugt wird. Wenn Wasser fließt oder fällt, treibt es die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Drehscheiben oder Turbinen, die durch die Kraft des Wassers bewegt werden. Diese wandeln die Energie des Wassers in mechanische Energie um.">Turbinen</span>
-                an, die in Wasserkraftwerken installiert sind. <br><br> Diese Bewegung treibt einen 
-                
-                <span class="HERVORHEBEN" data-infokasten="Ein Gerät, das Bewegung in elektrische Energie umwandelt. In einem Wasserkraftwerk wird der Generator durch die Bewegung der Turbinen aktiviert.">Generator</span>
-                an, der die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die Energie, die ein bewegter Körper hat. Im Fall der Wasserkraft ist es die Bewegung des Wassers.">kinetische Energie</span>
-                des Wassers in elektrischen Strom umwandelt. Der erzeugte Strom wird zur Beleuchtung, für elektrische Geräte und zur Heizung verwendet.</p>
+		<summary>Was sind Wasserkraftwerke?</summary>
+    <div class="AKKORDEON-INHALT">
+        <p>Wasserkraftwerke nutzen das fließende Wasser, um Strom zu erzeugen. Sie bestehen aus einem 
+			
+			<span class="HERVORHEBEN" data-infokasten="Ein Staudamm ist eine große Wand, die das Wasser aufhält und in einem bestimmten Bereich speichert. Diese gespeicherte Energie wird genutzt, um Turbinen anzutreiben.">Staudamm</span>, der das Wasser speichert und kontrolliert in eine 
+			
+			<span class="HERVORHEBEN" data-infokasten="Die Turbine ist ein Gerät, das sich dreht, wenn Wasser darüber fließt. Es wandelt die Bewegung des Wassers in mechanische Energie um.">Turbine</span> leitet. Die Turbine wird durch das fließende Wasser in Bewegung gesetzt und dreht sich. Diese Bewegung der Turbine treibt einen 
+			
+			<span class="HERVORHEBEN" data-infokasten="Der Generator wandelt die mechanische Energie der Turbine in elektrische Energie um.">Generator</span> 
+			an, der den Strom erzeugt. <br><br> Wasserkraftwerke werden in Gebieten gebaut, wo es viel fließendes Wasser gibt, wie in 
+			
+			<span class="HERVORHEBEN" data-infokasten="Flüsse sind große, natürliche Wasserläufe, die sich durch Länder und Landschaften bewegen.">Flüssen</span> 
+			oder an 
+			
+			<span class="HERVORHEBEN" data-infokasten="Ein Wasserfall entsteht, wenn Wasser über eine Kante oder Klippe fällt, oft aus großer Höhe.">Wasserfällen</span>. 
+			Der fließende Wasserstrom gibt die nötige Energie, um die Turbinen zu drehen und Strom zu erzeugen.</p>
         </div>
     </details>
     
-    <details>
-        <summary>Was sind Wasserkraftwerke?</summary>
-        <div class="AKKORDEON-INHALT">
-            <p>Wasserkraftwerke sind Anlagen, die kinetische Energie von Wasser in elektrische Energie umwandeln. Sie bestehen in der Regel aus einem 
-                <span class="HERVORHEBEN" data-infokasten="Ein Staudamm oder eine Struktur, die Wasser leitet, um es zur Stromerzeugung zu nutzen.">Staudamm</span>, 
-                einer 
-                
-                <span class="HERVORHEBEN" data-infokasten="Ein rotierendes Gerät, das Energie durch die Bewegung von Wasser erzeugt.">Turbine</span> 
-                und einem 
-                
-                <span class="HERVORHEBEN" data-infokasten="Maschine, die mechanische Energie in elektrische Energie umwandelt.">Generator</span>. 
-                <br><br> Die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Turbinen, die durch die Bewegung des Wassers angetrieben werden, um Strom zu erzeugen.">Turbinen</span> 
-                sind die rotierenden Teile, die durch die Kraft des Wassers in Bewegung gesetzt werden und den Generator antreiben. Diese Anlagen werden oft in Flüssen oder an Wasserfällen betrieben, um eine größere Menge an Strom zu erzeugen. <br><br> Die Technik hat sich im Laufe der Jahre weiterentwickelt, um effizienter und umweltfreundlicher zu werden.</p>
-        </div>
-    </details>
-    
-    <details>
-        <summary>Wasserkraft und Umwelt</summary>
-        <div class="AKKORDEON-INHALT">
-            <p>Wasserkraft ist besonders umweltfreundlich, da sie keine 
-                <span class="HERVORHEBEN" data-infokasten="Luftverschmutzung, die durch Verbrennung fossiler Brennstoffe entsteht.">Luftverschmutzung</span> verursacht und keine 
-                
-                <span class="HERVORHEBEN" data-infokasten="Gase, die zur globalen Erwärmung beitragen.">Treibhausgase</span> 
-                freisetzt. Sie nutzt die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die Bewegung von Wasser, z. B. in Flüssen oder durch fallendes Wasser.">Kraft des Wassers</span>
-                als Energiequelle und hinterlässt keine 
-                
-                <span class="HERVORHEBEN" data-infokasten="Abfälle oder Stoffe, die in die Umwelt gelangen und ihre Qualität beeinträchtigen.">Abfälle</span> 
-                oder 
-                
-                <span class="HERVORHEBEN" data-infokasten="Stoffe, die die Umwelt negativ beeinflussen.">Verunreinigungen</span>.
-                <br><br> Durch die Nutzung von Wasserkraft werden weniger 
-                
-                <span class="HERVORHEBEN" data-infokasten="Rohstoffe, die für die Energieproduktion benötigt werden.">natürliche Ressourcen</span> 
-                wie Kohle und Gas benötigt, was gut für die Umwelt ist. <br><br> Wasserkraftwerke sollten so gebaut werden, dass sie die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Die natürliche Umgebung ohne negative Auswirkungen.">Natur</span>
-                möglichst wenig beeinträchtigen, zum Beispiel durch den Schutz von Fischwanderungen und lokalen Ökosystemen.</p>
-        </div>
-    </details>
+<details>
+    <summary>Wie hilft Wasserkraft der Umwelt?</summary>
+    <div class="AKKORDEON-INHALT">
+        <p>
+			Wasserkraft ist  gut für die Umwelt, weil sie keine 
+			
+			<span class="HERVORHEBEN" data-infokasten="Luftverschmutzung entsteht, wenn durch die Verbrennung von fossilen Brennstoffen Schadstoffe in die Luft gelangen.">Luftverschmutzung</span> 
+			verursacht und keine schädlichen 
+			
+			<span class="HERVORHEBEN" data-infokasten="Treibhausgase sind unsichtbare Gase, die dafür sorgen, dass die Erde immer wärmer wird.">Treibhausgase</span>
+			in die Luft schickt. Stattdessen nutzt sie die 
+			
+			<span class="HERVORHEBEN" data-infokasten="Die Kraft des Wassers wird verwendet, um durch das Fließen oder Fallen von Wasser Energie zu erzeugen.">Kraft des Wassers</span>,
+			das in Flüssen oder Stauseen fließt, um Strom zu erzeugen. Und das ganz sauber, ohne 
+			
+			<span class="HERVORHEBEN" data-infokasten="Abfälle sind Sachen, die nach der Benutzung übrig bleiben und der Umwelt schaden können.">Abfälle</span> 
+			oder 
+			
+			<span class="HERVORHEBEN" data-infokasten="Verunreinigungen schaden der Umwelt, indem sie die Luft, das Wasser oder den Boden verschmutzen.">Verunreinigungen</span>
+			zu hinterlassen! <br><br> Wenn wir Wasserkraft nutzen, brauchen wir viel weniger 
+			
+			<span class="HERVORHEBEN" data-infokasten="Rohstoffe sind natürliche Materialien, die wir zum Beispiel für die Energieproduktion brauchen.">Rohstoffe</span>
+			wie Kohle oder Gas, die die Erde belasten. <br><br> Aber es ist wichtig, dass Wasserkraftwerke die 
+			
+			<span class="HERVORHEBEN" data-infokasten="Natur ist die Umgebung, in der Tiere und Pflanzen leben, und sollte durch den Bau von Kraftwerken nicht gestört werden.">Natur</span>
+			so wenig wie möglich beeinträchtigen. Das bedeutet, dass wir auf Dinge wie den Schutz von <span class="HERVORHEBEN" data-infokasten="Fische müssen auf ihrem Weg von einem Gewässer zum anderen wandern können.">Fischwanderungen</span> und die Erhaltung von Ökosystemen achten müssen, um den Flüssen und Tieren zu helfen!</p>
+    </div>
+</details>
 
     <details>
-        <summary>Zukunft</summary>
-        <div class="AKKORDEON-INHALT">
-            <p>Wasserkraft hat eine wichtige Rolle in der 
-                <span class="HERVORHEBEN" data-infokasten="Der Übergang zu erneuerbaren Energien, um die Umwelt zu schützen und die fossile Brennstoffnutzung zu reduzieren.">Energiewende</span>. 
-                Sie trägt dazu bei, unseren 
-                
-                <span class="HERVORHEBEN" data-infokasten="Der gesamte elektrische Energieverbrauch eines Gebiets oder Landes.">Strombedarf</span> 
-                mit 
-                
-                <span class="HERVORHEBEN" data-infokasten="Energie, die aus natürlichen Quellen wie Wasser gewonnen wird.">sauberer Energie</span> 
-                zu decken und die 
-                
-                <span class="HERVORHEBEN" data-infokasten="Abhängigkeit von fossilen Brennstoffen wie Kohle, Öl und Gas.">Abhängigkeit von fossilen Brennstoffen</span> 
-                zu verringern. <br><br> In Zukunft könnten 
-                
-                <span class="HERVORHEBEN" data-infokasten="Wasserkraftwerke, die noch effizienter und leistungsfähiger sind.">Wasserkraftwerke</span> 
-                noch leistungsfähiger und effizienter werden, wodurch sie noch mehr 
-                
-                <span class="HERVORHEBEN" data-infokasten="Elektrische Energie, die durch Wasserkraft erzeugt wird.">Strom</span> 
-                produzieren könnten. <br><br> Die Energiewende setzt auf erneuerbare Energiequellen wie Wasser, um die Umwelt zu schützen und eine nachhaltige Energieversorgung sicherzustellen.</p>
+<summary>Welche Orte eignen sich für Wasserkraftwerke?</summary>
+<div class="AKKORDEON-INHALT">
+      <p>
+		Wasserkraft funktioniert besonders gut an Orten, wo viel Wasser fließt. Zum Beispiel in großen 
+		
+		<span class="HERVORHEBEN" data-infokasten="Flüsse sind große Wasserstraßen, die durch das Land fließen. In ihnen kann das Wasser stark und schnell fließen.">Flüssen</span>,
+		  die sich super eignen, um Strom zu erzeugen, weil das Wasser schnell fließt. Auch in 
+		  
+		  <span class="HERVORHEBEN" data-infokasten="Stauseen sind große Teiche, in denen viel Wasser gespeichert wird, um später Strom zu machen.">Stauseen</span>
+		  kann man Wasserkraft nutzen. Dort wird das Wasser gestaut und dann so abgelassen, dass es Strom produziert. <br><br> An der 
+		  
+		  <span class="HERVORHEBEN" data-infokasten="An der Küste gibt es Gezeiten, also das ständige Auf und Ab des Wassers. Das kann auch genutzt werden, um Strom zu machen.">Küste</span>
+		  kann man auch die Kraft der Gezeiten nutzen, wenn das Wasser durch das Hin- und Herbewegen Strom erzeugt. Und in 
+		  
+		  <span class="HERVORHEBEN" data-infokasten="In den Bergen fließen Flüsse oft sehr schnell. In solchen Gebirgen kann das Wasser mit viel Energie fließen, die man gut für Strom nutzen kann.">Gebirgen</span> 
+		  fließen die Flüsse oft besonders schnell, was für die Wasserkraft auch super ist. <br><br>
+   
+		  Aber an <span class="HERVORHEBEN" data-infokasten="An Orten, wo es wenig Wasser gibt, kann man keine Wasserkraftwerke bauen.">trockenen Orten</span>,
+		  wo kaum Wasser fließt, funktioniert Wasserkraft leider nicht. Auch in Gebieten ohne Flüsse oder Stauseen ist es schwierig, ein Wasserkraftwerk zu bauen.
+    </p>
+</div>
+
+
         </div>
+
     </details>
 </div>
 
 
     </div>
-
+	<!-- Zurück-Button -->
+<a class="ZURUECK-WASSER" href="../../../mission/kapitel3/wasser_thunder.php">Zurück zur Mission!</a>
 </main>
 
 
@@ -168,8 +177,12 @@ function ZeigeSprechblaseWeiter() {
 
     // AKKORDEONS SICHTBAR MACHEN
     document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
-}
-
+	
+	// ZURUECK-BUTTON SICHTBAR
+document.querySelector(".ZURUECK-WASSER").style.visibility = "visible";
+	
+	}
+	
 // Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)
 document.querySelector(".PFEIL-LI").addEventListener("click", ZeigeSprechblase);
 
