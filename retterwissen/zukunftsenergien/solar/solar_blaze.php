@@ -44,7 +44,7 @@
 
     <div class="SPRECHBLASEWEITER">
 
-        <p>Lass uns zusammen entdecken, warum Solarenergie so wichtig ist!</p>
+        <p> Lass uns zusammen entdecken, warum Solarenergie so wichtig ist!</p>
 
         <img class="PFEIL-LI" src="../../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
