@@ -12,7 +12,7 @@
 	
 	<style>	
 		
-		.STARTBUTTON{
+		.STARTBUTTON-INDEX{
 			position: absolute;
 			justify-content: center;
 			background-color: transparent;
@@ -31,15 +31,11 @@
 			cursor:pointer;
 		}
 		
-		.STARTBUTTON:hover {
+		.STARTBUTTON-INDEX:hover {
 			transform: scale(1.3);
 		}
-		
-		.WEG{
-			visibility: hidden;
-		}
-		
-		.KLEIN{
+				
+		.KLEIN-INDEX{
 			position: absolute;
 			top: 10%;
 			left:20%;
@@ -48,11 +44,11 @@
 			cursor: auto;
 			}	
 		
-		.KLEIN:hover{
+		.KLEIN-INDEX:hover{
 			transform: none;
 		}
 		
-		.SCROLL{
+		.SCROLL-INDEX{
 			position: absolute;
 			justify-content: center;
 			align-items:center;
@@ -71,14 +67,14 @@
 		}
 		
 		
-		.MINI {
+		.MINI-INDEX{
 			position: relative;
 			height: 50%;
 			align-items: center;
 			left: 30%;
 		}
 			
-		.LANGSAMER{
+		.PAUSE{
 			position:absolute;
 			bottom: 10%;
 			left: 31%;
@@ -96,7 +92,7 @@
 			cursor: pointer;
 		}
 		
-		.LANGSAMER:hover {
+		.PAUSE:hover {
             color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
@@ -150,7 +146,7 @@
 			border: 2px solid #285238;
         }
 			
-		.WELT{
+		.WELT-INDEX{
 			position:absolute;
 			top: 35.8%;
 			Left:41.7%;
@@ -163,7 +159,7 @@
 			transition-delay: 2s;
 		}
 		
-		.GROSS{
+		.GROSS-INDEX{
 			top: 20%;
 			left: 45%;
 			height: 60%;
@@ -171,11 +167,11 @@
 			visibility:visible;
 		}
 		
-		.WELT:focus{
+		.WELT-INDEX:focus{
 			height: 60%;
 		}
 		
-		.BLASE{
+		.BLASE-INDEX{
 			position: absolute;
 			padding: 25px;
 			top:23%;
@@ -193,7 +189,7 @@
 			visibility:hidden;
 		}
 		
-		.HERO{
+		.HERO-INDEX{
 			position:absolute;
 			height:0%;
 			top:35%;
@@ -206,7 +202,7 @@
 			
 		}
 		
-		.HEROGROSS{
+		.HEROGROSS-INDEX{
 			height:40%;
 			bottom:15%;
 			top:auto;
@@ -214,7 +210,7 @@
 			visibility:visible;	
 		}
 		
-		.HELFEN{
+		.HELFEN-INDEX{
 			position:absolute;
 			bottom:20%;
 			left:23%;
@@ -232,11 +228,12 @@
 			cursor: pointer;
 		}
 		
-		.HELFEN:hover{
+		.HELFEN-INDEX:hover{
 			color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
 		}
+		
 		
 		
 		.ZEIGEN-TEXT{
@@ -246,14 +243,19 @@
 			opacity: 1;
 		}
 		
+		
+		.BLASEZEIGEN-INDEX{
+			transition-property: visibility;
+			transition-delay: 7s;
+			visibility: visible;
+		}
+		
 		.ZEIGEN{
 			visibility: visible;
 		}
 		
-		.BLASEZEIGEN{
-			transition-property: visibility;
-			transition-delay: 7s;
-			visibility: visible;
+		.WEG{
+			visibility: hidden;
 		}
 				
 		</style>
@@ -273,32 +275,32 @@
 	
 		<main>	
 				
-			<button id="START" class="STARTBUTTON">Die Welt ist <br> in Gefahr!</button>
+			<button id="START-INDEX" class="STARTBUTTON-INDEX">Die Welt ist <br> in Gefahr!</button>
 			
-			<div class="SCROLL" id="scrolltext"> 
+			<div class="SCROLL-INDEX" id="scrolltext"> 
 				<p><br><br><br><br><br>
 					Wir befinden uns im Jahr 2025. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus. Die Zukunft unserer Erde steht auf dem Spiel!<br><br>
 					Aber zum Glück hast du die Chance, etwas zu verändern! Wähle dir einen Verbündeten und reise mit ihm zusammen als Energieretter zu unserer Erde, um unsere Welt vor dieser düsteren Zukunft zu bewahren. Hier auf dieser Website kannst du entdecken, welche Energiequellen uns helfen, die Umwelt zu schützen – ob mit der Kraft der Sonne, dem Wind oder dem Wasser.<br><br>
 					Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!
 					<br><br><br><br>
 				</p>
-				<img class="MINI" src="images/weltkugel.png" alt="Weltkugel">
+				<img class="MINI-INDEX" src="images/weltkugel.png" alt="Weltkugel">
 				<br><br><br><br><br>
 			</div>
 				
 			<div class="icon-container">
-				<img class="WELT" src="images/weltkugel.png" alt="Weltkugel">
-				<img class="HERO" src="images/Prinz.png" alt="Golden Knight">
+				<img class="WELT-INDEX" src="images/weltkugel.png" alt="Weltkugel">
+				<img class="HERO-INDEX" src="images/Prinz.png" alt="Golden Knight">
 			</div>
 						
-			<div class="BLASE"> 
+			<div class="BLASE-INDEX"> 
 				<p>Bevor du mit der Mission startest, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
 			</div>
 			
-			<button class="HELFEN" onclick="window.location.href='mission/superhelden.php'">Zu den Superhelden</button>
+			<button class="HELFEN-INDEX" onclick="window.location.href='mission/superhelden.php'">Zu den Superhelden</button>
 			
 			
-			<button class="LANGSAMER">Langsamer</button>						
+			<button class="PAUSE">Pause</button>						
 			<button class="NORMAL">Normal</button>
 			<button class="SCHNELLER">Schneller</button>
 		
@@ -307,25 +309,25 @@
 	
 	<script> 
 	
-		document.querySelector(".STARTBUTTON").addEventListener("click", TextStarten);
+		document.querySelector(".STARTBUTTON-INDEX").addEventListener("click", TextStarten);
 		document.querySelector(".SCHNELLER").addEventListener("click", TextSchneller);
 		document.querySelector(".NORMAL").addEventListener("click", TextNormal);
-		document.querySelector(".LANGSAMER").addEventListener("click", TextLangsamer);
+		document.querySelector(".PAUSE").addEventListener("click", TextPause);
 		
 
 			var timer1;																
 		
 		// Funktion, die nach dem Ende des Textes ausgeführt wird
 		function AbschlussStarten(){
-			document.querySelector(".STARTBUTTON").classList.add("WEG");
-			document.querySelector(".SCROLL").classList.remove("ZEIGEN-TEXT");
-			document.querySelector(".LANGSAMER").classList.remove("ZEIGEN");
+			document.querySelector(".STARTBUTTON-INDEX").classList.add("WEG");
+			document.querySelector(".SCROLL-INDEX").classList.remove("ZEIGEN-TEXT");
+			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
 			document.querySelector(".NORMAL").classList.remove("ZEIGEN");
 			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
-			document.querySelector(".WELT").classList.add("GROSS");
-			document.querySelector(".HERO").classList.add("HEROGROSS");
-			document.querySelector(".BLASE").classList.add("BLASEZEIGEN");
-			document.querySelector(".HELFEN").classList.add("BLASEZEIGEN");
+			document.querySelector(".WELT-INDEX").classList.add("GROSS-INDEX");
+			document.querySelector(".HERO-INDEX").classList.add("HEROGROSS-INDEX");
+			document.querySelector(".BLASE-INDEX").classList.add("BLASEZEIGEN-INDEX");
+			document.querySelector(".HELFEN-INDEX").classList.add("BLASEZEIGEN-INDEX");
 		}
 		
 		// Funktion, die den Text kontinuierlich scrollt
@@ -347,9 +349,9 @@
 
 		// Funktion zum Starten des Textes
 		function TextStarten(){
-			document.querySelector(".STARTBUTTON").classList.add("KLEIN");
-			document.querySelector(".SCROLL").classList.add("ZEIGEN-TEXT");
-			document.querySelector(".LANGSAMER").classList.add("ZEIGEN");
+			document.querySelector(".STARTBUTTON-INDEX").classList.add("KLEIN-INDEX");
+			document.querySelector(".SCROLL-INDEX").classList.add("ZEIGEN-TEXT");
+			document.querySelector(".PAUSE").classList.add("ZEIGEN");
 			document.querySelector(".NORMAL").classList.add("ZEIGEN");
 			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
 			document.querySelector("#scrolltext").scrollTop -=-1;
@@ -370,14 +372,12 @@
 		function TextNormal(){
 			clearInterval(timer1);
 			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setInterval(scrollText, 40); 															
+			timer1 = setInterval(scrollText, 50); 															
 		}
 		
 		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes
-		function TextLangsamer(){
-			clearInterval(timer1);
-			document.querySelector("#scrolltext").scrollTop -=-1;
-			timer1 = setInterval(scrollText, 80); 															
+		function TextPause(){
+			clearInterval(timer1);														
 		}
 		
 		

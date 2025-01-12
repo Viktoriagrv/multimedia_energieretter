@@ -75,7 +75,7 @@
 			</div>
 
 			<div class="INFOSUEDOSTASIEN-KLIMA">
-				<h1>Abstreben von Korallenriffe</h1>
+				<h1>Absterben von Korallenriffen</h1>
 				Tropische und subtropische Korallenriffe sind Ökosysteme mit der höchsten Biodiversität auf der Erde. Sie haben einen enormen Einfluss auf die Nahrungskette im Meer, den Nähr- und Kohlenstoffkreislauf im Ozean und sind entscheidend für die Lebensbedingungen von Millionen Menschen weltweit. Sie bieten zum Beispiel Küstenschutz und sind wichtig für die Tourismuswirtschaft.<br><br>
 				All die oben genannten wichtigen Funktionen der Korallenriffe fallen bei einem Absterben weg.
 			</div>
