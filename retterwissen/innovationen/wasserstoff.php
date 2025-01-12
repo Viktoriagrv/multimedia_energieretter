@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="include/css/styles.css"> <!-- Pfad zu deiner CSS-Datei -->
 
     <!-- Einbinden der Navigationsleiste -->
-    <?php include 'include/partials/nav.php'; ?>
+    <?php include 'include/partials/nav.htm'; ?>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
     </main>
 
     <!-- Einbinden des Footers -->
-    <?php include 'include/partials/footer.php'; ?>
+    <?php include 'include/partials/footer.htm'; ?>
 
     <!-- Bootstrap JS und Abhängigkeiten für Dropdown und Toggler -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

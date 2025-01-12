@@ -7,7 +7,7 @@
   <!-- Einbinden der Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-	 <link rel="stylesheet" href="../../css/styles.css">
+	 <link rel="stylesheet" href="../../../css/styles.css">
 	
 	<style>
 		
@@ -21,7 +21,34 @@
 
 <body>
 
-<?php include '../../include/nav.php'; ?>
+<nav class="navbar-custom">
+
+			<!-- Branding -->
+			<a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.htm">Die Energieretter</a>
+
+			<!-- Navigation Menu -->
+			<div class="menu">
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/index.htm" class="UEBERSCHRIFT">Vorspann</a>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Mission</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.htm" class="UNTERUEBERSCHRIFT">Missionsstart</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.htm" class="UNTERUEBERSCHRIFT">Die Superhelden</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/codeeingabe.htm" class="UNTERUEBERSCHRIFT">Spiel fortsetzen</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Retterwissen</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/zukunftsenergien.htm" class="UNTERUEBERSCHRIFT">Zukunftsenergie</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/innovationen.htm" class="UNTERUEBERSCHRIFT">Innovationen</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.htm" class="UNTERUEBERSCHRIFT">Klimaschäden</a>
+					</div>
+				</div>
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.htm" class="UEBERSCHRIFT">Impressum</a>
+			</div>
+		</nav>
+
 
 <main>
 
@@ -29,10 +56,10 @@
                          Windkraft
 	</div>
 	
-    <img class="WINDRAD" src="../../images/Windenergie.png" alt="Landschaft mit Windrädern">
+    <img class="WINDRAD" src="../../../images/Windenergie.png" alt="Landschaft mit Windrädern">
 
 
-    <img class="HERO" src="../../images/BadGirl.png" alt="Scarlett Shade">
+    <img class="HERO" src="../../../images/Prinzessin.png" alt="Blaze">
 
     <div class="SPRECHBLASE">
 
@@ -49,11 +76,9 @@
         <p>Ich habe dir hier einige interessante Themen reinfliegen lassen. Klick einfach drauf und stöber rum. <br> <br>
             Viel Spaß beim Lernen!</p>
 
-        <img class="PFEIL-LI" src="../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
+        <img class="PFEIL-LI" src="../../../images/pfeil_gelb_links.png" alt="Gelber Pfeil nach links">
 
     </div>
-	
-
 
     <div class="AKKORDEON">
         <details>
@@ -161,10 +186,10 @@
 
     </div>
 
-	<div> 
+	<!-- Zurück-Button -->
+<a class="ZURUECK-WIND" href="../../../mission/kapitel1/wind_blaze.htm">Zurück zur Mission!</a>
 	
 	
-	</div>
 </main>
 
 
@@ -182,11 +207,15 @@
 		document.querySelector(".PFEIL-RE").addEventListener("click", ZeigeSprechblaseWeiter);
 
 		function ZeigeSprechblaseWeiter() {
+
 			document.querySelector(".SPRECHBLASE").style.display = "none"; // Verstecke die erste Sprechblase
 			document.querySelector(".SPRECHBLASEWEITER").style.display = "block"; // Zeige die zweite Sprechblase
 
 			// AKKORDEONS SICHTBAR MACHEN
 			document.querySelector(".AKKORDEON").classList.add("AKKORDEON-SICHTBAR");
+			
+			// ZURUECK-BUTTON SICHTBAR
+			document.querySelector(".ZURUECK-WIND").style.visibility = "visible";
 		}
 
 		// Wenn der linke Pfeil geklickt wird (Zeigt die erste Sprechblase wieder an)
@@ -206,9 +235,9 @@
 		});
 
 
+
   
 </script>
 
 </body>
 </html>
-

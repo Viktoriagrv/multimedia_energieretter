@@ -106,7 +106,7 @@ a {
 </head>
 
 <body>
-    <?php include '../include/nav.php'; ?>
+    <?php include '../include/nav.htm'; ?>
     
     <!-- Hintergrundvideo -->
     <video autoplay muted loop id="hintergrundVideo">
