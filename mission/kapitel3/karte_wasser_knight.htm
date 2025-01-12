@@ -53,7 +53,7 @@
 					Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
 				</div>
 
-				<button class="KARTE-ANSEHEN">Wasserkraftwerke platzieren</button>
+				<button class="KARTE-ANSEHEN-WASSER">Wasserkraftwerke platzieren</button>
 			</div>
 
 			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
@@ -150,7 +150,7 @@
 				<img class="KRAFTWERKATLANTIK" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 			</div>
 
-			<div class="FEHLERMELDUNG">
+			<div class="FEHLERMELDUNG-KARTE">
 				<button id="SCHLIESSEN">&times;</button>
 				<div>Das war leider nicht richtig.</div>
 			</div>
@@ -184,7 +184,7 @@
 			
 	<script>
 		
-		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
+		document.querySelector(".KARTE-ANSEHEN-WASSER").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
@@ -382,14 +382,14 @@
 		}
 		
 		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.add("ZEIGEN");
 		}
 		
 		
 		document.querySelector("#SCHLIESSEN").addEventListener("click",AlleAus);
 		
 		function AlleAus(){
-			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.remove("ZEIGEN");
 		}
 		
 			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion

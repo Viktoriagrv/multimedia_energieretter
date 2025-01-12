@@ -206,7 +206,6 @@
 				document.querySelector(".INFOBOX").classList.add("WEG");
 				document.querySelector(".SCHUTZSCHILD").classList.add("WEG");
 				document.querySelector(".BILDINFOBOX-SONIC").classList.add("WEG");
-				document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
 				document.querySelector(".SONIC-KARTE").classList.add("ZEIGEN");
 				document.querySelector(".SPRECHBLASE1").classList.add("ZEIGEN");
 				document.querySelector(".WINDRAD1").classList.add("ZEIGEN");
@@ -215,16 +214,16 @@
 			}
 		
 		document.querySelector(".SONIC-KARTE").addEventListener("mouseover",SchutzschildGrossDa);
-					document.querySelector(".SONIC-KARTE").addEventListener("mouseout",SchutzschildGrossWeg);
+				document.querySelector(".SONIC-KARTE").addEventListener("mouseout",SchutzschildGrossWeg);
 
 
-					function SchutzschildGrossDa(){
-						document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
-					}
+				function SchutzschildGrossDa(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
+				}
 
-					function SchutzschildGrossWeg(){
-						document.querySelector(".SCHUTZSCHILD-GROSS").classList.remove("ZEIGEN");
-					}
+				function SchutzschildGrossWeg(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.remove("ZEIGEN");
+				}
 		
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
@@ -454,7 +453,6 @@
 			document.querySelector(".SONIC-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-WEITER").classList.add("ZEIGEN");
-			document.querySelector(".SCHUTZSCHILD-ENDE").classList.add("ZEIGEN");
 			document.querySelector(".BILDINFOBOX-ENDE-SONIC").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");

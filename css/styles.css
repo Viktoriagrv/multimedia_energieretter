@@ -202,7 +202,6 @@
 			font-size: 12rem;
 			line-height: 1.1;
 			color: #e8a723;
-			border: none;
 			top: 25%;
 			left: 20%;
 			text-align: center;				
@@ -267,6 +266,7 @@
             text-decoration: none;
             letter-spacing: 0.05em;
             background-color: #285238;
+			border: 2px solid #285238;
             border-radius: 10px;
             z-index: 5;
 			visibility: hidden;
@@ -291,6 +291,7 @@
             text-decoration: none;
             letter-spacing: 0.05em;
             background-color: #285238;
+			border: 2px solid #285238;
             border-radius: 10px;
             z-index: 5;
 			visibility: hidden;
@@ -315,6 +316,7 @@
             text-decoration: none;
 			letter-spacing: 0.05em;
             background-color: #285238;
+			border: 2px solid #285238;
             border-radius: 10px;
 			z-index: 5;
 			visibility: hidden;
@@ -1186,6 +1188,7 @@
 			background-color: #45a049;
 			border: 2px solid #285238;
 			}
+
 		
 		
 		.SPRECHBLASE-KLIMA {
@@ -1211,8 +1214,8 @@
 		
 		.LOS-KLIMA{
 			position: absolute;
-			bottom: 8%;
-			left: 18%;
+			bottom: 15%;
+			left: 16%;
 			display: inline-block;
             padding: 15px 20px;
             font-family: 'Bangers';
@@ -1970,47 +1973,24 @@
 			height:35%;
 			width:auto;
 			transform: rotateY(180deg);
-			animation-name: FLIEGENKAPITELSTART;						/* Name (keyframe) */
-			animation-duration: 7s;							/* Dauer (n) */
+			animation-name: DREHEN;							/* Name (keyframe) */
+			animation-duration: 1.5s;						/* Dauer (n) */
 			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
 			animation-delay: 0s;							/* Verzögerung (n) */
 			animation-iteration-count: 1;					/* Wiederholungen (n, infinite) */
 			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
-			animation-fill-mode: forwards;					/* Endzustand (none, forwards, backwards, both) */
-			animation-play-state: paused;					/* für JavaScript (running, paused) */
-			animation-finished: reverse;
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: paused;
 			visibility: visible;
 			z-index:5;
 		}
 		
-		
-		@keyframes FLIEGENKAPITELSTART {
-			49.99% {
-				bottom:60%;
-				right: 80%;
-				transform: rotateY(180deg);
+		@keyframes DREHEN {									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
 			}
-			50% {
-				bottom:60%;
-				right: 80%;
-				transform: rotateY(0deg);
-			}
-			
-			75%{
-				bottom:10%;
-				right:80%;
-				transform: rotateY(0deg);
-			}
-			
-			99.99%{
-				bottom:10%;
-				right: 5%;
-				transform: rotateY(0deg);
-			}
-			100% {
-				bottom:10%;
-				right: 5%;
-				transform: rotateY(180deg);
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
 			}
 		}
 
@@ -2112,7 +2092,7 @@
 
 		.TITAN-KAPITELSTART{
 			position: absolute;
-			bottom: 10%;
+			bottom: 6%;
 			right:7%;
 			height:40%;
 			width:auto;
@@ -2145,7 +2125,7 @@
 		.SONIC-KAPITELSTART{
 			position: absolute;
 			bottom: 10%;
-			right:7%;
+			right:9%;
 			height:40%;
 			width:auto;
 			animation-name: DREHEN;							/* Name (keyframe) */
@@ -2168,6 +2148,36 @@
 				transform: rotate(360deg);
 			}
 		}
+
+		.SCHUTZSCHILD-KAPITELSTART{
+			position: absolute;
+			bottom:1%;
+			right: 0%;
+			height:57%;
+			width: auto;
+			visibility: hidden;
+			opacity: 0.3;
+			z-index:3;
+			animation-name: DREHENKAPITELSTART;							/* Name (keyframe) */
+			animation-duration: 5s;							/* Dauer (n) */
+			animation-timing-function: linear;				/* Geschwindigkeit (ease, ease-in, ease-out, ease-in-out, linear) */
+			animation-delay: 0s;							/* Verzögerung (n) */
+			animation-iteration-count: infinite;			/* Wiederholungen (n, infinite) */
+			animation-direction: normal;					/* Abspielrichtung (normal, reverse, alternate, alternate-reverse) */
+			animation-fill-mode: none;						/* Endzustand (none, forwards, backwards, both) */
+			animation-play-state: running;
+		}
+		
+		
+		@keyframes DREHENKAPITELSTART{									/* Prozentwerte beziehen sich auf die Dauer der Animation */
+			50% {											/* bei 50% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(180deg);
+			}
+			100% {											/* bei 100% der Dauer werden die folgenden Deklarationen dargestellt */
+				transform: rotate(360deg);
+			}
+		}
+
 
 		.GRATULATION{
 			position: absolute;
@@ -2201,6 +2211,7 @@
 			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+			z-index:4;
 		}
 		
 		.BTNLINKS-WIND:hover{
@@ -2306,6 +2317,7 @@
 			width: 32%;
 			height: auto;
 			visibility:hidden;
+			z-index:5;
 		}
 
 		.BTNLINKS{
@@ -2321,6 +2333,7 @@
 			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+			z-index:5;
 		}
 		
 		.BTNLINKS:hover{
@@ -2448,10 +2461,7 @@
 			visibility: hidden;
 		}
 		
-		.ZEIGEN{
-			visibility: visible;
-		}
-		
+	
 		#ZU{
 			position:absolute;
 			top: 20px;
@@ -2510,6 +2520,27 @@
 			}
 		
 		.KARTE-ANSEHEN:hover{
+			color: #285238;
+			background-color: #45a049;
+			border: 2px solid #285238;
+			}
+
+		.KARTE-ANSEHEN-WASSER{
+			position: absolute;
+			padding: 15px 20px;
+			bottom: 7%;
+			right: 6%;
+			font-family: "bangers";
+			font-size: 2rem;
+			color: #e8a723;
+			letter-spacing: 0.05em;
+			border: 2px solid #285238;
+			border-radius: 5px;
+			background-color: #285238;
+			cursor: pointer;
+			}
+		
+		.KARTE-ANSEHEN-WASSER:hover{
 			color: #285238;
 			background-color: #45a049;
 			border: 2px solid #285238;
@@ -2586,6 +2617,7 @@
 			bottom:4%;
 			left: 2%;
 			height:35%;
+			transform: rotateY(180deg);
 			visibility: hidden;
 		}
 
@@ -2731,6 +2763,7 @@
 			color:#285238;
 			text-align: left;
 			visibility: hidden;
+			z-index:4;
 		}
 		
 		.SPRECHBLASE2 {
@@ -2751,6 +2784,7 @@
 			color:#285238;
 			text-align: left;
 			visibility: hidden;
+			z-index:4;
 		}
 		
 		.SPRECHBLASE3 {
@@ -2771,6 +2805,7 @@
 			color:#285238;
 			text-align: left;
 			visibility: hidden;
+			z-index:4;
 		}
 		
 		.DROP-ELEMENT {
@@ -3634,9 +3669,19 @@
 		.BILDINFOBOX-ABSCHLUSS{
 			position: absolute;
 			top:10%;
-			left: 5%;
+			left: 12%;
 			height:70%;
 			width: auto;
+			visibility: hidden;
+			}
+
+		.BILDINFOBOX-ABSCHLUSS-BLAZE{
+			position: absolute;
+			top:10%;
+			left: 10%;
+			height:70%;
+			width: auto;
+			transform:rotateY(180deg);
 			visibility: hidden;
 			}
 		
@@ -3699,6 +3744,7 @@
 			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+			z-index:4;
 		}
 		
 		.BTNLINKS-SOLAR:hover{
@@ -3879,6 +3925,7 @@
 			border-color: #285238;
             border-radius: 8px;	
 			cursor: pointer;
+			z-index:4;
 		}
 		
 		.BTNLINKS-WASSER:hover{
@@ -4023,8 +4070,8 @@
 			position: absolute;
 			top:5%;
 			left: 19%;
-			height:auto;
-			width:70%;
+			height:80%;
+			width:auto;
 		}
 		
 		.BTNNEUSTART{

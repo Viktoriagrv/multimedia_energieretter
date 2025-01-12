@@ -47,6 +47,7 @@
 
 			<div class="INFOBOX">
 
+				<img class="SCHUTZSCHILD" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 				<img class="BILDINFOBOX-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 				<div class="TEXT-START">
 					Ich bin beeindruckt! Auch diesen Test hast du bestanden.<br><br>
@@ -85,6 +86,7 @@
 			<img class="SOLARPANEL3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/solarpanel.png" alt="Solarpanel mit Sonne">
 
 
+				<img class="SCHUTZSCHILD-GROSS" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 				<img class="SONIC-KARTE" src="../../images/BadBoy.png" alt="Sonic Shield">
 				<div class="SPRECHBLASE1">
 					Ziehe die Solarpanels unten auf die richtigen Stellen auf der Weltkarte.
@@ -165,7 +167,8 @@
 
 
 			<div class="INFOBOX-WEITER">
-
+				
+				<img class="SCHUTZSCHILD-ENDE" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 				<img class="BILDINFOBOX-ENDE-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 
 				<div class="TEXT-ENDE">
@@ -185,6 +188,18 @@
 			
 	<script>
 		
+		document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseover",SchutzschildDa);
+					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseout",SchutzschildWeg);
+
+
+					function SchutzschildDa(){
+						document.querySelector(".SCHUTZSCHILD").classList.add("ZEIGEN");
+					}
+
+					function SchutzschildWeg(){
+						document.querySelector(".SCHUTZSCHILD").classList.remove("ZEIGEN");
+					}
+		
 		
 		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
 		
@@ -197,6 +212,18 @@
 				document.querySelector(".SOLARPANEL2").classList.add("ZEIGEN");
 				document.querySelector(".SOLARPANEL3").classList.add("ZEIGEN");
 			}
+		
+		document.querySelector(".SONIC-KARTE").addEventListener("mouseover",SchutzschildGrossDa);
+				document.querySelector(".SONIC-KARTE").addEventListener("mouseout",SchutzschildGrossWeg);
+
+
+				function SchutzschildGrossDa(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
+				}
+
+				function SchutzschildGrossWeg(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.remove("ZEIGEN");
+				}
 		
 				
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
@@ -383,14 +410,14 @@
 		}
 		
 		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.add("ZEIGEN");
 		}
 		
 		
 		document.querySelector("#SCHLIESSEN").addEventListener("click",AlleAus);
 		
 		function AlleAus(){
-			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.remove("ZEIGEN");
 		}
 		
 			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion
@@ -430,6 +457,18 @@
 			document.querySelector(".BILDINFOBOX-ENDE-SONIC").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseover",SchutzschildBoxDa);
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseout",SchutzschildBoxWeg);
+
+
+		function SchutzschildBoxDa(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.add("ZEIGEN");
+		}
+
+		function SchutzschildBoxWeg(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.remove("ZEIGEN");
 		}
 		
 	</script>

@@ -104,12 +104,26 @@
 					</div>						
 			</div>
 
+			<img class="SCHUTZSCHILD-KAPITELSTART" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 			<img class="SONIC-KAPITELSTART" src="../../images/BadBoy.png" alt="Sonic Shield">
 
 		</main>
 	</div>
 	
     <script>	
+		
+		document.querySelector(".SONIC-KAPITELSTART").addEventListener("mouseover",SchutzschildDa);
+			document.querySelector(".SONIC-KAPITELSTART").addEventListener("mouseout",SchutzschildWeg);
+
+
+			function SchutzschildDa(){
+				document.querySelector(".SCHUTZSCHILD-KAPITELSTART").classList.add("ZEIGEN");
+			}
+
+			function SchutzschildWeg(){
+				document.querySelector(".SCHUTZSCHILD-KAPITELSTART").classList.remove("ZEIGEN");
+			}
+	
 				
 		document.querySelector(".PRUEFEN").addEventListener("click",AuswahlAuswerten);
 		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);

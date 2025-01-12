@@ -46,14 +46,15 @@
 		<main>
 
 			<div class="INFOBOX">
-
+				
+				<img class="SCHUTZSCHILD" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 				<img class="BILDINFOBOX-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 				<div class="TEXT-START">
 					Klasse gemacht! Du hast den letzten Test mit Bravour bestanden.<br><br>
 					Jetzt ist es noch deine Aufgabe, die Wasserkraftwerke an den richtigen Stellen auf der Karte zu platzieren, um die Mission zu beenden. Gehe wieder über die gelben Punkte, um kurze Erklärungen über die Standorte zu erhalten. Gib dein Bestes und zeige, was in dir steckt! 
 				</div>
 
-				<button class="KARTE-ANSEHEN">Wasserkraftwerke platzieren</button>
+				<button class="KARTE-ANSEHEN-WASSER">Wasserkraftwerke platzieren</button>
 			</div>
 
 			<img class="WELTKARTE" src="../../images/Weltkarte.png" alt="Weltkarte">
@@ -79,12 +80,13 @@
 				<div class="SIBIRIEN-GRUEN"></div>
 				<div class="MEXIKO-GRUEN"></div>
 			</div>
-
+			
 			<img class="WASSERKRAFT1 DRAG-ELEMENT" id='DRAGA' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 			<img class="WASSERKRAFT2 DRAG-ELEMENT" id='DRAGB' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 			<img class="WASSERKRAFT3 DRAG-ELEMENT" id='DRAGC' draggable='true' src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 
 
+				<img class="SCHUTZSCHILD-GROSS" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
 				<img class="SONIC-KARTE" src="../../images/BadBoy.png" alt="Sonic Shield">
 				<div class="SPRECHBLASE1">
 					Ziehe die Wasserkraftwerke unten auf die richtigen Punkte auf der Weltkarte.
@@ -150,7 +152,7 @@
 				<img class="KRAFTWERKATLANTIK" src="../../images/wasserkraft.png" alt="Wasserkraftwerk">
 			</div>
 
-			<div class="FEHLERMELDUNG">
+			<div class="FEHLERMELDUNG-KARTE">
 				<button id="SCHLIESSEN">&times;</button>
 				<div>Das war leider nicht richtig.</div>
 			</div>
@@ -165,8 +167,9 @@
 
 
 			<div class="INFOBOX-ABSCHLUSS">
-
-				<img class="BILDINFOBOX-ABSCHLUSS" src="../../images/BadBoy.png" alt="Sonic Shield">
+				
+				<img class="SCHUTZSCHILD-ENDE" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
+				<img class="BILDINFOBOX-ENDE-SONIC" src="../../images/BadBoy.png" alt="Sonic Shield">
 
 				<div class="TEXT-ABSCHLUSS">
 					<div>
@@ -183,8 +186,20 @@
 	</div>
 			
 	<script>
+		
+		document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseover",SchutzschildDa);
+					document.querySelector(".BILDINFOBOX-SONIC").addEventListener("mouseout",SchutzschildWeg);
+
+
+					function SchutzschildDa(){
+						document.querySelector(".SCHUTZSCHILD").classList.add("ZEIGEN");
+					}
+
+					function SchutzschildWeg(){
+						document.querySelector(".SCHUTZSCHILD").classList.remove("ZEIGEN");
+					}
 	
-		document.querySelector(".KARTE-ANSEHEN").addEventListener("click",ZeigeWeltkarte);
+		document.querySelector(".KARTE-ANSEHEN-WASSER").addEventListener("click",ZeigeWeltkarte);
 		
 			function ZeigeWeltkarte(){
 				document.querySelector(".INFOBOX").classList.add("WEG");
@@ -195,6 +210,19 @@
 				document.querySelector(".WASSERKRAFT2").classList.add("ZEIGEN");
 				document.querySelector(".WASSERKRAFT3").classList.add("ZEIGEN");
 			}
+		
+		document.querySelector(".SONIC-KARTE").addEventListener("mouseover",SchutzschildGrossDa);
+				document.querySelector(".SONIC-KARTE").addEventListener("mouseout",SchutzschildGrossWeg);
+
+
+				function SchutzschildGrossDa(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.add("ZEIGEN");
+				}
+
+				function SchutzschildGrossWeg(){
+					document.querySelector(".SCHUTZSCHILD-GROSS").classList.remove("ZEIGEN");
+				}
+		
 		
 	
 			//Funktionen, um Infoboxen der einzelnen Standorte anzeigen zu lassen 
@@ -382,14 +410,14 @@
 		}
 		
 		function AblegenFalsch(){
-			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.add("ZEIGEN");
 		}
 		
 		
 		document.querySelector("#SCHLIESSEN").addEventListener("click",AlleAus);
 		
 		function AlleAus(){
-			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			document.querySelector(".FEHLERMELDUNG-KARTE").classList.remove("ZEIGEN");
 		}
 		
 			// zählt alle abgelegte Elemente und startet die Funktion die jeweils angebene Funktion
@@ -426,9 +454,21 @@
 			document.querySelector(".SONIC-KARTE").classList.remove("ZEIGEN");
 			document.querySelector(".SPRECHBLASE1").classList.remove("ZEIGEN");
 			document.querySelector(".INFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
-			document.querySelector(".BILDINFOBOX-ABSCHLUSS").classList.add("ZEIGEN");
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-LINKS").classList.add("ZEIGEN");
 			document.querySelector(".FEUERWERK-RECHTS").classList.add("ZEIGEN");
+		}
+		
+		document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseover",SchutzschildBoxDa);
+			document.querySelector(".BILDINFOBOX-ENDE-SONIC").addEventListener("mouseout",SchutzschildBoxWeg);
+
+
+		function SchutzschildBoxDa(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.add("ZEIGEN");
+		}
+
+		function SchutzschildBoxWeg(){
+			document.querySelector(".SCHUTZSCHILD-ENDE").classList.remove("ZEIGEN");
 		}
 		
 	
