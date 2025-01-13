@@ -2703,7 +2703,7 @@
 		.SOLARPANEL3{
 			position:absolute;
 			bottom:2%;
-			left: 48%;
+			left: 55%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -2736,7 +2736,7 @@
 		.WASSERKRAFT3{
 			position:absolute;
 			bottom:2%;
-			left: 48%;
+			left: 55%;
 			height:13%;
 			width:auto;
 			z-index: 5;
