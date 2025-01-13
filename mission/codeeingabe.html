@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Eingabe</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+	
+	<div class="ALLES">
+		
+		<nav class="navbar-custom">
+
+			<!-- Branding -->
+			<a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html">Die Energieretter</a>
+
+			<!-- Navigation Menu -->
+			<div class="menu">
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/index.html" class="UEBERSCHRIFT">Vorspann</a>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Mission</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html" class="UNTERUEBERSCHRIFT">Missionsstart</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.html" class="UNTERUEBERSCHRIFT">Die Superhelden</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/codeeingabe.html" class="UNTERUEBERSCHRIFT">Spiel fortsetzen</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Retterwissen</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/zukunftsenergien.html" class="UNTERUEBERSCHRIFT">Zukunftsenergie</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/innovationen.html" class="UNTERUEBERSCHRIFT">Innovationen</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.html" class="UNTERUEBERSCHRIFT">Klimaschäden</a>
+					</div>
+				</div>
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.html" class="UEBERSCHRIFT">Impressum</a>
+			</div>
+		</nav>
+		
+		<!-- Hintergrundvideo -->
+		<video autoplay muted loop id="hintergrund-video">
+			<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
+			<source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
+		</video>
+
+
+		<!-- Hauptinhalt -->
+		<main>
+			<img class="HELD-CODE" src="../images/AquaBoy.png" alt="Superheld">
+			<div class="helden-bereich">
+
+				<div id="sprechblase">
+					Du musstest während deiner Mission kurz weg? Kein Problem! 
+					Du erinnerst dich bestimmt, dass du von deinem Superhelden einen Code bekommen hast. Gib diesen einfach ein und mach da weiter, wo du aufgehört hast.
+				</div>
+
+
+				<div>
+					<p class="HEADER-CODE">Gebe deinen Code ein:</p>
+					<input class="CODE" value=''>
+					<button class="EINGEBEN">Weiter</button>		
+				</div>
+
+			<div class="FEHLERMELDUNG-CODE">
+				<div>Das war leider nicht der richtig Code.<br><br>
+					Bist du dir sicher, dass du ihn korrekt eingeben hast? <br><br>
+				</div>
+				<button id="SCHLIESSEN-CODE" class="FEHLER-CODE">Versuche es noch einmal</button>
+			</div>
+		</main>
+			
+	</div>
+
+    <script>
+		
+		
+		document.querySelector(".EINGEBEN").addEventListener('click',EingabeAuswerten);
+		
+		function EingabeAuswerten() {														// Funktion mit Verzweigung
+			if (document.querySelector('input').value.toLowerCase() == "xdf-338"){			// Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_scarlet.html";						// Weiterleiten bei positivem Ergebnis
+				}
+			if(document.querySelector('input').value.toLowerCase() == "iqn-432"){
+				window.location.href = "kapitel3/wasser_scarlet.html";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == "fts-909"){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_knight.html";							// Weiterleiten bei positivem Ergebnis
+			}
+			if(document.querySelector('input').value.toLowerCase() == "bjs-162"){
+				window.location.href = "kapitel3/wasser_knight.html";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == "cds-157"){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_blaze.html";							// Weiterleiten bei positivem Ergebnis
+			}
+			if(document.querySelector('input').value.toLowerCase() == "smc-612"){
+				window.location.href = "kapitel3/wasser_blaze.html";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == "fvk-842"){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_thunder.html";						// Weiterleiten bei positivem Ergebnis
+			}
+			if(document.querySelector('input').value.toLowerCase() == "hsa-792"){
+				window.location.href = "kapitel3/wasser_thunder.html";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == "jko-264"){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_titan.html";							// Weiterleiten bei positivem Ergebnis
+			}
+			if(document.querySelector('input').value.toLowerCase() == "xrg-518"){
+				window.location.href = "kapitel3/wasser_titan.html";
+			}
+			
+			if (document.querySelector('input').value.toLowerCase() == "sdl-204"){			//Überprüfung der Eingabe
+				window.location.href = "kapitel2/solar_sonic.html";							// Weiterleiten bei positivem Ergebnis
+			}
+			if(document.querySelector('input').value.toLowerCase() == "pok-672"){
+				window.location.href = "kapitel3/wasser_sonic.html";
+			}
+			
+			else {
+				ZeigeFehlermeldung();														// Ausgabe bei negativem Ergebnis
+			}
+		}
+		
+		function ZeigeFehlermeldung(){
+			document.querySelector(".FEHLERMELDUNG-CODE").classList.add("ZEIGEN");
+		}
+	
+        document.querySelector("#SCHLIESSEN-CODE").addEventListener("click",FehlermeldungAus);
+		
+		function FehlermeldungAus(){
+			document.querySelector(".FEHLERMELDUNG-CODE").classList.remove("ZEIGEN");
+			document.querySelector("input").value = ""; 									// Eingabefeld leeren (programmiert mit ChatGPT)
+		}
+		
+    </script>
+		
+</body>
+</html>

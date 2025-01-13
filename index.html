@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Die Energieretter</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+	
+	<nav class="navbar-custom">
+	
+    <!-- Branding -->
+    <a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html">Die Energieretter</a>
+    
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="https://mwj-mm-05.kurs.jade-hs.de/index.html" class="UEBERSCHRIFT">Vorspann</a>
+        <div class="dropdown">
+            <button class="UEBERSCHRIFT">Mission</button>
+            <div class="dropdown-content">
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html" class="UNTERUEBERSCHRIFT">Missionsstart</a>
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.html" class="UNTERUEBERSCHRIFT">Die Superhelden</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/mission/codeeingabe.html" class="UNTERUEBERSCHRIFT">Spiel fortsetzen</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="UEBERSCHRIFT">Retterwissen</button>
+            <div class="dropdown-content">
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/zukunftsenergien.html" class="UNTERUEBERSCHRIFT">Zukunftsenergie</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/innovationen.html" class="UNTERUEBERSCHRIFT">Innovationen</a>
+                <a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.html" class="UNTERUEBERSCHRIFT">Klimaschäden</a>
+            </div>
+        </div>
+		<a href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.html" class="UEBERSCHRIFT">Impressum</a>
+    </div>
+</nav>
+	
+       <!-- Hintergrundvideo -->
+		<video autoplay muted loop id="backgroundVideo">
+			<source src="images/background_video.mp4" type="video/mp4">
+			<source src="images/background_video.mp4" type="video/webm">
+		</video>
+
+	
+		<main>	
+				
+			<button id="START-INDEX" class="STARTBUTTON-INDEX">Die Welt ist <br> in Gefahr!</button>
+			
+			<div class="SCROLL-INDEX" id="scrolltext"> 
+				<p><br><br><br><br><br>
+					Wir befinden uns im Jahr 2025. In der Vergangenheit haben die Menschen viel zu wenig Zunkunftsenergien genutzt. Die fossilen Brennstoffe haben unsere Umwelt verschmutzt. Nun breitet sich die Dunkelheit aus. Die Zukunft unserer Erde steht auf dem Spiel!<br><br>
+					Aber zum Glück hast du die Chance, etwas zu verändern! Wähle dir einen Verbündeten und reise mit ihm zusammen als Energieretter zu unserer Erde, um unsere Welt vor dieser düsteren Zukunft zu bewahren. Hier auf dieser Website kannst du entdecken, welche Energiequellen uns helfen, die Umwelt zu schützen – ob mit der Kraft der Sonne, dem Wind oder dem Wasser.<br><br>
+					Bist du bereit für dieses Abenteuer? Begib dich auf eine spannende Reise, lerne die mächtigen Energien unserer Erde kennen, und hilf mit, eine bessere Zukunft zu gestalten. Werde ein wahrer Energieretter und schütze unseren Planeten!
+					<br><br><br><br>
+				</p>
+				<img class="MINI-INDEX" src="images/weltkugel.png" alt="Weltkugel">
+				<br><br><br><br><br>
+			</div>
+				
+			<div class="icon-container">
+				<img class="WELT-INDEX" src="images/weltkugel.png" alt="Weltkugel">
+				<img class="HERO-INDEX" src="images/Prinz.png" alt="Golden Knight">
+			</div>
+						
+			<div class="BLASE-INDEX"> 
+				<p>Bevor du mit der Mission startest, solltest du dir einen von uns Superhelden als Mitstreiter wählen.</p>
+			</div>
+			
+			<button class="HELFEN-INDEX" onclick="window.location.href='mission/superhelden.html'">Zu den Superhelden</button>
+			
+			
+			<button class="PAUSE">Pause</button>						
+			<button class="NORMAL">Normal</button>
+			<button class="SCHNELLER">Schneller</button>
+		
+	</main>
+			
+	
+	<script> 
+	
+		document.querySelector(".STARTBUTTON-INDEX").addEventListener("click", TextStarten);
+		document.querySelector(".SCHNELLER").addEventListener("click", TextSchneller);
+		document.querySelector(".NORMAL").addEventListener("click", TextNormal);
+		document.querySelector(".PAUSE").addEventListener("click", TextPause);
+		
+
+			var timer1;																
+		
+		// Funktion, die nach dem Ende des Textes ausgeführt wird
+		function AbschlussStarten(){
+			document.querySelector(".STARTBUTTON-INDEX").classList.add("WEG");
+			document.querySelector(".SCROLL-INDEX").classList.remove("ZEIGEN-TEXT");
+			document.querySelector(".PAUSE").classList.remove("ZEIGEN");
+			document.querySelector(".NORMAL").classList.remove("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.remove("ZEIGEN");
+			document.querySelector(".WELT-INDEX").classList.add("GROSS-INDEX");
+			document.querySelector(".HERO-INDEX").classList.add("HEROGROSS-INDEX");
+			document.querySelector(".BLASE-INDEX").classList.add("BLASEZEIGEN-INDEX");
+			document.querySelector(".HELFEN-INDEX").classList.add("BLASEZEIGEN-INDEX");
+		}
+		
+		// Funktion, die den Text kontinuierlich scrollt
+		function scrollText() {
+			var scrollTextElement = document.querySelector("#scrolltext");
+
+			// Wenn das Ende des Textes erreicht ist, stoppt der Timer und ruft AbschlussStarten auf
+			if (scrollTextElement.scrollTop + scrollTextElement.clientHeight >= scrollTextElement.scrollHeight) {
+				clearInterval(timer1);
+				AbschlussStarten();
+			}
+			
+
+			else {
+				scrollTextElement.scrollTop += +1; 											// Scrollt den Text um 1 Pixel
+			}
+		}
+		
+
+		// Funktion zum Starten des Textes
+		function TextStarten(){
+			document.querySelector(".STARTBUTTON-INDEX").classList.add("KLEIN-INDEX");
+			document.querySelector(".SCROLL-INDEX").classList.add("ZEIGEN-TEXT");
+			document.querySelector(".PAUSE").classList.add("ZEIGEN");
+			document.querySelector(".NORMAL").classList.add("ZEIGEN");
+			document.querySelector(".SCHNELLER").classList.add("ZEIGEN");
+			document.querySelector("#scrolltext").scrollTop -=-1;
+
+			// Startet den Timer, der den Text scrollen lässt
+			timer1 = setInterval(scrollText, 50); 												// Text scrollt alle 50ms
+			}
+
+		
+		//Funktion zur Erhöhung der Laufgeschwindigkeit des Textes
+		function TextSchneller(){
+			clearInterval(timer1);
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setInterval(scrollText, 10);
+		}
+		
+		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes
+		function TextNormal(){
+			clearInterval(timer1);
+			document.querySelector("#scrolltext").scrollTop -=-1;
+			timer1 = setInterval(scrollText, 50); 															
+		}
+		
+		// Funktion zum Verlangsamen der Laufgeschwindigkeit des Textes
+		function TextPause(){
+			clearInterval(timer1);														
+		}
+		
+		
+		 // Funktion, um Icons schweben zu lassen
+		function floatIcons() {
+				const icons = document.querySelectorAll('.icon-container img'); 	// Alle Icons auswählen
+
+        		icons.forEach(icon => {
+					let position = 0; 												// Startposition
+					let direction = 1; 												// Bewegung nach oben oder unten
+					const maxMovement = 6; 											// Maximale Bewegung in Pixel
+					const stepSize = 0.1; 											// Bewegungsschritt
+
+					const iconFloat = () => {
+						if (position >= maxMovement || position <= -maxMovement) {
+							direction *= -1; // Richtung wechseln
+						}
+						position += direction * stepSize; 							// Position aktualisieren
+						icon.style.transform = `translateY(${position}px)`; 		// Icon bewegen
+						requestAnimationFrame(iconFloat); 							// Animation wiederholen
+					};
+
+            	iconFloat(); 														// Animation starten
+        		});
+					
+    	}
+				
+				// Startet die Funktionen nach dem Laden der Seite
+				document.addEventListener('DOMContentLoaded', () => {
+					floatIcons(); 													// Icons schweben lassen
+				});
+			
+	</script>
+
+</body>
+</html>

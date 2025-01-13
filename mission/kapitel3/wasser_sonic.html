@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>Kapitel Wasserkraft</title>
+
+    <!-- Einbinden der Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../css/styles.css">
+
+</head>
+
+<body>
+	
+	<div class="ALLES">
+	
+		<nav class="navbar-custom">
+
+			<!-- Branding -->
+			<a class="navbar-brand" href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html">Die Energieretter</a>
+
+			<!-- Navigation Menu -->
+			<div class="menu">
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/index.html" class="UEBERSCHRIFT">Vorspann</a>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Mission</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/missionsstart.html" class="UNTERUEBERSCHRIFT">Missionsstart</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/superhelden.html" class="UNTERUEBERSCHRIFT">Die Superhelden</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/mission/codeeingabe.html" class="UNTERUEBERSCHRIFT">Spiel fortsetzen</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button class="UEBERSCHRIFT">Retterwissen</button>
+					<div class="dropdown-content">
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/zukunftsenergien.html" class="UNTERUEBERSCHRIFT">Zukunftsenergie</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/innovationen.html" class="UNTERUEBERSCHRIFT">Innovationen</a>
+						<a href="https://mwj-mm-05.kurs.jade-hs.de/retterwissen/klimaschaeden.html" class="UNTERUEBERSCHRIFT">Klimaschäden</a>
+					</div>
+				</div>
+				<a href="https://mwj-mm-05.kurs.jade-hs.de/impressum/impressum.html" class="UEBERSCHRIFT">Impressum</a>
+			</div>
+		</nav>
+
+		<main>
+
+			<div class="HEADER-WASSER">Wasserkraftwerke</div>
+			<img class="LANDSCHAFT-WASSERKRAFTWERK" src="../../images/wasserkraftwerk.png" alt="Landschaft mit Wasserkraftwerk">
+
+			<div>
+				<img class="INFOBLASE-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser/wasser_sonic.html'" src="../../images/InfoBlase.png" alt="Infoblase">
+				<p class="INFOTEXT-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser/wasser_sonic.html'">
+					Erfahre mehr <br>
+					über Wasserkraft!
+				</p>
+			</div>
+
+			<div class="TEXTBLOCK-WASSER">
+				<p>
+					Wasserkraftwerke nutzen die Energie von fließendem oder fallendem Wasser, um Strom zu erzeugen. Besonders gut eignen sich Gegenden, wo Flüsse schnell fließen oder große Mengen Wasser aus Höhenunterschieden Energie freisetzen können. Klicke <strong>DREI</strong> geeignete Standorte an:
+				</p>
+
+				<div class="ANTWORTEN-WASSER">
+						<input  class="CHECKBOX" type="checkbox" id="KUESTE"> Küsten mit Gezeiten	
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="TAL"> Täler
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="WUESTE"> Wüste	
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="FLUSS"> Flüsse
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="SUMPF"> Sümpfe
+							<br>
+						<input class="CHECKBOX" type="checkbox" id="STAUSEEN"> Stauseen	
+							<br><br>
+						<button class="PRUEFEN-WASSER">Überprüfen</button>	
+				</div>
+			</div>
+
+			<div class="GRATULATION">
+				<p>Herzlichen Glückwunsch, das war richtig! Errichte nun an den eigneten Standorten auf der Weltkarte deine Wasserkraftwerke.</p>
+			</div>
+
+			<div class="ABSCHLUSSTEXT-KAPITELSTART">
+				<button  class="BTNLINKS-WASSER" onclick="window.location.href='karte_wasser_sonic.html'">Zur Weltkarte</button>
+			</div>
+
+			<div class="FEHLERMELDUNG">
+					<button id="ZU">&times;</button>	
+
+					<div class="TEXT-WASSER">
+						<br>
+						Das war leider nicht richtig. Versuche es noch einmal.
+						<br><br>
+
+						Oder lese noch mehr über Wasserkraft
+						<br><br>
+						<button  class="BTNLINKS-WASSER" onclick="window.location.href='../../retterwissen/zukunftsenergien/wasser/wasser_sonic.html'">Zum Retterwissen Wasserkraft</button>
+
+					</div>						
+			</div>
+
+			<img class="SCHUTZSCHILD-KAPITELSTART" src="../../images/schutzschild.png" alt="Drehender Schutzschild">
+			<img class="SONIC-KAPITELSTART" src="../../images/BadBoy.png" alt="Sonic Shield">
+
+		</main>
+	</div>
+	
+    <script>	
+		
+		document.querySelector(".SONIC-KAPITELSTART").addEventListener("mouseover",SchutzschildDa);
+			document.querySelector(".SONIC-KAPITELSTART").addEventListener("mouseout",SchutzschildWeg);
+
+
+			function SchutzschildDa(){
+				document.querySelector(".SCHUTZSCHILD-KAPITELSTART").classList.add("ZEIGEN");
+			}
+
+			function SchutzschildWeg(){
+				document.querySelector(".SCHUTZSCHILD-KAPITELSTART").classList.remove("ZEIGEN");
+			}
+		
+				
+		document.querySelector(".PRUEFEN-WASSER").addEventListener("click",AuswahlAuswerten);
+		document.querySelector("#ZU").addEventListener('click',FehlermeldungZu);
+		
+		function AuswahlAuswerten(){
+			if ((document.querySelector ("#FLUSS").checked &&		
+				document.querySelector ("#KUESTE").checked &&
+				document.querySelector ("#STAUSEEN").checked) &&
+				(!document.querySelector ("#TAL").checked &&
+				!document.querySelector ("#WUESTE").checked &&
+				!document.querySelector ("#SUMPF").checked)
+				)		
+				
+			{WeiterleitenStarten();}
+			
+			else{		
+				ZeigeFehlermeldung();
+			}
+			
+		}
+		
+		function WeiterleitenStarten(){
+			document.querySelector(".TEXTBLOCK-WASSER").classList.add("WEG");
+			document.querySelector(".GRATULATION").classList.add("ZEIGEN");
+			document.querySelector(".ABSCHLUSSTEXT-KAPITELSTART").classList.add("ZEIGEN");
+			document.querySelector(".SONIC-KAPITELSTART").style.animationPlayState = "running";
+			
+		}
+		
+		function ZeigeFehlermeldung (){
+			document.querySelector(".FEHLERMELDUNG").classList.add("ZEIGEN");
+				
+		}
+	
+		function FehlermeldungZu() {
+			document.querySelector(".FEHLERMELDUNG").classList.remove("ZEIGEN");
+			 const checkboxes = document.querySelectorAll(".CHECKBOX");
+    			checkboxes.forEach(checkbox => {
+        			checkbox.checked = false;                                           // Zustand auf "nicht ausgewählt" setzen (Programmiert mit ChatGPT)
+    		});
+		}
+		
+	</script>
+
+</body>
+</html>
+
