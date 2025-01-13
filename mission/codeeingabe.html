@@ -46,13 +46,13 @@
 		
 		<!-- Hintergrundvideo -->
 		<video autoplay muted loop id="backgroundVideo">
-			<source src="../retterwissen/bilder_retterwissen/background_video.mp4" type="video/mp4">
-			<source src="../retterwissen/bilder_retterwissen/background_video.webm" type="video/webm">
+			<source src="../videos/background_video.mp4" type="video/mp4">
+			<source src="../videos/background_video.mp4" type="video/webm">
 		</video>
 
 
 		<!-- Hauptinhalt -->
-		<main>
+		
 			<img class="HELD-CODE" src="../images/AquaBoy.png" alt="Superheld">
 			<div class="helden-bereich">
 
@@ -65,17 +65,17 @@
 
 				<div>
 					<p class="HEADER-CODE">Gebe deinen Code ein:</p>
-					<input class="CODE" value=''>
+					<input class="CODE" value="">
 					<button class="EINGEBEN">Weiter</button>		
 				</div>
 
-			<div class="FEHLERMELDUNG-CODE">
-				<div>Das war leider nicht der richtig Code.<br><br>
-					Bist du dir sicher, dass du ihn korrekt eingeben hast? <br><br>
-				</div>
+				<div class="FEHLERMELDUNG-CODE">
+					<div>Das war leider nicht der richtige Code.<br><br>
+						Bist du dir sicher, dass du ihn korrekt eingeben hast? <br><br>
+					</div>
 				<button id="SCHLIESSEN-CODE" class="FEHLER-CODE">Versuche es noch einmal</button>
 			</div>
-		</main>
+		
 			
 	</div>
 
@@ -123,7 +123,7 @@
 			if (document.querySelector('input').value.toLowerCase() == "sdl-204"){			//Überprüfung der Eingabe
 				window.location.href = "kapitel2/solar_sonic.html";							// Weiterleiten bei positivem Ergebnis
 			}
-			if(document.querySelector('input').value.toLowerCase() == "pok-672"){
+			if(document.querySelector('input').value.toLowerCase() == "luv-315"){
 				window.location.href = "kapitel3/wasser_sonic.html";
 			}
 			

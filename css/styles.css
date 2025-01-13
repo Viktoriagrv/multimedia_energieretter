@@ -243,7 +243,6 @@
 			text-align: justify;
 			overflow:hidden;
 			visibility: hidden;
-			opacity: 0;
 		}
 		
 		
@@ -504,7 +503,7 @@
 
 		.HELD-CODE{
 			position:absolute;
-			top:30%;
+			top:35%;
 			left:10%;
 			height: 60%;
             width: auto;
@@ -512,8 +511,8 @@
 
         #sprechblase {
             position: absolute;
-			top:18%;
-			left: 30%;
+			top:13.5%;
+			left:30%;
             width:20%;
             height:34%;
             border-radius: 20px 20px 20px 0px;
@@ -560,6 +559,7 @@
             font-family: "bangers";
             font-size: 2rem;
 			color: #e8a723;
+			border-color: #285238;
 			text-decoration: none;  
             background-color: #285238;
             border-radius: 10px;
@@ -577,7 +577,7 @@
 			left: 18%;
             height: auto;
             width: auto;
-			padding: 15px;
+			padding: 20px;
             font-family: "bangers";
             font-size: 1.5rem;
 			letter-spacing: 0.05em;
@@ -596,14 +596,15 @@
 		
 		.FEHLERMELDUNG-CODE{
 			position: absolute;
-			top:20%;
+			top:13.5%;
 			left: 30%;
             width:20%;
-            height: 28%;
+            height:31%;
             border-radius: 20px 20px 20px 0px;
             background-color: white;
             box-shadow: 5px 5px 10px 0px gray;
             padding: 20px;
+			padding-bottom:30px;
             text-align: left;
             font-family: "open sans";
             font-size: 1.5rem;
