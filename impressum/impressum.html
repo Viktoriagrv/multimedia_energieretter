@@ -49,6 +49,7 @@
 
 			</video>
 
+		<div class="icon-container">
 			<!-- Superheldenbilder am unteren Rand -->
 			<img class="SCARLET-IMPRESSUM" src="../images/BadGirl.png" alt="Scarlet Shade">
 			<img class="KNIGHT-IMPRESSUM"src="../images/Prinz.png" alt="Golden Knight">
@@ -56,6 +57,8 @@
 			<img class="THUNDER-IMPRESSUM"src="../images/AquaBoy.png" alt="Thunderbolt">
 			<img class="TITAN-IMPRESSUM"src="../images/Biest.png" alt="Cyber Titan">
 			<img class="SONIC-IMPRESSUM"src="../images/BadBoy.png" alt="Sonic" id="sonicImpressum">
+		</div>	
+		
 
 			<!-- Hauptinhalt -->
 			
@@ -72,16 +75,33 @@
 					<p>Medienwirtschaft und Journalismus</p>
 
 					<h2>Kurs:</h2>
-					<p>Multimedia</p>
+					<p>Multimedia - WS 2024/2025</p>
 
 					<h2>Betreut von:</h2>
 					<p>Prof. Götz Greiner und Dipl.-Phys. Thomas Severiens</p>
+					<p>Tutorium: David Röskamm</p>
 
 					<h2>Verwendete Schriften</h2>
 					<p>Bangers und Open Sans</p>
+					
+				<h2 class="EIGENLEISTUNG">Erklärung zur Eigenleistung</h2>
 
-					<h2 class="QUELLENVZ">Quellenverzeichnis</h2>
+				
+				<h2 class="QUELLENVZ">Quellenverzeichnis</h2>
 				</div>
+		
+				<div class="EIGENLEISTUNG-BOX">
+					<button id="BTNEIGENLEISTUNG">&times;</button>
+
+					<div class="QUELLEN-TEXT">
+
+						<h2><strong>Erklärung zur Eigenleistung</strong></h2>
+
+						<p>Die Webseite wurde eigenständig entwickelt. Zur Unterstützung wurden neben ChatGPT auch Open-Source-Beispiele verwendet, um Konzepte zu überprüfen und den Code zu optimieren. Zusätzlich flossen Tutoriums-Vorlagen sowie Vorlagen von Prof. Dr. Götz Greiner ein. Zudem wurden Ressourcen von W3Schools herangezogen.</p>
+					</div>
+				</div>
+					
+
 
 				<div class="QUELLEN">
 					<button id="BTNQUELLEN">&times;</button>
@@ -113,7 +133,8 @@
 						https://de.freepik.com/vektoren-kostenlos/bunte-cartoon-weltkarte-unterteilt-nach-kontinenten_64805905.htm#fromView=keyword&page=9&position=43&uuid=8aa63034-c324-42c9-bcfa-910c5ab8400c
 
 						<h3>Pfeile:</h3>
-						https://de.vecteezy.com/vektorkunst/50071069-handgemalt-rede-blasen-pfeile-und-dekorativ
+						https://de.freepik.com/icon/pfeil-nach-links_15101077#fromView=search&page=1&position=46&uuid=a662cee3-0dca-47f8-848c-167521072ad9
+						https://de.freepik.com/icon/pfeil-nach-rechts_15101149#fromView=resource_detail&position=17
 
 						<h3>Schrift:</h3>
 						https://www.dafontfree.co/download/gagalin/
@@ -151,6 +172,30 @@
 		</div>
 
 		<script>
+		
+		// Funktion, um Icons schweben zu lassen
+					function floatIcons() {
+					const icons = document.querySelectorAll('.icon-container img'); // Alle Icons auswählen
+
+					icons.forEach(icon => {
+						let position = 0; // Startposition
+						let direction = 1; // Bewegung nach oben oder unten
+						const maxMovement = 6; // Maximale Bewegung in Pixel
+						const stepSize = 0.1; // Bewegungsschritt
+
+						const iconFloat = () => {
+							if (position >= maxMovement || position <= -maxMovement) {
+								direction *= -1; // Richtung wechseln
+							}
+							position += direction * stepSize; // Position aktualisieren
+							icon.style.transform = `translateY(${position}px)`; // Icon bewegen
+							requestAnimationFrame(iconFloat); // Animation wiederholen
+						};
+
+					iconFloat(); // Animation starten
+					});
+
+					}	
 			document.querySelector(".QUELLENVZ").addEventListener('click',ZeigeQuellenVerzeichnis);
 			document.querySelector("#BTNQUELLEN").addEventListener('click',QuellenVerzeichnisAus);
 
@@ -160,6 +205,17 @@
 
 				function QuellenVerzeichnisAus(){
 					document.querySelector(".QUELLEN").classList.remove("ZEIGEN");
+				}
+			
+			document.querySelector(".EIGENLEISTUNG").addEventListener('click',ZeigeEigenleistungErklärung);
+			document.querySelector("#BTNEIGENLEISTUNG").addEventListener('click',EigenleistungErklärungAus);
+
+				function ZeigeEigenleistungErklärung() {
+					document.querySelector(".EIGENLEISTUNG-BOX").classList.add("ZEIGEN");
+				}
+
+				function EigenleistungErklärungAus(){
+					document.querySelector(".EIGENLEISTUNG-BOX").classList.remove("ZEIGEN");
 				}
 
 		</script>

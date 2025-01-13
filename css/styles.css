@@ -4488,18 +4488,6 @@
 		}
 
 		
-		ul {
-			list-style-type: none;
-			padding-left: 0;
-			font-size: 1.2rem;
-			color: #FFC107;
-			letter-spacing: -1.5px; 
-		}
-
-		li {
-			margin-bottom: 10px;
-		}
-
 		a {
 			color: #FFC107;
 			text-decoration: none;
@@ -4508,6 +4496,14 @@
 		.QUELLENVZ{
 			cursor:pointer;
 			}
+
+		#BTNQUELLEN{
+			position:absolute;
+			top:5%;
+			right:5%;
+			z-index:5;
+
+		}
 
 		.QUELLEN{
 			flex-direction: row;
@@ -4535,13 +4531,35 @@
 			z-index:4;
 		}
 
-		#BTNQUELLEN{
+
+		.EIGENLEISTUNG{
+			cursor:pointer;
+			}
+
+		#BTNEIGENLEISTUNG{
 			position:absolute;
 			top:5%;
 			right:5%;
 			z-index:5;
 
 		}
+
+		.EIGENLEISTUNG-BOX{
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 20%;
+			left: 30%;
+			height:30%;
+			width: 40%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:4;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			}
 
 /*Sichtbarkeit von Elementen*/	
 		
