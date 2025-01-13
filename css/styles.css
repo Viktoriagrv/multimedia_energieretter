@@ -512,14 +512,15 @@
 
         #sprechblase {
             position: absolute;
-			top:20%;
+			top:18%;
 			left: 30%;
             width:20%;
-            height:28%;
+            height:34%;
             border-radius: 20px 20px 20px 0px;
             background-color: white;
             box-shadow: 5px 5px 10px 0px gray;
             padding: 20px;
+			padding-top: 5px;
             text-align: left;
             font-family: "open sans";
             font-size: 1.5rem;
