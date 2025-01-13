@@ -4474,11 +4474,21 @@
 		.inhaltimpressum {
 			position: absolute;
 			max-width: 800px; 
+			top:12%;
 			left:40%; 
 			padding: 20px;
 			color: #FFC107; 
 			
 		}
+
+		h2{
+			font-family: "bangers";
+			color:#FFC107;
+			font-size:1.5rem;
+			letter-spacing: 0.08em;
+			margin-bottom: 10px;
+		}
+
 
 		h3{
 			font-family: "open sans", bold;
@@ -4499,8 +4509,8 @@
 
 		#BTNQUELLEN{
 			position:absolute;
-			top:5%;
-			right:5%;
+			top:20px;
+			right:20px;
 			z-index:5;
 
 		}
@@ -4533,13 +4543,14 @@
 
 
 		.EIGENLEISTUNG{
+			margin-bottom: 30px;
 			cursor:pointer;
 			}
 
 		#BTNEIGENLEISTUNG{
 			position:absolute;
-			top:5%;
-			right:5%;
+			top:20px;
+			right:20px;
 			z-index:5;
 
 		}
@@ -4551,7 +4562,7 @@
 			top: 20%;
 			left: 30%;
 			height:30%;
-			width: 40%;
+			width: 30%;
 			border-radius: 20px 20px 20px 20px;
 			background-color: white;
 			box-shadow: 5px 5px 10px 0px gray;
