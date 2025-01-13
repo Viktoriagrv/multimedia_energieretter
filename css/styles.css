@@ -1215,7 +1215,7 @@
 		.LOS-KLIMA{
 			position: absolute;
 			bottom: 15%;
-			left: 16%;
+			left: 17%;
 			display: inline-block;
             padding: 15px 20px;
             font-family: 'Bangers';
@@ -2241,7 +2241,7 @@
 		.INFOBLASE-WIND{
 			position: absolute;
 			top: 26%;
-			left: 37%;
+			left: 36.5%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -2364,7 +2364,7 @@
 		.INFOBLASE{
 			position: absolute;
 			top: 26%;
-			left: 37%;
+			left: 36.5%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -2670,7 +2670,7 @@
 		.WINDRAD3{
 			position:absolute;
 			bottom:2%;
-			left: 55%;
+			left: 48%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -2703,7 +2703,7 @@
 		.SOLARPANEL3{
 			position:absolute;
 			bottom:2%;
-			left: 60%;
+			left: 48%;
 			height:20%;
 			width:auto;
 			z-index: 4;
@@ -2736,7 +2736,7 @@
 		.WASSERKRAFT3{
 			position:absolute;
 			bottom:2%;
-			left: 60%;
+			left: 48%;
 			height:13%;
 			width:auto;
 			z-index: 5;
@@ -3634,7 +3634,7 @@
 			position: absolute;
 			padding: 15px 20px;
 			bottom: 7%;
-			right: 12%;
+			right: 10%;
 			font-family: "bangers";
 			font-size: 2rem;
 			color: #e8a723;
@@ -3774,7 +3774,7 @@
 		.INFOBLASE-SOLAR{
 			position: absolute;
 			top: 26%;
-			left: 37%;
+			left: 36%;
 			height: 12%;
 			width: auto;
 			z-index:4;
@@ -3956,7 +3956,7 @@
 		.INFOBLASE-WASSER{
 			position: absolute;
 			top: 26%;
-			left: 37%;
+			left: 36.5%;
 			height: 12%;
 			width: auto;
 			z-index:4;
