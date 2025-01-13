@@ -12,7 +12,7 @@
 		}
 
 	.ALLES{
-		width: 1440px;
+		width: 1920px;
 	}
 
 /* Hintergrundvideo */
@@ -4118,15 +4118,6 @@
 			border: 2px solid #285238;
 			}
 
-/*Sichtbarketi von Elementen*/	
-		
-		.ZEIGEN{
-			visibility: visible;
-		}
-		
-		.WEG{
-			visibility: hidden;
-		}	
 
 /*SEITE ZUKUNFTSENERGIE*/	
 
@@ -4426,29 +4417,74 @@
 
 /* Impressum */
 
-		
-		#scarletShadeImpressum {
+		.SCARLET-IMPRESSUM{
 			position: fixed;
-			right: 0;
-			bottom: 20px;
-			width: 300px; 
-			z-index: 2;  
+			right: 5%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
 		}
 
-		#sonicImpressum {
+		.KNIGHT-IMPRESSUM{
 			position: fixed;
-			right: 5;
-			bottom: 20px;
-			width: 300px; 
-			z-index: 2;  
+			right: 18%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
+		}
+
+		.BLAZE-IMPRESSUM{
+			position: fixed;
+			right: 30%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
+		}
+
+		.THUNDER-IMPRESSUM{
+			position: fixed;
+			left: 28%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
+		}
+
+		.TITAN-IMPRESSUM{
+			position: fixed;
+			left: 16%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
+		}
+
+		.SONIC-IMPRESSUM{
+			position: fixed;
+			left: 5%;
+			bottom: 5%;
+			height:25%;
+			width: auto; 
+			z-index: 3;  
 		}
 
 		.inhaltimpressum {
+			position: absolute;
 			max-width: 800px; 
-			margin: 0 auto; 
+			left:40%; 
 			padding: 20px;
 			color: #FFC107; 
-			letter-spacing: -0.5px; 
+			
+		}
+
+		h3{
+			font-family: "open sans", bold;
+			color:#285238;
+			font-size:1rem;
+			margin-bottom: 10px;
 		}
 
 		
@@ -4468,4 +4504,53 @@
 			color: #FFC107;
 			text-decoration: none;
 		}
+
+		.QUELLENVZ{
+			cursor:pointer;
+			}
+
+		.QUELLEN{
+			flex-direction: row;
+			position: absolute;
+			padding: 30px;
+			top: 15%;
+			left: 25%;
+			height:60%;
+			width: 50%;
+			border-radius: 20px 20px 20px 20px;
+			background-color: white;
+			box-shadow: 5px 5px 10px 0px gray;
+			visibility: hidden;
+			z-index:4;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			}
+
+		.QUELLEN-TEXT{
+			position: absolute;
+			padding: 20px;
+			font-family: "open sans";
+			color:#285238;
+			font-size:1rem;
+			z-index:4;
+		}
+
+		#BTNQUELLEN{
+			position:absolute;
+			top:5%;
+			right:5%;
+			z-index:5;
+
+		}
+
+/*Sichtbarkeit von Elementen*/	
+		
+		.ZEIGEN{
+			visibility: visible;
+		}
+		
+		.WEG{
+			visibility: hidden;
+		}	
+
 
