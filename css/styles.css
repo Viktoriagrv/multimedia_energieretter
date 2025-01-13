@@ -4293,6 +4293,14 @@
 		cursor: default;
 	}
 
+	.HEROBLAZE {
+		position: absolute;
+		bottom: 4%;
+		left: 10%;
+		height: 30%;
+		transform: rotateY(180deg);
+	}
+
 	/* BILD VON SOLARPANEL */
 	.SOLAR {
 		position: absolute;
